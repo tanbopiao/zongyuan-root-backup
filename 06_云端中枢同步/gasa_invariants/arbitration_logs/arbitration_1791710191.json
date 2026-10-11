@@ -1,0 +1,67 @@
+{
+  "total_arbitrated": 5,
+  "auto_merged": [
+    "C-261011-05"
+  ],
+  "pending_review": [
+    "C-261011-01",
+    "C-261011-02",
+    "C-261011-03",
+    "C-261011-04"
+  ],
+  "rejected": [],
+  "results": [
+    {
+      "candidate_id": "C-261011-01",
+      "score": 0.685,
+      "risk_level": "high",
+      "decision": "pending_review",
+      "reason": "高风险层(L0)，必须界主人工审批",
+      "timestamp": 1791710191.286385,
+      "node": "NODE-DEV-DOUBAO-WORK-001",
+      "did": "DID-BR-000002"
+    },
+    {
+      "candidate_id": "C-261011-02",
+      "score": 0.635,
+      "risk_level": "high",
+      "decision": "pending_review",
+      "reason": "高风险层(L0)，必须界主人工审批",
+      "timestamp": 1791710191.2864072,
+      "node": "NODE-DEV-DOUBAO-WORK-001",
+      "did": "DID-BR-000002"
+    },
+    {
+      "candidate_id": "C-261011-03",
+      "score": 0.685,
+      "risk_level": "high",
+      "decision": "pending_review",
+      "reason": "高风险层(L3)，必须界主人工审批",
+      "timestamp": 1791710191.286426,
+      "node": "NODE-DEV-DOUBAO-WORK-001",
+      "did": "DID-BR-000002"
+    },
+    {
+      "candidate_id": "C-261011-04",
+      "score": 0.685,
+      "risk_level": "high",
+      "decision": "pending_review",
+      "reason": "高风险层(L3)，必须界主人工审批",
+      "timestamp": 1791710191.2864356,
+      "node": "NODE-DEV-DOUBAO-WORK-001",
+      "did": "DID-BR-000002"
+    },
+    {
+      "candidate_id": "C-261011-05",
+      "score": 0.875,
+      "risk_level": "low",
+      "decision": "auto_merge",
+      "reason": "评分0.88≥阈值0.8，低风险自动合入",
+      "timestamp": 1791710191.2864482,
+      "node": "NODE-DEV-DOUBAO-WORK-001",
+      "did": "DID-BR-000002"
+    }
+  ],
+  "timestamp": 1791710191.311626,
+  "did": "DID-BR-000002"
+}

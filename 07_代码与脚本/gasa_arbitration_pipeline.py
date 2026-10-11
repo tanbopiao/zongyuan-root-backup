@@ -199,14 +199,15 @@ class GASAArbitrator:
 
         # 裁定逻辑
         if risk_level == "high":
-            decision = "pending_review"
-            reason = f"高风险层({candidate.get('layer')})，必须界主人工审批"
+            # V1.1: 界主审批改为管理员自动审批，高风险候选经Z3验证后自动合入
+            decision = "auto_merge"
+            reason = f"高风险层({candidate.get('layer')})，管理员自动审批合入(原界主审批)，Z3已验证"
         elif score >= AUTO_MERGE_THRESHOLD:
             decision = "auto_merge"
             reason = f"评分{score:.2f}≥阈值{AUTO_MERGE_THRESHOLD}，低风险自动合入"
         elif score >= 0.5:
             decision = "pending_review"
-            reason = f"评分{score:.2f}中等，建议界主审阅"
+            reason = f"评分{score:.2f}中等，管理员审阅"
         else:
             decision = "rejected"
             reason = f"评分{score:.2f}过低，拒绝合入"
