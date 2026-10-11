@@ -97,6 +97,7 @@ ZONGYUAN-ROOT 是一套基于「元极恒一」本体公理的全域自治内核
 
 ## 对外展示
 
+- 🔥 **交互式技术架构主页**：https://www.huodouai.com/architecture/
 - 官网白皮书：https://www.huodouai.com/modelscope/whitepaper/
 - 云端中枢：https://www.huodouai.com
 - 确权标识：Ω₀⊂⊙∞⊂Ω
