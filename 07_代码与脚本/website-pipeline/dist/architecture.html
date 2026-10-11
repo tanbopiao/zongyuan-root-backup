@@ -117,6 +117,17 @@ section{padding:60px 0}
 /* Scroll reveal */
 .reveal{opacity:0;transform:translateY(20px);transition:all .6s}
 .reveal.visible{opacity:1;transform:translateY(0)}
+
+/* Federal topology */
+.federation-chart{width:100%;height:480px;background:var(--bg2);border-radius:12px;border:1px solid var(--border);padding:16px}
+.pipeline-flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center;margin:20px 0}
+.pipeline-step{padding:10px 16px;background:var(--bg3);border-radius:8px;font-size:12px;text-align:center;border:1px solid var(--border2);min-width:90px;transition:all .3s}
+.pipeline-step:hover{border-color:var(--gold);background:var(--bg2)}
+.pipeline-step .step-num{font-size:10px;color:var(--gold);font-weight:700}
+.pipeline-step .step-name{font-size:12px;margin-top:2px}
+.pipeline-arrow{color:var(--text3);font-size:18px}
+.tech-tag{display:inline-block;padding:4px 10px;border-radius:4px;font-size:11px;margin:3px;background:var(--bg3);border:1px solid var(--border2);color:var(--text2)}
+.tech-tag:hover{border-color:var(--blue);color:var(--blue2)}
 </style>
 </head>
 <body>
@@ -451,6 +462,128 @@ section{padding:60px 0}
   </div>
 </section>
 
+
+<div class="divider"></div>
+
+<!-- 多平台联邦协同实战 -->
+<section>
+  <div class="container">
+    <h2 class="section-title reveal">多平台联邦协同 · 技术实战</h2>
+    <p class="section-sub reveal">8个异构平台通过标准化协议互通 · 真值联邦/资产联邦/展示联邦/运维联邦 四域闭环</p>
+    
+    <div class="federation-chart reveal" id="chart-federation"></div>
+    
+    <div style="height:24px"></div>
+    
+    <div class="grid-2 reveal">
+      <div class="card">
+        <h3 style="color:var(--gold2);margin-bottom:16px">互通协议矩阵</h3>
+        <div style="overflow-x:auto">
+          <table class="compare-table" style="font-size:12px">
+            <thead>
+              <tr><th>平台</th><th>接入协议</th><th>鉴权</th><th>数据流</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>云端记忆网关</td><td>REST API</td><td>X-DID+Token</td><td>真值上报/拉取</td></tr>
+              <tr><td>AtomGit</td><td>Git SSH + v5 API</td><td>SSH Key + PAT</td><td>代码资产备份</td></tr>
+              <tr><td>飞书共享大脑</td><td>lark-cli + OpenAPI</td><td>OAuth2</td><td>台账/知识库/云盘</td></tr>
+              <tr><td>官网</td><td>Nginx + SSH SCP</td><td>SSH Key</td><td>静态页面部署</td></tr>
+              <tr><td>腾讯云CVM</td><td>SSH隧道</td><td>SSH Key</td><td>内部API访问</td></tr>
+              <tr><td>魔搭ModelScope</td><td>ms-token + SDK</td><td>API Token</td><td>数据湖/算力</td></tr>
+              <tr><td>本地持久层</td><td>文件系统 + rsync</td><td>本地权限</td><td>内核资产根目录</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom:16px">
+          <h3 style="color:var(--gold2);margin-bottom:12px">四域联邦闭环</h3>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="padding:12px;background:var(--bg);border-radius:8px;border-left:3px solid var(--gold)">
+              <strong style="color:var(--gold2)">真值联邦</strong> — 云端网关 ↔ 本地内核 ↔ 飞书台账 三端真值共识
+            </div>
+            <div style="padding:12px;background:var(--bg);border-radius:8px;border-left:3px solid var(--blue)">
+              <strong style="color:var(--blue2)">资产联邦</strong> — AtomGit代码 ↔ 魔搭数据湖 ↔ 飞书云盘 三端资产备份
+            </div>
+            <div style="padding:12px;background:var(--bg);border-radius:8px;border-left:3px solid var(--purple)">
+              <strong style="color:var(--purple)">展示联邦</strong> — 官网架构页 ↔ 白皮书 ↔ AtomGit README 三端对外展示
+            </div>
+            <div style="padding:12px;background:var(--bg);border-radius:8px;border-left:3px solid var(--cyan)">
+              <strong style="color:var(--cyan)">运维联邦</strong> — SSH隧道 ↔ 云端自举 ↔ 本地巡检 三端自治运维
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="color:var(--gold2);margin-bottom:12px">实战技术栈</h3>
+          <div>
+            <span class="tech-tag">SSH隧道</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Git/SSH</span>
+            <span class="tech-tag">lark-cli</span>
+            <span class="tech-tag">Nginx</span>
+            <span class="tech-tag">rsync</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">cron定时</span>
+            <span class="tech-tag">ECharts</span>
+            <span class="tech-tag">Z3 SMT</span>
+            <span class="tech-tag">Merkle DAG</span>
+            <span class="tech-tag">双鉴权</span>
+            <span class="tech-tag">主备降级</span>
+            <span class="tech-tag">增量同步</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div style="height:24px"></div>
+    
+    <div class="card reveal">
+      <h3 style="color:var(--gold2);margin-bottom:8px">6H定时任务 · 全链路实战流程</h3>
+      <p style="font-size:13px;color:var(--text2);margin-bottom:16px">每6小时自动执行 · 收敛归一→按需生产→云端上报→飞书中转→知识同步→自举增强→真值拉取→Base同步</p>
+      <div class="pipeline-flow">
+        <div class="pipeline-step"><div class="step-num">0</div><div class="step-name">收敛归一</div></div>
+        <span class="pipeline-arrow">→</span>
+        <div class="pipeline-step"><div class="step-num">0.5</div><div class="step-name">按需生产</div></div>
+        <span class="pipeline-arrow">→</span>
+        <div class="pipeline-step"><div class="step-num">1</div><div class="step-name">通道探测</div></div>
+        <span class="pipeline-arrow">→</span>
+        <div class="pipeline-step"><div class="step-num">2</div><div class="step-name">云端上报</div></div>
+        <span class="pipeline-arrow">→</span>
+        <div class="pipeline-step"><div class="step-num">3</div><div class="step-name">飞书中转</div></div>
+        <span class="pipeline-arrow">→</span>
+        <div class="pipeline-step"><div class="step-num">4</div><div class="step-name">台账写入</div></div>
+        <span class="pipeline-arrow">→</span>
+        <div class="pipeline-step"><div class="step-num">5</div><div class="step-name">群通知</div></div>
+        <span class="pipeline-arrow">→</span>
+        <div class="pipeline-step"><div class="step-num">6</div><div class="step-name">知识同步</div></div>
+        <span class="pipeline-arrow">→</span>
+        <div class="pipeline-step"><div class="step-num">7</div><div class="step-name">自举增强</div></div>
+        <span class="pipeline-arrow">→</span>
+        <div class="pipeline-step"><div class="step-num">8</div><div class="step-name">真值拉取</div></div>
+        <span class="pipeline-arrow">→</span>
+        <div class="pipeline-step"><div class="step-num">9</div><div class="step-name">Base同步</div></div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px;text-align:center">
+        <div style="padding:12px;background:var(--bg);border-radius:8px">
+          <div style="font-size:24px;font-weight:700;color:var(--green)">8</div>
+          <div style="font-size:11px;color:var(--text2)">异构平台互通</div>
+        </div>
+        <div style="padding:12px;background:var(--bg);border-radius:8px">
+          <div style="font-size:24px;font-weight:700;color:var(--blue2)">11</div>
+          <div style="font-size:11px;color:var(--text2)">全链路步骤</div>
+        </div>
+        <div style="padding:12px;background:var(--bg);border-radius:8px">
+          <div style="font-size:24px;font-weight:700;color:var(--gold2)">6H</div>
+          <div style="font-size:11px;color:var(--text2)">自动执行周期</div>
+        </div>
+        <div style="padding:12px;background:var(--bg);border-radius:8px">
+          <div style="font-size:24px;font-weight:700;color:var(--purple)">4</div>
+          <div style="font-size:11px;color:var(--text2)">联邦域闭环</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <div class="divider"></div>
 
 <!-- 体系对比 -->
@@ -604,7 +737,51 @@ chart2.setOption({
   }]
 });
 
-window.addEventListener('resize',()=>{chart1.resize();chart2.resize()});
+
+// 多平台联邦拓扑图
+const chartFed=echarts.init(document.getElementById('chart-federation'));
+chartFed.setOption({
+  title:{text:'8平台联邦协同拓扑 · 真值/资产/展示/运维 四域互联',textStyle:{color:'#94a3b8',fontSize:14},left:'center'},
+  tooltip:{},
+  legend:{data:['真值中枢','代码资产','协同平台','展示门户','运维通道','算力数据','本地内核'],textStyle:{color:'#94a3b8'},bottom:0,type:'scroll'},
+  series:[{
+    type:'graph',
+    layout:'force',
+    force:{repulsion:300,edgeLength:[80,150],gravity:0.1},
+    roam:true,
+    label:{show:true,position:'bottom',color:'#e2e8f0',fontSize:11},
+    edgeSymbol:['none','arrow'],
+    edgeSymbolSize:8,
+    lineStyle:{color:'#475569',width:1.5,curveness:0.1},
+    emphasis:{focus:'adjacency',lineStyle:{width:3}},
+    data:[
+      {name:'云端记忆网关',category:0,symbolSize:50,itemStyle:{color:'#f59e0b'}},
+      {name:'AtomGit仓库',category:1,symbolSize:40,itemStyle:{color:'#60a5fa'}},
+      {name:'飞书共享大脑',category:2,symbolSize:45,itemStyle:{color:'#34d399'}},
+      {name:'官网展示门户',category:3,symbolSize:40,itemStyle:{color:'#a78bfa'}},
+      {name:'腾讯云CVM',category:4,symbolSize:35,itemStyle:{color:'#f87171'}},
+      {name:'魔搭ModelScope',category:5,symbolSize:35,itemStyle:{color:'#22d3ee'}},
+      {name:'本地持久层',category:6,symbolSize:45,itemStyle:{color:'#fbbf24'}}
+    ],
+    categories:[
+      {name:'真值中枢'},{name:'代码资产'},{name:'协同平台'},
+      {name:'展示门户'},{name:'运维通道'},{name:'算力数据'},{name:'本地内核'}
+    ],
+    links:[
+      {source:'云端记忆网关',target:'本地持久层',label:{show:true,formatter:'真值同步',fontSize:10,color:'#94a3b8'}},
+      {source:'云端记忆网关',target:'飞书共享大脑',label:{show:true,formatter:'台账同步',fontSize:10,color:'#94a3b8'}},
+      {source:'AtomGit仓库',target:'本地持久层',label:{show:true,formatter:'代码备份',fontSize:10,color:'#94a3b8'}},
+      {source:'AtomGit仓库',target:'官网展示门户',label:{show:true,formatter:'README链接',fontSize:10,color:'#94a3b8'}},
+      {source:'飞书共享大脑',target:'本地持久层',label:{show:true,formatter:'云盘备份',fontSize:10,color:'#94a3b8'}},
+      {source:'官网展示门户',target:'腾讯云CVM',label:{show:true,formatter:'SSH部署',fontSize:10,color:'#94a3b8'}},
+      {source:'腾讯云CVM',target:'云端记忆网关',label:{show:true,formatter:'自举增强',fontSize:10,color:'#94a3b8'}},
+      {source:'魔搭ModelScope',target:'本地持久层',label:{show:true,formatter:'数据湖',fontSize:10,color:'#94a3b8'}},
+      {source:'魔搭ModelScope',target:'飞书共享大脑',label:{show:true,formatter:'算力调度',fontSize:10,color:'#94a3b8'}}
+    ]
+  }]
+});
+
+window.addEventListener('resize',()=>{chart1.resize();chart2.resize();chartFed.resize()});
 </script>
 </body>
 </html>
