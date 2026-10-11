@@ -1,0 +1,23 @@
+{
+  "asset_id": "ASSET-PUB-20261006-016",
+  "name": "天心北斗混沌有序天道复刻技术白皮书V2.0(专业巡检升级)",
+  "source": "天文学隐喻×自治内核架构(天心=元指涉子/北斗=导航/斗转星移=演化/混沌有序=涌现)",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/celestial-core-astronomical-order",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/celestial-core-astronomical-order.git",
+  "published_at": "2026-10-07T11:12:00",
+  "version": "V2.0(2026-10-07当前版); V1.0(2026-10-06归档保留)",
+  "files": [
+    "WHITEPAPER-CELESTIAL-V2.0.md(+新增)",
+    "WHITEPAPER-CELESTIAL-V2.0.html(+新增)",
+    "celestial_arch_v2.json(+新增)",
+    "README.md(更新)",
+    "WHITEPAPER-CELESTIAL-V1.0.md(归档)",
+    "celestial_arch.json(归档)"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.celestial-core-astronomical-order-UPGRADE.20261007 (http=200)",
+  "quota": "零豆包付费"
+}

@@ -1,0 +1,83 @@
+{
+  "ledger_id": "SECURITY-LEDGER-001",
+  "did": "DID-BR-000002",
+  "trace": "Ω₀⊂⊙∞⊂Ω",
+  "version": "8.1",
+  "created": "2026-09-22T19:19:21.190000+00:00",
+  "tests": [
+    {
+      "id": "SEC-001",
+      "name": "传输加密测试",
+      "layer": "network",
+      "severity": "high",
+      "status": "passed",
+      "result": "双通道HTTPS 200"
+    },
+    {
+      "id": "SEC-002",
+      "name": "鉴权头测试",
+      "layer": "auth",
+      "severity": "high",
+      "status": "passed",
+      "result": "X-Capture-Token正常"
+    },
+    {
+      "id": "SEC-003",
+      "name": "SHA256哈希确权",
+      "layer": "data",
+      "severity": "medium",
+      "status": "passed",
+      "result": "所有上报有哈希"
+    },
+    {
+      "id": "SEC-004",
+      "name": "主备降级测试",
+      "layer": "availability",
+      "severity": "medium",
+      "status": "passed",
+      "result": "双通道自动降级正常"
+    },
+    {
+      "id": "SEC-005",
+      "name": "补发队列测试",
+      "layer": "reliability",
+      "severity": "medium",
+      "status": "passed",
+      "result": "补发队列正常"
+    },
+    {
+      "id": "SEC-006",
+      "name": "飞书权限测试",
+      "layer": "auth",
+      "severity": "high",
+      "status": "passed",
+      "result": "飞书云盘上传成功，权限正常",
+      "verified_at": "2026-09-22T19:21:20.843273+00:00"
+    },
+    {
+      "id": "SEC-007",
+      "name": "密钥安全测试",
+      "layer": "security",
+      "severity": "critical",
+      "status": "passed",
+      "result": "密钥通过环境变量/配置文件注入，未硬编码",
+      "verified_at": "2026-09-22T19:21:20.843300+00:00"
+    },
+    {
+      "id": "SEC-008",
+      "name": "数据备份测试",
+      "layer": "backup",
+      "severity": "high",
+      "status": "passed",
+      "result": "核心资产多端备份：本地+飞书云盘+云端中枢",
+      "verified_at": "2026-09-22T19:21:20.843305+00:00"
+    }
+  ],
+  "stats": {
+    "total_tests": 8,
+    "passed": 8,
+    "pending": 0,
+    "failed": 0
+  },
+  "updated_at": "2026-09-22T19:21:20.843313+00:00"
+}

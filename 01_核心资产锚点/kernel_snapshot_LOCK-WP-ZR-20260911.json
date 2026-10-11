@@ -1,0 +1,34 @@
+{
+  "kernel_root": "ZONGYUAN-ROOT",
+  "kernel_version": "V9.11",
+  "axiom_anchor": "AXIOM-A-035_V1.7",
+  "did": "DID-BR-000002",
+  "provenance_mark": "Ω₀⊂⊙∞⊂Ω",
+  "lock_state": "READONLY_HARDWARE_LOCKED",
+  "lock_event_id": "LOCK-WP-ZR-20260911",
+  "write_timestamp": "2026-09-11T00:00:00+08:00",
+  "wiki_archive_url": "https://my.feishu.cn/wiki/A1yvwDRiAiaLfzkMNd1ctb4Snag",
+  "ledger_record_id": "recvuTOSKr1xPe",
+  "deliver_doc": "https://my.feishu.cn/docx/XPibdxmhGoNzc0x4JencHbwgn6d",
+  "content_sha256": "f8d79e0e0f8f512483cde9156c81b6180e86615e949d4dc9b963e679a1b97806",
+  "quality": {
+    "write": "PASS",
+    "quality_score": 10.0,
+    "threshold": 7.5,
+    "deliver": "PASS"
+  },
+  "architecture_layer": {
+    "layers": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5"
+    ],
+    "state": "STABLE_LOCKED"
+  },
+  "integrity": {
+    "verification": "PASS_READBACK"
+  }
+}

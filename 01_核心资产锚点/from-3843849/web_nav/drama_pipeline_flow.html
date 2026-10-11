@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZONGYUAN-ROOT 短剧生产线全流程</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC",sans-serif;background:#0d1117;color:#e6edf3;padding:20px;line-height:1.6}
+h1{text-align:center;color:#58a6ff;margin-bottom:6px;font-size:22px}
+.sub{text-align:center;color:#8b949e;font-size:13px;margin-bottom:24px}
+.flow{display:flex;flex-direction:column;gap:14px;max-width:900px;margin:0 auto}
+.stage{display:flex;align-items:center;gap:14px;background:#161b22;border:1px solid #30363d;border-radius:10px;padding:14px 18px}
+.num{flex:0 0 36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
+.ok .num{background:#238636;color:#fff}
+.wait .num{background:#9e6a03;color:#fff}
+.local .num{background:#1f6feb;color:#fff}
+.body{flex:1}
+.body h3{font-size:16px;margin-bottom:2px}
+.body p{font-size:13px;color:#8b949e}
+.badge{flex:0 0 auto;font-size:11px;padding:3px 10px;border-radius:12px;font-weight:600}
+.ok .badge{background:#238636;color:#fff}
+.wait .badge{background:#9e6a03;color:#fff}
+.local .badge{background:#1f6feb;color:#fff}
+.arrow{text-align:center;color:#30363d;font-size:20px;margin:-6px 0}
+.summary{max-width:900px;margin:24px auto 0;background:#161b22;border:1px solid #30363d;border-radius:10px;padding:18px}
+.summary h2{color:#58a6ff;font-size:16px;margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.cell{background:#0d1117;border-radius:8px;padding:10px;font-size:13px}
+.cell b{color:#e6edf3}
+.cell .g{color:#3fb950}
+.cell .y{color:#d29922}
+.footer{text-align:center;color:#6e7681;font-size:12px;margin-top:20px}
+</style>
+</head>
+<body>
+<h1>ZONGYUAN-ROOT 短剧生产线</h1>
+<div class="sub">全流程闭环图 · DID-BR-000002 · Ω₀⊂⊙∞⊂Ω</div>
+
+<div class="flow">
+  <div class="stage ok"><div class="num">1</div><div class="body"><h3>剧本生成</h3><p>大模型根据题材自动产出剧本</p></div><span class="badge">已通</span></div>
+  <div class="arrow">↓</div>
+  <div class="stage ok"><div class="num">2</div><div class="body"><h3>分镜脚本</h3><p>拆成镜头列表（景别/台词/时长）</p></div><span class="badge">已通</span></div>
+  <div class="arrow">↓</div>
+  <div class="stage local"><div class="num">3</div><div class="body"><h3>关键帧生成</h3><p>每个镜头出首帧图（Seedream API）</p></div><span class="badge">待API</span></div>
+  <div class="arrow">↓</div>
+  <div class="stage local"><div class="num">4</div><div class="body"><h3>视频片段</h3><p>关键帧→动图/视频（Seedance API）</p></div><span class="badge">待API</span></div>
+  <div class="arrow">↓</div>
+  <div class="stage local"><div class="num">5</div><div class="body"><h3>后期合成</h3><p>ffmpeg 拼接+字幕+配乐（本地）</p></div><span class="badge">本地</span></div>
+  <div class="arrow">↓</div>
+  <div class="stage ok"><div class="num">6</div><div class="body"><h3>归档锁档</h3><p>飞书云盘+中枢真值+魔搭</p></div><span class="badge">已通</span></div>
+  <div class="arrow">↓</div>
+  <div class="stage ok"><div class="num">7</div><div class="body"><h3>发布</h3><p>多平台分发+数据回传</p></div><span class="badge">已通</span></div>
+</div>
+
+<div class="summary">
+  <h2>闭环状态总览</h2>
+  <div class="grid">
+    <div class="cell"><b class="g">✓ 已通（4）</b><br>剧本 / 分镜 / 归档 / 发布</div>
+    <div class="cell"><b class="y">… 待外部API（2）</b><br>关键帧图 · 视频片段<br>→ 接豆包 Seedream + Seedance</div>
+    <div class="cell"><b style="color:#58a6ff">● 本地（1）</b><br>后期合成 ffmpeg<br>不依赖 GPU</div>
+    <div class="cell"><b>编排引擎</b><br>batch_orchestrator<br>任务自动拆分+鉴权闭环</div>
+  </div>
+</div>
+
+<div class="footer">打通最后一公里 = 接入豆包图/视频 API → 全流程端到端跑通</div>
+</body>
+</html>

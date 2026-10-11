@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-09-16T12:09:08.706741+00:00",
+  "did": "DID-BR-000002",
+  "omega": "Ω₀⊂⊙∞⊂Ω",
+  "results": {
+    "calendar": {
+      "ok": true,
+      "count": 4,
+      "events": [
+        "ZONGYUAN-ROOT 机制运行总览",
+        "ZONGYUAN-ROOT 六小时综合批次",
+        "ZONGYUAN-ROOT 沙盒守护心跳",
+        "ZONGYUAN-ROOT 六小时综合批次"
+      ]
+    },
+    "approval": {
+      "ok": true,
+      "count": 0,
+      "titles": []
+    },
+    "corpus": {
+      "ok": true,
+      "count": 438,
+      "kb": 167,
+      "ready": false
+    },
+    "subscription": {
+      "ok": true,
+      "count": 0,
+      "active": []
+    }
+  },
+  "report_ok": true,
+  "summary": "日历4条|审批0条|语料438条(167KB)|订阅0项"
+}

@@ -1,0 +1,27 @@
+{
+  "asset_id": "ASSET-PUB-20261006-022",
+  "name": "昆仑洞天视觉资产自治流水线技术白皮书V2.0(专业巡检升级)",
+  "source": "KUNLUN-RUN-002第二批角色量产仿真预演(4资产PASS入库)",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/kunlun-vision-asset-pipeline",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/kunlun-vision-asset-pipeline.git",
+  "published_at": "2026-10-07T11:36:00",
+  "version": "V2.0(2026-10-07当前版,沿用V1.6算子集); V1.1(流水线V1.6)/V1.0(归档保留)",
+  "files": [
+    "WHITEPAPER-KUNLUNVP-V2.0.md(+新增)",
+    "WHITEPAPER-KUNLUNVP-V2.0.html(+新增)",
+    "kunlunvp_arch_v20.json(+新增)",
+    "README.md(更新)",
+    "WHITEPAPER-KUNLUNVP-V1.1.md(归档)",
+    "WHITEPAPER-KUNLUNVP-V1.1.html(归档)",
+    "kunlunvp_arch_v11.json(归档)",
+    "WHITEPAPER-KUNLUNVP-V1.0.md(归档)",
+    "WHITEPAPER-KUNLUNVP-V1.0.html(归档)",
+    "kunlunvp_arch.json(归档)"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.kunlun-vision-asset-pipeline-UPGRADE.20261007 (http=200)",
+  "quota": "零豆包付费"
+}

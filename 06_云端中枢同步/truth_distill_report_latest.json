@@ -1,0 +1,96 @@
+{
+  "report_time": "2026-09-16T04:03:12.137767+00:00",
+  "sources_scanned": 7,
+  "evaluated": [
+    {
+      "file": "sandbox_guard/guard_status.json",
+      "score": 80,
+      "level": "DISTILLABLE"
+    },
+    {
+      "file": "neural_network/neural_network_report_latest.json",
+      "score": 66,
+      "level": "DISTILLABLE"
+    },
+    {
+      "file": "homology_explore/homology_env_report_latest.json",
+      "score": 70,
+      "level": "DISTILLABLE"
+    },
+    {
+      "file": "task_governance/task_value_report_latest.json",
+      "score": 48,
+      "level": "OBSERVE"
+    },
+    {
+      "file": "kernel_struct/kernel_struct_report_latest.json",
+      "score": 68,
+      "level": "DISTILLABLE"
+    },
+    {
+      "file": "promotion_engine/promotion_report_latest.json",
+      "score": 59,
+      "level": "OBSERVE"
+    },
+    {
+      "file": "truth_audit/truth_audit_report_latest.json",
+      "score": 57,
+      "level": "OBSERVE"
+    }
+  ],
+  "distilled_count": 4,
+  "distilled_items": [
+    {
+      "source": "sandbox_guard/guard_status.json",
+      "domain": "sandbox",
+      "score": 80,
+      "content": "沙盒存活状态判定ALIVE；guard_time=2026-09-16T03:42:06Z；disk_pct=1；mem_mb=3557；python3=1；lark_cli=1",
+      "source_hash": "c0bb5d0fd0a6"
+    },
+    {
+      "source": "neural_network/neural_network_report_latest.json",
+      "domain": "neural",
+      "score": 66,
+      "content": "神经网络同步进化状态判定NEURAL_NETWORK_ACTIVE；p1_registration={\"registered\": true, \"node_id\": \"NODE-MAIN-SESSION-38436546492378882\", \"authority\": \"L4\", \"status\": \"ACTIVE\"}",
+      "source_hash": "3fddbdbe09d1"
+    },
+    {
+      "source": "homology_explore/homology_env_report_latest.json",
+      "domain": "homology",
+      "score": 70,
+      "content": "同源环境探索结果判定HOMOLOGY_ACTIVE；explore_time=2026-09-15T18:04:25.248090+00:00；e1_homology_identity={\"registered\": true, \"authority\": \"L4\", \"status\": \"ACTIVE\"}；e2_cloud_endpoints={\"truths_read\": 200, \"truth_upsert\": 200, \"truth_single\": 200, \"upload_9120\": 502}；e3_capabilities={\"python3\": true, \"lark-cli\": true, \"curl\": true, \"jq\": true}；e4_resources={\"disk_used_pct\": 1, \"mem_available_mb\": 3456}",
+      "source_hash": "af354f0a400b"
+    },
+    {
+      "source": "kernel_struct/kernel_struct_report_latest.json",
+      "domain": "kernel",
+      "score": 68,
+      "content": "内核结构优化报告判定STRUCT_OPTIMIZED；audit={\"low_weight\": 0, \"domain_redundant\": 0, \"type_redundant\": 0, \"missing_fields\": 0}；optimizations={\"weight_boosted\": 0, \"domain_normalized\": 0, \"type_normalized\": 0, \"weight_propagated\": 0, \"meta_completed\": 0}；detail={\"low_weight_nodes\": [], \"domain_map\": {\"operations\": \"ops\", \"infrastructure\": \"infra\"}, \"type_map\": {\"operation_rule\": \"rule\", \"lock_axiom\": \"axiom\", \"infrastructure\": \"rule\"}}；kernel_version=V2.3.0-GIT-BRIDGE-LOCKED；total_nodes=335",
+      "source_hash": "f06dacaff9c7"
+    }
+  ],
+  "cloud_results": {
+    "DISTILLED-SANDBOX-20260916": {
+      "success": true,
+      "source": "sandbox_guard/guard_status.json",
+      "score": 80
+    },
+    "DISTILLED-NEURAL-20260916": {
+      "success": true,
+      "source": "neural_network/neural_network_report_latest.json",
+      "score": 66
+    },
+    "DISTILLED-HOMOLOGY-20260916": {
+      "success": true,
+      "source": "homology_explore/homology_env_report_latest.json",
+      "score": 70
+    },
+    "DISTILLED-KERNEL-20260916": {
+      "success": true,
+      "source": "kernel_struct/kernel_struct_report_latest.json",
+      "score": 68
+    }
+  },
+  "batch_id": "DISTILL-BATCH-20260916-0403",
+  "verdict": "DISTILL_ACTIVE"
+}

@@ -1,0 +1,27 @@
+{
+  "snapshot_id": "MEM-SNAP-OFFICIAL-HOME-DEPLOY-20260909",
+  "timestamp": "2026-09-09T15:24:21.690594+00:00",
+  "type": "official_home_integrated_deploy",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "deployment": {
+    "source": "official_home_integrated.html (81980字节)",
+    "target": "/www/wwwroot/www.huodouai.com/index.html",
+    "backup": "index.html.bak-20260909-2255 (原237934字节)",
+    "url": "https://www.huodouai.com/",
+    "title": "火斗云智 AIOS · LLM驱动的稳态自治系统部署平台"
+  },
+  "new_modules": [
+    "知识图谱统计卡片（/api/v1/kg/stat实时）",
+    "真值语义检索交互框（/api/v1/truth_retrieval）",
+    "内核实时状态模块（live-status）"
+  ],
+  "verification": {
+    "http_status": 200,
+    "kg_module_present": true,
+    "truth_retrieval_function": true,
+    "public_kg_api": "nodes=18, edges=13",
+    "public_truth_api": "语义检索正常, distance~0.22"
+  },
+  "merkle_root": "279da166808442c0898eb1ec5e90bb3eb48a3d694f6aa88c3789518966811a92"
+}

@@ -1,0 +1,20 @@
+# 大文件
+*.bin
+*.model
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+# 凭证
+*.env
+*.key
+*.pem
+凭证/
+# 临时文件
+*.tmp
+*.log
+__pycache__/
+*.pyc
+# 大JSON
+semantic_units.json
+memory_index_store.json

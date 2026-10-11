@@ -1,0 +1,24 @@
+{
+  "OP-LLM-20260914-020318-67944F": {
+    "op_id": "OP-LLM-20260914-020318-67944F",
+    "func_name": "op_sliding_window_mean",
+    "runs": 3,
+    "success_runs": 3,
+    "avg_exec_time_ms": 0.0026,
+    "min_exec_time_ms": 0.0021,
+    "max_exec_time_ms": 0.0033,
+    "avg_peak_memory_kb": 0.12,
+    "timestamp": "2026-09-14T02:04:14+08:00"
+  },
+  "OP-LLM-20260914-020414-403CF9": {
+    "op_id": "OP-LLM-20260914-020414-403CF9",
+    "func_name": "op_entropy_calculate",
+    "runs": 3,
+    "success_runs": 3,
+    "avg_exec_time_ms": 0.0024,
+    "min_exec_time_ms": 0.0016,
+    "max_exec_time_ms": 0.0035,
+    "avg_peak_memory_kb": 0.05,
+    "timestamp": "2026-09-14T02:04:14+08:00"
+  }
+}

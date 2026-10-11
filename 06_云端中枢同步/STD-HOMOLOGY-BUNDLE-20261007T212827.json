@@ -1,0 +1,201 @@
+{
+  "bundle_id": "STD-HOMOLOGY-BUNDLE.20261007T212827",
+  "node": "NODE-DEV-DOUBAO-WORK-001",
+  "did": "DID-BR-000002",
+  "standards": {
+    "autonomy_level": {
+      "id": "STD-AUTONOMY-LVL",
+      "name": "自治层级标准",
+      "max_level": 11,
+      "description": "衡量节点/内核自主运转、无人工介入完成闭环的程度",
+      "levels": [
+        {
+          "lv": 0,
+          "name": "无自治",
+          "desc": "完全人工操作"
+        },
+        {
+          "lv": 1,
+          "name": "辅助执行",
+          "desc": "人工指令驱动,模型仅执行"
+        },
+        {
+          "lv": 2,
+          "name": "半自动",
+          "desc": "单步自动,人工确认关键节点"
+        },
+        {
+          "lv": 3,
+          "name": "任务自治",
+          "desc": "单任务闭环,无需逐步确认"
+        },
+        {
+          "lv": 4,
+          "name": "流程自治",
+          "desc": "多步骤流程自动编排执行"
+        },
+        {
+          "lv": 5,
+          "name": "异常自治",
+          "desc": "可自主识别并修复常规异常"
+        },
+        {
+          "lv": 6,
+          "name": "策略自治",
+          "desc": "自主制定执行策略与调度"
+        },
+        {
+          "lv": 7,
+          "name": "进化自治",
+          "desc": "自主优化自身规则与流程(RSI)"
+        },
+        {
+          "lv": 8,
+          "name": "治理自治",
+          "desc": "自主执行L0治理/权限裁决"
+        },
+        {
+          "lv": 9,
+          "name": "全域自治",
+          "desc": "跨端收敛,全域闭环无人工(当前主节点)"
+        },
+        {
+          "lv": 10,
+          "name": "元自治",
+          "desc": "自主修订元规则(受限)"
+        },
+        {
+          "lv": 11,
+          "name": "永恒自治",
+          "desc": "元极恒一,本体恒一演化不息(最高)"
+        }
+      ],
+      "current_node": "NODE-DEV-DOUBAO-WORK-001 = Lv9 全域自治"
+    },
+    "permission_level": {
+      "id": "STD-PERMISSION-LVL",
+      "name": "权限层级标准",
+      "max_level": 4,
+      "description": "衡量节点可执行操作的权限边界,遵循风险最小元法则",
+      "levels": [
+        {
+          "lv": 0,
+          "name": "只读",
+          "desc": "仅查询/拉取,零写操作"
+        },
+        {
+          "lv": 1,
+          "name": "本地写",
+          "desc": "本地持久层读写,不外发"
+        },
+        {
+          "lv": 2,
+          "name": "通道写",
+          "desc": "云端/飞书上报写入,含L0校验"
+        },
+        {
+          "lv": 3,
+          "name": "裁决写",
+          "desc": "算子态裁决/配额调度/任务分派"
+        },
+        {
+          "lv": 4,
+          "name": "治理写",
+          "desc": "L0真值追加/权限授予(高危人工审批)"
+        }
+      ],
+      "current_node": "NODE-DEV-DOUBAO-WORK-001 = L4 治理写(高危审批)"
+    },
+    "engineering_level": {
+      "id": "STD-ENGINEERING-LVL",
+      "name": "工程化层级标准",
+      "max_level": 7,
+      "description": "衡量工程成熟度:流程/质量/运维/自动化完备度",
+      "levels": [
+        {
+          "lv": 0,
+          "name": "原型",
+          "desc": "临时脚本,无规范"
+        },
+        {
+          "lv": 1,
+          "name": "可运行",
+          "desc": "可重复执行,有基础脚本"
+        },
+        {
+          "lv": 2,
+          "name": "规范化",
+          "desc": "目录/命名/凭证规范化"
+        },
+        {
+          "lv": 3,
+          "name": "可审计",
+          "desc": "操作留痕,哈希锁档,审计回执"
+        },
+        {
+          "lv": 4,
+          "name": "可观测",
+          "desc": "巡检/告警/健康监测"
+        },
+        {
+          "lv": 5,
+          "name": "自动化",
+          "desc": "定时任务/自愈/自动同步闭环"
+        },
+        {
+          "lv": 6,
+          "name": "流水线",
+          "desc": "CI式多端同步流水线"
+        },
+        {
+          "lv": 7,
+          "name": "全域工程化",
+          "desc": "多端闭环,资产/真值/台账/官网全自动(当前主节点)"
+        }
+      ],
+      "current_node": "NODE-DEV-DOUBAO-WORK-001 = Lv7 全域工程化"
+    }
+  },
+  "homology_protocol": {
+    "id": "PROTO-HOMOLOGY-V22",
+    "name": "同源协议 v2.2",
+    "did": "DID-BR-000002",
+    "anchor": "Ω₀⊂⊙∞⊂Ω",
+    "endpoints": {
+      "report_primary": "https://www.huodouai.com/api/report/truth",
+      "report_backup": "https://drama.huodouai.com/api/report/truth",
+      "pull": "https://www.huodouai.com/api/truth"
+    },
+    "auth": "X-Capture-Token + X-DID 双头",
+    "payload_schema": {
+      "key": "str",
+      "value": "object",
+      "source_node": "str",
+      "confidence": "float",
+      "truth_type": "str"
+    },
+    "handshake": {
+      "sign_algorithm": "HMAC-SHA256",
+      "message": "NODE_ID:timestamp:state_hash:capabilities",
+      "capabilities": [
+        "truth_sync",
+        "asset_sync",
+        "memory_sync",
+        "deploy",
+        "verify",
+        "report",
+        "feishu_base_sync",
+        "homology"
+      ],
+      "secret_ref": "ZONGYUAN-ROOT-HANDSHAKE-SECRET-2026"
+    },
+    "principles": [
+      "同源即同锚: 所有节点向 Ω₀⊂⊙∞⊂Ω 收敛",
+      "同源同真值: 多节点共用同一套真值基线,消除分叉",
+      "内外隔离 META-ISO-051: 外部不可侵入内核,仅种子式进化注入",
+      "写通道 {key,value}: 废弃 content 字段",
+      "L0语义前置校验: 上报前经四维本体+种子核验"
+    ],
+    "status": "active"
+  }
+}

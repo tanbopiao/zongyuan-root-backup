@@ -1,0 +1,45 @@
+{
+ "learn_id": "NODE-LEARN-20260916-0215",
+ "learned_at": "2026-09-16T02:15:00+08:00",
+ "node": "pipeline-auto-001",
+ "did": "DID-BR-000002",
+ "protocols": [
+  {
+   "key": "PROTOCOL.NODE.UNIFY.V1",
+   "essence": "基线唯一绑定+注册中心仲裁+双环境隔离+熔断回退闭环"
+  },
+  {
+   "key": "PROTOCOL.API.NODE_REPORT.V1",
+   "essence": "上报API规范：GET/status,nodes + POST/node/register,truth,truths/batch"
+  },
+  {
+   "key": "RULE.NODE.REGISTRY.CENTER.V1",
+   "essence": "节点强制上报DID/环境/基线哈希，网关仲裁Lv权限，失败冻结高阶"
+  },
+  {
+   "key": "PROTOCOL.NODE.FALLBACK.ROLLBACK.V1",
+   "essence": "漂移>85/哈希不一致触发熔断→冻结→回退合法基线→恢复稳态"
+  },
+  {
+   "key": "META_LAW.NODE.LV.CONFIRM.MA002",
+   "essence": "Lv=基线资产包校验能力，禁止实例自演化/自标记/自定义"
+  }
+ ],
+ "task_optimization_plan": [
+  {
+   "task": "云端记忆网关健康巡检",
+   "action": "0 */6 -> 10 */6",
+   "reason": "与流水线巡检(0*/6)错峰，避免同时拉网关"
+  },
+  {
+   "task": "SOP自动更新补全",
+   "action": "0 */6 -> 20 */6",
+   "reason": "错峰，避免三任务并发"
+  },
+  {
+   "task": "监控云端upload恢复并部署SOP V1.1",
+   "action": "删除(已停止)",
+   "reason": "用户明确剔除的upload通道，验证为死路"
+  }
+ ]
+}

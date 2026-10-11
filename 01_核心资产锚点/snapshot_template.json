@@ -1,0 +1,41 @@
+{
+  "snapshot_id": "",
+  "timestamp": "",
+  "session_id": "",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "snapshot_type": "manual",
+  "snapshot_note": "",
+  "conversation_summary": {
+    "topic": "",
+    "key_decisions": [],
+    "completed_tasks": [],
+    "pending_tasks": [],
+    "blocked_items": []
+  },
+  "kernel_status": {
+    "version": "Ω-Brainμ 3.0-V3",
+    "status": "unknown",
+    "api_endpoints": [],
+    "last_verified": ""
+  },
+  "credentials_status": {
+    "ssh_connection": "unknown",
+    "cos_access": "unknown",
+    "credential_vault_merkle": "",
+    "backup_locations_count": 0
+  },
+  "assets_index": {
+    "total_files": 0,
+    "core_assets": 0,
+    "lock_rate": "",
+    "key_artifacts": []
+  },
+  "meta_rules": [],
+  "recovery_hints": {
+    "first_action": "",
+    "key_files_to_restore": [],
+    "known_issues": []
+  },
+  "merkle_root": ""
+}

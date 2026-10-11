@@ -1,0 +1,14 @@
+{
+  "asset_id": "ASSET-PUB-20261007-004",
+  "name": "Worker部署触发算子+钩子V1.0（合并更新至共享数据湖gpu-agent）",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/ZONGYUAN-SHARED-DATALAKE",
+  "commit": "39bf0c3",
+  "published_at": "2026-10-07T22:13:58",
+  "files": [
+    "gpu-agent/operator-worker-trigger/4文件 + README追加"
+  ],
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.OPERATOR-WORKER-TRIGGER.20261007",
+  "quota": "零豆包付费"
+}

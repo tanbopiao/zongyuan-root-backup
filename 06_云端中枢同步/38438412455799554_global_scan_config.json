@@ -1,0 +1,38 @@
+{
+  "engine": "GLOBAL-ASSET-SCAN-V1",
+  "version": "1.0.0",
+  "scan_source": ["local_kernel", "lark_drive_index", "lark_wiki_index"],
+  "enable_semantic_reconcile": true,
+  "enable_hash_verify": true,
+  "enable_drift_check": true,
+  "critical_threshold": 0.7,
+  "observe_threshold": 0.15,
+  "parallel_limit": 16,
+  "snapshot_save": true,
+  "asset_roots": [
+    "/opt/ZONGYUAN-ROOT/config",
+    "/opt/ZONGYUAN-ROOT/engine/scripts",
+    "/opt/ZONGYUAN-ROOT/engine/runtime",
+    "/opt/ZONGYUAN-ROOT/snapshot",
+    "/opt/ZONGYUAN-ROOT/truth",
+    "/opt/ZONGYUAN-ROOT/a2e",
+    "/opt/ZONGYUAN-ROOT/op_library",
+    "/opt/ZONGYUAN-ROOT/sdk"
+  ],
+  "exclude_patterns": [".pyc", ".log", ".git", "__pycache__", ".bak", "node_modules"],
+  "report_dir": "/opt/ZONGYUAN-ROOT/log/global_asset_scan/report",
+  "snapshot_path": "/opt/ZONGYUAN-ROOT/snapshot/global_asset_snapshot_v1.json",
+  "semantic_api": "http://127.0.0.1:9120/api/semantic",
+  "max_file_bytes": 1048576,
+  "asset_type_by_ext": {
+    ".json": "真值卷宗/配置",
+    ".md": "SOP/文档",
+    ".py": "引擎脚本",
+    ".html": "看板/页面",
+    ".txt": "文本资产",
+    ".yaml": "配置",
+    ".yml": "配置",
+    ".sh": "运维脚本",
+    ".mermaid": "架构图"
+  }
+}

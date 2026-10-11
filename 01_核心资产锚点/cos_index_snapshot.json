@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "LOCK-COS-ARCHIVE-INDEX-20260911",
+  "timestamp": "2026-09-11T07:01:16.311485+00:00",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "type": "archive_index",
+  "assets_total": 1007,
+  "size_mb": 225.9,
+  "highlights": [
+    "locks/267条锁档",
+    "assets/短剧EP01三角色+关键帧",
+    "models/bge-small-zh双权重",
+    "credentials/7项敏感凭证",
+    "truth/真值文档"
+  ],
+  "source": "COS删除前完整同步清单（.cos_sync_state.json.deprecated）",
+  "channel": "飞书知识库+台账+服务器本地",
+  "merkle_root": "4127b3a5cae381d336467843d114b4ab7813a787ff9a1b76e5d557426f6cacd8"
+}

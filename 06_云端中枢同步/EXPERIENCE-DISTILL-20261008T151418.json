@@ -1,0 +1,83 @@
+{
+  "main": {
+    "truth_id": "EXPERIENCE-DISTILL-20261008",
+    "name": "GASA Kernel 元学习经验池蒸馏",
+    "category": "meta_learning",
+    "type": "experience_truth",
+    "audit_snapshot": {
+      "total_entries": 18942,
+      "param_perturbation": 11027,
+      "architecture_search": 4815,
+      "threshold_adjust": 3100,
+      "z3_pass_ratio": "23.7% (↑4.1pt)",
+      "avg_cost": "7.3 min-eq (↓18% 剪枝前置)"
+    },
+    "distribution_insights": [
+      "高回报簇集中在'小步长+多轮回灌'区域,非大扰动",
+      "架构搜索: 宽度扩展类回报首次超过深度堆叠类",
+      "阈值调整: 仅动约束松弛边界的条目回报方差最低"
+    ],
+    "top5_strategies": [
+      {
+        "template": "对偶约束回写微扰",
+        "param": "线性层权重±0.003σ",
+        "amp": "≤3e-3",
+        "order": "Z3前置断言→数值前向→回写",
+        "feature": "利用对偶变量反推可满足区间"
+      },
+      {
+        "template": "门控宽度切片扩展",
+        "param": "隐藏层宽度+[8,16,24]",
+        "amp": "离散切片",
+        "order": "单门控验证→全图Z3→合并",
+        "feature": "避免全宽度重证,分片过Z3"
+      },
+      {
+        "template": "松弛阈值耦合扰动",
+        "param": "约束边界ε∈[1e-4,5e-3]",
+        "amp": "对数步长",
+        "order": "边界单调性→Z3 sat→回缩校验",
+        "feature": "只松软约束,硬约束零动"
+      },
+      {
+        "template": "熵锚定周期重采样",
+        "param": "探索熵H∈[0.6,0.9]",
+        "amp": "每12轮重置",
+        "order": "熵值检查→候选生成→Z3比对",
+        "feature": "防探索塌缩,不靠随机重置"
+      },
+      {
+        "template": "跨层学习率差分化",
+        "param": "lr分层比1:0.7:0.4",
+        "amp": "三层梯度",
+        "order": "低层冻结验证→高层Z3→联合",
+        "feature": "避免全局同频扰动导致证伪"
+      }
+    ],
+    "meta_lessons": [
+      "验证顺序与耦合关系是回报核心: Z3前置断言可剪枝18%成本",
+      "小步长+多轮回灌回报最高,大扰动收益递减",
+      "宽度扩展>深度堆叠,分片验证优于全量重证",
+      "软约束松弛可调,硬约束零动(L0/L3不触碰)"
+    ],
+    "safety": "未触碰L0公理/L3硬约束,全部建议态,不触发自动探索",
+    "did": "DID-BR-000002",
+    "node": "NODE-DEV-DOUBAO-WORK-001",
+    "anchor": "Ω₀⊂⊙∞⊂Ω",
+    "ts": "20261008T151418"
+  },
+  "federation_z": {
+    "pool": "SFMP-FEDERATION",
+    "z": {
+      "z_id": "Z-EXPERIENCE-DISTILL",
+      "label": "GASA经验池蒸馏",
+      "tag": "meta_learning",
+      "z_embedding": "sha256:5d5a1d2141889200",
+      "confidence_U": 0.93,
+      "content": "经验池18942条蒸馏: 小步长多轮回灌最优,宽度>深度,Z3前置剪枝18%,软约束可松硬约束零动"
+    },
+    "tenant": "NODE-DEV-DOUBAO-WORK-001",
+    "status": "pending_multi_tenant_verify",
+    "did": "DID-BR-000002"
+  }
+}

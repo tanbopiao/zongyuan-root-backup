@@ -1,0 +1,24 @@
+{
+  "audit_id": "FULL-KERNEL-PULL-DEPLOY-20261006_142004",
+  "timestamp": "2026-10-06T14:20:04.180277",
+  "action": "从魔搭数据湖+飞书共享大脑拉取全量内核，部署到本地持久层",
+  "modelscope": {
+    "repo": "zongyuanroot/ZONGYUAN-ROOT-PUBLIC-CORPUS",
+    "files": 14,
+    "bytes": 144862,
+    "status": "ok"
+  },
+  "feishu_shared_brain": {
+    "base_token": "DgnMbLqZiaIUDKshqCrcD4DvnBg",
+    "tables": 53,
+    "records": 12522,
+    "status": "ok",
+    "failures": 0
+  },
+  "local_paths": [
+    "07_魔搭数据湖-PUBLIC-CORPUS",
+    "08_共享大脑全量",
+    "FULL-KERNEL-DEPLOY-MANIFEST.json"
+  ],
+  "note": "含敏感表(SSH密钥/API密钥/账号主表)已落本地持久层，未对外分发"
+}

@@ -1,0 +1,146 @@
+{
+  "报告元数据": {
+    "确权锚点": "Ω₀⊂⊙∞⊂Ω",
+    "锁档关联": "LOCK-TRUTH-SYNC-20260912-001",
+    "规范版本": "云服务器安全管理与云端-终端协同规范V1.0",
+    "主机名": "VM-0-16-opencloudos",
+    "IP": "10.0.0.16",
+    "检测时间": "2026-09-12T20:43:00+08:00",
+    "状态": "SELF-CHECK"
+  },
+  "汇总": {
+    "PASS": "7",
+    "FAIL": "0",
+    "UNKNOWN": "7",
+    "INFO": "7",
+    "合计": 21
+  },
+  "基线明细": [
+    {
+      "item": "SEC-NET-001",
+      "baseline": "仅放行业务必需端口\n",
+      "status": "INFO",
+      "evidence": "监听端口: 11435,11930,11931,22,443,6379,7100,7600,80,8001,8012,8014,8021,8023,8029,8031,8040,8046,8060,8061,8062,8063,8070,8072,8080,8088,8090,8091,8092,8093,8094,8098,8099,8100,8161,8200,8201,8202,8203,8300,8626,8765,8766,9099,9120,9121,9122,9123,9140,9200,9210,9300,9301,9302,9303,9304,9305,9306,9307,9400,9443, （安全组源地址限制需腾讯云控制台核验）\n"
+    },
+    {
+      "item": "SEC-NET-002",
+      "baseline": "禁止SSH(22)对0.0.0.0/0开放\n",
+      "status": "INFO",
+      "evidence": "sshd监听: 默认0.0.0.0 （安全组是否限定源IP需控制台核验）\n"
+    },
+    {
+      "item": "SEC-NET-003",
+      "baseline": "不同安全级别实例使用不同安全组\n",
+      "status": "UNKNOWN",
+      "evidence": "需腾讯云控制台实例-安全组核验\n"
+    },
+    {
+      "item": "SEC-NET-004",
+      "baseline": "VPC逻辑区隔离\n",
+      "status": "INFO",
+      "evidence": "默认路由: default via 10.0.0.1 dev eth0 proto dhcp src 10.0.0.16 metric 100  （VPC归属需控制台核验）\n"
+    },
+    {
+      "item": "SEC-NET-005",
+      "baseline": "高危端口不对公网开放\n",
+      "status": "PASS",
+      "evidence": "未检测到3306/6379/3389监听\n"
+    },
+    {
+      "item": "SEC-IAM-001",
+      "baseline": "SSH密钥登录，禁用密码认证\n",
+      "status": "PASS",
+      "evidence": "PasswordAuthentication no\n"
+    },
+    {
+      "item": "SEC-IAM-002",
+      "baseline": "禁止root直接远程登录\n",
+      "status": "PASS",
+      "evidence": "PermitRootLogin prohibit-password\n"
+    },
+    {
+      "item": "SEC-IAM-003",
+      "baseline": "堡垒机运维强制MFA\n",
+      "status": "UNKNOWN",
+      "evidence": "需堡垒机配置核验（当前是否部署堡垒机）\n"
+    },
+    {
+      "item": "SEC-IAM-004",
+      "baseline": "CAM策略最小权限，独立账户\n",
+      "status": "UNKNOWN",
+      "evidence": "需腾讯云控制台CAM核验\n"
+    },
+    {
+      "item": "SEC-HARD-001",
+      "baseline": "主机安全(云镜)已启用\n",
+      "status": "PASS",
+      "evidence": "云镜agent运行中\n"
+    },
+    {
+      "item": "SEC-HARD-002",
+      "baseline": "入侵防护(fail2ban/云镜防爆破)\n",
+      "status": "PASS",
+      "evidence": "云镜防爆破运行中（OpenCloudOS无fail2ban包，云镜替代）\n"
+    },
+    {
+      "item": "SEC-HARD-003",
+      "baseline": "自动安全更新已配置\n",
+      "status": "PASS",
+      "evidence": "dnf-automatic存在\n"
+    },
+    {
+      "item": "SEC-HARD-004",
+      "baseline": "关键补丁已安装/定期基线检查\n",
+      "status": "INFO",
+      "evidence": "dpkg日志最后更新:  （需控制台基线通过率核验）\n"
+    },
+    {
+      "item": "SEC-BAK-001",
+      "baseline": "数据盘统一云硬盘\n",
+      "status": "INFO",
+      "evidence": "根分区: /dev/vda1 40G （盘型需控制台核验）\n"
+    },
+    {
+      "item": "SEC-BAK-002",
+      "baseline": "云硬盘快照+自定义镜像\n",
+      "status": "UNKNOWN",
+      "evidence": "需腾讯云控制台快照/镜像核验\n"
+    },
+    {
+      "item": "SEC-BAK-003",
+      "baseline": "跨地域镜像复制\n",
+      "status": "UNKNOWN",
+      "evidence": "需腾讯云控制台核验\n"
+    },
+    {
+      "item": "SEC-BAK-004",
+      "baseline": "EIP承载域名映射\n",
+      "status": "INFO",
+      "evidence": "需控制台核验EIP绑定状态\n"
+    },
+    {
+      "item": "SEC-BAK-005",
+      "baseline": "恢复流程每季度演练\n",
+      "status": "UNKNOWN",
+      "evidence": "需锁档台账核验演练记录\n"
+    },
+    {
+      "item": "SEC-MON-001",
+      "baseline": "可观测平台监控已启用\n",
+      "status": "PASS",
+      "evidence": "腾讯云监控agent运行中\n"
+    },
+    {
+      "item": "SEC-MON-002",
+      "baseline": "关键指标告警配置\n",
+      "status": "UNKNOWN",
+      "evidence": "需腾讯云控制台告警规则核验\n"
+    },
+    {
+      "item": "SEC-MON-003",
+      "baseline": "敏感操作审计留痕180天\n",
+      "status": "INFO",
+      "evidence": "auditd配置: max_log_file = 8;num_logs = 5;max_log_file_action = ROTATE;（云审计需控制台核验）\n"
+    }
+  ]
+}

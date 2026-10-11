@@ -1,0 +1,126 @@
+{
+  "kernel": "ZONGYUAN-HOMOLOGY-KERNEL",
+  "version": "V1.0-SYNC",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "axiom": "AXIOM-A-035_V1.7",
+  "sync_timestamp": "2026-09-12T15:20:00+08:00",
+  "truths": [
+    {
+      "id": "T-001",
+      "key": "kernel.root",
+      "value": "ZONGYUAN-ROOT",
+      "level": "FROZEN",
+      "source": "AXIOM-A-035_V1.7"
+    },
+    {
+      "id": "T-002",
+      "key": "kernel.did",
+      "value": "DID-BR-000002",
+      "level": "FROZEN",
+      "source": "公理层"
+    },
+    {
+      "id": "T-003",
+      "key": "kernel.anchor",
+      "value": "Ω₀⊂⊙∞⊂Ω",
+      "level": "FROZEN",
+      "source": "确权锚点"
+    },
+    {
+      "id": "T-004",
+      "key": "kernel.mode",
+      "value": "元极恒一超认知永恒自治",
+      "level": "FROZEN",
+      "source": "自治模式"
+    },
+    {
+      "id": "T-005",
+      "key": "kernel.semantic",
+      "value": "语义校验基座V3.1：55词条/4模型/14规则",
+      "level": "LOCKED",
+      "source": "LOCK-SEMANTIC-V3-FULL-20260911-001"
+    },
+    {
+      "id": "T-006",
+      "key": "kernel.scan",
+      "value": "GLOBAL-ASSET-SCAN-V1：149资产/每周日23:30扫描",
+      "level": "LOCKED",
+      "source": "LOCK-GLOBAL-VALUE-20260912-001"
+    },
+    {
+      "id": "T-007",
+      "key": "kernel.gateway",
+      "value": "统一网关9120：语义API6端点+前置校验",
+      "level": "LOCKED",
+      "source": "semantic-v3-full-lock"
+    },
+    {
+      "id": "T-008",
+      "key": "kernel.memory",
+      "value": "记忆网关V3：SQLite持久化/真值1619/审计3583",
+      "level": "LOCKED",
+      "source": "unified_gateway_9120"
+    },
+    {
+      "id": "T-009",
+      "key": "kernel.neural",
+      "value": "神经注册表：249节点/1002连接",
+      "level": "LOCKED",
+      "source": "LOCK-GLOBAL-VALUE-20260912-001"
+    },
+    {
+      "id": "T-010",
+      "key": "kernel.security",
+      "value": "SSH密钥已加密封存/云服务器直连已阻断",
+      "level": "LOCKED",
+      "source": "安全处置20260912"
+    },
+    {
+      "id": "T-011",
+      "key": "kernel.channel",
+      "value": "飞书三端通道正常：知识库+台账+云盘",
+      "level": "ACTIVE",
+      "source": "lark-cli v1.0.94"
+    },
+    {
+      "id": "T-012",
+      "key": "kernel.pub",
+      "value": "公网HTTPS通道502：Nginx反代后端不可达",
+      "level": "OBSERVE",
+      "source": "20260912探测"
+    },
+    {
+      "id": "T-013",
+      "key": "kernel.frp",
+      "value": "FRP密钥通道已连接服务器：7100登录成功/Token有效/持久会话",
+      "level": "ACTIVE",
+      "source": "20260912实测"
+    },
+    {
+      "id": "T-014",
+      "key": "server.kg_api",
+      "value": "kg-api@8070公网在线：status=ok/真值库1759条/图谱62节点61边/因果8规则",
+      "level": "ACTIVE",
+      "source": "20260912公网实测"
+    },
+    {
+      "id": "T-015",
+      "key": "server.memory",
+      "value": "内存1931MB已用1207MB/记忆网关V3 healthy/Prometheus运行中",
+      "level": "ACTIVE",
+      "source": "20260912真值检索"
+    },
+    {
+      "id": "T-016",
+      "key": "server.sync_key",
+      "value": "真值同步X-API-Key已轮换：旧key被拒，新key待获取",
+      "level": "OBSERVE",
+      "source": "20260912实测"
+    }
+  ],
+  "truth_count": 16,
+  "frozen_count": 4,
+  "locked_count": 6,
+  "active_count": 4
+}

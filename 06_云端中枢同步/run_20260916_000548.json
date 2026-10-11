@@ -1,0 +1,54 @@
+{
+  "run_id": "RUN-20260916-000529",
+  "started_at": "2026-09-16T00:05:29",
+  "finished_at": "2026-09-16T00:05:48",
+  "status": "success",
+  "trigger": "cron",
+  "stages": {
+    "detect": {
+      "status": "ok",
+      "message": "[detect] consumed 3 meta_rules from digital_assets.json latest | [detect] OK: baseline=10454 current=11450 new=3 -> /home/user/Doubao/chats/38438412455799554/pipeline-auto/pipeline/data/new_assets.json",
+      "new_count": 3
+    },
+    "extract": {
+      "status": "ok",
+      "message": "[extract] dedup skip: meta_rule.MR-083 hash=2a71916046… | [extract] dedup skip: meta_rule.MR-084 hash=e43414c40d… | [extract] OK: +0 cards (skipped 3), total=6 -> /home/user/Doubao/chats/38438412455799554/pipeline-auto/pipeline/data/asset_cards.json",
+      "cards_count": 0
+    },
+    "visualize": {
+      "status": "ok",
+      "message": "[viz] OK: 6 cards -> /home/user/Doubao/chats/38438412455799554/pipeline-auto/pipeline/output/asset_showcase.html",
+      "output_path": "output/asset_showcase.html"
+    },
+    "productize": {
+      "status": "ok",
+      "message": "[productize] OK: +0 products, total=6 -> /home/user/Doubao/chats/38438412455799554/pipeline-auto/pipeline/data/product_entries.json",
+      "products_count": 0
+    },
+    "price": {
+      "status": "ok",
+      "message": "[price] OK: +0, total=6 -> /home/user/Doubao/chats/38438412455799554/pipeline-auto/pipeline/data/pricing_results.json",
+      "priced_count": 0
+    },
+    "circulate": {
+      "status": "ok",
+      "message": "[circulate] PRD-20260915-C472: bitable=real drive=sim | [circulate] PRD-20260915-A8B7: bitable=real drive=sim | [circulate] OK: 6 circulated, gateway_report= -> /home/user/Doubao/chats/38438412455799554/pipeline-auto/pipeline/data/circulation_results.json",
+      "circulated_count": 6
+    }
+  },
+  "asset_ids": [
+    "AST-20260915-A344",
+    "AST-20260915-F578",
+    "AST-20260915-62E5",
+    "AST-20260915-0384",
+    "AST-20260915-032E",
+    "AST-20260915-FC31"
+  ],
+  "artifacts": {
+    "asset_cards": "data/asset_cards.json",
+    "showcase": "output/asset_showcase.html",
+    "products": "data/product_entries.json",
+    "pricing": "data/pricing_results.json",
+    "circulation": "data/circulation_results.json"
+  }
+}

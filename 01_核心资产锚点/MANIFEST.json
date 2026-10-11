@@ -1,0 +1,43 @@
+{
+  "lock_id": "LOCK-MEMORY-UPDATE-20260911-001",
+  "lock_name": "记忆更新与稳态收敛方案",
+  "did": "DID-BR-000002",
+  "provenance_mark": "Ω₀⊂⊙∞⊂Ω",
+  "timestamp": "2026-09-11T17:28:57.700554",
+  "feishu_wiki": "https://my.feishu.cn/wiki/Iv21wjGJaitfRhk44fMcFNEUnVd",
+  "feishu_base": "https://my.feishu.cn/base/QYn4bjgD6am3OPsxMCkcitcBnzc",
+  "merkle_root": "fdeb2eda8a6e4542c63c6ecb482f84263142d186752755734dd5a8b7fe3d7b5f",
+  "file_count": 4,
+  "total_size": 320641,
+  "files": [
+    {
+      "name": "file_hashes.txt",
+      "size": 439,
+      "sha256": "550f44f31e366f843d5f5ede774e79797cda622d82e1e71e5eba2511416d17cc"
+    },
+    {
+      "name": "kernel_snapshot_LOCK-MEMORY-UPDATE-20260911-001.json",
+      "size": 1031,
+      "sha256": "525ee5e4ca9bf690a092c3239065a31f6e6b3ce349ae8dab737206c515023e17"
+    },
+    {
+      "name": "lock_doc.md",
+      "size": 7225,
+      "sha256": "847de34221f6168f48d93969f4959ad34c669d9fea0a14addb97ee9790be8e59"
+    },
+    {
+      "name": "neural_registry_246nodes.json",
+      "size": 311946,
+      "sha256": "d3147a786344df563760e3d73816a7c0e86e9cf61e2fc34ba249aa2843a4d460"
+    }
+  ],
+  "key_findings": [
+    "Ω-Brainμ在9月10日重构为纯数据目录（304K），不再独立监听8000端口",
+    "新增5个服务：unified-gateway(9120)/nexus/zr-meta-ops/service-ondemand/feishu-scan",
+    "7个旧端口退役：8000/8003/8007/8008/8013/8041/8050",
+    "外网/health和/api/dashboard返回502（Nginx反代未更新）",
+    "神经注册表246节点，36条涌现元公理",
+    "腾讯云COS存储桶已删除，不再使用COS同步"
+  ],
+  "steady_state_plan": "P0(10min)+P1(20min)+P2(15min)三阶段收敛"
+}

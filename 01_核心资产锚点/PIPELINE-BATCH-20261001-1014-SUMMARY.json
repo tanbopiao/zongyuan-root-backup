@@ -1,0 +1,33 @@
+{
+  "batch": "20261001-1014",
+  "total": 5,
+  "pass": 3,
+  "fail": 2,
+  "details": [
+    {
+      "episode": "S2E01",
+      "status": "PASS",
+      "path": "/home/user/ZONGYUAN-ROOT/01_核心资产锚点/PIPELINE-BATCH-20261001-1014-E1.json"
+    },
+    {
+      "episode": "S2E02",
+      "status": "PASS",
+      "path": "/home/user/ZONGYUAN-ROOT/01_核心资产锚点/PIPELINE-BATCH-20261001-1014-E2.json"
+    },
+    {
+      "episode": "S2E03",
+      "status": "FAIL",
+      "path": "/home/user/ZONGYUAN-ROOT/01_核心资产锚点/PIPELINE-BATCH-20261001-1014-E3.json"
+    },
+    {
+      "episode": "S2E04",
+      "status": "FAIL",
+      "path": "/home/user/ZONGYUAN-ROOT/01_核心资产锚点/PIPELINE-BATCH-20261001-1014-E4.json"
+    },
+    {
+      "episode": "S2E05",
+      "status": "PASS",
+      "path": "/home/user/ZONGYUAN-ROOT/01_核心资产锚点/PIPELINE-BATCH-20261001-1014-E5.json"
+    }
+  ]
+}

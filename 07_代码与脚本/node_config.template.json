@@ -1,0 +1,16 @@
+{
+  "_comment": "同源节点级配置模板. 每节点一份, 放 /mnt/workspace/.zr/node_config.json. worker身份/参数全部从此读, 不写死进代码, 多节点互相隔离.",
+  "node_id": "ZR-NODE-MODEL-<hostname>",
+  "role": "MODEL",
+  "gpu": "CPU",
+  "mode": "strict",
+  "heartbeat_interval": 30,
+  "sub_timeout": 50,
+  "capabilities": ["cmd", "report"],
+  "_topic_note": "并存融合关键: 每个节点可配独立topic(命令主题), 与既有worker(如boot.py的zongyuan-kunlun-2026)并存互不抢命令. 留空=用协议默认主题.",
+  "topic": "zongyuan-kunlun-2026-zr",
+  "result_topic": "zongyuan-kunlun-2026-zr-result",
+  "worker_source": "/mnt/workspace/zr_tmp2/gpu-agent",
+  "_worker_source_note": "worker基线目录(魔搭git稀疏clone). 启动自检对比worker哈希, 被本地修改自动恢复.",
+  "baseline": "NTFY-CONNECT-001-V1.5-NODE-CONFIG"
+}

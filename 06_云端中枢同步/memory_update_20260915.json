@@ -1,0 +1,104 @@
+{
+  "memory_update_id": "MEM-UPDATE-20260915-001",
+  "timestamp": "2026-09-15T09:14:23+08:00",
+  "provenance_anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "scan_scope": "全域三端（本地内核+云端9120+上报网关）",
+  "local_kernel": {
+    "snapshots": 1,
+    "latest_snapshot": "kernel_snapshot_20260907_081605.json",
+    "neural_registry": {
+      "nodes": 277,
+      "connections": 1166,
+      "avg_weight": 0.6907,
+      "max_activation": 62,
+      "meta_axioms": 92
+    },
+    "domain_dist": {
+      "meta": 99,
+      "security": 48,
+      "ops": 43,
+      "production": 29,
+      "education": 27,
+      "character": 19,
+      "infrastructure": 6,
+      "user_experience": 4,
+      "operations": 2
+    },
+    "type_dist": {
+      "axiom": 101,
+      "meta_axiom": 92,
+      "rule": 55,
+      "profile": 14,
+      "instance": 7,
+      "infrastructure": 4,
+      "lock_axiom": 2,
+      "operation_rule": 2
+    },
+    "weight_decay_note": "271节点已衰减，平均权重从0.7103降至0.6907（稳态调整）"
+  },
+  "cloud_9120": {
+    "status": "DEGRADED",
+    "portal_9120": 200,
+    "api_backend": "502 Bad Gateway",
+    "note": "drama.huodouai.com API后端暂时502，门户9120正常。上次已知真值数7724条（推广时）。建议等待恢复后重新同步。",
+    "last_known_truth_count": 7724
+  },
+  "report_gateway": {
+    "status": "active",
+    "total_nodes": 5,
+    "active_nodes": 5,
+    "total_reports": 146,
+    "validation_passed": 99,
+    "pass_rate": "67.8%",
+    "need_arbitration": 3,
+    "recent_nodes": [
+      "ZR-NODE-DC2E51C0",
+      "sandbox-dev-001",
+      "local-windows-001",
+      "NN-META-024",
+      "verify-probe"
+    ]
+  },
+  "local_assets": {
+    "workspace_files": 4,
+    "files": [
+      "BASELINE-ANCHOR-20260913.md",
+      "daily_evolution_report_20260914.json",
+      "daily_evolution_report_20260915.json",
+      "LOCK-HANDSHAKE-V32-20260914-001.md"
+    ],
+    "v32_scripts": 7,
+    "v32_script_list": [
+      "code_self_evaluator.py",
+      "llm_operator_generator.py",
+      "meta_loop_guardian.py",
+      "operator_generator_v3.py",
+      "v31_meta_closed_loop.py",
+      "v32_meta_closed_loop.py",
+      "v3_meta_closed_loop.py"
+    ]
+  },
+  "memory_delta": {
+    "nodes_change": "276→277(+1)",
+    "connections_change": "1160→1166(+6)",
+    "avg_weight_change": "0.711→0.6907(-0.0203,衰减后)",
+    "snapshots_change": "46→53(+7,内核读取扫描数)",
+    "report_gateway_change": "82→146(+64上报,多节点活跃)"
+  },
+  "alerts": [
+    {
+      "level": "WARNING",
+      "item": "云端9120 API后端502",
+      "detail": "drama.huodouai.com /api/gateway/truths 返回502 Bad Gateway，门户9120正常。真值同步暂时受阻。",
+      "action": "等待恢复后重新执行握手同步"
+    }
+  ],
+  "next_actions": [
+    "P0: 等待9120 API恢复后重新执行HANDSHAKE-SOP握手同步",
+    "P1: 3项演化候选经验执行公理化锁档",
+    "P1: 上报网关3条需仲裁项审查",
+    "P2: 永恒自治维度(50%)增强自驱动闭环",
+    "P2: 激活高频核心神经节点抵消权重衰减"
+  ]
+}

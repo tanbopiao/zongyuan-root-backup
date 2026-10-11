@@ -1,0 +1,41 @@
+{
+  "issue": "P0-P1-P2.UPGRADE.BATCH",
+  "name": "补齐升级批次完成（自举通道+测试套件+回滚流程）",
+  "completed": {
+    "P1_bootstrap_channel": {
+      "status": "done",
+      "detail": "SSH隧道保活脚本+自举增强V2.0，使用真实端点8920(zr_agent_suite)+9010(zr_cloud_ctl)",
+      "result": "6/6全成功（隧道/仲裁/投票/故障转移/心跳内部/心跳公网），8014⏭预期跳过",
+      "artifacts": [
+        "07_代码与脚本/auto_bootstrap_cloud.py(V2.0)",
+        "07_代码与脚本/ssh_tunnel_keepalive.sh"
+      ]
+    },
+    "P0_test_suite": {
+      "status": "done",
+      "detail": "记忆索引引擎9/9单元测试通过+统一运行器",
+      "coverage": "增删查改/时效衰减/标签检索/语义检索/生命周期归档/批量接入/持久化/空引擎",
+      "artifacts": [
+        "tests/test_memory_index_engine.py",
+        "tests/run_all_tests.sh"
+      ]
+    },
+    "P2_rollback": {
+      "status": "done",
+      "detail": "变更前置快照+回滚工具（snapshot/list/rollback/diff四命令）",
+      "artifacts": [
+        "07_代码与脚本/snapshot_rollback.sh"
+      ],
+      "first_snapshot": "snap_20261011T131828_p0_test_suite_complete (74M)"
+    }
+  },
+  "pending_user_input": {
+    "P1_credential_encryption": "需确认加密方式(openssl AES-256/gpg)+主密码",
+    "P2_script_rename": "需授权后批量重命名246个脚本（去除session_id前缀）"
+  },
+  "impact": "自治Lv9→Lv10关键差距(自举通道稳定性)已补齐；工程化Lv6→Lv7差距(统一测试+回滚)大幅缩小",
+  "node": "NODE-DEV-DOUBAO-WORK-001",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "ts": "20261011T131904"
+}

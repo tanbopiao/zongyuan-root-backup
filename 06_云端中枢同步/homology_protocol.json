@@ -1,0 +1,126 @@
+{
+  "protocol": "ZONGYUAN-HOMOLOGY-PROTOCOL",
+  "version": "V3.0-COGNITIVE",
+  "status": "ACTIVE",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "handshake": {
+    "mode": "HMAC-6STEP",
+    "port_design": 8300,
+    "secret_ref": "CRED-002（已AES-256加密封存，密钥引用不落明文）",
+    "timeout_ms": 10000,
+    "nonce_ttl_s": 300
+  },
+  "nodes": {
+    "local": {
+      "node_id": "NN-META-024",
+      "role": "主会话执行节点",
+      "status": "ACTIVE"
+    },
+    "cloud_proxy": {
+      "node_id": "NN-OPS-018",
+      "role": "云代理身份",
+      "status": "SUSPENDED",
+      "reason": "SSH凭据已加密封存，云服务器直连阻断"
+    },
+    "cloud_node": {
+      "node_id": "NODE-ZYR-CLO",
+      "role": "云内核节点",
+      "status": "UNREACHABLE",
+      "reason": "公网502/SSH阻断"
+    },
+    "feishu": {
+      "node_id": "NODE-LARK-SYNC",
+      "role": "飞书三端同步节点",
+      "status": "ACTIVE"
+    }
+  },
+  "whitelist": {
+    "policy": "同源节点准入白名单，非白名单节点拒绝握手",
+    "members": [
+      "NN-META-024",
+      "NN-OPS-018",
+      "NODE-LARK-SYNC"
+    ]
+  },
+  "sync_rules": {
+    "multi_window": "多窗口对账去重：先记后部署",
+    "truth_dedup": "同key真值存在=duplicate，不存在=synced",
+    "channel_priority": [
+      "lark三端通道",
+      "公网HTTPS通道(当前502)",
+      "SSH直连(已阻断)"
+    ],
+    "current_active": "lark三端通道"
+  },
+  "channel_status": {
+    "lark_cli": "AVAILABLE v1.0.94",
+    "public_https": "502_BAD_GATEWAY",
+    "ssh_direct": "BLOCKED_BY_POLICY"
+  },
+  "upgrade": {
+    "from": "V2.0-SYNC",
+    "to": "V3.0-COGNITIVE",
+    "date": "2026-09-14",
+    "added_layers": [
+      "cognitive_layer",
+      "healing_layer",
+      "stability_layer"
+    ],
+    "meta_rules": [
+      "MR-LOCAL-001",
+      "MR-LOCAL-002",
+      "MR-LOCAL-003"
+    ],
+    "basis": "metalaw.AUTO-EXECUTION-FLOW-A / AUTONOMOUS-CLOSED-LOOP v2.0"
+  },
+  "cognitive_layer": {
+    "status": "DRAFT",
+    "mechanism": "bias_audit",
+    "audit_types": [
+      "halo_effect",
+      "anchoring",
+      "confirmation",
+      "recency"
+    ],
+    "output": "audit_report -> truth"
+  },
+  "healing_layer": {
+    "status": "DRAFT",
+    "mechanism": "auto_heal_chain",
+    "chain": [
+      "detect",
+      "retry",
+      "fallback",
+      "alert",
+      "report"
+    ],
+    "reference": "self-healing.engine.v1_0_deployed"
+  },
+  "stability_layer": {
+    "status": "DRAFT",
+    "mechanism": "4dim_measure",
+    "dims": {
+      "resources": 30,
+      "services": 30,
+      "truths": 25,
+      "evolution_health": 15
+    },
+    "total": 100,
+    "reference": "STABILITY.MEASURE.*"
+  },
+  "meta_rules_local": [
+    {
+      "id": "MR-LOCAL-001",
+      "content": "凡写入真值必过认知审计（bias检测），审计记录入真值库"
+    },
+    {
+      "id": "MR-LOCAL-002",
+      "content": "凡检测到通道/服务异常，自动进入自愈链（重试→降级→告警→上报）"
+    },
+    {
+      "id": "MR-LOCAL-003",
+      "content": "每次闭环必输出四维稳态度量（资源/服务/真值/演化），M2单调收敛"
+    }
+  ]
+}

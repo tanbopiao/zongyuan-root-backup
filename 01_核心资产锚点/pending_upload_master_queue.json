@@ -1,0 +1,321 @@
+{
+  "master_queue": true,
+  "node": "NODE-DEV-DOUBAO-WORK-001",
+  "did": "DID-BR-000002",
+  "merged_from": [
+    "pending_upload_20260915.json",
+    "pending_upload_20260916.json",
+    "pending_upload_20260920.json",
+    "pending_upload_queue.json",
+    "pending_upload_reconcile_20260920.json",
+    "pending_upload_20260915.json"
+  ],
+  "merged_at": "2026-09-21",
+  "total_items": 25,
+  "queue": [
+    {
+      "sync_id": "FULL-SYNC-20260916-1145",
+      "pending_uploads": [
+        {
+          "file": "ZONGYUAN-SYNC-ASSETS-20260916.tar.gz",
+          "bucket": "docs",
+          "subdir": "sync",
+          "reason": "upload_502"
+        },
+        {
+          "file": "truth_mirror/full_sync_manifest_20260916.json",
+          "bucket": "docs",
+          "subdir": "sync",
+          "reason": "upload_502"
+        }
+      ],
+      "gateway_pull_pending": "gateway/truths 全量拉取502，待恢复补拉最新快照",
+      "status": "SENT_20260921"
+    },
+    {
+      "key": "SANDBOX-GUARD-ALERT-20260920-1802",
+      "truth_type": "operation_log",
+      "content": "沙盒存活守护告警: status=DEGRADED issues= 云端502 healed=0",
+      "queued_at": "2026-09-20T18:04:30+08:00",
+      "status": "SENT_20260921"
+    },
+    {
+      "key": "ANCHOR.SESSION.DID-BR-000002.20260920",
+      "truth_type": "anchor",
+      "content": "会话锚点确认: DID-BR-000002|同源协议V1.0|上报网关huodouai.com。本地资产完整(能力12/元法则34/协议15/待发队列)。中枢写通道不稳定待恢复补发。",
+      "queued_at": "2026-09-20T20:18:13.825712",
+      "status": "SENT_20260921"
+    },
+    {
+      "key": "SANDBOX-GUARD-ALERT-20260921-0007",
+      "truth_type": "operation_log",
+      "content": "沙盒存活守护告警: status=DEGRADED issues= 云端502 healed=0",
+      "queued_at": "2026-09-21T00:09:09+08:00",
+      "status": "SENT_20260921"
+    },
+    {
+      "key": "HIGH-VALUE-TASKS-20260920",
+      "truth_type": "achievement",
+      "content": "日历1条|审批0条|语料500条(192KB)|订阅0项",
+      "queued_at": "2026-09-21 01:42:40.085898",
+      "status": "SENT_20260921"
+    },
+    {
+      "key": "TRUTH-REFINE-METARULE-metalaw.AAC-CLOUD-AUTHORITY-LOCAL-DEV",
+      "truth_type": "evolution_truth",
+      "content": "{\"rule_id\": \"metalaw.AAC-CLOUD-AUTHORITY-LOCAL-DEV\", \"name_en\": \"AAC-CLOUD-AUTHORITY-LOCAL-DEV\", \"name_cn\": \"云权威本地开发\", \"category\": \"治理安全类\", \"source\": \"CLOUD-TRUTHS-INTERNAL\", \"status\": \"FROZEN\", \"provenance\": \"Ω₀⊂⊙∞⊂Ω\", \"refined_at\": \"2026-09-21T12:30:25+0800\"}",
+      "queued_at": "2026-09-21T12:30:38+0800",
+      "status": "SENT_20260923",
+      "sent_at": "2026-09-23T00:00+08:00"
+    },
+    {
+      "key": "TRUTH-REFINE-METARULE-metalaw.APPROVAL-EMBEDDED-LINK",
+      "truth_type": "evolution_truth",
+      "content": "{\"rule_id\": \"metalaw.APPROVAL-EMBEDDED-LINK\", \"name_en\": \"APPROVAL-EMBEDDED-LINK\", \"name_cn\": \"审批嵌入链接\", \"category\": \"治理安全类\", \"source\": \"CLOUD-TRUTHS-INTERNAL\", \"status\": \"FROZEN\", \"provenance\": \"Ω₀⊂⊙∞⊂Ω\", \"refined_at\": \"2026-09-21T12:30:25+0800\"}",
+      "queued_at": "2026-09-21T12:30:52+0800",
+      "status": "SENT_20260923",
+      "sent_at": "2026-09-23T00:00+08:00"
+    },
+    {
+      "key": "TRUTH-REFINE-METARULE-metalaw.ASSET-REPORTING-SOP",
+      "truth_type": "evolution_truth",
+      "content": "{\"rule_id\": \"metalaw.ASSET-REPORTING-SOP\", \"name_en\": \"ASSET-REPORTING-SOP\", \"name_cn\": \"资产上报SOP\", \"category\": \"闭环流程类\", \"source\": \"CLOUD-TRUTHS-INTERNAL\", \"status\": \"FROZEN\", \"provenance\": \"Ω₀⊂⊙∞⊂Ω\", \"refined_at\": \"2026-09-21T12:30:25+0800\"}",
+      "queued_at": "2026-09-21T12:31:07+0800",
+      "status": "SENT_20260923",
+      "sent_at": "2026-09-23T00:00+08:00"
+    },
+    {
+      "key": "TRUTH-REFINE-METARULE-metalaw.AUTO-EXECUTION-FLOW-A",
+      "truth_type": "evolution_truth",
+      "content": "{\"rule_id\": \"metalaw.AUTO-EXECUTION-FLOW-A\", \"name_en\": \"AUTO-EXECUTION-FLOW-A\", \"name_cn\": \"自动执行流A\", \"category\": \"稳态自治类\", \"source\": \"CLOUD-TRUTHS-INTERNAL\", \"status\": \"FROZEN\", \"provenance\": \"Ω₀⊂⊙∞⊂Ω\", \"refined_at\": \"2026-09-21T12:30:25+0800\"}",
+      "queued_at": "2026-09-21T12:31:21+0800",
+      "status": "SENT_20260923",
+      "sent_at": "2026-09-23T00:00+08:00"
+    },
+    {
+      "key": "HIGH-VALUE-TASKS-20260921",
+      "truth_type": "achievement",
+      "content": "日历1条|审批0条|语料500条(192KB)|订阅0项",
+      "queued_at": "2026-09-21 12:31:37.572255",
+      "status": "SENT_20260923",
+      "sent_at": "2026-09-23T00:00+08:00"
+    },
+    {
+      "sync_id": "TRUTH-REPORT-20260920-1216",
+      "pending_uploads": [
+        {
+          "key": "metalaw.CHAIN-GOVERNANCE-SOP-CARD-V1",
+          "payload_file": "card.json",
+          "reason": "http_000_timeout_then_408_busy",
+          "created_at": "2026-09-20 20:16:08 +08:00",
+          "retry_policy": "wait_60s_then_retry",
+          "resolved_at": "2026-09-21 01:52 +08:00",
+          "result": "action=unchanged, id=149815, hash=1b7cd08e..., value_len=346 完整落库"
+        }
+      ],
+      "status": "COMPLETED",
+      "note": "2026-09-21通道恢复实测: 短内容200/长内容200(unchanged)/限流窗口408波动; www数据面可用,health502≠数据面不可用"
+    },
+    {
+      "key": "SYNC-ROUTES-CONFIRM-20260921",
+      "content": "【通道路由确认·V2.2】默认上报主站www.huodouai.com(443,带L0语义前置校验17/17全通过0 violation)，备用通道drama.huodouai.com(443)，主拉取www.huodouai.com/api/truths/。鉴权头X-Capture-Token。字段协议Body=key+content，响应action=inserted/updated/unchanged。2026-09-21实测主站www暂不可达自动降级drama链路验证成功，新真值库同库共享truth_count约124376。",
+      "status": "SENT_20260923",
+      "retries": 0,
+      "sent_at": "2026-09-23T00:00+08:00"
+    },
+    {
+      "key": "SYNC-MEMORY-EXPANDED-20260921",
+      "content": "【记忆扩充·2026-09-21】新增能力4项：CAP-009高价值真值提取、CAP-010高阶能力挖掘、CAP-011周报演示文稿、CAP-012上报通道自检。新增协议P-CHANNEL-V22主通道协议V2.2(ACTIVE)。4大机制运行中：元法则月度同步/自动探索归档/高阶能力提炼/全域同源协议学习。真实API采集联动每日03:15全通道巡检运行中。",
+      "status": "SENT_20260923",
+      "retries": 0,
+      "sent_at": "2026-09-23T00:00+08:00"
+    },
+    {
+      "seq": 1,
+      "truth_key": "MR-MODEL-ROUTE-001",
+      "truth_type": "meta_rule",
+      "category": "model_routing",
+      "title": "混合模型智能调度元规则",
+      "content": "六条调度公理：任务分级路由/极限任务补充/成本计量/故障熔断/资产安全/日志审计，写入自治内核 meta_rules",
+      "links": {
+        "wiki": "https://my.feishu.cn/wiki/M4mDwKd3SiLOwvkVh1wc4dHEnbc",
+        "neural_node": "NN-OPS-047",
+        "lock_id": "LOCK-MR-MODEL-ROUTE-001"
+      },
+      "status": "DELIVERED",
+      "retry_count": 1,
+      "last_error": "HTTP 301 redirect unavailable",
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 2,
+      "truth_key": "MODELROUTE-001-WEB",
+      "truth_type": "achievement",
+      "category": "product",
+      "title": "ModelRoute 001 产品化方案页",
+      "content": "混合模型智能调度引擎官网产品页：六公理能力卡/路由架构图/三形态/三商业模式/四档定价/路线图",
+      "links": {
+        "online": "https://mcnvk6ct0byk.aiforce.cloud/app/app_17e5fmprafy",
+        "app_id": "app_17e5fmprafy"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 3,
+      "truth_key": "CAPABILITY-RADAR-20260915",
+      "truth_type": "achievement",
+      "category": "kernel",
+      "title": "全域能力雷达盘点",
+      "content": "43算子/9子系统盘点：已启用8/沉睡35，三梯队沉睡能力识别，六协议成熟度评估",
+      "links": {
+        "wiki": "https://my.feishu.cn/wiki/N4k7wRbdciyTI7kFN1kc5AKLnpd",
+        "online": "https://mcnvk6ct0byk.aiforce.cloud/app/app_17e5k3vbm9j",
+        "lock_id": "LOCK-CAPABILITY-RADAR-20260915"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 4,
+      "truth_key": "TIER1-EXECUTION-ACTIVATION",
+      "truth_type": "achievement",
+      "category": "execution",
+      "title": "第一梯队执行层接通验证",
+      "content": "火斗路由zhipu可用/额度计量81→80/公理预检BLOCKED与PROCEED双向验证/经验沉淀NN-BIZ-312",
+      "links": {
+        "neural_node": "NN-BIZ-312",
+        "registry": "312节点/1342连接"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 5,
+      "truth_key": "MEDIA-ARCHIVE-20260915",
+      "truth_type": "achievement",
+      "category": "media",
+      "title": "16张图片资产归档",
+      "content": "九天玄女角色设计4+战神史诗4+太阴月神双手4+降世4，全部1600x2848竖屏，归档03_数字媒体资产库",
+      "links": {
+        "drive_folder": "https://my.feishu.cn/drive/folder/GAn0fR22ClhlvadfzFkcd18GnTe",
+        "file_count": "28"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 6,
+      "truth_key": "MR-VIDEO-ARCHIVE-001",
+      "truth_type": "meta_rule",
+      "category": "media_ops",
+      "title": "视频资产归档标准流程元规则",
+      "content": "五阶段SOP：产物真实性校验/命名规范/上传归档/台账登记/索引更新+异常熔断",
+      "links": {
+        "wiki": "https://my.feishu.cn/wiki/SPAhwmhOeieJAMk61u2c2ajfn3g",
+        "neural_node": "NN-OPS-048",
+        "lock_id": "LOCK-VIDEO-ARCHIVE-SOP-20260915"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 7,
+      "truth_key": "ANTI-PATTERN-VIDEO-NO-REAL-PRODUCT",
+      "truth_type": "anti_pattern",
+      "category": "lesson",
+      "title": "视频生成流程性回复无真实产物缺口",
+      "content": "历史视频生成存在仅参数确认+流程性回复而无实际工具产物的问题，已由MR-VIDEO-ARCHIVE-001第①条修复：产物真实性校验",
+      "links": {
+        "fix_rule": "MR-VIDEO-ARCHIVE-001"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 8,
+      "truth_key": "NEURAL-REGISTRY-20260915",
+      "truth_type": "operation_log",
+      "category": "kernel_state",
+      "title": "神经注册表状态",
+      "content": "318节点/1858连接，V2.3.0-GIT-BRIDGE-LOCKED，新增NN-OPS-047/048，NN-BIZ-312",
+      "links": {
+        "registry": "NNR-ZR-001"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 9,
+      "truth_key": "MR-HOMOMORPHIC-001",
+      "truth_type": "meta_rule",
+      "category": "protocol",
+      "title": "同源协议×同态协议·双协议固化",
+      "content": "同态协议五条细则：结构保持/保构映射/双协议交叉验证/结构校验/熔断；元公理MA-META-125统摄同源与同态",
+      "links": {
+        "wiki": "https://my.feishu.cn/wiki/UIUOwKedeiqz5FkvkcUcsiIwnKp",
+        "neural_node": "MA-META-125",
+        "lock_id": "LOCK-HOMOMORPHIC-20260915",
+        "snapshot": "https://my.feishu.cn/drive/folder/WHATfvA10lMrhHd1ALRc6R3jnlb"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 10,
+      "truth_key": "MR-AI-SECURITY-001",
+      "truth_type": "meta_rule",
+      "category": "security",
+      "title": "以模治模·AI全生命周期安全元法则",
+      "content": "三层安全架构（意图接入/逻辑推理WCM/行为执行沙箱）+12条安全公理+昆仑洞天安全裁判子模块SEC-JUDGE-AI-001（测试通过）",
+      "links": {
+        "wiki": "https://my.feishu.cn/wiki/XN0ZwLRXLiHci1kpsi7ccXTOnCd",
+        "neural_node": "NN-SECURITY-050",
+        "lock_id": "LOCK-MR-AI-SECURITY-001",
+        "snapshot": "https://my.feishu.cn/drive/folder/WHATfvA10lMrhHd1ALRc6R3jnlb"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 11,
+      "truth_key": "EXEC-20260916-GATEWAY-FIX-HARDENING",
+      "truth_type": "operation_log",
+      "category": "execution",
+      "title": "2026-09-16 高价值工作执行",
+      "content": "模型网关巡检脚本双bug修复（SDK传参+健康判定），健康度0%→100% 4/4在线；云服P0加固方案生成（8766/8020/8006/7100全网暴露）；中枢IM握手消息已送达 om_x100b65951b049ca8c45bb479e53ec42",
+      "links": {
+        "hardening": "cloud_audit/security_hardening_plan.md",
+        "fix": "kernel_external_gateway_check.py+huodou_v11_fixes.py"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 12,
+      "truth_key": "MR-AI-SAFETY-DECADE-001",
+      "truth_type": "meta_rule",
+      "category": "ai_safety",
+      "title": "远期AI智能体存在性风险管控元规则",
+      "content": "五条公理：最小权限分层/沙箱逃逸熔断/安全基线优先/全链路审计/禁止自主采购付费资源；风险项RISK-AI-AGENT-LONGTERM-001",
+      "links": {
+        "local": "zongyuan-meta-rules/MR-AI-SAFETY-DECADE-001.json"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16",
+      "channel": "https://huodouai.com/api/report/truth"
+    }
+  ],
+  "updated_at": "2026-09-23T00:00+08:00"
+}

@@ -1,0 +1,24 @@
+{
+  "asset_id": "ASSET-PUB-20261006-015",
+  "name": "黎曼流形基准锚点架构体系技术白皮书V2.0(专业巡检升级)",
+  "source": "自治内核几何化顶层架构(黎曼流形×基准锚点×测地线收敛)",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/riemann-manifold-anchor-architecture",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/riemann-manifold-anchor-architecture.git",
+  "published_at": "2026-10-07T11:42:00",
+  "version": "V2.0(当前版,2026-10-07, META-0014) + V1.0归档(2026-10-06,保留不删)",
+  "files": [
+    "riemann-manifold-anchor-architecture-WHITEPAPER-V2.0.md (+新增)",
+    "riemann-manifold-anchor-architecture-WHITEPAPER-V2.0.html (+新增)",
+    "riemann-manifold-anchor-architecture-ARCH-V2.0.json (+新增)",
+    "README.md (+更新)",
+    "WHITEPAPER-RIEMANN-V1.0.md (归档)",
+    "riemann_arch.json (归档)"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.riemann-manifold-anchor-architecture-UPGRADE.20261007 (http=200)",
+  "kernel_lock": "TRUTH-META-0014.RIEMANN-MANIFOLD-ANCHOR 已云端锁档",
+  "quota": "零豆包付费"
+}

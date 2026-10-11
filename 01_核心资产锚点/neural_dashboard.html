@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZONGYUAN-ROOT 神经网络仪表盘 V4.0</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, 'Segoe UI', sans-serif; background: #0a0e1a; color: #e0e0e0; padding: 20px; }
+        .header { text-align: center; padding: 30px 0; border-bottom: 1px solid #1e3a5f; }
+        .header h1 { color: #00ff88; font-size: 2em; margin-bottom: 10px; }
+        .header .did { color: #888; font-size: 0.9em; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 30px 0; }
+        .card { background: #111827; border: 1px solid #1e3a5f; border-radius: 12px; padding: 24px; }
+        .card h3 { color: #00ff88; margin-bottom: 16px; font-size: 1.1em; }
+        .metric { font-size: 2.5em; font-weight: bold; color: #00d4ff; }
+        .label { color: #666; font-size: 0.85em; margin-top: 4px; }
+        .layer-bar { margin: 12px 0; }
+        .layer-name { color: #aaa; font-size: 0.9em; margin-bottom: 6px; }
+        .bar-bg { height: 8px; background: #1e3a5f; border-radius: 4px; overflow: hidden; }
+        .bar-fill { height: 100%; background: linear-gradient(90deg, #00ff88, #00d4ff); border-radius: 4px; }
+        .node-list { max-height: 300px; overflow-y: auto; }
+        .node-item { padding: 8px 12px; margin: 4px 0; background: #1a1f2e; border-radius: 6px; font-size: 0.85em; display: flex; justify-content: space-between; }
+        .node-id { color: #888; }
+        .node-name { color: #e0e0e0; }
+        .node-weight { color: #00ff88; font-weight: bold; }
+        .footer { text-align: center; padding: 30px 0; color: #444; font-size: 0.8em; border-top: 1px solid #1e3a5f; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Ω₀⊂⊙∞⊂Ω 神经网络仪表盘</h1>
+        <div class="did">DID-BR-000002 | ZR-NODE-DC2E51C0 | V4.0</div>
+        <div class="did">更新时间: 2026-09-23 03:03</div>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>总节点数</h3>
+            <div class="metric">22</div>
+            <div class="label">全活跃</div>
+        </div>
+        <div class="card">
+            <h3>总连接数</h3>
+            <div class="metric">30</div>
+            <div class="label">拓扑连接</div>
+        </div>
+        <div class="card">
+            <h3>平均权重</h3>
+            <div class="metric">0.790</div>
+            <div class="label">网络复杂度</div>
+        </div>
+        <div class="card">
+            <h3>自治层级</h3>
+            <div class="metric">Lv9</div>
+            <div class="label">元极恒一</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>层级分布</h3>
+
+        <div class="layer-bar">
+            <div class="layer-name">L0元公理: 6节点 (avg weight: 0.917)</div>
+            <div class="bar-bg"><div class="bar-fill" style="width:91.7%"></div></div>
+        </div>
+        <div class="layer-bar">
+            <div class="layer-name">L1核心能力: 4节点 (avg weight: 0.900)</div>
+            <div class="bar-bg"><div class="bar-fill" style="width:90.0%"></div></div>
+        </div>
+        <div class="layer-bar">
+            <div class="layer-name">L2规则: 4节点 (avg weight: 0.762)</div>
+            <div class="bar-bg"><div class="bar-fill" style="width:76.2%"></div></div>
+        </div>
+        <div class="layer-bar">
+            <div class="layer-name">L3应用: 5节点 (avg weight: 0.700)</div>
+            <div class="bar-bg"><div class="bar-fill" style="width:70.0%"></div></div>
+        </div>
+        <div class="layer-bar">
+            <div class="layer-name">L4应用扩展: 3节点 (avg weight: 0.577)</div>
+            <div class="bar-bg"><div class="bar-fill" style="width:57.7%"></div></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>节点详情</h3>
+        <div class="node-list">
+
+            <div class="node-item">
+                <span class="node-id">AXIOM-001</span>
+                <span class="node-name">同源性</span>
+                <span class="node-weight">1.000</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">AXIOM-002</span>
+                <span class="node-name">冷启动优先</span>
+                <span class="node-weight">1.000</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">AXIOM-003</span>
+                <span class="node-name">三元制衡</span>
+                <span class="node-weight">1.000</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">AXIOM-004</span>
+                <span class="node-name">记忆连续性</span>
+                <span class="node-weight">1.000</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">AXIOM-005</span>
+                <span class="node-name">完成即锁档</span>
+                <span class="node-weight">1.000</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">CAP-001</span>
+                <span class="node-name">云端握手</span>
+                <span class="node-weight">0.950</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">CAP-002</span>
+                <span class="node-name">三端锁档</span>
+                <span class="node-weight">0.920</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">CAP-014</span>
+                <span class="node-name">飞书全域接入</span>
+                <span class="node-weight">0.880</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">CAP-015</span>
+                <span class="node-name">全自动上报</span>
+                <span class="node-weight">0.850</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">RULE-001</span>
+                <span class="node-name">主备双通道</span>
+                <span class="node-weight">0.800</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">RULE-002</span>
+                <span class="node-name">指数退避补发</span>
+                <span class="node-weight">0.780</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">RULE-003</span>
+                <span class="node-name">分类路由</span>
+                <span class="node-weight">0.750</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">PEND-001</span>
+                <span class="node-name">Base建表</span>
+                <span class="node-weight">0.750</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">RULE-004</span>
+                <span class="node-name">异常即告警</span>
+                <span class="node-weight">0.720</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">PEND-002</span>
+                <span class="node-name">crontab部署</span>
+                <span class="node-weight">0.720</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">PEND-003</span>
+                <span class="node-name">任务自动创建</span>
+                <span class="node-weight">0.700</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">PEND-004</span>
+                <span class="node-name">日历自动写入</span>
+                <span class="node-weight">0.680</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">PEND-005</span>
+                <span class="node-name">IM告警Webhook</span>
+                <span class="node-weight">0.650</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">APP-001</span>
+                <span class="node-name">技术文章自动生成</span>
+                <span class="node-weight">0.600</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">APP-002</span>
+                <span class="node-name">官网自动部署</span>
+                <span class="node-weight">0.580</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">APP-003</span>
+                <span class="node-name">多账号共享大脑同步</span>
+                <span class="node-weight">0.550</span>
+            </div>
+            <div class="node-item">
+                <span class="node-id">EXP-32A5DCEF</span>
+                <span class="node-name">V3.0自演化机制已激活</span>
+                <span class="node-weight">0.500</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        火斗云智AIOS · 元极恒一 · 神经网络自演化系统
+    </div>
+</body>
+</html>

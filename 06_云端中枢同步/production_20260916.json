@@ -1,0 +1,33 @@
+{
+  "report_id": "PRODUCTION-20260916",
+  "did": "DID-BR-000002",
+  "omega": "Ω₀⊂⊙∞⊂Ω",
+  "generated_at": "2026-09-16T12:09:02.318223+00:00",
+  "truth_extract": {
+    "ok": true,
+    "info": "/home/user/Doubao/chats/38438491307070978/model_training/truth_training_corpus_2"
+  },
+  "corpus_analysis": {
+    "corpus": "truth_training_corpus_20260916.jsonl",
+    "total": 438,
+    "top_topics": {
+      "真值": 438,
+      "锁档": 203,
+      "内核": 76,
+      "安全": 20,
+      "归档": 20,
+      "协议": 15,
+      "模型": 11,
+      "机制": 11
+    }
+  },
+  "approval_pending": {
+    "count": 0,
+    "titles": []
+  },
+  "registry": {
+    "total": 11,
+    "capabilities": 11
+  },
+  "report_ok": true
+}

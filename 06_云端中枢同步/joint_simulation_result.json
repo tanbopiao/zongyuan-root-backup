@@ -1,0 +1,18 @@
+{
+ "version": "JOINT-SIM-V1",
+ "tasks": 12,
+ "workers": 7,
+ "routed_domains": {
+  "production": 2,
+  "security": 2,
+  "meta": 2,
+  "education": 2,
+  "character": 1,
+  "user_experience": 1,
+  "ops": 2
+ },
+ "completed": 12,
+ "domain_ok": 12,
+ "domain_violation": 0,
+ "assertions": "ALL_PASSED"
+}

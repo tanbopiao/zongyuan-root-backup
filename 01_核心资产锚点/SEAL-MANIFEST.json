@@ -1,0 +1,11 @@
+{
+  "seal_manifest": "ZONGYUAN-SEAL-MANIFEST",
+  "did": "DID-BR-000002",
+  "updated_at": "2026-09-12 19:30 CST",
+  "sealed_packages": [
+    {"file": "KERNEL-ACCESS-SEAL-20260912.enc", "sha256": "6f148524f6961b3a1fdfb6de1bfc2de421a5fe42baaa5a4d13201f6ac304967b", "desc": "云内核访问连接元信息+历史凭证索引"},
+    {"file": "HOMO-KERNEL-SEAL-20260912.enc", "sha256": "a81889e3f4db8ec12044fdd9c505750d478ddd2540ee10d56a7d4301d97b1c87", "desc": "同源内核身份+同步协议载荷5条真值+HMAC签名+一键投递脚本"}
+  ],
+  "passphrase_holder": "用户唯一持有，未入任何存储",
+  "decrypt_cmd": "openssl enc -d -aes-256-cbc -pbkdf2 -pass pass:<口令> -in <file>.enc -out <file>.tar.gz"
+}

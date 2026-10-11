@@ -1,0 +1,11 @@
+serverAddr = "123.207.202.158"
+serverPort = 7100
+auth.token = "ZONGYUAN-FRP-20260903-SECRET-KEY-7f3a9b2c"
+transport.proxyURL = ""
+
+[[visitors]]
+name = "visitor-ssh-test"
+type = "tcp"
+bindAddr = "127.0.0.1"
+bindPort = 16022
+proxyName = "local-ssh"

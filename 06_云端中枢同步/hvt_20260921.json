@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-09-21T04:31:37.587005+00:00",
+  "did": "DID-BR-000002",
+  "omega": "Ω₀⊂⊙∞⊂Ω",
+  "results": {
+    "calendar": {
+      "ok": true,
+      "count": 1,
+      "events": [
+        "ZONGYUAN-ROOT 每日内核进化"
+      ]
+    },
+    "approval": {
+      "ok": true,
+      "count": 0,
+      "titles": []
+    },
+    "corpus": {
+      "ok": true,
+      "count": 500,
+      "kb": 192,
+      "ready": true
+    },
+    "subscription": {
+      "ok": true,
+      "count": 0,
+      "active": []
+    }
+  },
+  "report_ok": false,
+  "summary": "日历1条|审批0条|语料500条(192KB)|订阅0项"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "file": "media_assets/20260915_archive/KF-XUANNV_design_01.jpg",
+    "ok": true,
+    "ep": "cap0916197"
+  },
+  {
+    "file": "media_assets/20260915_archive/KF-XUANNV_design_02.jpg",
+    "ok": true,
+    "ep": "cap0916198"
+  },
+  {
+    "file": "media_assets/20260915_archive/KF-XUANNV_design_03.jpg",
+    "ok": true,
+    "ep": "cap0916199"
+  },
+  {
+    "file": "media_assets/20260915_archive/KF-XUANNV_design_04.jpg",
+    "ok": true,
+    "ep": "cap0916200"
+  },
+  {
+    "file": "media_assets/20260915_archive/KF-XUANNV_epic_01.jpg",
+    "ok": true,
+    "ep": "cap0916201"
+  },
+  {
+    "file": "media_assets/20260915_archive/KF-XUANNV_epic_02.jpg",
+    "ok": true,
+    "ep": "cap0916202"
+  },
+  {
+    "file": "media_assets/20260915_archive/KF-XUANNV_epic_03.jpg",
+    "ok": false,
+    "ep": "parse_err"
+  },
+  {
+    "file": "media_assets/20260915_archive/KF-XUANNV_epic_04.jpg",
+    "ok": false,
+    "ep": "parse_err"
+  },
+  {
+    "file": "media_assets/20260915_archive/TAIYIN_descend_01.jpg",
+    "ok": false,
+    "ep": "parse_err"
+  },
+  {
+    "file": "media_assets/20260915_archive/TAIYIN_descend_02.jpg",
+    "ok": true,
+    "ep": "cap0916203"
+  },
+  {
+    "file": "media_assets/20260915_archive/TAIYIN_descend_03.jpg",
+    "ok": true,
+    "ep": "cap0916204"
+  },
+  {
+    "file": "media_assets/20260915_archive/TAIYIN_descend_04.jpg",
+    "ok": true,
+    "ep": "cap0916205"
+  },
+  {
+    "file": "media_assets/20260915_archive/TAIYIN_hands_01.jpg",
+    "ok": true,
+    "ep": "cap0916206"
+  },
+  {
+    "file": "media_assets/20260915_archive/TAIYIN_hands_02.jpg",
+    "ok": true,
+    "ep": "cap0916207"
+  },
+  {
+    "file": "media_assets/20260915_archive/TAIYIN_hands_03.jpg",
+    "ok": true,
+    "ep": "cap0916208"
+  },
+  {
+    "file": "media_assets/20260915_archive/TAIYIN_hands_04.jpg",
+    "ok": true,
+    "ep": "cap0916209"
+  },
+  {
+    "file": "media_assets/20260916_archive/XUANNV_kf_cand01.jpg",
+    "ok": true,
+    "ep": "cap0916210"
+  },
+  {
+    "file": "media_assets/20260916_archive/XUANNV_kf_cand02.jpg",
+    "ok": true,
+    "ep": "cap0916211"
+  },
+  {
+    "file": "media_assets/20260916_archive/XUANNV_kf_cand02_fixed.jpg",
+    "ok": true,
+    "ep": "cap0916212"
+  },
+  {
+    "file": "media_assets/20260916_archive/XUANNV_kf_cand02_regen.jpg",
+    "ok": true,
+    "ep": "cap0916213"
+  },
+  {
+    "file": "media_assets/20260916_archive/XUANNV_kf_cand03.jpg",
+    "ok": true,
+    "ep": "cap0916214"
+  },
+  {
+    "file": "media_assets/20260916_archive/XUANNV_kf_cand04.jpg",
+    "ok": true,
+    "ep": "cap0916215"
+  },
+  {
+    "file": "media_assets/20260916_archive/XUANNV_kf_next01.jpg",
+    "ok": true,
+    "ep": "cap0916216"
+  },
+  {
+    "file": "media_assets/20260916_archive/XUANNV_kf_next01_regen.jpg",
+    "ok": true,
+    "ep": "-"
+  },
+  {
+    "file": "media_assets/EP04_KF1.jpg",
+    "ok": true,
+    "ep": "cap0916217"
+  },
+  {
+    "file": "media_assets/EP04_KF2.jpg",
+    "ok": true,
+    "ep": "cap0916218"
+  },
+  {
+    "file": "media_assets/EP04_KF3.jpg",
+    "ok": true,
+    "ep": "cap0916219"
+  },
+  {
+    "file": "media_assets/EP05_KF1.jpg",
+    "ok": true,
+    "ep": "cap0916220"
+  },
+  {
+    "file": "media_assets/EP05_KF2.jpg",
+    "ok": true,
+    "ep": "cap0916221"
+  },
+  {
+    "file": "media_assets/EP05_KF3.jpg",
+    "ok": true,
+    "ep": "cap0916222"
+  },
+  {
+    "file": "media_assets/EP06_KF1.jpg",
+    "ok": true,
+    "ep": "cap0916223"
+  },
+  {
+    "file": "media_assets/EP06_KF2.jpg",
+    "ok": true,
+    "ep": "cap0916224"
+  },
+  {
+    "file": "media_assets/EP06_KF3.jpg",
+    "ok": true,
+    "ep": "cap0916225"
+  },
+  {
+    "file": "media_assets/S4EP01_KF1.jpg",
+    "ok": true,
+    "ep": "cap0916226"
+  },
+  {
+    "file": "media_assets/S4EP01_KF2.jpg",
+    "ok": true,
+    "ep": "cap0916227"
+  },
+  {
+    "file": "media_assets/S4EP01_KF3.jpg",
+    "ok": false,
+    "ep": "parse_err"
+  }
+]

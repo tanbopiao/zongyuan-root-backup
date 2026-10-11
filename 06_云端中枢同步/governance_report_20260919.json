@@ -1,0 +1,123 @@
+{
+  "report_id": "GOVERNANCE-20260919",
+  "generated_at": "2026-09-19T19:18:29+08:00",
+  "last_run": "",
+  "health": {
+    "total": 45772,
+    "prefix_kinds": 4348,
+    "run_observation_share": 79.0,
+    "legal_coverage": {
+      "meta_law": 133,
+      "rule": 171,
+      "config": 22,
+      "decision": 43,
+      "data": 19,
+      "creative": 17,
+      "risk": 10,
+      "protocol": 114,
+      "unknown": 0
+    },
+    "top10": [
+      [
+        "PERCEPTION",
+        5481
+      ],
+      [
+        "predictive-engine",
+        4706
+      ],
+      [
+        "INTELLIGENCE_CALL_MONITOR",
+        4407
+      ],
+      [
+        "EXPERIENCE",
+        3872
+      ],
+      [
+        "HEARTBEAT",
+        3570
+      ],
+      [
+        "HEALTH",
+        3225
+      ],
+      [
+        "observation",
+        1962
+      ],
+      [
+        "auto_scaling",
+        1450
+      ],
+      [
+        "STABILITY",
+        1267
+      ],
+      [
+        "EXT",
+        909
+      ]
+    ]
+  },
+  "reconcile": {
+    "cloud": 45772,
+    "local": 38429,
+    "local_missing": 4,
+    "filled": [
+      "inserted"
+    ]
+  },
+  "cleanup": {
+    "invalid_count": 200,
+    "proposal": "inserted",
+    "invalid_samples": [
+      {
+        "key": "ADAPTER.TEST.PLURAL_ENDPOINT",
+        "reason": "匹配模式 TEST\\."
+      },
+      {
+        "key": "CHANNEL.PROBE.20260916",
+        "reason": "匹配模式 \\.PROBE\\."
+      },
+      {
+        "key": "CICD.TEST.1789686222",
+        "reason": "匹配模式 TEST\\."
+      },
+      {
+        "key": "CICD.TEST.1789686521",
+        "reason": "匹配模式 TEST\\."
+      },
+      {
+        "key": "CLASSIFICATION.....1789241725",
+        "reason": "匹配模式 \\.\\."
+      },
+      {
+        "key": "CLASSIFICATION.....1789245549",
+        "reason": "匹配模式 \\.\\."
+      },
+      {
+        "key": "CLASSIFICATION.....1789266790",
+        "reason": "匹配模式 \\.\\."
+      },
+      {
+        "key": "CLASSIFICATION.....1789267746",
+        "reason": "匹配模式 \\.\\."
+      },
+      {
+        "key": "CLASSIFICATION.....1789272321",
+        "reason": "匹配模式 \\.\\."
+      },
+      {
+        "key": "CLASSIFICATION.....1789278879",
+        "reason": "匹配模式 \\.\\."
+      }
+    ]
+  },
+  "next_actions": [
+    "本地决策记录批量提炼DECISION类",
+    "云端独有增量纳入训练数据",
+    "9120挂载主域名后全量读并回",
+    "持续观察风险/创意/数据类覆盖"
+  ]
+}

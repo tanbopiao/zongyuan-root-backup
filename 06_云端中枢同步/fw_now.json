@@ -1,0 +1,277 @@
+{
+    "TotalCount": 30,
+    "FirewallRuleSet": [
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8766",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "视频"
+        },
+        {
+            "AppType": "Linux 登录 (22)",
+            "Protocol": "TCP",
+            "Port": "22",
+            "CidrBlock": "101.201.214.131/32",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "ZONGYUAN-ROOT SSH"
+        },
+        {
+            "AppType": "HTTPS (443)",
+            "Protocol": "TCP",
+            "Port": "443",
+            "CidrBlock": "101.201.214.131/32",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "ZONGYUAN-ROOT HTTPS"
+        },
+        {
+            "AppType": "HTTP (80)",
+            "Protocol": "TCP",
+            "Port": "80",
+            "CidrBlock": "101.201.214.131/32",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "ZONGYUAN-ROOT HTTP"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8020",
+            "CidrBlock": "",
+            "Ipv6CidrBlock": "::/0",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "政务"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8006",
+            "CidrBlock": "",
+            "Ipv6CidrBlock": "::/0",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": ""
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "7100",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "frps"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "7100",
+            "CidrBlock": "",
+            "Ipv6CidrBlock": "::/0",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "frps"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8017",
+            "CidrBlock": "",
+            "Ipv6CidrBlock": "::/0",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "本地aios"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "9197",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "远程推送"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "5001",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "HRM-Agent"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "5000",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "ROOT: ⊙∞-ZONGYUAN-ROOT"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8866",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "希尔伯特场AI"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "9000",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "本源内核"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8088",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "Dify"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8899",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "实施交互"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "9999",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "AI"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "3000",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "火斗云智webui"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "3000",
+            "CidrBlock": "",
+            "Ipv6CidrBlock": "::/0",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "火斗云智webui"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8080",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "火斗云智AI智能体"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8080",
+            "CidrBlock": "",
+            "Ipv6CidrBlock": "::/0",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "火斗云智AIOS外网访问智能体"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "38202",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "OpenClaw WebUI"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "29720",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": ""
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "29720",
+            "CidrBlock": "",
+            "Ipv6CidrBlock": "::/0",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": ""
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8000",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "火斗云智AIOS外网访问"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8888",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "宝塔Linux面板默认端口"
+        },
+        {
+            "AppType": "HTTP (80)",
+            "Protocol": "TCP",
+            "Port": "80",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "Web服务HTTP (80)，如 Apache、Nginx"
+        },
+        {
+            "AppType": "HTTPS (443)",
+            "Protocol": "TCP",
+            "Port": "443",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "Web服务HTTPS (443)，如 Apache、Nginx"
+        },
+        {
+            "AppType": "Linux 登录 (22)",
+            "Protocol": "TCP",
+            "Port": "22",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "Linux SSH登录"
+        },
+        {
+            "AppType": "Ping",
+            "Protocol": "ICMP",
+            "Port": "ALL",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "通过Ping测试网络连通性 (放通ALL ICMP)"
+        }
+    ],
+    "FirewallVersion": 38,
+    "RequestId": "e8d55563-007f-45c8-b5ab-41d81fea5136"
+}

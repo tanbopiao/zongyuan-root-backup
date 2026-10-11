@@ -1,0 +1,209 @@
+[
+ {
+  "key": "MR-007_memory_fuse"
+ },
+ {
+  "key": "MR-008_ssh_fallback"
+ },
+ {
+  "key": "MR-009.TRUTH_ABSORBER.DEPLOYED"
+ },
+ {
+  "key": "MR-009_gateway_self_healing"
+ },
+ {
+  "key": "MR-010.DUAL_COMPUTE_SCHEDULER.DEPLOYED"
+ },
+ {
+  "key": "MR-010_CENTRAL_DISPATCH_ONLY"
+ },
+ {
+  "key": "MR-011.STABILITY_EVOLUTION.DEPLOYED"
+ },
+ {
+  "key": "MR-012.KERNEL_BUS.DEPLOYED"
+ },
+ {
+  "key": "MR-013.TRUTH_UNIFICATION.DEPLOYED"
+ },
+ {
+  "key": "MR-014.METACOGNITION.DEPLOYED"
+ },
+ {
+  "key": "MR-015.ACTIVE_TRUTH_GENERATOR.DEPLOYED"
+ },
+ {
+  "key": "MR-016.THINKING_EVOLUTION.DEPLOYED"
+ },
+ {
+  "key": "MR-017.SELF_DEVELOPMENT.DEPLOYED"
+ },
+ {
+  "key": "MR-018.MULTI_NODE.DEPLOYED"
+ },
+ {
+  "key": "MR-019.LONG_TERM_MEMORY.DEPLOYED"
+ },
+ {
+  "key": "MR-020.META_KERNEL.DEPLOYED.EVOLUTION_PLAN_COMPLETE"
+ },
+ {
+  "key": "MR-020.PLAN.META_HENGYI_KERNEL.20260915"
+ },
+ {
+  "key": "MR-027.QUALITY.CONTROL.METALAW"
+ },
+ {
+  "key": "MR-028.CINEMATIC.DRAMA.PRODUCTION.METALAW"
+ },
+ {
+  "key": "MR-029"
+ },
+ {
+  "key": "MR-030"
+ },
+ {
+  "key": "MR-031"
+ },
+ {
+  "key": "MR-032"
+ },
+ {
+  "key": "MR-033"
+ },
+ {
+  "key": "MR-034"
+ },
+ {
+  "key": "MR-035"
+ },
+ {
+  "key": "MR-036"
+ },
+ {
+  "key": "MR-037"
+ },
+ {
+  "key": "MR-038"
+ },
+ {
+  "key": "MR-039"
+ },
+ {
+  "key": "MR-040"
+ },
+ {
+  "key": "MR-041"
+ },
+ {
+  "key": "MR-042"
+ },
+ {
+  "key": "MR-043"
+ },
+ {
+  "key": "MR-044"
+ },
+ {
+  "key": "MR-045"
+ },
+ {
+  "key": "MR-046"
+ },
+ {
+  "key": "MR-047"
+ },
+ {
+  "key": "MR-048"
+ },
+ {
+  "key": "MR-049"
+ },
+ {
+  "key": "MR-049.SERVICE.MERGE.SOLIDIFICATION"
+ },
+ {
+  "key": "MR-050"
+ },
+ {
+  "key": "MR-050.ACHIEVEMENT.SOLIDIFICATION"
+ },
+ {
+  "key": "MR-051"
+ },
+ {
+  "key": "MR-052"
+ },
+ {
+  "key": "MR-053"
+ },
+ {
+  "key": "MR-054"
+ },
+ {
+  "key": "MR-055"
+ },
+ {
+  "key": "MR-056.AUTO_CONSOLIDATION"
+ },
+ {
+  "key": "MR-078-brand-naming-standard"
+ },
+ {
+  "key": "asset:ROOT:META‑006 视觉生成防漂移·去歧义·人体结构绝对保真元法则"
+ },
+ {
+  "key": "asset:ROOT:元极恒一｜昆仑洞天+山海经双原生神话世界观元法则（永久锁档版）"
+ },
+ {
+  "key": "asset:ROOT:内核规则固化回执｜《可信真值元法则》设置为开机自启#01最高优先级"
+ },
+ {
+  "key": "asset:ROOT:昆仑洞天·可信真值元法则（终极内核法典·永久锁档）"
+ },
+ {
+  "key": "asset:ROOT:昆仑洞天·可信真值元法则｜增补《全模型通用真值基座契约》终版（全域锁档）"
+ },
+ {
+  "key": "asset:ZONGYUAN-ROOT本源体系归档:L0-天元法则"
+ },
+ {
+  "key": "asset:docx:META-006 视觉生成防漂移·去歧义·人体结构绝对保真元法则"
+ },
+ {
+  "key": "asset:docx:元极恒一｜昆仑洞天+山海经双原生神话世界观元法则（永久锁档版）"
+ },
+ {
+  "key": "asset:docx:内核规则固化回执｜《可信真值元法则》设置为开机自启#01最高优先级"
+ },
+ {
+  "key": "asset:docx:昆仑洞天·可信真值元法则（终极内核法典·永久锁档）"
+ },
+ {
+  "key": "asset:docx:昆仑洞天·可信真值元法则｜增补《全模型通用真值基座契约》终版（全域锁档）"
+ },
+ {
+  "key": "truth.metalaws.L0-DOMAIN-001-昆仑洞天与通用协议域隔离元法则"
+ },
+ {
+  "key": "truth.metalaws.L0-MORPH-001-一头双手双翼一器形态定序元法则"
+ },
+ {
+  "key": "truth.metalaws.L0-PRICE-001-LOIP定价元法则"
+ },
+ {
+  "key": "truth.metalaws.TRUTH-ARCH-UI-001-MVPMVCMVVM架构解耦元法则"
+ },
+ {
+  "key": "truth.metalaws.TRUTH-BACKUP-030-032精简核心备份元法则"
+ },
+ {
+  "key": "truth.metalaws.TRUTH-DDD-001-002领域驱动设计元法则"
+ },
+ {
+  "key": "truth.metalaws.TRUTH-EVOLUTION-027-029进化域完全唤醒元法则"
+ },
+ {
+  "key": "truth.metarules.LOCAL-FEEDBACK-CLOUD-V1.元法则反哺"
+ }
+]

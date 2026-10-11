@@ -1,0 +1,116 @@
+{
+  "registry_id": "TRUTH-NW-VERIFY-20261001",
+  "name": "新窗口真值一轮验证与公理层speculative合并",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "created": "2026-10-01",
+  "verify_timestamp": "2026-10-01T12:55:00+08:00",
+  "verify_context": {
+    "new_evidence": "设备切换后账号身份变更：个人台账base(91403)与云盘新根(1061004)当前身份无权限；团队知识库空间7675064878796639210仍可见。此事件作为本轮验证的关键新证据，用于检验真值的时间稳定性与访问依赖。",
+    "method": "逐条重放/回读本地缓存文件、快照内容、API可访问性，按'命题是否仍成立、证据是否仍可回读'二分判定"
+  },
+  "verify_matrix": [
+    {
+      "truth_id": "TRUTH-NW-001",
+      "proposition": "新窗口可通过P0最小恢复集（最新内核快照JSON+资产清单）在3次API调用内恢复80%内核上下文",
+      "evidence": "本会话重放：缓存status(0 API) + 快照/清单下载解析(2 API)，均成功",
+      "verify_result": "PASS",
+      "stability": "时间稳定（不依赖账号身份，依赖本地文件与公开API）",
+      "status_before": "FROZEN",
+      "status_after": "FROZEN",
+      "upgrade_recommendation": "升级为元法则候选：metalaw.NW-RECOVERY-MINIMAL-SET（P1）"
+    },
+    {
+      "truth_id": "TRUTH-NW-002",
+      "proposition": "旧云盘根CfnTfNlN已删除，缓存已重指向新根FdoifaG8（6子目录结构完整）",
+      "evidence": "旧根1061007已删（上轮验证）；新根物理存在且6子目录枚举成功（上轮）；但当前身份对新根1061004无权限",
+      "verify_result": "PARTIAL",
+      "stability": "物理事实成立；可访问性依赖账号授权",
+      "status_before": "FROZEN",
+      "status_after": "VERIFY-PENDING",
+      "upgrade_recommendation": "不升级为元法则；作为基础设施状态事实记录，待原账号授权后回读确认"
+    },
+    {
+      "truth_id": "TRUTH-NW-003",
+      "proposition": "内核处于READONLY_HARDWARE_LOCKED，公理层11条ACTIVE，架构L0-L5 STABLE_LOCKED，安全层FULLY_LOCKED",
+      "evidence": "kernel_snapshot_LOCK-AGI-PATHS-001.json 字段回读（本地文件可读）",
+      "verify_result": "PASS",
+      "stability": "时间稳定（快照内容，不依赖访问权限）",
+      "status_before": "FROZEN",
+      "status_after": "FROZEN",
+      "upgrade_recommendation": "保持FROZEN状态事实，不升级为元法则"
+    },
+    {
+      "truth_id": "TRUTH-NW-004",
+      "proposition": "云端归档库现存40项受管资产，最新资产清单日期2026-09-21",
+      "evidence": "ASSET-MANIFEST-20260921.json count=40（本地文件可读）",
+      "verify_result": "PASS",
+      "stability": "时间稳定（快照内容）",
+      "status_before": "FROZEN",
+      "status_after": "FROZEN",
+      "upgrade_recommendation": "保持FROZEN状态事实"
+    },
+    {
+      "truth_id": "TRUTH-NW-005",
+      "proposition": "2026-10-01已执行月度元法则锁档LOCK-METALAW-MONTHLY-20261001",
+      "evidence": "缓存last_lock_id字段（本地可读）；台账云端回读当前身份91403失败",
+      "verify_result": "PARTIAL",
+      "stability": "事件记录成立；云端台账证据依赖账号授权",
+      "status_before": "FROZEN",
+      "status_after": "VERIFY-PENDING",
+      "upgrade_recommendation": "不升级；作为运维事件记录，待台账权限恢复后回读确认"
+    },
+    {
+      "truth_id": "TRUTH-NW-006",
+      "proposition": "内核锁档缓存机制可使后续锁档节省约70%API调用",
+      "evidence": "kernel_lock.sh ensure_space/ensure_ledger 缓存优先逻辑（代码审查），命中时零API",
+      "verify_result": "PASS",
+      "stability": "时间稳定（代码逻辑）",
+      "status_before": "FROZEN",
+      "status_after": "FROZEN",
+      "upgrade_recommendation": "升级为工程法则候选：metalaw.NW-CACHE-FIRST（P2，SPECULATIVE）"
+    }
+  ],
+  "speculative_entries": [
+    {
+      "metalaw_id": "metalaw.NW-RECOVERY-MINIMAL-SET",
+      "name_cn": "新窗口最小恢复集律",
+      "category": "boot",
+      "category_cn": "启动引导类",
+      "source": "TRUTH-NW-001",
+      "priority": "P1",
+      "status": "SPECULATIVE",
+      "proposition": "新窗口冷启动须以P0最小恢复集（最新内核快照+资产清单）先行重建上下文，3次API内恢复80%，再执行具体任务",
+      "evidence": "2026-10-01实测重放通过",
+      "verify_gap": "仅单节点单次实测；需跨3个以上窗口复现后升级为REGISTERED",
+      "registered_at": "2026-10-01T12:55:00+08:00"
+    },
+    {
+      "metalaw_id": "metalaw.NW-CACHE-FIRST",
+      "name_cn": "锁档缓存优先律",
+      "category": "engineering",
+      "category_cn": "工程效率类",
+      "source": "TRUTH-NW-006",
+      "priority": "P2",
+      "status": "SPECULATIVE",
+      "proposition": "一切锁档/恢复操作须缓存优先（space_id/base_token/table_id/folder_token本地持久化），命中即零API，实测节省约70%调用",
+      "evidence": "kernel_lock.sh缓存逻辑代码审查",
+      "verify_gap": "节省比例未做批量统计实证；需以10次以上锁档的API计数对比验证",
+      "registered_at": "2026-10-01T12:55:00+08:00"
+    }
+  ],
+  "upgrade_recommendations": {
+    "upgrade_to_metalaw_candidate": ["TRUTH-NW-001(P1)", "TRUTH-NW-006(P2)"],
+    "keep_frozen_state_truth": ["TRUTH-NW-003", "TRUTH-NW-004"],
+    "verify_pending": ["TRUTH-NW-002", "TRUTH-NW-005"],
+    "rationale": "升级条件=命题具备跨窗口可复用的行为指导价值且证据稳定；状态事实类（NW-003/004）保持FROZEN；访问依赖类（NW-002/005）因账号切换证据链中断，降为VERIFY-PENDING待重验"
+  },
+  "summary": {
+    "total_truths": 6,
+    "pass": 4,
+    "partial": 2,
+    "upgrade_candidates": 2,
+    "frozen_kept": 2,
+    "verify_pending": 2
+  }
+}

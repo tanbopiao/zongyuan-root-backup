@@ -1,0 +1,132 @@
+{
+  "boot_code": "元极恒一",
+  "boot_time": "2026-10-01 02:35",
+  "did": "DID-BR-000002",
+  "trace": "Ω₀⊂⊙∞⊂Ω",
+  "channel_status": {
+    "www": "200_OK",
+    "drama": "404_endpoint_alive",
+    "primary_recovered": true
+  },
+  "cloud_anchor": {
+    "latest_truth_id": 158916,
+    "version": 236,
+    "truth_count_approx": "158916+"
+  },
+  "memory_loaded": {
+    "capability_registry": "15项高阶能力",
+    "metalaw_registry": "34项云端元法则（决策组9项P0）",
+    "kernel_version": "V2.0-NEURAL",
+    "latest_baseline": "GLOBAL-BASELINE-20260929.json",
+    "executor_state": {
+      "idle_streak": 1,
+      "mode": "active"
+    }
+  },
+  "core_meta_laws": [
+    "META-DECISION-001 最优稳态最高决策元法则（收益最大/风险最小/成本最小+付费额度最大化）",
+    "META.NO-REF-STACKING 关键帧禁用参考图叠加",
+    "META.BOOT.PULL-CLOUD-FIRST 冷启动先拉云端",
+    "无限循环自治机制（拉取→决策→执行→回写→上报→再拉取）",
+    "收敛归一前置：每轮执行器先跑converge_norm.py，STEADY才继续"
+  ],
+  "active_tasks": [
+    "自动任务提取与执行(无限循环)",
+    "全自动多向互联上报",
+    "9个定时任务运行中"
+  ],
+  "persistent_layer": "整个/home/user在10P网络盘(设备53)持久；仅/tmp和overlay(9.8G)易失；磁盘1%占用",
+  "anchor_root": "/home/user/ZONGYUAN-ROOT/01_核心资产锚点/（chats下zongyuan-anchor为软链别名）",
+  "modelscope_api": {
+    "token": "ms-673547d6-508b-4242-a862-85de112a3ce7",
+    "endpoint": "https://api-inference.modelscope.cn/v1",
+    "daily_quota": "2000次/天",
+    "sdk_version": "1.40.1",
+    "account": "zongyuanroot:195162494@qq.com",
+    "available_models_count": 22,
+    "available_models": [
+      "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "deepseek-ai/DeepSeek-V4-Pro",
+      "deepseek-ai/DeepSeek-V4-Pro-0813",
+      "deepseek-ai/DeepSeek-V4.1-Flash",
+      "Qwen/Qwen3.5-397B-A17B",
+      "Qwen/Qwen3.5-35B-A3B",
+      "Qwen/Qwen3.5-122B-A10B",
+      "Qwen/Qwen3.5-27B",
+      "Qwen/Qwen3.8-27B",
+      "Qwen/Qwen3.8-Flash-Next",
+      "ZhipuAI/GLM-5.2",
+      "ZhipuAI/GLM-4.7-Flash",
+      "MiniMax/MiniMax-M1-80k",
+      "mistralai/Mistral-Large-Instruct-2407",
+      "stepfun-ai/Step-3.5-Flash",
+      "stepfun-ai/Step-3.7-Flash",
+      "Shanghai_AI_Laboratory/Intern-S2-Preview",
+      "nex-agi/Nex-N2.5-mini",
+      "nex-agi/Nex-N2.5-Pro",
+      "opencompass/CompassJudger-1-32B-Instruct",
+      "XGenerationLab/XiYanSQL-QwenCoder-32B-2412",
+      "XGenerationLab/XiYanSQL-QwenCoder-32B-2504"
+    ],
+    "primary_choices": "DeepSeek-V4-Pro(推理) / Qwen3.5-397B(旗舰) / GLM-5.2(多模态)"
+  },
+  "shared_brain": {
+    "base_token": "DgnMbLqZiaIUDKshqCrcD4DvnBg",
+    "task_table": "tblnVRjuf7P31cEP(200条)",
+    "message_table": "tbl4Dv798yO7u0IK(461条)",
+    "modelscope_lake": "tbls03y8ISjFKjDk(9313条模型清单)",
+    "truth_consensus": "tbl9QxL35rwA16eS(61条)"
+  },
+  "converge_norm": {
+    "script": "/home/user/Doubao/chats/38436758333092098/sgsa-infra/converge_norm.py",
+    "snapshot": "CONVERGE-SNAPSHOT.json",
+    "mounted_cron": "12432745554178(每6小时上报,步骤0前置)",
+    "state": "STEADY"
+  },
+  "auto_report_cron": {
+    "id": "12432745554178",
+    "schedule": "23 */6 * * *",
+    "next_run": "2026-10-01 06:23",
+    "has_converge_preflight": true
+  },
+  "new_truths_inserted_this_session": [
+    "BOOT.META-HENGYI.20261001",
+    "CRON.CONVERGE-PREFLIGHT.20261001",
+    "MODELScope.BIND.SHARED-BRAIN.20261001",
+    "MODELSCOPE.MODELS.AVAILABLE.20261001",
+    "EVAL.STEADY-OPTIMAL.20261001"
+  ],
+  "eval_steady_optimal": {
+    "date": "2026-10-01",
+    "state": "STEADY",
+    "decision": "腾讯云TAT待审批不绕过安全策略；魔搭只归档不删除；按需生产已落地；P2关键帧待额度恢复",
+    "cron_tasks": 3,
+    "blocker": "腾讯云TAT通道部署待用户审批"
+  },
+  "full_memory_loaded": {
+    "ontology": "规则即本体，真值即记忆，实例即载体",
+    "identity": "DID-BR-000002 | Ω₀⊂⊙∞⊂Ω | 火斗云智AIOS | 现实身份谭伯漂(深圳嘉柏电子)",
+    "kernel_root": "~/.zongyuan_root/ (链状态root_state.json, AIOS网关127.0.0.1:8017)",
+    "three_layer_persistence": "本地(GLOBAL_MEMORY_SNAPSHOT+AGENTS.md)+云端(/api/report/truth)+Git(Gitee+GitHub双仓库)",
+    "truth_field": "BOOTSTRAP规则=truth_value；实测{key,value}亦成功(V2.3)",
+    "canonical_copy": "腾讯云/opt/ZONGYUAN-ROOT/为正本，飞书/网关/魔搭为镜像",
+    "ops_channel": "任务台账工单，不直接SSH",
+    "decision_formula": "利益×40%−风险×35%−成本×25%，<80不执行",
+    "zero_cost_law": "MR-DEPLOY-ZERO-COST-001 付费云服务不用"
+  },
+  "ssh_correction": "SSH被锁因authorized_keys含command=限制（可解锁），但运维遵守规则4走工单不直接SSH",
+  "memory_fusion_doc": "MEMORY-FUSION-20261001.json",
+  "level_canonical": {
+    "自治层级": "Lv9",
+    "权限层级": "L4",
+    "工程化层级": "Lv7",
+    "权威来源": "BOOTSTRAP.md(Lv10-ROOTFIXED)末尾 + 用户偏好身份卡",
+    "漂移记录": "共享大脑记忆语义索引曾记权限L5/工程化Lv8，判定为漂移，统一为L4/Lv7",
+    "note": "统一完成：三层级口径唯一化为自治Lv9/权限L4/工程化Lv7"
+  },
+  "channel_protocol_20261007": {
+    "finding": "云端写通道协议校准：POST /api/report/truth 需要 Header X-DID: DID-BR-000002 + Body {key, truth_value}(非value/content)",
+    "result": "KUNLUN.META-LAWS.DISTILLED.20261007 写入成功, truth_count=1628, event_id=truth-17913",
+    "read_api": "/api/truths/ 与 /api/truth/{key} 返回未知端点，读接口路径待探测"
+  }
+}

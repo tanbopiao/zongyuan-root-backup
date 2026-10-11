@@ -1,0 +1,14 @@
+{
+  "status": "ok",
+  "truth": {
+    "id": 1499,
+    "truth_key": "",
+    "truth_value": "",
+    "truth_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "category": "meta_rule",
+    "node_id": "system",
+    "created_at": 1789126317.6079688,
+    "updated_at": 1789261378.0883124,
+    "version": 3
+  }
+}

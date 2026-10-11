@@ -1,0 +1,21 @@
+{
+  "media_archive": {
+    "drive_folder": "03_数字媒体资产库",
+    "drive_folder_token": "U00Ff2DgFlYqNidL22PcAGTTncf",
+    "archive_date": "2026-09-21",
+    "total_packs": 8,
+    "total_media_files": 383,
+    "total_size_mb": 490,
+    "packs": [
+      {"name": "图片_part1.tar.gz", "token": "NZ1Pbw95Ao7xErxnxWAcDDWanRB", "files": 48, "size_mb": 84},
+      {"name": "图片_part2.tar.gz", "token": "PSEHb1T7ToqWCVxw2e1cLLiyn7f", "files": 47, "size_mb": 83},
+      {"name": "图片_part3.tar.gz", "token": "FG0Hb6n0hop93pxP3Y1ceRM7n7o", "files": 44, "size_mb": 85},
+      {"name": "图片_part4.tar.gz", "token": "VB1tbpxAcoNnpwxQ1PAcq9b5n7b", "files": 25, "size_mb": 83},
+      {"name": "图片_part5.tar.gz", "token": "S8FjbG487o3kgAxlc0ZcCWLWnKc", "files": 46, "size_mb": 85},
+      {"name": "图片_part6.tar.gz", "token": "Yh4YbdM61o4FpRxPufIcNU4LnCe", "files": 31, "size_mb": 54},
+      {"name": "网页可视化.tar.gz", "token": "FZkyb270AoWZjVx5CjvcPMZTnle", "files": 140, "size_mb": 12},
+      {"name": "视频.tar.gz", "token": "CvP8bJabtoVi58xT10kcpEQ7nAY", "files": 2, "size_mb": 13}
+    ],
+    "note": "本地保留原始目录+索引，云盘为异地副本；COS已停用"
+  }
+}

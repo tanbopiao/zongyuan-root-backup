@@ -1,0 +1,16 @@
+{
+  "asset_id": "ASSET-PUB-20261007-003",
+  "name": "魔搭推送规则SOP V1.1（合并更新至zongyuan-truth-corpus）",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/zongyuan-truth-corpus",
+  "commit": "5d3064b",
+  "published_at": "2026-10-07T21:50:21",
+  "files": [
+    "SOP-MODELSCOPE-PUSH-V1.1.md",
+    "03-META-RULES.md(追加)",
+    "README.md(增量条目)"
+  ],
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.PUSH-SOP.20261007",
+  "quota": "零豆包付费"
+}

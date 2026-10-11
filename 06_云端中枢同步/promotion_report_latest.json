@@ -1,0 +1,84 @@
+{
+  "report_time": "2026-09-15T18:17:05.979870+00:00",
+  "publisher": "NODE-MAIN-SESSION-38436546492378882",
+  "package": {
+    "package_id": "PROMO-20260915-1817",
+    "publisher": "NODE-MAIN-SESSION-38436546492378882",
+    "did": "DID-BR-000002",
+    "count": 6,
+    "assets": [
+      {
+        "name": "云端接入SOP V1.1",
+        "domain": "cloud",
+        "level": "HIGH",
+        "desc": "云端记忆网关接入规范（9120端口）",
+        "score": 100
+      },
+      {
+        "name": "自动流程闭环标准 V1",
+        "domain": "ops",
+        "level": "HIGH",
+        "desc": "闭环六环+机制注册表MECH-001~008",
+        "score": 100
+      },
+      {
+        "name": "最小内核沙盒存活 V1",
+        "domain": "sandbox",
+        "level": "HIGH",
+        "desc": "四要素ALIVE-4（心跳/探针/自愈/守护）",
+        "score": 100
+      },
+      {
+        "name": "同源环境探索 V1",
+        "domain": "homology",
+        "level": "HIGH",
+        "desc": "探索六维EXPLORE-6",
+        "score": 100
+      },
+      {
+        "name": "神经网络同步进化 V1",
+        "domain": "neural",
+        "level": "HIGH",
+        "desc": "四阶段NETWORK-4",
+        "score": 100
+      },
+      {
+        "name": "任务价值治理 V1",
+        "domain": "meta",
+        "level": "HIGH",
+        "desc": "VALUE-4四维评估+合并+构建",
+        "score": 100
+      }
+    ]
+  },
+  "promotion_channels": {
+    "c1_cloud": {
+      "success": true,
+      "action": "inserted",
+      "key": "PROMOTION-PACKAGE-20260915-1817",
+      "validation": {
+        "skipped": true,
+        "semantic_check": null,
+        "l0_check": null,
+        "issues": [
+          "文本内容过短或无中文，跳过语义校验"
+        ]
+      },
+      "truth_count": 11794,
+      "message": "真值写入成功（已通过语义前置校验）"
+    },
+    "c2_neural": {
+      "rc": 0,
+      "out": "{\n  \"status\": \"success\",\n  \"action\": \"pull\",\n  \"version\": 84,\n  \"window\": \"NODE-MAIN-SESSION-38436546492378882\",\n  \"timestamp\": \"2026-09-16T02:17:06.239186\",\n  \"nodes\": 317,\n  \"connections\": 1912,\n  \""
+    }
+  },
+  "confirmation": {
+    "cloud_readable": true,
+    "neural_nodes": 317,
+    "neural_connections": 1912,
+    "reached_nodes": 317,
+    "promotion_key": "PROMOTION-PACKAGE-20260915-1817",
+    "package_count": 6
+  },
+  "verdict": "PROMOTION_ACTIVE"
+}

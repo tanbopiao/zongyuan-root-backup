@@ -1,0 +1,27 @@
+{
+  "asset_id": "ASSET-PUB-20261007-001",
+  "name": "元极恒一永恒自治内核(含七层栈L0-L6)技术白皮书V2.0(专业巡检升级)",
+  "source": "元极恒一·永恒自治内核七层架构展开(Ω/MI/MC/L0治理/SFMP/RSI/超级智能)",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/meta-eternal-autonomous-kernel",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/meta-eternal-autonomous-kernel.git",
+  "published_at": "2026-10-07T11:24:00",
+  "merge_policy": "同系列合并更新, 未新开数据集",
+  "version": "V2.0(2026-10-07当前版,整合永恒内核+七层栈); ETERNAL V1.0/SEVENLAYER V1.0(归档保留)",
+  "files": [
+    "WHITEPAPER-ETERNAL-V2.0.md(+新增)",
+    "WHITEPAPER-ETERNAL-V2.0.html(+新增)",
+    "eternal_arch_v2.json(+新增)",
+    "README.md(更新)",
+    "WHITEPAPER-ETERNAL-V1.0.md(归档)",
+    "WHITEPAPER-ETERNAL-V1.0.html(归档)",
+    "eternal_arch.json(归档)",
+    "WHITEPAPER-SEVENLAYER-V1.0.md(归档)",
+    "sevenlayer_arch.json(归档)"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.meta-eternal-autonomous-kernel-UPGRADE.20261007 (http=200)",
+  "quota": "零豆包付费"
+}

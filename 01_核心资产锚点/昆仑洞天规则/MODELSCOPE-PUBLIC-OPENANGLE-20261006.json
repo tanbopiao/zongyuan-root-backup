@@ -1,0 +1,23 @@
+{
+  "asset_id": "ASSET-PUB-20261006-010",
+  "name": "宇宙开角常数与维度锁技术白皮书V2.0(专业巡检升级)",
+  "source": "宇宙本源六维体系(1-14维) + 全维度锁档体系",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/universe-open-angle-dimension-lock",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/universe-open-angle-dimension-lock.git",
+  "published_at": "2026-10-07T11:30:00",
+  "version": "V2.0(当前版, 2026-10-07) + V1.0(归档, 2026-10-06)",
+  "files": [
+    "universe-open-angle-dimension-lock-WHITEPAPER-V2.0.md (+新增)",
+    "universe-open-angle-dimension-lock-WHITEPAPER-V2.0.html (+新增)",
+    "universe-open-angle-dimension-lock-ARCH-V2.0.json (+新增)",
+    "README.md (更新)",
+    "WHITEPAPER-OPENANGLE-V1.0.md (归档)",
+    "openangle_arch.json (归档)"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.universe-open-angle-dimension-lock-UPGRADE.20261007 (http=200)",
+  "quota": "零豆包付费"
+}

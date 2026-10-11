@@ -1,0 +1,126 @@
+{
+  "mechanism": "AUTO-EXPLORE-ARCHIVE",
+  "track": "B-ERROR-LESSONS",
+  "did": "DID-BR-000002",
+  "trace_id": "Ω₀⊂⊙∞⊂Ω",
+  "updated_at": "2026-09-19T10:10:00+08:00",
+  "records": [
+    {
+      "id": "E-001",
+      "date": "2026-09-13",
+      "event": "IP直连被拦截",
+      "category": "通道",
+      "error": "123.207.202.158直连返回ip access not allowed",
+      "root_cause": "应用域名才是公网唯一通道",
+      "fix": "改走 drama.huodouai.com 域名",
+      "avoid": "一律用域名，不用IP直连"
+    },
+    {
+      "id": "E-002",
+      "date": "2026-09-13",
+      "event": "旧Token失效",
+      "category": "鉴权",
+      "error": "ZR-CAPTURE-2026-OMEGA 返回401",
+      "root_cause": "云端轮换Token",
+      "fix": "用 ZR-CAPTURE-<ROTATED>",
+      "avoid": "Token版本记录在锚点SOP，先用锚点核验"
+    },
+    {
+      "id": "E-003",
+      "date": "2026-09-14",
+      "event": "云端API 502",
+      "category": "云端",
+      "error": "/api/health /api/gateway/* 全部502",
+      "root_cause": "Nginx在但后端FastAPI宕机",
+      "fix": "记录待补发队列，探测恢复后补报",
+      "avoid": "上报失败先存pending_upload队列，不丢数据"
+    },
+    {
+      "id": "E-004",
+      "date": "2026-09-13",
+      "event": "SSH无法连接",
+      "category": "通道",
+      "error": "22端口可达但仅密钥认证",
+      "root_cause": "私钥id_ed25519_zongyuan丢失",
+      "fix": "走公网HTTP通道（SOP v1.1零SSH方案）",
+      "avoid": "不依赖SSH，云端操作全走HTTP"
+    },
+    {
+      "id": "E-005",
+      "date": "2026-09-15",
+      "event": "SOP教材404",
+      "category": "路径",
+      "error": "/assets/capture/kernel-learning-pack.md 404",
+      "root_cause": "SOP文档路径与服务器实际部署不一致",
+      "fix": "以本地已下载CLOUD-SOP-v1.1.md为准",
+      "avoid": "外部路径先实测再引用，四重核验"
+    },
+    {
+      "id": "E-006",
+      "date": "2026-09-15",
+      "event": "门户仅抽样展示",
+      "category": "数据",
+      "error": "门户页面只有部分资产卡片",
+      "root_cause": "页面为最近资产抽样，非全量",
+      "fix": "全量需API，API宕机时用本地快照+标注限制",
+      "avoid": "盘点类结论标注数据源覆盖范围"
+    },
+    {
+      "id": "E-007",
+      "date": "2026-09-17",
+      "event": "真实API采集联动巡检-后端全拒连",
+      "category": "通道",
+      "error": "health=healthy但全部数据端点502：新写通道/api/report/truth=502、旧通道/api/gateway/truths?level=public=502(带鉴权)、新库列表/api/truths/?offset=0=502、旧上报/api/gateway/report=502(字段truth_content正确格式)",
+      "root_cause": "drama-admin-api(nginx/管理面)正常但后端127.0.0.1:9120拒连，数据服务未启动",
+      "fix": "待云端重启9120后端；巡检结果已本地留存待发队列",
+      "avoid": "通道巡检先探health区分管理面与数据面；后端全拒连时记录error_lessons并本地待发"
+    },
+    {
+      "id": "E-008",
+      "date": "2026-09-18",
+      "event": "旧上报通道/api/gateway/report 502",
+      "category": "通道",
+      "error": "真实API采集联动巡检：health/写通道/旧读通道/新列表全部200，但旧上报通道/api/gateway/report仍502(后端127.0.0.1:9120拒连)",
+      "root_cause": "api/gateway/report 路由仍指向旧后端9120，生产切换未完成",
+      "fix": "用新写通道POST /api/report/truth补报(已执行成功)；待生产切换完成",
+      "avoid": "上报优先用新通道/api/report/truth；旧通道仅作读"
+    },
+    {
+      "id": "E-009",
+      "date": "2026-09-19",
+      "event": "新写通道字段漂移：content不再落库",
+      "category": "协议",
+      "error": "POST https://www.huodouai.com/api/report/truth 用2026-09-16旧协议{key,content}返回success/inserted，但回读truth_value恒空、truth_hash为空串哈希e3b0c442；语义校验提示'文本内容过短或无中文'被跳过",
+      "root_cause": "服务端读取字段已从content漂移为value；content/truth_content均不被读取，仅value触发L0语义校验(17项)与内容落库",
+      "fix": "改用{key,value}上报：metalaw.BUSINESS-CHAIN-OPTIMIZATION-V1以value重报action=updated、L0 17/17通过、hash=588493e8回读一致；三变体探测定位(content=空落库/value=落库/truth_content=空落库)",
+      "avoid": "凡/api/report/truth写入一律用value字段；写完必须GET /api/truth/{key}回读核验truth_value非空且hash非空串哈希，禁止仅凭success=true回执判定成功"
+    },
+    {
+      "id": "E-010",
+      "date": "2026-09-21",
+      "event": "收到不可复现的通道全通回执",
+      "category": "回执核验",
+      "error": "外部回执声称三端点全通200、truth_count=124254、key=CHANNEL.TRUTH-ENDPOINTS-V2.2已inserted、Merkle=dfbea2f7...；实测主拉取/api/truths/=502(upstream 127.0.0.1:9120 timed out)、主备上报/api/report/truth均408系统繁忙(带/不带Token一致)、回读/api/truth/{key}=000超时",
+      "root_cause": "回执来源不可溯源或来自其他时点/环境；后端9120仍拒连属E-003/E-007/E-008同源故障未恢复，408为限流繁忙",
+      "fix": "维持pending_upload_20260920.json待补发队列不丢数据；通道恢复后再补发CHAIN-GOVERNANCE-SOP-CARD-V1",
+      "avoid": "一切回执必须四重实测核验(路径存在/接口非404/哈希密度≈0.5/账本可查)，与实测不符即判定不可信，禁止采信回执内容对外宣称成功"
+    }
+  ],
+  "total": 10,
+  "lessons": [
+    {
+      "id": "API-SCAN-20260919",
+      "timestamp": "2026-09-19T03:18:08+08:00",
+      "type": "observation",
+      "severity": "info",
+      "source": "real-api-scan-task",
+      "summary": "新库全量列表接口 /api/truths/?offset=0 返回200但仅最新锚缓存(id=1499)，非全量列表；全量真值经旧通道 gateway/truths 获取(count=37486)",
+      "action_taken": "以旧通道全量保存 truths_public_latest.json；列表接口待生产切换后复核",
+      "status": "open"
+    },
+    {
+      "time": "2026-09-21T03:19:30+08:00",
+      "lesson": "2026-09-21 中枢侧通道迁移窗口：health=200但新写通道408繁忙、旧全量读count=0、新库列表超时。结论：后端在切换/迁移中，外网侧勿反复重试，待中枢侧恢复后自动补报。"
+    }
+  ]
+}

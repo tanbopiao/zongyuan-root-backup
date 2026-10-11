@@ -1,0 +1,45 @@
+{
+ "total": 60,
+ "passed": 60,
+ "rate": 100.0,
+ "by_engine": {
+  "超认知": {
+   "passed": 10,
+   "total": 10
+  },
+  "超进化": {
+   "passed": 10,
+   "total": 10
+  },
+  "超协同": {
+   "passed": 10,
+   "total": 10
+  },
+  "超稳态": {
+   "passed": 10,
+   "total": 10
+  },
+  "元认知": {
+   "passed": 10,
+   "total": 10
+  },
+  "创造性": {
+   "passed": 10,
+   "total": 10
+  }
+ },
+ "source": {
+  "truths": 32765,
+  "nodes": 6,
+  "services": 33,
+  "sla_api": 100.0,
+  "sla_heartbeat": "5/5",
+  "gpu": true,
+  "rag_idx": 32077,
+  "cot_consistency": 100.0,
+  "node_heartbeat": "alive",
+  "write_plane": "verified",
+  "lock_times": 8
+ },
+ "ts": "2026-09-18 01:51:06"
+}

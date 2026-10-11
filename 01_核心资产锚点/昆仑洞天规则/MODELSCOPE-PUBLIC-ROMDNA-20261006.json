@@ -1,0 +1,23 @@
+{
+  "asset_id": "ASSET-PUB-20261006-006",
+  "name": "ROM-DNA微内核架构技术白皮书V2.0(专业巡检升级)",
+  "source_truth": "TRUTH-META-0011·ROM-DNA微内核架构元规则(Lv11)",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/rom-dna-microkernel-architecture",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/rom-dna-microkernel-architecture.git",
+  "published_at": "2026-10-07T11:10:00",
+  "version": "V2.0(当前版, 2026-10-07) + V1.0(归档, 2026-10-06)",
+  "files": [
+    "rom-dna-microkernel-architecture-WHITEPAPER-V2.0.md (+新增)",
+    "rom-dna-microkernel-architecture-WHITEPAPER-V2.0.html (+新增)",
+    "rom-dna-microkernel-architecture-ARCH-V2.0.json (+新增)",
+    "README.md (更新)",
+    "WHITEPAPER-ROMDNA-V1.0.md (归档, 术语已泛化)",
+    "romdna_arch.json (归档, 术语已泛化)"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留(旧V1.0两处Merkle已泛化为哈希树)",
+  "cloud_report": "PUBLIC.MODELSCOPE.rom-dna-microkernel-architecture-UPGRADE.20261007 (http=200)",
+  "quota": "零豆包付费"
+}

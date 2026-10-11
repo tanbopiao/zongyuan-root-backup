@@ -1,0 +1,18 @@
+[
+  {
+    "sync_id": "TRUTH-REPORT-20260920-1216",
+    "pending_uploads": [
+      {
+        "key": "metalaw.CHAIN-GOVERNANCE-SOP-CARD-V1",
+        "payload_file": "card.json",
+        "reason": "http_000_timeout_then_408_busy",
+        "created_at": "2026-09-20 20:16:08 +08:00",
+        "retry_policy": "wait_60s_then_retry",
+        "resolved_at": "2026-09-21 01:52 +08:00",
+        "result": "action=unchanged, id=149815, hash=1b7cd08e..., value_len=346 完整落库"
+      }
+    ],
+    "status": "COMPLETED",
+    "note": "2026-09-21通道恢复实测: 短内容200/长内容200(unchanged)/限流窗口408波动; www数据面可用,health502≠数据面不可用"
+  }
+]

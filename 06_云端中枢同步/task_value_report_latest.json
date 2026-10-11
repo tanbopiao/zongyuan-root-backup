@@ -1,0 +1,128 @@
+{
+  "report_time": "2026-09-15T22:10:03.657303+00:00",
+  "total_tasks": 10,
+  "evaluations": {
+    "11767319220482": {
+      "title": "数字资产流水线自动巡检",
+      "v1": 3,
+      "v2": 5,
+      "v3": 4,
+      "v4": 5,
+      "total": 17,
+      "score": 85,
+      "level": "HIGH"
+    },
+    "11767626940930": {
+      "title": "监控云端upload恢复并部署SOP V1.1",
+      "v1": 4,
+      "v2": 4,
+      "v3": 3,
+      "v4": 5,
+      "total": 16,
+      "score": 80,
+      "level": "HIGH"
+    },
+    "11767628042242": {
+      "title": "同源协议环境探索上报",
+      "v1": 5,
+      "v2": 5,
+      "v3": 4,
+      "v4": 5,
+      "total": 19,
+      "score": 95,
+      "level": "HIGH"
+    },
+    "11792666126850": {
+      "title": "全域资产归档与台账汇总",
+      "v1": 4,
+      "v2": 5,
+      "v3": 3,
+      "v4": 5,
+      "total": 17,
+      "score": 85,
+      "level": "HIGH"
+    },
+    "11847169740290": {
+      "title": "云端记忆网关健康巡检",
+      "v1": 4,
+      "v2": 5,
+      "v3": 4,
+      "v4": 5,
+      "total": 18,
+      "score": 90,
+      "level": "HIGH"
+    },
+    "11855630769922": {
+      "title": "最小内核沙盒存活守护",
+      "v1": 5,
+      "v2": 5,
+      "v3": 5,
+      "v4": 5,
+      "total": 20,
+      "score": 100,
+      "level": "HIGH"
+    },
+    "11855935199490": {
+      "title": "SOP自动更新补全",
+      "v1": 4,
+      "v2": 5,
+      "v3": 4,
+      "v4": 5,
+      "total": 18,
+      "score": 90,
+      "level": "HIGH"
+    },
+    "11880961995522": {
+      "title": "元法则月度同步",
+      "v1": 3,
+      "v2": 5,
+      "v3": 3,
+      "v4": 5,
+      "total": 16,
+      "score": 80,
+      "level": "HIGH"
+    },
+    "11892787775234": {
+      "title": "自治内核全闭环·每日进化",
+      "v1": 5,
+      "v2": 5,
+      "v3": 3,
+      "v4": 5,
+      "total": 18,
+      "score": 90,
+      "level": "HIGH"
+    },
+    "11847169850114": {
+      "title": "同源节点神经网络同步进化",
+      "v1": 5,
+      "v2": 5,
+      "v3": 4,
+      "v4": 5,
+      "total": 19,
+      "score": 95,
+      "level": "HIGH"
+    }
+  },
+  "merge_decisions": [],
+  "build_proposals": [
+    {
+      "domain": "security",
+      "title": "内核安全审计",
+      "freq": "daily",
+      "value": "HIGH",
+      "reason": "安全审计域空白，需每日基线校验"
+    },
+    {
+      "domain": "contract",
+      "title": "体系契约一致性校验",
+      "freq": "daily",
+      "value": "MED",
+      "reason": "多机制契约一致性需定期校验"
+    }
+  ],
+  "level_summary": {
+    "HIGH": 10
+  },
+  "mergeable_count": 0,
+  "buildable_count": 2
+}

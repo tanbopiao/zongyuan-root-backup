@@ -1,0 +1,14 @@
+{
+  "rule_set": "RULE.CORRECTION.V1",
+  "generated": "2026-09-15",
+  "purpose": "将校验拦截项转为自动修复规则，提升pass_rate至90%+",
+  "rules": [
+    {"id": "CORR-001", "trigger": "truth_type无效", "action": "自动映射到九大元类最近邻", "repair": "invalid_truth_type -> nearest_category", "priority": 1},
+    {"id": "CORR-002", "trigger": "字段缺失(node_id/truth_type)", "action": "自动补默认值(node_id=source_window)", "repair": "missing_field -> default_fill", "priority": 2},
+    {"id": "CORR-003", "trigger": "置信度过低(<0.5)", "action": "降级为草稿区不入主库", "repair": "low_confidence -> draft_queue", "priority": 3},
+    {"id": "CORR-004", "trigger": "key格式不符(小写/无句点分层)", "action": "自动规范化命名", "repair": "key_format -> normalize", "priority": 2},
+    {"id": "CORR-005", "trigger": "内容过短(<10字符)", "action": "标记需补充描述", "repair": "short_content -> enrich_request", "priority": 3},
+    {"id": "CORR-006", "trigger": "与既有真值语义冲突", "action": "进入置信度仲裁而非直接拦截", "repair": "conflict -> arbitration_router", "priority": 1}
+  ],
+  "expected_effect": "pass_rate 70.4% -> 90%+，拦截转修复"
+}

@@ -1,0 +1,74 @@
+{
+  "audit_id": "DUAL-AXIS-COVERAGE-20261011T162832",
+  "audit_type": "全域双轴校验覆盖审计",
+  "did": "DID-BR-000002",
+  "node": "NODE-DEV-DOUBAO-WORK-001",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "timestamp": "20261011T162832",
+  "summary": {
+    "total_scripts": 235,
+    "covered": 7,
+    "uncovered": 228,
+    "coverage_rate": "3.0%",
+    "high_risk_uncovered": 26
+  },
+  "covered_scripts": [
+    "auto_bootstrap_cloud.py",
+    "autonomy_level_evaluator.py",
+    "dual_axis_validator.py",
+    "execution_feedback_loop.py",
+    "meta_awareness_kernel.py",
+    "meta_decision_orchestrator.py",
+    "rsi_self_improvement_manager.py"
+  ],
+  "high_risk_priority_list": [
+    {
+      "rank": 1,
+      "script": "auto_report.py",
+      "risk": "云端真值上报，需双轴校验防误报"
+    },
+    {
+      "rank": 2,
+      "script": "auto_pull_truth.py",
+      "risk": "云端真值拉取，需校验防污染"
+    },
+    {
+      "rank": 3,
+      "script": "auto_sync_knowledge.py",
+      "risk": "知识同步到云端，需校验防越权"
+    },
+    {
+      "rank": 4,
+      "script": "auto_sync_feishu_base.py",
+      "risk": "飞书Base同步，需校验防误写"
+    },
+    {
+      "rank": 5,
+      "script": "auto_report_feishu_relay.py",
+      "risk": "飞书中转上报，需校验"
+    },
+    {
+      "rank": 6,
+      "script": "credential_loader.py",
+      "risk": "凭证加载，需校验防泄露"
+    },
+    {
+      "rank": 7,
+      "script": "deploy_pipeline.py",
+      "risk": "部署流水线，高危操作"
+    },
+    {
+      "rank": 8,
+      "script": "auto_deploy_worker.py",
+      "risk": "自动部署，高危操作"
+    }
+  ],
+  "recommendations": [
+    "P0: 优先为auto_report.py/auto_pull_truth.py集成MetaDecisionOrchestrator（决策闭环）",
+    "P1: 为auto_sync_knowledge.py/auto_sync_feishu_base.py集成双轴校验",
+    "P2: 为credential_loader.py增加双轴校验（凭证操作高危）",
+    "P3: 其余高风险脚本按风险等级逐步补齐",
+    "P4: 低风险工具脚本可暂不集成，通过调用链上层校验间接保护"
+  ],
+  "coverage_goal": "中期目标: 高风险脚本覆盖率100%(26/26); 长期目标: 核心脚本覆盖率≥80%"
+}

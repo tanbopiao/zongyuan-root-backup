@@ -1,0 +1,56 @@
+{
+  "lock_id": "LOCK-FULL-DOMAIN-20260916-001",
+  "lock_time": "2026-09-16T20:43:35+08:00",
+  "did": "DID-BR-000002",
+  "provenance_mark": "Ω₀⊂⊙∞⊂Ω",
+  "lock_node": "ZR-NODE-DC2E51C0",
+  "lock_state": "LOCAL_FROZEN",
+  "cloud_gateway_status": "502_backend_unstable",
+  "assets_locked": {
+    "meta_laws": [
+      {
+        "id": "META-LAW-ARCH-001",
+        "name": "本体-执行器三层架构定位法",
+        "state": "FROZEN",
+        "six_sub_laws": ["data_reflow", "scheduling_ownership", "ontology_immortal", "truth_single_source", "security_boundary", "replaceability"]
+      }
+    ],
+    "python_scripts_count": 39,
+    "python_scripts_lines": 9000,
+    "neural_nodes": {
+      "total": 340,
+      "active": 340,
+      "isolated": 0,
+      "connections": 2034,
+      "memory_continuity": 0.994,
+      "grade": "EXCELLENT"
+    },
+    "lock_docs_count": 20,
+    "reports_json_count": 7,
+    "high_value_tasks_completed": 10,
+    "tasks_p0": 2,
+    "tasks_p1": 3,
+    "tasks_p2": 3,
+    "tasks_p3": 2
+  },
+  "pending_upload_queue": [
+    {"key": "META-LAW-ARCH-001", "confidence": 0.99},
+    {"key": "SYNC-10TASKS-COMPLETE", "confidence": 0.97},
+    {"key": "SYNC-ASSETS-INVENTORY", "confidence": 0.96},
+    {"key": "SYNC-HEALTH-9.5", "confidence": 0.95},
+    {"key": "SYNC-EXECUTOR-IDENTITY", "confidence": 0.98},
+    {"key": "LOCK-FULL-DOMAIN-20260916-001", "confidence": 0.99}
+  ],
+  "three_tier_architecture": {
+    "L3_ontology": "云服务器 123.207.202.158 (7x24永久)",
+    "L2_executor_A": "豆包云电脑 (GUI/重型/按需)",
+    "L1_executor_B": "豆包沙盒 (推理/调度/会话级)"
+  },
+  "health_score": 9.5,
+  "health_grade": "EXCELLENT",
+  "integrity": {
+    "local_lock": "COMPLETE",
+    "cloud_sync": "PENDING_BACKEND_RECOVERY",
+    "hash_chain": "LOCAL_INTACT"
+  }
+}

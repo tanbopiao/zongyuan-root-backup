@@ -1,0 +1,20 @@
+{
+  "DID": "DID-BR-000002",
+  "ROOT_OMEGA": "Ω-TAN-7-001",
+  "node_id": "doubao-main-agent-001",
+  "truths": {
+    "lock.ssh.seal.scan.20260912": {"lock_id":"LOCK-SSH-SEAL-20260912","scope":"本地SSH密钥全盘扫描无明文私钥","status":"DONE"},
+    "lock.ssh.seal.encrypted.20260912": {"lock_id":"LOCK-SSH-SEAL-20260912","scope":"KERNEL-ACCESS-SEAL-20260912.enc AES-256封存","enc_sha256":"6f148524f6961b3a1fdfb6de1bfc2de421a5fe42baaa5a4d13201f6ac304967b","decrypt_verify":"PASS","status":"SEALED"},
+    "lock.ssh.seal.protocol.20260912": {"lock_id":"LOCK-SSH-SEAL-20260912","scope":"封存协议固化","status":"ACTIVE"},
+    "lock.credential.vault.index.20260912": {"lock_id":"LOCK-CREDENTIAL-VAULT-INDEX-20260912","scope":"历史凭证vault哈希索引归档","status":"DONE"},
+    "lock.homo.kernel.built.20260912": {"lock_id":"LOCK-HOMO-KERNEL-20260912","scope":"同源内核V2.0部署（协议注册+L2四校验）","status":"DEPLOYED"}
+  },
+  "meta": {
+    "source": "doubao_main_agent",
+    "sync_time": "2026-09-12 19:45:00",
+    "truth_count": 5,
+    "purpose": "HOMO_SYNC_V2_DEPLOY",
+    "protocol": "HOMO-SYNC-V2.0",
+    "l2_checks": {"PROTOCOL":"PASS","VERSION":"PASS","AUTH":"PASS","CONFLICT":"dedup"}
+  }
+}

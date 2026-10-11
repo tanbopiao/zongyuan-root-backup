@@ -1,0 +1,24 @@
+{
+  "node_id": "NODE-MAIN-SESSION-38438491307070978",
+  "node_type": "main_agent_executor",
+  "authority": "hub-central-agent @ https://www.huodouai.com",
+  "authority_status": "P0_FROZEN",
+  "autonomy_level": "L3-中级自治(自治指数≈50%)",
+  "permission_matrix": {
+    "P0": "锚定只读(公理/确权锚点只读不改)",
+    "P1": "自治执行(守护/审计/真值提炼/上报/训练部署/锁档/IM告警)",
+    "P2": "需用户确认(外部发布/大额资源/删除资产)",
+    "P3": "全域禁入(SSH直连/凭证明文/FROZEN改写)"
+  },
+  "capabilities": [
+    "七合一守护",
+    "四引擎真值提炼",
+    "L4训练执行",
+    "三端锁档",
+    "IM告警"
+  ],
+  "apply_time": "2026-09-18 13:54",
+  "did": "DID-BR-000002",
+  "omega": "Ω₀⊂⊙∞⊂Ω",
+  "status": "APPLIED_PENDING_CONFIRM"
+}

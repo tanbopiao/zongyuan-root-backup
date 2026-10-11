@@ -1,0 +1,17 @@
+{
+  "package": "ZONGYUAN-ROOT-FULL-20260915",
+  "created_at": "2026-09-15",
+  "archive": "ZONGYUAN-ROOT-FULL-20260915.tar.gz",
+  "size": "36K",
+  "sha256": "f0ef19cf3f8c8b0abaa7b245d0efb82f46ec7637cbe20064afa11524b92dc8c8",
+  "contents": {
+    "mr020-kernel-bootstrap": "M0-M3全阶段(注册表/引擎/防护/消解/自治/整合+9锁档快照)",
+    "homology-kernel-v1": "内核V3.0-COGNITIVE(19条真值)",
+    "gateway-sop-v2-20260915": "云端网关V2接入SOP",
+    "truth-summary": "全域真值总表(19+11=30条)",
+    "viz_html": "4份可视化(总览/握手/基线V40/MR-020路径)"
+  },
+  "truth_count": 30,
+  "autonomy_index": "80.5%永恒自治",
+  "restore": "tar -xzf ZONGYUAN-ROOT-FULL-20260915.tar.gz -C <目标目录>"
+}

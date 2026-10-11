@@ -1,0 +1,21 @@
+{
+  "snapshot_id": "LOCK-COS-DEPRECATION-GUARD-20260911",
+  "timestamp": "2026-09-11T06:56:14.495850+00:00",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "type": "asset_guard_protocol",
+  "rules": [
+    "RULE-001 禁重建COS bucket",
+    "RULE-002 禁恢复cos同步",
+    "RULE-003 缺失资源须用户确认",
+    "RULE-004 归档走知识库+台账+本地"
+  ],
+  "server_guards": [
+    "cos.conf.deprecated",
+    "systemd单元移除",
+    "脚本.deprecated",
+    "ASSET_GUARD.json chattr+i"
+  ],
+  "cleanup": "误传204文件已删除，bucket已删除恢复原状",
+  "merkle_root": "7f0b90380a3c4b5c294a8cfcf1105241bbbe3835640b02599a1fbeb188ce8196"
+}

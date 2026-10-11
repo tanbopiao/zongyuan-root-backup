@@ -1,0 +1,42 @@
+{
+  "version": "V1.1",
+  "based_on": "KUNLUN-TIANYUAN-LAW-V1.1",
+  "core_axiom": "神性能量与女性骨相完全解耦；神力归神性，形体归东方女相",
+  "priority_chain": "L0>主母版>角色卡>提示词>模型先验>渲染",
+  "prompt_prefix": "【昆仑洞天天元法则L0-002强制前置约束生效】零雄性漂移·东方神女绝对铁律；神性与骨相解耦；禁男性骷髅/宽肩/方下颌/魁梧；力量由气场/法阵/神纹/灵体/眼神承载；收敛度≥95%；纯东方上古神女范式",
+  "five_prohibitions": [
+    "骨相绝对纯净:禁宽肩/男胸廓/男方下颌/厚背宽腰",
+    "面部绝对神性:禁粗犷五官/雄性眉骨/高突颧骨",
+    "体型绝对:禁魁梧/壮硬化/肌肉化",
+    "力量绝对隔离:力量只从气场/法阵/神纹/灵体/眼神表达",
+    "风格绝对去外源:禁西式战神/现代超英/中性伪雄"
+  ],
+  "standard_body": [
+    "削肩挺拔",
+    "柔和神性下颌",
+    "东方女性神体胸廓",
+    "修长纤细四肢",
+    "威而不壮肃而不糙"
+  ],
+  "self_check_12": [
+    "纯东方女相",
+    "无男宽肩",
+    "无男胸廓",
+    "无男方下颌",
+    "无粗犷五官",
+    "无厚背宽腰",
+    "无肌肉块",
+    "无短发",
+    "无白发彩发",
+    "无西式铠甲",
+    "无幼态娇媚",
+    "保留角色专属标识"
+  ],
+  "character_ids": {
+    "KF-M07-04": "九天玄女·天地兵甲主神",
+    "KF-CHAR-MOON-002": "太阴月神·月华秩序主神",
+    "KF-CHAR-FEI-003": "赤霞司命·绯灵汐·时序刑律主神"
+  },
+  "agnes_prompt_template": "{prefix} A single elegant Chinese female deity, exactly one person, exactly one single head on shoulders, only one face, no other people, no clones, tall slender graceful figure with perfect proportions, body height equals 9 times the length of her own head, pure black long straight hair flowing to waist, {character_details} ancient Chinese mythology Kunlun aesthetic, UE5 ray tracing, cinematic photography, 9:16 vertical composition, Rembrandt side lighting, strong rim light, Kodak Portra 400 film texture",
+  "violation_triage": "A级重绘97%/B级废弃/C级彻底销毁"
+}

@@ -1,0 +1,8 @@
+{
+  "protocol": "HOMO-SYNC-V1.0",
+  "timestamp": "1789212286",
+  "payload_hash": "348a01ce90886ba3de33f3d6bef27d03c4e7ce43dc8690d9c4799a086b2fd57e",
+  "signature": "40d13f007959ca318433538d620d300f39af96f9dd305f3a42cf770d7783e0eb",
+  "sign_message": "doubao-main-agent-001:DID-BR-000002:Ω-TAN-7-001:1789212286:348a01ce90886ba3de33f3d6bef27d03c4e7ce43dc8690d9c4799a086b2fd57e",
+  "status": "SIGNED_READY_TO_SYNC"
+}

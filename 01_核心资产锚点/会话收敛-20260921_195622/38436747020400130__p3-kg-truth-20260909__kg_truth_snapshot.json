@@ -1,0 +1,34 @@
+{
+  "snapshot_id": "MEM-SNAP-P3-KG-TRUTH-20260909",
+  "timestamp": "2026-09-09T14:37:19.181896+00:00",
+  "type": "p3_l3_kg_truth_integration",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "block_height": 21339,
+  "service": {
+    "name": "kg-api",
+    "script": "/opt/ZONGYUAN-ROOT/ai-native-ops/kg_api.py",
+    "systemd": "kg-api.service active+enabled",
+    "port": 8070,
+    "nginx": "/api/v1/kg/ + /api/v1/truth_retrieval -> 8070"
+  },
+  "knowledge_graph": {
+    "nodes": 18,
+    "edges": 13
+  },
+  "truth_index": {
+    "count": 34,
+    "collection": "truth_vectors_onnx",
+    "embedder": "bge-small-zh-onnx-512d"
+  },
+  "api_endpoints": [
+    "/api/v1/kg/stat",
+    "/api/v1/kg/extract",
+    "/api/v1/kg/query",
+    "/api/v1/truth_retrieval",
+    "/health"
+  ],
+  "score": "88 -> 91 (P3真实完成)",
+  "previous_claim_verified_false": "此前系统注入的P3完成声明（112实体/176边/8070端口）经核验不真实，本次为真实实现",
+  "merkle_root": "4657589566920a4564dd01b20c61d767e8acf5a10e1e9b16117968369a0bdc69"
+}

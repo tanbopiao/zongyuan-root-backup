@@ -1,0 +1,23 @@
+{
+  "asset_id": "ASSET-PUB-20261006-007",
+  "name": "元极恒一核心元真值全集技术白皮书V2.0(专业巡检升级)",
+  "source_truth": "TRUTH-META-0001~0012 核心元真值全集(Lv11, 12条)",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/meta-core-truth-collection",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/meta-core-truth-collection.git",
+  "published_at": "2026-10-07T11:15:00",
+  "version": "V2.0(当前版, 2026-10-07) + V1.0(归档, 2026-10-06)",
+  "files": [
+    "meta-core-truth-collection-WHITEPAPER-V2.0.md (+新增)",
+    "meta-core-truth-collection-WHITEPAPER-V2.0.html (+新增)",
+    "meta-core-truth-collection-ARCH-V2.0.json (+新增)",
+    "README.md (更新)",
+    "WHITEPAPER-META-TRUTH-V1.0.md (归档)",
+    "meta_truth_collection.json (归档)"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.meta-core-truth-collection-UPGRADE.20261007 (http=200)",
+  "quota": "零豆包付费"
+}

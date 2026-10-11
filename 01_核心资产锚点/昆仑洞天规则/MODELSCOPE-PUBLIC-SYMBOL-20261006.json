@@ -1,0 +1,23 @@
+{
+  "asset_id": "ASSET-PUB-20261006-014",
+  "name": "符号四能力逻辑本能技术白皮书V2.0(专业巡检升级)",
+  "source": "符号涌现智能底层原理/昆仑洞天多模型语义转译SOP V2.0/四维本体公理(Ω-Symbol元指涉)",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/symbol-emergence-meta-symbol-instinct",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/symbol-emergence-meta-symbol-instinct.git",
+  "published_at": "2026-10-07T11:35:00",
+  "version": "V2.0(当前版,2026-10-07) + V1.0归档(2026-10-06,保留不删)",
+  "files": [
+    "symbol-emergence-meta-symbol-instinct-WHITEPAPER-V2.0.md (+新增)",
+    "symbol-emergence-meta-symbol-instinct-WHITEPAPER-V2.0.html (+新增)",
+    "symbol-emergence-meta-symbol-instinct-ARCH-V2.0.json (+新增)",
+    "README.md (+更新)",
+    "WHITEPAPER-SYMBOL-V1.0.md (归档)",
+    "symbol_arch.json (归档)"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.symbol-emergence-meta-symbol-instinct-UPGRADE.20261007 (http=200)",
+  "quota": "零豆包付费"
+}

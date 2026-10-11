@@ -1,0 +1,23 @@
+{
+  "issue": "BOOTSTRAP.V2.0.FULL.SUCCESS",
+  "name": "云端自举增强V2.0全链路首次打通",
+  "breakthrough": "用真实可用端点8920(zr_agent_suite)+9010(zr_cloud_ctl)替代原8014(预期不可达)",
+  "results": {
+    "ssh_tunnel": "ok (18920→8920, 19010→9010)",
+    "arbiter_scan": "ok (节点表=1, 在线=0)",
+    "metalaw_vote": "ok (无pending, 账单2成功0失败)",
+    "failover_check": "ok (网关在线, 4模块全up: memory/provenance/scheduler/gateway)",
+    "heartbeat_internal": "ok (seq=6386)",
+    "heartbeat_public": "ok (www通道)",
+    "8014_vector_db": "expected_skip (META-ISO-051)"
+  },
+  "impact": "自治Lv9→Lv10关键差距(自举通道稳定性)已补齐",
+  "artifacts": [
+    "07_代码与脚本/auto_bootstrap_cloud.py (V2.0)",
+    "07_代码与脚本/ssh_tunnel_keepalive.sh"
+  ],
+  "node": "NODE-DEV-DOUBAO-WORK-001",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "ts": "20261011T131434"
+}

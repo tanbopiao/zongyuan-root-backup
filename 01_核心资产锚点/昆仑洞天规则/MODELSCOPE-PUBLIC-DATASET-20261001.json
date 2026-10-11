@@ -1,0 +1,26 @@
+{
+  "asset_id": "ASSET-PUB-20261001-001",
+  "name": "昆仑洞天·AI短剧视觉创作规则集技术白皮书V2.0(专业巡检升级)",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/kunlun-tianyuan-visual-rules",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/kunlun-tianyuan-visual-rules.git",
+  "published_at": "2026-10-07T11:10:04",
+  "version": "V2.0(当前版,2026-10-07); 归档版 V1.0/天元法则V1.2(2026-10-01)全部保留",
+  "files": [
+    "README.md",
+    "kunlun-tianyuan-visual-rules-WHITEPAPER-V2.0.md(+新增)",
+    "kunlun-tianyuan-visual-rules-WHITEPAPER-V2.0.html(+新增)",
+    "kunlun-tianyuan-visual-rules-ARCH-V2.0.json(+新增)",
+    "tianyuan_law.json(归档)",
+    "worldview.json(归档)",
+    "roles.json(归档)",
+    "visual_rules.json(归档)",
+    "production_methodology.json(归档)",
+    "compliance_checklist.json(归档)"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.kunlun-tianyuan-visual-rules-UPGRADE.20261007 (http=200)",
+  "quota": "零豆包付费"
+}

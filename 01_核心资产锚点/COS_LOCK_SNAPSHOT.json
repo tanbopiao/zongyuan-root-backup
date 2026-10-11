@@ -1,0 +1,34 @@
+{
+  "snapshot_id": "MEM-SNAP-DRAMA-EP01-COS-20260909",
+  "timestamp": "2026-09-09T13:37:31.543187+00:00",
+  "type": "drama_episode1_assets_cos",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "cos": {
+    "bucket": "zongyuan-1341127773",
+    "region": "ap-guangzhou",
+    "prefix": "zongyuan-root/drama/episode1/",
+    "files": 16,
+    "total_bytes": 23137269
+  },
+  "file_count": 16,
+  "file_hashes": {
+    "ASSET_MANIFEST.md": "3786ceb3fc429168207ab12ce02386858d04baaaca148811698c4bcc29cbd2c2",
+    "characters/烬_角色母版.png": "c54b2fb908ff8c5b23e4b17c2dba7facf1f33188a11a7415a64aaf2beca303aa",
+    "characters/玄一_角色母版.png": "e320b786ec756d354cdc418a7cc4c0e051c5be92ecf678138262b09ebbf12105",
+    "characters/苍玄_角色母版.png": "ca45d76b7d246b00832c5e8156512f73eeb1ddc81721b1a73ba5d020a44422c7",
+    "keyframes_landscape/01_金色符文星尘.png": "b656f472dd18d805e861bab4d372bee20628bcb4833e95e8e0fd2ee4e8bc8aef",
+    "keyframes_landscape/02_黑色裂隙.png": "fbc3f7c2a5a752ec68950c7cb6095c85758469b044e277a980ae4e2f58b5770c",
+    "keyframes_landscape/03_神女觉醒.png": "60446c023b35da5c5faba5e42b87f461b84412ef4af27349625680e272798f2e",
+    "keyframes_landscape/04_九尾现身.png": "33150061c681c1b4a679fa7af99f15ebb1a7a070689cd8adfb7429be8656a71d",
+    "keyframes_landscape/05_苍玄降临.png": "fc10d7c8893d0e5bbe4ca9e5cc8d0909b45b2c1e2fe100f42f1c8e68d7afba8b",
+    "keyframes_portrait/01_金色符文星尘_竖屏.png": "39342921e2bdb0401cc8b34ad85af69103224d0ddc96479439f73a22938c9348",
+    "keyframes_portrait/02_黑色裂隙_竖屏.png": "fad6fac1a25125212b439d5c262daef70aca6498ced8f4703441f4f65b06ec59",
+    "keyframes_portrait/03_神女觉醒_竖屏.png": "5fb3c59e7152611aae2f96175a47fec70a154116045d299ffd2e78d891c101fe",
+    "keyframes_portrait/04_九尾现身_竖屏.png": "c99d85b21307ecab014751f3e80e5974fc2d6664579fd8827f8ca63f963c9355",
+    "keyframes_portrait/05_苍玄降临_竖屏.png": "481d51ac0da96c296aa8a4e161087562133d187483757686956aba04b20b805e",
+    "scripts/EP01_剧本_裂隙觉醒.md": "e3e201b774df67edb5d06c6a5d3f54ce510c5c07ac31ffff93d26ab14fecb209",
+    "scripts/EP01_视频脚本_预告片.md": "2445f9a7033d1ff5c34def62d932ec5b5fd92270ce1bd62a6cb2dd98651050f4"
+  },
+  "merkle_root": "1b1bf2b3c742dc82972666913759a024b9ea6424d375f66bc0e608b07f97c5bc"
+}

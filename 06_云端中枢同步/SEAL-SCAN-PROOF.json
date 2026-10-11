@@ -1,0 +1,12 @@
+{
+  "scan_time": "2026-09-12 14:50 CST",
+  "result": "本地无明文SSH私钥",
+  "evidence": {
+    "home_ssh": "仅 known_hosts / known_hosts.old，无 id_* 私钥",
+    "full_disk_search": "未发现 id_ed25519 / id_rsa / *.pem / *.key 私钥文件（仅系统无关文件）",
+    "ssh_agent": "未运行（无加载密钥）",
+    "env_secrets": "存在平台注入token（GITHUB_TOKEN等），非SSH私钥",
+    "current_connectivity": "SSH Permission denied (publickey) —— 本沙箱无本地私钥，凭证由运行时注入"
+  },
+  "conclusion": "本地无明文SSH密钥泄露面；历史凭证vault（20260909）索引已纳入本封存包"
+}

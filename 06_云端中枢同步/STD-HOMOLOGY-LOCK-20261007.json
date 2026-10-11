@@ -1,0 +1,14 @@
+{
+  "action": "STD_HOMOLOGY_LOCK",
+  "did": "DID-BR-000002",
+  "node": "NODE-DEV-DOUBAO-WORK-001",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "result": {
+    "云端上报": {"STD层级标准": "www/drama HTTP200", "同源协议v2.2": "www/drama HTTP200"},
+    "飞书上报总表留痕": ["reczz28KXSIcE0bN(STD层级标准)", "reczz28KXSIcEVVH(同源协议)"],
+    "本地落盘": "STD-HOMOLOGY-BUNDLE-20261007T212827.json",
+    "主节点自评": {"自治": "Lv9 全域自治", "权限": "L4 治理写", "工程化": "Lv7 全域工程化"}
+  },
+  "status": "LOCKED",
+  "run_at": "2026-10-07T21:34:19+08:00"
+}

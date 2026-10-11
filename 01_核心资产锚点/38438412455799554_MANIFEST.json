@@ -1,0 +1,32 @@
+{
+  "lock_event_id": "LOCK-SEMANTIC-V3-20260911-001",
+  "lock_name": "昆仑洞天统一语义校验基座V3构建",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "lock_date": "2026-09-11",
+  "lock_state": "FROZEN",
+  "files": [
+    {"name": "semantic-adapter-v3.json", "role": "统一配置", "size": 19699},
+    {"name": "semantic_validator.py", "role": "语义校验引擎", "size": 24280},
+    {"name": "lock_doc.md", "role": "锁档文档", "size": 0},
+    {"name": "file_hashes.txt", "role": "文件哈希", "size": 0}
+  ],
+  "build_summary": {
+    "terms": 19,
+    "models": 4,
+    "global_rules": 5,
+    "core_rules": 14,
+    "l0_prohibitions": 5,
+    "l0_self_checks": 12,
+    "characters": 3,
+    "validation_groups": 4,
+    "engine_features": 9
+  },
+  "deployment": {
+    "config_path": "/opt/ZONGYUAN-ROOT/config/semantic-adapter-v3.json",
+    "engine_path": "/opt/ZONGYUAN-ROOT/engine/scripts/semantic_validator.py",
+    "audit_log": "/opt/ZONGYUAN-ROOT/log/semantic_validator_audit.jsonl",
+    "backup_v11": "/opt/ZONGYUAN-ROOT/config/semantic-adapter-v2.json.bak.V1.1-20260911"
+  },
+  "verification": "全部9项服务器端验证通过"
+}

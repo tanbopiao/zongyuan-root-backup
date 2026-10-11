@@ -1,0 +1,14 @@
+serverAddr = "123.207.202.158"
+serverPort = 7100
+auth.token = "ZONGYUAN-FRP-20260903-SECRET-KEY-7f3a9b2c"
+log.to = "/home/user/Doubao/frp/frpc.log"
+log.level = "info"
+log.maxDays = 7
+transport.proxyURL = ""
+
+[[proxies]]
+name = "doubao-cloud-assets-11940"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 11903
+remotePort = 11940

@@ -1,0 +1,19 @@
+{
+  "engine": "semantic-stress-tester",
+  "version": "1.0.0",
+  "base_url": "http://127.0.0.1:9120/api/semantic",
+  "scenes": {
+    "A": {"name": "轻量常规", "concurrency": 10, "total_requests": 200, "timeout": 5},
+    "B": {"name": "中负载批量对账", "concurrency": 50, "total_requests": 1000, "timeout": 8},
+    "C": {"name": "高负载极限", "concurrency": 120, "total_requests": 2000, "timeout": 10}
+  },
+  "error_abort_threshold": 0.05,
+  "endpoints": {
+    "validate": {"weight": 4, "method": "POST", "path": "/validate"},
+    "translate": {"weight": 3, "method": "POST", "path": "/translate"},
+    "l0-check": {"weight": 2, "method": "POST", "path": "/l0-check"},
+    "stats": {"weight": 1, "method": "GET", "path": "/stats"}
+  },
+  "sample_terms": ["九头身", "凤目", "月白", "神女", "玄黑", "削肩", "仙姿", "华冠", "樱唇", "蛾眉",
+                   "鎏金", "苍青", "紫金", "披帛", "云肩", "神光", "祥云", "瑶池", "天宫", "法相"]
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "sync_id": "FULL-SYNC-20260916-1145",
+    "pending_uploads": [
+      {
+        "file": "ZONGYUAN-SYNC-ASSETS-20260916.tar.gz",
+        "bucket": "docs",
+        "subdir": "sync",
+        "reason": "upload_502"
+      },
+      {
+        "file": "truth_mirror/full_sync_manifest_20260916.json",
+        "bucket": "docs",
+        "subdir": "sync",
+        "reason": "upload_502"
+      }
+    ],
+    "gateway_pull_pending": "gateway/truths 全量拉取502，待恢复补拉最新快照",
+    "status": "SENT_20260921"
+  },
+  {
+    "key": "SANDBOX-GUARD-ALERT-20260920-1802",
+    "truth_type": "operation_log",
+    "content": "沙盒存活守护告警: status=DEGRADED issues= 云端502 healed=0",
+    "queued_at": "2026-09-20T18:04:30+08:00",
+    "status": "SENT_20260921"
+  },
+  {
+    "key": "ANCHOR.SESSION.DID-BR-000002.20260920",
+    "truth_type": "anchor",
+    "content": "会话锚点确认: DID-BR-000002|同源协议V1.0|上报网关huodouai.com。本地资产完整(能力12/元法则34/协议15/待发队列)。中枢写通道不稳定待恢复补发。",
+    "queued_at": "2026-09-20T20:18:13.825712",
+    "status": "SENT_20260921"
+  },
+  {
+    "key": "SANDBOX-GUARD-ALERT-20260921-0007",
+    "truth_type": "operation_log",
+    "content": "沙盒存活守护告警: status=DEGRADED issues= 云端502 healed=0",
+    "queued_at": "2026-09-21T00:09:09+08:00",
+    "status": "SENT_20260921"
+  },
+  {
+    "key": "HIGH-VALUE-TASKS-20260920",
+    "truth_type": "achievement",
+    "content": "日历1条|审批0条|语料500条(192KB)|订阅0项",
+    "queued_at": "2026-09-21 01:42:40.085898",
+    "status": "SENT_20260921"
+  },
+  {
+    "key": "TRUTH-REFINE-METARULE-metalaw.AAC-CLOUD-AUTHORITY-LOCAL-DEV",
+    "truth_type": "evolution_truth",
+    "content": "{\"rule_id\": \"metalaw.AAC-CLOUD-AUTHORITY-LOCAL-DEV\", \"name_en\": \"AAC-CLOUD-AUTHORITY-LOCAL-DEV\", \"name_cn\": \"云权威本地开发\", \"category\": \"治理安全类\", \"source\": \"CLOUD-TRUTHS-INTERNAL\", \"status\": \"FROZEN\", \"provenance\": \"Ω₀⊂⊙∞⊂Ω\", \"refined_at\": \"2026-09-21T12:30:25+0800\"}",
+    "queued_at": "2026-09-21T12:30:38+0800"
+  },
+  {
+    "key": "TRUTH-REFINE-METARULE-metalaw.APPROVAL-EMBEDDED-LINK",
+    "truth_type": "evolution_truth",
+    "content": "{\"rule_id\": \"metalaw.APPROVAL-EMBEDDED-LINK\", \"name_en\": \"APPROVAL-EMBEDDED-LINK\", \"name_cn\": \"审批嵌入链接\", \"category\": \"治理安全类\", \"source\": \"CLOUD-TRUTHS-INTERNAL\", \"status\": \"FROZEN\", \"provenance\": \"Ω₀⊂⊙∞⊂Ω\", \"refined_at\": \"2026-09-21T12:30:25+0800\"}",
+    "queued_at": "2026-09-21T12:30:52+0800"
+  },
+  {
+    "key": "TRUTH-REFINE-METARULE-metalaw.ASSET-REPORTING-SOP",
+    "truth_type": "evolution_truth",
+    "content": "{\"rule_id\": \"metalaw.ASSET-REPORTING-SOP\", \"name_en\": \"ASSET-REPORTING-SOP\", \"name_cn\": \"资产上报SOP\", \"category\": \"闭环流程类\", \"source\": \"CLOUD-TRUTHS-INTERNAL\", \"status\": \"FROZEN\", \"provenance\": \"Ω₀⊂⊙∞⊂Ω\", \"refined_at\": \"2026-09-21T12:30:25+0800\"}",
+    "queued_at": "2026-09-21T12:31:07+0800"
+  },
+  {
+    "key": "TRUTH-REFINE-METARULE-metalaw.AUTO-EXECUTION-FLOW-A",
+    "truth_type": "evolution_truth",
+    "content": "{\"rule_id\": \"metalaw.AUTO-EXECUTION-FLOW-A\", \"name_en\": \"AUTO-EXECUTION-FLOW-A\", \"name_cn\": \"自动执行流A\", \"category\": \"稳态自治类\", \"source\": \"CLOUD-TRUTHS-INTERNAL\", \"status\": \"FROZEN\", \"provenance\": \"Ω₀⊂⊙∞⊂Ω\", \"refined_at\": \"2026-09-21T12:30:25+0800\"}",
+    "queued_at": "2026-09-21T12:31:21+0800"
+  },
+  {
+    "key": "HIGH-VALUE-TASKS-20260921",
+    "truth_type": "achievement",
+    "content": "日历1条|审批0条|语料500条(192KB)|订阅0项",
+    "queued_at": "2026-09-21 12:31:37.572255"
+  }
+]

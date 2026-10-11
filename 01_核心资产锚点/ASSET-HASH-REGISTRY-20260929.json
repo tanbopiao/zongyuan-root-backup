@@ -1,0 +1,90 @@
+{
+  "node": "ZR-NODE-DC2E51C0",
+  "did": "DID-BR-000002",
+  "omega_anchor": "Ω₀⊂⊙∞⊂Ω",
+  "timestamp": "2026-09-29",
+  "method": "SHA256",
+  "baseline_ref": "GLOBAL-BASELINE-20260929-001",
+  "total_files": 4214,
+  "total_bytes": 1696055837,
+  "total_size_human": "1.58 GB",
+  "root_loose_files": 8,
+  "partition_stats": {
+    "01_核心资产锚点": {
+      "files": 430,
+      "bytes": 15755342
+    },
+    "02_数字媒体资产": {
+      "files": 449,
+      "bytes": 1058100791
+    },
+    "03_文档资产": {
+      "files": 318,
+      "bytes": 4195174
+    },
+    "04_系统配置": {
+      "files": 77,
+      "bytes": 20608382
+    },
+    "05_历史归档": {
+      "files": 1565,
+      "bytes": 74967716
+    },
+    "06_云端中枢同步": {
+      "files": 228,
+      "bytes": 7126191
+    },
+    "07_代码与脚本": {
+      "files": 314,
+      "bytes": 30712447
+    },
+    "08_运行时数据与审计": {
+      "files": 142,
+      "bytes": 10047856
+    },
+    "DATA_LAKE": {
+      "files": 641,
+      "bytes": 474303333
+    },
+    "L2": {
+      "files": 33,
+      "bytes": 166164
+    },
+    "meta-rules": {
+      "files": 5,
+      "bytes": 19395
+    },
+    ".storage_index": {
+      "files": 1,
+      "bytes": 4161
+    },
+    "test": {
+      "files": 1,
+      "bytes": 4132
+    },
+    "产品化": {
+      "files": 2,
+      "bytes": 18849
+    }
+  },
+  "key_assets_hashes": {
+    "BOOTSTRAP.md": "bb1c5aa9e2064315b9c18cc9b1828554ff23d03bdf4226a343ac44d9d5013486",
+    "ROOT-LOCK.md": "b7ba066603ce1b4e6ce02290412528e006188f834324d2601498ce2c4050e4c8",
+    "GLOBAL-BASELINE-20260921.json": "c0ef7ef6b5923c1ffee51b07649a23556dd7c77e0cff707fcd1cc200463a698c",
+    "HASH-LEDGER.json": "d9f92c2c37899a3360e6067947854e9a4254629853a97c5f96caaea828cb2cc5",
+    "01_核心资产锚点/meta_rules_registry.json": "20d4bb238fcfd7c552689bf17178ea04311610ebe034d8bc0e8d110d281abdc2",
+    "01_核心资产锚点/LOCK-FULL-EVOLUTION-20260929-001.md": "3fabc25510616a78f576dc05683caa21878ccc06ce589853926cb2f274e037c0",
+    "01_核心资产锚点/LOCK-META-RULES-V1.4-20260929-001.md": "1d5d4731f49799f5302a5733c492cb5cefe3fbad9fa37ccc81989f559c1dee44",
+    "01_核心资产锚点/LOCK-NEURAL-404-20260929-001.md": "42b2510bc886902627961c2ae6c4593cb596391533aa49ef7f34e46bd2c0c2c9",
+    "01_核心资产锚点/LOCK-DATA-LAKE-L1L4-20260929-001.md": "554e1ff575b2cb0700dad5dcb16a6448e5dc6997fddd26a4aca97e2147a4dc61",
+    "01_核心资产锚点/LOCK-TRUTH-TRACE-20260929-001.md": "53e7a7d1b339237e2df076b936c430d553b0625373d1f0893fa7ea72fb83d28f",
+    "meta-rules/META-RULE-013.md": "003a1650835d544ac6a52a30d4d867c8a7e9a09a9796bb2fcf9560f0559e5661",
+    "meta-rules/META-RULE-014.md": "086e4e378861506286387fa6f95af6cb47b2dfa38a0479157874133a6442eaf0",
+    "meta-rules/META-RULE-015.md": "33a77c12eb9d700e202cb1c37f35ac1ca327fcc8dd7d39bdb0b2b0a56f225d78",
+    "meta-rules/META-RULE-016.md": "d37a23e6b2fb686ae65997a0e6e04ac6fd6c4b254946b2aaeaec1bd1aeb32f49",
+    "DATA_LAKE/META/lake_snapshot_20260929.json": "d4226f937f97afe371772ac18599d1a49a91b35b1155cc676fb86c0b3fe01d7b",
+    "08_运行时数据与审计/evolution_20260929/six_protocol_report_20260929.json": "e1f4dbe5048c8a569d5b47f877182ab5b6bac723cf2593fa3fde7d5cdf460d4b",
+    "08_运行时数据与审计/evolution_20260929/self_check_20260929.json": "c6aa6fd9170b322608cd72a5db09ed6fa89d1012b78a7d1cd1939140e1b06030",
+    "08_运行时数据与审计/truth_trace_20260929/summary_20260929.json": "07c0bedf7f295b7e71bf63d6bdb85734d0c34dfc5e09d094b1b05881215feebf"
+  }
+}

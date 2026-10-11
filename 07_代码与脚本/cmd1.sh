@@ -1,0 +1,1 @@
+ls /workspace/zongyuan-l4-truth-train/ 2>&1; echo ADAPTERS:; find /workspace/zongyuan-l4-truth-train -name adapter_config.json 2>/dev/null | head; echo LOGTAIL:; tail -5 /workspace/zongyuan-l4-truth-train/train.log 2>/dev/null

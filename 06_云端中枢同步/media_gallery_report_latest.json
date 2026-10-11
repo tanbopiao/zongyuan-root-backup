@@ -1,0 +1,24 @@
+{
+  "report_time": "2026-09-16T04:03:11.562026+00:00",
+  "scanned": 0,
+  "newly_archived": 0,
+  "total_works": 0,
+  "cloud_report": {
+    "success": true,
+    "action": "unchanged",
+    "key": "GALLERY-MANIFEST-20260916-0403",
+    "validation": {
+      "skipped": true,
+      "semantic_check": null,
+      "l0_check": null,
+      "issues": [
+        "文本内容过短或无中文，跳过语义校验"
+      ]
+    },
+    "truth_count": 14549,
+    "message": "真值写入成功（已通过语义前置校验）"
+  },
+  "website_html": "/home/user/Doubao/chats/38438491307070978/media_gallery/gallery_website.html",
+  "upload_channel": "502",
+  "verdict": "GALLERY_EMPTY"
+}

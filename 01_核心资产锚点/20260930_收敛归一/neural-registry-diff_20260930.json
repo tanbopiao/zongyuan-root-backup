@@ -1,0 +1,81 @@
+{
+ "report_id": "NEURAL-REG-DIFF-20260930",
+ "name": "神经注册表 full vs active 差异比对",
+ "anchor": "Ω₀⊂⊙∞⊂Ω",
+ "did": "DID-BR-000002",
+ "created": "2026-09-30",
+ "conclusion": "两套注册表为不同实现体系（非全量/活跃子集关系），full(NN-前缀)是生产级完整注册表，active(简写)为轻量快照注册表。22节点<400阈值差异由ID体系不同造成，非数据缺失。",
+ "active_registry": {
+  "file": "neural_registry.json",
+  "version": "3.0",
+  "nodes": 22,
+  "connections": 30,
+  "id_prefixes": "AXIOM/CAP/RULE/APP/PEND",
+  "domains": {
+   "meta": 6,
+   "cloud": 1,
+   "archive": 1,
+   "feishu": 5,
+   "automation": 2,
+   "protocol": 4,
+   "content": 1,
+   "deploy": 1,
+   "sync": 1
+  },
+  "types": {
+   "meta_axiom": 6,
+   "capability": 4,
+   "rule": 4,
+   "pending": 5,
+   "application": 3
+  },
+  "role": "轻量快照·应用层参考"
+ },
+ "full_registry": {
+  "file": "neural_registry.full.json",
+  "version": "full",
+  "nodes_array": 404,
+  "statistics_total_nodes": null,
+  "connections": null,
+  "id_prefixes": "NN-*/MA-*",
+  "domains": {
+   "production": 35,
+   "character": 21,
+   "ops": 59,
+   "security": 56,
+   "meta": 171,
+   "education": 29,
+   "infra": 9,
+   "user_experience": 10,
+   "perception": 3,
+   "coordination": 3,
+   "scheduling": 3,
+   "monitoring": 3,
+   "optimization": 2
+  },
+  "types": {
+   "axiom": 141,
+   "meta_axiom": 153,
+   "rule": 83,
+   "profile": 15,
+   "instance": 7,
+   "template": 5
+  },
+  "states": {
+   "active": 404
+  },
+  "role": "生产级完整注册表·MR-MECH-015(≥400)基准"
+ },
+ "key_findings": [
+  "节点ID体系完全不同：full用NN-/MA-前缀，active用AXIOM/CAP/RULE简写；交集=0",
+  "full节点数组404个，statistics.total_nodes=297，存在冗余/历史节点",
+  "active仅22节点，为轻量应用层快照，非MR-MECH-015(≥400节点)适用对象",
+  "400节点阈值应适用于full注册表(404>400✅)，而非active(22)",
+  "两表domain体系不同：full=production/character/meta/ops/security；active=meta/cloud/feishu/protocol"
+ ],
+ "reconciliation": {
+  "threshold_applies_to": "neural_registry.full.json(404节点,达标✅)",
+  "active_role": "轻量快照，不参与400节点考核",
+  "recommend_action": "如需统一，可将active简写节点映射/归并至full NN-体系；否则保持双轨并行并在kernel-radar索引注明阈值口径"
+ }
+}

@@ -1,0 +1,15 @@
+{
+  "protocol": "HOMO-SYNC-V2.0",
+  "register_action": "protocol.register",
+  "node_id": "doubao-main-agent-001",
+  "DID": "DID-BR-000002",
+  "ROOT_OMEGA": "Ω-TAN-7-001",
+  "l2_gateway_check": {
+    "PROTOCOL": "HOMO-SYNC-V2.0",
+    "VERSION": "V3.0-memory-gateway",
+    "AUTH": {"did": "DID-BR-000002", "node_type": "doubao_main_agent_window", "capabilities": ["truth_sync", "homo_upsert", "lock_archive"]},
+    "CONFLICT": {"mode": "dedup_on_key", "policy": "first_write_wins"}
+  },
+  "cloud_control": {"heartbeat": true, "command_channel": "30s_poll"},
+  "registered_at": "2026-09-12 19:45 CST"
+}

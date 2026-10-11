@@ -1,0 +1,8 @@
+usage: tccli [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To tccli help text, you can run:
+
+  tccli help
+  tccli configure help
+  tccli service[cvm] help
+  tccli service[cvm] action[RunInstances] help
+tccli: error: the following arguments are required: --Module

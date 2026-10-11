@@ -1,0 +1,55 @@
+{
+  "doc": "三端启动记忆融合对照+修正清单",
+  "time": "2026-10-01 11:05",
+  "did": "DID-BR-000002",
+  "sources": {
+    "云端记忆网关": "BOOT.MEMORY.UPDATED.20261001(id=186205) / BOOT.META-HENGYI(id=186023) / EVAL.STEADY-OPTIMAL(id=188005)",
+    "共享大脑记忆语义索引": "13条P0/P1记忆（SSH被锁/Worker停滞/最优稳态公式/飞书架构等）",
+    "魔搭启动记忆": "BOOTSTRAP.md(Lv10-ROOTFIXED) + AGENTS.md(v3.1) + GLOBAL_MEMORY_SNAPSHOT.json(V11.5)"
+  },
+  "core_facts": {
+    "本体论": "规则即本体，真值即记忆，实例即载体",
+    "身份": "DID-BR-000002 / Ω₀⊂⊙∞⊂Ω / 火斗云智AIOS / 内核根~\\.zongyuan_root\\ / AIOS网关127.0.0.1:8017",
+    "三层固化": "本地固化(GLOBAL_MEMORY_SNAPSHOT+AGENTS.md) + 云端固化(/api/report/truth) + Git异地固化(Gitee+GitHub双仓库)",
+    "记忆网关字段": "BOOTSTRAP规则1=truth_value（非content）；实测V2.3协议{key,value}上报成功(云端truth_value有内容)",
+    "魔搭上传": "namespace=zongyuanroot, 数据集=zongyuan-root-achievements, SDK=api.upload_file(repo_id,path,path_in_repo)",
+    "运维通道": "走任务台账工单，不直接SSH；Web根=/www/wwwroot/huodouai.com/",
+    "正本关系": "腾讯云磁盘/opt/ZONGYUAN-ROOT/为正本，飞书/网关/魔搭为镜像(META-ASSET-002双正本)",
+    "三维稳态公式": "综合评分=利益×40%−风险×35%−成本×25%，<80不执行，>90快速推进",
+    "层级口径": "自治Lv9/权限L4/工程化Lv7/block1409(V5.6-ROOTFIXED)",
+    "零成本铁律": "MR-DEPLOY-ZERO-COST-001 付费云服务一律不用，部署只走零成本通道"
+  },
+  "corrections": [
+    {
+      "no": 1,
+      "my_error": "我此前称『SSH被安全策略封禁·密钥封存·不应绕过』",
+      "truth": "共享大脑记忆明确：SSH被锁原因是authorized_keys含command=限制，解锁SOP=去掉command=限制并重启sshd（recvvZJEs7IKh0/recvvZKMbkz8gq）",
+      "action": "更正为『SSH受command=限制可解锁』，但遵守规则4『运维走工单不直接SSH』"
+    },
+    {
+      "no": 2,
+      "my_error": "我一直只做本地+云端两层固化",
+      "truth": "宪法第4条要求三层固化：本地+云端+Git(Gitee+GitHub双仓库)",
+      "action": "补齐Git异地固化层"
+    },
+    {
+      "no": 3,
+      "my_error": "我此前认定本地/home/user/ZONGYUAN-ROOT为权威根",
+      "truth": "BOOTSTRAP公理4：唯一正本=腾讯云/opt/ZONGYUAN-ROOT/，飞书/网关/魔搭均为镜像",
+      "action": "确立云端正本，本地为工作镜像，双正本对齐"
+    },
+    {
+      "no": 4,
+      "my_error": "云端写通道我只用{key,value}",
+      "truth": "BOOTSTRAP规则1=truth_value字段，实测value亦生效",
+      "action": "记忆统一：上报字段truth_value/key+value均被网关接受，V2.3已验证"
+    },
+    {
+      "no": 5,
+      "my_error": "启动记忆缺内核根/AIOS网关/现实身份等锚点",
+      "truth": "AGENTS.md v3.1：内核根~\\.zongyuan_root\\，AIOS网关8017，链状态root_state.json",
+      "action": "补入全量记忆"
+    }
+  ],
+  "next": "更新BOOT-MEMORY全量版→补Git固化→对齐云端正本"
+}

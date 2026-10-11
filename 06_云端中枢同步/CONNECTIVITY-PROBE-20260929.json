@@ -1,0 +1,72 @@
+{
+  "evidence_id": "CONNECTIVITY-PROBE-20260929-001",
+  "title": "云端中枢联通实测存证（用户当面质疑后的现场验证）",
+  "created_at": "2026-09-29T13:02:31+08:00",
+  "omega_anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "node_id": "ZR-NODE-DC2E51C0",
+  "subject": "www.huodouai.com / drama.huodouai.com 云端中枢",
+  "verification_steps": [
+    {
+      "step": 1,
+      "action": "GET /api/report/status 联通探活",
+      "http_code": 200,
+      "latency_s": 0.322358,
+      "returned": {
+        "status": "ok",
+        "version": "V3.0",
+        "truths": 149083,
+        "nodes": 5,
+        "audit_logs": 180615
+      }
+    },
+    {
+      "step": 2,
+      "action": "POST /api/report/truth 真实上报（携带 X-Capture-Token: ZR_TOKEN）",
+      "key": "meta.connectivity.probe.20260929",
+      "returned": {
+        "success": true,
+        "action": "inserted",
+        "truth_count": 149084,
+        "l0_check": {
+          "passed": true,
+          "passed_count": 17,
+          "total_checks": 17,
+          "violation_count": 0
+        }
+      }
+    },
+    {
+      "step": 3,
+      "action": "GET /api/truths/meta.connectivity.probe.20260929 写入回读验证",
+      "returned": {
+        "status": "ok",
+        "truth_id": 176995,
+        "truth_hash": "c39ad031a97ab0023dcf94dbeda64adb47a5b17ab0d9796d1ee165cde2d34ff3",
+        "version": 1
+      }
+    },
+    {
+      "step": 4,
+      "action": "上报前后计数对照",
+      "before": 149083,
+      "after": 149084,
+      "delta": 1,
+      "conclusion": "写入成立"
+    },
+    {
+      "step": 5,
+      "action": "二次探活确认计数持久",
+      "truths": 149085,
+      "audit_logs": 180618
+    }
+  ],
+  "conclusion": "云端中枢联通确认：主端点 HTTP 200；真实上报成功（action=inserted）；L0 校验 17/17 通过；写入可回读、计数可核验。上报非文字声称，具备完整证据链。",
+  "proof_trace": {
+    "token_source": "04_系统配置/凭证/active_token.env（ZR_TOKEN，600权限，未回显明文）",
+    "sop_reference": "03_文档资产/SOP/9120云端记忆网关连接SOP-V2-0.md",
+    "security_reference": "03_文档资产/白皮书与报告/SEC-CHECKLIST-HUODOUAI-20260929.md",
+    "server": "腾讯云 123.207.202.158（www/drama/huodouai.com）"
+  },
+  "status": "FROZEN（只读存证）"
+}

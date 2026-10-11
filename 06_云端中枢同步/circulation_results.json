@@ -1,0 +1,129 @@
+{
+  "run_id": "RUN-20260916-123926",
+  "circulated_at": "2026-09-16T12:39:41",
+  "total": 6,
+  "lark_cli_available": true,
+  "gateway_report_id": "",
+  "results": [
+    {
+      "product_id": "PRD-20260915-840A",
+      "ledger_record_id": "recvvm4tAE0aVT",
+      "drive_file_token": "SIM-2DC7CB8A",
+      "approval_instance_id": "skipped",
+      "notification_status": "sent",
+      "gateway_report_id": "",
+      "commercial_card": {
+        "name": "昆仑洞天DRAMAaaS · 创意ZONGYUAN-ROOT 短剧…",
+        "product_line": "P0-dramaaas",
+        "suggested_price": 3422.85,
+        "target_customer": "短剧厂牌 / MCN / 内容工作室",
+        "status": "DRAFT"
+      },
+      "execution_mode": {
+        "bitable": "real",
+        "drive": "simulated",
+        "gateway": "real"
+      }
+    },
+    {
+      "product_id": "PRD-20260915-09F8",
+      "ledger_record_id": "recvvm4uhefAyj",
+      "drive_file_token": "SIM-0587095C",
+      "approval_instance_id": "skipped",
+      "notification_status": "sent",
+      "gateway_report_id": "",
+      "commercial_card": {
+        "name": "自治内核咨询实施 · 元法则自治内核元进化法则：任意自维持…",
+        "product_line": "P0-consulting",
+        "suggested_price": 7124.0,
+        "target_customer": "追求自治内核落地的中大型企业技术决策层 / 创始人",
+        "status": "DRAFT"
+      },
+      "execution_mode": {
+        "bitable": "real",
+        "drive": "simulated",
+        "gateway": "real"
+      }
+    },
+    {
+      "product_id": "PRD-20260915-23CE",
+      "ledger_record_id": "recvvm4uUNFH9P",
+      "drive_file_token": "SIM-1D992502",
+      "approval_instance_id": "skipped",
+      "notification_status": "sent",
+      "gateway_report_id": "",
+      "commercial_card": {
+        "name": "昆仑洞天DRAMAaaS · 创意全域资产产品化商业化方案可视化仪…",
+        "product_line": "P0-dramaaas",
+        "suggested_price": 3689.22,
+        "target_customer": "短剧厂牌 / MCN / 内容工作室",
+        "status": "DRAFT"
+      },
+      "execution_mode": {
+        "bitable": "real",
+        "drive": "simulated",
+        "gateway": "real"
+      }
+    },
+    {
+      "product_id": "PRD-20260915-9E7A",
+      "ledger_record_id": "recvvm4vyXITqk",
+      "drive_file_token": "SIM-057E462E",
+      "approval_instance_id": "skipped",
+      "notification_status": "sent",
+      "gateway_report_id": "",
+      "commercial_card": {
+        "name": "认证培训 · 资产元法则视频量产通道自动故障转移：…",
+        "product_line": "P2-academy",
+        "suggested_price": 15684.5,
+        "target_customer": "希望掌握 ZONGYUAN-ROOT 方法论的个人与团队",
+        "status": "DRAFT"
+      },
+      "execution_mode": {
+        "bitable": "real",
+        "drive": "simulated",
+        "gateway": "real"
+      }
+    },
+    {
+      "product_id": "PRD-20260915-C472",
+      "ledger_record_id": "recvvm4wcS41zD",
+      "drive_file_token": "SIM-3C9D6ABC",
+      "approval_instance_id": "skipped",
+      "notification_status": "sent",
+      "gateway_report_id": "",
+      "commercial_card": {
+        "name": "认证培训 · 资产元法则数字资产可视化基准架构与扩…",
+        "product_line": "P2-academy",
+        "suggested_price": 15684.5,
+        "target_customer": "希望掌握 ZONGYUAN-ROOT 方法论的个人与团队",
+        "status": "DRAFT"
+      },
+      "execution_mode": {
+        "bitable": "real",
+        "drive": "simulated",
+        "gateway": "real"
+      }
+    },
+    {
+      "product_id": "PRD-20260915-A8B7",
+      "ledger_record_id": "recvvm4wQT09K6",
+      "drive_file_token": "SIM-53FE7E5E",
+      "approval_instance_id": "skipped",
+      "notification_status": "sent",
+      "gateway_report_id": "",
+      "commercial_card": {
+        "name": "认证培训 · 资产元法则已固化成果变更审批（LOC…",
+        "product_line": "P2-academy",
+        "suggested_price": 15684.5,
+        "target_customer": "希望掌握 ZONGYUAN-ROOT 方法论的个人与团队",
+        "status": "DRAFT"
+      },
+      "execution_mode": {
+        "bitable": "real",
+        "drive": "simulated",
+        "gateway": "real"
+      }
+    }
+  ]
+}

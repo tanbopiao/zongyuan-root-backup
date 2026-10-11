@@ -1,0 +1,21 @@
+{
+  "asset_id": "ASSET-PUB-20261007-002",
+  "name": "一键训练套件V1.0(合并更新至共享数据湖gpu-agent)",
+  "source": "one_click_train.py/sh (AMD 192G 显存自适应)",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/ZONGYUAN-SHARED-DATALAKE",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/ZONGYUAN-SHARED-DATALAKE.git",
+  "pull_path": "git sparse-checkout set gpu-agent (已验证)",
+  "published_at": "2026-10-07T12:18:26",
+  "merge_policy": "合并更新(未新开数据集), 旧训练脚本归档保留",
+  "files": [
+    "gpu-agent/one_click_train.py",
+    "gpu-agent/one_click_train.sh",
+    "+README追加"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.ONECLICK-TRAIN.20261007",
+  "quota": "零豆包付费"
+}

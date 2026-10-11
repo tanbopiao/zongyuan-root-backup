@@ -1,0 +1,93 @@
+{
+  "manifest_id": "ASSET-MANIFEST-20260915",
+  "did": "DID-BR-000002",
+  "trace_id": "Ω₀⊂⊙∞⊂Ω",
+  "generated_at": "2026-09-15 20:12",
+  "source": "记忆网关9120门户 + 本地工作区",
+  "portal_stats": {
+    "total_assets": 2188,
+    "keyframes_images": 1918,
+    "videos": 75,
+    "drama_episodes": 195,
+    "today_new": 0,
+    "character_groups": 2
+  },
+  "portal_visible": {
+    "images": 16,
+    "videos": 12,
+    "image_samples": [
+      "other/2026-09-15/MEDIA-IMAGE-OTHER-unknown-20260915135416.png",
+      "other/2026-09-15/MEDIA-IMAGE-OTHER-unknown-20260915135315.png",
+      "other/2026-09-15/MEDIA-IMAGE-OTHER-unknown-20260915135245.png",
+      "other/2026-09-15/MEDIA-IMAGE-OTHER-unknown-20260915135211.png"
+    ],
+    "video_list": [
+      "EP05_dubbed.mp4",
+      "EP04_dubbed.mp4",
+      "EP03_dubbed.mp4",
+      "EP02_dubbed.mp4",
+      "EP01_dubbed.mp4",
+      "kunlun-archive-20260914/d20260914_video_feilingxi_boom.mp4",
+      "kunlun-archive-20260914/d20260914_video_jiutian_boom.mp4",
+      "E2E-001-KF001.mp4",
+      "ep04-15s.mp4",
+      "2026-09-13/video2_九天玄女烛龙.mp4",
+      "2026-09-13/video1_赤色战甲神女.mp4",
+      "2026-09-13/huli-V3-20260913.mp4"
+    ]
+  },
+  "local_assets": {
+    "total": 41,
+    "images": 41,
+    "videos": 0,
+    "assets": [
+      "chats/38436546492378882/media_assets/EP04_KF1.jpg",
+      "chats/38436546492378882/media_assets/EP04_KF2.jpg",
+      "chats/38436546492378882/media_assets/EP04_KF3.jpg",
+      "chats/38436546492378882/media_assets/EP05_KF1.jpg",
+      "chats/38436546492378882/media_assets/EP05_KF2.jpg",
+      "chats/38436546492378882/media_assets/EP05_KF3.jpg",
+      "chats/38436546492378882/media_assets/EP06_KF1.jpg",
+      "chats/38436546492378882/media_assets/EP06_KF2.jpg",
+      "chats/38436546492378882/media_assets/EP06_KF3.jpg",
+      "chats/38436546492378882/media_assets/S4EP01_KF1.jpg",
+      "chats/38436546492378882/media_assets/S4EP01_KF2.jpg",
+      "chats/38436546492378882/media_assets/S4EP01_KF3.jpg",
+      "chats/38436546492378882/media_assets/20260915_archive/KF-XUANNV_design_01.jpg",
+      "chats/38436546492378882/media_assets/20260915_archive/KF-XUANNV_design_02.jpg",
+      "chats/38436546492378882/media_assets/20260915_archive/KF-XUANNV_design_03.jpg",
+      "chats/38436546492378882/media_assets/20260915_archive/KF-XUANNV_design_04.jpg",
+      "chats/38436546492378882/media_assets/20260915_archive/KF-XUANNV_epic_01.jpg",
+      "chats/38436546492378882/media_assets/20260915_archive/KF-XUANNV_epic_02.jpg",
+      "chats/38436546492378882/media_assets/20260915_archive/KF-XUANNV_epic_03.jpg",
+      "chats/38436546492378882/media_assets/20260915_archive/KF-XUANNV_epic_04.jpg",
+      "chats/38436546492378882/media_assets/20260915_archive/TAIYIN_descend_01.jpg",
+      "chats/38436546492378882/media_assets/20260915_archive/TAIYIN_descend_02.jpg",
+      "chats/38436546492378882/media_assets/20260915_archive/TAIYIN_descend_03.jpg",
+      "chats/38436546492378882/media_assets/20260915_archive/TAIYIN_descend_04.jpg",
+      "chats/38436546492378882/media_assets/20260915_archive/TAIYIN_hands_01.jpg",
+      "chats/38436546492378882/media_assets/20260915_archive/TAIYIN_hands_02.jpg",
+      "chats/38436546492378882/media_assets/20260915_archive/TAIYIN_hands_03.jpg",
+      "chats/38436546492378882/media_assets/20260915_archive/TAIYIN_hands_04.jpg",
+      "chats/38436747020400130/drama-episode1-assets/characters/烬_角色母版.png",
+      "chats/38436747020400130/drama-episode1-assets/characters/玄一_角色母版.png",
+      "chats/38436747020400130/drama-episode1-assets/characters/苍玄_角色母版.png",
+      "chats/38436747020400130/drama-episode1-assets/keyframes_landscape/01_金色符文星尘.png",
+      "chats/38436747020400130/drama-episode1-assets/keyframes_landscape/02_黑色裂隙.png",
+      "chats/38436747020400130/drama-episode1-assets/keyframes_landscape/03_神女觉醒.png",
+      "chats/38436747020400130/drama-episode1-assets/keyframes_landscape/04_九尾现身.png",
+      "chats/38436747020400130/drama-episode1-assets/keyframes_landscape/05_苍玄降临.png",
+      "chats/38436747020400130/drama-episode1-assets/keyframes_portrait/01_金色符文星尘_竖屏.png",
+      "chats/38436747020400130/drama-episode1-assets/keyframes_portrait/02_黑色裂隙_竖屏.png",
+      "chats/38436747020400130/drama-episode1-assets/keyframes_portrait/03_神女觉醒_竖屏.png",
+      "chats/38436747020400130/drama-episode1-assets/keyframes_portrait/04_九尾现身_竖屏.png",
+      "chats/38436747020400130/drama-episode1-assets/keyframes_portrait/05_苍玄降临_竖屏.png"
+    ]
+  },
+  "category_hint": {
+    "keyframes": "EP04-06系列/S4EP01/KF-XUANNV/TAIYIN/角色母版",
+    "videos": "EP01-05配音版/昆仑归档/九天玄女/赤色战甲神女/狐灵",
+    "characters": "烬/玄一/苍玄/狐灵/九天玄女(2角色分组)"
+  },
+  "api_status": "502宕机，索引基于门户可见+本地快照，非云端全量"
+}

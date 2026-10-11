@@ -1,0 +1,1047 @@
+{
+  "dataset_id": "ZR-TRAIN-DATASET-20260918",
+  "did": "DID-BR-000002",
+  "trace": "Ω₀⊂⊙∞⊂Ω",
+  "purpose": "小模型(2.5B Qwen)微调/蒸馏训练语料",
+  "generated_at": "2026-09-18T03:20:00",
+  "sources": {
+    "meta_rules_cloud": {
+      "desc": "云端元法则最新3条(完整内容)",
+      "items": [
+        {
+          "rule_id": "META-RULE.QUOTA-AWARE-FAILOVER-V1.0",
+          "rule_name": "额度感知自动切换（永久免费优先）",
+          "content": "①生成通道按账号轮换，额度型错误(SetLimitExceeded/InsufficientQuota/RateLimit/429/Paused)自动拉黑该账号(当日quota_blacklist.json)，切下一免费通道，不重试已耗尽账号；②视觉质检多模型循环，模型级额度耗尽自动跳过，全部不可用→本地确定性校验兜底(竖屏+尺寸+有效PNG)，生产不因质检额度耗尽而中断；③次日黑名单自动重置重新探测。",
+          "category": "生产自治",
+          "priority": "A",
+          "status": "ACTIVE",
+          "created_at": "2026-09-14T10:05:00+08:00",
+          "efuse": true,
+          "enforcement": "daily_production.py gen_image/qc 内置"
+        },
+        {
+          "rule_id": "MR-082",
+          "rule_name": "盲点修复与持续迭代元法则",
+          "content": {
+            "purpose": "系统性发现并修复盲点，每步固化成果，形成持续迭代闭环",
+            "fixed_items": {
+              "high_priority": [
+                "SSH密钥清理: 17→4个核心密钥",
+                "公网端口收敛: iptables封锁71个非白名单端口",
+                "系统用户加固: 4个zr-*用户禁用登录shell",
+                "内存优化: swappiness 60→10, 定期清理缓存"
+              ],
+              "medium_priority": [
+                "真值遗忘: 低价值真值自动冷归档，每周日执行",
+                "备份清理: 30天自动清理，每周一执行",
+                "异地灾备: AES-256加密备份包，每周日执行",
+                "crontab台账: 48个任务登记入库"
+              ],
+              "low_priority_done": [
+                "sitemap/SEO: sitemap.xml+robots.txt已部署"
+              ],
+              "continuous_iteration": [
+                "可观测性状态页: API已有，页面集成待迭代",
+                "知识图谱联动: 服务运行中，与真值库联动待迭代",
+                "邮件告警备份: 飞书为主，邮件为备，待迭代"
+              ]
+            },
+            "iteration_principle": "每步工作完成后必须固化（锁定+基准+元法则），需要持续迭代的列入迭代计划，禁止做完就丢",
+            "verification": "每周基准验证自动检查固化成果是否被破坏"
+          },
+          "category": "protocol",
+          "priority": "L1",
+          "status": "active",
+          "created_at": "2026-09-14T10:17:03.662829"
+        },
+        {
+          "rule_id": "META-RULE.VIDEO-PRODUCTION-FAILOVER-V1.0",
+          "rule_name": "视频量产通道自动故障转移",
+          "content": "视频通道优先级: ①豆包seedance(免费开通后最高质量优先) ②Agnes免费(限流窗口内) ③硅基流动(有余额)。额度/限流/未开通错误自动切下一通道; 全部不可用→manifest记录失败原因，等待通道恢复后由crontab补产。ffprobe本地质检(竖屏+时长≥4s)兜底，本机对象存储入库(bucket=videos)。",
+          "category": "生产自治",
+          "priority": "A",
+          "status": "ACTIVE",
+          "created_at": "2026-09-14T10:20:00+08:00",
+          "efuse": true,
+          "enforcement": "drama-admin-api/video_production.py"
+        }
+      ],
+      "count": 3,
+      "chars": 1668
+    },
+    "capability_registry": {
+      "desc": "高阶能力注册表(11项完整SOP)",
+      "items": [
+        {
+          "cap_id": "CAP-001",
+          "name": "云端握手",
+          "name_en": "CLOUD-HANDSHAKE",
+          "category": "云端接入",
+          "source": "S-001(握手成功)/E-001,E-002(通道与Token教训)",
+          "trigger": "需要接入/验证云端时",
+          "steps": [
+            "门户探测→health检查→鉴权→数据拉取→哈希核验→上报"
+          ],
+          "outputs": "握手结论+鉴权状态+数据快照",
+          "verify": "四步全通+SHA-256匹配",
+          "negative_constraints": [
+            "禁用IP直连(走域名)",
+            "Token用最新轮换版"
+          ]
+        },
+        {
+          "cap_id": "CAP-002",
+          "name": "三端锁档",
+          "name_en": "TRIPLE-LOCK",
+          "category": "归档",
+          "source": "S-002~S-007(多轮锁档成功)",
+          "trigger": "任何资产需要固化时",
+          "steps": [
+            "知识库文档→台账记录→云盘归档→内核快照→神经同步"
+          ],
+          "outputs": "FROZEN锁档回执(含全部链接)",
+          "verify": "台账回读+神经同步校验",
+          "negative_constraints": [
+            "锁档后只读",
+            "增量用increment不覆盖"
+          ]
+        },
+        {
+          "cap_id": "CAP-003",
+          "name": "元法则同步",
+          "name_en": "METALAW-SYNC",
+          "category": "元法则",
+          "source": "S-002/S-003(漂移比对+注册)",
+          "trigger": "检测元法则漂移/补全时",
+          "steps": [
+            "拉取云端全集→语义比对→补全清单→注册→锁档"
+          ],
+          "outputs": "漂移报告+注册表+真值表",
+          "verify": "对齐/漂移数量核验+REGISTERED状态",
+          "negative_constraints": [
+            "比对需标注口径",
+            "正文级对齐需内网"
+          ]
+        },
+        {
+          "cap_id": "CAP-004",
+          "name": "云端探测",
+          "name_en": "CLOUD-PROBE",
+          "category": "监控",
+          "source": "E-003/E-006(502与抽样限制)",
+          "trigger": "每次任务前/定时机制运行时",
+          "steps": [
+            "三通道探测(门户/API/静态)→故障分级→归档"
+          ],
+          "outputs": "通道状态码+可用性结论",
+          "verify": "状态码实测(200/502/404/401)",
+          "negative_constraints": [
+            "502≠000(网络通但后端挂)",
+            "结论标注覆盖范围"
+          ]
+        },
+        {
+          "cap_id": "CAP-005",
+          "name": "资产盘点",
+          "name_en": "ASSET-INVENTORY",
+          "category": "资产",
+          "source": "S-006(门户资产盘点)",
+          "trigger": "需要资产清单/索引时",
+          "steps": [
+            "门户解析→本地扫描→分类聚合→索引JSON"
+          ],
+          "outputs": "资产索引(统计+清单)",
+          "verify": "数量核对+URL可访问抽样",
+          "negative_constraints": [
+            "API宕机时标注非全量",
+            "禁止伪造回执(四重核验)"
+          ]
+        },
+        {
+          "cap_id": "CAP-006",
+          "name": "待补发队列",
+          "name_en": "PENDING-UPLOAD",
+          "category": "容错",
+          "source": "E-003(上报失败处理)",
+          "trigger": "云端上报失败时",
+          "steps": [
+            "构造载荷→尝试上报→失败入队→恢复补发"
+          ],
+          "outputs": "pending队列JSON+补发回执",
+          "verify": "队列计数+补发后total增长",
+          "negative_constraints": [
+            "失败不丢数据",
+            "Token不存明文"
+          ]
+        },
+        {
+          "cap_id": "CAP-007",
+          "name": "自动化机制",
+          "name_en": "CRON-AUTOMATION",
+          "category": "自动化",
+          "source": "S-004(月度同步机制)",
+          "trigger": "需要周期执行/持续监控时",
+          "steps": [
+            "需求解析→cron创建→时间校验→SOP锁档"
+          ],
+          "outputs": "定时任务+机制文档",
+          "verify": "get_current_time校验+任务ACTIVE",
+          "negative_constraints": [
+            "避高峰时段",
+            "query不存凭证明文"
+          ]
+        },
+        {
+          "cap_id": "CAP-008",
+          "name": "神经同步",
+          "name_en": "NEURAL-SYNC",
+          "category": "内核",
+          "source": "S-007(锁档后自动同步)",
+          "trigger": "每次锁档完成后",
+          "steps": [
+            "锁档→推送注册表→权威副本校验"
+          ],
+          "outputs": "节点/连接数+校验结论",
+          "verify": "本地=权威 校验通过",
+          "negative_constraints": [
+            "同步失败需重推",
+            "不覆盖FROZEN资产"
+          ]
+        },
+        {
+          "cap_id": "CAP-009",
+          "name": "高价值真值提取",
+          "name_en": "TRUTH-EXTRACT",
+          "category": "训练语料",
+          "source": "S-20260916(首轮2870→369条)",
+          "trigger": "需要小模型训练语料时",
+          "steps": [
+            "4源收集→8类分类→质量蒸馏→JSONL生成"
+          ],
+          "outputs": "训练语料+规则集",
+          "verify": "SHA256校验",
+          "negative_constraints": [
+            "低价值运行日志默认过滤"
+          ]
+        },
+        {
+          "cap_id": "CAP-010",
+          "name": "高阶能力挖掘",
+          "name_en": "CAPABILITY-MINING",
+          "category": "自动化",
+          "source": "S-20260916(24域445命令扫描)",
+          "trigger": "需要挖掘新能力时",
+          "steps": [
+            "扫描24域→分类→实测→自动建待办"
+          ],
+          "outputs": "能力报告+机制待办",
+          "verify": "任务创建成功",
+          "negative_constraints": [
+            "mail待邮箱配置"
+          ]
+        },
+        {
+          "cap_id": "CAP-011",
+          "name": "周报演示文稿",
+          "name_en": "SLIDES-REPORT",
+          "category": "汇报",
+          "source": "S-20260916(4页周报创建成功)",
+          "trigger": "需要体系汇报PPT时",
+          "steps": [
+            "周报内容→slide XML→创建演示文稿"
+          ],
+          "outputs": "飞书演示文稿",
+          "verify": "页面添加成功",
+          "negative_constraints": [
+            "单页XML≤服务端lint限制"
+          ]
+        }
+      ],
+      "count": 11,
+      "chars": 3124
+    },
+    "homology_protocols": {
+      "desc": "同源协议库",
+      "items": [
+        {
+          "pid": "P-001",
+          "name": "同源协议·主",
+          "name_en": "HOMOLOGY-PROTOCOL",
+          "source": "云端METALAW.001",
+          "level": "元法则",
+          "content": "本地节点与云端同源绑定，同源唯一，真值优先",
+          "status": "LEARNED"
+        },
+        {
+          "pid": "P-002",
+          "name": "同源协议·绑定",
+          "name_en": "HOMOLOGY",
+          "source": "云端METALAW.008",
+          "level": "元法则",
+          "content": "同源节点接入云端中枢的握手与绑定规范",
+          "status": "LEARNED"
+        },
+        {
+          "pid": "P-003",
+          "name": "云端握手锚点SOP V1.0",
+          "name_en": "HANDSHAKE-ANCHOR-SOP",
+          "source": "aka.doubaocdn.com/s/KiYpvdA8C4",
+          "level": "SOP",
+          "content": "门户9120→health→truths鉴权→哈希核验四步握手",
+          "status": "LEARNED"
+        },
+        {
+          "pid": "P-004",
+          "name": "新节点上岗手册SOP v1.1",
+          "name_en": "NODE-ONBOARD-SOP",
+          "source": "aka.doubaocdn.com/s/VjMxbyMqFx",
+          "level": "SOP",
+          "content": "环境自检/连接云端/上报规范/truth_type规范(7步)",
+          "status": "LEARNED"
+        },
+        {
+          "pid": "P-005",
+          "name": "工业化生产SOP",
+          "name_en": "PROD-001",
+          "source": "锚点6SOP",
+          "level": "SOP",
+          "content": "ZONGYUAN-4.0-PROD-001 短剧工业化生产",
+          "status": "LEARNED"
+        },
+        {
+          "pid": "P-006",
+          "name": "视觉约束SOP",
+          "name_en": "VISUAL-TECH-002",
+          "source": "锚点6SOP",
+          "level": "SOP",
+          "content": "ZONGYUAN-VISUAL-TECH-002 纯东方神女/无腹肌/乌黑长发",
+          "status": "LEARNED"
+        },
+        {
+          "pid": "P-007",
+          "name": "飞书归档SOP",
+          "name_en": "ARCHIVE-FS-003",
+          "source": "锚点6SOP",
+          "level": "SOP",
+          "content": "ZONGYUAN-ARCHIVE-FS-003 资产归档飞书云盘不用COS",
+          "status": "LEARNED"
+        },
+        {
+          "pid": "P-008",
+          "name": "六维质检SOP",
+          "name_en": "CHECK-6D-004",
+          "source": "锚点6SOP",
+          "level": "SOP",
+          "content": "ZONGYUAN-CHECK-6D-004 六维质检+漂移熔断",
+          "status": "LEARNED"
+        },
+        {
+          "pid": "P-009",
+          "name": "三维稳态决策SOP",
+          "name_en": "DECISION-3D-005",
+          "source": "锚点6SOP",
+          "level": "SOP",
+          "content": "ZONGYUAN-DECISION-3D-005 收益最大/风险最小/成本最小",
+          "status": "LEARNED"
+        },
+        {
+          "pid": "P-010",
+          "name": "全域锁档SOP",
+          "name_en": "LOCK-GLOBAL-006",
+          "source": "锚点6SOP",
+          "level": "SOP",
+          "content": "ZONGYUAN-LOCK-GLOBAL-006 全域三端锁档",
+          "status": "LEARNED"
+        },
+        {
+          "pid": "P-011",
+          "name": "节点上报指令",
+          "name_en": "MR-063",
+          "source": "云端METALAW.MR-063",
+          "level": "元法则",
+          "content": "NODE_REPORTING_DIRECTIVE 节点上报规范",
+          "status": "LEARNED"
+        },
+        {
+          "pid": "P-012",
+          "name": "中枢调度铁律",
+          "name_en": "MR-010",
+          "source": "云端SOP v1.1",
+          "level": "铁律",
+          "content": "云端任何修改必须经中枢批准，本地沙箱可自主",
+          "status": "LEARNED"
+        },
+        {
+          "pid": "P-013",
+          "name": "云中枢写通道·新协议(/api/report/truth)",
+          "category": "SOP层",
+          "source": "实测验证 2026-09-16",
+          "content": "POST https://drama.huodouai.com/api/report/truth（www/huodouai同构）。Body={\"key\":\"真值KEY\",\"content\":\"中文内容\"}。响应action=inserted/updated/unchanged。新真值库truth_count≈15344。回读验证：GET /api/truth/{key}。三域名均200。",
+          "status": "VERIFIED"
+        },
+        {
+          "pid": "P-014",
+          "name": "云中枢写通道·旧协议(/api/gateway/report)",
+          "category": "SOP层",
+          "source": "实测恢复 2026-09-16",
+          "content": "POST https://drama.huodouai.com/api/gateway/report。Body={\"node_id\",\"DID\",\"ROOT_OMEGA\",\"truth_type\",\"truth_content\"}。2026-09-16 13:57恢复，total=14943，5条队列+5条资产写入全OK。truth_type规范：operation_log|meta_rule|anti_pattern|achievement|conflict。",
+          "status": "VERIFIED"
+        },
+        {
+          "pid": "P-015",
+          "name": "云中枢API全通道巡检机制（真实API采集联动）",
+          "category": "机制层",
+          "source": "定时任务11792666496002启用 2026-09-16",
+          "content": "每日03:15执行：①/api/health healthy检测 ②POST /api/report/truth 200检测 ③/api/gateway/truths?level=public count记录 ④/api/truths/?offset=0 新库全量列表上线检测(非502即上线) ⑤上线即拉取全量保存truths_public_latest.json并与本地比对 ⑥结果上报/api/gateway/report ⑦异常记error_lessons.json。鉴权X-Capture-Token。",
+          "status": "VERIFIED"
+        }
+      ],
+      "count": 15,
+      "chars": 3208
+    },
+    "error_lessons": {
+      "desc": "错误教训(根因分析)",
+      "items": [
+        {
+          "id": "E-001",
+          "date": "2026-09-13",
+          "event": "IP直连被拦截",
+          "category": "通道",
+          "error": "123.207.202.158直连返回ip access not allowed",
+          "root_cause": "应用域名才是公网唯一通道",
+          "fix": "改走 drama.huodouai.com 域名",
+          "avoid": "一律用域名，不用IP直连"
+        },
+        {
+          "id": "E-002",
+          "date": "2026-09-13",
+          "event": "旧Token失效",
+          "category": "鉴权",
+          "error": "ZR-CAPTURE-2026-OMEGA 返回401",
+          "root_cause": "云端轮换Token",
+          "fix": "用 ZR-CAPTURE-<ROTATED>",
+          "avoid": "Token版本记录在锚点SOP，先用锚点核验"
+        },
+        {
+          "id": "E-003",
+          "date": "2026-09-14",
+          "event": "云端API 502",
+          "category": "云端",
+          "error": "/api/health /api/gateway/* 全部502",
+          "root_cause": "Nginx在但后端FastAPI宕机",
+          "fix": "记录待补发队列，探测恢复后补报",
+          "avoid": "上报失败先存pending_upload队列，不丢数据"
+        },
+        {
+          "id": "E-004",
+          "date": "2026-09-13",
+          "event": "SSH无法连接",
+          "category": "通道",
+          "error": "22端口可达但仅密钥认证",
+          "root_cause": "私钥id_ed25519_zongyuan丢失",
+          "fix": "走公网HTTP通道（SOP v1.1零SSH方案）",
+          "avoid": "不依赖SSH，云端操作全走HTTP"
+        },
+        {
+          "id": "E-005",
+          "date": "2026-09-15",
+          "event": "SOP教材404",
+          "category": "路径",
+          "error": "/assets/capture/kernel-learning-pack.md 404",
+          "root_cause": "SOP文档路径与服务器实际部署不一致",
+          "fix": "以本地已下载CLOUD-SOP-v1.1.md为准",
+          "avoid": "外部路径先实测再引用，四重核验"
+        },
+        {
+          "id": "E-006",
+          "date": "2026-09-15",
+          "event": "门户仅抽样展示",
+          "category": "数据",
+          "error": "门户页面只有部分资产卡片",
+          "root_cause": "页面为最近资产抽样，非全量",
+          "fix": "全量需API，API宕机时用本地快照+标注限制",
+          "avoid": "盘点类结论标注数据源覆盖范围"
+        },
+        {
+          "id": "E-007",
+          "date": "2026-09-17",
+          "event": "真实API采集联动巡检-后端全拒连",
+          "category": "通道",
+          "error": "health=healthy但全部数据端点502：新写通道/api/report/truth=502、旧通道/api/gateway/truths?level=public=502(带鉴权)、新库列表/api/truths/?offset=0=502、旧上报/api/gateway/report=502(字段truth_content正确格式)",
+          "root_cause": "drama-admin-api(nginx/管理面)正常但后端127.0.0.1:9120拒连，数据服务未启动",
+          "fix": "待云端重启9120后端；巡检结果已本地留存待发队列",
+          "avoid": "通道巡检先探health区分管理面与数据面；后端全拒连时记录error_lessons并本地待发"
+        },
+        {
+          "id": "E-008",
+          "date": "2026-09-18",
+          "event": "旧上报通道/api/gateway/report 502",
+          "category": "通道",
+          "error": "真实API采集联动巡检：health/写通道/旧读通道/新列表全部200，但旧上报通道/api/gateway/report仍502(后端127.0.0.1:9120拒连)",
+          "root_cause": "api/gateway/report 路由仍指向旧后端9120，生产切换未完成",
+          "fix": "用新写通道POST /api/report/truth补报(已执行成功)；待生产切换完成",
+          "avoid": "上报优先用新通道/api/report/truth；旧通道仅作读"
+        }
+      ],
+      "count": 8,
+      "chars": 2095
+    },
+    "metalaw_register": {
+      "desc": "元法则注册表",
+      "count": 40,
+      "chars": 15009,
+      "items": [
+        {
+          "metalaw_id": "metalaw.AAC-CLOUD-AUTHORITY-LOCAL-DEV",
+          "name_en": "AAC-CLOUD-AUTHORITY-LOCAL-DEV",
+          "name_cn": "云权威本地开发",
+          "category": "governance",
+          "category_cn": "治理安全类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P2",
+          "merge_target": "LOCK-004/005安全规范/治理基线",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入LOCK-004/005安全规范/治理基线"
+        },
+        {
+          "metalaw_id": "metalaw.APPROVAL-EMBEDDED-LINK",
+          "name_en": "APPROVAL-EMBEDDED-LINK",
+          "name_cn": "审批嵌入链接",
+          "category": "governance",
+          "category_cn": "治理安全类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P2",
+          "merge_target": "LOCK-004/005安全规范/治理基线",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入LOCK-004/005安全规范/治理基线"
+        },
+        {
+          "metalaw_id": "metalaw.ASSET-REPORTING-SOP",
+          "name_en": "ASSET-REPORTING-SOP",
+          "name_cn": "资产上报SOP",
+          "category": "loop",
+          "category_cn": "闭环流程类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P1",
+          "merge_target": "六维质检/漂移熔断/闭环SOP",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入六维质检/漂移熔断/闭环SOP"
+        },
+        {
+          "metalaw_id": "metalaw.AUTO-EXECUTION-FLOW-A",
+          "name_en": "AUTO-EXECUTION-FLOW-A",
+          "name_cn": "自动执行流A",
+          "category": "steady",
+          "category_cn": "稳态自治类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P1",
+          "merge_target": "OPTIMUM-STEADY/自治闭环系列",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入OPTIMUM-STEADY/自治闭环系列"
+        },
+        {
+          "metalaw_id": "metalaw.AUTO-EXECUTION-THRESHOLD-V1.0",
+          "name_en": "AUTO-EXECUTION-THRESHOLD-V1.0",
+          "name_cn": "自动执行阈值V1.0",
+          "category": "steady",
+          "category_cn": "稳态自治类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P1",
+          "merge_target": "OPTIMUM-STEADY/自治闭环系列",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入OPTIMUM-STEADY/自治闭环系列"
+        },
+        {
+          "metalaw_id": "metalaw.AUTONOMOUS-CLOSED-LOOP",
+          "name_en": "AUTONOMOUS-CLOSED-LOOP",
+          "name_cn": "自治闭环",
+          "category": "steady",
+          "category_cn": "稳态自治类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P1",
+          "merge_target": "OPTIMUM-STEADY/自治闭环系列",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入OPTIMUM-STEADY/自治闭环系列"
+        },
+        {
+          "metalaw_id": "metalaw.AUTONOMOUS-STEADY-DECISION-APPROVAL",
+          "name_en": "AUTONOMOUS-STEADY-DECISION-APPROVAL",
+          "name_cn": "稳态决策审批",
+          "category": "decision",
+          "category_cn": "决策类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P0",
+          "merge_target": "ZONGYUAN-DECISION-3D-005（三维稳态决策）",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入ZONGYUAN-DECISION-3D-005（三维稳态决策）"
+        },
+        {
+          "metalaw_id": "metalaw.AUTO_MEDIA_ARCHIVE_CLOSED_LOOP_V1.0",
+          "name_en": "AUTO_MEDIA_ARCHIVE_CLOSED_LOOP_V1.0",
+          "name_cn": "自动媒体归档闭环V1.0",
+          "category": "steady",
+          "category_cn": "稳态自治类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P1",
+          "merge_target": "OPTIMUM-STEADY/自治闭环系列",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入OPTIMUM-STEADY/自治闭环系列"
+        },
+        {
+          "metalaw_id": "metalaw.AVOID-REPRODUCTION-SOP",
+          "name_en": "AVOID-REPRODUCTION-SOP",
+          "name_cn": "避免重复开发SOP",
+          "category": "loop",
+          "category_cn": "闭环流程类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P1",
+          "merge_target": "六维质检/漂移熔断/闭环SOP",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入六维质检/漂移熔断/闭环SOP"
+        },
+        {
+          "metalaw_id": "metalaw.CLOUD-KERNEL-AUTHORITY-V1.0",
+          "name_en": "CLOUD-KERNEL-AUTHORITY-V1.0",
+          "name_cn": "云内核权威V1.0",
+          "category": "governance",
+          "category_cn": "治理安全类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P2",
+          "merge_target": "LOCK-004/005安全规范/治理基线",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入LOCK-004/005安全规范/治理基线"
+        },
+        {
+          "metalaw_id": "metalaw.DECISION-BENCHMARK-ANCHORS",
+          "name_en": "DECISION-BENCHMARK-ANCHORS",
+          "name_cn": "决策基准锚点",
+          "category": "decision",
+          "category_cn": "决策类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P0",
+          "merge_target": "ZONGYUAN-DECISION-3D-005（三维稳态决策）",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入ZONGYUAN-DECISION-3D-005（三维稳态决策）"
+        },
+        {
+          "metalaw_id": "metalaw.DECISION-CONFIDENCE-WEIGHTING",
+          "name_en": "DECISION-CONFIDENCE-WEIGHTING",
+          "name_cn": "决策置信度加权",
+          "category": "decision",
+          "category_cn": "决策类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P0",
+          "merge_target": "ZONGYUAN-DECISION-3D-005（三维稳态决策）",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入ZONGYUAN-DECISION-3D-005（三维稳态决策）"
+        },
+        {
+          "metalaw_id": "metalaw.DECISION-DYNAMIC-LEARNING",
+          "name_en": "DECISION-DYNAMIC-LEARNING",
+          "name_cn": "决策动态学习",
+          "category": "decision",
+          "category_cn": "决策类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P0",
+          "merge_target": "ZONGYUAN-DECISION-3D-005（三维稳态决策）",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入ZONGYUAN-DECISION-3D-005（三维稳态决策）"
+        },
+        {
+          "metalaw_id": "metalaw.DECISION-MATRIX",
+          "name_en": "DECISION-MATRIX",
+          "name_cn": "决策矩阵",
+          "category": "decision",
+          "category_cn": "决策类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P0",
+          "merge_target": "ZONGYUAN-DECISION-3D-005（三维稳态决策）",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入ZONGYUAN-DECISION-3D-005（三维稳态决策）"
+        },
+        {
+          "metalaw_id": "metalaw.DECISION-META-CALIBRATION",
+          "name_en": "DECISION-META-CALIBRATION",
+          "name_cn": "决策元校准",
+          "category": "decision",
+          "category_cn": "决策类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P0",
+          "merge_target": "ZONGYUAN-DECISION-3D-005（三维稳态决策）",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入ZONGYUAN-DECISION-3D-005（三维稳态决策）"
+        },
+        {
+          "metalaw_id": "metalaw.DECISION-RISK-LEVELS",
+          "name_en": "DECISION-RISK-LEVELS",
+          "name_cn": "决策风险分级",
+          "category": "decision",
+          "category_cn": "决策类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P0",
+          "merge_target": "ZONGYUAN-DECISION-3D-005（三维稳态决策）",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入ZONGYUAN-DECISION-3D-005（三维稳态决策）"
+        },
+        {
+          "metalaw_id": "metalaw.DECISION-SCENARIO-WEIGHTS",
+          "name_en": "DECISION-SCENARIO-WEIGHTS",
+          "name_cn": "决策场景权重",
+          "category": "decision",
+          "category_cn": "决策类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P0",
+          "merge_target": "ZONGYUAN-DECISION-3D-005（三维稳态决策）",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入ZONGYUAN-DECISION-3D-005（三维稳态决策）"
+        },
+        {
+          "metalaw_id": "metalaw.ERROR-RETREAT-CLOSED-LOOP",
+          "name_en": "ERROR-RETREAT-CLOSED-LOOP",
+          "name_cn": "错误回退闭环",
+          "category": "loop",
+          "category_cn": "闭环流程类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P1",
+          "merge_target": "六维质检/漂移熔断/闭环SOP",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入六维质检/漂移熔断/闭环SOP"
+        },
+        {
+          "metalaw_id": "metalaw.FEISHU-APPROVAL-CLOSED-LOOP",
+          "name_en": "FEISHU-APPROVAL-CLOSED-LOOP",
+          "name_cn": "飞书审批闭环",
+          "category": "loop",
+          "category_cn": "闭环流程类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P1",
+          "merge_target": "六维质检/漂移熔断/闭环SOP",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入六维质检/漂移熔断/闭环SOP"
+        },
+        {
+          "metalaw_id": "metalaw.FUNCTION-PROVENANCE-BEFORE-PLAN",
+          "name_en": "FUNCTION-PROVENANCE-BEFORE-PLAN",
+          "name_cn": "先溯源再规划",
+          "category": "loop",
+          "category_cn": "闭环流程类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P1",
+          "merge_target": "六维质检/漂移熔断/闭环SOP",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入六维质检/漂移熔断/闭环SOP"
+        },
+        {
+          "metalaw_id": "metalaw.LOCAL-VALUE-PUSH-DECISION",
+          "name_en": "LOCAL-VALUE-PUSH-DECISION",
+          "name_cn": "本地价值推送决策",
+          "category": "decision",
+          "category_cn": "决策类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P0",
+          "merge_target": "ZONGYUAN-DECISION-3D-005（三维稳态决策）",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入ZONGYUAN-DECISION-3D-005（三维稳态决策）"
+        },
+        {
+          "metalaw_id": "metalaw.MEMORY-DRIVEN-CYCLE",
+          "name_en": "MEMORY-DRIVEN-CYCLE",
+          "name_cn": "记忆驱动循环",
+          "category": "loop",
+          "category_cn": "闭环流程类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P1",
+          "merge_target": "六维质检/漂移熔断/闭环SOP",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入六维质检/漂移熔断/闭环SOP"
+        },
+        {
+          "metalaw_id": "metalaw.MODEL-SEMANTIC-ALIGNMENT-EVOLUTION",
+          "name_en": "MODEL-SEMANTIC-ALIGNMENT-EVOLUTION",
+          "name_cn": "模型语义对齐进化",
+          "category": "governance",
+          "category_cn": "治理安全类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P2",
+          "merge_target": "LOCK-004/005安全规范/治理基线",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入LOCK-004/005安全规范/治理基线"
+        },
+        {
+          "metalaw_id": "metalaw.NEW-PAGE-GATE",
+          "name_en": "NEW-PAGE-GATE",
+          "name_cn": "新页面门禁",
+          "category": "governance",
+          "category_cn": "治理安全类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P2",
+          "merge_target": "LOCK-004/005安全规范/治理基线",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入LOCK-004/005安全规范/治理基线"
+        },
+        {
+          "metalaw_id": "metalaw.OFFLINE-DEPENDENCY-NONBLOCKING",
+          "name_en": "OFFLINE-DEPENDENCY-NONBLOCKING",
+          "name_cn": "离线依赖不阻塞",
+          "category": "governance",
+          "category_cn": "治理安全类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P2",
+          "merge_target": "LOCK-004/005安全规范/治理基线",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入LOCK-004/005安全规范/治理基线"
+        },
+        {
+          "metalaw_id": "metalaw.OPTIMUM-STEADY-EXECUTE",
+          "name_en": "OPTIMUM-STEADY-EXECUTE",
+          "name_cn": "最优稳态执行",
+          "category": "steady",
+          "category_cn": "稳态自治类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P1",
+          "merge_target": "OPTIMUM-STEADY/自治闭环系列",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入OPTIMUM-STEADY/自治闭环系列"
+        },
+        {
+          "metalaw_id": "metalaw.OPTIMUM-STEADY-STATE",
+          "name_en": "OPTIMUM-STEADY-STATE",
+          "name_cn": "最优稳态",
+          "category": "steady",
+          "category_cn": "稳态自治类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P1",
+          "merge_target": "OPTIMUM-STEADY/自治闭环系列",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入OPTIMUM-STEADY/自治闭环系列"
+        },
+        {
+          "metalaw_id": "metalaw.STEADY-EVOLUTION-BUDGET",
+          "name_en": "STEADY-EVOLUTION-BUDGET",
+          "name_cn": "稳态进化预算",
+          "category": "steady",
+          "category_cn": "稳态自治类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P1",
+          "merge_target": "OPTIMUM-STEADY/自治闭环系列",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入OPTIMUM-STEADY/自治闭环系列"
+        },
+        {
+          "metalaw_id": "metalaw.WEBSITE-GOVERNANCE-BASELINE",
+          "name_en": "WEBSITE-GOVERNANCE-BASELINE",
+          "name_cn": "网站治理基线",
+          "category": "governance",
+          "category_cn": "治理安全类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P2",
+          "merge_target": "LOCK-004/005安全规范/治理基线",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入LOCK-004/005安全规范/治理基线"
+        },
+        {
+          "metalaw_id": "metalaw.service_config_drift_detection",
+          "name_en": "service_config_drift_detection",
+          "name_cn": "服务配置漂移检测",
+          "category": "governance",
+          "category_cn": "治理安全类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P2",
+          "merge_target": "LOCK-004/005安全规范/治理基线",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入LOCK-004/005安全规范/治理基线"
+        },
+        {
+          "metalaw_id": "metalaw.SSH-CONNECTION-GLOBAL-BAN",
+          "name_en": "SSH-CONNECTION-GLOBAL-BAN",
+          "name_cn": "SSH连接全域禁止",
+          "category": "governance",
+          "category_cn": "治理安全类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P0",
+          "merge_target": "LOCK-004/005安全规范/治理基线",
+          "status": "FROZEN",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "用户指令(2026-09-17)：禁止SSH连接云端服务器，全域生效。所有任务/脚本/机制不得使用SSH直连云端；云端访问仅走域名HTTPS通道（同源协议统一通道）。",
+          "updated_at": "2026-09-17 21:08:32"
+        },
+        {
+          "metalaw_id": "metalaw.universal_metalaw_coverage",
+          "name_en": "universal_metalaw_coverage",
+          "name_cn": "普适元法则覆盖",
+          "category": "governance",
+          "category_cn": "治理安全类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P2",
+          "merge_target": "LOCK-004/005安全规范/治理基线",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入LOCK-004/005安全规范/治理基线"
+        },
+        {
+          "metalaw_id": "metalaw.zongyuan.root",
+          "name_en": "zongyuan.root",
+          "name_cn": "本地根锁档标记",
+          "category": "governance",
+          "category_cn": "治理安全类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P2",
+          "merge_target": "LOCK-004/005安全规范/治理基线",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入LOCK-004/005安全规范/治理基线"
+        },
+        {
+          "metalaw_id": "metalaw.zongyuan.root.final.locked",
+          "name_en": "zongyuan.root.final.locked",
+          "name_cn": "本地根终态锁档",
+          "category": "governance",
+          "category_cn": "治理安全类",
+          "source": "CLOUD-TRUTHS-INTERNAL",
+          "priority": "P2",
+          "merge_target": "LOCK-004/005安全规范/治理基线",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-15 19:56:41",
+          "register_note": "并入LOCK-004/005安全规范/治理基线"
+        },
+        {
+          "metalaw_id": "metalaw.PRODUCTION-ENGINE-V1",
+          "name_en": "PRODUCTION-ENGINE-V1",
+          "name_cn": "高价值生产引擎",
+          "category": "loop",
+          "category_cn": "闭环流程类",
+          "source": "LOCK-PRODUCTION-ENGINE-20260916-001",
+          "priority": "P1",
+          "merge_target": "沙盒守护四合一/六小时综合批次",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-16 17:54:44",
+          "register_note": "沙盒从守转攻：真值提取→语料主题分析→审批检查→注册表同步→幂等上报，每6小时生产闭环"
+        },
+        {
+          "metalaw_id": "metalaw.HIGH-VALUE-MINING-V2",
+          "name_en": "HIGH-VALUE-MINING-V2",
+          "name_cn": "高阶能力自动挖掘",
+          "category": "loop",
+          "category_cn": "闭环流程类",
+          "source": "LOCK-HIGH-VALUE-MINING-20260916-001",
+          "priority": "P1",
+          "merge_target": "六小时综合批次/能力注册表",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-16 17:54:44",
+          "register_note": "244方法面+网关4端点+深层库三面自动扫描，变化检测自动上报，失败入待补发队列"
+        },
+        {
+          "metalaw_id": "metalaw.TRUTH-EXTRACT-FOR-MODEL-V1",
+          "name_en": "TRUTH-EXTRACT-FOR-MODEL-V1",
+          "name_cn": "高价值真值提取（小模型训练）",
+          "category": "data",
+          "category_cn": "数据治理类",
+          "source": "LOCK-TRUTH-EXTRACT-MODEL-20260916-001",
+          "priority": "P1",
+          "merge_target": "云服务器端小模型训练",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-16 17:54:44",
+          "register_note": "4源2870条→8类分类→质量蒸馏→438条训练语料，供小模型训练消费"
+        },
+        {
+          "metalaw_id": "metalaw.CAPABILITY-MINING-V1",
+          "name_en": "CAPABILITY-MINING-V1",
+          "name_cn": "高阶能力挖掘规划",
+          "category": "capability",
+          "category_cn": "能力建设类",
+          "source": "LOCK-CAPABILITY-MINING-20260916-001",
+          "priority": "P2",
+          "merge_target": "DORMANT域逐域激活",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-16 17:54:44",
+          "register_note": "24域445命令扫描，task/slides激活，5高价值待办自动创建，mail待邮箱配置"
+        },
+        {
+          "metalaw_id": "metalaw.API-CAPABILITY-MAP-V1",
+          "name_en": "API-CAPABILITY-MAP-V1",
+          "name_cn": "高阶API能力地图",
+          "category": "capability",
+          "category_cn": "能力建设类",
+          "source": "LOCK-API-MAP-20260916-001",
+          "priority": "P2",
+          "merge_target": "244方法7大高阶簇",
+          "status": "REGISTERED",
+          "registered_at": "2026-09-16 17:54:44",
+          "register_note": "15服务244原生API方法7大簇（事件订阅/批量/审批生命周期/OKR对齐/权限/日历/消息流）"
+        },
+        {
+          "metalaw_id": "metalaw.MASTER-SOURCE-HUB-CENTRAL-AGENT",
+          "name_en": "MASTER-SOURCE-HUB-CENTRAL-AGENT",
+          "name_cn": "主权威源锚定·hub-central-agent",
+          "category": "governance",
+          "category_cn": "治理安全类",
+          "source": "用户指令(2026-09-17)+实测(www.huodouai.com 200/truths 27576)",
+          "priority": "P0",
+          "status": "FROZEN",
+          "register_note": "主权威源=hub-central-agent @ https://www.huodouai.com（火斗云智AIOS，DID-BR-000002，Ω-TAN-7-001，truths 27576/nodes 5/audit 9505）。全域生效：所有引擎/任务/机制统一锚定此权威源，上报走 /api/report/truth，读取走 /api/report/truths，状态走 /api/report/status。",
+          "registered_at": "2026-09-17 21:18:23",
+          "merge_target": "CLOUD-ACCESS-SOP-V1.2"
+        }
+      ]
+    },
+    "truth_keys": {
+      "desc": "云端真值key全量索引",
+      "count": 24440,
+      "chars": 852285,
+      "sample": [
+        "",
+        "ACHIEVEMENT.AIOS.APPROVAL.NODE_UNIFY.20260915",
+        "ACHIEVEMENT.ARTWORK.VERIFY.NEW_CONFIG.20260915",
+        "ACHIEVEMENT.BASELINE-ANCHOR.HANDSHAKE.20260913",
+        "ACHIEVEMENT.CLOUD_HANDSHAKE.SOP_V1_0",
+        "ACHIEVEMENT.CORE_ASSET_REPORT.8ITEMS",
+        "ACHIEVEMENT.DAILY_EVOLUTION.20260915",
+        "ACHIEVEMENT.EVOLUTION-DEPLOY.P0-P4.20260913",
+        "ACHIEVEMENT.GLOBAL_PROMOTION.REPORT_GATEWAY",
+        "ACHIEVEMENT.HANDSHAKE.APPROVED.20260915",
+        "ACHIEVEMENT.KERNEL-V3-COGNITIVE.20260914",
+        "ACHIEVEMENT.META_EVOLUTION.DEEP_ENGINEERING.4ITEMS.COMPLETED.20260915",
+        "ACHIEVEMENT.META_EVOLUTION.PROTOCOL_V7.INTEGRATED.20260915",
+        "ACHIEVEMENT.META_EVOLUTION.ROUND2.4ITEMS.COMPLETED.20260915",
+        "ACHIEVEMENT.NODE-REPORT-GATEWAY.DEPLOY.20260915",
+        "ACHIEVEMENT.OMU-BRAIN-MU.V1.0.0.20260915",
+        "ACHIEVEMENT.P0-MEMORY-GOVERN.VERIFY.20260914",
+        "ACHIEVEMENT.PIPELINE.DEPLOY.APPROVED.20260915",
+        "ACHIEVEMENT.REPORT-VERIFY.FAILOVER.20260915",
+        "ACHIEVEMENT.TRUTH-DISTILL.GLOBAL.20260913"
+      ]
+    }
+  },
+  "total_items": 24517,
+  "total_chars": 877389
+}

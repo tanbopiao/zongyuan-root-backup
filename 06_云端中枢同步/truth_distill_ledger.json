@@ -1,0 +1,39 @@
+{
+  "batches": [
+    {
+      "batch_id": "DISTILL-BATCH-20260915-1854",
+      "time": "2026-09-15T18:54:00.827038+00:00",
+      "distilled_count": 5,
+      "keys": [
+        "DISTILLED-SANDBOX-20260915",
+        "DISTILLED-NEURAL-20260915",
+        "DISTILLED-HOMOLOGY-20260915",
+        "DISTILLED-KERNEL-20260915",
+        "DISTILLED-PROMOTION-20260915"
+      ]
+    },
+    {
+      "batch_id": "DISTILL-BATCH-20260915-1910",
+      "time": "2026-09-15T19:10:18.845150+00:00",
+      "distilled_count": 5,
+      "keys": [
+        "DISTILLED-SANDBOX-20260915",
+        "DISTILLED-NEURAL-20260915",
+        "DISTILLED-HOMOLOGY-20260915",
+        "DISTILLED-KERNEL-20260915",
+        "DISTILLED-PROMOTION-20260915"
+      ]
+    },
+    {
+      "batch_id": "DISTILL-BATCH-20260916-0403",
+      "time": "2026-09-16T04:03:12.134277+00:00",
+      "distilled_count": 4,
+      "keys": [
+        "DISTILLED-SANDBOX-20260916",
+        "DISTILLED-NEURAL-20260916",
+        "DISTILLED-HOMOLOGY-20260916",
+        "DISTILLED-KERNEL-20260916"
+      ]
+    }
+  ]
+}

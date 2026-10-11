@@ -1,0 +1,70 @@
+{
+  "stage": "propose",
+  "proposed_at": "2026-09-16T00:00:21",
+  "proposals": [
+    {
+      "proposal_id": "IMP-20260916-001",
+      "gap_id": "GAP-SVC-记忆网关",
+      "domain": "service",
+      "severity": "medium",
+      "title": "服务疑似离线: 记忆网关",
+      "detail": "status=offline",
+      "action": "人工评估并处理: 服务疑似离线: 记忆网关",
+      "expected_benefit": "消除该差距",
+      "risk": "中",
+      "execution_level": "approval",
+      "credentials_needed": [],
+      "status": "PENDING",
+      "proposed_at": "2026-09-16T00:00:21"
+    },
+    {
+      "proposal_id": "IMP-20260916-002",
+      "gap_id": "GAP-SVC-通信网关",
+      "domain": "service",
+      "severity": "medium",
+      "title": "服务疑似离线: 通信网关",
+      "detail": "status=offline",
+      "action": "人工评估并处理: 服务疑似离线: 通信网关",
+      "expected_benefit": "消除该差距",
+      "risk": "中",
+      "execution_level": "approval",
+      "credentials_needed": [],
+      "status": "PENDING",
+      "proposed_at": "2026-09-16T00:00:21"
+    },
+    {
+      "proposal_id": "IMP-20260916-003",
+      "gap_id": "GAP-SVC-希尔伯特镜像态",
+      "domain": "service",
+      "severity": "medium",
+      "title": "服务疑似离线: 希尔伯特镜像态",
+      "detail": "status=offline",
+      "action": "人工评估并处理: 服务疑似离线: 希尔伯特镜像态",
+      "expected_benefit": "消除该差距",
+      "risk": "中",
+      "execution_level": "approval",
+      "credentials_needed": [],
+      "status": "PENDING",
+      "proposed_at": "2026-09-16T00:00:21"
+    },
+    {
+      "proposal_id": "IMP-20260916-004",
+      "gap_id": "GAP-SVC-量子纠缠层",
+      "domain": "service",
+      "severity": "medium",
+      "title": "服务疑似离线: 量子纠缠层",
+      "detail": "status=offline",
+      "action": "人工评估并处理: 服务疑似离线: 量子纠缠层",
+      "expected_benefit": "消除该差距",
+      "risk": "中",
+      "execution_level": "approval",
+      "credentials_needed": [],
+      "status": "PENDING",
+      "proposed_at": "2026-09-16T00:00:21"
+    }
+  ],
+  "proposal_count": 4,
+  "by_level": {
+    "approval": 4
+  }
+}

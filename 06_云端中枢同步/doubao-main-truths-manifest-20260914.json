@@ -1,0 +1,58 @@
+{
+  "manifest_id": "TM-DM-20260914",
+  "window": "doubao-main-agent-001",
+  "total": 29,
+  "domains": {
+    "riemann": [
+      "lock.riemann.semantic_base.full_deploy.20260911",
+      "lock.riemann.sdk.drill.20260911",
+      "lock.riemann.test.arbitration.20260911",
+      "lock.riemann.singularity.stability.whitepaper.20260911",
+      "lock.riemann.retriever.timeline.ops.20260911",
+      "lock.riemann.evolve.cluster.20260911",
+      "lock.riemann.distributed.sandbox.auth.20260911",
+      "lock.riemann.visual.panel.20260911"
+    ],
+    "global_asset": [
+      "lock.global_asset.scan.v1.20260911",
+      "lock.global_asset.clean.backup.20260911",
+      "lock.global_asset.timeline.20260911",
+      "lock.disaster.recovery.sop.20260912",
+      "lock.asset.alert.metarule.20260912",
+      "global.asset.session.report.20260912"
+    ],
+    "homology": [
+      "lock.homo.kernel.built.20260912",
+      "lock.credential.vault.index.20260912"
+    ],
+    "ssh_seal": [
+      "lock.ssh.seal.scan.20260912",
+      "lock.ssh.seal.encrypted.20260912",
+      "lock.ssh.seal.protocol.20260912"
+    ],
+    "visual": [
+      "lock.kernel_memory.visual.deploy.20260911"
+    ],
+    "security": [
+      "lock.security.hardening.20260912"
+    ],
+    "meta_axiom": [
+      "lock.meta_axiom.completion.20260913"
+    ],
+    "autonomy": [
+      "lock.autonomy.loop.scheduled.20260914",
+      "lock.autonomy.loop.scheduled.20260914",
+      "lock.autonomy.receipt.v2.20260914"
+    ],
+    "ops_receipt": [
+      "lock.cron.receipt.20260914",
+      "lock.registry.reconciled.20260914",
+      "status.cloud_kernel.snapshot.20260914",
+      "lock.evol.directions.20260914"
+    ]
+  },
+  "gateway_reconciled": true,
+  "gateway_truths_total": 4039,
+  "timestamp": "2026-09-14T01:15:00+08:00",
+  "reconcile_note": "20260914 对账：本地23→28条（+5新增），云端4条机密/内部级核验通过（credential.vault=classified预期；ssh.seal.*=internal可见），三端零缺口"
+}

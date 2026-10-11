@@ -1,0 +1,45 @@
+{
+  "report_time": "2026-09-15T18:07:38.260779+00:00",
+  "node_id": "NODE-MAIN-SESSION-38436546492378882",
+  "did": "DID-BR-000002",
+  "p1_registration": {
+    "registered": true,
+    "node_id": "NODE-MAIN-SESSION-38436546492378882",
+    "authority": "L4",
+    "status": "ACTIVE"
+  },
+  "p2_network": {
+    "local_nodes": 317,
+    "authoritative_nodes": 317,
+    "sync_script": {
+      "ran": true,
+      "rc": 0,
+      "out": "{\n  \"status\": \"success\",\n  \"action\": \"pull\",\n  \"version\": 82,\n  \"window\": \"NODE-MAIN-SESSION-38436546492378882\",\n  \"timestamp\": \"2026-09-16T02:07:38.374564\",\n  \"nodes\": 317,\n  \"connections\": 1912,\n  \""
+    }
+  },
+  "p3_share": {
+    "NEURAL-NETWORK-CORE-SNAPSHOT": {
+      "success": true,
+      "action": "inserted",
+      "key": "NEURAL-NETWORK-CORE-SNAPSHOT",
+      "validation": {
+        "skipped": true,
+        "semantic_check": null,
+        "l0_check": null,
+        "issues": [
+          "文本内容过短或无中文，跳过语义校验"
+        ]
+      },
+      "truth_count": 11781,
+      "message": "真值写入成功（已通过语义前置校验）"
+    }
+  },
+  "p4_evolution": {
+    "kernel_version": "V2.3.0-GIT-BRIDGE-LOCKED",
+    "total_nodes": 317,
+    "total_connections": 1912,
+    "evolution_script_rc": 0,
+    "evolution_hint": "{\n  \"report_id\": \"EVO-20260916020739\",\n  \"timestamp\": \"2026-09-16T02:07:39.363088\",\n  \"mode\": \"collect\",\n  \"candidates\": [\n    {\n      \"experience_id\""
+  },
+  "verdict": "NEURAL_NETWORK_ACTIVE"
+}

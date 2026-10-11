@@ -1,0 +1,23 @@
+{
+  "ts": "2026-10-08 18:26:42",
+  "did": "DID-BR-000002",
+  "cloud": {
+    "id": null,
+    "version": null,
+    "err": "unreachable"
+  },
+  "queue": {
+    "total": 25,
+    "pending": 0
+  },
+  "executor": {
+    "idle_streak": 1,
+    "mode": "active",
+    "last_run": "2026-09-24T13:09:00+08:00"
+  },
+  "disk": "fs-8023b945ec2b89   10P  769G   10P   1% /home/user",
+  "drift": [
+    "云端不可达"
+  ],
+  "state": "DRIFT"
+}

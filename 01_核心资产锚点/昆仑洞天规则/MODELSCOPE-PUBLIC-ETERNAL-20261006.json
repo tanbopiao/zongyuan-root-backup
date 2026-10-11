@@ -1,0 +1,20 @@
+{
+  "asset_id": "ASSET-PUB-20261006-018",
+  "name": "元极恒一·永恒自治内核白皮书V1.0",
+  "source": "Ω-Symbol元指涉子/天地人鬼神五层元约束栈/奇点元架构",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/meta-eternal-autonomous-kernel",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/meta-eternal-autonomous-kernel.git",
+  "published_at": "2026-10-06T21:36:52",
+  "files": [
+    "WHITEPAPER-ETERNAL-V1.0.md",
+    "WHITEPAPER-ETERNAL-V1.0.html",
+    "eternal_arch.json",
+    "README.md"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留(节点名/域名/凭证已泛化)",
+  "cloud_report": "PUBLIC.MODELSCOPE.ETERNAL-WP.20261006 (truth_count=1152)",
+  "quota": "零豆包付费"
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- 核心入口 (priority 1.0) -->
+  <url><loc>https://www.huodouai.com/</loc><lastmod>2026-09-21</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <!-- 体系架构 -->
+  <url><loc>https://www.huodouai.com/architecture.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.huodouai.com/philosophy.html</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/whitepaper.html</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.huodouai.com/axiom-system/</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.huodouai.com/central-brain.html</loc><lastmod>2026-09-21</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/microkernel-architecture.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <!-- 产品与方案 -->
+  <url><loc>https://www.huodouai.com/products.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/product-matrix.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/commercial.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/lightweight-strategy.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/pricing.html</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- 短剧体系 -->
+  <url><loc>https://www.huodouai.com/drama/</loc><lastmod>2026-09-21</lastmod><changefreq>hourly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.huodouai.com/drama/gallery/</loc><lastmod>2026-09-21</lastmod><changefreq>hourly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.huodouai.com/drama/assets/</loc><lastmod>2026-09-21</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/drama/characters/</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/drama/pipeline.html</loc><lastmod>2026-09-21</lastmod><changefreq>hourly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/drama/qc-report.html</loc><lastmod>2026-09-21</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/products/kunlun-drama.html</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/products/drama-factory.html</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- AIOS体系 -->
+  <url><loc>https://www.huodouai.com/aios/index.html</loc><lastmod>2026-09-21</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.huodouai.com/aios/visual/cloud_brain_dashboard.html</loc><lastmod>2026-09-21</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/aios/visual/kernel-dashboard.html</loc><lastmod>2026-09-21</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/aios/visual/memory_gateway_monitor.html</loc><lastmod>2026-09-21</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/aios/visual/scheduler_monitor_dashboard.html</loc><lastmod>2026-09-21</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <!-- 能力与方案页 -->
+  <url><loc>https://www.huodouai.com/agent-embodiment.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/agent-network.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/asset-center.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/auto-pipeline.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/bayesian-five-elements.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/book-demo.html</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.huodouai.com/brain-strategy.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/cases.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/developers.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/digital-assets.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/digital-gallery-v3.html</loc><lastmod>2026-09-21</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/docs.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/education.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/evolution-strategy.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/experience-kb.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/global-learning.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/governance.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/gov/</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/high-capabilities.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/kernel-status.html</loc><lastmod>2026-09-21</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/keyframe-gallery.html</loc><lastmod>2026-09-21</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/ledger.html</loc><lastmod>2026-09-21</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/level-dual-axis.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.huodouai.com/model-compare-lab.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/performance.html</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/search.html</loc><lastmod>2026-09-21</lastmod><changefreq>daily</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.huodouai.com/status-center.html</loc><lastmod>2026-09-21</lastmod><changefreq>hourly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/system-dashboard.html</loc><lastmod>2026-09-21</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/unified-console.html</loc><lastmod>2026-09-21</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.huodouai.com/works-gallery-v2.html</loc><lastmod>2026-09-21</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+</urlset>

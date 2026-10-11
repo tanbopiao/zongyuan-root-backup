@@ -1,0 +1,49 @@
+{
+  "version": "V1.0",
+  "enabled": true,
+  "name": "ZONGYUAN-ROOT 自动进化体系",
+  "created_at": "2026-09-29T15:45:00+08:00",
+  "hard_constraints": [
+    "人工审批不可绕过（L4仅检测，不自动通过）",
+    "只读兼容写入窗口（写前644/写后444）",
+    "真实部署到本地持久层（hpvs_fs device=53）",
+    "每次完成必须固化并锁档"
+  ],
+  "layers": {
+    "L1_perception": {"enabled": true, "description": "感知系统状态与缺口"},
+    "L2_proposal": {"enabled": true, "description": "基于缺口自动生成进化候选"},
+    "L3_evaluation": {"enabled": true, "description": "EVO-GATE三性评估"},
+    "L4_approval": {"enabled": true, "description": "检测人工审批状态（不可自动通过）"},
+    "L5_deployment": {"enabled": true, "description": "审批通过后自动部署"},
+    "L6_verification": {"enabled": true, "description": "部署后自动验证"},
+    "L7_locking": {"enabled": true, "description": "验证通过记录锁档ID（实际三端锁档需人工触发）"},
+    "L8_feedback": {"enabled": true, "description": "结果回写决策日志"}
+  },
+  "evogate": {
+    "pass_threshold": 70,
+    "axiom_threshold": 85,
+    "dimensions": ["universality", "stability", "reproducibility"]
+  },
+  "targets": {
+    "meta_axioms": 26,
+    "self_check": "95%",
+    "memory_continuity": 0.98,
+    "cold_start": "<30s",
+    "candidates": 10,
+    "failover_drill": 2,
+    "channel_availability": "99.9%"
+  },
+  "triggers": {
+    "cron_daily": "0 9 * * *（每日自动进化巡检）",
+    "cold_start_hook": "7.7步（冷启动后自动进化检测）",
+    "guard_hook": "守护脚本异常时触发",
+    "manual": "人工执行 python3 auto_evolution_orchestrator.py"
+  },
+  "paths": {
+    "orchestrator": "07_代码与脚本/evolution/auto_evolution_orchestrator.py",
+    "config": "07_代码与脚本/evolution/auto_evolution_config.json",
+    "proposal_pool": "08_运行时数据与审计/evolution_20260929/evolution_proposal_pool.json",
+    "decision_log": "07_代码与脚本/evolution/decision_log.json",
+    "scheduler": "07_代码与脚本/evolution/evolution_deploy.sh"
+  }
+}

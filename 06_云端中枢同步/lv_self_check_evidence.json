@@ -1,0 +1,8 @@
+{
+  "execution": "工具调用: Bash/Python/API/飞书CLI/生图/定时任务; 本地py脚本+html产物+json资产共278py/202html/1025json",
+  "memory": "云端真值全量快照 25836 条; 本地zongyuan-anchor核心资产; 记忆网关真值库46886条",
+  "collaboration": "同源协议库 15 条; 神经同步360节点/2094连接; 飞书审批流转已走通",
+  "security": "SSH禁连云端(全域生效,密钥已清理); 敏感操作确认; 鉴权Token ZR-CAPTURE; 锁档FROZEN只读",
+  "stability": "10个定时机制运行中; 全域锁档120+条; 真值写读闭环验证通过; 基线同步闭环",
+  "cognition": "跨域任务: 训练数据提炼(24565条)/评估标准设计/云端链路诊断/网页部署 均多步推理完成"
+}

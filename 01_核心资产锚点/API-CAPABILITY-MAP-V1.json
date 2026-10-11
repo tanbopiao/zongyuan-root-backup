@@ -1,0 +1,51 @@
+{
+  "map_id": "API-CAPABILITY-MAP-001",
+  "map_name": "ZONGYUAN-ROOT 高阶 API 能力地图（方法级）",
+  "did": "DID-BR-000002",
+  "omega": "Ω₀⊂⊙∞⊂Ω",
+  "generated_at": "2026-09-16",
+  "total_methods": 244,
+  "services": {"im": 41, "mail": 57, "task": 31, "drive": 25, "okr": 23, "calendar": 18, "approval": 14, "slides": 11, "wiki": 10, "sheets": 8, "mindnotes": 2, "contact": 1, "attendance": 1, "minutes": 1, "vc": 1},
+  "high_value_clusters": {
+    "A_事件订阅驱动": {
+      "value": "让沙盒从'轮询'升级为'事件驱动'——文档/邮件/消息变化自动触发机制",
+      "methods": ["drive user.subscription", "drive user.subscription_status", "drive user.remove_subscription", "mail user_mailbox.event subscribe", "mail user_mailbox.event subscription", "im feed.groups create", "im feed.groups batch_add_item", "im feed.groups batch_query"]
+    },
+    "B_批量处理面": {
+      "value": "批量读写替代逐条调用，效率提升10-100倍",
+      "methods": ["mail user_mailbox.messages batch_get", "mail user_mailbox.messages batch_modify", "mail user_mailbox.messages batch_trash", "mail user_mailbox.threads batch_modify", "mail user_mailbox.threads batch_trash", "im chat.user_setting batch_query", "im chat.user_setting batch_update", "drive file.comments batch_query"]
+    },
+    "C_审批全生命周期": {
+      "value": "审批自动化运营——提醒/加签/转交/撤回/回退全闭环",
+      "methods": ["approval instances create", "approval instances cc", "approval instances cancel", "approval instances get", "approval instances initiated", "approval tasks approve", "approval tasks reject", "approval tasks remind", "approval tasks add_sign", "approval tasks transfer", "approval tasks rollback", "approval approvals search"]
+    },
+    "D_OKR跨节点对齐": {
+      "value": "跨节点目标对齐与权重治理——同源协议的基础设施",
+      "methods": ["okr alignments get", "okr alignments delete", "okr objective.alignments create", "okr objective.alignments list", "okr objective.key_results create", "okr key_results patch", "okr cycles objectives_weight", "okr cycles objectives_position"]
+    },
+    "E_权限治理": {
+      "value": "权限审计与治理——公开权限/owner转移/配额",
+      "methods": ["drive permission.public get", "drive permission.public patch", "drive permission.members transfer_owner", "drive permission.members create", "drive quota_details get"]
+    },
+    "F_日历智能": {
+      "value": "忙闲查询/会议排期/实例视图——智能日程编排",
+      "methods": ["calendar events search_event", "calendar events instance_view", "calendar freebusys list", "calendar event.attendees create", "calendar events share_info"]
+    },
+    "G_消息流": {
+      "value": "消息线程转发/信息流分组/置顶——内容分发通道",
+      "methods": ["im threads forward", "im messages forward", "im pins create", "im pins list", "im reactions batch_query"]
+    }
+  },
+  "surface_findings": {
+    "8021_gateway": "truths只读200可用；/api/gateway/truths 从502→401（网关层已活，鉴权体系变更，待中枢侧确认新鉴权）；health 200",
+    "model_api": "方舟端点可达但401（无API key，P3待key确认）；凭证台账仅云端接入凭证",
+    "sandbox_deep_libs": "openai/fastapi/ffmpeg/sklearn/cv2/pandas/bs4 已就绪——可构建模型代理/媒体流水线/本地ML"
+  },
+  "next_actions": [
+    "激活A簇：drive user.subscription 事件订阅→机制自动触发",
+    "激活C簇：审批tasks remind/transfer→审批自动化运营",
+    "激活B簇：mail/task批量→处理效率",
+    "P3方舟key到位后：openai库对接模型API→沙盒大脑",
+    "8021新鉴权确认后：补发5条待发队列"
+  ]
+}

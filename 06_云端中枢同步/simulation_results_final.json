@@ -1,0 +1,159 @@
+{
+  "passed": 23,
+  "total": 23,
+  "results": [
+    {
+      "name": "健康检查→200",
+      "expected": 200,
+      "actual": 200,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "无令牌→401",
+      "expected": 401,
+      "actual": 401,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "无效令牌→401",
+      "expected": 401,
+      "actual": 401,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "read令牌GET→200",
+      "expected": 200,
+      "actual": 200,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "read令牌POST→401",
+      "expected": 401,
+      "actual": 401,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "write令牌POST→200",
+      "expected": 200,
+      "actual": 200,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "过期令牌→401",
+      "expected": 401,
+      "actual": 401,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "吊销前→200",
+      "expected": 200,
+      "actual": 200,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "吊销后→401",
+      "expected": 401,
+      "actual": 401,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "管理端点无令牌→403",
+      "expected": 403,
+      "actual": 403,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "管理端点read令牌→403",
+      "expected": 403,
+      "actual": 403,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "管理端点admin→200",
+      "expected": 200,
+      "actual": 200,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "admin签发→201",
+      "expected": 201,
+      "actual": 201,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "memory_sync令牌→200（修复验证）",
+      "expected": 200,
+      "actual": 200,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "无memory_sync权限→401",
+      "expected": 401,
+      "actual": 401,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "令牌文件0600",
+      "expected": "600",
+      "actual": "600",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "日志不泄露令牌明文",
+      "expected": false,
+      "actual": false,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "使用计数>0",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "last_used已更新",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "admin兼容业务→200",
+      "expected": 200,
+      "actual": 200,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bug-01 过期检查",
+      "pass": true
+    },
+    {
+      "name": "Bug-02 日志安全",
+      "pass": true
+    },
+    {
+      "name": "Bug-03 权限映射",
+      "pass": true
+    }
+  ],
+  "timestamp": "2026-09-11T14:30:54+08:00"
+}

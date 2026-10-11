@@ -1,0 +1,25 @@
+{
+  "issue": "MEMORY-INDEX-ENGINE-DESIGN",
+  "name": "AI持久化记忆索引引擎 V1.0",
+  "module": "07_代码与脚本/memory_index_engine.py",
+  "mechanism": {
+    "tags": [
+      "type类型",
+      "topic主题",
+      "entity实体",
+      "attr属性(四类分层)"
+    ],
+    "search": "Score=0.4·TagScore+0.4·VecScore+0.2·FreshScore",
+    "decay": "Decay=1/(1+(Δt/T_half)^k); 半衰期 临时7天/任务30天/偏好365天/事实180天",
+    "refresh": "被检索命中→Δt归零(热度刷新)",
+    "lifecycle": "写入建索引→检索刷新→老化降权→阈值+临时→归档冷存(重要记忆不误删)"
+  },
+  "verified": [
+    "检索偏好/任务精确命中排序正确",
+    "归档: 临时记忆130天未访问触发, 重要偏好保留"
+  ],
+  "node": "NODE-DEV-DOUBAO-WORK-001",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "ts": "20261010T180426"
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZONGYUAN-ROOT 全域能力雷达</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23060B12'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%235FD4C4' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%23E8B45C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#060B12;--ink-2:#0C1622;--ink-3:#101D2B;
+  --line:rgba(95,212,196,.14);--cyan:#5FD4C4;--cyan-soft:rgba(95,212,196,.10);
+  --gold:#E8B45C;--gold-soft:rgba(232,180,92,.10);--paper:#EAF0F4;--muted:#8A9AA8;
+  --serif:"Noto Serif SC",Georgia,"Songti SC",serif;--sans:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--paper);font-family:var(--sans);font-weight:300;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:rgba(232,180,92,.28);color:#fff}
+.container{max-width:1180px;margin:0 auto;padding:0 28px}
+.sec-head{margin-bottom:46px}
+.sec-kicker{display:flex;align-items:center;gap:14px;font-size:13px;letter-spacing:.32em;color:var(--cyan);font-weight:500;margin-bottom:16px}
+.sec-kicker::before{content:"";width:34px;height:1px;background:var(--cyan);opacity:.6}
+.sec-title{font-family:var(--serif);font-weight:700;font-size:clamp(24px,3.4vw,38px);line-height:1.25;color:#fff;letter-spacing:.02em}
+.sec-sub{color:var(--muted);font-size:14.5px;max-width:760px;margin-top:12px}
+.block{padding:88px 0}
+.block.alt{background:var(--ink-2)}
+
+/* ===== Hero ===== */
+.hero{min-height:88vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:
+  radial-gradient(900px 460px at 78% 18%,rgba(95,212,196,.10),transparent 60%),
+  radial-gradient(760px 420px at 12% 82%,rgba(232,180,92,.08),transparent 60%),
+  var(--ink)}
+.hero-grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(95,212,196,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(95,212,196,.05) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 80% 70% at 50% 40%,#000 30%,transparent 75%)}
+.hero-in{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:120px 28px 80px;width:100%}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;letter-spacing:.34em;color:var(--gold);font-weight:500;margin-bottom:26px}
+.hero-eyebrow::before{content:"";width:40px;height:1px;background:var(--gold);opacity:.7}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(34px,5.6vw,64px);line-height:1.14;color:#fff;max-width:860px}
+.hero h1 .accent{background:linear-gradient(100deg,var(--gold) 10%,#F6E3B4 45%,var(--cyan) 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-para{font-size:clamp(14.5px,1.5vw,17px);color:#C4D0DA;max-width:640px;margin:24px 0 38px;line-height:1.9}
+.hero-stats{display:flex;flex-wrap:wrap;gap:14px}
+.stat{background:rgba(12,22,34,.72);border:1px solid var(--line);border-radius:12px;padding:16px 22px;min-width:146px;backdrop-filter:blur(8px)}
+.stat b{display:block;font-family:var(--serif);font-size:25px;font-weight:700;color:var(--cyan);letter-spacing:.02em}
+.stat b.gold{color:var(--gold)}
+.stat span{font-size:11.5px;color:var(--muted);letter-spacing:.05em;display:block;margin-top:2px}
+
+/* ===== 卡片 ===== */
+.grid{display:grid;gap:18px}
+.radar-grid{grid-template-columns:repeat(3,1fr)}
+.card{background:linear-gradient(160deg,rgba(16,29,43,.72),rgba(10,18,28,.9));border:1px solid var(--line);border-radius:14px;padding:24px 22px;transition:border-color .25s,transform .25s;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:0;transition:opacity .3s}
+.card:hover{border-color:rgba(95,212,196,.38);transform:translateY(-3px)}
+.card:hover::before{opacity:1}
+.card .ic{width:38px;height:38px;border-radius:10px;background:var(--cyan-soft);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.card .ic svg{width:19px;height:19px;stroke:var(--cyan)}
+.card .ic.gold{background:var(--gold-soft)}
+.card .ic.gold svg{stroke:var(--gold)}
+.card h3{font-family:var(--serif);font-size:16.5px;font-weight:600;color:#fff;margin-bottom:8px}
+.card p{font-size:13px;color:var(--muted);line-height:1.8}
+.card .tag{display:inline-block;margin-top:12px;font-size:10.5px;color:var(--cyan);border:1px solid var(--line);padding:3px 10px;border-radius:999px;letter-spacing:.1em}
+.card .tag.sleep{color:var(--gold);border-color:rgba(232,180,92,.35)}
+.card .tag.hot{color:#fff;background:var(--cyan);border-color:var(--cyan)}
+
+/* ===== 图表容器 ===== */
+.chart-box{background:var(--ink-3);border:1px solid var(--line);border-radius:16px;padding:28px 24px;margin-top:8px}
+.chart-title{font-family:var(--serif);font-size:16.5px;font-weight:600;color:#fff;margin-bottom:4px}
+.chart-note{font-size:12px;color:var(--muted);margin-bottom:16px}
+#actChart{width:100%;height:400px}
+#protoChart{width:100%;height:320px}
+
+/* ===== 子系统矩阵 ===== */
+.matrix{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:10px}
+.mx-card{background:var(--ink-3);border:1px solid var(--line);border-radius:12px;padding:18px 18px 16px}
+.mx-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.mx-name{font-family:var(--serif);font-size:14.5px;font-weight:600;color:#fff}
+.mx-num{font-size:11px;color:var(--muted);letter-spacing:.06em}
+.mx-bar{height:6px;border-radius:99px;background:rgba(138,154,168,.12);overflow:hidden;margin-bottom:10px}
+.mx-bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--cyan),#7FE0D0)}
+.mx-bar i.part{background:linear-gradient(90deg,var(--gold),#F2C97A)}
+.mx-bar i.zero{background:rgba(138,154,168,.25)}
+.mx-list{font-size:11.5px;color:var(--muted);display:flex;justify-content:space-between}
+.mx-list b{color:var(--cyan);font-weight:600}
+.mx-list b.gold{color:var(--gold)}
+
+/* ===== 时间轴 ===== */
+.timeline{position:relative;margin-top:14px}
+.tl-row{display:grid;grid-template-columns:170px 54px 1fr;padding:24px 0}
+.tl-time{font-family:var(--serif);font-size:14px;font-weight:600;color:var(--gold);text-align:right;padding-right:24px;padding-top:2px}
+.tl-axis{position:relative;display:flex;justify-content:center}
+.tl-axis::before{content:"";position:absolute;top:0;bottom:0;width:2px;background:linear-gradient(180deg,transparent,rgba(95,212,196,.5),rgba(95,212,196,.5),transparent)}
+.tl-dot{width:13px;height:13px;border-radius:50%;background:var(--ink);border:2px solid var(--cyan);position:relative;z-index:2;align-self:center;box-shadow:0 0 0 5px rgba(95,212,196,.10)}
+.tl-dot.done{background:var(--cyan);box-shadow:0 0 0 5px rgba(95,212,196,.16),0 0 20px rgba(95,212,196,.5)}
+.tl-body{padding-left:26px}
+.tl-body h4{font-family:var(--serif);font-size:15.5px;font-weight:600;color:#fff;margin-bottom:5px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.tl-body p{font-size:13px;color:var(--muted);max-width:640px;line-height:1.8}
+.tl-state{font-size:10.5px;padding:3px 10px;border-radius:999px;letter-spacing:.08em;border:1px solid var(--line)}
+.tl-state.ok{color:var(--cyan);border-color:rgba(95,212,196,.4)}
+
+/* ===== 守卫 ===== */
+.guard-grid{grid-template-columns:repeat(4,1fr)}
+.guard-card{background:var(--ink-3);border:1px solid var(--line);border-radius:12px;padding:20px 18px;text-align:center}
+.guard-card .g-state{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px rgba(95,212,196,.8);margin-bottom:10px}
+.guard-card h4{font-size:13.5px;font-weight:600;color:#fff;margin-bottom:5px}
+.guard-card p{font-size:11.5px;color:var(--muted)}
+
+/* ===== Footer ===== */
+.footer{border-top:1px solid var(--line);padding:42px 0;margin-top:30px}
+.footer-in{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+.footer-mark{font-family:var(--serif);color:var(--gold);font-size:14.5px;letter-spacing:.2em}
+.footer-meta{font-size:11.5px;color:var(--muted);letter-spacing:.08em}
+.footer-meta span{margin:0 8px;color:rgba(138,154,168,.4)}
+
+@media (max-width:960px){.radar-grid,.guard-grid{grid-template-columns:repeat(2,1fr)}.matrix{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){
+  .block{padding:62px 0}.radar-grid,.guard-grid,.matrix{grid-template-columns:1fr}
+  .tl-row{grid-template-columns:92px 36px 1fr}.stat{min-width:132px;padding:13px 15px}
+  .hero-stats{gap:10px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<!-- ===== Hero ===== -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-in">
+    <span class="hero-eyebrow">ZONGYUAN-ROOT · 全域能力雷达 V1.0</span>
+    <h1>全域能力雷达<br><span class="accent">沉睡能力挖掘 · 执行层接通</span></h1>
+    <p class="hero-para">对 9 子系统 / 43 算子 / 312 神经节点全域盘点的结果呈现：已启用的核心回路之外，尚有大量高价值能力处于沉睡状态——其中第一梯队（模型路由、额度计费、业务预检）已在本次接通验证。</p>
+    <div class="hero-stats">
+      <div class="stat"><b>43</b><span>算子注册总量</span></div>
+      <div class="stat gold"><b>8</b><span>已启用算子</span></div>
+      <div class="stat"><b>35</b><span>沉睡算子待发现</span></div>
+      <div class="stat gold"><b>312</b><span>神经节点已激活</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== 激活状态分布 ===== -->
+<section class="block" id="act">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-kicker">Activation Matrix</div>
+      <h2 class="sec-title">九子系统算子激活状态</h2>
+      <p class="sec-sub">数据来源：operator_registry.json（43 算子 / 9 子系统），启用状态按会话执行记录判定。</p>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">算子激活状态分布</div>
+      <div class="chart-note">青色=已启用 · 暗灰=沉睡 · 横轴为算子数量</div>
+      <div id="actChart"></div>
+    </div>
+    <div class="matrix" style="margin-top:22px">
+      <div class="mx-card"><div class="mx-head"><span class="mx-name">自治内核</span><span class="mx-num">2/9 已启用</span></div><div class="mx-bar"><i style="width:22%"></i></div><div class="mx-list"><span>神经激活 · 同源校验</span><b>7 沉睡</b></div></div>
+      <div class="mx-card"><div class="mx-head"><span class="mx-name">锁档归档</span><span class="mx-num">3/4 已启用</span></div><div class="mx-bar"><i style="width:75%"></i></div><div class="mx-list"><span>三端锁档高频运行</span><b>1 沉睡</b></div></div>
+      <div class="mx-card"><div class="mx-head"><span class="mx-name">溯源真值</span><span class="mx-num">0/3 未启用</span></div><div class="mx-bar"><i class="zero" style="width:0%"></i></div><div class="mx-list"><span>实体提取 · 全域溯源</span><b class="gold">3 沉睡</b></div></div>
+      <div class="mx-card"><div class="mx-head"><span class="mx-name">短剧生产</span><span class="mx-num">2/7 已启用</span></div><div class="mx-bar"><i class="part" style="width:29%"></i></div><div class="mx-list"><span>核心生产 · 世界观锁档</span><b class="gold">5 沉睡</b></div></div>
+      <div class="mx-card"><div class="mx-head"><span class="mx-name">角色中台</span><span class="mx-num">1/5 已启用</span></div><div class="mx-bar"><i class="part" style="width:20%"></i></div><div class="mx-list"><span>角色创建 · 母版锁档</span><b class="gold">4 沉睡</b></div></div>
+      <div class="mx-card"><div class="mx-head"><span class="mx-name">火斗AI适配</span><span class="mx-num">0/6 未启用</span></div><div class="mx-bar"><i class="zero" style="width:0%"></i></div><div class="mx-list"><span>模型路由 · 真值桥接</span><b class="gold">6 沉睡</b></div></div>
+      <div class="mx-card"><div class="mx-head"><span class="mx-name">元进化引擎</span><span class="mx-num">0/3 未启用</span></div><div class="mx-bar"><i class="zero" style="width:0%"></i></div><div class="mx-list"><span>七阶段循环 · 共识</span><b class="gold">3 沉睡</b></div></div>
+      <div class="mx-card"><div class="mx-head"><span class="mx-name">业务桥接</span><span class="mx-num">2/3 已接通</span></div><div class="mx-bar"><i class="part" style="width:67%"></i></div><div class="mx-list"><span>公理预检 · 经验沉淀</span><b>1 沉睡</b></div></div>
+      <div class="mx-card"><div class="mx-head"><span class="mx-name">额度计费</span><span class="mx-num">1/3 已接通</span></div><div class="mx-bar"><i class="part" style="width:33%"></i></div><div class="mx-list"><span>计量扣减 · 账户</span><b>2 沉睡</b></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 六协议成熟度 ===== -->
+<section class="block alt" id="proto">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-kicker">Protocol Maturity</div>
+      <h2 class="sec-title">自治内核六大协议成熟度</h2>
+      <p class="sec-sub">协议⑥神经激活已稳定运行；协议①~⑤仍沉睡，是 Lv7→Lv8 全自动化的关键开关。</p>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">六协议激活成熟度</div>
+      <div class="chart-note">满分 10 · 当前成熟度评估（依执行记录）</div>
+      <div id="protoChart"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 沉睡能力三梯队 ===== -->
+<section class="block" id="sleep">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-kicker">Sleeping Capabilities</div>
+      <h2 class="sec-title">三梯队沉睡能力</h2>
+      <p class="sec-sub">按业务价值排序：产品化执行层 → 商业化变现层 → 全自动运营层。</p>
+    </div>
+    <div class="grid radar-grid">
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 L8 7 L13 12 L21 4"/><path d="M3 19 L8 14 L13 19 L21 11"/></svg></div>
+        <h3>第一梯队 · 产品化执行层</h3>
+        <p>火斗AI适配 6 算子（模型路由/批量调用/三维评估/真值桥接）+ 额度计费 3 算子（计量/扣减/账户）——ModelRoute 001 调度引擎的现成运行时底座，本次已接通验证。</p>
+        <span class="tag hot">已接通</span>
+      </div>
+      <div class="card">
+        <div class="ic gold"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L19 7 V17 L12 22 L5 17 V7 Z"/><path d="M12 8 V16 M8.5 10.5 L15.5 13.5"/></svg></div>
+        <h3>第二梯队 · 商业化变现层</h3>
+        <p>元进化引擎内沉睡 4 项：IP 估值衍生品、IP 数据分析预测、跨媒体宣发编排、公理定理自动证明——短剧 IP 商业化的下一个变现层。</p>
+        <span class="tag sleep">沉睡</span>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6 H20 M4 12 H20 M4 18 H14"/><circle cx="19" cy="18" r="2.5"/></svg></div>
+        <h3>第三梯队 · 全自动运营层</h3>
+        <p>六协议 ①~⑤ 全沉睡：内核读取、六维自检、纠错熔断、演化沉淀、统一调度 + 自治循环调度器——Lv7→Lv8 自动化的关键开关。</p>
+        <span class="tag sleep">沉睡</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 接通验证链路 ===== -->
+<section class="block alt" id="verify">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-kicker">Activation Trail</div>
+      <h2 class="sec-title">第一梯队接通验证链路</h2>
+      <p class="sec-sub">2026-09-15 执行记录，全链路真实调用。</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-row"><div class="tl-time">步骤 1</div><div class="tl-axis"><span class="tl-dot done"></span></div><div class="tl-body"><h4>火斗AI路由探测 <span class="tl-state ok">zhipu 可用</span></h4><p>适配器自测：zhipu glm-4-flash 真实路由成功；doubao/hunyuan 凭证失效返回 403/401，印证公理②禁止全链路依赖单一厂商。</p></div></div>
+      <div class="tl-row"><div class="tl-time">步骤 2</div><div class="tl-axis"><span class="tl-dot done"></span></div><div class="tl-body"><h4>额度计量扣减 <span class="tl-state ok">81 → 80</span></h4><p>quota_controller 对 MR-MODEL-ROUTE-001 网页渲染任务执行 CONSUMED，成本计量公理③落地。</p></div></div>
+      <div class="tl-row"><div class="tl-time">步骤 3</div><div class="tl-axis"><span class="tl-dot done"></span></div><div class="tl-body"><h4>公理预检拦截 <span class="tl-state ok">BLOCKED</span></h4><p>缺 9:16 竖屏特征的短剧任务被 MA-DRAMA-001 公理拦截——预检引擎即质量闸门。</p></div></div>
+      <div class="tl-row"><div class="tl-time">步骤 4</div><div class="tl-axis"><span class="tl-dot done"></span></div><div class="tl-body"><h4>合规放行 <span class="tl-state ok">PROCEED</span></h4><p>补齐 9:16 竖屏/国风仙侠后 verdict=PROCEED，合规公理 MA-DRAMA-001、MA-IP-001 通过。</p></div></div>
+      <div class="tl-row"><div class="tl-time">步骤 5</div><div class="tl-axis"><span class="tl-dot done"></span></div><div class="tl-body"><h4>经验沉淀 <span class="tl-state ok">NN-BIZ-312</span></h4><p>接通经验写入神经节点，日志归档公理⑥闭环，节点总数达 312。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 守卫状态 ===== -->
+<section class="block" id="guard">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-kicker">Guard Systems</div>
+      <h2 class="sec-title">守卫系统状态</h2>
+    </div>
+    <div class="grid guard-grid">
+      <div class="guard-card"><span class="g-state"></span><h4>同源协议校验</h4><p>身份/三要素/权限三重校验在线</p></div>
+      <div class="guard-card"><span class="g-state"></span><h4>算子鉴权</h4><p>43 算子权限分级执行正常</p></div>
+      <div class="guard-card"><span class="g-state"></span><h4>审计日志</h4><p>operator_auth_audit_log 持续记录</p></div>
+      <div class="guard-card"><span class="g-state"></span><h4>安全黑名单</h4><p>当前为空，无封禁调用者</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-in">
+    <div class="footer-mark">Ω₀⊂⊙∞⊂Ω · ZONGYUAN-ROOT</div>
+    <div class="footer-meta">CAPABILITY-RADAR-20260915<span>·</span>DID-BR-000002<span>·</span>神经节点 312</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+<script>
+var actChart = echarts.init(document.getElementById('actChart'));
+actChart.setOption({
+  backgroundColor:'transparent',
+  tooltip:{trigger:'axis',triggerOn:'click',renderMode:'richText',confine:true,axisPointer:{type:'shadow'}},
+  legend:{top:0,textStyle:{color:'#8A9AA8',fontFamily:'Noto Sans SC'},itemWidth:12,itemHeight:12},
+  grid:{left:8,right:44,top:44,bottom:8,containLabel:true},
+  xAxis:{type:'value',splitLine:{lineStyle:{color:'rgba(95,212,196,.08)'}},axisLabel:{color:'#8A9AA8',fontSize:11}},
+  yAxis:{type:'category',inverse:true,data:['额度计费','业务桥接','元进化引擎','火斗AI适配','角色中台','短剧生产','溯源真值','锁档归档','自治内核'],axisLine:{show:false},axisTick:{show:false},axisLabel:{color:'#C4D0DA',fontSize:12,fontFamily:'Noto Sans SC'}},
+  series:[
+    {name:'已启用',type:'bar',stack:'t',barWidth:16,itemStyle:{color:'#5FD4C4'},label:{show:true,position:'insideLeft',color:'#06202A',fontSize:11,fontWeight:700},data:[1,2,0,0,1,2,0,3,2]},
+    {name:'沉睡',type:'bar',stack:'t',barWidth:16,itemStyle:{color:'#2A3A4A',borderRadius:[0,4,4,0]},label:{show:true,position:'right',color:'#8A9AA8',fontSize:11,formatter:function(p){return p.value>0?p.value:'';}},data:[2,1,3,6,4,5,3,1,7]}
+  ]
+});
+
+var protoChart = echarts.init(document.getElementById('protoChart'));
+protoChart.setOption({
+  backgroundColor:'transparent',
+  tooltip:{trigger:'item',triggerOn:'click',renderMode:'richText',confine:true},
+  radar:{indicator:[{name:'①内核读取',max:10},{name:'②六维自检',max:10},{name:'③纠错触发',max:10},{name:'④演化沉淀',max:10},{name:'⑤统一调度',max:10},{name:'⑥神经激活',max:10}],radius:'62%',center:['50%','52%'],axisName:{color:'#C4D0DA',fontSize:11,fontFamily:'Noto Sans SC'},splitLine:{lineStyle:{color:'rgba(95,212,196,.15)'}},splitArea:{areaStyle:{color:['rgba(95,212,196,.03)','rgba(95,212,196,.06)']}},axisLine:{lineStyle:{color:'rgba(95,212,196,.25)'}}},
+  series:[{type:'radar',data:[{value:[2,1,1,1,1,9],name:'当前成熟度',areaStyle:{color:'rgba(95,212,196,.22)'},lineStyle:{color:'#5FD4C4'},itemStyle:{color:'#5FD4C4'}}]}]
+});
+
+window.addEventListener('resize',function(){actChart.resize();protoChart.resize();});
+</script>
+</body>
+</html>

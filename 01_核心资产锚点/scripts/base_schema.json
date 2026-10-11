@@ -1,0 +1,14 @@
+{
+  "table_name": "上报总表",
+  "fields": [
+    {"field_name": "source_node", "type": 1, "description": "上报节点ID"},
+    {"field_name": "report_utc", "type": 5, "description": "上报时间戳"},
+    {"field_name": "data_cat", "type": 1, "description": "数据分类: task/asset/knowledge/fault/heartbeat"},
+    {"field_name": "payload", "type": 1, "description": "上报内容JSON"},
+    {"field_name": "hash_sha256", "type": 1, "description": "内容SHA256哈希"},
+    {"field_name": "security_level", "type": 3, "description": "安全等级", "options": [{"name": "public"}, {"name": "internal"}, {"name": "confidential"}]},
+    {"field_name": "dispatch_status", "type": 3, "description": "分发状态", "options": [{"name": "pending"}, {"name": "synced"}, {"name": "failed"}]},
+    {"field_name": "cloud_key", "type": 1, "description": "云端真值库KEY"},
+    {"field_name": "feishu_doc_url", "type": 1, "description": "飞书文档链接"}
+  ]
+}

@@ -1,0 +1,1224 @@
+{
+ "sync_id": "SYNC-FULL-20260916-001",
+ "sync_type": "FULL_SYNC",
+ "timestamp": "2026-09-16T12:02:00+08:00",
+ "source": "local-main-001",
+ "node_id": "ZR-NODE-DC2E51C0",
+ "did": "DID-BR-000002",
+ "provenance": "Ω₀⊂⊙∞⊂Ω",
+ "stats": {
+  "file_count": 302,
+  "total_size_bytes": 8667923,
+  "total_size_mb": 8.3
+ },
+ "assets": [
+  {
+   "path": ".kernel_lock_cache.json",
+   "size": 329
+  },
+  {
+   "path": ".secure-vault-20260912/ENCRYPTION_MANIFEST.txt",
+   "size": 607
+  },
+  {
+   "path": ".secure-vault-20260912/PASSPHRASE.txt",
+   "size": 65
+  },
+  {
+   "path": ".secure-vault-20260912/README_恢复说明.md",
+   "size": 1318
+  },
+  {
+   "path": ".secure-vault-20260912/enc_1_credential_vault_complete.json.enc",
+   "size": 4976
+  },
+  {
+   "path": ".secure-vault-20260912/enc_2_credential_vault_complete.json.enc",
+   "size": 4976
+  },
+  {
+   "path": ".secure-vault-20260912/enc_3_credential_vault.zip.enc",
+   "size": 6784
+  },
+  {
+   "path": ".secure-vault-20260912/enc_4_credential_vault_complete.json.enc",
+   "size": 4976
+  },
+  {
+   "path": ".secure-vault-20260912/enc_5_nexus.key.enc",
+   "size": 1728
+  },
+  {
+   "path": ".tmp-tool-results/bash-live-1676379138.txt",
+   "size": 47
+  },
+  {
+   "path": ".tmp-tool-results/bash-live-1798507325.txt",
+   "size": 882
+  },
+  {
+   "path": ".tmp-tool-results/bash-live-1960558993.txt",
+   "size": 1381
+  },
+  {
+   "path": ".tmp-tool-results/bash-live-2696373710.txt",
+   "size": 4665
+  },
+  {
+   "path": ".tmp-tool-results/bash-live-2731698956.txt",
+   "size": 2084
+  },
+  {
+   "path": ".tmp-tool-results/bash-live-3444777946.txt",
+   "size": 61
+  },
+  {
+   "path": ".tmp-tool-results/bash-live-3523326384.txt",
+   "size": 1751
+  },
+  {
+   "path": ".tmp-tool-results/bash-live-3533173692.txt",
+   "size": 2428
+  },
+  {
+   "path": ".tmp-tool-results/bash-live-353381453.txt",
+   "size": 1799
+  },
+  {
+   "path": ".tmp-tool-results/bash-live-4139540986.txt",
+   "size": 1125
+  },
+  {
+   "path": ".tmp-tool-results/bash-live-4184125295.txt",
+   "size": 33
+  },
+  {
+   "path": ".tmp-tool-results/bash-live-569798421.txt",
+   "size": 9690
+  },
+  {
+   "path": ".tmp-tool-results/bash-live-679742453.txt",
+   "size": 1436
+  },
+  {
+   "path": ".tmp-tool-results/bash-live-862702918.txt",
+   "size": 5004
+  },
+  {
+   "path": "api-live/api_live_collector.py",
+   "size": 27137
+  },
+  {
+   "path": "api-live/data/last_snapshot.json",
+   "size": 6462
+  },
+  {
+   "path": "api-live/data/live_LIVE-20260916-031928.json",
+   "size": 6792
+  },
+  {
+   "path": "api-live/data/live_LIVE-20260916-032045.json",
+   "size": 6789
+  },
+  {
+   "path": "api-live/output/_shots/live-api-dashboard_desktop.jpg",
+   "size": 73531
+  },
+  {
+   "path": "api-live/output/_shots/live-api-dashboard_mobile.jpg",
+   "size": 99462
+  },
+  {
+   "path": "api-live/output/live-api-dashboard.html",
+   "size": 16570
+  },
+  {
+   "path": "asset-commerce/asset_commerce_engine.py",
+   "size": 22213
+  },
+  {
+   "path": "asset-commerce/output/_shots/asset-commerce-showcase_desktop.jpg",
+   "size": 123511
+  },
+  {
+   "path": "asset-commerce/output/_shots/asset-commerce-showcase_mobile.jpg",
+   "size": 135140
+  },
+  {
+   "path": "asset-commerce/output/asset-commerce-showcase.html",
+   "size": 15991
+  },
+  {
+   "path": "asset-commerce/output/commerce_result.json",
+   "size": 76644
+  },
+  {
+   "path": "baseline-anchor-20260913/BASELINE-ANCHOR-20260913.md",
+   "size": 2642
+  },
+  {
+   "path": "baseline-anchor-lock-20260913/kernel_snapshot_LOCK-BASELINE-ANCHOR-20260913-001.json",
+   "size": 1059
+  },
+  {
+   "path": "baseline-anchor-lock-20260913/lock_doc.md",
+   "size": 2495
+  },
+  {
+   "path": "baseline-v40-lv10-viz.html",
+   "size": 5897
+  },
+  {
+   "path": "black-gold-truth-cards/_shots/index_desktop.jpg",
+   "size": 207555
+  },
+  {
+   "path": "black-gold-truth-cards/_shots/index_mobile.jpg",
+   "size": 336208
+  },
+  {
+   "path": "black-gold-truth-cards/_shots/index_mobile_p1of3.jpg",
+   "size": 163694
+  },
+  {
+   "path": "black-gold-truth-cards/_shots/index_mobile_p2of3.jpg",
+   "size": 101229
+  },
+  {
+   "path": "black-gold-truth-cards/_shots/index_mobile_p3of3.jpg",
+   "size": 70961
+  },
+  {
+   "path": "black-gold-truth-cards/index.html",
+   "size": 30850
+  },
+  {
+   "path": "boundary-explorer/_shots/boundary-explorer-report_desktop.jpg",
+   "size": 167598
+  },
+  {
+   "path": "boundary-explorer/_shots/boundary-explorer-report_mobile.jpg",
+   "size": 235539
+  },
+  {
+   "path": "boundary-explorer/_shots/boundary-explorer-report_mobile_p1of2.jpg",
+   "size": 141338
+  },
+  {
+   "path": "boundary-explorer/_shots/boundary-explorer-report_mobile_p2of2.jpg",
+   "size": 94601
+  },
+  {
+   "path": "boundary-explorer/boundary-explorer-report.html",
+   "size": 18602
+  },
+  {
+   "path": "boundary-explorer/boundary_explorer.py",
+   "size": 24013
+  },
+  {
+   "path": "boundary-explorer/data/explore_EXPLORE-20260916-021930.json",
+   "size": 65315
+  },
+  {
+   "path": "boundary-explorer/data/explore_state.json",
+   "size": 427
+  },
+  {
+   "path": "central-dispatcher/central_dispatcher.py",
+   "size": 11717
+  },
+  {
+   "path": "central-dispatcher/data/dispatch_DISPATCH-20260916-030825.json",
+   "size": 5237
+  },
+  {
+   "path": "central-dispatcher/data/dispatch_DISPATCH-20260916-030845.json",
+   "size": 5238
+  },
+  {
+   "path": "central-dispatcher/data/dispatch_DISPATCH-20260916-030922.json",
+   "size": 4719
+  },
+  {
+   "path": "central-dispatcher/data/dispatch_DISPATCH-20260916-030943.json",
+   "size": 5481
+  },
+  {
+   "path": "central-dispatcher/data/dispatch_DISPATCH-20260916-031041.json",
+   "size": 5535
+  },
+  {
+   "path": "deploy-auto/data/deploy_DEPLOY-20260916-025541.json",
+   "size": 1943
+  },
+  {
+   "path": "deploy-auto/data/deploy_DEPLOY-20260916-030943.json",
+   "size": 1341
+  },
+  {
+   "path": "deploy-auto/data/deploy_DEPLOY-20260916-031041.json",
+   "size": 1341
+  },
+  {
+   "path": "deploy-auto/deploy_pipeline.py",
+   "size": 9639
+  },
+  {
+   "path": "engineering-anchor-viz.html",
+   "size": 6510
+  },
+  {
+   "path": "evolution-deploy-20260913.zip",
+   "size": 10414
+  },
+  {
+   "path": "evolution-deploy-20260913/EXECUTION-PLAN-20260913.md",
+   "size": 2131
+  },
+  {
+   "path": "evolution-deploy-20260913/KERNEL-V3-UPGRADE-PLAN.md",
+   "size": 2072
+  },
+  {
+   "path": "evolution-deploy-20260913/auto-evolution-pipeline.sh",
+   "size": 1901
+  },
+  {
+   "path": "evolution-deploy-20260913/channel-config.json",
+   "size": 786
+  },
+  {
+   "path": "evolution-deploy-20260913/channel-health-check.sh",
+   "size": 1160
+  },
+  {
+   "path": "evolution-deploy-20260913/diff-report-20260913.md",
+   "size": 1441
+  },
+  {
+   "path": "evolution-deploy-20260913/kernel-v3-layer.json",
+   "size": 1257
+  },
+  {
+   "path": "evolution-deploy-20260913/kernel_snapshot_LOCK-EVOLUTION-DEPLOY-20260913-001.json",
+   "size": 1037
+  },
+  {
+   "path": "evolution-deploy-20260913/lock_doc.md",
+   "size": 1813
+  },
+  {
+   "path": "evolution-deploy-20260913/truth-bidirectional-sync.py",
+   "size": 3496
+  },
+  {
+   "path": "frp-connect-lock/kernel_snapshot_LOCK-FRP-CONNECT-20260912-001.json",
+   "size": 1044
+  },
+  {
+   "path": "frp-connect-lock/lock_doc.md",
+   "size": 1547
+  },
+  {
+   "path": "gateway-handshake-v2-viz.html",
+   "size": 4578
+  },
+  {
+   "path": "gateway-sop-v2-20260915/GATEWAY-V2-SOP.md",
+   "size": 2772
+  },
+  {
+   "path": "gateway-sop-v2-20260915/kernel_snapshot_LOCK-GATEWAY-SOP-20260915-001.json",
+   "size": 1039
+  },
+  {
+   "path": "global-lock-20260912-2/kernel_snapshot_LOCK-GLOBAL-KERNEL-20260912-002.json",
+   "size": 1049
+  },
+  {
+   "path": "global-lock-20260912-2/lock_doc.md",
+   "size": 2036
+  },
+  {
+   "path": "global-scan-v1/fullscan_result_20260912.md",
+   "size": 787
+  },
+  {
+   "path": "global-scan-v1/global_asset_scan_v1.py",
+   "size": 10579
+  },
+  {
+   "path": "global-scan-v1/global_scan_config.json",
+   "size": 1236
+  },
+  {
+   "path": "homology-kernel-v1.bak-V2-20260914/homology_protocol.json",
+   "size": 1470
+  },
+  {
+   "path": "homology-kernel-v1.bak-V2-20260914/kernel_snapshot_LOCK-HOMOLOGY-KERNEL-20260912-001.json",
+   "size": 1050
+  },
+  {
+   "path": "homology-kernel-v1.bak-V2-20260914/kernel_truths.json",
+   "size": 3405
+  },
+  {
+   "path": "homology-kernel-v1.bak-V2-20260914/lock_doc.md",
+   "size": 2114
+  },
+  {
+   "path": "homology-kernel-v1.bak-V2-20260914/merkle_root.txt",
+   "size": 68
+  },
+  {
+   "path": "homology-kernel-v1.bak-V2-20260914/node_registry.json",
+   "size": 588
+  },
+  {
+   "path": "homology-kernel-v1/homology_protocol.json",
+   "size": 3188
+  },
+  {
+   "path": "homology-kernel-v1/kernel_snapshot_LOCK-HOMOLOGY-KERNEL-20260912-001.json",
+   "size": 1050
+  },
+  {
+   "path": "homology-kernel-v1/kernel_truths.json",
+   "size": 4252
+  },
+  {
+   "path": "homology-kernel-v1/lock_doc.md",
+   "size": 2114
+  },
+  {
+   "path": "homology-kernel-v1/merkle_root.txt",
+   "size": 68
+  },
+  {
+   "path": "homology-kernel-v1/node_registry.json",
+   "size": 810
+  },
+  {
+   "path": "kernel-v3-lock-20260914/kernel_snapshot_LOCK-KERNEL-V3-20260914-001.json",
+   "size": 1046
+  },
+  {
+   "path": "kernel-v3-lock-20260914/lock_doc.md",
+   "size": 1186
+  },
+  {
+   "path": "kernel_snapshot_LOCK-GLOBAL-DR-FULL-20260916-001.json",
+   "size": 1059
+  },
+  {
+   "path": "kernel_snapshot_LOCK-GLOBAL-VALUE-20260912-001.json",
+   "size": 1061
+  },
+  {
+   "path": "kg-api-watchdog.sh",
+   "size": 1529
+  },
+  {
+   "path": "lifecycle-visualization/_shots/lifecycle-viewer_desktop.jpg",
+   "size": 174709
+  },
+  {
+   "path": "lifecycle-visualization/_shots/lifecycle-viewer_mobile.jpg",
+   "size": 257081
+  },
+  {
+   "path": "lifecycle-visualization/_shots/lifecycle-viewer_mobile_p1of3.jpg",
+   "size": 103876
+  },
+  {
+   "path": "lifecycle-visualization/_shots/lifecycle-viewer_mobile_p2of3.jpg",
+   "size": 108839
+  },
+  {
+   "path": "lifecycle-visualization/_shots/lifecycle-viewer_mobile_p3of3.jpg",
+   "size": 44939
+  },
+  {
+   "path": "lifecycle-visualization/lifecycle-viewer.html",
+   "size": 26566
+  },
+  {
+   "path": "lifecycle-visualization/lifecycle_builder.py",
+   "size": 26203
+  },
+  {
+   "path": "lifecycle-visualization/node_learn_baseline.json",
+   "size": 1366
+  },
+  {
+   "path": "memory-update-20260911.zip",
+   "size": 45518
+  },
+  {
+   "path": "memory-update-20260911/MANIFEST.json",
+   "size": 1693
+  },
+  {
+   "path": "memory-update-20260911/file_hashes.txt",
+   "size": 439
+  },
+  {
+   "path": "memory-update-20260911/kernel_snapshot_LOCK-MEMORY-UPDATE-20260911-001.json",
+   "size": 1031
+  },
+  {
+   "path": "memory-update-20260911/lock_doc.md",
+   "size": 7225
+  },
+  {
+   "path": "memory-update-20260911/merkle_proof.json",
+   "size": 841
+  },
+  {
+   "path": "memory-update-20260911/neural_registry_246nodes.json",
+   "size": 311946
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/MR020-BOOTSTRAP-REPORT.md",
+   "size": 1469
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/kernel_snapshot_LOCK-MR020-M0-20260915-001.json",
+   "size": 1031
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m1-supercognition/MR020-M1-REPORT.md",
+   "size": 1799
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m1-supercognition/chao-conflict-resolution/MR020-CHAO-REPORT.md",
+   "size": 1905
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m1-supercognition/chao-conflict-resolution/conflict-resolution-report.json",
+   "size": 1396
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m1-supercognition/chao-conflict-resolution/conflict-resolution.log",
+   "size": 586
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m1-supercognition/chao-conflict-resolution/kernel_snapshot_LOCK-MR020-CHAO-20260915-001.json",
+   "size": 1050
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m1-supercognition/chao-conflict-resolution/mr020-conflict-resolution-engine.json",
+   "size": 1211
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m1-supercognition/chao-conflict-resolution/six-dim-audit-report.json",
+   "size": 2196
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m1-supercognition/kernel_snapshot_LOCK-MR020-M1-20260915-001.json",
+   "size": 1029
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m1-supercognition/merged-audit-input-v2.json",
+   "size": 6631
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m1-supercognition/merged-audit-input.json",
+   "size": 5336
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m1-supercognition/mr020-six-dim-drift-engine.json",
+   "size": 2725
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m1-supercognition/six-dim-audit-report.json",
+   "size": 2187
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m1-supercognition/six_dim_drift_audit.py",
+   "size": 4605
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m1-supercognition/yuan-source-guard/MR020-YUAN-GUARD-REPORT.md",
+   "size": 1521
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m1-supercognition/yuan-source-guard/YUAN-source-guard-registry.json",
+   "size": 1768
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m1-supercognition/yuan-source-guard/kernel_snapshot_LOCK-MR020-YUAN-GUARD-20260915-001.json",
+   "size": 1050
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m1-supercognition/yuan-source-guard/rule-change-audit.log",
+   "size": 676
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m1-supercognition/yuan-source-guard/six-dim-audit-report.json",
+   "size": 2192
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m2-autonomy-closed-loop/MR020-M2-REPORT.md",
+   "size": 1582
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m2-autonomy-closed-loop/MR020-M2-V2-ADVANCED-REPORT.md",
+   "size": 1419
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m2-autonomy-closed-loop/MR020-M2-V3-ETERNAL-REPORT.md",
+   "size": 1679
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m2-autonomy-closed-loop/autonomy-index-params-v2.json",
+   "size": 650
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m2-autonomy-closed-loop/autonomy-index-params-v3.json",
+   "size": 753
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m2-autonomy-closed-loop/autonomy-index-params.json",
+   "size": 695
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m2-autonomy-closed-loop/autonomy-index-result.json",
+   "size": 269
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m2-autonomy-closed-loop/autonomy_index_calculator.py",
+   "size": 2273
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m2-autonomy-closed-loop/kernel_snapshot_LOCK-MR020-AUTONOMY-61.9-20260915-001.json",
+   "size": 1040
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m2-autonomy-closed-loop/kernel_snapshot_LOCK-MR020-AUTONOMY-80.5-20260915-001.json",
+   "size": 1052
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m2-autonomy-closed-loop/kernel_snapshot_LOCK-MR020-M2-20260915-001.json",
+   "size": 1038
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m2-autonomy-closed-loop/six_dim_selfcheck.sh",
+   "size": 1422
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m3-final-integration/MR020-FINAL-WHITEPAPER.md",
+   "size": 2649
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m3-final-integration/kernel_snapshot_LOCK-MR020-M3-20260915-001.json",
+   "size": 1042
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m3-final-integration/m3-merged-audit.json",
+   "size": 5597
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m3-final-integration/mr020-integrated-kernel.json",
+   "size": 2897
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/m3-final-integration/six-dim-audit-report.json",
+   "size": 2188
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/mr020-bootstrap-snapshot.json",
+   "size": 1250
+  },
+  {
+   "path": "mr020-kernel-bootstrap-20260915/mr020-six-dim-registry.json",
+   "size": 3836
+  },
+  {
+   "path": "mr020-kernel-path-viz.html",
+   "size": 4122
+  },
+  {
+   "path": "next-optimization-plan-20260912.md",
+   "size": 4065
+  },
+  {
+   "path": "node-unify-sop-20260915/FALLBACK.md",
+   "size": 919
+  },
+  {
+   "path": "node-unify-sop-20260915/ISOLATION.md",
+   "size": 1414
+  },
+  {
+   "path": "node-unify-sop-20260915/LV-TABLE.md",
+   "size": 1345
+  },
+  {
+   "path": "node-unify-sop-20260915/NODE-UNIFY-SOP-V1.md",
+   "size": 8967
+  },
+  {
+   "path": "node-unify-sop-20260915/REGISTRY.md",
+   "size": 1427
+  },
+  {
+   "path": "node-unify-sop-20260915/asset-manifest-v41.json",
+   "size": 317
+  },
+  {
+   "path": "node-unify-sop-20260915/kernel_snapshot_LOCK-NODE-UNIFY-20260915-001.json",
+   "size": 1021
+  },
+  {
+   "path": "node-unify-sop-20260915/verify_node_baseline.py",
+   "size": 6322
+  },
+  {
+   "path": "p0-memory-govern-20260914/P0-MEMORY-GOVERN-REPORT.md",
+   "size": 1688
+  },
+  {
+   "path": "p0-memory-govern-20260914/kernel_snapshot_LOCK-P0-MEMORY-20260914-001.json",
+   "size": 1026
+  },
+  {
+   "path": "pipeline-auto/SOP手册.md",
+   "size": 20371
+  },
+  {
+   "path": "pipeline-auto/cron.conf",
+   "size": 1211
+  },
+  {
+   "path": "pipeline-auto/dashboard.html",
+   "size": 37778
+  },
+  {
+   "path": "pipeline-auto/kernel_snapshot.json",
+   "size": 3713
+  },
+  {
+   "path": "pipeline-auto/pipeline/config/cron.conf",
+   "size": 1211
+  },
+  {
+   "path": "pipeline-auto/pipeline/config/pipeline_spec.json",
+   "size": 6289
+  },
+  {
+   "path": "pipeline-auto/pipeline/data/asset_cards.json",
+   "size": 4598
+  },
+  {
+   "path": "pipeline-auto/pipeline/data/circulation_results.json",
+   "size": 4226
+  },
+  {
+   "path": "pipeline-auto/pipeline/data/gaps.json",
+   "size": 1820
+  },
+  {
+   "path": "pipeline-auto/pipeline/data/improvement_proposals.json",
+   "size": 2239
+  },
+  {
+   "path": "pipeline-auto/pipeline/data/last_count.txt",
+   "size": 5
+  },
+  {
+   "path": "pipeline-auto/pipeline/data/new_assets.json",
+   "size": 9147
+  },
+  {
+   "path": "pipeline-auto/pipeline/data/pricing_results.json",
+   "size": 2761
+  },
+  {
+   "path": "pipeline-auto/pipeline/data/processed_hashes.json",
+   "size": 419
+  },
+  {
+   "path": "pipeline-auto/pipeline/data/product_entries.json",
+   "size": 5484
+  },
+  {
+   "path": "pipeline-auto/pipeline/data/verify_results.json",
+   "size": 1032
+  },
+  {
+   "path": "pipeline-auto/pipeline/docs/PIPELINE_SOP.md",
+   "size": 20371
+  },
+  {
+   "path": "pipeline-auto/pipeline/kernel_snapshot_PIPELINE-AUTO-001.json",
+   "size": 3713
+  },
+  {
+   "path": "pipeline-auto/pipeline/logs/improve_20260915_195646.json",
+   "size": 994
+  },
+  {
+   "path": "pipeline-auto/pipeline/logs/improve_20260916_000021.json",
+   "size": 1003
+  },
+  {
+   "path": "pipeline-auto/pipeline/logs/latest_run.json",
+   "size": 2826
+  },
+  {
+   "path": "pipeline-auto/pipeline/logs/run_20260915_163128.json",
+   "size": 2584
+  },
+  {
+   "path": "pipeline-auto/pipeline/logs/run_20260915_163251.json",
+   "size": 2824
+  },
+  {
+   "path": "pipeline-auto/pipeline/logs/run_20260915_163416.json",
+   "size": 2826
+  },
+  {
+   "path": "pipeline-auto/pipeline/logs/run_20260915_163510.json",
+   "size": 2826
+  },
+  {
+   "path": "pipeline-auto/pipeline/logs/run_20260915_170116.json",
+   "size": 2372
+  },
+  {
+   "path": "pipeline-auto/pipeline/logs/run_20260915_170153.json",
+   "size": 2372
+  },
+  {
+   "path": "pipeline-auto/pipeline/logs/run_20260915_180836.json",
+   "size": 2081
+  },
+  {
+   "path": "pipeline-auto/pipeline/logs/run_20260915_184011.json",
+   "size": 2569
+  },
+  {
+   "path": "pipeline-auto/pipeline/logs/run_20260916_000548.json",
+   "size": 2248
+  },
+  {
+   "path": "pipeline-auto/pipeline/output/asset_showcase.html",
+   "size": 12658
+  },
+  {
+   "path": "pipeline-auto/pipeline/output/commercial_PRD-20260915-09F8.json",
+   "size": 1451
+  },
+  {
+   "path": "pipeline-auto/pipeline/output/commercial_PRD-20260915-23CE.json",
+   "size": 1367
+  },
+  {
+   "path": "pipeline-auto/pipeline/output/commercial_PRD-20260915-840A.json",
+   "size": 1257
+  },
+  {
+   "path": "pipeline-auto/pipeline/output/commercial_PRD-20260915-9E7A.json",
+   "size": 1355
+  },
+  {
+   "path": "pipeline-auto/pipeline/output/commercial_PRD-20260915-A8B7.json",
+   "size": 1282
+  },
+  {
+   "path": "pipeline-auto/pipeline/output/commercial_PRD-20260915-C472.json",
+   "size": 1338
+  },
+  {
+   "path": "pipeline-auto/pipeline/output/pipeline_dashboard.html",
+   "size": 37778
+  },
+  {
+   "path": "pipeline-auto/pipeline/scripts/01_detect.py",
+   "size": 8134
+  },
+  {
+   "path": "pipeline-auto/pipeline/scripts/02_extract.py",
+   "size": 7144
+  },
+  {
+   "path": "pipeline-auto/pipeline/scripts/03_visualize.py",
+   "size": 10200
+  },
+  {
+   "path": "pipeline-auto/pipeline/scripts/04_productize.py",
+   "size": 5177
+  },
+  {
+   "path": "pipeline-auto/pipeline/scripts/05_price.py",
+   "size": 3931
+  },
+  {
+   "path": "pipeline-auto/pipeline/scripts/06_circulate.py",
+   "size": 7797
+  },
+  {
+   "path": "pipeline-auto/pipeline/scripts/07_evaluate.py",
+   "size": 7260
+  },
+  {
+   "path": "pipeline-auto/pipeline/scripts/08_propose.py",
+   "size": 5139
+  },
+  {
+   "path": "pipeline-auto/pipeline/scripts/09_verify.py",
+   "size": 5165
+  },
+  {
+   "path": "pipeline-auto/pipeline/scripts/pipeline_runner.py",
+   "size": 4728
+  },
+  {
+   "path": "pipeline-auto/pipeline/scripts/self_improve_runner.py",
+   "size": 2658
+  },
+  {
+   "path": "pipeline-auto/pipeline/scripts/submit_and_run.sh",
+   "size": 1126
+  },
+  {
+   "path": "pipeline-auto/pipeline_runner.py",
+   "size": 4728
+  },
+  {
+   "path": "pipeline-auto/showcase.html",
+   "size": 8425
+  },
+  {
+   "path": "pipeline-auto/submit_and_run.sh",
+   "size": 1126
+  },
+  {
+   "path": "pipeline-auto/自我改进闭环SOP-V1.md",
+   "size": 3091
+  },
+  {
+   "path": "report-batch-20260915/REPORT-BATCH-LOCK.md",
+   "size": 2430
+  },
+  {
+   "path": "report-batch-20260915/kernel_snapshot_LOCK-REPORT-BATCH-20260915-001.json",
+   "size": 1040
+  },
+  {
+   "path": "report-gateway-verify-20260915/REPORT-GATEWAY-VERIFY.md",
+   "size": 1579
+  },
+  {
+   "path": "report-gateway-verify-20260915/drama-gateway-watchdog.sh",
+   "size": 1120
+  },
+  {
+   "path": "report-gateway-verify-20260915/kernel_snapshot_LOCK-REPORT-VERIFY-20260915-001.json",
+   "size": 1060
+  },
+  {
+   "path": "rules-sync-20260912/MANIFEST.json",
+   "size": 87
+  },
+  {
+   "path": "rules-sync-20260912/global_scan_config.json",
+   "size": 1236
+  },
+  {
+   "path": "rules-sync-20260912/homology_protocol.json",
+   "size": 1470
+  },
+  {
+   "path": "rules-sync-20260912/kernel_snapshot_SYNC-RULES-20260912-001.json",
+   "size": 1040
+  },
+  {
+   "path": "rules-sync-20260912/kernel_truths.json",
+   "size": 2105
+  },
+  {
+   "path": "rules-sync-20260912/latest_rules_sync.md",
+   "size": 2111
+  },
+  {
+   "path": "rules-sync-20260912/semantic-adapter-v3.json",
+   "size": 33200
+  },
+  {
+   "path": "rules-sync-20260912/stress_config.json",
+   "size": 993
+  },
+  {
+   "path": "sandbox-compute-dispatch/_shots/scheme-v1_desktop.jpg",
+   "size": 177002
+  },
+  {
+   "path": "sandbox-compute-dispatch/_shots/scheme-v1_mobile.jpg",
+   "size": 275600
+  },
+  {
+   "path": "sandbox-compute-dispatch/_shots/scheme-v1_mobile_p1of2.jpg",
+   "size": 182112
+  },
+  {
+   "path": "sandbox-compute-dispatch/_shots/scheme-v1_mobile_p2of2.jpg",
+   "size": 93264
+  },
+  {
+   "path": "sandbox-compute-dispatch/_shots/scheme-v2_desktop.jpg",
+   "size": 183907
+  },
+  {
+   "path": "sandbox-compute-dispatch/_shots/scheme-v2_mobile.jpg",
+   "size": 270233
+  },
+  {
+   "path": "sandbox-compute-dispatch/_shots/scheme-v2_mobile_p1of2.jpg",
+   "size": 180999
+  },
+  {
+   "path": "sandbox-compute-dispatch/_shots/scheme-v2_mobile_p2of2.jpg",
+   "size": 89051
+  },
+  {
+   "path": "sandbox-compute-dispatch/scheme-v1.html",
+   "size": 15065
+  },
+  {
+   "path": "sandbox-compute-dispatch/scheme-v2.html",
+   "size": 15693
+  },
+  {
+   "path": "semantic-adapter-v3-lock.zip",
+   "size": 18403
+  },
+  {
+   "path": "semantic-adapter-v3-lock/MANIFEST.json",
+   "size": 1172
+  },
+  {
+   "path": "semantic-adapter-v3-lock/file_hashes.txt",
+   "size": 454
+  },
+  {
+   "path": "semantic-adapter-v3-lock/kernel_snapshot_LOCK-SEMANTIC-V3-20260911-001.json",
+   "size": 1040
+  },
+  {
+   "path": "semantic-adapter-v3-lock/lock_doc.md",
+   "size": 5123
+  },
+  {
+   "path": "semantic-adapter-v3-lock/semantic-adapter-v3.json",
+   "size": 19699
+  },
+  {
+   "path": "semantic-adapter-v3-lock/semantic_validator.py",
+   "size": 24280
+  },
+  {
+   "path": "semantic-adapter-v3/patch_pre_validation.py",
+   "size": 7039
+  },
+  {
+   "path": "semantic-adapter-v3/patch_unified_gateway.py",
+   "size": 8208
+  },
+  {
+   "path": "semantic-adapter-v3/semantic-adapter-v3.json",
+   "size": 33200
+  },
+  {
+   "path": "semantic-adapter-v3/semantic_dashboard.html",
+   "size": 20445
+  },
+  {
+   "path": "semantic-adapter-v3/semantic_meta_validator.py",
+   "size": 20034
+  },
+  {
+   "path": "semantic-adapter-v3/semantic_validator.py",
+   "size": 24280
+  },
+  {
+   "path": "semantic-translation-sop/semantic-adapter-v2-live.json",
+   "size": 2174
+  },
+  {
+   "path": "semantic-translation-sop/semantic-adapter-v2.json",
+   "size": 5608
+  },
+  {
+   "path": "semantic-translation-sop/元极恒一超认知校验对账体系深度扫描报告.md",
+   "size": 17533
+  },
+  {
+   "path": "semantic-translation-sop/语义转译SOP_V2.0.md",
+   "size": 10769
+  },
+  {
+   "path": "semantic-v3-full-lock.zip",
+   "size": 31321
+  },
+  {
+   "path": "semantic-v3-full-lock/file_hashes.txt",
+   "size": 440
+  },
+  {
+   "path": "semantic-v3-full-lock/lock_doc.md",
+   "size": 6997
+  },
+  {
+   "path": "semantic-v3-full-lock/semantic-adapter-v3.json",
+   "size": 33200
+  },
+  {
+   "path": "semantic-v3-full-lock/semantic_dashboard.html",
+   "size": 20445
+  },
+  {
+   "path": "semantic-v3-full-lock/semantic_meta_validator.py",
+   "size": 20034
+  },
+  {
+   "path": "semantic-v3-full-lock/semantic_validator.py",
+   "size": 24280
+  },
+  {
+   "path": "server-connect-20260912/kernel_snapshot_LOCK-SERVER-CONNECT-20260912-001.json",
+   "size": 1042
+  },
+  {
+   "path": "server-connect-20260912/lock_doc.md",
+   "size": 1645
+  },
+  {
+   "path": "snapshot-registry/.kernel_lock_cache.json",
+   "size": 105
+  },
+  {
+   "path": "snapshot-registry/_shots/snapshot-dashboard_desktop.jpg",
+   "size": 140063
+  },
+  {
+   "path": "snapshot-registry/_shots/snapshot-dashboard_mobile.jpg",
+   "size": 213241
+  },
+  {
+   "path": "snapshot-registry/_shots/snapshot-dashboard_mobile_p1of2.jpg",
+   "size": 157891
+  },
+  {
+   "path": "snapshot-registry/_shots/snapshot-dashboard_mobile_p2of2.jpg",
+   "size": 55771
+  },
+  {
+   "path": "snapshot-registry/_shots/unified-baseline-v1_desktop.jpg",
+   "size": 132411
+  },
+  {
+   "path": "snapshot-registry/_shots/unified-baseline-v1_mobile.jpg",
+   "size": 194252
+  },
+  {
+   "path": "snapshot-registry/kernel_snapshot_GLOBAL-DR-20260916-001.json",
+   "size": 6148
+  },
+  {
+   "path": "snapshot-registry/lock_doc_global_dr.md",
+   "size": 4347
+  },
+  {
+   "path": "snapshot-registry/snapshot-dashboard.html",
+   "size": 8854
+  },
+  {
+   "path": "snapshot-registry/snapshot_aggregator.py",
+   "size": 6207
+  },
+  {
+   "path": "snapshot-registry/unified-baseline-v1.html",
+   "size": 12869
+  },
+  {
+   "path": "stable-deploy-plan-20260915.md",
+   "size": 1676
+  },
+  {
+   "path": "stress-test/semantic_stress_tester.py",
+   "size": 7539
+  },
+  {
+   "path": "stress-test/stress_config.json",
+   "size": 993
+  },
+  {
+   "path": "stress-test/stress_report_20260912.md",
+   "size": 2325
+  },
+  {
+   "path": "system-overview-viz.html",
+   "size": 6619
+  },
+  {
+   "path": "truth-distill-20260913/TRUTH-DISTILL-20260913.md",
+   "size": 4130
+  },
+  {
+   "path": "truth-distill-20260913/kernel_snapshot_LOCK-TRUTH-DISTILL-20260913-001.json",
+   "size": 1034
+  },
+  {
+   "path": "truth-distill-20260913/truth-distill-viz.html",
+   "size": 8002
+  },
+  {
+   "path": "truth-summary/TRUTH-TOTAL-TABLE.json",
+   "size": 7006
+  },
+  {
+   "path": "truth-summary/TRUTH-TOTAL-TABLE.md",
+   "size": 2182
+  },
+  {
+   "path": "truth-summary/kernel_snapshot_LOCK-TRUTH-PACKAGE-20260915-001.json",
+   "size": 1036
+  },
+  {
+   "path": "website-fix/assets/keyframes/characters/taiyin_moon_god_keyframe_02_scene.webp",
+   "size": 294388
+  },
+  {
+   "path": "website-fix/assets/keyframes/ep01/S01-005_玄女战争形态降临.jpg",
+   "size": 419383
+  },
+  {
+   "path": "website-fix/assets/keyframes/goddess/03_神女觉醒_竖屏.webp",
+   "size": 169684
+  },
+  {
+   "path": "website-fix/修复说明-9x16统一规格.md",
+   "size": 2540
+  },
+  {
+   "path": "website-fix/官网首页修复包-9x16统一规格.tar.gz",
+   "size": 884880
+  },
+  {
+   "path": "zongyuan-asset-showcase/index.html",
+   "size": 28517
+  },
+  {
+   "path": "zongyuan-asset-showcase/kernel_snapshot_LOCK-NODE-UNIFY-VIS-20260915-001.json",
+   "size": 1026
+  },
+  {
+   "path": "全域资产清单-锁档归档总表-20260915.md",
+   "size": 5371
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "run_id": "DEPLOY-20260916-030943",
+ "probe": {
+  "results": [
+   {
+    "url": "https://www.huodouai.com/api/deploy",
+    "code": 502
+   },
+   {
+    "url": "https://www.huodouai.com/api/page",
+    "code": 502
+   },
+   {
+    "url": "https://www.huodouai.com/api/html/upload",
+    "code": 502
+   },
+   {
+    "url": "https://www.huodouai.com/api/publish",
+    "code": 502
+   }
+  ],
+  "deploy_api_available": false,
+  "available": []
+ },
+ "deployed": [
+  {
+   "name": "black-gold-truth-cards",
+   "path": "/home/user/Doubao/chats/38438412455799554/black-gold-truth-cards/index.html",
+   "ok": false,
+   "error": "aka tool not available (use FileBatchUpload)",
+   "channel": "aka"
+  },
+  {
+   "name": "lifecycle-viewer",
+   "path": "/home/user/Doubao/chats/38438412455799554/lifecycle-visualization/lifecycle-viewer.html",
+   "ok": false,
+   "error": "aka tool not available (use FileBatchUpload)",
+   "channel": "aka"
+  },
+  {
+   "name": "boundary-explorer-report",
+   "path": "/home/user/Doubao/chats/38438412455799554/boundary-explorer/boundary-explorer-report.html",
+   "ok": false,
+   "error": "aka tool not available (use FileBatchUpload)",
+   "channel": "aka"
+  }
+ ],
+ "report": {
+  "ok": false,
+  "error": "all channels failed"
+ },
+ "ledger": {
+  "ok": true,
+  "record_id": "recvvjL3kgMiHd"
+ },
+ "run_at": "2026-09-16T03:09:46+08:00"
+}

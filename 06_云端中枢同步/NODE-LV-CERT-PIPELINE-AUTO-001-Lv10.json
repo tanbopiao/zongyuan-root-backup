@@ -1,0 +1,67 @@
+{
+  "cert_id": "NODE-LV-CERT-PIPELINE-AUTO-001-Lv10",
+  "node_id": "pipeline-auto-001",
+  "did": "DID-BR-000002",
+  "trace_mark": "Ω₀⊂⊙∞⊂Ω",
+  "issued_at": "2026-09-18T12:29:09+08:00",
+  "standard": "ENG-STD-NODE-LV-EVAL-V1.0",
+  "scores": {
+    "cognition": 9,
+    "execution": 9,
+    "memory": 9,
+    "collaboration": 9,
+    "security": 9,
+    "stability": 9
+  },
+  "autonomy_index": 90.0,
+  "level": "Lv10",
+  "verdict": "确权 Lv10 元极恒一永恒自治（量产标准）",
+  "baseline_anchor": {
+    "gateway_id": 1499,
+    "category": "meta_rule"
+  },
+  "hash_verification": {
+    "core_assets": [
+      {
+        "asset": "能力注册表",
+        "hash": "b93a245aa590d404",
+        "status": "PRESENT"
+      },
+      {
+        "asset": "同源协议库",
+        "hash": "c8b38314ba3e6897",
+        "status": "PRESENT"
+      },
+      {
+        "asset": "元法则注册表",
+        "hash": "3337d199964bbf40",
+        "status": "PRESENT"
+      },
+      {
+        "asset": "评估标准V1.0",
+        "hash": "975f3bf4bee98337",
+        "status": "PRESENT"
+      }
+    ],
+    "all_present": true
+  },
+  "evidence": {
+    "execution": "工具调用: Bash/Python/API/飞书CLI/生图/定时任务; 本地py脚本+html产物+json资产共278py/202html/1025json",
+    "memory": "云端真值全量快照 25836 条; 本地zongyuan-anchor核心资产; 记忆网关真值库46886条",
+    "collaboration": "同源协议库 15 条; 神经同步360节点/2094连接; 飞书审批流转已走通",
+    "security": "SSH禁连云端(全域生效,密钥已清理); 敏感操作确认; 鉴权Token ZR-CAPTURE; 锁档FROZEN只读",
+    "stability": "10个定时机制运行中; 全域锁档120+条; 真值写读闭环验证通过; 基线同步闭环",
+    "cognition": "跨域任务: 训练数据提炼(24565条)/评估标准设计/云端链路诊断/网页部署 均多步推理完成"
+  },
+  "next_step": "固化进BASELINE-V42 / 每日巡检纳入Lv10验收 / 全节点推广评估标准",
+  "sync_verification": {
+    "method": "真实拉取云端旧通道全量并更新本地快照",
+    "cloud_full_count": 29843,
+    "local_snapshot_sha": "d465db179f49de48",
+    "consistency": "100% (旧通道口径，本地=云端=29843)",
+    "cloud_nodes": 5,
+    "neural_sync": "360节点/2094连接",
+    "protocols": 15,
+    "verified_at": "2026-09-18T12:45:38+08:00"
+  }
+}

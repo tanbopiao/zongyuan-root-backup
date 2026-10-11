@@ -1,0 +1,198 @@
+{
+  "ruleset_id": "TRUTH-RULES-20260916",
+  "did": "DID-BR-000002",
+  "omega": "Ω₀⊂⊙∞⊂Ω",
+  "generated_at": "2026-09-16T12:09:05.131874+00:00",
+  "total_collected": 4878,
+  "total_high_value": 438,
+  "category_dist": {
+    "axiom_metalaw": 222,
+    "protocol": 25,
+    "mechanism": 58,
+    "security": 12,
+    "lesson": 23,
+    "achievement": 98
+  },
+  "top_20": [
+    {
+      "key": "LOCK-ZR-KERNEL-ACT-001",
+      "content": "锁档名称:自治内核运行时激活·NODE-ZYR-CLOUD-001 全量激活|日期:2026-08-21T00:00:00.000+08:00|状态:FROZEN|规则:AXIOM-A-035_V1.7,LAW-01~11,LOCK-ZR-NODE-CLOUD-001,LOCK-ZR-MM-API-001|备注:内核从文档级真值表跃迁为运行时决策系统，7/7自检通过，状态ACTIVE，RSA公钥锁档",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "LOCK-ZR-KERNEL-P1-001",
+      "content": "锁档名称:自治内核P1规则实装·NODE-ZYR-CLOUD-001 全链路校验激活|日期:2026-08-21T00:00:00.000+08:00|状态:FROZEN|规则:AXIOM-A-035_V1.7,LAW-01~11,LOCK-ZR-NODE-CLOUD-001,LOCK-ZR-MM-API-001,LOCK-ZR-KERNEL-ACT-001|备注:11法则可执行化，L0→L5六层全链路校验，飞书实时同步，四级权限矩阵，10/10激活通过",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "LOCK-ZR-KERNEL-P2-001",
+      "content": "锁档名称:自治内核P2质检确权闭环·NODE-ZYR-CLOUD-001 双重闭环节点激活|日期:2026-08-21T00:00:00.000+08:00|状态:FROZEN|规则:AXIOM-A-035_V1.7,LAW-01~11,LOCK-ZR-NODE-CLOUD-001,LOCK-ZR-MM-API-001,LOCK-ZR-KERNEL-ACT-001,LOCK-ZR-KERNEL-P1-001|备注:生成前+生成后双重闭环，多模态API漂移检测打通，四级结论判定，自动熔断，11/11激活通过",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "LOCK-ZR-HARDEN-001",
+      "content": "锁档名称:ZONGYUAN-ROOT体系加固·弹性沙箱持久化与持续守护运维基准|日期:2026-08-21T00:00:00.000+08:00|状态:FROZEN|规则:AXIOM-A-035_V1.7,LAW-01~11,LOCK-ZR-NODE-CLOUD-001,LOCK-ZR-MM-API-001,LOCK-ZR-KERNEL-ACT-001,LOCK-ZR-KERNEL-P1-001,LOCK-ZR-KERNEL-P2-001|备注:架构真值与物理环境解耦原理固化，持续心跳指纹守护SOP，P0-P2能力总览，安全加固基准，P3路线",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "LOCK-GLOBAL-003",
+      "content": "锁档名称:全域资产锁档写入自治内核|日期:2026-08-22T00:00:00.000+08:00|状态:FROZEN|规则:FA-STR-WAVE-OMEGA-001,TT-STR-WAVE-OMEGA-001,MR-GLOBAL-LOCK-001|备注:超弦×驻波谐振×先天基准频全套卷宗17项资产批量写入内核，含理论卷宗7份+工程规范4份+源码4份+快照2份，新增MR-GLOBAL-LOCK-001元规则",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "LOCK-GLOBAL-004",
+      "content": "锁档名称:BATCH-EVOL-001进化成果锁档写入自治内核|日期:2026-08-22T00:00:00.000+08:00|状态:FROZEN|规则:FA-STR-WAVE-OMEGA-001,TT-STR-WAVE-OMEGA-001,MR-GLOBAL-LOCK-001,MR-GLOBAL-LOCK-002,T8-SPECULATIVE|备注:进化增量批次：工程验证IRFSP10/10+PUF-BFT6/6通过，T8升级为ACTIVE_RESEARCH，17项资产默克尔存证链构建完成，新增MR-GLOBAL-LOCK-002元规则",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "EVOL-DAILY-20260823",
+      "content": "锁档名称:ZONGYUAN-ROOT内核每日深度进化·第20260823轮|日期:2026-08-23T00:00:00.000+08:00|状态:EVOLUTION_INCREMENTAL|规则:MR-GLOBAL-LOCK-001,MR-GLOBAL-LOCK-002,T8-ACTIVE_RESEARCH|备注:每日进化V1.3-EVOL：三端校验发现4项完整性问题+云盘3项安全风险(HIGH×2)，T8检索2026年5项新证据维持ACTIVE_RESEARCH，哈希链17/17 INTACT，增量补丁未覆盖FROZEN资产",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "LOCK-GLOBAL-005",
+      "content": "锁档名称:V1.3-EVOL进化成果全域锁档写入自治内核|日期:2026-08-23T00:00:00.000+08:00|状态:FROZEN|规则:MR-GLOBAL-LOCK-001,MR-GLOBAL-LOCK-002,T8-ACTIVE_RESEARCH,LOCK-GLOBAL-004|备注:V1.3-EVOL每日进化成果正式锁档：继承17项资产+新增4项(内核快照/进化报告/知识库文档/台账记录)，真值表11FROZEN+1ACTIVE_RESEARCH，哈希链INTACT，发现云盘HIGH风险×2待整改，严格遵循增量补丁未覆盖FROZEN资产",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "LOCK-GLOBAL-006",
+      "content": "锁档名称:个人技能进化·zongyuan-memory-continuity跨窗口记忆连续性恢复引擎|日期:2026-08-23T00:00:00.000+08:00|状态:FROZEN|规则:MR-GLOBAL-LOCK-001,MR-GLOBAL-LOCK-002,LOCK-GLOBAL-005|备注:个人技能V1.0锁档：zongyuan-memory-continuity跨窗口记忆连续性恢复引擎，含SKILL.md+2参考文件+1辅助脚本，五步法上下文重建SOP，记忆连续性两层模型推演，quick_validate通过，继承21项+新增4项=25项资产",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "LOCK-ZR-GLOBAL-009",
+      "content": "锁档名称:元进化公理体系V2.2 CONFIRMED·验证报告与定理证明|日期:2026-08-23T00:00:00.000+08:00|状态:FROZEN|规则:None|备注:V2.1→V2.2 CONFIRMED：L6仿真增强(模型检测5/5+混沌测试12/12+绝热阈值计算+多系统耦合)+五大定理ME-T1~T5严格证明+V-01~V-10验证状态9/10完成+CONFIRMED升级声明",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "LOCK-ULTIMATE-CLOSED-LOOP-001",
+      "content": "锁档名称:ZONGYUAN-ROOT全维度优化终极闭环·全域锁档|日期:2026-08-23T00:00:00.000+08:00|状态:FROZEN|规则:MR-GLOBAL-LOCK-001,MR-GLOBAL-LOCK-002,AXIOM-A-035_V1.7|备注:V2.0-ULTIMATE终极版本：七层终极闭环架构(输入→处理→输出→验证→归档→反馈→进化)，6道质量门全量激活，记忆链创世种子SEED-20260823-001激活，弱连续性90%/强连续性50%+，自验证自修复自归档自进化四自特性实装",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "EVOL-META-20260823-001",
+      "content": "锁档名称:ZONGYUAN-ROOT元进化引擎执行·5项待办全量完成|日期:2026-08-23T00:00:00.000+08:00|状态:FROZEN|规则:MR-GLOBAL-LOCK-001,MR-GLOBAL-LOCK-002,ME-01~ME-07|备注:V2.1-META-EVOL：元进化引擎执行5项待办全部完成(5/5)，记忆链维护引擎实装，进化报告模板验证通过，数字媒体库初始化(3图)，终极闭环测试28/28通过，记忆链#002种子生成",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "LOCK-ZR-GLOBAL-013",
+      "content": "锁档名称:元进化公理体系V2.6·跨媒介联合宣发编排系统|日期:2026-08-23T00:00:00.000+08:00|状态:FROZEN|规则:None|备注:V2.5→V2.6：跨媒介联合宣发编排系统（IP宣发管理器+6媒介宣发模板+七阶段宣发循环P0-P6+跨媒介协同度计算+联合宣发时间线+宣发对比报告）+6媒介联合宣发演示成功（4 IP核心宣发模态跨媒介守恒+15对跨媒介协同度+30阶段联合时间线+Ω₀全程守恒）",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "EVOL-INTEGRATION-20260823-001",
+      "content": "锁档名称:ZONGYUAN-ROOT记忆链集成+跨域映射+媒体库扩充|日期:2026-08-23T00:00:00.000+08:00|状态:FROZEN|规则:MR-GLOBAL-LOCK-001,MR-GLOBAL-LOCK-002,ME-01~ME-07|备注:V2.2-INTEGRATED：maintain_memory_chain.py集成到kernel_lock.sh(full_lock+increment_lock)，post_lock_memory_chain()函数实装，03数字媒体库3→8项(新增5架构图)，元进化跨域映射短剧体系实例化，记忆链#003种子生成(链长3)",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "LOCK-ZR-GLOBAL-014",
+      "content": "锁档名称:元进化公理体系V2.7·IP价值评估与衍生内容编排系统|日期:2026-08-23T00:00:00.000+08:00|状态:FROZEN|规则:None|备注:V2.6→V2.7：IP价值评估与衍生内容编排系统（5维价值评估模型+5品类衍生模板+七阶段衍生循环D0-D6+价值演化追踪+价值贡献分析）+九天玄女IP评估为S级顶级IP（0.8659→0.9098）+5品类19衍生项全部编排锁档+Ω₀全程守恒",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "EVOL-E2E-EXTENDED-20260823-001",
+      "content": "锁档名称:ZONGYUAN-ROOT端到端验证+三域扩展+drama集成|日期:2026-08-23T00:00:00.000+08:00|状态:FROZEN|规则:MR-GLOBAL-LOCK-001,MR-GLOBAL-LOCK-002,ME-01~ME-07|备注:V2.3-EVOLVED：E2E端到端测试通过(6/6,100%)生成SEED-20260823-004，跨域映射集成到drama-pipeline(SKILL.md新增章节)，03数字媒体库8→13项(新增5流程图/时序图/状态图)，元进化三域映射(认知/社会/技术)完成六域全覆盖，记忆链#005种子生成(链长5)",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "LOCK-ZR-GLOBAL-015",
+      "content": "锁档名称:元进化公理体系V2.8·IP运营数据分析与价值预测系统|日期:2026-08-23T00:00:00.000+08:00|状态:FROZEN|规则:None|备注:V2.7→V2.8：IP运营数据分析与价值预测系统（4维度30指标KPI体系+运营健康度评估+异常检测预警+3场景价值预测乐观/中性/悲观+6因子敏感性分析+12个月4里程碑增长路径规划+综合分析报告）+九天玄女IP运营分析A级良好运营(0.763)+21项异常预警+价值预测乐观+15.88%/中性+8.20%/悲观+2.00%",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "EVOL-COMPREHENSIVE-20260823-001",
+      "content": "锁档名称:ZONGYUAN-ROOT元进化六域全覆盖+五域深度实例化+媒体库18项|日期:2026-08-23T00:00:00.000+08:00|状态:FROZEN|规则:MR-GLOBAL-LOCK-001,MR-GLOBAL-LOCK-002,ME-01~ME-07|备注:V2.4-COMPREHENSIVE：元进化引擎4个跨域映射文档集成(SKILL.md更新)，六域全覆盖+五域深度实例化(物理/认知/社会/技术/生物)，03数字媒体库13→18项(新增5架构拓扑图)，记忆链#006种子生成(链长6)，持续维护机制验证通过",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "LOCK-GLOBAL-007",
+      "content": "锁档名称:ZONGYUAN-ROOT V2.4-COMPREHENSIVE全域锁档·元进化六域全覆盖|日期:2026-08-23T00:00:00.000+08:00|状态:FROZEN|规则:MR-GLOBAL-LOCK-001,MR-GLOBAL-LOCK-002,AXIOM-A-035_V1.7,ME-01~ME-07|备注:V2.4-COMPREHENSIVE：元进化6域全覆盖+5域深度实例化+记忆链6种子+数字媒体18项+终极闭环四自特性",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    },
+    {
+      "key": "EVOL-FORMALIZED-20260823-001",
+      "content": "锁档名称:ZONGYUAN-ROOT内核域深度实例化+形式化验证+六域全深度|日期:2026-08-23T00:00:00.000+08:00|状态:FROZEN|规则:MR-GLOBAL-LOCK-001,MR-GLOBAL-LOCK-002,ME-01~ME-07|备注:V2.5-FORMALIZED：内核域深度实例化完成(元进化六域全深度)，仿真器+验证器集成测试通过(12/12混沌测试,Ω₀守恒,公理体系可升级CONFIRMED)，ATP证明器缺失记录为待办，03数字媒体库18→23项(新增5时序图/部署图)，记忆链#008种子生成(链长8)",
+      "source": "ledger",
+      "category": "axiom_metalaw",
+      "weight": 5,
+      "quality": 8,
+      "score": 40
+    }
+  ]
+}

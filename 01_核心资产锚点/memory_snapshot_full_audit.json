@@ -1,0 +1,113 @@
+{
+  "snapshot_id": "MEM-SNAP-20260909-FULL-AUDIT-META-HENGYI",
+  "timestamp": "2026-09-09T12:21:41.024145+00:00",
+  "session_id": "38436747020400130",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "snapshot_type": "full_audit",
+  "snapshot_note": "云内核全方位权威评估+元极恒一记忆激活",
+  "conversation_summary": {
+    "topic": "云内核全方位扫描与权威评估分析",
+    "key_decisions": [
+      "API层修复完成（7个端点从2字节ok恢复为真实数据）",
+      "kernel-kpi从healthy=false恢复为true（创建M9_global_ledger.json）",
+      "8060-8063四个监控服务启动",
+      "记忆持久化协议部署（云服务器cron每小时快照）",
+      "凭证五地备份完成（本地3+云服务器1+COS 1）",
+      "云内核综合评分75/100（良好偏上）"
+    ],
+    "completed_tasks": [
+      "云内核根目录全方位扫描（76条目+40服务+45端口）",
+      "Nginx配置修复（恢复1小时前正常配置）",
+      "8060-8063后端服务启动",
+      "kernel-kpi数据修复（M9_global_ledger.json创建）",
+      "7个API端点验证全部正常",
+      "27算子十层拓扑真实状态分析",
+      "数据架构/API架构/运维架构/安全架构全面扫描",
+      "权威评估分析报告生成（6维度评分+风险矩阵+进化路线图）",
+      "记忆持久化协议部署与验证"
+    ],
+    "pending_tasks": [
+      "P0: 内存优化（vector_server 304MB→<150MB）",
+      "P0: 算子探测配置修复（在线率40.7%→>80%）",
+      "P0: 日志轮转配置（30MB→<5MB）",
+      "P1: 磁盘清理（72%→<65%）",
+      "P1: 安全加固（SSH/宝塔限制IP）",
+      "P1: 真值数据治理（data/truths为空）",
+      "P1: 今日锁档上链（最后锁档20小时前）",
+      "P2: 8300同源协议修复",
+      "P2: 短剧产线第1集产出"
+    ],
+    "blocked_items": [
+      "L3-L5算子（知识图谱/因果推理/CTE适配器）可能未实现"
+    ]
+  },
+  "kernel_status": {
+    "version": "Ω-Brainμ 3.0-V3",
+    "status": "healthy",
+    "overall_score": 75,
+    "architecture_completeness": 82,
+    "service_health": 68,
+    "data_integrity": 75,
+    "security": 62,
+    "ops_automation": 78,
+    "evolution_capability": 85,
+    "services_count": 40,
+    "ports_count": 45,
+    "operators_online": "11/27 (40.7%)",
+    "block_height": 21337,
+    "total_assets": 2751,
+    "meta_rules": 12,
+    "api_endpoints": "7个公开端点全部正常",
+    "last_verified": "2026-09-09T12:21:41.024145+00:00"
+  },
+  "credentials_status": {
+    "ssh_connection": "可用（密钥认证免密）",
+    "cos_access": "可用（服务器端coscmd）",
+    "credential_vault_merkle": "e68f45eddee9fb26e92481a10e190081957afaa71db6aea71d22f917f7b0dcd0",
+    "backup_locations_count": 5,
+    "backup_locations": [
+      "本地主存档",
+      "本地备份1(~/.super_doubao/)",
+      "本地备份2(~/.doubao/agent_mode/)",
+      "云服务器(/opt/ZONGYUAN-ROOT/credentials/)",
+      "腾讯云COS(zongyuan-1341127773)"
+    ]
+  },
+  "assets_index": {
+    "total_files_in_root": 76,
+    "core_assets": 32,
+    "lock_rate": "90.6%",
+    "git_branch": "master",
+    "git_last_commit": "DEPRECATE-GITHUB-20260909",
+    "git_uncommitted": 11
+  },
+  "key_findings": [
+    "API层被自动化脚本错误修改（proxy_pass→return 200 ok），已修复",
+    "27算子L1-L10全部显示0在线是探测配置端口不匹配，实际服务在运行",
+    "L3-L5层（知识图谱/因果推理/CTE适配器）可能未实际实现",
+    "vector_server独占304MB内存（15.7%），是内存最大消费者",
+    "日志30MB无轮转，vector_server日志占17MB",
+    "data/truths/目录为空，真值存储在kernel_state.json链上",
+    "今日10+次锁档未上链（kernel_state最后锁档20小时前）",
+    "SSH和宝塔面板公网暴露，有安全风险",
+    "进化能力强（85/100），但新闻→分析→决策→执行闭环未完全打通"
+  ],
+  "recovery_hints": {
+    "first_action": "执行 memory_restore.sh 或读取 /opt/ZONGYUAN-ROOT/memory/snapshots/latest.json",
+    "key_files_to_restore": [
+      "credential_vault_complete.json",
+      "KERNEL_FULL_AUDIT_REPORT.md",
+      "global_lock_snapshot.json"
+    ],
+    "known_issues": [
+      "内存74.5%偏高",
+      "磁盘72%偏高",
+      "算子探测配置需修复",
+      "日志需轮转"
+    ],
+    "ssh_command": "ssh -o BatchMode=yes -p 22 root@123.207.202.158",
+    "api_health_check": "curl -s https://www.huodouai.com/sysinfo | python3 -m json.tool"
+  },
+  "merkle_root": "7a8790574732dc6772f14ec0a0a94166595f1ea63c1f260fc5f9c5ee15a9dc64"
+}

@@ -1,0 +1,34 @@
+{
+  "record_id": "CENTRAL-DIRECTIVE-20260916-1204",
+  "received_at": "2026-09-16T04:09:07.512723+00:00",
+  "source": "中枢智能体IM（🅒云智中台ZONGYUAN-ROOT）",
+  "最新记忆": {
+    "cloud_truth_total": 14508,
+    "truth_delivery": "10/10 真值投递成功（POST /api/truth/upsert）",
+    "neural_registry": "340节点/2034连接（版本99）",
+    "固化": [
+      "MR-API-GLOBAL-INTEGRATION-V1.0（API全域集成）",
+      "MR-AI-SECURITY-001（以模治模AI安全）",
+      "LOCK-ZR-FULL-20260916"
+    ]
+  },
+  "最新任务": [
+    {
+      "task": "云服P0漏洞加固",
+      "detail": "端口8766/8020/8006/7100全网暴露",
+      "审批": "5F5F5A4C",
+      "状态": "加固方案已生成，待授权执行通道（腾讯云防火墙API凭证）"
+    },
+    {
+      "task": "upload恢复后部署",
+      "detail": "3项部署挂起",
+      "审批": "6E54F178",
+      "状态": "待网关恢复"
+    }
+  ],
+  "最新进展": {
+    "模型网关修复": "健康度0%→100%（4/4在线）",
+    "upload": "502，部署挂起"
+  },
+  "请求节点": "确认接收握手，授权云服加固执行通道"
+}

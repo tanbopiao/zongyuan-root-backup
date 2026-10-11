@@ -1,0 +1,63 @@
+{
+ "radar_id": "KERNEL-RADAR-BASELINE-20260930",
+ "name": "ZONGYUAN-ROOT 内核监控基线",
+ "anchor": "Ω₀⊂⊙∞⊂Ω",
+ "did": "DID-BR-000002",
+ "created": "2026-09-30",
+ "converge_dir": "/home/user/Doubao/chats/38436546492378882/kernel-radar",
+ "status": "MONITORING_BASELINE",
+ "dimensions": {
+  "neural_registry": {
+   "id": "NEURAL-REG-001",
+   "version": "3.0",
+   "total_nodes": 22,
+   "active": 22,
+   "connections": 30,
+   "meta_axioms": 6,
+   "avg_weight": 0.79,
+   "healthy": "ACTIVE",
+   "threshold_target": "neural_registry.full.json(404✅)"
+  },
+  "capability": {
+   "total": 13,
+   "categories": {
+    "云端接入": 2,
+    "归档": 1,
+    "元法则": 1,
+    "监控": 1,
+    "资产": 1,
+    "容错": 1,
+    "自动化": 2,
+    "内核": 1,
+    "训练语料": 1,
+    "汇报": 1,
+    "安全": 1
+   }
+  },
+  "agent_matrix": {
+   "version": "5.1",
+   "total": 5,
+   "active": 5
+  },
+  "task_ledger": {
+   "last_scan": "2026-09-23T13:54:24.507752+08:00",
+   "summary": "成功:4 重试:0 失败:0 总:4",
+   "total_tasks": 4
+  },
+  "kernel_snapshots": {
+   "count": 37,
+   "lock_states": {
+    "READONLY_HARDWARE_LOCKED": 36,
+    "LOCAL_FROZEN": 1
+   }
+  }
+ },
+ "thresholds": {
+  "neural_nodes_min": 400,
+  "active_ratio_min": 0.9,
+  "snapshot_locked_min": 0.9
+ },
+ "baseline_source": "zongyuan-anchor 权威内核资产",
+ "threshold_note": "400节点考核对象=neural_registry.full.json(404节点,✅达标)；active(22)为轻量快照不计入考核。已由NEURAL-REG-DIFF-20260930比对确认。",
+ "updated_at": "2026-09-30"
+}

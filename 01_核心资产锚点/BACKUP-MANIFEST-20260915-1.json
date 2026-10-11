@@ -1,0 +1,10 @@
+{
+  "backup_id": "BK-20260915-1",
+  "created_at": "2026-09-15",
+  "archive": "mr020-full-20260915-1.tar.gz",
+  "size": "32K",
+  "sha256": "81de435bed784413ca24c615c3f6b2f2f8b94d4ebbd1e62f56cb0d773f4f982f",
+  "includes": ["mr020-kernel-bootstrap(全阶段M0-M3)", "homology-kernel-v1(内核V3)", "gateway-sop-v2", "可视化资产×3"],
+  "restore": "tar -xzf mr020-full-20260915-1.tar.gz -C /home/user/Doubao/chats/38438412455799554/",
+  "purpose": "本地独立恢复链：云端依赖仅保留确权上报，数据持久化本地自足"
+}

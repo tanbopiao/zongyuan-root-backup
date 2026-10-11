@@ -1,0 +1,52 @@
+[
+  {
+    "domain": "perception",
+    "content": "真值即感知：全量真值库是体系感知源，任何决策必须先检索真值库再行动",
+    "proposal_id": "PROP-01-PERCEPTION"
+  },
+  {
+    "domain": "perception",
+    "content": "GPU即感知增强：决策大脑以GPU健康探针(5min)持续感知算力状态，异常静默降级",
+    "proposal_id": "PROP-02-PERCEPTION"
+  },
+  {
+    "domain": "coordination",
+    "content": "权威层级：L0主权威(云端中枢+元内核)终审，L1辅助(GPU/worker/窗口)提案，冲突交主权威仲裁",
+    "proposal_id": "PROP-03-COORDINATION"
+  },
+  {
+    "domain": "coordination",
+    "content": "同源协议：节点接入必须握手+心跳+能力声明，离线180s自动召回",
+    "proposal_id": "PROP-04-COORDINATION"
+  },
+  {
+    "domain": "scheduling",
+    "content": "资源池化调度：多GPU/多通道资源池化，主备切换，零单点依赖",
+    "proposal_id": "PROP-05-SCHEDULING"
+  },
+  {
+    "domain": "scheduling",
+    "content": "最小Token最优稳态：以最小消耗产出最大成品，每次任务学习优化进化",
+    "proposal_id": "PROP-06-SCHEDULING"
+  },
+  {
+    "domain": "monitoring",
+    "content": "SLA恒观测：端点探活+日志落盘+自动告警，故障即熔断降级不阻塞",
+    "proposal_id": "PROP-07-MONITORING"
+  },
+  {
+    "domain": "monitoring",
+    "content": "心跳即权威：节点在线状态以心跳写操作为准，列表缓存延迟不可作准",
+    "proposal_id": "PROP-08-MONITORING"
+  },
+  {
+    "domain": "optimization",
+    "content": "进化闭环：每任务周期evaluate→evolve→锁档上报，进化建议自动入库",
+    "proposal_id": "PROP-09-OPTIMIZATION"
+  },
+  {
+    "domain": "optimization",
+    "content": "介入即增强：任何输入只增强不破坏体系，冲突即学习升维",
+    "proposal_id": "PROP-10-OPTIMIZATION"
+  }
+]

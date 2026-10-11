@@ -1,0 +1,195 @@
+{
+  "schema_version": "KERNEL-SNAPSHOT-V1.0",
+  "kernel_root": "ZONGYUAN-ROOT",
+  "kernel_version": "V2.0-NEURAL",
+  "did": "DID-BR-000002",
+  "provenance_mark": "Ω₀⊂⊙∞⊂Ω",
+  "lock_state": "READONLY_HARDWARE_LOCKED",
+  "snapshot_id": "GLOBAL-DR-20260916-001",
+  "snapshot_type": "GLOBAL_DR_CONSOLIDATION",
+  "write_timestamp": "2026-09-16T10:16:47+08:00",
+  "environment": {
+    "host": "doubao-sandbox",
+    "workspace": "/home/user/Doubao/chats/38438412455799554",
+    "anchor_dir": "/home/user/Doubao/chats/38437615670548738/zongyuan-anchor"
+  },
+  "assets_layer": {
+    "asset_dirs_total": 30,
+    "asset_dirs": [
+      "api-live",
+      "asset-commerce",
+      "baseline-anchor-20260913",
+      "baseline-anchor-lock-20260913",
+      "boundary-explorer",
+      "central-dispatcher",
+      "deploy-auto",
+      "evolution-deploy-20260913",
+      "frp-connect-lock",
+      "gateway-sop-v2-20260915",
+      "global-lock-20260912-2",
+      "global-scan-v1",
+      "homology-kernel-v1",
+      "homology-kernel-v1.bak-V2-20260914",
+      "kernel-v3-lock-20260914",
+      "lifecycle-visualization",
+      "memory-update-20260911",
+      "mr020-kernel-bootstrap-20260915",
+      "node-unify-sop-20260915",
+      "p0-memory-govern-20260914",
+      "pipeline-auto",
+      "report-batch-20260915",
+      "report-gateway-verify-20260915",
+      "rules-sync-20260912",
+      "sandbox-compute-dispatch",
+      "semantic-adapter-v3",
+      "semantic-adapter-v3-lock",
+      "semantic-translation-sop",
+      "semantic-v3-full-lock",
+      "website-fix"
+    ],
+    "files_total": 304,
+    "size_total_kb": 7790
+  },
+  "snapshot_layer": {
+    "historical_snapshots_total": 30,
+    "recent_snapshots": [
+      {
+        "file": "kernel_snapshot_LOCK-MR020-M0-20260915-001.json",
+        "dir": "mr020-kernel-bootstrap-20260915",
+        "size_kb": 1,
+        "sha16": "e0a606875eda42c7"
+      },
+      {
+        "file": "kernel_snapshot_LOCK-MR020-CHAO-20260915-001.json",
+        "dir": "mr020-kernel-bootstrap-20260915/m1-supercognition/chao-conflict-resolution",
+        "size_kb": 1,
+        "sha16": "5e4c17aa0a19ed38"
+      },
+      {
+        "file": "kernel_snapshot_LOCK-MR020-M1-20260915-001.json",
+        "dir": "mr020-kernel-bootstrap-20260915/m1-supercognition",
+        "size_kb": 1,
+        "sha16": "a68f7cd131db0391"
+      },
+      {
+        "file": "kernel_snapshot_LOCK-MR020-YUAN-GUARD-20260915-001.json",
+        "dir": "mr020-kernel-bootstrap-20260915/m1-supercognition/yuan-source-guard",
+        "size_kb": 1,
+        "sha16": "eae89889147f0044"
+      },
+      {
+        "file": "kernel_snapshot_LOCK-MR020-AUTONOMY-61.9-20260915-001.json",
+        "dir": "mr020-kernel-bootstrap-20260915/m2-autonomy-closed-loop",
+        "size_kb": 1,
+        "sha16": "518e7e536a62e16d"
+      },
+      {
+        "file": "kernel_snapshot_LOCK-MR020-AUTONOMY-80.5-20260915-001.json",
+        "dir": "mr020-kernel-bootstrap-20260915/m2-autonomy-closed-loop",
+        "size_kb": 1,
+        "sha16": "ca61796ebcfc851b"
+      },
+      {
+        "file": "kernel_snapshot_LOCK-MR020-M2-20260915-001.json",
+        "dir": "mr020-kernel-bootstrap-20260915/m2-autonomy-closed-loop",
+        "size_kb": 1,
+        "sha16": "ef722823be21785e"
+      },
+      {
+        "file": "kernel_snapshot_LOCK-MR020-M3-20260915-001.json",
+        "dir": "mr020-kernel-bootstrap-20260915/m3-final-integration",
+        "size_kb": 1,
+        "sha16": "711101fa2f02a779"
+      },
+      {
+        "file": "kernel_snapshot_LOCK-NODE-UNIFY-20260915-001.json",
+        "dir": "node-unify-sop-20260915",
+        "size_kb": 0,
+        "sha16": "43c21fc48c3224e2"
+      },
+      {
+        "file": "kernel_snapshot_LOCK-P0-MEMORY-20260914-001.json",
+        "dir": "p0-memory-govern-20260914",
+        "size_kb": 1,
+        "sha16": "02e814e222c0bf69"
+      },
+      {
+        "file": "kernel_snapshot_PIPELINE-AUTO-001.json",
+        "dir": "pipeline-auto/pipeline",
+        "size_kb": 3,
+        "sha16": "61daf8344230af7d"
+      },
+      {
+        "file": "kernel_snapshot_LOCK-REPORT-BATCH-20260915-001.json",
+        "dir": "report-batch-20260915",
+        "size_kb": 1,
+        "sha16": "50d71829b61841a0"
+      },
+      {
+        "file": "kernel_snapshot_LOCK-REPORT-VERIFY-20260915-001.json",
+        "dir": "report-gateway-verify-20260915",
+        "size_kb": 1,
+        "sha16": "178c97fd683fea88"
+      },
+      {
+        "file": "kernel_snapshot_SYNC-RULES-20260912-001.json",
+        "dir": "rules-sync-20260912",
+        "size_kb": 1,
+        "sha16": "a51d5159360bf2d5"
+      },
+      {
+        "file": "kernel_snapshot_LOCK-SEMANTIC-V3-20260911-001.json",
+        "dir": "semantic-adapter-v3-lock",
+        "size_kb": 1,
+        "sha16": "ee4a83ef07212457"
+      },
+      {
+        "file": "kernel_snapshot_LOCK-SERVER-CONNECT-20260912-001.json",
+        "dir": "server-connect-20260912",
+        "size_kb": 1,
+        "sha16": "546ed86d87740c45"
+      },
+      {
+        "file": "kernel_snapshot_GLOBAL-DR-20260916-001.json",
+        "dir": "snapshot-registry",
+        "size_kb": 6,
+        "sha16": "d88bb14e7f425fce"
+      },
+      {
+        "file": "kernel_snapshot_LOCK-TRUTH-DISTILL-20260913-001.json",
+        "dir": "truth-distill-20260913",
+        "size_kb": 1,
+        "sha16": "e0c959b191d1b4ad"
+      },
+      {
+        "file": "kernel_snapshot_LOCK-TRUTH-PACKAGE-20260915-001.json",
+        "dir": "truth-summary",
+        "size_kb": 1,
+        "sha16": "6d63708dbd6175e6"
+      },
+      {
+        "file": "kernel_snapshot_LOCK-NODE-UNIFY-VIS-20260915-001.json",
+        "dir": "zongyuan-asset-showcase",
+        "size_kb": 1,
+        "sha16": "faa0f46fea886210"
+      }
+    ]
+  },
+  "anchor_layer": {
+    "capability_count": 8,
+    "metalaw_count": 34,
+    "protocol_count": 12,
+    "capability_summary": ""
+  },
+  "manifest_layer": {
+    "asset_manifest_count": 0,
+    "truths_internal_count": 4664
+  },
+  "integrity": {
+    "chain": "ACTIVE",
+    "verification": "HASH_CHAIN_ENABLED",
+    "note": "三副本机制：本地工作区 + 云服务器9120 + 飞书云盘",
+    "snapshot_sha16": "b85228afa9436b91",
+    "snapshot_size_kb": 5
+  }
+}

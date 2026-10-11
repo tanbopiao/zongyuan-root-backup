@@ -1,0 +1,445 @@
+{
+  "registry_id": "OPR-ZR-001",
+  "registry_name": "ZONGYUAN-ROOT 全域算子权限注册表",
+  "version": "OPERATOR-AUTH-V1.0",
+  "kernel_version": "V2.3.0-GIT-BRIDGE-LOCKED",
+  "did": "DID-BR-000002",
+  "provenance_anchor": "Ω₀⊂⊙∞⊂Ω",
+  "created_at": "2026-09-09T18:30:00+08:00",
+  "last_updated": "2026-09-13T23:43:51+08:00",
+  "total_operators": 43,
+  "authority_levels": {
+    "L0": "只读：可查询状态、读取数据，不可执行任何变更操作",
+    "L1": "建议：可调用只读+对外服务类算子（AI对话、展示层），不可写入内核",
+    "L2": "执行：可调用生产执行类算子（神经激活、生产流水线、质检），不可锁档/调度/元公理",
+    "L3": "调度：可调用编排+锁档类算子，不可生成元公理/写入内核配置",
+    "L4": "内核写入：全域权限，可调用所有算子包括元公理生成和内核配置修改"
+  },
+  "subsystems": {
+    "autonomous_kernel": {
+      "name": "自治内核",
+      "skill": "zongyuan-autonomous-kernel",
+      "operators": [
+        {
+          "operator_id": "OP-KERNEL-READ",
+          "name": "内核读取",
+          "min_authority": "L0",
+          "description": "读取内核真值表、挂载公理、冲突检测",
+          "input_spec": "mode: full|quick",
+          "output_spec": "内核读取报告"
+        },
+        {
+          "operator_id": "OP-KERNEL-SELF-CHECK",
+          "name": "六维自检",
+          "min_authority": "L0",
+          "description": "元认知自我觉察，扫描六维状态识别偏差",
+          "input_spec": "mode: scheduled|on_demand",
+          "output_spec": "六维自检报告"
+        },
+        {
+          "operator_id": "OP-KERNEL-CORRECTION",
+          "name": "纠错触发",
+          "min_authority": "L3",
+          "description": "偏差超阈值时触发三级修正（黄/橙/红）",
+          "input_spec": "self_check_report",
+          "output_spec": "纠错报告"
+        },
+        {
+          "operator_id": "OP-KERNEL-EVOLUTION",
+          "name": "演化沉淀",
+          "min_authority": "L2",
+          "description": "新经验评估→验证→固化为新公理/规则",
+          "input_spec": "mode: collect|propose",
+          "output_spec": "演化提案"
+        },
+        {
+          "operator_id": "OP-KERNEL-ORCHESTRATE",
+          "name": "统一调度",
+          "min_authority": "L3",
+          "description": "统一调度所有子体系，消除碎片化",
+          "input_spec": "task_text, dry_run",
+          "output_spec": "编排报告"
+        },
+        {
+          "operator_id": "OP-NEURAL-ACTIVATE",
+          "name": "神经节点激活",
+          "min_authority": "L2",
+          "description": "激活神经节点（axiom/rule/template/profile），meta_axiom需L4",
+          "input_spec": "content, node_type, domain, caller_node_id",
+          "output_spec": "激活报告",
+          "special_rule": "node_type=meta_axiom时提升至L4"
+        },
+        {
+          "operator_id": "OP-BOUNDARY-ANALYZER",
+          "name": "维度边界分析",
+          "min_authority": "L2",
+          "description": "分析矛盾节点的适用边界，消解冲突",
+          "input_spec": "content_a, content_b, domain_a, domain_b",
+          "output_spec": "边界分析报告"
+        },
+        {
+          "operator_id": "OP-META-AXIOM",
+          "name": "元公理生成",
+          "min_authority": "L4",
+          "description": "从矛盾中提取共性模式，生成高阶元公理",
+          "input_spec": "content_a, content_b, contradiction_type",
+          "output_spec": "元公理提案"
+        },
+        {
+          "operator_id": "OP-HOMOGENEOUS-GUARD",
+          "name": "同源校验守卫",
+          "min_authority": "L0",
+          "description": "执行同源协议三重校验（身份/三要素/权限）",
+          "input_spec": "caller_node_id, operation, caller_kernel_version",
+          "output_spec": "校验结果"
+        }
+      ]
+    },
+    "kernel_lock": {
+      "name": "锁档归档",
+      "skill": "zongyuan-kernel-lock",
+      "operators": [
+        {
+          "operator_id": "OP-LOCK-INIT",
+          "name": "环境初始化",
+          "min_authority": "L3",
+          "description": "初始化三端锁档环境（知识库/台账/云盘）",
+          "input_spec": "无",
+          "output_spec": "环境状态"
+        },
+        {
+          "operator_id": "OP-LOCK-EXECUTE",
+          "name": "三端锁档",
+          "min_authority": "L3",
+          "description": "执行知识库+台账+云盘+内核快照四端锁档",
+          "input_spec": "title, doc_content, lock_id, lock_name, remark",
+          "output_spec": "锁档回执"
+        },
+        {
+          "operator_id": "OP-LOCK-INCREMENT",
+          "name": "增量迭代",
+          "min_authority": "L3",
+          "description": "更新已有锁档文档，追加台账记录",
+          "input_spec": "obj_token, updated_doc, new_lock_id",
+          "output_spec": "增量迭代回执"
+        },
+        {
+          "operator_id": "OP-LOCK-STATUS",
+          "name": "锁档状态查询",
+          "min_authority": "L0",
+          "description": "查询缓存状态和最近锁档记录",
+          "input_spec": "无",
+          "output_spec": "状态报告"
+        }
+      ]
+    },
+    "root_truth": {
+      "name": "溯源真值",
+      "skill": "zongyuan-root-truth-engine",
+      "operators": [
+        {
+          "operator_id": "OP-TRUTH-EXTRACT",
+          "name": "实体提取",
+          "min_authority": "L2",
+          "description": "从信号输入中提取实体、关系、属性",
+          "input_spec": "signal(text/image/link)",
+          "output_spec": "实体图谱"
+        },
+        {
+          "operator_id": "OP-TRUTH-VERIFY",
+          "name": "全域溯源验证",
+          "min_authority": "L2",
+          "description": "多源交叉验证实体真实性",
+          "input_spec": "entity_list",
+          "output_spec": "验证报告"
+        },
+        {
+          "operator_id": "OP-TRUTH-LOCK",
+          "name": "真值锁档",
+          "min_authority": "L3",
+          "description": "将验证通过的真值写入JSON真值表+SOP",
+          "input_spec": "verified_truths",
+          "output_spec": "锁档回执"
+        }
+      ]
+    },
+    "drama_pipeline": {
+      "name": "短剧生产",
+      "skill": "zongyuan-drama-pipeline",
+      "operators": [
+        {
+          "operator_id": "OP-DRAMA-STAGE0",
+          "name": "世界观锁档",
+          "min_authority": "L2",
+          "description": "短剧世界观设定锁档",
+          "input_spec": "worldview_doc",
+          "output_spec": "锁档回执"
+        },
+        {
+          "operator_id": "OP-DRAMA-STAGE1-4",
+          "name": "剧本→分镜→关键帧→视频",
+          "min_authority": "L2",
+          "description": "短剧生产核心流水线（stage1-stage4）",
+          "input_spec": "script, storyboard_params, keyframe_params, video_params",
+          "output_spec": "生产产物"
+        },
+        {
+          "operator_id": "OP-DRAMA-STAGE5",
+          "name": "后期合成",
+          "min_authority": "L2",
+          "description": "视频后期合成（混音/字幕/转场）",
+          "input_spec": "video_clips, audio_tracks, subtitle_style",
+          "output_spec": "合成视频"
+        },
+        {
+          "operator_id": "OP-DRAMA-STAGE6",
+          "name": "宣发物料",
+          "min_authority": "L2",
+          "description": "生成宣发物料（海报/预告/文案）",
+          "input_spec": "drama_assets, promo_params",
+          "output_spec": "宣发物料包"
+        },
+        {
+          "operator_id": "OP-DRAMA-STAGE7",
+          "name": "归档锁档",
+          "min_authority": "L3",
+          "description": "短剧全资产归档锁档",
+          "input_spec": "all_assets, archive_meta",
+          "output_spec": "归档回执"
+        },
+        {
+          "operator_id": "OP-DRAMA-BATCH",
+          "name": "批量生产编排",
+          "min_authority": "L2",
+          "description": "多集短剧批量生产任务编排",
+          "input_spec": "episode_list, batch_params",
+          "output_spec": "批量编排报告"
+        },
+        {
+          "operator_id": "OP-DRAMA-QC",
+          "name": "短剧质检引擎",
+          "min_authority": "L2",
+          "description": "短剧生产质量检测（画面/音频/字幕/一致性）",
+          "input_spec": "production_assets",
+          "output_spec": "质检报告"
+        }
+      ]
+    },
+    "character_factory": {
+      "name": "角色中台",
+      "skill": "character-lora-factory",
+      "operators": [
+        {
+          "operator_id": "OP-CHAR-CREATE",
+          "name": "角色创建",
+          "min_authority": "L2",
+          "description": "创建角色定义档案（L0层）",
+          "input_spec": "character_profile",
+          "output_spec": "角色档案"
+        },
+        {
+          "operator_id": "OP-CHAR-TRAIN",
+          "name": "LoRA模型训练",
+          "min_authority": "L3",
+          "description": "角色LoRA模型训练（L2层），消耗大量算力",
+          "input_spec": "dataset, training_params",
+          "output_spec": "训练好的LoRA模型"
+        },
+        {
+          "operator_id": "OP-CHAR-INFER",
+          "name": "批量推理",
+          "min_authority": "L2",
+          "description": "使用训练好的模型批量生成角色图像（L3层）",
+          "input_spec": "model_id, prompt_list, infer_params",
+          "output_spec": "生成图像集"
+        },
+        {
+          "operator_id": "OP-CHAR-QC",
+          "name": "角色质检熔合",
+          "min_authority": "L2",
+          "description": "角色质量检测+良品熔合归档（L4层），一票否决权",
+          "input_spec": "generated_images, quality_threshold",
+          "output_spec": "质检报告+熔合档案"
+        },
+        {
+          "operator_id": "OP-CHAR-ARCHIVE",
+          "name": "角色归档锁档",
+          "min_authority": "L3",
+          "description": "角色母版归档锁档（L5层）",
+          "input_spec": "character_master, archive_meta",
+          "output_spec": "归档回执"
+        }
+      ]
+    },
+    "huodou_adapter": {
+      "name": "火斗AI适配",
+      "skill": "zongyuan-huodou-adapter",
+      "operators": [
+        {
+          "operator_id": "OP-AI-CHAT",
+          "name": "AI对话调用",
+          "min_authority": "L1",
+          "description": "调用火斗AI API进行对话生成",
+          "input_spec": "model, messages, task_type",
+          "output_spec": "AI响应"
+        },
+        {
+          "operator_id": "OP-AI-BATCH-CALL",
+          "name": "批量AI调用",
+          "min_authority": "L2",
+          "description": "批量调用AI API",
+          "input_spec": "prompt_list, task_type",
+          "output_spec": "批量响应"
+        },
+        {
+          "operator_id": "OP-AI-LIST-MODELS",
+          "name": "模型列表查询",
+          "min_authority": "L0",
+          "description": "查询可用AI模型列表",
+          "input_spec": "无",
+          "output_spec": "模型列表"
+        },
+        {
+          "operator_id": "OP-3D-EVAL",
+          "name": "三维制衡评估",
+          "min_authority": "L2",
+          "description": "三维制衡算子U/R/C评估AI响应质量",
+          "input_spec": "response, task_type, prompt",
+          "output_spec": "评估报告"
+        },
+        {
+          "operator_id": "OP-MODEL-ROUTER",
+          "name": "模型路由",
+          "min_authority": "L1",
+          "description": "根据任务类型和六维分数选择最优AI模型",
+          "input_spec": "task_type, six_dim_scores",
+          "output_spec": "推荐模型+备选"
+        },
+        {
+          "operator_id": "OP-TRUTH-BRIDGE",
+          "name": "真值表桥接",
+          "min_authority": "L1",
+          "description": "将内核真值表注入AI系统提示，验证召回真值",
+          "input_spec": "truth_table, task_type",
+          "output_spec": "系统提示+验证报告"
+        }
+      ]
+    },
+    "meta_evolution": {
+      "name": "元进化引擎",
+      "description": "通用元进化引擎，从任意自维持系统出发执行七阶段进化循环",
+      "operators": [
+        {
+          "operator_id": "OP-META-EVO-ORCHESTRATE",
+          "name": "元进化编排",
+          "description": "执行元进化七阶段循环编排",
+          "min_authority": "L3",
+          "subsystem": "meta_evolution",
+          "special_rules": []
+        },
+        {
+          "operator_id": "OP-META-EVO-VERIFY",
+          "name": "元进化验证",
+          "description": "对进化结果进行多维度验证",
+          "min_authority": "L2",
+          "subsystem": "meta_evolution",
+          "special_rules": []
+        },
+        {
+          "operator_id": "OP-META-EVO-CONSENSUS",
+          "name": "进化共识达成",
+          "description": "多轮进化结果的共识达成与冲突消解",
+          "min_authority": "L3",
+          "subsystem": "meta_evolution",
+          "special_rules": []
+        }
+      ]
+    },
+    "business_bridge": {
+      "name": "业务联动桥接",
+      "skill": "zongyuan-autonomous-kernel",
+      "operators": [
+        {
+          "operator_id": "OP-BRIDGE-PRECHECK",
+          "name": "业务约束下发",
+          "min_authority": "L2",
+          "description": "算子启动前执行公理校验，阻断违规业务任务",
+          "input_spec": "task_type, params(JSON)",
+          "output_spec": "预检报告(verdict: PROCEED/BLOCKED)"
+        },
+        {
+          "operator_id": "OP-BRIDGE-SETTLE",
+          "name": "业务经验沉淀",
+          "min_authority": "L2",
+          "description": "任务结果写入神经节点，触发冲突即学习",
+          "input_spec": "task_id, result, params, note, manual_fix",
+          "output_spec": "沉淀回执(node_id, verdict)"
+        },
+        {
+          "operator_id": "OP-BRIDGE-STATUS",
+          "name": "联动闭环状态",
+          "min_authority": "L0",
+          "description": "查询双向联动闭环运行状态",
+          "input_spec": "无",
+          "output_spec": "闭环状态报告"
+        }
+      ]
+    },
+    "quota_control": {
+      "name": "额度计费",
+      "skill": "zongyuan-autonomous-kernel",
+      "operators": [
+        {
+          "operator_id": "OP-QUOTA-CHECK",
+          "name": "额度检查",
+          "min_authority": "L0",
+          "description": "算子调用前额度检查，余额不足自动拒绝",
+          "input_spec": "user_id, operator_type",
+          "output_spec": "allowed/cost/balance"
+        },
+        {
+          "operator_id": "OP-QUOTA-CONSUME",
+          "name": "额度扣减",
+          "min_authority": "L2",
+          "description": "计费执行，扣减用户额度并记流水",
+          "input_spec": "user_id, operator_type, task_ref",
+          "output_spec": "消费回执"
+        },
+        {
+          "operator_id": "OP-QUOTA-ACCOUNT",
+          "name": "额度账户管理",
+          "min_authority": "L3",
+          "description": "账户创建/充值/状态查询",
+          "input_spec": "user_id, action, amount",
+          "output_spec": "账户状态"
+        }
+      ]
+    },
+    "meta_closed_loop": {
+      "name": "元闭环自生成算子",
+      "skill": "v3_meta_loop",
+      "operators": [
+        {
+          "operator_id": "OP-GEN-20260913-234351-BD81E8",
+          "name": "op.anomaly_detect",
+          "min_authority": "L2",
+          "description": "需要一个 3σ 异常检测算子，识别数据序列中的离群点",
+          "input_spec": "需要一个 3σ 异常检测算子，识别数据序列中的离群点",
+          "output_spec": "Any",
+          "template_used": "anomaly_detect",
+          "registered_at": "2026-09-13T23:43:51+08:00"
+        },
+        {
+          "operator_id": "OP-GEN-20260913-234351-EB3FB2",
+          "name": "op.data_validate",
+          "min_authority": "L2",
+          "description": "需要一个数据校验算子，检查记录字典必填字段",
+          "input_spec": "需要一个数据校验算子，检查记录字典必填字段",
+          "output_spec": "Any",
+          "template_used": "data_validate",
+          "registered_at": "2026-09-13T23:43:51+08:00"
+        }
+      ]
+    }
+  }
+}

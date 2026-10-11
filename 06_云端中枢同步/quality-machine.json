@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-09-11T08:40:56.564Z",
+  "standalone": false,
+  "workspace": "/home/user/Doubao/chats/38436747020400130/zongyuan-tech-whitepaper-20260911",
+  "total": 1,
+  "directiveBookTotal": 1,
+  "issueCount": 0,
+  "warningCount": 0,
+  "issues": [],
+  "warnings": [],
+  "autoFix": null,
+  "results": [
+    {
+      "filePath": "/home/user/Doubao/chats/38436747020400130/zongyuan-tech-whitepaper-20260911/manuscript.md",
+      "metrics": {
+        "chars": 10998,
+        "dashDensity": 0,
+        "intPercentDensity": 0.27,
+        "longSentenceRatio": 22.04,
+        "duplicateSectionIds": [],
+        "absoluteClaims": [],
+        "vcrIssues": [
+          "line 33: numeric claim lacks source mark",
+          "line 93: numeric claim lacks source mark",
+          "line 220: numeric claim lacks source mark"
+        ],
+        "connectors": {},
+        "connectorDensity": 0,
+        "adverbs": {},
+        "adverbDensity": 0,
+        "imperative": {
+          "必须": 1
+        },
+        "imperativeTotal": 1,
+        "buzz": []
+      },
+      "issues": [],
+      "warnings": []
+    }
+  ]
+}

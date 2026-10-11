@@ -1,0 +1,20 @@
+{
+  "asset_id": "ASSET-PUB-20261006-019",
+  "name": "天地人鬼神五层约束栈真值包技术白皮书V1.2",
+  "source": "TRUTH-META-001五层约束栈真值包V1.2(仿真SIM-META-001)",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/five-layer-constraint-stack-truth-pack",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/five-layer-constraint-stack-truth-pack.git",
+  "published_at": "2026-10-06T21:40:29",
+  "files": [
+    "WHITEPAPER-FIVELAYER-V1.2.md",
+    "WHITEPAPER-FIVELAYER-V1.2.html",
+    "fivelayer_arch.json",
+    "README.md"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.FIVELAYER-WP.20261006 (truth_count=1155)",
+  "quota": "零豆包付费"
+}

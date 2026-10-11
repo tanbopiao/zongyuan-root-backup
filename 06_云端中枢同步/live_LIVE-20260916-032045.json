@@ -1,0 +1,287 @@
+{
+ "run_id": "LIVE-20260916-032045",
+ "sources": {
+  "digital_assets": {
+   "ok": true,
+   "truths_total": 12233,
+   "meta_rules": 78,
+   "system": {
+    "memory": {
+     "total_mb": 3654,
+     "available_mb": 779,
+     "used_mb": 2875,
+     "usage_percent": 78.7
+    },
+    "disk": {
+     "total_gb": 59.9,
+     "used_gb": 43.3,
+     "usage_percent": 72.2
+    }
+   },
+   "services": [
+    {
+     "name": "记忆网关",
+     "port": 9120,
+     "status": "online"
+    },
+    {
+     "name": "通信网关",
+     "port": 9122,
+     "status": "offline"
+    },
+    {
+     "name": "希尔伯特镜像态",
+     "port": 9125,
+     "status": "offline"
+    },
+    {
+     "name": "GEO晶格",
+     "port": 9151,
+     "status": "online"
+    },
+    {
+     "name": "量子纠缠层",
+     "port": 9160,
+     "status": "offline"
+    },
+    {
+     "name": "飞书网关",
+     "port": 8001,
+     "status": "online"
+    },
+    {
+     "name": "本地LLM",
+     "port": 8081,
+     "status": "online"
+    },
+    {
+     "name": "自愈引擎",
+     "port": 8161,
+     "status": "online"
+    },
+    {
+     "name": "向量数据库",
+     "port": 8014,
+     "status": "online"
+    },
+    {
+     "name": "RAG服务",
+     "port": 8085,
+     "status": "online"
+    }
+   ],
+   "generated_at": "2026-09-16T03:15:01.806630"
+  },
+  "gateway_status": {
+   "ok": true,
+   "truths": 12244,
+   "nodes": 13,
+   "audit_logs": 22593,
+   "version": "V3.0"
+  },
+  "nodes": {
+   "ok": true,
+   "count": 13,
+   "nodes": {
+    "cloud-main-kernel-001": {
+     "id": 1,
+     "node_id": "cloud-main-kernel-001",
+     "node_type": "unknown",
+     "capabilities": [],
+     "status": "active",
+     "registered_at": 1789043240.0920985,
+     "last_heartbeat": 1789124406.0576746,
+     "heartbeat_count": 3,
+     "online_status": "offline"
+    },
+    "cloud-worker-001": {
+     "id": 2,
+     "node_id": "cloud-worker-001",
+     "node_type": "unknown",
+     "capabilities": [],
+     "status": "active",
+     "registered_at": 1789044042.866722,
+     "last_heartbeat": 1789044042.9048526,
+     "heartbeat_count": 1,
+     "online_status": "offline"
+    },
+    "remote-lock-agent-20260911": {
+     "id": 3,
+     "node_id": "remote-lock-agent-20260911",
+     "node_type": "local_dev",
+     "capabilities": [],
+     "status": "active",
+     "registered_at": 1789102818.5177073,
+     "last_heartbeat": 1789102818.5177073,
+     "heartbeat_count": 0,
+     "online_status": "offline"
+    },
+    "nexus-client-001": {
+     "id": 4,
+     "node_id": "nexus-client-001",
+     "node_type": "local_sdk",
+     "capabilities": [
+      "truth_rw",
+      "lock_trigger"
+     ],
+     "status": "active",
+     "registered_at": 1789105306.4041557,
+     "last_heartbeat": 1789105306.4041557,
+     "heartbeat_count": 0,
+     "online_status": "offline"
+    },
+    "local-main-agent-20260912": {
+     "id": 5,
+     "node_id": "local-main-agent-20260912",
+     "node_type": "main_agent",
+     "capabilities": [
+      "truth_sync",
+      "sop_generation",
+      "asset_audit"
+     ],
+     "status": "active",
+     "registered_at": 1789144576.414508,
+     "last_heartbeat": 1789144578.6452265,
+     "heartbeat_count": 1,
+     "online_status": "offline"
+    },
+    "同源协议链接-对话侧自治节点-DID-BR-000002": {
+     "id": 6,
+     "node_id": "同源协议链接-对话侧自治节点-DID-BR-000002",
+     "node_type": "local_dev",
+     "capabilities": [],
+     "status": "active",
+     "registered_at": 1789150849.2433164,
+     "last_heartbeat": 1789150849.2433164,
+     "heartbeat_count": 0,
+     "online_status": "offline"
+    },
+    "ZONGYUAN-LOCAL-SESSION-20260912": {
+     "id": 7,
+     "node_id": "ZONGYUAN-LOCAL-SESSION-20260912",
+     "node_type": "local_dev",
+     "capabilities": [],
+     "status": "active",
+     "registered_at": 1789152715.5506022,
+     "last_heartbeat": 1789152715.5506022,
+     "heartbeat_count": 0,
+     "online_status": "offline"
+    },
+    "doubao-main-agent-001": {
+     "id": 8,
+     "node_id": "doubao-main-agent-001",
+     "node_type": "unknown",
+     "capabilities": [],
+     "status": "active",
+     "registered_at": 1789193291.2736163,
+     "last_heartbeat": 1789215333.8872168,
+     "heartbeat_count": 0,
+     "online_status": "offline"
+    },
+    "doubao-sandbox-sync-20260912": {
+     "id": 9,
+     "node_id": "doubao-sandbox-sync-20260912",
+     "node_type": "main_agent",
+     "capabilities": [
+      "truth_sync",
+      "truth_rw",
+      "asset_audit",
+      "sop_generation"
+     ],
+     "status": "active",
+     "registered_at": 1789215133.7880807,
+     "last_heartbeat": 1789215133.8029196,
+     "heartbeat_count": 1,
+     "online_status": "offline"
+    },
+    "local-dev-001": {
+     "id": 10,
+     "node_id": "local-dev-001",
+     "node_type": "unknown",
+     "capabilities": [],
+     "status": "active",
+     "registered_at": 1789367385.8567,
+     "last_heartbeat": 1789367385.8567,
+     "heartbeat_count": 0,
+     "online_status": "offline"
+    },
+    "hub-central-agent": {
+     "id": 11,
+     "node_id": "hub-central-agent",
+     "node_type": "central_brain",
+     "capabilities": [
+      "truth_management",
+      "service_orchestration",
+      "system_governance"
+     ],
+     "status": "active",
+     "registered_at": 1789489695.1015537,
+     "last_heartbeat": 1789500004.1784,
+     "heartbeat_count": 172,
+     "online_status": "online"
+    },
+    "bayesian-5elem-engine": {
+     "id": 12,
+     "node_id": "bayesian-5elem-engine",
+     "node_type": "bayesian_engine",
+     "capabilities": [
+      "bayesian_update",
+      "divergence",
+      "convergence",
+      "iteration",
+      "entropy_reduction",
+      "auto_trigger"
+     ],
+     "status": "active",
+     "registered_at": 1789493300.5329301,
+     "last_heartbeat": 1789493688.4067156,
+     "heartbeat_count": 0,
+     "online_status": "offline"
+    },
+    "truth-meta-order-engine": {
+     "id": 13,
+     "node_id": "truth-meta-order-engine",
+     "node_type": "meta_order_engine",
+     "capabilities": [
+      "truth_collection",
+      "structuring",
+      "classification",
+      "hash_anchor",
+      "merkle_dag",
+      "archive"
+     ],
+     "status": "active",
+     "registered_at": 1789494616.2396197,
+     "last_heartbeat": 1789498810.6554132,
+     "heartbeat_count": 0,
+     "online_status": "offline"
+    }
+   }
+  },
+  "backup_gateway": {
+   "ok": true,
+   "status": "active",
+   "total_nodes": 7,
+   "active_nodes": 7,
+   "pass_rate": 90.5,
+   "write_rate": 99.4,
+   "reports": 1330
+  }
+ },
+ "events": [
+  {
+   "rule": "R2",
+   "level": "warn",
+   "message": "内存占用偏高: 78.7%"
+  }
+ ],
+ "ledger": {
+  "ok": true,
+  "record_id": "recvvjNPlkCa7x"
+ },
+ "report": {
+  "ok": true,
+  "report_id": "RPT-1789500048-30a228a4"
+ },
+ "dashboard": "/home/user/Doubao/chats/38438412455799554/api-live/output/live-api-dashboard.html"
+}

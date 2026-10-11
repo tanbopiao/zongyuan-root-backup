@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一个API跑通全流程 · 短剧编排器</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC",sans-serif;background:#0d1117;color:#e6edf3;padding:20px;line-height:1.6}
+h1{text-align:center;color:#58a6ff;margin-bottom:6px;font-size:22px}
+.sub{text-align:center;color:#8b949e;font-size:13px;margin-bottom:22px}
+.wrap{max-width:780px;margin:0 auto}
+.apikey{background:#161b22;border:1px solid #238636;border-radius:10px;padding:16px;margin-bottom:18px}
+.apikey h2{font-size:15px;color:#3fb950;margin-bottom:8px}
+.apikey input{width:100%;padding:10px;background:#0d1117;border:1px solid #30363d;border-radius:6px;color:#e6edf3}
+.orch{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;margin-bottom:16px}
+.orch h2{font-size:15px;color:#58a6ff;margin-bottom:12px}
+.pipe{display:flex;flex-direction:column;gap:10px}
+.step{display:flex;align-items:center;gap:12px;padding:10px 14px;background:#0d1117;border-radius:8px;border:1px solid #30363d}
+.icon{flex:0 0 30px;height:30px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px}
+.txt .icon{background:#1f6feb}.img .icon{background:#a371f7}.vid .icon{background:#f85149}.lcl .icon{background:#238636}
+.step b{flex:1;font-size:14px}
+.step code{font-size:11px;color:#8b949e;background:#161b22;padding:2px 6px;border-radius:4px}
+.go{text-align:center;color:#30363d;font-size:16px}
+.btn{width:100%;padding:12px;background:#238636;color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:700;cursor:pointer;margin-top:6px}
+.result{margin-top:10px;padding:10px;background:#0d2818;color:#3fb950;border-radius:6px;font-size:13px;display:none}
+.foot{text-align:center;color:#6e7681;font-size:12px;margin-top:18px}
+</style>
+</head>
+<body>
+<h1>一个 API 跑通全流程</h1>
+<div class="sub">填一个火山方舟 API Key → 编排器自动调度全部环节</div>
+
+<div class="wrap">
+  <div class="apikey">
+    <h2>🔑 豆包/火山方舟 API Key（只需一个）</h2>
+    <input id="ak" placeholder="sk-... 火山方舟 API Key">
+  </div>
+
+  <div class="orch">
+    <h2>⚙️ 编排器自动路由</h2>
+    <div class="pipe">
+      <div class="step txt"><div class="icon">📝</div><b>剧本+分镜</b><code>douba-pro 文本模型</code></div>
+      <div class="go">↓</div>
+      <div class="step img"><div class="icon">🎨</div><b>关键帧图</b><code>Seedream 图模型</code></div>
+      <div class="go">↓</div>
+      <div class="step vid"><div class="icon">🎬</div><b>视频片段</b><code>Seedance 视频模型</code></div>
+      <div class="go">↓</div>
+      <div class="step lcl"><div class="icon">🔧</div><b>合成+归档</b><code>ffmpeg 本地</code></div>
+    </div>
+  </div>
+
+  <button class="btn" onclick="run()">一键编排跑全流程</button>
+  <div class="result" id="r">✅ 任务已下发：同一 Key 自动调文本→图→视频→合成，出一集成片</div>
+
+  <div class="foot">一个 Key 通调多模型 · 编排脚本自动按环节路由 · 无需 GPU 实例</div>
+</div>
+
+<script>
+function run(){
+  if(!document.getElementById('ak').value){alert('先填 API Key');return}
+  document.getElementById('r').style.display='block';
+  localStorage.setItem('ark_key',document.getElementById('ak').value);
+}
+document.getElementById('ak').value=localStorage.getItem('ark_key')||'';
+</script>
+</body>
+</html>

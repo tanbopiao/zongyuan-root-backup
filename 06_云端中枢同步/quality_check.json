@@ -1,0 +1,40 @@
+{
+  "status": "pass",
+  "stage": "quality",
+  "code": 0,
+  "workspace": "/home/user/Doubao/chats/38436747020400130/zongyuan-tech-whitepaper-20260911",
+  "layout": "short",
+  "layoutSource": "filesystem",
+  "minScore": 7.5,
+  "checkedFiles": [
+    "manuscript.md"
+  ],
+  "result": {
+    "score": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "avgScore": 9.6,
+      "files": [
+        {
+          "file": "manuscript.md",
+          "overall": 9.6,
+          "layers": {
+            "S": 8.3,
+            "P": 10,
+            "C": 10,
+            "B": 10
+          },
+          "passed": true
+        }
+      ]
+    },
+    "machine": {
+      "issueCount": 0,
+      "warningCount": 0,
+      "reportPath": "/home/user/Doubao/chats/38436747020400130/zongyuan-tech-whitepaper-20260911/.doubao-book-writer/reports/quality-machine.json"
+    }
+  },
+  "failures": [],
+  "warnings": []
+}

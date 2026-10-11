@@ -1,0 +1,23 @@
+{
+  "asset_id": "ASSET-PUB-20261006-008",
+  "name": "1080基准网格架构体系技术白皮书V2.0(专业巡检升级)",
+  "source_truth": "MR-042 易经二进制-太玄三进制-1080基准网格元法则(P0数学基底级)",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/grid-1080-base-architecture",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/grid-1080-base-architecture.git",
+  "published_at": "2026-10-07T11:20:00",
+  "version": "V2.0(当前版, 2026-10-07) + V1.0(归档, 2026-10-06)",
+  "files": [
+    "grid-1080-base-architecture-WHITEPAPER-V2.0.md (+新增)",
+    "grid-1080-base-architecture-WHITEPAPER-V2.0.html (+新增)",
+    "grid-1080-base-architecture-ARCH-V2.0.json (+新增)",
+    "README.md (更新)",
+    "WHITEPAPER-GRID1080-V1.0.md (归档)",
+    "grid1080_arch.json (归档)"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.grid-1080-base-architecture-UPGRADE.20261007 (http=200)",
+  "quota": "零豆包付费"
+}

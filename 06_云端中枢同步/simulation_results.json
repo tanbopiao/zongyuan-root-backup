@@ -1,0 +1,171 @@
+{
+  "passed": 23,
+  "total": 24,
+  "results": [
+    {
+      "name": "健康检查无需鉴权",
+      "expected": 200,
+      "actual": 200,
+      "pass": true,
+      "detail": "zongyuan-nexus"
+    },
+    {
+      "name": "v1健康检查",
+      "expected": 200,
+      "actual": 200,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "无令牌访问→401",
+      "expected": 401,
+      "actual": 401,
+      "pass": true,
+      "detail": "missing_token"
+    },
+    {
+      "name": "无效令牌→401",
+      "expected": 401,
+      "actual": 401,
+      "pass": true,
+      "detail": "unknown_token"
+    },
+    {
+      "name": "read令牌访问GET→200",
+      "expected": 200,
+      "actual": 200,
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "name": "read令牌访问POST→401",
+      "expected": 401,
+      "actual": 401,
+      "pass": true,
+      "detail": "permission_denied: need write"
+    },
+    {
+      "name": "write令牌访问POST→200",
+      "expected": 200,
+      "actual": 200,
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "name": "过期令牌→401",
+      "expected": 401,
+      "actual": 401,
+      "pass": true,
+      "detail": "token_expired"
+    },
+    {
+      "name": "吊销前令牌→200",
+      "expected": 200,
+      "actual": 200,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "admin吊销令牌→200",
+      "expected": 200,
+      "actual": 200,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "吊销后令牌→401",
+      "expected": 401,
+      "actual": 401,
+      "pass": true,
+      "detail": "token_revoked"
+    },
+    {
+      "name": "管理端点无令牌→403",
+      "expected": 403,
+      "actual": 403,
+      "pass": true,
+      "detail": "missing_token"
+    },
+    {
+      "name": "管理端点read令牌→403",
+      "expected": 403,
+      "actual": 403,
+      "pass": true,
+      "detail": "permission_denied: need admin"
+    },
+    {
+      "name": "管理端点admin令牌→200",
+      "expected": 200,
+      "actual": 200,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "admin签发令牌→201",
+      "expected": 201,
+      "actual": 201,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "业务端点无memory_sync权限→401",
+      "expected": 401,
+      "actual": 401,
+      "pass": true,
+      "detail": "permission_denied: need write"
+    },
+    {
+      "name": "memory_sync令牌→200",
+      "expected": 200,
+      "actual": 401,
+      "pass": false,
+      "detail": ""
+    },
+    {
+      "name": "令牌文件权限0600",
+      "expected": "600",
+      "actual": "600",
+      "pass": true,
+      "detail": "实际: 600"
+    },
+    {
+      "name": "日志不泄露令牌明文",
+      "expected": false,
+      "actual": false,
+      "pass": true,
+      "detail": "未泄露"
+    },
+    {
+      "name": "令牌使用计数>0",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "detail": "use_count=1"
+    },
+    {
+      "name": "令牌last_used已更新",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "detail": "last_used=1789108125"
+    },
+    {
+      "name": "admin令牌兼容业务访问→200",
+      "expected": 200,
+      "actual": 200,
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bug-01修复: 令牌过期检查",
+      "pass": true,
+      "detail": "expires_at检查已生效"
+    },
+    {
+      "name": "Bug-02修复: 日志不记录令牌明文",
+      "pass": true,
+      "detail": "日志仅记录token_hash前16位"
+    }
+  ],
+  "timestamp": "2026-09-11T14:28:47+08:00"
+}

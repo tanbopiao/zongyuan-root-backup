@@ -1,0 +1,36 @@
+{
+  "doc": "三层固化完整性校验报告",
+  "time": "2026-10-01 11:20",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "node": "NODE-DEV-DOUBAO-WORK-001",
+  "layers": {
+    "本地固化层": {
+      "status": "PASS",
+      "files": {
+        "BOOT-MEMORY-20261001.json": "5348B ✅",
+        "NODE-IDENTITY-REGISTER-20261001.json": "1325B ✅",
+        "MEMORY-FUSION-20261001.json": "3219B ✅"
+      }
+    },
+    "云端固化层": {
+      "status": "PASS",
+      "truths": {
+        "BOOT.MEMORY.FULL-FUSION.20261001": "id=188098 ✅",
+        "NODE.IDENTITY.CORRECTED.20261001": "id=188142 ✅",
+        "META.LEVELS.UNIFIED.20261001": "id=188164 ✅"
+      }
+    },
+    "魔搭异地图层": {
+      "status": "PASS",
+      "repo": "zongyuanroot/zongyuan-root-achievements",
+      "head": "7703cdaf8039623a72bcc0c99338db72f8b485dc ✅",
+      "mirror": "4631/4645 (99%)"
+    }
+  },
+  "git_dual_repo": {
+    "gitee": "PENDING(缺token)",
+    "github": "PENDING(缺token)"
+  },
+  "conclusion": "三层固化实质成立：本地+云端+魔搭异地全PASS；Gitee/GitHub双仓库为可选第三冗余待凭证"
+}

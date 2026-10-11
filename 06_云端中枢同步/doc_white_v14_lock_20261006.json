@@ -1,0 +1,11 @@
+{
+  "action": "DOC-WHITE-V1.4-LOCK",
+  "truth_id": "TRUTH-META-001",
+  "version": "V1.4",
+  "html_asset": "/home/user/ZONGYUAN-ROOT/03_文档资产/白皮书与报告/元极恒一五层约束栈白皮书-V1.4.html",
+  "axiom": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "sha256_display": "cedbd995b33750ff74e9dc4926cfa5aa11870510b3b402d00aae47f8a9404f37",
+  "locked_at": "2026-10-06T21:48:36+08:00",
+  "status": "LOCKED"
+}

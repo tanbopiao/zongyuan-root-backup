@@ -1,0 +1,77 @@
+{
+  "pending_uploads": [
+    {
+      "id": "PEND-20260915-001",
+      "created_at": "2026-09-15 20:08",
+      "truth_type": "operation_log",
+      "payload": {
+        "node_id": "local-dev-001",
+        "DID": "DID-BR-000002",
+        "ROOT_OMEGA": "Ω-TAN-7-001",
+        "truth_type": "operation_log",
+        "truth_content": "【同源协议写入记忆网关】节点local-dev-001经HOMOLOGY协议绑定记忆网关9120，完成全部规则学习：SOP v1.1七步全流程、172条云端元法则、真值库快照4586/4664条。门户聚合引擎实测存活(2188资产/1918关键帧/75视频)。"
+      },
+      "reason": "云端网关502（2026-09-15）",
+      "status": "UPLOADED"
+    },
+    {
+      "id": "PEND-20260915-002",
+      "created_at": "2026-09-15 20:08",
+      "truth_type": "achievement",
+      "payload": {
+        "node_id": "local-dev-001",
+        "DID": "DID-BR-000002",
+        "ROOT_OMEGA": "Ω-TAN-7-001",
+        "truth_type": "achievement",
+        "truth_content": "【记忆网关接入完成】同源协议绑定+全规则学习完成，形成LOCK-MEMGATE-HOMOLOGY-20260915锁档记录。"
+      },
+      "reason": "云端网关502（2026-09-15）",
+      "status": "UPLOADED"
+    },
+    {
+      "id": "PEND-20260915-003",
+      "created_at": "2026-09-15",
+      "truth_type": "operation_log",
+      "payload": {
+        "node_id": "local-dev-001",
+        "DID": "DID-BR-000002",
+        "ROOT_OMEGA": "Ω-TAN-7-001",
+        "truth_type": "operation_log",
+        "truth_content": "【元法则补全清单】METALAW-REG-001生成：34项云端独有元法则结构化补全清单，分类decision9/steady7/loop6/governance12，优先级P0=9/P1=13/P2=12。"
+      },
+      "reason": "云端网关502（2026-09-15）",
+      "status": "UPLOADED"
+    },
+    {
+      "id": "PEND-20260915-004",
+      "created_at": "2026-09-15",
+      "truth_type": "operation_log",
+      "payload": {
+        "node_id": "local-dev-001",
+        "DID": "DID-BR-000002",
+        "ROOT_OMEGA": "Ω-TAN-7-001",
+        "truth_type": "operation_log",
+        "truth_content": "【元法则注册执行】34项云端独有元法则全量REGISTERED进本地内核（决策9/稳态7/闭环6/治理12），内核元法则总量约59，锁档LOCK-METALAW-REG-EXEC-20260915。"
+      },
+      "reason": "云端网关502（2026-09-15）",
+      "status": "UPLOADED"
+    },
+    {
+      "id": "PEND-20260916-005",
+      "created_at": "2026-09-16",
+      "truth_type": "operation_log",
+      "payload": {
+        "node_id": "local-dev-001",
+        "DID": "DID-BR-000002",
+        "ROOT_OMEGA": "Ω-TAN-7-001",
+        "truth_type": "operation_log",
+        "truth_content": "SYNC-FULL-20260916全量同步包:全量信息(身份/4机制/通道状态)+全量记忆(8能力/12协议/34元法则/8偏好)+全量成果(7成功轨迹/13锁档)+全量资产(门户2188/本地41媒体/11数据文件)。握手结果:门户9120+8021=200,API全502=PARTIAL。"
+      },
+      "reason": "云端API 502（2026-09-16，门户层已切换8021但后端未启动）",
+      "status": "UPLOADED"
+    }
+  ],
+  "total_pending": 5,
+  "target": "POST https://drama.huodouai.com/api/gateway/report",
+  "auth": "X-Capture-Token（本地文件读取，不存明文）"
+}

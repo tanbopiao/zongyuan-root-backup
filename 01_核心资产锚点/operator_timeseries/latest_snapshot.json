@@ -1,0 +1,10 @@
+{
+  "date": "20261011",
+  "generated_at": "2026-10-11T16:36:32.020412",
+  "truth_count": 5945,
+  "merkle_root": "385c3740a8d54ed8ed51...",
+  "local_files": 639,
+  "drift": "baseline",
+  "anomaly_count": 0,
+  "status": "healthy"
+}

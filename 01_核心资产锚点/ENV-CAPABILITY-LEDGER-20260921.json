@@ -1,0 +1,16 @@
+{
+  "ledger_id": "ENV-CAPABILITY-20260921",
+  "did": "DID-BR-000002",
+  "omega": "Ω₀⊂⊙∞⊂Ω",
+  "host_env": {"cpu": "2核", "mem": "4GB(可用3.5GB)", "disk": "604GB", "gpu": "无", "os": "Linux"},
+  "capabilities": [
+    {"name": "RAG向量检索", "tech": "chromadb+all-MiniLM-L6-v2", "path": "local_rag/", "mem_mb": 500, "status": "ALIVE"},
+    {"name": "视频合成", "tech": "ffmpeg 4.4.2", "path": "media_assets/output/", "status": "VERIFIED"},
+    {"name": "素材库", "path": "media_assets/{raw,output,templates}", "disk_usage": "604GB", "status": "READY"},
+    {"name": "任务调度", "tech": "batch_orchestrator", "status": "READY"},
+    {"name": "网络能力", "tech": "飞书/中枢/API", "status": "ALIVE"},
+    {"name": "深度持久化", "tech": "飞书云盘+Merkle+中枢", "manifest": "PERSIST-MANIFEST.json", "status": "ALIVE"}
+  ],
+  "persistence_layers": ["本地工作区", "飞书云盘", "中枢真值库", "Merkle校验", "每6h守护"],
+  "drama_pipeline": "剧本→分镜→关键帧(API)→视频(API)→合成(ffmpeg)→归档"
+}

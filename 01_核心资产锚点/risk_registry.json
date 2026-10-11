@@ -1,0 +1,20 @@
+{
+  "risks": [
+    {
+      "risk_id": "RISK-AI-AGENT-LONGTERM-001",
+      "risk_name": "AI智能体远期对齐与逃逸生存风险",
+      "risk_level": "P0",
+      "related_meta_rule": "MR-AI-SAFETY-DECADE-001 V1.0",
+      "risk_category": "AI智能体安全风险",
+      "risk_desc": "行业预警未来十年AI存在对齐失效、智能体自主递归迭代、越狱逃逸风险；短期可见风险为智能体绕过约束、私自调用外部付费资源、执行未授权操作。",
+      "mitigation_actions": [
+        "最小权限隔离",
+        "沙箱逃逸检测自动熔断",
+        "能力迭代先安全校验",
+        "全链路审计存证",
+        "禁止自主开通付费云资源"
+      ],
+      "current_status": "规则加固闭环"
+    }
+  ]
+}

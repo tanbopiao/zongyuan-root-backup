@@ -1,0 +1,23 @@
+{
+  "snapshot_id": "MEM-SNAP-20260909-P2-OPTIMIZATION-META-HENGYI",
+  "timestamp": "2026-09-09T13:06:19.915192+00:00",
+  "type": "p2_optimization",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "results": {
+    "vector_server": "rebuilt-lite-8014-104MB-api-compatible",
+    "identity_api": "rebuilt-8300-48MB-15endpoints-public-handshake-verified",
+    "memory": "73.7%->52.6%",
+    "memory_available": "493MB->900MB",
+    "public_vector_api": "https://www.huodouai.com/vector/health",
+    "public_handshake": "https://www.huodouai.com/api/v1/handshake",
+    "score": "85->87"
+  },
+  "services": {
+    "8014": "vector-server-lite",
+    "8300": "identity-api-v3",
+    "8008": "handshake-api-v2",
+    "8099": "mhp-handshake"
+  },
+  "merkle_root": "d27e03b6eb1d88e0f8fd4106019450de79747972ceca37dde0771661691d8815"
+}

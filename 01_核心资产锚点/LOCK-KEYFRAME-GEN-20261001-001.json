@@ -1,0 +1,41 @@
+{
+  "lock_id": "LOCK-KEYFRAME-GEN-20261001-001",
+  "locked_at": "2026-10-01T10:25:09",
+  "did": "DID-BR-000002",
+  "node": "ZR-NODE-DC2E51C0",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "task": "短剧流水线接入魔搭Qwen-Image关键帧生成",
+  "assets": [
+    {
+      "path": "/home/user/ZONGYUAN-ROOT/07_代码与脚本/keyframe_generator.py",
+      "type": "script",
+      "desc": "关键帧生成器V1.0(分镜→文生图→落档→上报)"
+    },
+    {
+      "path": "/home/user/ZONGYUAN-ROOT/02_数字媒体资产/图片/KEYFRAME-TASKS-S2E01-20261001-1024.json",
+      "type": "ledger",
+      "desc": "S2E01关键帧任务清单(4/5镜提交成功)"
+    }
+  ],
+  "api_status": {
+    "modelscope_t2i": "SUCCEED(4/5镜提交, 镜5失败跳过)",
+    "result_poll": "✅ 已打通: /v1/tasks/{tid} + X-ModelScope-Task-Type: image_generation (全自动取图闭环)",
+    "cloud_report": "KEYFRAME.S2E01.20261001-1024 已上报"
+  },
+  "quota": "魔搭免费额度2000次/天, 本批次消耗4次, 零付费",
+  "retrieve_note": "图片取回: 魔搭控制台按task_id检索; RESULT_POLL_ENDPOINTS端点打通后自动升级为流水线自动取图",
+  "status": "COMPLETED",
+  "completed_at": "2026-10-01T10:29:52",
+  "result": {
+    "keyframes_downloaded": 5,
+    "dir": "/home/user/ZONGYUAN-ROOT/02_数字媒体资产/图片/S2E01",
+    "manifest": "KEYFRAMES-S2E01-MANIFEST.json (TIANYUAN-COMPLIANT-V1.2)",
+    "total_bytes": 4250532,
+    "api_closed_loop": "GET /v1/tasks/{task_id} + X-ModelScope-Task-Type: image_generation",
+    "cloud_report": "KEYFRAME.S2E01.COMPLETE.20261001 (www inserted + drama 幂等确认)",
+    "quota_used": "免费10次, 零付费"
+  },
+  "version": "V1.2-TIANYUAN-COMPLIANT",
+  "law_applied": "KUNLUN-TIANYUAN-LAW-V1.2(强制前置约束+自检12项+结构铁律)",
+  "quota_note": "全链路魔搭免费额度(Qwen-Image文生图+DeepSeek-V4-Pro分镜), 零豆包付费额度消耗"
+}

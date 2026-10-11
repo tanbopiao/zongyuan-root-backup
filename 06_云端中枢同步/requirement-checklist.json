@@ -1,0 +1,87 @@
+{
+  "topic": "ZONGYUAN-ROOT 云内核技术白皮书（DID-BR-000002）——全体系汇总",
+  "contentProfile": {
+    "id": "whitepaper",
+    "genreGuide": "whitepaper",
+    "audience": "体系内开发窗口、运维节点与协作方（技术读者）",
+    "purpose": "系统化汇总云内核理论基座、总体架构、服务与API体系、真值记忆体系、真值同步对账通道、数据链路防护与运维治理，形成可审计、可交接、可演进的技术白皮书"
+  },
+  "structureRules": {
+    "headingPolicy": "chinese-publication",
+    "maxContentFilesPerBatch": 1
+  },
+  "sourcePolicy": {
+    "mode": "offline-disclosed",
+    "minimumDirections": 3,
+    "requireGapReview": false
+  },
+  "delivery": {
+    "mode": "lark-docx",
+    "requireReadBack": true
+  },
+  "requirements": [
+    {
+      "id": "R1",
+      "requirement": "汇总云内核理论基座与总体架构（元公理空间、DID-BR-000002、确权锚点、四层/分层架构）",
+      "priority": "main",
+      "in_scope": "yes",
+      "carrier": "第1-2章",
+      "resolution": ""
+    },
+    {
+      "id": "R2",
+      "requirement": "完整盘点基础设施、运行服务、API体系与同源协议（33端点、kg-api/identity-api/vector-server/记忆网关/nginx）",
+      "priority": "main",
+      "in_scope": "yes",
+      "carrier": "第3-5章+附录A",
+      "resolution": ""
+    },
+    {
+      "id": "R3",
+      "requirement": "详述真值与记忆体系（记忆网关V3.0、519真值、SQLite、对账机制）",
+      "priority": "main",
+      "in_scope": "yes",
+      "carrier": "第6章",
+      "resolution": ""
+    },
+    {
+      "id": "R4",
+      "requirement": "详述真值同步对账通道（公网API、鉴权、对账链路、验证回执、部署位置）",
+      "priority": "main",
+      "in_scope": "yes",
+      "carrier": "第7章",
+      "resolution": ""
+    },
+    {
+      "id": "R5",
+      "requirement": "覆盖数据链路与资产防护（frp备用链路、COS弃用防护、飞书三端锁档、本地归档索引）",
+      "priority": "main",
+      "in_scope": "yes",
+      "carrier": "第8章",
+      "resolution": ""
+    },
+    {
+      "id": "R6",
+      "requirement": "覆盖安全治理、运维连续性（鉴权、ASSET_GUARD、审计、记忆恢复引擎、锁档流程）",
+      "priority": "main",
+      "in_scope": "yes",
+      "carrier": "第9-10章",
+      "resolution": ""
+    },
+    {
+      "id": "R7",
+      "requirement": "给出演进路线图与关键标识索引（锁档链、服务索引，敏感项脱敏）",
+      "priority": "main",
+      "in_scope": "yes",
+      "carrier": "第11章+附录B/C",
+      "resolution": ""
+    }
+  ],
+  "wordCountRules": [
+    {
+      "id": "total-length",
+      "target": 10000,
+      "tolerancePercent": 10
+    }
+  ]
+}

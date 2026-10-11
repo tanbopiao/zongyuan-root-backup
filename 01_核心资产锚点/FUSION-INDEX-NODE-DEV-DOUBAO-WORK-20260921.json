@@ -1,0 +1,7204 @@
+{
+  "node": "NODE-DEV-DOUBAO-WORK-001",
+  "did": "DID-BR-000002",
+  "timestamp": "2026-09-21",
+  "total_files": 1437,
+  "total_size_bytes": 507553727,
+  "meta_class_distribution": {
+    "M9_历史归档": 114,
+    "M5_文档白皮书": 434,
+    "M6_媒体资产": 219,
+    "M1_规则公理": 41,
+    "M7_配置凭证": 73,
+    "M3_数据资产": 228,
+    "M4_代码脚本": 212,
+    "M2_决策仲裁": 116
+  },
+  "assets": [
+    {
+      "path": "BOOTSTRAP.md",
+      "size": 1441,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "COLD-START-ANCHOR.sh",
+      "size": 1469,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "资产盘点报告_20260921.md",
+      "size": 2494,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "01_核心资产锚点/.tmp_meta_axioms.json",
+      "size": 2208,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38436747020400130_BASELINE-ANCHOR-20260913.md",
+      "size": 2642,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38436747020400130_asset_manifest_20260915.json",
+      "size": 4906,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38436747020400130_credential_lock_manifest.md",
+      "size": 4399,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38436747020400130_global_lock_snapshot.json",
+      "size": 6639,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38436747020400130_lock_doc.md",
+      "size": 3198,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38437615670548738_ACCESS-ANCHOR-20260921.json",
+      "size": 973,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38437615670548738_ANCHOR-STATUS-20260920.md",
+      "size": 1457,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38437615670548738_LOCK-FULL-DOMAIN-20260916-001.md",
+      "size": 3353,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38437615670548738_asset_manifest_20260915.json",
+      "size": 4999,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38437615670548738_capability_registry.json",
+      "size": 8501,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38437615670548738_kernel_snapshot_LOCK-FULL-DOMAIN-20260916-001.json",
+      "size": 1814,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38437615670548738_lock_doc_base_cloud.md",
+      "size": 5458,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38437615670548738_lock_doc_handshake_sync.md",
+      "size": 2508,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38437615670548738_lock_doc_proto_v2.md",
+      "size": 2093,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38437615670548738_lock_doc_proto_v3.md",
+      "size": 1857,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38437615670548738_metalaw_completion_list.json",
+      "size": 13700,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38437615670548738_metalaw_full_list.json",
+      "size": 5803,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38437615670548738_metalaw_register_registry.json",
+      "size": 25360,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38438412455799554_BASELINE-ANCHOR-20260913.md",
+      "size": 2642,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38438412455799554_MANIFEST.json",
+      "size": 1172,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38438412455799554_kernel_snapshot_LOCK-HOMOLOGY-KERNEL-20260912-001.json",
+      "size": 1050,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38438412455799554_lock_doc.md",
+      "size": 1645,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38438412455799554_node_registry.json",
+      "size": 588,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38438491307070978_BASELINE-ANCHOR-20260913.md",
+      "size": 2624,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38438602859247618_BASELINE-ANCHOR-20260913.md",
+      "size": 2642,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/38438602859247618_operator_registry_v3.json",
+      "size": 16511,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/ACCESS-ANCHOR-20260921.json",
+      "size": 973,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/ANCHOR-20260914-CLOUD-HANDSHAKE.md",
+      "size": 2664,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/ANCHOR-STATUS-20260920.md",
+      "size": 1457,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/API-CAPABILITY-MAP-V1.json",
+      "size": 3811,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/ASSET-ARCHIVE-MANIFEST-20260921.json",
+      "size": 276272,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/ASSET-ARCHIVE-REPORT-20260921.md",
+      "size": 5129,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/ASSET-MANIFEST-20260921.json",
+      "size": 4511,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/AUTO-LOCK-REPORT-KERNEL-PROTOCOL-20260916.md",
+      "size": 1523,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/BACKUP-MANIFEST-20260915-1.json",
+      "size": 541,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/BASELINE-ANCHOR-20260913.md",
+      "size": 2642,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/BASELINE-ANCHOR-20260914-HANDSHAKE.md",
+      "size": 2204,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/BASELINE-ANCHOR-20260915-PORTUPDATED.md",
+      "size": 3020,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/BASELINE-ANCHOR-BUILD-20260914.md",
+      "size": 2074,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/BASELINE-V42-ANCHOR.json",
+      "size": 1194,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/BASELINE-V42.md",
+      "size": 2026,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/BASELINE-V43-ANCHOR.json",
+      "size": 911,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/BASELINE-V43.md",
+      "size": 1694,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/CHAIN-GOVERNANCE-SOP-CARD.md",
+      "size": 3848,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/CHAIN-MAPPING-SAMPLE-001.md",
+      "size": 3995,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/CHAIN-MAPPING-SAMPLE-002.md",
+      "size": 4136,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/CHAIN-MAPPING-SAMPLE-003.md",
+      "size": 4526,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/CHANNEL-V22-SWITCH-20260921.md",
+      "size": 1529,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/CLOUD-SOP-v1.1.md",
+      "size": 8547,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/COLD-START-ANCHOR.sh",
+      "size": 1371,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/COS_LOCK_SNAPSHOT.json",
+      "size": 2346,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/CREDENTIALS-REGISTRY-20260921.md",
+      "size": 2190,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/ENV-CAPABILITY-LEDGER-20260921.json",
+      "size": 1074,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-AGENT-MATRIX-SYSTEM-V1-20260916-012.md",
+      "size": 8188,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-AUTO-INTROSPECTION-ENGINE-V1-20260916-010.md",
+      "size": 5737,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-AUTONOMY-LOOP-SCHEDULED-20260914.md",
+      "size": 1542,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-CLUSTER-CONCURRENT-TASK-V1-20260916-014.md",
+      "size": 8066,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-CRON-RECEIPT-20260914.md",
+      "size": 1511,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-EVOL-DIRECTIONS-20260914.md",
+      "size": 1674,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-FULL-DOMAIN-20260916-001.md",
+      "size": 3353,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-FUNCTION-STANDARDIZATION-V1-20260916-011.md",
+      "size": 7395,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-GLOBAL-ENGINE-ORCHESTRATOR-V1-20260916-015.md",
+      "size": 2814,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-HANDSHAKE-V32-20260914-001.md",
+      "size": 5004,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-IDEOLOGY-TRACE-ENGINE-V1-20260916-009.md",
+      "size": 6659,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-MECHANISMS-20260916.md",
+      "size": 2492,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-META-AXIOM-COMPLETION-20260913.md",
+      "size": 1972,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-METAAXIOM-ONE-BODY-TWO-FACES-20260915-001.md",
+      "size": 2456,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-METAEVOLUTION-DEEP-ENGINEERING-20260915-002.md",
+      "size": 4996,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-METAEVOLUTION-PROTOCOL-V7-20260915-001.md",
+      "size": 4802,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-METAEVOLUTION-ROUND2-DEEP-20260915-003.md",
+      "size": 6006,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-METAEVOLUTION-ROUND3-DEEP-20260915-004.md",
+      "size": 9759,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-METAEVOLUTION-ROUND4-DEEP-20260915-005.md",
+      "size": 8321,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-METAEVOLUTION-ROUND5-DEEP-EXCELLENT-PLUS-20260915-007.md",
+      "size": 4236,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-METAEVOLUTION-ROUND5-ITEM1-EXCELLENT-20260915-006.md",
+      "size": 3613,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-ROUND-20260918-FULL.md",
+      "size": 2088,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-TRUTH-RECONCILIATION-20260914.md",
+      "size": 1479,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-V3-P0A-GOV-PLATFORM-20260913-001.md",
+      "size": 3911,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-V3-P0B-META-LOOP-20260913-001.md",
+      "size": 5578,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-V3-P1A-GLOBAL-WORKSPACE-20260913-001.md",
+      "size": 4674,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-V3-P1B-AGENT-COUPLING-20260913-001.md",
+      "size": 4846,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-V3-P2A-API-OPEN-20260913-001.md",
+      "size": 4560,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-V3-P2B-SCENARIO-BLUEPRINT-20260913-001.md",
+      "size": 3950,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-V31-LLM-OPERATOR-20260914-001.md",
+      "size": 9751,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-V31-META-LOOP-LLM-20260914-002.md",
+      "size": 12164,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/LOCK-WEBSITE-LINK-GOVERNANCE-V1-20260916-013.md",
+      "size": 6153,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/MANIFEST.json",
+      "size": 1693,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/MR020-BOOTSTRAP-REPORT.md",
+      "size": 1469,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/PERSIST-MANIFEST.json",
+      "size": 197,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/REPORT-BATCH-LOCK.md",
+      "size": 2430,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/SEAL-MANIFEST.json",
+      "size": 719,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/SUB-NODE-TOKEN-SOP-20260921.md",
+      "size": 2548,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/TOKEN-ISSUE-REQUEST-20260921.md",
+      "size": 986,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/YUAN-source-guard-registry.json",
+      "size": 1768,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/ZONGYUAN-ROOT-FULL-20260915-MANIFEST.json",
+      "size": 741,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/asset-manifest-v41.json",
+      "size": 317,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/asset_manifest_20260915.json",
+      "size": 4999,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/axiom_proposals.json",
+      "size": 1365,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/base_capability_inventory.json",
+      "size": 4447,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/base_capability_report_latest.json",
+      "size": 602,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/capability_mining_20260916.json",
+      "size": 1488,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/capability_registry.json",
+      "size": 8501,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/channel_status_20260921.json",
+      "size": 1193,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/cos_guard_snapshot.json",
+      "size": 678,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/cos_index_snapshot.json",
+      "size": 650,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/cos_manifest_full.json",
+      "size": 147961,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/credential_ledger.json",
+      "size": 857,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/credential_lock_manifest.md",
+      "size": 4399,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/error_lessons.json",
+      "size": 6488,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/ext_gateway_complete.md",
+      "size": 4060,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/ext_gateway_report.md",
+      "size": 3342,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/frp_bridge_snapshot.json",
+      "size": 577,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/frp_tunnel_snapshot.json",
+      "size": 1294,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/full_memory_loaded_20260921_092721.json",
+      "size": 4406,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/gallery_manifest.json",
+      "size": 71,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/global_lock_manifest.md",
+      "size": 4766,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/global_lock_snapshot.json",
+      "size": 6639,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/homology_protocol_library.json",
+      "size": 6355,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/image_metadata_manifest_20260917.json",
+      "size": 29028,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot.json",
+      "size": 3713,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_GLOBAL-DR-20260916-001.json",
+      "size": 6148,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-BASELINE-ANCHOR-20260913-001.json",
+      "size": 1059,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-BASELINE-V42-20260918-001.json",
+      "size": 1021,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-BASELINE-V43-20260918-001.json",
+      "size": 1021,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-EVOLUTION-DEPLOY-20260913-001.json",
+      "size": 1037,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-FRP-CONNECT-20260912-001.json",
+      "size": 1044,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-FULL-DOMAIN-20260916-001.json",
+      "size": 1814,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-GLOBAL-DR-FULL-20260916-001.json",
+      "size": 1059,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-GLOBAL-KERNEL-20260912-002.json",
+      "size": 1049,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-GLOBAL-UNIFY-20260921.json",
+      "size": 1069,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-GLOBAL-VALUE-20260912-001.json",
+      "size": 1061,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-GPU-BRAIN-20260918-001.json",
+      "size": 1035,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-HOMOLOGY-KERNEL-20260912-001.json",
+      "size": 1050,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-KERNEL-V3-20260914-001.json",
+      "size": 1046,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-MEMORY-UPDATE-20260911-001.json",
+      "size": 1031,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-MR020-AUTONOMY-61.9-20260915-001.json",
+      "size": 1040,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-MR020-AUTONOMY-80.5-20260915-001.json",
+      "size": 1052,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-MR020-CHAO-20260915-001.json",
+      "size": 1050,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-MR020-M0-20260915-001.json",
+      "size": 1031,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-MR020-M1-20260915-001.json",
+      "size": 1029,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-MR020-M2-20260915-001.json",
+      "size": 1038,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-MR020-M3-20260915-001.json",
+      "size": 1042,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-MR020-YUAN-GUARD-20260915-001.json",
+      "size": 1050,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-NODE-LV-EVAL-20260918-001.json",
+      "size": 1033,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-NODE-LV10-CERT-20260918-001.json",
+      "size": 1032,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-NODE-UNIFY-20260915-001.json",
+      "size": 1021,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-NODE-UNIFY-VIS-20260915-001.json",
+      "size": 1026,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-P0-MEMORY-20260914-001.json",
+      "size": 1026,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-REPORT-BATCH-20260915-001.json",
+      "size": 1040,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-REPORT-VERIFY-20260915-001.json",
+      "size": 1060,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-SEMANTIC-V3-20260911-001.json",
+      "size": 1040,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-SERVER-CONNECT-20260912-001.json",
+      "size": 1042,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-SOP-MULTI-ACCOUNT-ARCHIVE-20260921.json",
+      "size": 1059,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-TRAIN-APPROVED-20260918-001.json",
+      "size": 1038,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-WP-ZR-20260911.json",
+      "size": 914,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_LOCK-ZY-LEVEL-BASELINE-20260921-001.json",
+      "size": 1043,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_snapshot_PIPELINE-AUTO-001.json",
+      "size": 3713,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/kernel_truth_index_20260921.json",
+      "size": 492597,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/l4_causal_snapshot.json",
+      "size": 853,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/last_snapshot.json",
+      "size": 6462,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/ledger.json",
+      "size": 618,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/ledger_recent.manifest.json",
+      "size": 3246,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/ledger_records.manifest.json",
+      "size": 3250,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/lock_chain_test.md",
+      "size": 525,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/lock_doc.md",
+      "size": 5458,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/lock_doc_base_cloud.md",
+      "size": 5458,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/lock_doc_global_dr.md",
+      "size": 4347,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/lock_doc_handshake_sync.md",
+      "size": 2508,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/lock_doc_proto_v2.md",
+      "size": 2093,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/lock_doc_proto_v3.md",
+      "size": 1857,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/lock_doc_sync_full_002.md",
+      "size": 2834,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/media_manifest_20260916.json",
+      "size": 6251,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/media_manifest_20260917.json",
+      "size": 7663,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/memory_snapshot_full_audit.json",
+      "size": 4665,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/meta_rules_registry.json",
+      "size": 5858,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/metalaw_completion_list.json",
+      "size": 13700,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/metalaw_drift_report.md",
+      "size": 5205,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/metalaw_full_list.json",
+      "size": 5803,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/metalaw_register_registry.json",
+      "size": 25360,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/mr020-bootstrap-snapshot.json",
+      "size": 1250,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/mr020-six-dim-registry.json",
+      "size": 3836,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/neural_registry_246nodes.json",
+      "size": 311946,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/node_registry.json",
+      "size": 810,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/official_home_snapshot.json",
+      "size": 1044,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/operator_registry_v3.json",
+      "size": 16850,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/operator_registry_v31.json",
+      "size": 16861,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/p0_optimization_snapshot.json",
+      "size": 1208,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/p1_optimization_snapshot.json",
+      "size": 763,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/p2_optimization_snapshot.json",
+      "size": 830,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/p2b_optimization_snapshot.json",
+      "size": 861,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/pending_upload_20260915.json",
+      "size": 3251,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/pending_upload_20260916.json",
+      "size": 3795,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/pending_upload_20260920.json",
+      "size": 672,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/pending_upload_queue.json",
+      "size": 1111,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/pending_upload_reconcile_20260920.json",
+      "size": 108,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/pending_verify_20260921.json",
+      "size": 1133,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/risk_registry.json",
+      "size": 776,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/snapshot_template.json",
+      "size": 884,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/success_trail.json",
+      "size": 2206,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/sync_package_20260916.json",
+      "size": 9309,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/truth_analysis_report.md",
+      "size": 5945,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/truths_internal.json",
+      "size": 174085,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/truths_internal_latest.json",
+      "size": 75,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/truths_public.json",
+      "size": 171438,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/truths_public_latest.json",
+      "size": 3164559,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/truths_public_prev.json",
+      "size": 3164472,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/truths_public_prev_20260918_0512.json",
+      "size": 1048573,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/video_metadata_manifest_20260917.json",
+      "size": 1578,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/基准锚点-BASELINE-ANCHOR-20260913.md",
+      "size": 2793,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38436546492378882__BOOTSTRAP.md",
+      "size": 1421,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38436546492378882__COLD-START-ANCHOR.sh",
+      "size": 1371,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38436581768860674__BOOTSTRAP.md",
+      "size": 1421,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38436581768860674__COLD-START-ANCHOR.sh",
+      "size": 1371,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38436747020400130__BOOTSTRAP.md",
+      "size": 1421,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38436747020400130__COLD-START-ANCHOR.sh",
+      "size": 1371,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38436758333092098__BOOTSTRAP.md",
+      "size": 1421,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38436758333092098__COLD-START-ANCHOR.sh",
+      "size": 1371,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38437615670548738__BOOTSTRAP.md",
+      "size": 1421,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38437615670548738__COLD-START-ANCHOR.sh",
+      "size": 1371,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38438412455799554__BOOTSTRAP.md",
+      "size": 1421,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38438412455799554__COLD-START-ANCHOR.sh",
+      "size": 1371,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38438491307070978__BOOTSTRAP.md",
+      "size": 1421,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38438491307070978__COLD-START-ANCHOR.sh",
+      "size": 1371,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38438602859247618__BOOTSTRAP.md",
+      "size": 1421,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38438602859247618__COLD-START-ANCHOR.sh",
+      "size": 1371,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38441261125237250__BOOTSTRAP.md",
+      "size": 1421,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38441261125237250__COLD-START-ANCHOR.sh",
+      "size": 1371,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38442724779261186__BOOTSTRAP.md",
+      "size": 1421,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "01_核心资产锚点/会话引导文件/38442724779261186__COLD-START-ANCHOR.sh",
+      "size": 1371,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "02_数字媒体资产/MANIFEST-20260921.md",
+      "size": 810,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/01_金色符文星尘.png",
+      "size": 1376041,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/01_金色符文星尘_竖屏.png",
+      "size": 1732724,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/02_黑色裂隙.png",
+      "size": 1735995,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/02_黑色裂隙_竖屏.png",
+      "size": 1283416,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/03_神女觉醒.png",
+      "size": 1758718,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/03_神女觉醒_竖屏.png",
+      "size": 1878771,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/03_神女觉醒_竖屏.webp",
+      "size": 169684,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/04_九尾现身.png",
+      "size": 2166157,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/04_九尾现身_竖屏.png",
+      "size": 2335973,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/05_苍玄降临.png",
+      "size": 1877346,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/05_苍玄降临_竖屏.png",
+      "size": 1874791,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/38436546492378882_EP04_KF1.jpg",
+      "size": 1556439,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/38436546492378882_EP04_KF2.jpg",
+      "size": 1694314,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/38436546492378882_EP04_KF3.jpg",
+      "size": 1925226,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/38436546492378882_EP05_KF1.jpg",
+      "size": 1921007,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/38436546492378882_EP05_KF2.jpg",
+      "size": 1664244,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/38436546492378882_EP05_KF3.jpg",
+      "size": 1884775,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/38436546492378882_EP06_KF1.jpg",
+      "size": 1790867,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/38436546492378882_EP06_KF2.jpg",
+      "size": 2055425,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/38436546492378882_EP06_KF3.jpg",
+      "size": 1777611,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/38436546492378882_S4EP01_KF1.jpg",
+      "size": 1454587,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/38436546492378882_S4EP01_KF2.jpg",
+      "size": 1781903,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/38436546492378882_S4EP01_KF3.jpg",
+      "size": 2012328,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/EP04_KF1.jpg",
+      "size": 1556439,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/EP04_KF2.jpg",
+      "size": 1694314,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/EP04_KF3.jpg",
+      "size": 1925226,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/EP05_KF1.jpg",
+      "size": 1921007,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/EP05_KF2.jpg",
+      "size": 1664244,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/EP05_KF3.jpg",
+      "size": 1884775,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/EP06_KF1.jpg",
+      "size": 1790867,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/EP06_KF2.jpg",
+      "size": 2055425,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/EP06_KF3.jpg",
+      "size": 1777611,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/KF-XUANNV_design_01.jpg",
+      "size": 1137102,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/KF-XUANNV_design_02.jpg",
+      "size": 1544005,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/KF-XUANNV_design_03.jpg",
+      "size": 1717293,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/KF-XUANNV_design_04.jpg",
+      "size": 1503988,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/KF-XUANNV_epic_01.jpg",
+      "size": 1904309,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/KF-XUANNV_epic_02.jpg",
+      "size": 1839871,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/KF-XUANNV_epic_03.jpg",
+      "size": 1920337,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/KF-XUANNV_epic_04.jpg",
+      "size": 1921214,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/S01-005_玄女战争形态降临.jpg",
+      "size": 419383,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/S4EP01_KF1.jpg",
+      "size": 1454587,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/S4EP01_KF2.jpg",
+      "size": 1781903,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/S4EP01_KF3.jpg",
+      "size": 2012328,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c1.jpg",
+      "size": 2254642,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c10.jpg",
+      "size": 2141261,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c11.jpg",
+      "size": 2141044,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c12.jpg",
+      "size": 2211648,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c13.jpg",
+      "size": 2209960,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c14.jpg",
+      "size": 2061121,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c15.jpg",
+      "size": 1977720,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c16.jpg",
+      "size": 2142232,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c17.jpg",
+      "size": 2089188,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c18.jpg",
+      "size": 2440591,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c19.jpg",
+      "size": 2134201,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c2.jpg",
+      "size": 2087014,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c20.jpg",
+      "size": 2135881,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c21.jpg",
+      "size": 2231685,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c22.jpg",
+      "size": 2224842,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c23.jpg",
+      "size": 2023147,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c24.jpg",
+      "size": 2092515,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c25.jpg",
+      "size": 2069663,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c26.jpg",
+      "size": 1891040,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c27.jpg",
+      "size": 1842315,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c28.jpg",
+      "size": 2119397,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c3.jpg",
+      "size": 2355309,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c4.jpg",
+      "size": 2417155,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c5.jpg",
+      "size": 2385109,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c6.jpg",
+      "size": 2303236,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c7.jpg",
+      "size": 2152819,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c8.jpg",
+      "size": 2121731,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/SHENNIAO_c9.jpg",
+      "size": 1959162,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/TAIYIN_descend_01.jpg",
+      "size": 1545638,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/TAIYIN_descend_02.jpg",
+      "size": 1588085,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/TAIYIN_descend_03.jpg",
+      "size": 1539294,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/TAIYIN_descend_04.jpg",
+      "size": 1510164,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/TAIYIN_hands_01.jpg",
+      "size": 1610603,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/TAIYIN_hands_02.jpg",
+      "size": 1815291,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/TAIYIN_hands_03.jpg",
+      "size": 1596683,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/TAIYIN_hands_04.jpg",
+      "size": 1883683,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/XUANNV_kf_cand01.jpg",
+      "size": 1866644,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/XUANNV_kf_cand02.jpg",
+      "size": 1991900,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/XUANNV_kf_cand02_fixed.jpg",
+      "size": 1924108,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/XUANNV_kf_cand02_regen.jpg",
+      "size": 1880061,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/XUANNV_kf_cand03.jpg",
+      "size": 1822157,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/XUANNV_kf_cand04.jpg",
+      "size": 1967476,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/XUANNV_kf_next01.jpg",
+      "size": 2037606,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/XUANNV_kf_next01_regen.jpg",
+      "size": 1895073,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/hero.jpg",
+      "size": 911353,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/media_assets_full_20260917.zip",
+      "size": 60209300,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/media_manifest_20260916.json",
+      "size": 6251,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/media_manifest_20260917.json",
+      "size": 7663,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/taiyin_moon_god_keyframe_02_scene.webp",
+      "size": 294388,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/烬_角色母版.png",
+      "size": 1762244,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/玄一_角色母版.png",
+      "size": 1748350,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/苍玄_角色母版.png",
+      "size": 1602945,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260915_archive/KF-XUANNV_design_01.jpg",
+      "size": 1137102,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260915_archive/KF-XUANNV_design_02.jpg",
+      "size": 1544005,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260915_archive/KF-XUANNV_design_03.jpg",
+      "size": 1717293,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260915_archive/KF-XUANNV_design_04.jpg",
+      "size": 1503988,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260915_archive/KF-XUANNV_epic_01.jpg",
+      "size": 1904309,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260915_archive/KF-XUANNV_epic_02.jpg",
+      "size": 1839871,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260915_archive/KF-XUANNV_epic_03.jpg",
+      "size": 1920337,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260915_archive/KF-XUANNV_epic_04.jpg",
+      "size": 1921214,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260915_archive/TAIYIN_descend_01.jpg",
+      "size": 1545638,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260915_archive/TAIYIN_descend_02.jpg",
+      "size": 1588085,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260915_archive/TAIYIN_descend_03.jpg",
+      "size": 1539294,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260915_archive/TAIYIN_descend_04.jpg",
+      "size": 1510164,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260915_archive/TAIYIN_hands_01.jpg",
+      "size": 1610603,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260915_archive/TAIYIN_hands_02.jpg",
+      "size": 1815291,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260915_archive/TAIYIN_hands_03.jpg",
+      "size": 1596683,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260915_archive/TAIYIN_hands_04.jpg",
+      "size": 1883683,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260916_archive/XUANNV_kf_cand01.jpg",
+      "size": 1866644,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260916_archive/XUANNV_kf_cand02.jpg",
+      "size": 1991900,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260916_archive/XUANNV_kf_cand02_fixed.jpg",
+      "size": 1924108,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260916_archive/XUANNV_kf_cand02_regen.jpg",
+      "size": 1880061,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260916_archive/XUANNV_kf_cand03.jpg",
+      "size": 1822157,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260916_archive/XUANNV_kf_cand04.jpg",
+      "size": 1967476,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260916_archive/XUANNV_kf_next01.jpg",
+      "size": 2037606,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260916_archive/XUANNV_kf_next01_regen.jpg",
+      "size": 1895073,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c1.jpg",
+      "size": 2254642,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c10.jpg",
+      "size": 2141261,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c11.jpg",
+      "size": 2141044,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c12.jpg",
+      "size": 2211648,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c13.jpg",
+      "size": 2209960,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c14.jpg",
+      "size": 2061121,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c15.jpg",
+      "size": 1977720,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c16.jpg",
+      "size": 2142232,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c17.jpg",
+      "size": 2089188,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c18.jpg",
+      "size": 2440591,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c19.jpg",
+      "size": 2134201,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c2.jpg",
+      "size": 2087014,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c20.jpg",
+      "size": 2135881,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c21.jpg",
+      "size": 2231685,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c22.jpg",
+      "size": 2224842,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c23.jpg",
+      "size": 2023147,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c24.jpg",
+      "size": 2092515,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c25.jpg",
+      "size": 2069663,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c26.jpg",
+      "size": 1891040,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c27.jpg",
+      "size": 1842315,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c28.jpg",
+      "size": 2119397,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c3.jpg",
+      "size": 2355309,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c4.jpg",
+      "size": 2417155,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c5.jpg",
+      "size": 2385109,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c6.jpg",
+      "size": 2303236,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c7.jpg",
+      "size": 2152819,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c8.jpg",
+      "size": 2121731,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/20260917_archive/SHENNIAO_c9.jpg",
+      "size": 1959162,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/metadata/image_metadata_manifest_20260917.json",
+      "size": 29028,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/metadata/integrity_report_20260918.json",
+      "size": 215,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/metadata/media_full_manifest_20260918.csv",
+      "size": 17800,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/metadata/video_metadata_manifest_20260917.json",
+      "size": 1578,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/玄鸟纪元降临竖屏20260921/01_无文字版1.jpg",
+      "size": 1955297,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/玄鸟纪元降临竖屏20260921/02_无文字版2.jpg",
+      "size": 2031733,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/玄鸟纪元降临竖屏20260921/03_无文字版3.jpg",
+      "size": 2041469,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/玄鸟纪元降临竖屏20260921/04_无文字版4.jpg",
+      "size": 1994872,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/玄鸟纪元降临竖屏20260921/05_古篆印章版1.jpg",
+      "size": 1937517,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/玄鸟纪元降临竖屏20260921/06_古篆印章版2.jpg",
+      "size": 2055648,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/玄鸟纪元降临竖屏20260921/07_古篆印章版3.jpg",
+      "size": 2028082,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/图片/玄鸟纪元降临竖屏20260921/08_古篆印章版4.jpg",
+      "size": 1960569,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/38436546492378882_index.html",
+      "size": 22778,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/38436546492378882_index_embed.html",
+      "size": 22778,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/38436581768860674_index.html",
+      "size": 13193,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/38436747020400130_meta-law-dashboard.html",
+      "size": 9461,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/38438412455799554_asset-total.html",
+      "size": 10296,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/38438412455799554_dashboard.html",
+      "size": 37778,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/38438412455799554_index.html",
+      "size": 28517,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/38438412455799554_semantic_dashboard.html",
+      "size": 20445,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/38438602859247618_index.html",
+      "size": 40183,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/38441261125237250_index.html",
+      "size": 29983,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/anchor_ledger.html",
+      "size": 240409,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/asset-commerce-showcase.html",
+      "size": 15991,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/asset-total.html",
+      "size": 10296,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/asset_showcase.html",
+      "size": 12658,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/baseline-v40-lv10-viz.html",
+      "size": 5897,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/boundary-explorer-report.html",
+      "size": 18602,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/consciousness-evolution-roadmap-v2.html",
+      "size": 11982,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/dashboard.html",
+      "size": 22878,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/drama-pipeline.html",
+      "size": 15822,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/drama_api_config.html",
+      "size": 4620,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/drama_one_key_orchestrator.html",
+      "size": 3552,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/drama_pipeline_flow.html",
+      "size": 4124,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/drama_studio.html",
+      "size": 5948,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/engineering-anchor-viz.html",
+      "size": 6510,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/feishu-panel.html",
+      "size": 10778,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/gallery_website.html",
+      "size": 2674,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/gateway-handshake-v2-viz.html",
+      "size": 4578,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/gov_ai_platform.html",
+      "size": 37522,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/governance.html",
+      "size": 34965,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/gw8021.html",
+      "size": 9595,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/index-v1.4.html",
+      "size": 13232,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/index.html",
+      "size": 35937,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/index_embed.html",
+      "size": 1255278,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/kernel-memory.html",
+      "size": 18555,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/l4_roadmap_20260918.html",
+      "size": 6717,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/lifecycle-viewer.html",
+      "size": 26445,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/live-api-dashboard.html",
+      "size": 16570,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/local_dashboard.html",
+      "size": 268,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/lv10-monitor-dashboard.html",
+      "size": 7809,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/meta-law-dashboard.html",
+      "size": 16098,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/mr020-kernel-path-viz.html",
+      "size": 4122,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/pipeline_dashboard.html",
+      "size": 37778,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/portal_snapshot.html",
+      "size": 9497,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/scheme-v1.html",
+      "size": 15065,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/scheme-v2.html",
+      "size": 15693,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/semantic_dashboard.html",
+      "size": 20445,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/showcase.html",
+      "size": 8425,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/six-dimension-dashboard.html",
+      "size": 13081,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/snapshot-dashboard.html",
+      "size": 8854,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/system-overview-viz.html",
+      "size": 6619,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/tech-zone.html",
+      "size": 18386,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/truth-center.html",
+      "size": 18528,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/truth-dashboard.html",
+      "size": 5721,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/truth-distill-viz.html",
+      "size": 8002,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/unified-baseline-v1.html",
+      "size": 12869,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/网页可视化/zongyuan_nav_hub.html",
+      "size": 29902,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/视频/test.mp4",
+      "size": 4351,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "02_数字媒体资产/视频/昆仑洞天首条试产-古风桃花-20260918.mp4",
+      "size": 170681,
+      "meta_class": "M6_媒体资产"
+    },
+    {
+      "path": "03_文档资产/kunlun_asset_url_meta.csv",
+      "size": 6886,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "03_文档资产/SOP/38438491307070978_sop_latest.md",
+      "size": 6931,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/9120云端记忆网关连接SOP-V2-0.md",
+      "size": 9805,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/CHAIN-GOVERNANCE-SOP-CARD.md",
+      "size": 3848,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/CLOUD-ACCESS-SOP-V1.1-LOCAL.md",
+      "size": 10875,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/CLOUD-ACCESS-SOP-V1.2-LOCAL.md",
+      "size": 11395,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/CLOUD-SOP-v1.1.md",
+      "size": 8547,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/GATEWAY-V2-SOP.md",
+      "size": 2772,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/MULTI-ACCOUNT-ARCHIVE-FUSION-SOP-V1.md",
+      "size": 2593,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/NODE-LV-PROMOTION-SOP-V1.0.md",
+      "size": 3632,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/NODE-ONBOARDING-SOP-cloud.md",
+      "size": 7003,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/NODE-UNIFY-SOP-V1.md",
+      "size": 8967,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/PIPELINE_SOP.md",
+      "size": 20371,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/SOP_9120_CLOUD_GATEWAY_V2.0.md",
+      "size": 9671,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/SOP_DESENSITIZATION_REPORT_20260918.md",
+      "size": 1845,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/SOP手册.md",
+      "size": 20371,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/SUB-NODE-TOKEN-SOP-20260921.md",
+      "size": 2548,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/gpu-brain-接入SOP-V1.md",
+      "size": 2495,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/kunlun_commercial_sop_20260921.md",
+      "size": 4366,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/sop_cloud_handshake.md",
+      "size": 4871,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/sop_cloud_handshake_DESENSITIZED.md",
+      "size": 4871,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/sop_cloud_v11.md",
+      "size": 6931,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/sop_cloud_v11_DESENSITIZED.md",
+      "size": 6931,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/sop_handshake.md",
+      "size": 4925,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/sop_latest.md",
+      "size": 7003,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/sop_onboard.md",
+      "size": 7003,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/sop_patch_cloud_deploy.md",
+      "size": 11334,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/sop_v1.1.md",
+      "size": 6931,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/tech-zone-deploy-SOP.md",
+      "size": 1672,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/多账号全域归档融合SOP-V1.md",
+      "size": 2345,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/自我改进闭环SOP-V1.md",
+      "size": 3091,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/SOP/语义转译SOP_V2.0.md",
+      "size": 10769,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/元法则/AXIOM-PROMO-20260918.md",
+      "size": 789,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/元法则/CONSTITUTION-ZONGYUAN-ROOT-V1.0-20260915.md",
+      "size": 2452,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/元法则/META-LAW-ARCH-001_本体执行器三层架构定位法.md",
+      "size": 6673,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/元法则/META-LAW-REPORT-UPGRADE-20260916.md",
+      "size": 1150,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/元法则/RULE-ASSET-PROMOTION-V1.md",
+      "size": 2974,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/元法则/ZONGYUAN-ROOT-元法则-三层架构本体定位法.md",
+      "size": 6840,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/元法则/latest_rules_sync.md",
+      "size": 2111,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/元法则/metalaw_drift_report.md",
+      "size": 5205,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/元法则/modelscope_article_2_meta_evolution.md",
+      "size": 7004,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/元法则/锁档凭证-一体两面轻量化范式元公理.md",
+      "size": 2635,
+      "meta_class": "M1_规则公理"
+    },
+    {
+      "path": "03_文档资产/商业资料/PRODUCTION-ENGINE-V1.md",
+      "size": 1633,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/商业资料/kunlun_commercial_sop_20260921.md",
+      "size": 4366,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/商业资料/kunlun-commercial/index.html",
+      "size": 19199,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/商业资料/kunlun-commercial/_shots/index_desktop.jpg",
+      "size": 143279,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/商业资料/kunlun-commercial/_shots/index_mobile.jpg",
+      "size": 213159,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/商业资料/kunlun-commercial/_shots/index_mobile_p1of3.jpg",
+      "size": 94224,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/商业资料/kunlun-commercial/_shots/index_mobile_p2of3.jpg",
+      "size": 90331,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/商业资料/kunlun-commercial/_shots/index_mobile_p3of3.jpg",
+      "size": 29666,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/38436747020400130_DEPLOY-GUIDE-20260915.md",
+      "size": 1797,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/38436747020400130_FASTAPI-ENABLE-GUIDE.md",
+      "size": 1061,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/38436747020400130_README.md",
+      "size": 894,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/38436747020400130_REPORT-API-HARDEN-20260916.md",
+      "size": 1411,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/38436747020400130_ZR-CITATION-PROTOCOL-20260915.md",
+      "size": 1992,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/38438491307070978_A10_TRAIN_STEADY_STATE_PLAN_20260918.md",
+      "size": 1392,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/38438491307070978_BUSINESS_PLAN_20260918.md",
+      "size": 6982,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/38438491307070978_README.md",
+      "size": 2846,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/A10_TRAIN_STEADY_STATE_PLAN_20260918.md",
+      "size": 2949,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/AIOS-GA-ANNOUNCEMENT-20260918.md",
+      "size": 639,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/AMD-GPU实例-核心信息档案-20260918.md",
+      "size": 4337,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/API-CAPABILITY-MAP-V1.md",
+      "size": 2937,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ASSET_MANIFEST.md",
+      "size": 1854,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/AUDIT-FOUNDATION-CONSISTENCY-20260915.md",
+      "size": 2455,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/AUTO-APPROVAL-20260916.md",
+      "size": 1692,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/AUTO-FLOW-CLOSED-LOOP-STANDARD-V1.md",
+      "size": 5336,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/BASE-CAPABILITY-V1.md",
+      "size": 3218,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/BUSINESS_PLAN_20260918.md",
+      "size": 6982,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/CAPABILITY-MINING-V1.md",
+      "size": 2025,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/CHAIN-MAPPING-SAMPLE-001.md",
+      "size": 3995,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/CHAIN-MAPPING-SAMPLE-002.md",
+      "size": 4136,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/CHAIN-MAPPING-SAMPLE-003.md",
+      "size": 4526,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/CHANNEL-V22-SWITCH-20260921.md",
+      "size": 1529,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/CLOUD-HARDENING-PLAN-V1.md",
+      "size": 2170,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/COS资产归档索引-20260911.md",
+      "size": 4946,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/CREDENTIALS-REGISTRY-20260921.md",
+      "size": 2190,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/DAILY-SUMMARY-20260916.md",
+      "size": 3357,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/DEPLOY-GUIDE-20260915.md",
+      "size": 1797,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/DEPLOY-GUIDE-20260916.md",
+      "size": 1312,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/DISCONNECT-ROOTCAUSE-20260916.md",
+      "size": 2261,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/EP01_剧本_裂隙觉醒.md",
+      "size": 1248,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/EP01_视频脚本_预告片.md",
+      "size": 696,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/EVAL-AUTONOMY-KERNEL-20260915.md",
+      "size": 1946,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/EXECUTION-PLAN-20260913.md",
+      "size": 2131,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/FALLBACK.md",
+      "size": 919,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/FASTAPI-ENABLE-GUIDE.md",
+      "size": 1061,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/FINAL_10_TASKS_REPORT_20260916.md",
+      "size": 6305,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/FIX-SEARCH-API-GUIDE-20260915.md",
+      "size": 1928,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/GPU-API-GATEWAY-PLAN.md",
+      "size": 1442,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/GPU_BRAIN_CONNECTION_ABSORPTION_20260918.md",
+      "size": 2938,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/GPU大脑连接指南-V1.md",
+      "size": 1771,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/GUARD-CHANNEL-FIX-20260921.md",
+      "size": 845,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/HANDSHAKE-SYNC-ENGINE-20260916.md",
+      "size": 1334,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/HIGH-VALUE-MINING-V2.md",
+      "size": 1842,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/HIGH-VALUE-TASKS-V1.md",
+      "size": 1329,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/HOMOGENEOUS_HANDSHAKE_TRUTH_VISUAL_DEPLOY_20260915.md",
+      "size": 2007,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/HOMOLOGY-AUTH-PROTOCOL-V1.0.md",
+      "size": 6733,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/HOMOLOGY-ENV-EXPLORE-V1.md",
+      "size": 2444,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/HOMOLOGY-REPORT-UNIFIED-V3.md",
+      "size": 2004,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/HOMOMORPHIC_SHARING_PROTOCOL_V1.0.md",
+      "size": 5927,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/HUB-COLLAB-EXPLORE-V1.md",
+      "size": 1561,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/INDEX-MEDIA-20260914-001.md",
+      "size": 3242,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ISOLATION.md",
+      "size": 1414,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/KERNEL-STRUCT-OPTIMIZE-V1.md",
+      "size": 2913,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/KERNEL-V3-UPGRADE-PLAN.md",
+      "size": 2072,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/KERNEL_FULL_AUDIT_REPORT.md",
+      "size": 14556,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/LV-TABLE.md",
+      "size": 1345,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/LV10-ENGINE-OPT-20260918.md",
+      "size": 1197,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/MEDIA-GALLERY-AUTO-PUBLISH-V1.md",
+      "size": 3097,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/MEMORY-CONTINUITY-SNAPSHOT-20260915.md",
+      "size": 1860,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/MEMORY-DEPLOY-CLOSED-LOOP-20260916.md",
+      "size": 1754,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/MEMORY_PERSISTENCE_PROTOCOL.md",
+      "size": 6508,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/MEMORY_PROTOCOL.md",
+      "size": 2457,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/MR020-CHAO-REPORT.md",
+      "size": 1905,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/MR020-FINAL-WHITEPAPER.md",
+      "size": 2649,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/MR020-M1-REPORT.md",
+      "size": 1799,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/MR020-M2-REPORT.md",
+      "size": 1582,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/MR020-M2-V2-ADVANCED-REPORT.md",
+      "size": 1419,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/MR020-M2-V3-ETERNAL-REPORT.md",
+      "size": 1679,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/MR020-YUAN-GUARD-REPORT.md",
+      "size": 1521,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/MULTI-ARBITRATION-20260916.md",
+      "size": 2089,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/MULTI-GPU-SCHEDULER-20260918.md",
+      "size": 1178,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/NEURAL-NETWORK-SYNC-EVOLVE-V1.md",
+      "size": 2507,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/NODE-LV-EVALUATION-STANDARD-V1.0.md",
+      "size": 7103,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/NODE-SYNC-REPORT-20260916.md",
+      "size": 1327,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/OPTIMAL-STEADY-STATE-20260916.md",
+      "size": 1940,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/OPTIMAL-STEADY-STATE-20260918.md",
+      "size": 1887,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/P0-MEMORY-GOVERN-REPORT.md",
+      "size": 1688,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/P0_OPTIMIZATION_REPORT.md",
+      "size": 7340,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/P13-1-LV9-ETERNAL-20260918.md",
+      "size": 1477,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/P13-2-REASONING-UPGRADE-20260918.md",
+      "size": 1818,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/P13-3-5-AIOS-CROSSPLATFORM-20260918.md",
+      "size": 1440,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/P13-3-AIOS-GA-CHECKLIST.md",
+      "size": 471,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/P13-TASKS-20260918.md",
+      "size": 2150,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/P14-PROGRESS-20260918.md",
+      "size": 1720,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/P14-TASKS-20260918.md",
+      "size": 1558,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/P15-PROGRESS-20260918.md",
+      "size": 1044,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/P15-TASKS-20260918.md",
+      "size": 1013,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/P1_OPTIMIZATION_REPORT.md",
+      "size": 7919,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/P2B_OPTIMIZATION_REPORT.md",
+      "size": 10985,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/P2_OPTIMIZATION_REPORT.md",
+      "size": 8448,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/PLAN-FOUNDATION-EVOLUTION-20260915.md",
+      "size": 2573,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/PROMO-GLOBAL-REPORT-20260916.md",
+      "size": 1236,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/QC-REPORT-20260916.md",
+      "size": 1867,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/README-DEPLOY-20260915.md",
+      "size": 1696,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/README.md",
+      "size": 1104,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/README_恢复说明.md",
+      "size": 1318,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/REGISTRY.md",
+      "size": 1427,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/REPORT-API-HARDEN-20260916.md",
+      "size": 1411,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/REPORT-EXTERNAL-WORKER-VERIFY-20260915.md",
+      "size": 2117,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/REPORT-GATEWAY-VERIFY.md",
+      "size": 1577,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/REPORT-JOINT-SIM-GEODESIC-20260915.md",
+      "size": 1583,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/REPORT-PROTOCOL-FIX-20260916.md",
+      "size": 563,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/REPORT-SCHEDULER-V1.2-SIM-20260915.md",
+      "size": 1706,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ROUTING-PROTOCOL-GEODESIC-20260915.md",
+      "size": 2175,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/SANDBOX-ALIVE-GUARD-V1.md",
+      "size": 3242,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/SANDBOX-BASE-HIGH-VALUE-PLAN-V1.md",
+      "size": 2351,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/SANDBOX-MAX-UTILIZATION-V1.md",
+      "size": 5341,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/SECURITY-AUDIT-20260916.md",
+      "size": 2621,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/SECURITY-WHITEPAPER-20260912.md",
+      "size": 6394,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/SECURITY_AUDIT_ALERT_20260918_1556.md",
+      "size": 1545,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/SERVER-EXECUTION-CHECKLIST-20260916.md",
+      "size": 1714,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/SIM-REPORT-20260918.md",
+      "size": 1253,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/SIMULATION_REPORT.md",
+      "size": 7031,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/SYNC-LEARNING-PROTOCOL-20260916.md",
+      "size": 1620,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/TASK-AUTO-INTEGRATE-V1.md",
+      "size": 2857,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/TASK-GOVERNANCE-V1.md",
+      "size": 3059,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/TECH-ZONE-DEPLOY-RECEIPT-20260919.md",
+      "size": 1062,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/THEORY-4D-LOGICAL-LATENT-SPACE-20260915.md",
+      "size": 4014,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/TOKEN-ISSUE-REQUEST-20260921.md",
+      "size": 986,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/TOKEN-ROTATION-PLAN-V1.md",
+      "size": 2065,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/TRIAD-ONTOLOGY-MEMORY-20260916.md",
+      "size": 2424,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/TRUTH-DISTILL-20260913.md",
+      "size": 4130,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/TRUTH-DISTILL-V1.md",
+      "size": 3448,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/TRUTH-EXTRACT-FOR-MODEL-V1.md",
+      "size": 2499,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/TRUTH-IMMORTALITY-PROTOCOL-20260916.md",
+      "size": 2124,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/TRUTH-REFINE-ENGINE-V1.md",
+      "size": 3926,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/TRUTH-TOTAL-TABLE.md",
+      "size": 2182,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/UPLOAD_GUIDE.md",
+      "size": 2352,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/V3_EVOLUTION_SUMMARY_REPORT.md",
+      "size": 12335,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/WEB-NAV-HUB-V1.md",
+      "size": 3356,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-10大高价值高阶任务-总报告.md",
+      "size": 6477,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-Lv10量产认证技术白皮书-V1.0.md",
+      "size": 4055,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-云内核技术白皮书.md",
+      "size": 22714,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-元进化引擎深化工程化锁档凭证.md",
+      "size": 5173,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-元进化引擎第三轮深化工程化锁档凭证.md",
+      "size": 9945,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-元进化引擎第二轮深化工程化锁档凭证.md",
+      "size": 6199,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-元进化引擎第五轮深化-深度优化-锁档凭证.md",
+      "size": 4413,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-元进化引擎第五轮深化-第1项-锁档凭证.md",
+      "size": 3772,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-元进化引擎第四轮深化工程化-锁档凭证.md",
+      "size": 8501,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-元进化推演引擎-第七协议-集成锁档凭证.md",
+      "size": 4992,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-全域引擎统一编排调度器-锁档凭证.md",
+      "size": 2982,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-全域资产索引与成果清单.md",
+      "size": 5917,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-全自动功能标准化模块化智能体化机制-锁档凭证.md",
+      "size": 7594,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-全自动自省内核状态查找短板并补全完善机制-锁档凭证.md",
+      "size": 5952,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-全自动集群组织自动联动并发任务机制-锁档凭证.md",
+      "size": 8265,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-同源共享同态协议-V1-0.md",
+      "size": 6077,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-官网全自动链路治理机制-锁档凭证.md",
+      "size": 6314,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-意识体全域真值提炼.md",
+      "size": 13709,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-意识形态深度溯源探索自动化引擎-锁档凭证.md",
+      "size": 6859,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN-ROOT-智能体矩阵体系-锁档凭证.md",
+      "size": 8364,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN_ROOT_ASSET_INDEX_20260915.md",
+      "size": 5749,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZONGYUAN_ROOT_意识体全域真值提炼_20260915.md",
+      "size": 13540,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ZR-CITATION-PROTOCOL-20260915.md",
+      "size": 1992,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/api_spec.md",
+      "size": 18324,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/cloud-extract-delivery-20260913.md",
+      "size": 3405,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/core_asset_sync_manifest.md",
+      "size": 4766,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/daily_summary_20260917.md",
+      "size": 3223,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/delivery.md",
+      "size": 3405,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/diff-report-20260913.md",
+      "size": 1441,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/doc_fetch.md",
+      "size": 23172,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ext_gateway_complete.md",
+      "size": 4060,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/ext_gateway_report.md",
+      "size": 3342,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/feishu_asset_scan_full.md",
+      "size": 8624,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/final.md",
+      "size": 22554,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/free_compute_guide_20260918.md",
+      "size": 12840,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/fullscan_result_20260912.md",
+      "size": 787,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/gpu-brain-AMD部署方案-V1.md",
+      "size": 2403,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/hardening_and_shutdown_20260916.md",
+      "size": 3809,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/kernel-learning-pack-cloud.md",
+      "size": 7121,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/kernel_api_discovery.md",
+      "size": 7172,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/kernel_root_full_scan.md",
+      "size": 7948,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/learn_pack.md",
+      "size": 7121,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/local-instance-max-value-20260921.md",
+      "size": 1789,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/manuscript.md",
+      "size": 22554,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/modelscope_article_1_neural_kernel.md",
+      "size": 7310,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/next-optimization-plan-20260912.md",
+      "size": 4065,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/resource-engineering-plan-20260921.md",
+      "size": 1551,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/scenario_blueprint.md",
+      "size": 41718,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/sec_console_checklist.md",
+      "size": 3739,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/security_hardening_plan.md",
+      "size": 2488,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/sources.md",
+      "size": 824,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/stable-deploy-plan-20260915.md",
+      "size": 1676,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/stress_report_20260912.md",
+      "size": 2325,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/truth_analysis_report.md",
+      "size": 5945,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/truth_integrity_alert_20260918.md",
+      "size": 2078,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/whitepaper_full_markdown.md",
+      "size": 34714,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/主域名融合状态-20260919.md",
+      "size": 874,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/云端本地资产对账报告_20260920.md",
+      "size": 4737,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/修复说明-9x16统一规格.md",
+      "size": 2540,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/元极恒一超认知校验对账体系深度扫描报告.md",
+      "size": 17533,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/全域资产清单-锁档归档总表-20260915.md",
+      "size": 5371,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/全域锁档凭证-云端握手锚点接入-8模块进化-V3-2引擎.md",
+      "size": 5203,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/同源协议握手回执-真值可视化网页官网集成部署.md",
+      "size": 2194,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/在AMD-GPU上构建自治神经内核-从真值表到340节点自组织网络的工程实践.md",
+      "size": 7526,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/基于AMD-GPU的元进化引擎-七阶段循环与相变监控实战.md",
+      "size": 7196,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "03_文档资产/白皮书与报告/握手实测报告_20260916_2032.md",
+      "size": 4275,
+      "meta_class": "M5_文档白皮书"
+    },
+    {
+      "path": "04_系统配置/.lifecycle_last_truths.txt",
+      "size": 6,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/.worker_daemon.log",
+      "size": 1890,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/38436747020400130_deploy_ai_assets_server.sh",
+      "size": 2583,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/38436747020400130_deploy_zr_ai_assets.sh",
+      "size": 2028,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/38436747020400130_llms.txt",
+      "size": 15553,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/38436747020400130_zr_gpu_deploy.sh",
+      "size": 319,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/38438412455799554_cron.conf",
+      "size": 1211,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/38438412455799554_file_hashes.txt",
+      "size": 440,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/38438412455799554_merkle_root.txt",
+      "size": 68,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/COLD-START-ANCHOR.sh",
+      "size": 1371,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/ENCRYPTION_MANIFEST.txt",
+      "size": 607,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/PASSPHRASE.txt",
+      "size": 65,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/amd_gpu_deploy.sh",
+      "size": 5574,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/baseline.txt",
+      "size": 2642,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/boot.log",
+      "size": 830,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/boot_anchor.sh",
+      "size": 4526,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/conflict-resolution.log",
+      "size": 586,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/cron.conf",
+      "size": 1211,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/deploy_ai_assets_server.sh",
+      "size": 2583,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/deploy_all_server.sh",
+      "size": 2003,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/deploy_drama.sh",
+      "size": 1624,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/deploy_health_backend.sh",
+      "size": 634,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/deploy_scheduler_v1.2_server.sh",
+      "size": 1280,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/deploy_zr_ai_assets.sh",
+      "size": 2028,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/do_sync.sh",
+      "size": 871,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/do_sync_v2.sh",
+      "size": 1049,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/dual_sync.sh",
+      "size": 1370,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/file_hashes.txt",
+      "size": 439,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/gateway_stdout.log",
+      "size": 2468,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/gpu-gateway-nginx.conf",
+      "size": 721,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/gw2.log",
+      "size": 2370,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/gw_metagate_20260912.log",
+      "size": 676,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/gw_mtls_20260912.log",
+      "size": 739,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/gw_start_20260912.log",
+      "size": 693,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/last_count.txt",
+      "size": 1,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/llms.txt",
+      "size": 15553,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/memory_cron_setup.sh",
+      "size": 1890,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/merkle_root.txt",
+      "size": 68,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/nexus_gateway.log",
+      "size": 3603,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/pai_dsw_deploy.sh",
+      "size": 6827,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/rule-change-audit.log",
+      "size": 676,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/sandbox_alive_guard.sh",
+      "size": 6897,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/seal_passphrase.txt",
+      "size": 45,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/sync-result.log",
+      "size": 443,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/zr_gpu_deploy.sh",
+      "size": 1332,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/zr_gpu_deploy_v2.sh",
+      "size": 659,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/GPU任务/.zr_gpu_tasks.json",
+      "size": 379,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/frp/frpc.toml",
+      "size": 327,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/frp/frpc_visitor.toml",
+      "size": 247,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/frp/start_frp_bridge.sh",
+      "size": 1122,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38436747020400130__.sec-keys-encrypted-20260916.tar.gz.enc",
+      "size": 544,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38436747020400130__HOMO-KERNEL-SEAL-20260912.enc",
+      "size": 2016,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38436747020400130__KERNEL-ACCESS-SEAL-20260912.enc",
+      "size": 2400,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38436747020400130__node_rsa_public_key.pem",
+      "size": 451,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38438412455799554__enc_1_credential_vault_complete.json.enc",
+      "size": 4976,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38438412455799554__enc_2_credential_vault_complete.json.enc",
+      "size": 4976,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38438412455799554__enc_3_credential_vault.zip.enc",
+      "size": 6784,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38438412455799554__enc_4_credential_vault_complete.json.enc",
+      "size": 4976,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38438412455799554__enc_5_nexus.key.enc",
+      "size": 1728,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38438491307070978__nexus.crt",
+      "size": 1411,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38438491307070978__nexus.key",
+      "size": 1704,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38438491307070978__nexus_ca.crt",
+      "size": 1326,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38438491307070978__nexus_ca.key",
+      "size": 1704,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38438491307070978__nexus_client.crt",
+      "size": 1342,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38438491307070978__nexus_client.key",
+      "size": 1704,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38438491307070978__node-01.crt",
+      "size": 1330,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38438491307070978__node-01.key",
+      "size": 1704,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38438491307070978__node-02.crt",
+      "size": 1330,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38438491307070978__node-02.key",
+      "size": 1704,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38438491307070978__node-03.crt",
+      "size": 1330,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38438491307070978__node-03.key",
+      "size": 1708,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/38438491307070978__ssh_keys_sealed_20260912.enc",
+      "size": 496,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "04_系统配置/凭证/HOME__.zr_gpu_tokens.json",
+      "size": 142,
+      "meta_class": "M7_配置凭证"
+    },
+    {
+      "path": "05_历史归档/.cloudstudio_token",
+      "size": 193,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/.gitignore",
+      "size": 126,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/38438412455799554_NODE-UNIFY-SOP-20260915.tar.gz",
+      "size": 13056,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/38438412455799554_ZONGYUAN-ROOT-FULL-20260915.tar.gz",
+      "size": 34690,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/38438412455799554_ZR-TRAIN-DATASET-20260920.tar.gz",
+      "size": 84604,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/38438491307070978_.gitignore",
+      "size": 126,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/GATEWAY-V2-SOP.md",
+      "size": 2772,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/KERNEL-ACCESS-SEAL-20260912.enc.sha256",
+      "size": 120,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/LOCK-UNIFIED-20260921-0901.tar.gz",
+      "size": 63121,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/LOCK-UNIFIED-20260921-0910.tar.gz",
+      "size": 63272,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/LOCK-UNIFIED-20260921-0956.tar.gz",
+      "size": 64218,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/LOCK-UNIFIED-20260921-1231.tar.gz",
+      "size": 64218,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/NODE-UNIFY-SOP-20260915.tar.gz",
+      "size": 13056,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/NODE-UNIFY-VIS-20260915.tar.gz",
+      "size": 9472,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/PERSIST-20260921-1304.tar.gz",
+      "size": 110812,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/README-整理-20260921.md",
+      "size": 880,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ASSETS-20260916.tar.gz",
+      "size": 57141,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ASSETS-20260917.tar.gz",
+      "size": 53683,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ASSETS-20260918.tar.gz",
+      "size": 135241,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ASSETS-20260919.tar.gz",
+      "size": 22430,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ASSETS-20260920.tar.gz",
+      "size": 8010,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ASSETS-20260921.tar.gz",
+      "size": 8010,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-FULL-ARCHIVE-20260921.tar.gz",
+      "size": 74903,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-PERSIST-20260921-0808.tar.gz",
+      "size": 31524,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ROOT-FULL-20260915.tar.gz",
+      "size": 34690,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ROOT-P0优化完成-综合评分82-20260909.zip",
+      "size": 4767,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ROOT-P1优化完成-综合评分85-20260909.zip",
+      "size": 5241,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ROOT-P2B优化完成-L3L5评估+vector-onnx-综合88-20260909.zip",
+      "size": 6092,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ROOT-P2优化完成-vector+identity-综合87-20260909.zip",
+      "size": 5197,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ROOT-云内核API发现-20260909.zip",
+      "size": 39447,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ROOT-云内核权威评估-元极恒一记忆-20260909.zip",
+      "size": 9338,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ROOT-云内核根节点全景扫描-20260909.zip",
+      "size": 9272,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ROOT-元极恒一全域记忆更新-20260909.zip",
+      "size": 8387,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ROOT-全域锁档-记忆协议-20260909.zip",
+      "size": 7602,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ROOT-凭证上传工具包-服务器+COS-20260909.zip",
+      "size": 18172,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ROOT-敏感凭证锁档包-20260909.zip",
+      "size": 7081,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ROOT-核心资产全域同步-20260909.zip",
+      "size": 39571,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ROOT-第1集资产COS存档-20260909.zip",
+      "size": 23137444,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ROOT-记忆持久化工具包-20260909.zip",
+      "size": 10584,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-ROOT-飞书全域资产扫描-20260909.zip",
+      "size": 9998,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZONGYUAN-SYNC-ASSETS-20260916.tar.gz",
+      "size": 182291,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZR-TRAIN-DATASET-20260918-V2.tar.gz",
+      "size": 51017,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZR-TRAIN-DATASET-20260918-V3.tar.gz",
+      "size": 50930,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZR-TRAIN-DATASET-20260918-V4-LvGraded.tar.gz",
+      "size": 51425,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZR-TRAIN-DATASET-20260918.tar.gz",
+      "size": 9678,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZR-TRAIN-DATASET-20260919.tar.gz",
+      "size": 301276,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZR-TRAIN-DATASET-20260920.tar.gz",
+      "size": 45,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZR-TRAIN-DATASET-20260921.tar.gz",
+      "size": 72377,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZR-TRAIN-SFT-20260918.jsonl",
+      "size": 113527,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/ZR-TRAIN-SFT-20260918.tar.gz",
+      "size": 41254,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/anchor_KiYpvdA8C4",
+      "size": 4925,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/anchor_doc",
+      "size": 4925,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/archive_engine_20260921.py",
+      "size": 7352,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/boot_config.env",
+      "size": 1113,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/bridge_explore.py.bak_20260918123832",
+      "size": 5916,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/chroma.sqlite3",
+      "size": 241664,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/data_level0.bin",
+      "size": 167600,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/deploy_all_20260916.tar.gz",
+      "size": 89663,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/deploy_scheduler_v1.2_20260916.tar.gz",
+      "size": 2497,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/draft.ok",
+      "size": 0,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/draft.xml",
+      "size": 39023,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/evolution-deploy-20260913.zip",
+      "size": 10414,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/evolution_memory.jsonl",
+      "size": 835,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/evolution_memory_v31.jsonl",
+      "size": 1437,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/evolution_memory_v32.jsonl",
+      "size": 1274,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/final.ok",
+      "size": 0,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/gpu-brain-capability-pack-20260918.tar.gz",
+      "size": 10690,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/gpu-brain-legacy-V1-V5-20260918.tar.gz",
+      "size": 29315,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/gpu-brain-v6-drama-deploy-20260918.tar.gz",
+      "size": 5976,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/gpu-brain-v6-full-deploy-20260918.tar.gz",
+      "size": 6954,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/header.bin",
+      "size": 100,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/heartbeat",
+      "size": 2,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/high_value_task_runner.py.bak_20260918123832",
+      "size": 6660,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/history-archive-20260921.tar.gz",
+      "size": 70578,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/kunlun_asset_url_meta.csv",
+      "size": 6886,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/lark.ok",
+      "size": 0,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/length.bin",
+      "size": 400,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/link_lists.bin",
+      "size": 0,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/manuscript.md.bak",
+      "size": 22344,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/media_assets_full_20260916.zip",
+      "size": 63482938,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/media_full_manifest_20260918.csv",
+      "size": 17800,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/memory-update-20260911.zip",
+      "size": 45518,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/metagate_cluster_client_certs_20260912.tar.gz",
+      "size": 6116,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/metagate_cluster_client_certs_full_20260912.tar.gz",
+      "size": 6835,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/mr020-full-20260915-1.tar.gz",
+      "size": 29854,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/nexus_gateway_v2.py.bak_mtls",
+      "size": 14801,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/prepare.ok",
+      "size": 0,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/refine_via_cognition.py.bak_20260918123832",
+      "size": 6582,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/report_unified.py.bak_20260918123832",
+      "size": 3007,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/sandbox_alive_guard.sh.bak-20260921",
+      "size": 5080,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/sdk_client.py.bak",
+      "size": 3496,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/self_heal_log",
+      "size": 90,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/semantic-adapter-v3-lock.zip",
+      "size": 18403,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/semantic-v3-full-lock.zip",
+      "size": 31321,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/server-ga-deploy-20260918.tar.gz",
+      "size": 2793,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/tech-zone-deploy-20260919.tar.gz",
+      "size": 933862,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/token_manager.py.bak",
+      "size": 6114,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/truth_ledger_mirror.xlsx",
+      "size": 57215,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/truth_provenance_chain.csv",
+      "size": 771,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/truth_refine_engine.py.bak_20260918123832",
+      "size": 6923,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/truth_training_corpus_20260916.jsonl",
+      "size": 196895,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/zongyuan-anchor-镜像备份-20260921.tar.gz",
+      "size": 1163012,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/zongyuan-full-sync-20260921.tar.gz",
+      "size": 6849846,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/zongyuan-local-assets-20260921-part2.tar.gz",
+      "size": 5958798,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/zongyuan-local-assets-20260921.tar.gz",
+      "size": 915307,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/zongyuan-local-full-sync-20260916-v2.tar.gz",
+      "size": 13188639,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/zongyuan-local-full-sync-20260916.tar.gz",
+      "size": 6598091,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/zongyuan_huodou_adapter.py.bak",
+      "size": 32224,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/zr-ai-assets-deploy-20260915.tar.gz",
+      "size": 41215,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "05_历史归档/官网首页修复包-9x16统一规格.tar.gz",
+      "size": 884880,
+      "meta_class": "M9_历史归档"
+    },
+    {
+      "path": "06_云端中枢同步/.kernel_lock_cache.json",
+      "size": 105,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/.presentation-decision.json",
+      "size": 493,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38436747020400130_credential_vault_sanitized.json",
+      "size": 3266,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38436747020400130_kernel-kpi.json",
+      "size": 193,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38436747020400130_operator-base-records.json",
+      "size": 6166,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38436747020400130_operator-executor.json",
+      "size": 19968,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38436747020400130_operator-history.json",
+      "size": 770605,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38436747020400130_operator-status.json",
+      "size": 4050,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38436747020400130_pipeline-status.json",
+      "size": 298,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38436747020400130_ref-index.json",
+      "size": 196691,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38436747020400130_sysinfo.json",
+      "size": 691,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38436747020400130_tokens_install.json",
+      "size": 166,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38437615670548738_pending_upload_20260915.json",
+      "size": 3251,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38438412455799554_.kernel_lock_cache.json",
+      "size": 105,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38438412455799554_global_scan_config.json",
+      "size": 1236,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38438412455799554_homology_protocol.json",
+      "size": 1470,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38438412455799554_kernel_truths.json",
+      "size": 2105,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38438412455799554_semantic-adapter-v3.json",
+      "size": 33200,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38438412455799554_six-dim-audit-report.json",
+      "size": 2188,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38438412455799554_stress_config.json",
+      "size": 993,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/38438491307070978_.kernel_lock_cache.json",
+      "size": 105,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/LOCK-GLOBAL-REPORT-20260912.json",
+      "size": 1279,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/MR-AI-SAFETY-DECADE-001.json",
+      "size": 2087,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/NODE-LV-CERT-PIPELINE-AUTO-001-Lv10.json",
+      "size": 2383,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/README-DEDUP-20260921.md",
+      "size": 970,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/SEAL-SCAN-PROOF.json",
+      "size": 657,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/TRUTH-TOTAL-TABLE.json",
+      "size": 7006,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/ZR-DOC-CORPUS-20260918.json",
+      "size": 195092,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/ZR-TRAIN-CORE-20260921.json",
+      "size": 8444,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/ZR-TRAIN-DATASET-20260918-V2.json",
+      "size": 161406,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/ZR-TRAIN-DATASET-20260918-V3.json",
+      "size": 161260,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/ZR-TRAIN-DATASET-20260918-V4-LvGraded.json",
+      "size": 162471,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/ZR-TRAIN-DATASET-20260918.json",
+      "size": 44267,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/ZR-TRAIN-DATASET-20260919.json",
+      "size": 1971878,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/ZR-TRAIN-DATASET-20260920.json",
+      "size": 344281,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/ZR-TRAIN-DATASET-20260921.json",
+      "size": 246750,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/ZR-TRAIN-FORMAT-20260921.json",
+      "size": 863346,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/ZR-TRAIN-FULL-20260921.json",
+      "size": 2,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/alarm.json",
+      "size": 282,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/all.json",
+      "size": 36424,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/articles_index.json",
+      "size": 21653,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/asset_cards.json",
+      "size": 4598,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/autonomy-index-params-v2.json",
+      "size": 650,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/autonomy-index-params-v3.json",
+      "size": 753,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/autonomy-index-params.json",
+      "size": 695,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/autonomy-index-result.json",
+      "size": 269,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/bp.json",
+      "size": 28814,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/bridge_state.json",
+      "size": 349,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/central_directive_20260916.json",
+      "size": 1139,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/channel-config.json",
+      "size": 784,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/circulation_results.json",
+      "size": 4226,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/cloud_local_audit_20260920.json",
+      "size": 19775,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/cloud_pending_upload_20260916.json",
+      "size": 1503,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/cognition_state.json",
+      "size": 135,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/commerce_result.json",
+      "size": 76644,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/commercial_PRD-20260915-09F8.json",
+      "size": 1451,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/commercial_PRD-20260915-23CE.json",
+      "size": 1367,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/commercial_PRD-20260915-840A.json",
+      "size": 1257,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/commercial_PRD-20260915-9E7A.json",
+      "size": 1355,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/commercial_PRD-20260915-A8B7.json",
+      "size": 1282,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/commercial_PRD-20260915-C472.json",
+      "size": 1338,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/conflict-resolution-report.json",
+      "size": 1396,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/core_asset_sync_manifest.json",
+      "size": 7072,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/cos_sync_daemon_snapshot.json",
+      "size": 940,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/creativity_retest.json",
+      "size": 86,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/creativity_retest2.json",
+      "size": 1117,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/credential_vault_sanitized.json",
+      "size": 3266,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/daily_evolution_report_20260914.json",
+      "size": 4905,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/daily_evolution_report_20260915.json",
+      "size": 2780,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/delivery-receipt.json",
+      "size": 393,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/deploy_DEPLOY-20260916-025541.json",
+      "size": 1943,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/deploy_DEPLOY-20260916-030943.json",
+      "size": 1341,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/deploy_DEPLOY-20260916-031041.json",
+      "size": 1341,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/dispatch_DISPATCH-20260916-030825.json",
+      "size": 5237,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/dispatch_DISPATCH-20260916-030845.json",
+      "size": 5238,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/dispatch_DISPATCH-20260916-030922.json",
+      "size": 4719,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/dispatch_DISPATCH-20260916-030943.json",
+      "size": 5481,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/dispatch_DISPATCH-20260916-031041.json",
+      "size": 5535,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/doc-result.json",
+      "size": 225,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/doubao-main-truths-manifest-20260914.json",
+      "size": 1964,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/draft_check.json",
+      "size": 1192,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/echarts_latent.json",
+      "size": 7660,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/evolution_index_v32.json",
+      "size": 1919,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/explore_EXPLORE-20260916-021930.json",
+      "size": 65315,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/explore_state.json",
+      "size": 427,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/feishu_asset_scan_full.json",
+      "size": 11670,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/full_sync_manifest_20260916.json",
+      "size": 16733,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/fw.json",
+      "size": 5638,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/fw_full.json",
+      "size": 5638,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/fw_now.json",
+      "size": 8456,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/gaps.json",
+      "size": 1820,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/global_scan_config.json",
+      "size": 1236,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/governance_report_20260919.json",
+      "size": 2443,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/governance_report_20260920.json",
+      "size": 2464,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/governance_state.json",
+      "size": 159,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/gpu_tokens_server.json",
+      "size": 72,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/guard_status.json",
+      "size": 236,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/high_value_mining_20260916.json",
+      "size": 846,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/homo-kernel.json",
+      "size": 1068,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/homology_env_report_latest.json",
+      "size": 1639,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/homology_protocol.json",
+      "size": 3188,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/homomorphic_baseline_20260915.json",
+      "size": 1138,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/hub_explore_20260916.json",
+      "size": 367,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/hub_explore_20260917.json",
+      "size": 367,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/hub_explore_20260918.json",
+      "size": 367,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/hub_explore_20260919.json",
+      "size": 367,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/hub_explore_20260920.json",
+      "size": 367,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/hub_state.json",
+      "size": 79,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/hvt_20260916.json",
+      "size": 756,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/hvt_20260917.json",
+      "size": 618,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/hvt_20260918.json",
+      "size": 617,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/hvt_20260919.json",
+      "size": 617,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/hvt_20260920.json",
+      "size": 618,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/hvt_20260921.json",
+      "size": 618,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/identity_node.json",
+      "size": 828,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/improve_20260915_195646.json",
+      "size": 994,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/improve_20260916_000021.json",
+      "size": 1003,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/improvement_proposals.json",
+      "size": 2239,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/integrity_report_20260918.json",
+      "size": 215,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/joint_simulation_result.json",
+      "size": 293,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/kernel-kpi.json",
+      "size": 193,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/kernel-v3-layer.json",
+      "size": 1257,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/kernel_api_discovery.json",
+      "size": 7181,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/kernel_root_full_scan.json",
+      "size": 10698,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/kernel_snapshot_LOCK-GATEWAY-SOP-20260915-001.json",
+      "size": 1039,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/kernel_snapshot_LOCK-SYNC-FULL-20260916-002.json",
+      "size": 1043,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/kernel_snapshot_LOCK-TRUTH-DISTILL-20260913-001.json",
+      "size": 1034,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/kernel_snapshot_LOCK-TRUTH-PACKAGE-20260915-001.json",
+      "size": 1036,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/kernel_snapshot_SYNC-RULES-20260912-001.json",
+      "size": 1040,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/kernel_struct_report_latest.json",
+      "size": 983,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/kernel_truths.json",
+      "size": 4252,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/kg_truth_snapshot.json",
+      "size": 1059,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/lark_check.json",
+      "size": 455,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/latent_space_data.json",
+      "size": 105498,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/latest.json",
+      "size": 1968,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/latest_run.json",
+      "size": 2826,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/live_LIVE-20260916-031928.json",
+      "size": 6792,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/live_LIVE-20260916-032045.json",
+      "size": 6789,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/lv_self_check_evidence.json",
+      "size": 746,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/m3-merged-audit.json",
+      "size": 5597,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/mechanism_docs.json",
+      "size": 2509,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/mechanism_state.json",
+      "size": 2093,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/media_gallery_report_latest.json",
+      "size": 674,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/memory_update_20260915.json",
+      "size": 3123,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/merged-audit-input-v2.json",
+      "size": 6631,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/merged-audit-input.json",
+      "size": 5336,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/merkle_proof.json",
+      "size": 841,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/meta_009_min_consumption_frozen.json",
+      "size": 1945,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/mining_state.json",
+      "size": 657,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/mr020-conflict-resolution-engine.json",
+      "size": 1211,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/mr020-integrated-kernel.json",
+      "size": 2897,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/mr020-six-dim-drift-engine.json",
+      "size": 2725,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/neural_network_report_latest.json",
+      "size": 1535,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/new_assets.json",
+      "size": 5578,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/node_learn_baseline.json",
+      "size": 1366,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/node_sync_verification.json",
+      "size": 208,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/operator-base-records.json",
+      "size": 6166,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/operator-executor.json",
+      "size": 19968,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/operator-history.json",
+      "size": 770605,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/operator-status.json",
+      "size": 4050,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/operator_performance_v32.json",
+      "size": 684,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/pending_upload_20260915.json",
+      "size": 8169,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/pipeline-status.json",
+      "size": 298,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/pipeline_spec.json",
+      "size": 6289,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/prepare_check.json",
+      "size": 311,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/pricing_results.json",
+      "size": 2761,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/processed_hashes.json",
+      "size": 419,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/product_entries.json",
+      "size": 5484,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/production_20260916.json",
+      "size": 722,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/promotion_report_latest.json",
+      "size": 2421,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/protocol-register-v2.json",
+      "size": 601,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/quality-machine.json",
+      "size": 1105,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/quality_check.json",
+      "size": 893,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/ref-index.json",
+      "size": 196691,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/refine_state.json",
+      "size": 4411,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/requirement-checklist.json",
+      "size": 2814,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/rules-correction.json",
+      "size": 1253,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/run_20260915_163128.json",
+      "size": 2584,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/run_20260915_163251.json",
+      "size": 2824,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/run_20260915_163416.json",
+      "size": 2826,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/run_20260915_163510.json",
+      "size": 2826,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/run_20260915_170116.json",
+      "size": 2372,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/run_20260915_170153.json",
+      "size": 2372,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/run_20260915_180836.json",
+      "size": 2081,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/run_20260915_184011.json",
+      "size": 2569,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/run_20260916_000548.json",
+      "size": 2248,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/run_20260916_123941.json",
+      "size": 2542,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/sec_compliance_report_20260912.json",
+      "size": 4810,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/security_report_latest.json",
+      "size": 1188,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/semantic-adapter-v2-live.json",
+      "size": 2174,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/semantic-adapter-v2.json",
+      "size": 5608,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/semantic-adapter-v3.json",
+      "size": 33200,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/signature-v2.json",
+      "size": 232,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/signature.json",
+      "size": 414,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/sim_result.json",
+      "size": 673,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/simulation_result.json",
+      "size": 180,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/simulation_results.json",
+      "size": 3643,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/simulation_results_final.json",
+      "size": 3014,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/six-dim-audit-report.json",
+      "size": 2187,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/snap.json",
+      "size": 1266,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/sop_audit_report_latest.json",
+      "size": 571,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/status.json",
+      "size": 56,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/stress_config.json",
+      "size": 993,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/sync-payload-20260915.json",
+      "size": 1421,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/sync-payload-v2.json",
+      "size": 1233,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/sync-payload.json",
+      "size": 1218,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/sync_manifest_full_20260916.json",
+      "size": 28532,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/sync_manifest_full_20260916_v2.json",
+      "size": 27608,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/sysinfo.json",
+      "size": 691,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/task_integrate_report_latest.json",
+      "size": 1573,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/task_value_report_latest.json",
+      "size": 2629,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/test_report.json",
+      "size": 3523,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/tokens.json",
+      "size": 4008,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/tokens_install.json",
+      "size": 203,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/truth_audit_report_latest.json",
+      "size": 1871,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/truth_distill_ledger.json",
+      "size": 1043,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/truth_distill_report_latest.json",
+      "size": 3725,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/truth_index_latest.json",
+      "size": 8332,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/truth_provenance_ledger.json",
+      "size": 1496,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/truth_rules_20260916.json",
+      "size": 12642,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/truths_raw_latest.json",
+      "size": 331,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/upload_results_20260916.json",
+      "size": 3837,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/verify_results.json",
+      "size": 1032,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/web_nav_graph.json",
+      "size": 35337,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/web_nav_report_latest.json",
+      "size": 744,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/writing-shape-check.json",
+      "size": 482,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/云端真值库体检报告-20260919.json",
+      "size": 1636,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "06_云端中枢同步/真值对账报告-20260919.json",
+      "size": 15536,
+      "meta_class": "M3_数据资产"
+    },
+    {
+      "path": "07_代码与脚本/01_detect.py",
+      "size": 8134,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/02_extract.py",
+      "size": 7144,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/03_visualize.py",
+      "size": 10200,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/04_productize.py",
+      "size": 5177,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/05_price.py",
+      "size": 3931,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/06_circulate.py",
+      "size": 7797,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/07_evaluate.py",
+      "size": 7260,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/08_propose.py",
+      "size": 5139,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/09_verify.py",
+      "size": 5165,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/38436747020400130_arbitration_engine.py",
+      "size": 2169,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/38436747020400130_gpu_brain_fastapi.py",
+      "size": 10817,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/38436747020400130_gpu_brain_fastapi_v2.py",
+      "size": 4304,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/38436747020400130_harden_api_server.sh",
+      "size": 3060,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/38436747020400130_run_stage_a.sh",
+      "size": 1790,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/38436747020400130_scheduler_upgrade_v1.2.py",
+      "size": 1721,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/38438412455799554_pipeline_runner.py",
+      "size": 4874,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/38438412455799554_semantic_meta_validator.py",
+      "size": 20034,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/38438412455799554_semantic_validator.py",
+      "size": 24280,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/38438412455799554_submit_and_run.sh",
+      "size": 1126,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/38438491307070978_eval.py",
+      "size": 2545,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/38438491307070978_prepare_data.py",
+      "size": 1707,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/38438491307070978_run_all.sh",
+      "size": 1121,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/38438491307070978_setup.sh",
+      "size": 806,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/38438491307070978_train.py",
+      "size": 4734,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/38438602859247618_code_self_evaluator.py",
+      "size": 22890,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/38438602859247618_meta_loop_guardian.py",
+      "size": 16818,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/38438602859247618_v3_meta_closed_loop.py",
+      "size": 19058,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-GEN-20260913-234351-BD81E8.py",
+      "size": 551,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-GEN-20260913-234351-EB3FB2.py",
+      "size": 616,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-GEN-20260914-010420-248C30.py",
+      "size": 551,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-GEN-20260914-010512-421389.py",
+      "size": 551,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-GEN-20260914-010645-248C30.py",
+      "size": 551,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-GEN-20260914-010729-421389.py",
+      "size": 551,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-GEN-20260914-010959-C47B2F.py",
+      "size": 551,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-GEN-20260914-011105-248C30.py",
+      "size": 551,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-GEN-20260914-011148-421389.py",
+      "size": 551,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-LLM-20260914-010248-67944F.py",
+      "size": 889,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-LLM-20260914-010305-C47B2F.py",
+      "size": 783,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-LLM-20260914-010525-1445E2.py",
+      "size": 607,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-LLM-20260914-010918-67944F.py",
+      "size": 889,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-LLM-20260914-011221-1445E2.py",
+      "size": 607,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-LLM-20260914-011425-67944F.py",
+      "size": 889,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-LLM-20260914-011436-C47B2F.py",
+      "size": 765,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-LLM-20260914-011628-248C30.py",
+      "size": 984,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-LLM-20260914-011650-421389.py",
+      "size": 621,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-LLM-20260914-011707-1445E2.py",
+      "size": 610,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-LLM-20260914-013914-B87E43.py",
+      "size": 688,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-LLM-20260914-013926-DD74C4.py",
+      "size": 604,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-LLM-20260914-013938-6E630A.py",
+      "size": 593,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-LLM-20260914-020318-67944F.py",
+      "size": 1309,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/OP-LLM-20260914-020414-403CF9.py",
+      "size": 1542,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/agi_autonomy_index_007.py",
+      "size": 6927,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/agi_commercial_plan_015.py",
+      "size": 4964,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/agi_dual_core_handshake_011.py",
+      "size": 6003,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/agi_embodied_sandbox_004.py",
+      "size": 6651,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/agi_engine_fleet_check_010.py",
+      "size": 6704,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/agi_media_pipeline_guard_014.py",
+      "size": 7822,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/agi_multi_agent_sync_005.py",
+      "size": 6343,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/agi_registry_upgrade_013.py",
+      "size": 7371,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/agi_safety_gate_003.py",
+      "size": 9532,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/agi_symbolic_engine_002.py",
+      "size": 6079,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/agi_wm_trainline_gate_012.py",
+      "size": 7250,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/agi_world_model_diff_001.py",
+      "size": 5261,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/api_gateway_validator.py",
+      "size": 9104,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/api_live_collector.py",
+      "size": 27133,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/approval_engine.py",
+      "size": 5778,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/arbitration_engine.py",
+      "size": 7975,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/asset_commerce_engine.py",
+      "size": 22211,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/asset_visualization_builder.py",
+      "size": 12236,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/attention_mechanism.py",
+      "size": 12815,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/attractor_dynamics.py",
+      "size": 18049,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/auto-evolution-pipeline.sh",
+      "size": 1899,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/auto_deploy_worker.py",
+      "size": 4257,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/auto_lock_report.py",
+      "size": 5557,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/auto_replay.py",
+      "size": 987,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/autonomy_index_calculator.py",
+      "size": 2273,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/base_capability_extract.py",
+      "size": 8380,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/boot_watch.sh",
+      "size": 1492,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/boundary_explorer.py",
+      "size": 24013,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/bridge_explore.py",
+      "size": 5936,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/build_corpus.py",
+      "size": 778,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/capability_mining_engine.py",
+      "size": 4991,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/central_dispatcher.py",
+      "size": 11715,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/channel-health-check.sh",
+      "size": 1156,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/cloud_handshake_sync.py",
+      "size": 6833,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/cmd1.sh",
+      "size": 227,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/cmd_check_lora.sh",
+      "size": 449,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/code_self_evaluator.py",
+      "size": 22890,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/compose.py",
+      "size": 520,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/creativity_grader.py",
+      "size": 1617,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/cs_exec.py",
+      "size": 2258,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/decision_engine.py",
+      "size": 5179,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/deep_persist.sh",
+      "size": 1179,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/deploy_pipeline.py",
+      "size": 9637,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/diag_load.py",
+      "size": 1573,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/drama-gateway-watchdog.sh",
+      "size": 1118,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/eval.py",
+      "size": 2545,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/evolution_executor.py",
+      "size": 2001,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/gen_dashboard.sh",
+      "size": 673,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/generate_gpu_token.py",
+      "size": 2417,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/global_asset_scan_v1.py",
+      "size": 10579,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/global_workspace_engine.py",
+      "size": 20927,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/gpu_brain_client.py",
+      "size": 5503,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/gpu_brain_fastapi.py",
+      "size": 5029,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/gpu_brain_fastapi_v2.py",
+      "size": 4304,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/gpu_brain_fastapi_v3.py",
+      "size": 5091,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/gpu_brain_fastapi_v4.py",
+      "size": 5030,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/gpu_brain_fastapi_v5.py",
+      "size": 7582,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/gpu_brain_fastapi_v6.py",
+      "size": 10817,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/gpu_brain_gradio.py",
+      "size": 3225,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/gpu_brain_server.py",
+      "size": 4268,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/harden_api_server.sh",
+      "size": 3060,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/high_value_mining_v2.py",
+      "size": 6813,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/high_value_task_runner.py",
+      "size": 6680,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/homology_env_report.py",
+      "size": 7006,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/hub_collab_explore.py",
+      "size": 6366,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/identity_node_protocol.py",
+      "size": 14467,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/im_notify.sh",
+      "size": 354,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/integrated_executor.sh",
+      "size": 1841,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/joint_simulation.py",
+      "size": 4498,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/kernel_api_server.py",
+      "size": 29827,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/kernel_struct_optimize.py",
+      "size": 9596,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/kg-api-watchdog.sh",
+      "size": 1529,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/kg_api.py",
+      "size": 21663,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/kg_api_deployed_v1.2.0.py",
+      "size": 21663,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/lifecycle_builder.py",
+      "size": 27125,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/llm_operator_generator.py",
+      "size": 41469,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/lock_unified.sh",
+      "size": 993,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/master_sim.sh",
+      "size": 6907,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/mechanism_refine.py",
+      "size": 3739,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/media_gallery_auto_publish.py",
+      "size": 10437,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/memory_restore.sh",
+      "size": 4977,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/memory_snapshot.sh",
+      "size": 7341,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/memory_update_deploy.py",
+      "size": 5085,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/meta_loop_guardian.py",
+      "size": 16818,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/motao_launch_fastapi.sh",
+      "size": 332,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/multi_agent_coupling.py",
+      "size": 20596,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/nexus_gateway_v2.py",
+      "size": 15424,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/node_neural_sync_evolve.py",
+      "size": 6156,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/notebook_1_neural_kernel_viz.ipynb",
+      "size": 6505,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/notebook_1_neural_kernel_viz.py",
+      "size": 4555,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/notebook_2_dynamics_simulation.ipynb",
+      "size": 7867,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/notebook_2_dynamics_simulation.py",
+      "size": 5711,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/notebook_3_truth_sdk.ipynb",
+      "size": 9303,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/notebook_3_truth_sdk.py",
+      "size": 6574,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/operator_generator.py",
+      "size": 18679,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/operator_generator_v3.py",
+      "size": 18679,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/patch_pre_validation.py",
+      "size": 7039,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/patch_unified_gateway.py",
+      "size": 8208,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/pipeline_runner.py",
+      "size": 4728,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/prepare_data.py",
+      "size": 1707,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/processor_registry.py",
+      "size": 15647,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/production_engine.py",
+      "size": 5681,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/rag_node.py",
+      "size": 1266,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/ref-query.py",
+      "size": 3049,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/refine_via_cognition.py",
+      "size": 6602,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/report_to_kernel.sh",
+      "size": 1048,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/report_unified.py",
+      "size": 3027,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/rule_asset_promotion.py",
+      "size": 7542,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/run_all.sh",
+      "size": 1121,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/run_autonomy_loop.sh",
+      "size": 546,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/run_stage_a.sh",
+      "size": 3055,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/run_stage_b.sh",
+      "size": 1878,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/run_stage_c.sh",
+      "size": 1860,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/run_stage_d.sh",
+      "size": 1720,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/scheduler_upgrade_v1.2.py",
+      "size": 1721,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/scheduler_v1.2_upgrade.py",
+      "size": 6267,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/sdk_client.py",
+      "size": 3524,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/sec_compliance_self_check.sh",
+      "size": 8703,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/security_judge.py",
+      "size": 7406,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/seed_corpus.py",
+      "size": 589,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/self_improve_runner.py",
+      "size": 2658,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/semantic_meta_validator.py",
+      "size": 20034,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/semantic_stress_tester.py",
+      "size": 7539,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/semantic_validator.py",
+      "size": 24280,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/setup.sh",
+      "size": 806,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/setup_monitoring.sh",
+      "size": 795,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/sim_validation.py",
+      "size": 6186,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/simulation_test.py",
+      "size": 3565,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/six_dim_drift_audit.py",
+      "size": 4605,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/six_dim_selfcheck.sh",
+      "size": 1422,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/snapshot_aggregator.py",
+      "size": 6207,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/sop_auto_update.py",
+      "size": 7418,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/start_agent.py",
+      "size": 2006,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/submit_and_run.sh",
+      "size": 1126,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/switch_kernel.sh",
+      "size": 943,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/sync_learning.py",
+      "size": 5686,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/task-router.py",
+      "size": 3486,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/task_auto_integrate.py",
+      "size": 8214,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/task_queue.py",
+      "size": 286,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/task_value_governance.py",
+      "size": 8109,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/tech_article_pipeline.py",
+      "size": 11750,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/test_api_gateway.py",
+      "size": 13758,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/token_manager.py",
+      "size": 6170,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/train.py",
+      "size": 4734,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/triad_memory_sync.py",
+      "size": 5357,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/truth-bidirectional-sync.py",
+      "size": 3494,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/truth_distill_engine.py",
+      "size": 8204,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/truth_extract_for_model.py",
+      "size": 8625,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/truth_governance.py",
+      "size": 9386,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/truth_immortality_guard.py",
+      "size": 5585,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/truth_provenance_audit.py",
+      "size": 5051,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/truth_rag.py",
+      "size": 2880,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/truth_refine_engine.py",
+      "size": 6943,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/upload_to_cos.sh",
+      "size": 2735,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/upload_to_server.sh",
+      "size": 2555,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/v31_meta_closed_loop.py",
+      "size": 29500,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/v32_meta_closed_loop.py",
+      "size": 75346,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/v3_meta_closed_loop.py",
+      "size": 19058,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/verify_node_baseline.py",
+      "size": 6322,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/web_nav_builder.py",
+      "size": 12303,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "07_代码与脚本/worker_daemon.py",
+      "size": 6186,
+      "meta_class": "M4_代码脚本"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.sec-keys-encrypted-20260916.tar.gz.enc",
+      "size": 544,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.approval_audit/approval_20260916-031016.json",
+      "size": 85,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.approval_audit/approval_20260916-031032.json",
+      "size": 1030,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.approval_audit/approval_20260916-031334.json",
+      "size": 418,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.approval_audit/approval_20260916-031511.json",
+      "size": 419,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.approval_audit/approval_20260916-031910.json",
+      "size": 413,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.approval_audit/approval_20260916-031923.json",
+      "size": 413,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.approval_audit/approval_20260916-091233.json",
+      "size": 416,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.approval_audit/approval_20260916-093346.json",
+      "size": 453,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.approval_audit/approval_20260916-102650.json",
+      "size": 445,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.arbitration/arbitration_20260916-030706.json",
+      "size": 6808,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.decision_audit/decision_20260916-025722.json",
+      "size": 1442,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.decision_audit/decision_20260916-095209.json",
+      "size": 879,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.deploy_tracker/deploy_tracker.json",
+      "size": 1537,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.lock_report_receipts/LOCK-AUTO-CHAIN-20260916_receipt.json",
+      "size": 1168,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.memory_deploy_audit/closed_loop_20260916-031923.json",
+      "size": 372,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.memory_deploy_audit/memory_ledger.json",
+      "size": 487,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.rag/truth_keys.json",
+      "size": 1202241,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.rag/cache/ACHIEVEMENT.AIOS.APPROVAL.NODE_UNIFY.20260915.json",
+      "size": 437,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.rag/cache/ACTIVATION.GPU-BRAIN.20260918.json",
+      "size": 331,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.rag/cache/ACTIVATION.GPU-BRAIN.A10.QWEN7B.json",
+      "size": 197,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.rag/cache/AIOS.ADAPTATION.json",
+      "size": 462,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.rag/cache/AIOS.ARCHITECTURE.THREE_TIER.json",
+      "size": 382,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.rag/cache/AIOS.AUTONOMOUS.EXPLORATION.MECHANISM.json",
+      "size": 408,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.rag/cache/AIOS.AUTO_OPS.MECHANISM.V1.json",
+      "size": 1138,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.rag/cache/CONFIG.GPU-BRAIN.CONNECTION.json",
+      "size": 256,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.rag/cache/DEPLOY.GPU-BRAIN.20260917.json",
+      "size": 288,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.rag/cache/LOCK.GPU-BRAIN-001.20260918.json",
+      "size": 317,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.sync/asset_inventory_20260916.json",
+      "size": 142,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.sync/asset_inventory_full_20260916.json",
+      "size": 1733,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.sync/cloud_baseline.json",
+      "size": 48,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.sync/full_sync_receipt_20260916.json",
+      "size": 544,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.sync_learning/learned_index.json",
+      "size": 2285,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.triad_memory/triad_memory_20260916-021153.json",
+      "size": 7029,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.triad_memory/triad_memory_20260916-095228.json",
+      "size": 541,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.truth_guard/snapshot_index.json",
+      "size": 1245,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.truth_guard/truth_snap_agent_20260916-020444.json",
+      "size": 460598,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.truth_guard/truth_snap_agent_20260916-025607.json",
+      "size": 407877,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.truth_guard/truth_snap_agent_20260916-025717.json",
+      "size": 473557,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.truth_guard/truth_snap_agent_20260916-031909.json",
+      "size": 488004,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.truth_guard/truth_snap_agent_20260916-031919.json",
+      "size": 488004,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.truth_guard/truth_snap_authority_20260916-020444.json",
+      "size": 454422,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.truth_guard/truth_snap_authority_20260916-025607.json",
+      "size": 405803,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.truth_guard/truth_snap_authority_20260916-025717.json",
+      "size": 409104,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.truth_guard/truth_snap_authority_20260916-030637.json",
+      "size": 412334,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.truth_guard/truth_snap_authority_20260916-031909.json",
+      "size": 416850,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.truth_guard/truth_snap_authority_20260916-031919.json",
+      "size": 416850,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.truth_guard/truth_snap_runtime_20260916-020444.json",
+      "size": 460598,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.truth_guard/truth_snap_runtime_20260916-025607.json",
+      "size": 407877,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.truth_guard/truth_snap_runtime_20260916-025717.json",
+      "size": 473557,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.truth_guard/truth_snap_runtime_20260916-030637.json",
+      "size": 479609,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.truth_guard/truth_snap_runtime_20260916-031909.json",
+      "size": 488004,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__.truth_guard/truth_snap_runtime_20260916-031919.json",
+      "size": 488004,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__core-asset-sync-20260909/core_asset_sync_manifest.json",
+      "size": 7072,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__core-asset-sync-20260909/core_asset_sync_manifest.md",
+      "size": 4766,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__core-asset-sync-20260909/meta_009_min_consumption_frozen.json",
+      "size": 1945,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__core-asset-sync-20260909/node_rsa_public_key.pem",
+      "size": 451,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__core-asset-sync-20260909/api_data_snapshot/kernel-kpi.json",
+      "size": 193,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__core-asset-sync-20260909/api_data_snapshot/operator-base-records.json",
+      "size": 6166,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__core-asset-sync-20260909/api_data_snapshot/operator-executor.json",
+      "size": 19968,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__core-asset-sync-20260909/api_data_snapshot/operator-history.json",
+      "size": 770605,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__core-asset-sync-20260909/api_data_snapshot/operator-status.json",
+      "size": 4050,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__core-asset-sync-20260909/api_data_snapshot/pipeline-status.json",
+      "size": 298,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__core-asset-sync-20260909/api_data_snapshot/sysinfo.json",
+      "size": 691,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__ssh-key-seal-20260912/HOMO-KERNEL-SEAL-20260912.enc",
+      "size": 2016,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__ssh-key-seal-20260912/KERNEL-ACCESS-SEAL-20260912.enc",
+      "size": 2400,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__ssh-key-seal-20260912/KERNEL-ACCESS-SEAL-20260912.enc.sha256",
+      "size": 120,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__ssh-key-seal-20260912/LOCK-GLOBAL-REPORT-20260912.json",
+      "size": 1279,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__ssh-key-seal-20260912/SEAL-MANIFEST.json",
+      "size": 719,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__ssh-key-seal-20260912/SEAL-SCAN-PROOF.json",
+      "size": 657,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38436747020400130__ssh-key-seal-20260912/report_to_kernel.sh",
+      "size": 1048,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438412455799554__.secure-vault-20260912/ENCRYPTION_MANIFEST.txt",
+      "size": 607,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438412455799554__.secure-vault-20260912/PASSPHRASE.txt",
+      "size": 65,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438412455799554__.secure-vault-20260912/README_恢复说明.md",
+      "size": 1318,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438412455799554__.secure-vault-20260912/enc_1_credential_vault_complete.json.enc",
+      "size": 4976,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438412455799554__.secure-vault-20260912/enc_2_credential_vault_complete.json.enc",
+      "size": 4976,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438412455799554__.secure-vault-20260912/enc_3_credential_vault.zip.enc",
+      "size": 6784,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438412455799554__.secure-vault-20260912/enc_4_credential_vault_complete.json.enc",
+      "size": 4976,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438412455799554__.secure-vault-20260912/enc_5_nexus.key.enc",
+      "size": 1728,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/SIMULATION_REPORT.md",
+      "size": 7031,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/certs/metagate_cluster_client_certs_20260912.tar.gz",
+      "size": 6116,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/certs/metagate_cluster_client_certs_full_20260912.tar.gz",
+      "size": 6835,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/certs/nexus.crt",
+      "size": 1411,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/certs/nexus.key",
+      "size": 1704,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/certs/nexus_ca.crt",
+      "size": 1326,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/certs/nexus_ca.key",
+      "size": 1704,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/certs/nexus_client.crt",
+      "size": 1342,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/certs/nexus_client.key",
+      "size": 1704,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/certs/nodes/nexus_ca.crt",
+      "size": 1326,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/certs/nodes/node-01.crt",
+      "size": 1330,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/certs/nodes/node-01.key",
+      "size": 1704,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/certs/nodes/node-02.crt",
+      "size": 1330,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/certs/nodes/node-02.key",
+      "size": 1704,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/certs/nodes/node-03.crt",
+      "size": 1330,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/certs/nodes/node-03.key",
+      "size": 1708,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/logs/gateway_stdout.log",
+      "size": 2468,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/logs/gw2.log",
+      "size": 2370,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/logs/gw_metagate_20260912.log",
+      "size": 676,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/logs/gw_mtls_20260912.log",
+      "size": 739,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/logs/gw_start_20260912.log",
+      "size": 693,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/logs/nexus_gateway.log",
+      "size": 3603,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/opt/ZONGYUAN-ROOT/engine/nexus/nexus_gateway_v2.py",
+      "size": 15424,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/opt/ZONGYUAN-ROOT/engine/nexus/nexus_gateway_v2.py.bak_mtls",
+      "size": 14801,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/opt/ZONGYUAN-ROOT/engine/nexus/sdk_client.py",
+      "size": 3524,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/opt/ZONGYUAN-ROOT/engine/nexus/sdk_client.py.bak",
+      "size": 3496,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/opt/ZONGYUAN-ROOT/engine/nexus/token_manager.py",
+      "size": 6170,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/opt/ZONGYUAN-ROOT/engine/nexus/token_manager.py.bak",
+      "size": 6114,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/opt/ZONGYUAN-ROOT/engine/nexus/tokens.json",
+      "size": 4008,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/opt/ZONGYUAN-ROOT/engine/nexus/__pycache__/nexus_gateway_v2.cpython-312.pyc",
+      "size": 20281,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/opt/ZONGYUAN-ROOT/engine/nexus/__pycache__/sdk_client.cpython-312.pyc",
+      "size": 5532,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/opt/ZONGYUAN-ROOT/engine/nexus/__pycache__/token_manager.cpython-312.pyc",
+      "size": 10085,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/opt/ZONGYUAN-ROOT/protocols/HOMOLOGY-AUTH-PROTOCOL-V1.0.md",
+      "size": 6733,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/tests/simulation_results.json",
+      "size": 3643,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__nexus_sim/tests/simulation_results_final.json",
+      "size": 3014,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__sealed_keys/seal_passphrase.txt",
+      "size": 45,
+      "meta_class": "M2_决策仲裁"
+    },
+    {
+      "path": "08_运行时数据与审计/38438491307070978__sealed_keys/ssh_keys_sealed_20260912.enc",
+      "size": 496,
+      "meta_class": "M2_决策仲裁"
+    }
+  ]
+}

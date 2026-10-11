@@ -1,0 +1,24 @@
+{
+  "asset_id": "ASSET-PUB-20261006-017",
+  "name": "ZONGYUAN-ROOT自治内核白皮书V2.0(专业巡检升级)",
+  "source": "自治内核V1.1基线全集(43条种子真值, L1巡检SAFE)",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/zongyuan-autonomous-kernel-whitepaper-v12",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/zongyuan-autonomous-kernel-whitepaper-v12.git",
+  "published_at": "2026-10-07T11:18:00",
+  "version": "V2.0(2026-10-07当前版); V1.2(2026-10-06,基线V1.1归档保留)",
+  "files": [
+    "WHITEPAPER-KERNEL-V2.0.md(+新增)",
+    "WHITEPAPER-KERNEL-V2.0.html(+新增)",
+    "kernel_arch_v2.json(+新增)",
+    "README.md(更新)",
+    "WHITEPAPER-KERNEL-V1.2.md(归档)",
+    "WHITEPAPER-KERNEL-V1.2.html(归档)",
+    "kernel_arch.json(归档)"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.zongyuan-autonomous-kernel-whitepaper-v12-UPGRADE.20261007 (http=200)",
+  "quota": "零豆包付费"
+}

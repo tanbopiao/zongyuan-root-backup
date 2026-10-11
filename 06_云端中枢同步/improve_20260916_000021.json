@@ -1,0 +1,21 @@
+{
+  "run_id": "IMP-RUN-20260916-000020",
+  "started_at": "2026-09-16T00:00:20",
+  "finished_at": "2026-09-16T00:00:21",
+  "status": "success",
+  "loop": false,
+  "stages": {
+    "evaluate": {
+      "status": "ok",
+      "message": "  - GAP-SVC-记忆网关 [medium] 服务疑似离线: 记忆网关 |   - GAP-SVC-通信网关 [medium] 服务疑似离线: 通信网关 |   - GAP-SVC-希尔伯特镜像态 [medium] 服务疑似离线: 希尔伯特镜像态 |   - GAP-SVC-量子纠缠层 [medium] 服务疑似离线: 量子纠缠层"
+    },
+    "propose": {
+      "status": "ok",
+      "message": "  - IMP-20260916-001 [approval] 服务疑似离线: 记忆网关 |   - IMP-20260916-002 [approval] 服务疑似离线: 通信网关 |   - IMP-20260916-003 [approval] 服务疑似离线: 希尔伯特镜像态 |   - IMP-20260916-004 [approval] 服务疑似离线: 量子纠缠层"
+    },
+    "verify": {
+      "status": "ok",
+      "message": "[verify] OK: total=4 verified=0 rollback=0 reported=0"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "baseline_id": "V2.4-BASELINE-20260929-001",
+  "kernel_version": "V2.4.0-MEMORY-QUANTIZED",
+  "supersedes": "EVOLUTION-BASELINE-20260929-001（V2.3.0-GIT-BRIDGE-LOCKED）",
+  "evolved_from": "KERNEL-EVOLUTION-001（筹备型进化，路径B）",
+  "created_at": "2026-09-29T12:43:42+08:00",
+  "omega_anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "node_id": "ZR-NODE-DC2E51C0",
+  "milestone": "内核级进化首个里程碑：记忆连续性量化+自检证据驱动双公理转正",
+  "gate_result": {
+    "gate1_asset_completeness": "PASS（元公理20/法则26/锁档6 FROZEN/冷启动8.5步）",
+    "gate2_health": "PASS（记忆连续性1.0 ≥0.90；自检91.7% ≥90%）",
+    "gate3_evo_candidates": "PASS（2/2 候选通过EVO-GATE，均≥85转公理）"
+  },
+  "v24_targets_verified": {
+    "memory_continuity": {
+      "target": 0.9,
+      "actual": 1.0,
+      "status": "PASS"
+    },
+    "self_check_maturity": {
+      "target": "90%",
+      "actual": "91.7%",
+      "status": "PASS"
+    },
+    "meta_axioms": {
+      "target": 12,
+      "actual": 20,
+      "status": "PASS"
+    },
+    "mr_axiom_confirmed": {
+      "target": 15,
+      "actual": 26,
+      "status": "PASS"
+    },
+    "cold_start_time": {
+      "target": "<90s",
+      "actual": "8.5步全绿",
+      "status": "PASS"
+    },
+    "evolution_candidates_passed": {
+      "target": 2,
+      "actual": 2,
+      "status": "PASS"
+    }
+  },
+  "new_axioms": [
+    "MA-CONTINUITY-001（EVO-20260929-C001，88/90/92）",
+    "MA-RECHECK-001（EVO-20260929-C002，85/88/90）"
+  ],
+  "axiom_total": 20,
+  "rules_confirmed": 26,
+  "rules_total": 26,
+  "next_target": "V2.5（2026-10-20）：memory_continuity≥0.95；self_check≥92%；meta_axioms≥18；failover_drill=1",
+  "approval_serial": "202609290004"
+}

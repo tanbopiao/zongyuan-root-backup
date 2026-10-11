@@ -1,0 +1,13 @@
+{
+  "action": "TRUTH-META-001-V1.1-LOCK",
+  "truth_id": "TRUTH-META-001",
+  "version": "V1.1",
+  "www": "HTTP200",
+  "drama": "HTTP200",
+  "feishu_base": "reczz28K8yrLWGGH",
+  "asset_path": "/home/user/ZONGYUAN-ROOT/06_云端中枢同步/TRUTH-META-001-V1.1-20261006.json",
+  "axiom": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "reported_at": "2026-10-06T21:37:52+08:00",
+  "status": "LOCKED"
+}

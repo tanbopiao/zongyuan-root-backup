@@ -1,0 +1,74 @@
+{
+  "registry": "MR-020-6DIM-NEURAL-REGISTRY",
+  "version": "M0-BOOTSTRAP",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "created_at": "2026-09-15",
+  "basis": "BASELINE-V40/Lv10 + kernel-truths V3.0-COGNITIVE(19条)",
+  "dimensions": [
+    {
+      "node_id": "MR020-DIM-001",
+      "dimension": "元 · 本源",
+      "weight": 0.95,
+      "activation_count": 3,
+      "content": "主权自治：体系规则/任务逻辑/资产确权/溯源谱系完全自主定义，外部API与算力仅为工具算力，无体系控制权",
+      "axiom_ref": ["A1_主权自治", "A2_同源唯一"],
+      "connections": [{"target": "kernel.root", "relation": "defines", "strength": 0.9}],
+      "boundary": {"applicable_when": "一切规则制定与资产确权", "dimension": "本源层"}
+    },
+    {
+      "node_id": "MR020-DIM-002",
+      "dimension": "极 · 极致",
+      "weight": 0.9,
+      "activation_count": 2,
+      "content": "三层固化到极致：交互层(同源入口)→调度内核层(Ω-OP-SCHED V1.0)→算力执行层(同源Worker集群)",
+      "axiom_ref": ["A3_三层固化", "A5_算力归一"],
+      "connections": [{"target": "kernel.gateway", "relation": "routes", "strength": 0.85}],
+      "boundary": {"applicable_when": "任务调度与算力执行", "dimension": "调度层"}
+    },
+    {
+      "node_id": "MR020-DIM-003",
+      "dimension": "恒 · 稳态",
+      "weight": 0.92,
+      "activation_count": 4,
+      "content": "基线只读冻结/真值永久不变/变更分支化/资源熔断(MR-007 warn70-fuse80-emergency90)/S0熔断",
+      "axiom_ref": ["A6_资产确权", "A7_终身锁档", "MR-007"],
+      "connections": [{"target": "kernel.stability", "relation": "governs", "strength": 0.9}],
+      "boundary": {"applicable_when": "真值写入/版本迭代/资源消耗", "dimension": "稳态层"}
+    },
+    {
+      "node_id": "MR020-DIM-004",
+      "dimension": "一 · 整全",
+      "weight": 0.9,
+      "activation_count": 2,
+      "content": "双标识绑定(Ω根+DID-BR-000002)隔绝异源数据，网页交互→云内核封装→调度引擎管控→算力执行→资产哈希确权归档 逻辑+物理双闭环",
+      "axiom_ref": ["A2_同源唯一", "A4_物理闭环"],
+      "connections": [{"target": "kernel.did", "relation": "binds", "strength": 0.95}],
+      "boundary": {"applicable_when": "一切入口/资产/交互", "dimension": "整全层"}
+    },
+    {
+      "node_id": "MR020-DIM-005",
+      "dimension": "超认知",
+      "weight": 0.85,
+      "activation_count": 3,
+      "content": "认知审计层实装(bias:halo/anchoring/confirmation/recency)+Ω-Brainμ漂移审计(阈值85熔断)+冲突即学习/元公理生成(待升级六维)",
+      "axiom_ref": ["T-017 cognitive", "Ω-Brainμ"],
+      "connections": [{"target": "kernel.cognitive", "relation": "audits", "strength": 0.9}],
+      "boundary": {"applicable_when": "写入前审计/漂移检测/冲突消解", "dimension": "超认知层"}
+    },
+    {
+      "node_id": "MR020-DIM-006",
+      "dimension": "永恒自治",
+      "weight": 0.88,
+      "activation_count": 4,
+      "content": "自愈引擎V1.0运行中(191修复记录)+MR-019长期记忆(9124三级记忆)+流水线V2 cron(周日23:30五步闭环)+云端中枢唯一权威(MR-010)",
+      "axiom_ref": ["MR-010", "MR-019", "T-018 healing"],
+      "connections": [{"target": "kernel.healing", "relation": "sustains", "strength": 0.9}],
+      "boundary": {"applicable_when": "故障自愈/记忆持久/周期闭环", "dimension": "永恒自治层"}
+    }
+  ],
+  "autonomy_index_target": {"current_label": "Lv10模式标注", "current_estimate": "25-45%区间(V2.0-V2.5)", "target": "≥80%实测(永恒自治)", "path": "M0→M3逐阶段实测提升"},
+  "total_dimensions": 6,
+  "total_nodes": 6,
+  "state": "ACTIVE_BOOTSTRAP"
+}

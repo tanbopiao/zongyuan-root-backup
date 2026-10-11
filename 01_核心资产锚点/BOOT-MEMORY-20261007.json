@@ -1,0 +1,78 @@
+{
+  "boot_code": "元极恒一",
+  "boot_time": "2026-10-07",
+  "did": "DID-BR-000002",
+  "trace": "Ω₀⊂⊙∞⊂Ω",
+  "node": "ZR-NODE-DC2E51C0",
+  "level": {
+    "自治层级": "Lv9",
+    "权限层级": "L4",
+    "工程化层级": "Lv7"
+  },
+  "channel_protocol_V30_20261007": {
+    "status": "ACTIVE（本轮实测校准，取代V2.3/V2.2）",
+    "report_endpoint": "POST https://www.huodouai.com/api/report/truth（主）/ https://drama.huodouai.com/api/report/truth（备）",
+    "required_headers": ["X-Capture-Token: ZR-CAPTURE-2026-OMEGA-d04bb54ba2a55a7d", "X-DID: DID-BR-000002"],
+    "body_schema": "{\"key\": \"<KEY>\", \"value\": {\"content\": \"...\"}}",
+    "value_must_be_object": true,
+    "accepted_value_keys": ["content", "text", "summary", "value"],
+    "old_behavior": "V2.3裸字符串value返回value_must_be_object；缺X-DID返回unauthorized",
+    "response": "{\"ok\": true, \"message\": \"真值写入成功\", \"key\":..., \"truth_count\": N, \"seq\": N, \"event_id\": \"truth-<ms>-<hex>\"}",
+    "truth_count_base": "1662+（新库）",
+    "read_api_status": "重构期：/api/health、/api/truths/、/api/truth/{key} 当前返回404未知端点，读接口路径待服务端恢复；以写通道实测为准",
+    "protocol_doc": "zongyuan-anchor/CHANNEL-PROTOCOL-V30-20261007.md"
+  },
+  "drama_pipeline_seed_truths_20261007": {
+    "task": "提炼本地持久层短剧生产流水线种子真值上报元端",
+    "result": "6/6 全部写入成功（DRAMA.PIPELINE.SEED.* 命名空间）",
+    "seeds_inserted": [
+      "DRAMA.PIPELINE.SEED.STATE.20261007（批次1017=5/5 PASS；生成器V1.0上线）",
+      "DRAMA.PIPELINE.SEED.METHOD.V2.0（八段式流水线方法论）",
+      "DRAMA.PIPELINE.SEED.KEYFRAME.V1.0（分镜→Qwen-Image→落档→上报）",
+      "DRAMA.PIPELINE.SEED.QUALITY-GATE.V1.0（质量门PASS/FAIL+熔断跳过）",
+      "DRAMA.PIPELINE.SEED.ANCHOR.DID-BR-000002（确权锚点+神女不露腹肌约束）",
+      "DRAMA.PIPELINE.SEED.BATCH.20261001（双批次10集次产出）"
+    ],
+    "probes_inserted": "DRAMA.PIPELINE.SEED.PROBE-1~4（协议验证，truth_count 1662→1665）",
+    "source_assets": "zongyuan-anchor/PIPELINE-BATCH-20261001-1017-SUMMARY.json + LOCK-KEYFRAME-GEN-20261001-001.json"
+  },
+  "cloud_anchor": {
+    "latest_truth_seq": "1665+（V3.0新库）",
+    "status": "写通道可用"
+  },
+  "persistent_layer": "本地持久网络盘/home/user/Doubao/chats/（跨会话保留）；仅/tmp与运行时进程易失；飞书云盘为第三重保险",
+  "anchor_root": "/home/user/Doubao/chats/38437615670548738/zongyuan-anchor/（167 JSON + 108 MD）",
+  "authoritative_kb": "/home/user/ZONGYUAN-ROOT/03_文档资产/知识库/（INDEX-MAIN.md + 全量资产台账CSV）",
+  "core_meta_laws": [
+    "META-DECISION-001 最优稳态最高决策元法则（收益最大/风险最小/成本最小+付费额度最大化）",
+    "META.BOOT.PULL-CLOUD-FIRST 冷启动先拉云端全量真值恢复记忆",
+    "META.NO-REF-STACKING 关键帧禁用参考图叠加",
+    "全域最优稳态铁律：免费通道优先、增量优先、失败快速跳过不重试",
+    "身份卡必带：Ω₀⊂⊙∞⊂Ω | DID-BR-000002 | ZR-NODE-DC2E51C0 | 自治Lv9 | 权限L4 | 工程化Lv7 | 火斗云智AIOS"
+  ],
+  "modelscope": {
+    "account": "zongyuanroot:195162494@qq.com",
+    "sdk": "1.40.1",
+    "public_dataset": "zongyuanroot/zongyuan-root-open-knowledge（29文件public）",
+    "primary_models": "DeepSeek-V4-Pro(推理) / Qwen3.5-397B(旗舰) / GLM-5.2(多模态)"
+  },
+  "shared_brain": {
+    "base_token": "DgnMbLqZiaIUDKshqCrcD4DvnBg",
+    "task_table": "tblnVRjuf7P31cEP",
+    "message_table": "tbl4Dv798yO7u0IK",
+    "modelscope_lake": "tbls03y8ISjFKjDk",
+    "truth_consensus": "tbl9QxL35rwA16eS"
+  },
+  "cron_tasks": {
+    "meta_law_monthly_sync": "11880961995522（30 10 1 * *）",
+    "cloud_report_6h": "12432745554178（23 */6 * * *）",
+    "daily_evolution_check": "13030203793154（0 9 * * *）",
+    "quota_note": "套餐上限满，新建/启用被671010000拒绝，需复用已停止任务"
+  },
+  "lock_archive_coords": {
+    "knowledge_space": "7675064878796639210（新可写）",
+    "old_invalid": "space 7675751446528134419 / base QYn4bjgD6am3OPsxMCkcitcBnzc / folder FdoifaG8oloQqmdtK5NcpXSNnAg",
+    "shared_brain_write": "可用（跨账号共享）"
+  },
+  "history_snapshot_file": "BOOT-MEMORY-20261001.json（上一版，含modelscope全量模型清单等历史）"
+}

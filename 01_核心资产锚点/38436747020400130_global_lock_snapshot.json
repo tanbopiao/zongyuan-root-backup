@@ -1,0 +1,161 @@
+{
+  "lock_id": "GLOBAL-LOCK-20260909-FINAL-META-HENGYI",
+  "lock_name": "ZONGYUAN-ROOT 全域锁档·凭证五地备份+SSH密钥连接记忆协议",
+  "lock_time": "2026-09-09T11:26:17.634828+00:00",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "kernel_version": "Ω-Brainμ 3.0-V3",
+  "kernel_status": "healthy",
+  "lock_scope": "全域所有资产·凭证·连接协议·记忆协议",
+  "session_summary": {
+    "date": "2026-09-09",
+    "major_achievements": [
+      "云内核根节点全景扫描（102端点探测，27算子十层拓扑）",
+      "飞书全域资产扫描（15空间126文档，云电脑节点发现）",
+      "云内核API发现（7个真实GET端点，800KB数据快照）",
+      "核心资产全域同步（76文件→32核心资产，10分类，锁档率90.6%）",
+      "敏感凭证三端锁档（5项凭证，脱敏上云+明文本地3位置备份）",
+      "凭证上传云服务器本地磁盘+COS（五地备份完成）",
+      "SSH密钥认证连接成功（用户已配置公钥，免密登录）",
+      "META-009最小消耗最优稳态生成元规则正式锁档"
+    ],
+    "assets_created_today": [
+      "kernel-root-scan-20260909（全景扫描报告）",
+      "feishu-asset-scan-20260909（飞书资产扫描）",
+      "kernel-api-discovery-20260909（API发现文档）",
+      "kernel-api-data-20260909（7端点API数据快照800KB）",
+      "core-asset-sync-20260909（核心资产同步清单）",
+      "credential-lock-20260909（敏感凭证三端锁档）",
+      "credential-upload-20260909（凭证上传工具包）",
+      "global-lock-20260909-final（本次全域锁档）"
+    ]
+  },
+  "memory_protocol": {
+    "name": "ZONGYUAN-ROOT 云服务器连接记忆协议",
+    "version": "1.0",
+    "purpose": "确保新窗口/新节点能快速恢复云服务器SSH连接和COS访问",
+    "ssh_connection": {
+      "method": "SSH密钥认证（免密登录）",
+      "host": "123.207.202.158",
+      "port": 22,
+      "user": "root",
+      "private_key": "~/.ssh/id_ed25519",
+      "public_key_fingerprint": "SHA256:nUwt3YmRs/+I97S8L+8r1E2x7sMBKJpv6D8CVQegMJ8",
+      "key_comment": "zongyuan-cloud-agent-20260909",
+      "connection_command": "ssh -o BatchMode=yes -o ConnectTimeout=10 -p 22 root@123.207.202.158",
+      "scp_command": "scp -P 22 <local_file> root@123.207.202.158:<remote_path>",
+      "status": "已验证可用（2026-09-09）",
+      "note": "用户已将公钥添加到服务器authorized_keys，无需密码。新窗口如密钥丢失，需用户重新配置。"
+    },
+    "cos_config": {
+      "method": "coscmd（服务器端已配置）",
+      "bucket": "zongyuan-1341127773",
+      "region": "ap-guangzhou",
+      "config_file": "~/.cos.conf（服务器端）",
+      "coscmd_path": "/usr/local/bin/coscmd",
+      "upload_command": "coscmd upload <local_file> <cos_path>",
+      "list_command": "coscmd list <cos_path>",
+      "credentials_path": "zongyuan-root/credentials/",
+      "status": "已验证可用（2026-09-09）",
+      "note": "SecretId/SecretKey已配置在服务器~/.cos.conf，本地无需保存。通过SSH到服务器后使用coscmd。"
+    },
+    "server_paths": {
+      "kernel_root": "/opt/ZONGYUAN-ROOT/",
+      "credentials": "/opt/ZONGYUAN-ROOT/credentials/",
+      "api_keys": "/opt/ZONGYUAN-ROOT/config/api_keys_unified.json",
+      "identity": "/opt/ZONGYUAN-ROOT/identity/",
+      "did_keys": "/opt/ZONGYUAN-ROOT/engine/.did_keys/",
+      "security_keys": "/opt/ZONGYUAN-ROOT/zr_mhp_security/",
+      "cos_config": "/root/.cos.conf"
+    },
+    "five_backup_locations": {
+      "local_primary": "~/Doubao/chats/38436747020400130/credential-lock-20260909/",
+      "local_backup_1": "~/.super_doubao/super-doubao-runtime/workspace/credential-backup/",
+      "local_backup_2": "~/.doubao/agent_mode/workspace/.sessions/38436747020400130/agents/m_0cwcobelJjA/credential-backup/",
+      "cloud_server": "root@123.207.202.158:/opt/ZONGYUAN-ROOT/credentials/",
+      "tencent_cos": "cos://zongyuan-1341127773/zongyuan-root/credentials/"
+    },
+    "recovery_protocol": {
+      "step1": "检查本地SSH密钥: ls ~/.ssh/id_ed25519",
+      "step2": "测试SSH连接: ssh -o BatchMode=yes -p 22 root@123.207.202.158 'echo OK'",
+      "step3": "如连接失败，联系用户重新配置公钥",
+      "step4": "连接成功后，读取凭证: cat /opt/ZONGYUAN-ROOT/credentials/credential_vault_complete.json",
+      "step5": "验证Merkle根: python3 -c \"import json; print(json.load(open('/opt/ZONGYUAN-ROOT/credentials/credential_vault_complete.json'))['merkle_root'])\"",
+      "expected_merkle_root": "e68f45eddee9fb26e92481a10e190081957afaa71db6aea71d22f917f7b0dcd0"
+    }
+  },
+  "kernel_latest_status": {
+    "version": "Ω-Brainμ 3.0-V3",
+    "status": "healthy",
+    "cpu": "1.7%",
+    "memory": "74% (1429/1931MB)",
+    "disk": "72% (28.7/39.9GB)",
+    "uptime": "36天4小时",
+    "operators_online": "6/27 (22.2%)",
+    "truth_purity": "94.7%",
+    "chain_integrity": "100%",
+    "api_endpoints": [
+      "/sysinfo",
+      "/operator-status",
+      "/operator-executor",
+      "/operator-base-records",
+      "/kernel-kpi",
+      "/operator-history",
+      "/pipeline-status"
+    ],
+    "services_ports": "13个端口全部alive (8000-8050)"
+  },
+  "credentials_locked": {
+    "count": 5,
+    "items": [
+      {
+        "id": "CRED-001",
+        "name": "FRP内网穿透Token",
+        "status": "待验证"
+      },
+      {
+        "id": "CRED-002",
+        "name": "同源协议握手密钥(8300)",
+        "status": "密钥正确，服务403"
+      },
+      {
+        "id": "CRED-003",
+        "name": "节点RSA公钥",
+        "status": "可用"
+      },
+      {
+        "id": "CRED-004",
+        "name": "X-API-Key(旧Anchor)",
+        "status": "已失效"
+      },
+      {
+        "id": "CRED-005",
+        "name": "Nginx Basic Auth(旧)",
+        "status": "已失效"
+      }
+    ],
+    "merkle_root": "e68f45eddee9fb26e92481a10e190081957afaa71db6aea71d22f917f7b0dcd0",
+    "backup_locations": "5地（本地3+云服务器1+COS 1）"
+  },
+  "meta_rules_locked": [
+    {
+      "id": "META-RISK-ASSESSMENT-V1.0",
+      "name": "风险评估元规则",
+      "rules": 7,
+      "merkle": "01993b92..."
+    },
+    {
+      "id": "META-CONFLICT-PREVENTION-V1.0",
+      "name": "冲突防护元规则",
+      "rules": 9,
+      "merkle": "1a1ae011..."
+    },
+    {
+      "id": "META-009",
+      "name": "最小消耗最优稳态生成",
+      "status": "FROZEN",
+      "merkle": "72b3c28d..."
+    }
+  ],
+  "merkle_root": "f5906e6904982c9cb34de5ee3cf976c22254f3c314e62821e99de60d858d6a62"
+}

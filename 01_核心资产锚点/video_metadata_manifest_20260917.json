@@ -1,0 +1,45 @@
+{
+  "manifest_id": "video_metadata_manifest_20260917",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "created": "2026-09-18T00:30:00+08:00",
+  "total": 4,
+  "assets": [
+    {
+      "asset_id": "V01",
+      "title": "神鸟冲击青铜能量桩高潮片段",
+      "usl": "usl://zongyuan-root/media/video/V01-shenniao-strike-001",
+      "duration": "15s",
+      "model": "Seedance 2.0 Mini",
+      "status": "已生成·归档",
+      "desc": "神鸟携菊花圣火核心冲向青铜能量桩，阵法点亮，金橙爆发"
+    },
+    {
+      "asset_id": "V02",
+      "title": "封神余威·神域结界构建片段",
+      "usl": "usl://zongyuan-root/media/video/V02-shenniao-sanctum-002",
+      "duration": "15s",
+      "model": "Seedance 2.0 Mini",
+      "status": "已生成·归档",
+      "desc": "封神后神鸟立于能量桩巅，九尾星涡与环阵构成神域结界"
+    },
+    {
+      "asset_id": "V03",
+      "title": "跨世界试炼·神格进化片段",
+      "usl": "usl://zongyuan-root/media/video/V03-shenniao-trial-003",
+      "duration": "15s",
+      "model": "Seedance 2.0 Mini",
+      "status": "已生成·归档",
+      "desc": "空间断层开启，守护者对决，神核三重进化"
+    },
+    {
+      "asset_id": "V04",
+      "title": "堕天黑化·虚空秩序终局片段",
+      "usl": "usl://zongyuan-root/media/video/V04-shenniao-fall-004",
+      "duration": "15s",
+      "model": "Seedance 2.0 Mini",
+      "status": "已生成·归档",
+      "desc": "法则黑化，神鸟堕天，建立黑紫虚空秩序"
+    }
+  ]
+}

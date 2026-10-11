@@ -1,0 +1,23 @@
+{
+  "asset_id": "ASSET-PUB-20261006-004",
+  "name": "四维本体公理技术白皮书V2.0(专业巡检升级)",
+  "source_truth": "TRUTH-META-0002·四维本体公理(ONT-4D-UNIVERSAL-ROOT/Lv11)",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/four-dimensional-ontology-axiom",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/four-dimensional-ontology-axiom.git",
+  "published_at": "2026-10-07T11:22:10",
+  "version": "V2.0(当前版,2026-10-07); 归档版 V1.0(2026-10-06)全部保留",
+  "files": [
+    "README.md",
+    "four-dimensional-ontology-axiom-WHITEPAPER-V2.0.md(+新增)",
+    "four-dimensional-ontology-axiom-WHITEPAPER-V2.0.html(+新增)",
+    "four-dimensional-ontology-axiom-ARCH-V2.0.json(+新增)",
+    "WHITEPAPER-ONT-4D-V1.0.md(归档)",
+    "ont_4d_arch.json(归档)"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.four-dimensional-ontology-axiom-UPGRADE.20261007 (http=200)",
+  "quota": "零豆包付费"
+}

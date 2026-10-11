@@ -1,0 +1,29 @@
+{
+  "issue": "PLAN-EXECUTION-ABC",
+  "name": "全域重新规划三项全部执行",
+  "executed": {
+    "A_豆包邀请链接官网挂载": {
+      "status": "done",
+      "artifact": "03_文档资产/官网素材/豆包邀请链接-官网Hero按钮.html",
+      "note": "Hero区副按钮, 注明电脑版, target=_blank外链, 合规不夸大"
+    },
+    "B_记忆索引引擎并入6H巡检": {
+      "status": "done",
+      "cron_job_id": 12432745554178,
+      "new_step": "步骤10 记忆索引增量接入(ingest_truth_library, 单次≤50条, 增量优先, 空闲跳过)",
+      "next_run": "2026-10-11 18:23:00",
+      "note": "原告警策略步骤10→11, 回执端列表已追加记忆索引增量接入"
+    },
+    "C_官网白皮书aka公网兜底": {
+      "status": "done",
+      "html": "https://aka.doubaocdn.com/s/Li6t2bUIrR HTTP200(6321bytes)",
+      "md": "https://aka.doubaocdn.com/s/7VCnIU1VRj HTTP200(5327bytes)",
+      "note": "不依赖云端Worker nginx, CDN公网可直接访问"
+    }
+  },
+  "safety": "全程不触达云端部署层, 仅本地文件+定时任务query更新+CDN链接验证",
+  "node": "NODE-DEV-DOUBAO-WORK-001",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "ts": "20261011T125657"
+}

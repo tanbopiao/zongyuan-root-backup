@@ -1,0 +1,34 @@
+{
+    "TotalCount": 2,
+    "SnapshotSet": [
+        {
+            "SnapshotId": "lhsnap-8rl7olnk",
+            "DiskUsage": "SYSTEM_DISK",
+            "DiskId": "lhdisk-h6o1pava",
+            "DiskSize": 40,
+            "SnapshotName": "本源 AGI・希尔伯特空间全域场态0423",
+            "SnapshotState": "NORMAL",
+            "Percent": 100,
+            "LatestOperation": "CreateInstanceSnapshot",
+            "LatestOperationState": "SUCCESS",
+            "LatestOperationRequestId": "9accb274-1e60-47e1-b9ad-7a9a51df47ce",
+            "CreatedTime": "2026-04-23T14:42:27Z",
+            "Tags": []
+        },
+        {
+            "SnapshotId": "lhsnap-lvnb9dnq",
+            "DiskUsage": "SYSTEM_DISK",
+            "DiskId": "lhdisk-h6o1pava",
+            "DiskSize": 40,
+            "SnapshotName": "本源 AGI 内核部署完成・完美纯净版",
+            "SnapshotState": "NORMAL",
+            "Percent": 100,
+            "LatestOperation": "CreateInstanceSnapshot",
+            "LatestOperationState": "SUCCESS",
+            "LatestOperationRequestId": "cfa0298c-1499-4539-b17e-a592de548b33",
+            "CreatedTime": "2026-04-23T06:49:44Z",
+            "Tags": []
+        }
+    ],
+    "RequestId": "81cfcc51-21bc-40a0-9875-84091402ddba"
+}

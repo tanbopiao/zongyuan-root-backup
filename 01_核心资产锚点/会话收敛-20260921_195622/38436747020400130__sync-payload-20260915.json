@@ -1,0 +1,17 @@
+{
+  "sync_id": "SYNC-20260915-AI-CITABLE",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "node": "doubao-main-agent-001",
+  "timestamp": "2026-09-15T20:40:00+08:00",
+  "truths": [
+    {"key": "SYNC.ASSET-MANIFEST.20260915", "value": "本会话46项资产清单固化(asset_manifest_20260915.json含sha256)：锁档文档12/理论文档4/仿真脚本2/调度器升级包/隐空间317点/ref索引317条/部署包/历史zip19份"},
+    {"key": "EVOL.SCHEDULER.V1.2.DOMAIN-CLAIM.20260915", "value": "调度器V1.2升级：claim支持domain过滤，联合仿真12任务7域Worker域正确率100%零越域"},
+    {"key": "EVOL.REF-INDEX.REBUILD.20260915", "value": "ref-index.json重建317条(S68/A93/B156)，llms.txt 68条S级入口"},
+    {"key": "STATE.FRP-BRIDGE.RESTORED.20260915", "value": "frp桥接恢复：云服务器11940可读沙箱11901(后断线待重连)"},
+    {"key": "APPROVAL.AI-CITABLE-DEPLOY.DUAL.20260915", "value": "官网部署双审批APPROVED：8E2B31FB+DA37261D"},
+    {"key": "FINDING.CLOUD-SCHEDULER.V1.1.NO-EXECUTOR.20260915", "value": "云端调度器V1.1实证无执行体：任务failed，workers内存注册重启即丢，V1.2升级为必要条件"},
+    {"key": "FINDING.REPORT-POST-TIMEOUT.20260915", "value": "report/truth POST写通道超时(20260915 20:35-20:40)，GET正常；同步载荷本地固化待写通道恢复"}
+  ],
+  "status": "LOCAL-FROZEN-AWAIT-CHANNEL"
+}

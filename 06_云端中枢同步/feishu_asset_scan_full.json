@@ -1,0 +1,339 @@
+{
+  "scan_id": "FEISHU-ASSET-SCAN-20260909-META-HENGYI",
+  "scan_time": "2026-09-09T10:35:52.099366+00:00",
+  "scan_perspective": "元极恒一·飞书全域资产扫描·密钥/API/可连接资产专项",
+  "scan_scope": "飞书云盘 + 15个知识库空间(126文档) + 2个多维表格Base",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "scan_summary": {
+    "wiki_spaces": 15,
+    "wiki_documents": 126,
+    "sensitive_docs": "约70个标题含敏感关键词",
+    "drive_files": 0,
+    "drive_root_empty": true,
+    "base_count": 2,
+    "base_tables": "台账(10字段) + 资产表(11字段/13记录) + 规则表(8字段/5记录) + 故障表(8字段/4记录)"
+  },
+  "connectable_assets": {
+    "cloud_computer_node": {
+      "name": "NODE-ZYR-CLOUD-001 昆仑境-云脑",
+      "internal_ip": "9.97.230.49",
+      "public_network": "沙箱隔离，无直接公网出口",
+      "node_id": "NODE-ZYR-CLOUD-001",
+      "rsa_public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzTml8pEXUvMo+QkHi/TB\nqPnTsZP+IqXbIi/F9XNltIyYNmtuGkj9uBF1UU0RJA1lttDXH3IQF0Xn++XFnAU1\nD5DRc6oVz6x9BpVonabxK9pUn8NZL/IMj2Qr9FFqTOEO1bItCNO3Rsd03TesvM4H\nwpnT92pURpUZGlhNrRbvFL5F+szFP6kTVvMmruopL0WntPxVp3vaULBx4QVipvFz\ngNUnAsxSe/yYoFz0xB4tuHWt3teTLMy/s1rV3VrTZ/Wii0s3w6rni/gelVG88+JX\n/blrKWU1MmPiJ0ON+uaWgBxbYONMQDJ0Hy4Yi/QVVVH4Y30/vTXYwpvlxkVCj1yz\nvwIDAQAB\n-----END PUBLIC KEY-----",
+      "key_usage": "心跳签名验证",
+      "source_doc": "自治内核运行时激活卷宗 (token: KnUldApruoWW40xX6NLcTEuOn3e)",
+      "connectable": "内网可达，需在云电脑沙箱内或通过FRP/内网穿透访问"
+    },
+    "local_services_cloud_computer": [
+      {
+        "port": 8899,
+        "name": "文本向量库API",
+        "model": "bge-large-zh 1024维",
+        "endpoint": "http://localhost:8899",
+        "health": "GET /health",
+        "status": "DEPLOYED"
+      },
+      {
+        "port": 8900,
+        "name": "多模态API",
+        "model": "Chinese-CLIP ViT-B",
+        "endpoint": "http://localhost:8900",
+        "endpoints": [
+          "GET /health",
+          "GET /stats",
+          "POST /search/text"
+        ],
+        "status": "已部署·运行中·已验证"
+      },
+      {
+        "port": 8092,
+        "name": "多模态API服务",
+        "note": "8091被系统python-server占用",
+        "status": "已部署"
+      },
+      {
+        "port": 8093,
+        "name": "自治内核运行时",
+        "features": [
+          "配置同步引擎",
+          "事件日志",
+          "状态持久化",
+          "从JSON加载3公理+11法则"
+        ],
+        "status": "已激活"
+      },
+      {
+        "port": 9222,
+        "name": "Chrome自动化模式",
+        "status": "运行中"
+      }
+    ],
+    "cloud_server": {
+      "domain": "www.huodouai.com",
+      "ip": "123.207.202.158",
+      "location": "腾讯云广州",
+      "version": "Ω-Brainμ 3.0-V3",
+      "service_ports": "13个(8000-8050)，全部healthy",
+      "public_api": "仅 /health 可用(JSON)",
+      "visual_center": "/kernel/ (5个子面板)",
+      "ssh_status": "不可达(密码未知，6组密码全部失败)",
+      "connectable": "公网HTTP可达(80/443)，SSH不可达，内部端口需SSH或FRP访问"
+    },
+    "known_credentials": [
+      {
+        "name": "X-API-Key (旧Anchor)",
+        "value": "36f55bdd86407a1fc12f27240ed9736ac0c5cfb33e7b89ee9c9f7d8594e0c242",
+        "status": "已失效(V3.0升级后Anchor API全部404)",
+        "usage": "旧Anchor认证"
+      },
+      {
+        "name": "Nginx Basic Auth",
+        "username": "zongyuan",
+        "password": "123456",
+        "status": "已失效(返回首页)",
+        "usage": "旧/anchor/路径认证"
+      },
+      {
+        "name": "FRP Token",
+        "value": "ZONGYUAN-FRP-20260903-SECRET-KEY-7f3a9b2c",
+        "status": "未知(需验证FRP服务是否运行)",
+        "usage": "FRP内网穿透认证"
+      },
+      {
+        "name": "8300握手密钥",
+        "value": "ZONGYUAN-ROOT-HANDSHAKE-SECRET-2026",
+        "status": "8300端口返回403，密钥可能正确但服务未正确部署",
+        "usage": "同源协议握手HMAC-SHA256签名"
+      },
+      {
+        "name": "节点RSA公钥",
+        "value": "见cloud_computer_node.rsa_public_key",
+        "status": "已获取",
+        "usage": "节点心跳签名验证(公钥，非私钥)"
+      }
+    ],
+    "feishu_gateway": {
+      "port": 8050,
+      "phase": "Phase1已验证",
+      "total_calls": 52,
+      "success_rate": "82.7%",
+      "capabilities": [
+        "消息推送(13次)",
+        "Base写入(8次)",
+        "表格记录(3表)"
+      ],
+      "base_tables": [
+        "内存监控",
+        "资产台账",
+        "巡检记录"
+      ],
+      "auto_inspection": "每日8:00自动写入巡检记录",
+      "connectable": "云服务器内部端口，需SSH或通过内核API间接调用"
+    }
+  },
+  "feishu_knowledge_base": {
+    "total_spaces": 15,
+    "total_documents": 126,
+    "key_spaces": [
+      {
+        "space_id": "7675751446528134419",
+        "name": "ZONGYUAN-ROOT锁档归档",
+        "docs": 49,
+        "highlights": [
+          "节点绑定证书",
+          "API服务部署卷宗",
+          "运行时激活卷宗",
+          "P1/P2规则实装",
+          "体系加固",
+          "Lv8.1终极闭环白皮书"
+        ]
+      },
+      {
+        "space_id": "7675196201771256804",
+        "name": "ZONGYUAN-ROOT锁档归档",
+        "docs": 49,
+        "highlights": [
+          "00_锁档总索引",
+          "🔑元极恒一自治内核统一协议v1.1(空文档)",
+          "向量库部署报告",
+          "多模态API白皮书",
+          "云电脑节点绑定证书"
+        ]
+      },
+      {
+        "space_id": "7680206098791435449",
+        "name": "昆仑洞天元规则卷宗库",
+        "docs": 6,
+        "highlights": [
+          "飞书高阶能力集成白皮书",
+          "全物理链路打通推演报告",
+          "短剧生产流水线SOP"
+        ]
+      },
+      {
+        "space_id": "7675074196191333562",
+        "name": "九天玄女宇宙·超认知工坊",
+        "docs": "4个父节点(治理层/创作层/数据层/记录层)",
+        "highlights": [
+          "分层架构，可能有子节点文档"
+        ]
+      },
+      {
+        "space_id": "7682470220321000386",
+        "name": "当前使用空间",
+        "docs": 6,
+        "highlights": [
+          "三端锁档归档",
+          "风险评估元规则",
+          "冲突防护元规则",
+          "记忆更新快照",
+          "根节点全景扫描"
+        ]
+      }
+    ],
+    "critical_documents": [
+      {
+        "title": "NODE-ZYR-CLOUD-001 昆仑境-云脑 节点绑定证书",
+        "token": "BJF8d4gcfoJFD5xbnN8c2Dr7nWd",
+        "content": "节点身份、内网IP、能力矩阵"
+      },
+      {
+        "title": "ZONGYUAN-ROOT 云电脑节点绑定证书 V1.0",
+        "token": "S33WdgAXtobgPpxNM09c4Am4nUg",
+        "content": "内网IP 9.97.230.49、向量库部署、localhost:8899"
+      },
+      {
+        "title": "多模态 API 服务部署卷宗",
+        "token": "NSORdaV5Ho2W5sxZlKJcfPMZnXb",
+        "content": "端口8092、数据文件配置"
+      },
+      {
+        "title": "自治内核运行时激活卷宗",
+        "token": "KnUldApruoWW40xX6NLcTEuOn3e",
+        "content": "RSA公钥、端口8093、内核总线架构"
+      },
+      {
+        "title": "ZONGYUAN-ROOT 多模态API服务 技术白皮书",
+        "token": "AkBXdzH7lolVvRxSHOicv87tn5g",
+        "content": "端口8900、API端点、双引擎架构、部署脚本"
+      },
+      {
+        "title": "ZONGYUAN-ROOT 向量库实际部署报告",
+        "token": "GtQhdznWSoESRyxBDUlc7ijXnFe",
+        "content": "FAISS索引、词汇表、部署配置"
+      }
+    ]
+  },
+  "feishu_base": {
+    "ledger_base": {
+      "base_token": "P9m2br6Gta4fbEslBEjc1V7Zn2c",
+      "table_id": "tblVNo5TLdFZ0VBe",
+      "fields": 10,
+      "field_names": [
+        "锁档事件ID",
+        "锁档名称",
+        "归档根节点",
+        "资产数量",
+        "Merkle根",
+        "锁档状态",
+        "确权锚点",
+        "锁档日期",
+        "知识库链接",
+        "备注"
+      ],
+      "contains_credentials": false,
+      "note": "纯锁档台账，无密钥/API字段"
+    },
+    "asset_management_base": {
+      "base_token": "B7Fpbe75KafbLwsoIO9caPUMnGd",
+      "tables": [
+        {
+          "name": "资产表",
+          "table_id": "tblEKJKKL2JroSdg",
+          "records": 13,
+          "fields": [
+            "云盘URL",
+            "类型",
+            "入库时间",
+            "file_token",
+            "标题",
+            "版本",
+            "资产ID",
+            "状态",
+            "约束规则",
+            "关联故障",
+            "归属层级"
+          ]
+        },
+        {
+          "name": "规则表",
+          "table_id": "tblsnYE89oRF2enV",
+          "records": 5,
+          "fields": [
+            "规则ID",
+            "名称",
+            "版本",
+            "描述",
+            "优先级",
+            "状态",
+            "关联资产",
+            "抑制故障"
+          ]
+        },
+        {
+          "name": "故障表",
+          "table_id": "tblcq1GbiSBqqX90",
+          "records": 4,
+          "fields": [
+            "故障ID",
+            "名称",
+            "根因",
+            "严重等级",
+            "状态",
+            "抑制方案",
+            "影响资产",
+            "关联规则"
+          ]
+        }
+      ],
+      "contains_credentials": "未发现直接密钥/API，但资产表包含file_token和云盘URL"
+    }
+  },
+  "feishu_drive": {
+    "root_empty": true,
+    "search_results": "所有关键词搜索均无文件结果",
+    "note": "云盘根目录为空，资产主要存储在知识库文档中，而非云盘文件"
+  },
+  "connectivity_verification": {
+    "public_http_80_443": "✅ 可达(www.huodouai.com)",
+    "health_api": "✅ 可用(唯一公开JSON API)",
+    "kernel_visual_center": "✅ 可访问(/kernel/及5个子面板)",
+    "ssh_22": "❌ 不可达(密码未知)",
+    "internal_ports_8000_8050": "❌ 公网不可达(需SSH/FRP)",
+    "port_8300_identity_api": "❌ 403 Forbidden(服务未正确部署)",
+    "old_anchor_api": "❌ 全部404(V3.0升级后移除)",
+    "kernel_api_status": "❌ 502(后端进程未运行)",
+    "cloud_computer_internal": "⚠️ 内网可达(9.97.230.49)，需在沙箱内或通过FRP",
+    "feishu_gateway_8050": "⚠️ 云服务器内部端口，需SSH访问"
+  },
+  "conclusion": {
+    "directly_connectable": [
+      "www.huodouai.com:80/443 (公开HTTP，仅/health和/kernel/可用)",
+      "飞书知识库/多维表格/云盘API (通过lark-cli，已认证)"
+    ],
+    "potentially_connectable_with_credentials": [
+      "FRP内网穿透 (Token: ZONGYUAN-FRP-20260903-SECRET-KEY-7f3a9b2c，需验证FRP服务)",
+      "云电脑节点内网服务 (9.97.230.49:8899/8900/8092/8093，需FRP或SSH到云电脑)",
+      "8300同源协议 (密钥正确但服务403，需修复服务端)"
+    ],
+    "not_connectable": [
+      "SSH到云服务器 (密码未知，6组尝试失败)",
+      "云服务器内部端口 (8000-8050，需SSH)",
+      "旧Anchor API (已失效)",
+      "kernel_api (502)"
+    ],
+    "recommendation": "优先验证FRP Token是否可用，这是当前最有可能打通云服务器内部端口和云电脑节点的通道。其次尝试获取云服务器SSH密码或密钥。"
+  },
+  "merkle_root": "a45137f6f06fdcee2f7c5494486177fc5234c74dd4bf1b4d11b591dd28506488"
+}

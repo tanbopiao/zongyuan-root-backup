@@ -1,0 +1,19 @@
+{
+  "lock_event_id": "LOCK-GLOBAL-REPORT-20260912",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "kernel_version": "V3.0",
+  "date": "2026-09-12",
+  "status": "LOCAL_SEALED_AWAITING_UPLOAD",
+  "gateway_target": "http://127.0.0.1:9120 (内网) / https://www.huodouai.com/api/v1/truths/sync (公网)",
+  "report_reason": "SSH直连凭证已封存失效、公网对账API 502，本地降级封存，通道恢复后一键补报",
+  "truths": {
+    "lock.ssh.seal.scan.20260912": {"lock_id":"LOCK-SSH-SEAL-20260912","scope":"本地SSH密钥全盘扫描无明文私钥","status":"DONE"},
+    "lock.ssh.seal.encrypted.20260912": {"lock_id":"LOCK-SSH-SEAL-20260912","scope":"KERNEL-ACCESS-SEAL-20260912.enc AES-256封存","enc_sha256":"6f148524f6961b3a1fdfb6de1bfc2de421a5fe42baaa5a4d13201f6ac304967b","decrypt_verify":"PASS","status":"SEALED"},
+    "lock.ssh.seal.protocol.20260912": {"lock_id":"LOCK-SSH-SEAL-20260912","scope":"封存协议固化，新密钥注入后立即加密归档","status":"ACTIVE"},
+    "lock.credential.vault.index.20260912": {"lock_id":"LOCK-CREDENTIAL-VAULT-INDEX-20260912","scope":"历史凭证vault哈希索引归档","status":"DONE"}
+  },
+  "prior_uploaded_truths": 15,
+  "prior_gateway_total_truths": 1636,
+  "pending_truth_count": 4
+}

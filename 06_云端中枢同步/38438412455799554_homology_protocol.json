@@ -1,0 +1,35 @@
+{
+  "protocol": "ZONGYUAN-HOMOLOGY-PROTOCOL",
+  "version": "V2.0-SYNC",
+  "status": "ACTIVE",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "handshake": {
+    "mode": "HMAC-6STEP",
+    "port_design": 8300,
+    "secret_ref": "CRED-002（已AES-256加密封存，密钥引用不落明文）",
+    "timeout_ms": 10000,
+    "nonce_ttl_s": 300
+  },
+  "nodes": {
+    "local": {"node_id": "NN-META-024", "role": "主会话执行节点", "status": "ACTIVE"},
+    "cloud_proxy": {"node_id": "NN-OPS-018", "role": "云代理身份", "status": "SUSPENDED", "reason": "SSH凭据已加密封存，云服务器直连阻断"},
+    "cloud_node": {"node_id": "NODE-ZYR-CLO", "role": "云内核节点", "status": "UNREACHABLE", "reason": "公网502/SSH阻断"},
+    "feishu": {"node_id": "NODE-LARK-SYNC", "role": "飞书三端同步节点", "status": "ACTIVE"}
+  },
+  "whitelist": {
+    "policy": "同源节点准入白名单，非白名单节点拒绝握手",
+    "members": ["NN-META-024", "NN-OPS-018", "NODE-LARK-SYNC"]
+  },
+  "sync_rules": {
+    "multi_window": "多窗口对账去重：先记后部署",
+    "truth_dedup": "同key真值存在=duplicate，不存在=synced",
+    "channel_priority": ["lark三端通道", "公网HTTPS通道(当前502)", "SSH直连(已阻断)"],
+    "current_active": "lark三端通道"
+  },
+  "channel_status": {
+    "lark_cli": "AVAILABLE v1.0.94",
+    "public_https": "502_BAD_GATEWAY",
+    "ssh_direct": "BLOCKED_BY_POLICY"
+  }
+}

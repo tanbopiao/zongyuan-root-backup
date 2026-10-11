@@ -1,0 +1,53 @@
+{
+  "status": "pass",
+  "stage": "write",
+  "code": 0,
+  "workspace": "/home/user/Doubao/chats/38436747020400130/zongyuan-tech-whitepaper-20260911",
+  "layout": "short",
+  "layoutSource": "filesystem",
+  "checkedFiles": [
+    "manuscript.md"
+  ],
+  "result": {
+    "writingShape": {
+      "status": "pass",
+      "failureCount": 0,
+      "warningCount": 0
+    },
+    "wordCount": {
+      "status": "pass",
+      "results": [
+        {
+          "id": "total-length",
+          "route": null,
+          "phase": "final",
+          "files": [
+            "manuscript.md"
+          ],
+          "actual": 10998,
+          "before": null,
+          "added": null,
+          "target": 10000,
+          "tolerancePercent": 10,
+          "toleranceValid": true,
+          "minimum": 9000,
+          "maximum": 11000,
+          "minimumAdded": null,
+          "maximumAdded": null
+        }
+      ]
+    },
+    "ledger": null,
+    "statusTruth": null,
+    "inventory": [
+      {
+        "file": "manuscript.md",
+        "chars": 10998,
+        "bytes": 22554,
+        "sha256": "f8d79e0e0f8f512483cde9156c81b6180e86615e949d4dc9b963e679a1b97806"
+      }
+    ]
+  },
+  "failures": [],
+  "warnings": []
+}

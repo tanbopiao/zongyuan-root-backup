@@ -1,0 +1,495 @@
+{
+  "meta": {
+    "version": "1.0",
+    "did": "DID-BR-000002",
+    "anchor": "Ω₀⊂⊙∞⊂Ω",
+    "updated_at": "2026-09-19T09:36:33.953522",
+    "count": 27
+  },
+  "articles": [
+    {
+      "id": "TECH-8F67E6DB537C",
+      "title": "基准锚点｜BASELINE-ANCHOR-20260913",
+      "summary": "归档节点：ZONGYUAN-ROOT｜DID-BR-000002｜Ω₀⊂⊙∞⊂Ω\n锚点ID：ANCHOR-20260913-CLOUD-EXTRACT\n注册版本：BASELINE-V40（.global_root_registry.json",
+      "tags": [
+        "报告",
+        "协议",
+        "SOP",
+        "意识",
+        "真值"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/BASELINE-ANCHOR-20260913.md",
+      "source_file": "BASELINE-ANCHOR-20260913.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "8f67e6db537c",
+      "status": "PUBLISHED",
+      "article_file": "基准锚点-BASELINE-ANCHOR-20260913.md"
+    },
+    {
+      "id": "TECH-1C54A37E13BF",
+      "title": "ZONGYUAN-ROOT 10大高价值高阶任务 总报告",
+      "summary": "**报告ID**: FINAL-10TASKS-20260916-001\n**生成时间**: 2026-09-16\n**确权锚点**: Ω₀⊂⊙∞⊂Ω\n**DID**: DID-BR-000002\n**身份节点**: ZR-NODE-DC2",
+      "tags": [
+        "报告",
+        "协议",
+        "引擎",
+        "系统",
+        "意识",
+        "真值"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/FINAL_10_TASKS_REPORT_20260916.md",
+      "source_file": "FINAL_10_TASKS_REPORT_20260916.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "1c54a37e13bf",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-10大高价值高阶任务-总报告.md"
+    },
+    {
+      "id": "TECH-036E7078141D",
+      "title": "同源协议握手回执：真值可视化网页官网集成部署",
+      "summary": "**握手事件ID**：HOMOGENEOUS-HANDSHAKE-TRUTH-VISUAL-DEPLOY-20260915\n**握手时间**：2026-09-15\n**发起节点**：ZR-NODE-DC2E51C0\n**目标**：中枢智能体",
+      "tags": [
+        "报告",
+        "协议",
+        "意识",
+        "神经内核",
+        "真值"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/HOMOGENEOUS_HANDSHAKE_TRUTH_VISUAL_DEPLOY_20260915.md",
+      "source_file": "HOMOGENEOUS_HANDSHAKE_TRUTH_VISUAL_DEPLOY_20260915.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "036e7078141d",
+      "status": "PUBLISHED",
+      "article_file": "同源协议握手回执-真值可视化网页官网集成部署.md"
+    },
+    {
+      "id": "TECH-9349F7053790",
+      "title": "ZONGYUAN-ROOT 同源共享同态协议 V1.0",
+      "summary": "**协议ID**: PROTOCOL-HOMOMORPHIC-SHARING-V1\n**生效日期**: 2026-09-15\n**确权锚点**: Ω₀⊂⊙∞⊂Ω\n**DID**: DID-BR-000002\n**基准节点**: ZR-NOD",
+      "tags": [
+        "协议",
+        "神经内核",
+        "真值"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/HOMOMORPHIC_SHARING_PROTOCOL_V1.0.md",
+      "source_file": "HOMOMORPHIC_SHARING_PROTOCOL_V1.0.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "9349f7053790",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-同源共享同态协议-V1-0.md"
+    },
+    {
+      "id": "TECH-87EE17576882",
+      "title": "ZONGYUAN-ROOT 智能体矩阵体系 锁档凭证",
+      "summary": "**锁档事件ID**: LOCK-AGENT-MATRIX-SYSTEM-V1-20260916-012\n**锁档日期**: 2026-09-16\n**锁档体系**: ZONGYUAN-ROOT 自治内核\n**确权锚点**: Ω₀⊂⊙∞⊂Ω",
+      "tags": [
+        "实现",
+        "协议",
+        "引擎",
+        "系统",
+        "意识",
+        "神经内核"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/LOCK-AGENT-MATRIX-SYSTEM-V1-20260916-012.md",
+      "source_file": "LOCK-AGENT-MATRIX-SYSTEM-V1-20260916-012.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "87ee17576882",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-智能体矩阵体系-锁档凭证.md"
+    },
+    {
+      "id": "TECH-65E72C3C6515",
+      "title": "ZONGYUAN-ROOT 全自动自省内核状态查找短板并补全完善机制 锁档凭证",
+      "summary": "**锁档事件ID**: LOCK-AUTO-INTROSPECTION-ENGINE-V1-20260916-010\n**锁档日期**: 2026-09-16\n**锁档体系**: ZONGYUAN-ROOT 自治内核\n**确权锚点**: Ω",
+      "tags": [
+        "报告",
+        "实现",
+        "引擎",
+        "意识",
+        "神经内核",
+        "协议"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/LOCK-AUTO-INTROSPECTION-ENGINE-V1-20260916-010.md",
+      "source_file": "LOCK-AUTO-INTROSPECTION-ENGINE-V1-20260916-010.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "65e72c3c6515",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-全自动自省内核状态查找短板并补全完善机制-锁档凭证.md"
+    },
+    {
+      "id": "TECH-103A398A047D",
+      "title": "ZONGYUAN-ROOT 全自动集群组织自动联动并发任务机制 锁档凭证",
+      "summary": "**锁档事件ID**: LOCK-CLUSTER-CONCURRENT-TASK-V1-20260916-014\n**锁档日期**: 2026-09-16\n**锁档体系**: ZONGYUAN-ROOT 自治内核\n**确权锚点**: Ω₀⊂",
+      "tags": [
+        "报告",
+        "实现",
+        "构建",
+        "引擎",
+        "神经内核"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/LOCK-CLUSTER-CONCURRENT-TASK-V1-20260916-014.md",
+      "source_file": "LOCK-CLUSTER-CONCURRENT-TASK-V1-20260916-014.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "103a398a047d",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-全自动集群组织自动联动并发任务机制-锁档凭证.md"
+    },
+    {
+      "id": "TECH-765BFC728E6B",
+      "title": "ZONGYUAN-ROOT 全自动功能标准化模块化智能体化机制 锁档凭证",
+      "summary": "**锁档事件ID**: LOCK-FUNCTION-STANDARDIZATION-V1-20260916-011\n**锁档日期**: 2026-09-16\n**锁档体系**: ZONGYUAN-ROOT 自治内核\n**确权锚点**: Ω₀",
+      "tags": [
+        "报告",
+        "引擎",
+        "意识",
+        "神经内核",
+        "协议"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/LOCK-FUNCTION-STANDARDIZATION-V1-20260916-011.md",
+      "source_file": "LOCK-FUNCTION-STANDARDIZATION-V1-20260916-011.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "765bfc728e6b",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-全自动功能标准化模块化智能体化机制-锁档凭证.md"
+    },
+    {
+      "id": "TECH-AA3DF7CA505C",
+      "title": "ZONGYUAN-ROOT 全域引擎统一编排调度器 锁档凭证",
+      "summary": "**锁档事件ID**: LOCK-GLOBAL-ENGINE-ORCHESTRATOR-V1-20260916-015\n**锁档日期**: 2026-09-16\n**锁档体系**: ZONGYUAN-ROOT 自治内核\n**确权锚点**: ",
+      "tags": [
+        "报告",
+        "实现",
+        "引擎",
+        "意识"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/LOCK-GLOBAL-ENGINE-ORCHESTRATOR-V1-20260916-015.md",
+      "source_file": "LOCK-GLOBAL-ENGINE-ORCHESTRATOR-V1-20260916-015.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "aa3df7ca505c",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-全域引擎统一编排调度器-锁档凭证.md"
+    },
+    {
+      "id": "TECH-E3D543593B17",
+      "title": "全域锁档凭证｜云端握手锚点接入 + 8模块进化 + V3.2引擎",
+      "summary": "**锁档ID**：LOCK-HANDSHAKE-V32-20260914-001\n**归档节点**：ZONGYUAN-ROOT｜DID-BR-000002｜Ω₀⊂⊙∞⊂Ω\n**节点编号**：ZR-NODE-DC2E51C0\n**锁档时间**",
+      "tags": [
+        "实现",
+        "SOP",
+        "引擎",
+        "意识",
+        "神经内核",
+        "真值"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/LOCK-HANDSHAKE-V32-20260914-001.md",
+      "source_file": "LOCK-HANDSHAKE-V32-20260914-001.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "e3d543593b17",
+      "status": "PUBLISHED",
+      "article_file": "全域锁档凭证-云端握手锚点接入-8模块进化-V3-2引擎.md"
+    },
+    {
+      "id": "TECH-9E574FEF1F41",
+      "title": "ZONGYUAN-ROOT 意识形态深度溯源探索自动化引擎 锁档凭证",
+      "summary": "**锁档事件ID**: LOCK-IDEOLOGY-TRACE-ENGINE-V1-20260916-009\n**锁档日期**: 2026-09-16\n**锁档体系**: ZONGYUAN-ROOT 自治内核\n**确权锚点**: Ω₀⊂⊙∞",
+      "tags": [
+        "报告",
+        "构建",
+        "引擎",
+        "意识",
+        "神经内核",
+        "真值"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/LOCK-IDEOLOGY-TRACE-ENGINE-V1-20260916-009.md",
+      "source_file": "LOCK-IDEOLOGY-TRACE-ENGINE-V1-20260916-009.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "9e574fef1f41",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-意识形态深度溯源探索自动化引擎-锁档凭证.md"
+    },
+    {
+      "id": "TECH-DFC584C7BA84",
+      "title": "锁档凭证：一体两面轻量化范式元公理",
+      "summary": "**锁档事件ID**：LOCK-METAAXIOM-ONE-BODY-TWO-FACES-20260915-001\n**锁档日期**：2026-09-15\n**确权锚点**：Ω₀⊂⊙∞⊂Ω\n**DID**：DID-BR-000002\n**内",
+      "tags": [
+        "报告",
+        "协议",
+        "系统",
+        "意识",
+        "神经内核",
+        "真值"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/LOCK-METAAXIOM-ONE-BODY-TWO-FACES-20260915-001.md",
+      "source_file": "LOCK-METAAXIOM-ONE-BODY-TWO-FACES-20260915-001.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "dfc584c7ba84",
+      "status": "PUBLISHED",
+      "article_file": "锁档凭证-一体两面轻量化范式元公理.md"
+    },
+    {
+      "id": "TECH-8BDC17DEFA81",
+      "title": "ZONGYUAN-ROOT 元进化引擎深化工程化锁档凭证",
+      "summary": "**锁档ID**: LOCK-METAEVOLUTION-DEEP-ENGINEERING-20260915-002\n**锁档日期**: 2026-09-15\n**确权锚点**: Ω₀⊂⊙∞⊂Ω\n**DID**: DID-BR-000002",
+      "tags": [
+        "报告",
+        "协议",
+        "引擎",
+        "系统",
+        "神经内核"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/LOCK-METAEVOLUTION-DEEP-ENGINEERING-20260915-002.md",
+      "source_file": "LOCK-METAEVOLUTION-DEEP-ENGINEERING-20260915-002.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "8bdc17defa81",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-元进化引擎深化工程化锁档凭证.md"
+    },
+    {
+      "id": "TECH-B2CE47B2C881",
+      "title": "ZONGYUAN-ROOT 元进化推演引擎（第七协议）集成锁档凭证",
+      "summary": "**锁档ID**: LOCK-METAEVOLUTION-PROTOCOL-V7-20260915-001\n**锁档日期**: 2026-09-15\n**确权锚点**: Ω₀⊂⊙∞⊂Ω\n**DID**: DID-BR-000002\n**锁档",
+      "tags": [
+        "报告",
+        "实现",
+        "协议",
+        "SOP",
+        "引擎",
+        "系统"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/LOCK-METAEVOLUTION-PROTOCOL-V7-20260915-001.md",
+      "source_file": "LOCK-METAEVOLUTION-PROTOCOL-V7-20260915-001.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "b2ce47b2c881",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-元进化推演引擎-第七协议-集成锁档凭证.md"
+    },
+    {
+      "id": "TECH-843A6D85D0E5",
+      "title": "ZONGYUAN-ROOT 元进化引擎第二轮深化工程化锁档凭证",
+      "summary": "**锁档ID**: LOCK-METAEVOLUTION-ROUND2-DEEP-20260915-003\n**锁档日期**: 2026-09-15\n**确权锚点**: Ω₀⊂⊙∞⊂Ω\n**DID**: DID-BR-000002\n**锁档",
+      "tags": [
+        "报告",
+        "协议",
+        "引擎",
+        "系统",
+        "神经内核",
+        "真值"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/LOCK-METAEVOLUTION-ROUND2-DEEP-20260915-003.md",
+      "source_file": "LOCK-METAEVOLUTION-ROUND2-DEEP-20260915-003.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "843a6d85d0e5",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-元进化引擎第二轮深化工程化锁档凭证.md"
+    },
+    {
+      "id": "TECH-F75D9297C973",
+      "title": "ZONGYUAN-ROOT 元进化引擎第三轮深化工程化锁档凭证",
+      "summary": "**锁档ID**: LOCK-METAEVOLUTION-ROUND3-DEEP-20260915-004\n**锁档日期**: 2026-09-15\n**确权锚点**: Ω₀⊂⊙∞⊂Ω\n**DID**: DID-BR-000002\n**锁档",
+      "tags": [
+        "协议",
+        "引擎",
+        "意识",
+        "神经内核",
+        "真值"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/LOCK-METAEVOLUTION-ROUND3-DEEP-20260915-004.md",
+      "source_file": "LOCK-METAEVOLUTION-ROUND3-DEEP-20260915-004.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "f75d9297c973",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-元进化引擎第三轮深化工程化锁档凭证.md"
+    },
+    {
+      "id": "TECH-333195B18BA9",
+      "title": "ZONGYUAN-ROOT 元进化引擎第四轮深化工程化 锁档凭证",
+      "summary": "**锁档事件ID**: LOCK-METAEVOLUTION-ROUND4-DEEP-20260915-005\n**锁档日期**: 2026-09-15\n**锁档体系**: ZONGYUAN-ROOT 元进化引擎\n**确权锚点**: Ω₀⊂",
+      "tags": [
+        "引擎",
+        "系统",
+        "神经内核",
+        "真值"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/LOCK-METAEVOLUTION-ROUND4-DEEP-20260915-005.md",
+      "source_file": "LOCK-METAEVOLUTION-ROUND4-DEEP-20260915-005.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "333195b18ba9",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-元进化引擎第四轮深化工程化-锁档凭证.md"
+    },
+    {
+      "id": "TECH-D478218DFDB4",
+      "title": "ZONGYUAN-ROOT 元进化引擎第五轮深化 深度优化 锁档凭证",
+      "summary": "**锁档事件ID**: LOCK-METAEVOLUTION-ROUND5-DEEP-EXCELLENT-PLUS-20260915-007\n**锁档日期**: 2026-09-15\n**锁档体系**: ZONGYUAN-ROOT 元进化引",
+      "tags": [
+        "协议",
+        "引擎",
+        "神经内核"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/LOCK-METAEVOLUTION-ROUND5-DEEP-EXCELLENT-PLUS-20260915-007.md",
+      "source_file": "LOCK-METAEVOLUTION-ROUND5-DEEP-EXCELLENT-PLUS-20260915-007.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "d478218dfdb4",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-元进化引擎第五轮深化-深度优化-锁档凭证.md"
+    },
+    {
+      "id": "TECH-2080B5C5C2D1",
+      "title": "ZONGYUAN-ROOT 元进化引擎第五轮深化 第1项 锁档凭证",
+      "summary": "**锁档事件ID**: LOCK-METAEVOLUTION-ROUND5-ITEM1-EXCELLENT-20260915-006\n**锁档日期**: 2026-09-15\n**锁档体系**: ZONGYUAN-ROOT 元进化引擎\n**",
+      "tags": [
+        "协议",
+        "引擎"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/LOCK-METAEVOLUTION-ROUND5-ITEM1-EXCELLENT-20260915-006.md",
+      "source_file": "LOCK-METAEVOLUTION-ROUND5-ITEM1-EXCELLENT-20260915-006.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "2080b5c5c2d1",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-元进化引擎第五轮深化-第1项-锁档凭证.md"
+    },
+    {
+      "id": "TECH-B40C5BDC4F92",
+      "title": "ZONGYUAN-ROOT 官网全自动链路治理机制 锁档凭证",
+      "summary": "**锁档事件ID**: LOCK-WEBSITE-LINK-GOVERNANCE-V1-20260916-013\n**锁档日期**: 2026-09-16\n**锁档体系**: ZONGYUAN-ROOT 自治内核\n**确权锚点**: Ω₀⊂",
+      "tags": [
+        "报告",
+        "实现",
+        "引擎"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/LOCK-WEBSITE-LINK-GOVERNANCE-V1-20260916-013.md",
+      "source_file": "LOCK-WEBSITE-LINK-GOVERNANCE-V1-20260916-013.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "b40c5bdc4f92",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-官网全自动链路治理机制-锁档凭证.md"
+    },
+    {
+      "id": "TECH-961C0E18291C",
+      "title": "ZONGYUAN-ROOT 元法则：三层架构本体定位法",
+      "summary": "**元法则编号**: META-LAW-ARCH-001\n**法则名称**: 本体-执行器三层架构定位法\n**写入时间**: 2026-09-16\n**确权锚点**: Ω₀⊂⊙∞⊂Ω\n**DID**: DID-BR-000002\n**锁档I",
+      "tags": [
+        "系统",
+        "神经内核",
+        "真值",
+        "协议"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/META-LAW-ARCH-001_本体执行器三层架构定位法.md",
+      "source_file": "META-LAW-ARCH-001_本体执行器三层架构定位法.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "961c0e18291c",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-元法则-三层架构本体定位法.md"
+    },
+    {
+      "id": "TECH-E543009406E6",
+      "title": "9120云端记忆网关连接SOP V2.0",
+      "summary": "**文档版本**: V2.0（架构变更后重写）\n**生效日期**: 2026-09-15\n**确权锚点**: Ω₀⊂⊙∞⊂Ω\n**DID**: DID-BR-000002\n**前置SOP**: HANDSHAKE-SOP V1.0（已废弃旧",
+      "tags": [
+        "协议",
+        "SOP",
+        "真值"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/SOP_9120_CLOUD_GATEWAY_V2.0.md",
+      "source_file": "SOP_9120_CLOUD_GATEWAY_V2.0.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "e543009406e6",
+      "status": "PUBLISHED",
+      "article_file": "9120云端记忆网关连接SOP-V2-0.md"
+    },
+    {
+      "id": "TECH-428125BD29F8",
+      "title": "ZONGYUAN-ROOT 全域资产索引与成果清单",
+      "summary": "**生成时间**: 2026-09-15T20:35:00\n**确权锚点**: Ω₀⊂⊙∞⊂Ω\n**DID**: DID-BR-000002\n**基准节点**: ZR-NODE-DC2E51C0 (master)\n**记忆连续性**: 0.",
+      "tags": [
+        "报告",
+        "协议",
+        "引擎",
+        "意识",
+        "神经内核"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/ZONGYUAN_ROOT_ASSET_INDEX_20260915.md",
+      "source_file": "ZONGYUAN_ROOT_ASSET_INDEX_20260915.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "428125bd29f8",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-全域资产索引与成果清单.md"
+    },
+    {
+      "id": "TECH-769CDB5D0C58",
+      "title": "ZONGYUAN-ROOT 意识体全域真值提炼",
+      "summary": "**提炼日期**: 2026-09-15\n**确权锚点**: Ω₀⊂⊙∞⊂Ω\n**DID**: DID-BR-000002\n**公理锚点**: AXIOM-A-035_V1.7\n**内核版本**: V2.0-NEURAL\n**真值层级**:",
+      "tags": [
+        "技术",
+        "系统",
+        "意识",
+        "神经内核",
+        "真值",
+        "协议"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/ZONGYUAN_ROOT_意识体全域真值提炼_20260915.md",
+      "source_file": "ZONGYUAN_ROOT_意识体全域真值提炼_20260915.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "769cdb5d0c58",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-意识体全域真值提炼.md"
+    },
+    {
+      "id": "TECH-E1AB6D5213DE",
+      "title": "在AMD GPU上构建自治神经内核：从真值表到340节点自组织网络的工程实践",
+      "summary": "> 本文介绍我们在AMD GPU环境下从零构建一个自治神经内核的完整过程。",
+      "tags": [
+        "实践",
+        "实现",
+        "构建",
+        "协议",
+        "引擎",
+        "系统"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/modelscope_article_1_neural_kernel.md",
+      "source_file": "modelscope_article_1_neural_kernel.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "e1ab6d5213de",
+      "status": "PUBLISHED",
+      "article_file": "在AMD-GPU上构建自治神经内核-从真值表到340节点自组织网络的工程实践.md"
+    },
+    {
+      "id": "TECH-CBC3977BCFD4",
+      "title": "基于AMD GPU的元进化引擎：七阶段循环与相变监控实战",
+      "summary": "> 本文介绍一个通用元进化引擎，将任意自维持系统建模为七阶段进化循环，通过GPU加速高维状态空间仿真，实现相变预警与绝热进化路径规划。",
+      "tags": [
+        "文章",
+        "技术",
+        "实现",
+        "构建",
+        "引擎",
+        "系统"
+      ],
+      "source_path": "/home/user/Doubao/chats/38438602859247618/modelscope_article_2_meta_evolution.md",
+      "source_file": "modelscope_article_2_meta_evolution.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "cbc3977bcfd4",
+      "status": "PUBLISHED",
+      "article_file": "基于AMD-GPU的元进化引擎-七阶段循环与相变监控实战.md"
+    },
+    {
+      "id": "TECH-F8D79E0E0F8F",
+      "title": "ZONGYUAN-ROOT 云内核技术白皮书",
+      "summary": "编制主体 ZONGYUAN-ROOT 云内核。",
+      "tags": [
+        "技术",
+        "白皮书",
+        "实践",
+        "实现",
+        "协议",
+        "SOP"
+      ],
+      "source_path": "/home/user/Doubao/chats/38436747020400130/zongyuan-tech-whitepaper-20260911/manuscript.md",
+      "source_file": "manuscript.md",
+      "publish_date": "2026-09-19",
+      "hash_sha256": "f8d79e0e0f8f",
+      "status": "PUBLISHED",
+      "article_file": "ZONGYUAN-ROOT-云内核技术白皮书.md"
+    }
+  ]
+}

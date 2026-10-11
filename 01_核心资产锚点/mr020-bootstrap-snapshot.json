@@ -1,0 +1,23 @@
+{
+  "snapshot_id": "MR020-BOOTSTRAP-SNAPSHOT-20260915",
+  "kernel": "MR-020 元极恒一内核·M0整合基础",
+  "created_at": "2026-09-15",
+  "basis_anchor": "BASELINE-V40 / Lv10",
+  "parent_kernel": "ZONGYUAN-ROOT V3.0-COGNITIVE",
+  "inherited_assets": [
+    {"asset": "kernel_truths.json", "version": "V3.0-COGNITIVE", "truths": 19, "frozen": 4, "locked": 9},
+    {"asset": "神经注册表", "nodes": 277, "connections": 1166},
+    {"asset": "Ω-Brainμ", "version": "v1.0.0", "operators": 4},
+    {"asset": "自愈引擎", "version": "V1.0", "repairs": 191},
+    {"asset": "MR-019长期记忆", "port": 9124, "status": "active"},
+    {"asset": "流水线V2", "cron": "周日23:30", "status": "enabled"},
+    {"asset": "统一网关", "port": 9120, "status": "读端点502待恢复"}
+  ],
+  "m0_deliverables": [
+    "mr020-six-dim-registry.json（六维神经注册表6节点）",
+    "本快照（状态基线）"
+  ],
+  "m0_acceptance": {"dimensions_enum": "6/6", "weight_measurable": true, "state": "PASS"},
+  "next_phases": ["M1超认知引擎(六维漂移审计)", "M2永恒自治闭环(自治指数实测)", "M3终极整合固化(BASELINE-V41)"],
+  "constraints": ["MR-010中枢批准", "MR-007资源熔断", "A7基线只读分支化"]
+}

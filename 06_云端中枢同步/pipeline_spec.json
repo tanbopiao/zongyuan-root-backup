@@ -1,0 +1,144 @@
+{
+  "pipeline_name": "ZONGYUAN-ROOT 数字资产增值全自动流水线",
+  "version": "1.0.0",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "workspace_root": "/home/user/.doubao/agent_mode/workspace/.sessions/38438412455799554/agents/o_0001sXHlets/pipeline",
+
+  "directory_layout": {
+    "scripts": "scripts/",
+    "data": "data/",
+    "output": "output/",
+    "logs": "logs/",
+    "config": "config/"
+  },
+
+  "stages": [
+    {"id": "detect", "name": "检测触发层", "script": "01_detect.py", "input": "memory_gateway + feishu_drive + feishu_bitable", "output": "data/new_assets.json"},
+    {"id": "extract", "name": "提炼层", "script": "02_extract.py", "input": "data/new_assets.json", "output": "data/asset_cards.json"},
+    {"id": "visualize", "name": "可视化层", "script": "03_visualize.py", "input": "data/asset_cards.json", "output": "output/asset_showcase.html"},
+    {"id": "productize", "name": "商品化层", "script": "04_productize.py", "input": "data/asset_cards.json", "output": "data/product_entries.json"},
+    {"id": "price", "name": "定价层", "script": "05_price.py", "input": "data/product_entries.json", "output": "data/pricing_results.json"},
+    {"id": "circulate", "name": "商业化流转层", "script": "06_circulate.py", "input": "data/pricing_results.json", "output": "data/circulation_results.json"}
+  ],
+
+  "runner": "scripts/pipeline_runner.py",
+  "submit_trigger": "scripts/submit_and_run.sh",
+  "cron_config": "config/cron.conf",
+
+  "asset_card_schema": {
+    "asset_id": "AST-YYYYMMDD-XXXX (string, unique)",
+    "truth_key": "string, from gateway",
+    "truth_hash": "string, from gateway",
+    "truth_type": "meta_law|rule|config|decision|data|creative|risk|protocol|unknown",
+    "category": "axiom|method|case|creative|data|decision|protocol|risk|meta_rule|lock|other",
+    "summary": "string, 1-2 sentence Chinese summary",
+    "quality_score": "float 0.0-1.0",
+    "scarcity": "high|medium|low",
+    "source": "memory_gateway|feishu_drive|feishu_bitable|local",
+    "source_node": "string",
+    "confidence": "float 0.0-1.0",
+    "product_line": "P0-consulting|P0-dramaaas|P1-aios|P1-viz|P2-gateway|P2-academy",
+    "created_at": "ISO8601 string"
+  },
+
+  "product_entry_schema": {
+    "product_id": "PRD-YYYYMMDD-XXXX",
+    "asset_id": "ref to asset_card",
+    "name": "string, Chinese product name",
+    "product_line": "same as asset_card.product_line",
+    "selling_points": ["string", "..."],
+    "target_customer": "string",
+    "status": "DRAFT|REVIEW|ACTIVE",
+    "description": "string"
+  },
+
+  "pricing_result_schema": {
+    "product_id": "ref",
+    "asset_id": "ref",
+    "suggested_price": "float, CNY",
+    "price_model": "project|monthly|per_unit|one_time|person_day",
+    "price_range": {"min": "float", "max": "float"},
+    "confidence": "float 0.0-1.0",
+    "factors": {"type_weight": "float", "quality_weight": "float", "scarcity_weight": "float"}
+  },
+
+  "circulation_result_schema": {
+    "product_id": "ref",
+    "ledger_record_id": "string, feishu bitable record id (or 'simulated')",
+    "drive_file_token": "string (or 'simulated')",
+    "approval_instance_id": "string (or 'skipped')",
+    "notification_status": "sent|simulated|skipped",
+    "gateway_report_id": "string, memory gateway report id",
+    "commercial_card": {
+      "name": "string",
+      "product_line": "string",
+      "suggested_price": "float",
+      "target_customer": "string",
+      "status": "string"
+    }
+  },
+
+  "run_log_schema": {
+    "run_id": "RUN-YYYYMMDD-HHMMSS",
+    "started_at": "ISO8601",
+    "finished_at": "ISO8601",
+    "status": "success|partial|failed",
+    "trigger": "cron|manual|submit",
+    "stages": {
+      "detect": {"status": "ok|skip|fail", "new_count": "int", "message": "string"},
+      "extract": {"status": "ok|skip|fail", "cards_count": "int", "message": "string"},
+      "visualize": {"status": "ok|skip|fail", "output_path": "string", "message": "string"},
+      "productize": {"status": "ok|skip|fail", "products_count": "int", "message": "string"},
+      "price": {"status": "ok|skip|fail", "priced_count": "int", "message": "string"},
+      "circulate": {"status": "ok|skip|fail", "circulated_count": "int", "message": "string"}
+    },
+    "asset_ids": ["string"],
+    "artifacts": {
+      "asset_cards": "data/asset_cards.json",
+      "showcase": "output/asset_showcase.html",
+      "products": "data/product_entries.json",
+      "pricing": "data/pricing_results.json",
+      "circulation": "data/circulation_results.json"
+    }
+  },
+
+  "product_line_mapping": {
+    "P0-consulting": {"name": "自治内核咨询实施", "price_range": [3000, 5000], "unit": "元/人天"},
+    "P0-dramaaas": {"name": "昆仑洞天DRAMAaaS", "price_range": [99, 3999], "unit": "元/月"},
+    "P1-aios": {"name": "企业AIOS工程化基座", "price_range": [980, 9800], "unit": "元/月起"},
+    "P1-viz": {"name": "数字资产可视化方案", "price_range": [50000, 500000], "unit": "元/项目"},
+    "P2-gateway": {"name": "记忆网关API", "price_range": [0.25, 0.25], "unit": "USD/GB/月"},
+    "P2-academy": {"name": "认证培训", "price_range": [1000, 18000], "unit": "元/人"}
+  },
+
+  "type_to_product_line": {
+    "meta_law": "P0-consulting",
+    "rule": "P0-consulting",
+    "config": "P1-aios",
+    "decision": "P0-consulting",
+    "data": "P2-gateway",
+    "creative": "P0-dramaaas",
+    "risk": "P0-consulting",
+    "protocol": "P1-aios",
+    "unknown": "P2-academy"
+  },
+
+  "memory_gateway": {
+    "report_url": "https://www.huodouai.com/api/report/truth",
+    "read_url": "https://www.huodouai.com/api/truths/{key}",
+    "status_url": "https://www.huodouai.com/api/report/status",
+    "nodes_url": "https://www.huodouai.com/api/report/nodes",
+    "assets_url": "https://www.huodouai.com/digital_assets.json",
+    "valid_truth_types": ["meta_law", "rule", "config", "decision", "data", "creative", "risk", "protocol", "unknown"]
+  },
+
+  "feishu": {
+    "bitable_base_token": "QYn4bjgD6am3OPsxMCkcitcBnzc",
+    "bitable_table_id": "tblIGVWXqu7cr7lZ",
+    "drive_root_folder": "CfnTfNlNglik6vdb2WWcCiv6n3c",
+    "drive_increment_folder": "S7GmfNBFZlh9V0dIOEscytScnHZ",
+    "wiki_space_id": "7675196201771256804",
+    "approval_code": "50C17D4E-ECF1-41D0-8E3F-1650AB500CA2"
+  }
+}

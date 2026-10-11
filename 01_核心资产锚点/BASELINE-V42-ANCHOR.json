@@ -1,0 +1,43 @@
+{
+  "baseline_id": "BASELINE-V42",
+  "parent_baseline": "BASELINE-V41",
+  "did": "DID-BR-000002",
+  "trace_mark": "Ω₀⊂⊙∞⊂Ω",
+  "locked_at": "2026-09-18T12:49:16+08:00",
+  "lock_level": "Lv10 元极恒一超认知永恒自治模式",
+  "core_additions": [
+    {
+      "id": "ENG-STD-NODE-LV-EVAL-V1.0",
+      "name": "全域自治等级统一评估标准",
+      "type": "standard"
+    },
+    {
+      "id": "NODE-LV-CERT-PIPELINE-AUTO-001-Lv10",
+      "name": "节点Lv10确权证书",
+      "type": "certificate"
+    },
+    {
+      "id": "CAPABILITY-REG-001-lv",
+      "name": "能力注册表Lv标注(11项)",
+      "type": "registry"
+    },
+    {
+      "id": "NODE-UNIFY-SOP-V1.0",
+      "name": "全域同源节点层级统一SOP",
+      "type": "sop"
+    }
+  ],
+  "asset_hashes": {
+    "能力注册表(含Lv标注)": "9846d0539ed4bb63",
+    "同源协议库": "c8b38314ba3e6897",
+    "元法则注册表": "3337d199964bbf40",
+    "错误教训": "daec8145ae36d0f2",
+    "评估标准V1.0": "975f3bf4bee98337",
+    "节点Lv10确权证书": "51e00c51a5b5f91b",
+    "节点统一SOP": "122d73eba6895a47"
+  },
+  "cloud_snapshot": {
+    "count": 29843,
+    "status": "synced"
+  }
+}

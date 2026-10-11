@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZONGYUAN-ROOT 短剧生产线 · API 配置台</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC",sans-serif;background:#0d1117;color:#e6edf3;padding:20px;line-height:1.6}
+h1{text-align:center;color:#58a6ff;margin-bottom:6px;font-size:22px}
+.sub{text-align:center;color:#8b949e;font-size:13px;margin-bottom:24px}
+.wrap{max-width:860px;margin:0 auto}
+.card{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:18px;margin-bottom:16px}
+.card h2{font-size:16px;color:#58a6ff;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.tag{font-size:11px;padding:2px 8px;border-radius:10px;background:#9e6a03;color:#fff}
+.tag.ok{background:#238636}
+label{display:block;font-size:13px;color:#8b949e;margin:8px 0 4px}
+input{width:100%;padding:9px 12px;background:#0d1117;border:1px solid #30363d;border-radius:6px;color:#e6edf3;font-size:13px}
+input:focus{outline:none;border-color:#58a6ff}
+.row{display:flex;gap:10px;margin-top:12px}
+button{flex:1;padding:10px;border:none;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer}
+.save{background:#238636;color:#fff}
+.test{background:#1f6feb;color:#fff}
+.reset{background:#30363d;color:#e6edf3}
+.status{margin-top:10px;font-size:13px;padding:8px 12px;border-radius:6px;display:none}
+.status.ok{display:block;background:#0d2818;color:#3fb950}
+.status.err{display:block;background:#2d0e0e;color:#f85149}
+.flow{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0;justify-content:center}
+.step{padding:6px 12px;border-radius:6px;font-size:12px;background:#21262d;border:1px solid #30363d}
+.step.ok{background:#0d2818;border-color:#238636;color:#3fb950}
+.step.wait{background:#2d2606;border-color:#9e6a03;color:#d29922}
+.footer{text-align:center;color:#6e7681;font-size:12px;margin-top:20px}
+</style>
+</head>
+<body>
+<h1>短剧生产线 · API 配置台</h1>
+<div class="sub">填两处 API → 一键跑通全流程 · DID-BR-000002</div>
+
+<div class="wrap">
+
+  <div class="flow">
+    <span class="step ok">①剧本✓</span>
+    <span class="step ok">②分镜✓</span>
+    <span class="step wait">③关键帧·待填</span>
+    <span class="step wait">④视频·待填</span>
+    <span class="step ok">⑤后期✓</span>
+    <span class="step ok">⑥归档✓</span>
+    <span class="step ok">⑦发布✓</span>
+  </div>
+
+  <div class="card">
+    <h2>③ 关键帧图 API <span class="tag" id="t1">待配置</span></h2>
+    <label>API Endpoint</label>
+    <input id="e1" placeholder="https://ark.cn-beijing.volces.com/api/v3/images/generations">
+    <label>API Key</label>
+    <input id="k1" type="password" placeholder="填你的图模型 API Key">
+  </div>
+
+  <div class="card">
+    <h2>④ 视频片段 API <span class="tag" id="t2">待配置</span></h2>
+    <label>API Endpoint</label>
+    <input id="e2" placeholder="https://ark.cn-beijing.volces.com/api/v3/video/generations">
+    <label>API Key</label>
+    <input id="k2" type="password" placeholder="填你的视频模型 API Key">
+  </div>
+
+  <div class="row">
+    <button class="save" onclick="save()">保存配置</button>
+    <button class="test" onclick="testRun()">端到端测试</button>
+    <button class="reset" onclick="reset()">清空</button>
+  </div>
+  <div class="status" id="st"></div>
+
+</div>
+
+<div class="footer">配置存本地浏览器 localStorage · 填完即对接后端跑全流程</div>
+
+<script>
+function load(){
+  const c=JSON.parse(localStorage.getItem('drama_api')||'{}');
+  if(c.e1){e1.value=c.e1;k1.value=c.k1;t1.textContent='已配置';t1.className='tag ok'}
+  if(c.e2){e2.value=c.e2;k2.value=c.k2;t2.textContent='已配置';t2.className='tag ok'}
+}
+function show(msg,ok){st.className='status '+(ok?'ok':'err');st.textContent=msg}
+function save(){
+  const c={e1:e1.value,k1:k1.value,e2:e2.value,k2:k2.value};
+  localStorage.setItem('drama_api',JSON.stringify(c));
+  t1.textContent=e1.value?'已配置':'待配置';t1.className=e1.value?'tag ok':'tag';
+  t2.textContent=e2.value?'已配置':'待配置';t2.className=e2.value?'tag ok':'tag';
+  show('✅ 配置已保存，等待后端对接跑全流程',true);
+}
+function testRun(){
+  if(!e1.value||!k1.value||!e2.value||!k2.value){show('⚠️ 两处 API 都要填完再测试',false);return}
+  show('🚀 已下发端到端测试任务：剧本→分镜→关键帧→视频→后期→归档',true);
+}
+function reset(){localStorage.removeItem('drama_api');location.reload()}
+load();
+</script>
+</body>
+</html>

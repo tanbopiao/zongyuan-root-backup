@@ -1,0 +1,26 @@
+{
+  "report_time": "2026-09-16T04:03:13.201167+00:00",
+  "inventory_id": "BASE-CAP-20260916-0403",
+  "capability_count": 19,
+  "level_summary": {
+    "S": 3,
+    "A": 1,
+    "B": 12,
+    "C": 3
+  },
+  "cloud_report": {
+    "success": true,
+    "action": "inserted",
+    "key": "BASE-CAPABILITY-20260916-0403",
+    "validation": {
+      "skipped": true,
+      "semantic_check": null,
+      "l0_check": null,
+      "issues": [
+        "文本内容过短或无中文，跳过语义校验"
+      ]
+    },
+    "truth_count": 14554,
+    "message": "真值写入成功（已通过语义前置校验）"
+  }
+}

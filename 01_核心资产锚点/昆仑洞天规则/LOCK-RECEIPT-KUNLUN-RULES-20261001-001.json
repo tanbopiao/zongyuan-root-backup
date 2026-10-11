@@ -1,0 +1,15 @@
+{
+  "lock_event_id": "LOCK-KUNLUN-RULES-FULL-20261001-001",
+  "lock_name": "昆仑洞天60条规则全量启用全域锁档",
+  "locked_at": "2026-10-01T11:14:35",
+  "did": "DID-BR-000002",
+  "trace": "Ω₀⊂⊙∞⊂Ω",
+  "state": "FROZEN",
+  "channels": {
+    "本地锚点": "✅ kernel_snapshot + 注册表(60条) + 生产配置",
+    "云端中枢": "✅ KUNLUN.RULES.FULL-SCAN.20261001.ENABLED(id=188110)",
+    "飞书知识库": "⏸ 账户权限变更阻塞(space_id缓存: 7675751446528134419)",
+    "飞书台账": "⏸ 账户权限变更阻塞(base_token缓存: QYn4bjgD6am3OPsxMCkcitcBnzc)"
+  },
+  "quota": "零豆包付费"
+}

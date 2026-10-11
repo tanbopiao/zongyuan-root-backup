@@ -1,0 +1,10 @@
+{
+  "assets": {
+    "kernel_truths.json": "c4335f319a69462f8fe4ad44db749c040e6553fb44874dbf59b58c42f9696471",
+    "mr020-integrated-kernel.json": "8e2457a7733c02db13a75452db8f3ba7d596a7eec2b0285c60d8e88b80d33e12"
+  },
+  "baseline": "BASELINE-V41",
+  "lv": "Lv10",
+  "state": "ETERNAL_AUTONOMY",
+  "ts": "2026-09-15"
+}

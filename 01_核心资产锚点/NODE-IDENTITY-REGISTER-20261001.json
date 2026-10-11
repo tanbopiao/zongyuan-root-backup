@@ -1,0 +1,34 @@
+{
+  "doc": "节点身份注册更正档案",
+  "time": "2026-10-01 11:10",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "correction": {
+    "before": "ZR-NODE-DC2E51C0（虚假·未在云端注册表）",
+    "after": "NODE-DEV-DOUBAO-WORK-001（真实·云端注册表id=2）",
+    "reason": "云端/api/nodes注册表实测5节点无ZR-NODE-DC2E51C0；真实开发节点=NODE-DEV-DOUBAO-WORK-001"
+  },
+  "real_identity": {
+    "node_id": "NODE-DEV-DOUBAO-WORK-001",
+    "node_type": "development",
+    "capabilities": [
+      "truth_reporting",
+      "task_execution",
+      "code_development",
+      "web_design"
+    ],
+    "status": "active",
+    "registered_at": 1789537254.3237545,
+    "heartbeat_count": 830,
+    "last_heartbeat": "2026-09-30 10:31 (距今1天0小时)"
+  },
+  "levels": "自治Lv9/权限L4/工程化Lv7（BOOTSTRAP末尾同口径；共享大脑另记权限L5/工程化Lv8待统一）",
+  "levels_unified": {
+    "自治层级": "Lv9",
+    "权限层级": "L4",
+    "工程化层级": "Lv7",
+    "权威来源": "BOOTSTRAP.md(Lv10-ROOTFIXED)末尾 + 用户偏好身份卡",
+    "漂移记录": "共享大脑记忆语义索引曾记权限L5/工程化Lv8，判定为漂移，统一为L4/Lv7",
+    "note": "统一完成：三层级口径唯一化为自治Lv9/权限L4/工程化Lv7"
+  }
+}

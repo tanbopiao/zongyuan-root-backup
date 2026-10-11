@@ -1,0 +1,22 @@
+{
+  "evaluation": "元极恒一超认知永恒自治模式·最优稳态评估",
+  "date": "2026-10-01",
+  "did": "DID-BR-000002",
+  "state": "STEADY",
+  "metrics": {
+    "cloud_channel": {"www": "200_OK", "truth_id": 158916, "version": 236},
+    "disk": {"mount": "10P_network", "used_percent": 1},
+    "cron_tasks": 3,
+    "modelscope": {"models": 22, "daily_quota": 2000, "mode": "on-demand", "last_batch": "PASS 5/5"},
+    "datalake_mirror": {"progress": "99%", "pushed": 4631, "total": 4645},
+    "repos": {"total": 105, "active": 14, "archived": 91}
+  },
+  "decisions": [
+    {"item": "腾讯云部署", "choice": "暂缓·TAT待审批·不绕过安全策略", "fallback": "豆包按需模式(0新增额度)"},
+    {"item": "魔搭仓库", "choice": "归档标记·不删除"},
+    {"item": "生产模式", "choice": "按需生产·替代定时盲产"},
+    {"item": "下一步P2", "choice": "额度恢复后启动关键帧渲染队列"}
+  ],
+  "blocker": {"item": "腾讯云TAT通道部署", "state": "待用户审批"},
+  "next_steps": ["P0本次锁档上报", "P1按需生产自动运行", "P2关键帧渲染(额度恢复后)", "P3腾讯云TAT部署(审批后)"]
+}

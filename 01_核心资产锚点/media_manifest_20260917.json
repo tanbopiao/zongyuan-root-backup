@@ -1,0 +1,234 @@
+{
+  "manifest_id": "media_manifest_20260917",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "created": "2026-09-17T23:42:00+08:00",
+  "total": 28,
+  "total_size_mb": 57.44,
+  "assets": [
+    {
+      "name": "SHENNIAO_c1.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c1.jpg",
+      "size_mb": 2.15,
+      "sha256": "044407c0685f6f63",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c10.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c10.jpg",
+      "size_mb": 2.04,
+      "sha256": "9621f8c888345a1f",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c11.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c11.jpg",
+      "size_mb": 2.04,
+      "sha256": "b9aad3a1b6d19a39",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c12.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c12.jpg",
+      "size_mb": 2.11,
+      "sha256": "9c030ce1ce94147b",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c13.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c13.jpg",
+      "size_mb": 2.11,
+      "sha256": "1e4e055734cf26d7",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c14.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c14.jpg",
+      "size_mb": 1.97,
+      "sha256": "cabd8a05eb959694",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c15.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c15.jpg",
+      "size_mb": 1.89,
+      "sha256": "730339cef00a64df",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c16.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c16.jpg",
+      "size_mb": 2.04,
+      "sha256": "c03769458afa0af0",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c17.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c17.jpg",
+      "size_mb": 1.99,
+      "sha256": "d57b267af1419d0f",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c18.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c18.jpg",
+      "size_mb": 2.33,
+      "sha256": "0fbdbbba38772c51",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c19.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c19.jpg",
+      "size_mb": 2.04,
+      "sha256": "51c0f21c9cd76cc2",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c2.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c2.jpg",
+      "size_mb": 1.99,
+      "sha256": "a73072bb06d67eac",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c20.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c20.jpg",
+      "size_mb": 2.04,
+      "sha256": "3df2c6eaf31e2ab5",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c21.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c21.jpg",
+      "size_mb": 2.13,
+      "sha256": "5b6c16c83c63bf3e",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c22.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c22.jpg",
+      "size_mb": 2.12,
+      "sha256": "12bdcab7487258fd",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c23.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c23.jpg",
+      "size_mb": 1.93,
+      "sha256": "ea6e1c7b4a893464",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c24.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c24.jpg",
+      "size_mb": 2.0,
+      "sha256": "3530e7e041190c56",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c25.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c25.jpg",
+      "size_mb": 1.97,
+      "sha256": "15714fa573b02486",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c26.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c26.jpg",
+      "size_mb": 1.8,
+      "sha256": "4deea80d9485a58b",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c27.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c27.jpg",
+      "size_mb": 1.76,
+      "sha256": "c2ab60602acf10de",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c28.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c28.jpg",
+      "size_mb": 2.02,
+      "sha256": "e57c7d4bd48508b4",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c3.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c3.jpg",
+      "size_mb": 2.25,
+      "sha256": "6af9bce9be315d2b",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c4.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c4.jpg",
+      "size_mb": 2.31,
+      "sha256": "e0a8a5a1ddecf52a",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c5.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c5.jpg",
+      "size_mb": 2.27,
+      "sha256": "8528ef5116963ee6",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c6.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c6.jpg",
+      "size_mb": 2.2,
+      "sha256": "465c612f27434506",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c7.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c7.jpg",
+      "size_mb": 2.05,
+      "sha256": "c65032dcef487151",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c8.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c8.jpg",
+      "size_mb": 2.02,
+      "sha256": "185e139513d0ca67",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    },
+    {
+      "name": "SHENNIAO_c9.jpg",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c9.jpg",
+      "size_mb": 1.87,
+      "sha256": "4d9278fa77cd5737",
+      "date": "2026-09-17",
+      "series": "SHENNIAO"
+    }
+  ]
+}

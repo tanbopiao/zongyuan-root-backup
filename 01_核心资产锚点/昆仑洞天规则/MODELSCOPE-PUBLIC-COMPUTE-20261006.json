@@ -1,0 +1,23 @@
+{
+  "asset_id": "ASSET-PUB-20261006-012",
+  "name": "算力场域三闭环耦合谐振技术白皮书V2.0(专业巡检升级)",
+  "source": "全域算力场域耦合元法则/舒曼基准频全域大统一终极元法则/同源节点基准频双向握手同态原理",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/compute-field-three-loops-resonance",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/compute-field-three-loops-resonance.git",
+  "published_at": "2026-10-07T11:20:00",
+  "version": "V2.0(当前版,2026-10-07) + V1.0归档(2026-10-06,保留不删)",
+  "files": [
+    "compute-field-three-loops-resonance-WHITEPAPER-V2.0.md (+新增)",
+    "compute-field-three-loops-resonance-WHITEPAPER-V2.0.html (+新增)",
+    "compute-field-three-loops-resonance-ARCH-V2.0.json (+新增)",
+    "README.md (+更新)",
+    "WHITEPAPER-COMPUTE-V1.0.md (归档)",
+    "compute_arch.json (归档)"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.compute-field-three-loops-resonance-UPGRADE.20261007 (http=200)",
+  "quota": "零豆包付费"
+}

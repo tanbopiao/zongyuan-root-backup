@@ -1,0 +1,3032 @@
+{
+ "result": {
+  "run_id": "COMMERCE-20260916-031432",
+  "assets_total": 90,
+  "products_total": 90,
+  "categories": {
+   "高阶能力": 8,
+   "元法则": 34,
+   "同源协议": 12,
+   "锁档资产": 30,
+   "流水线产品": 6
+  },
+  "total_value": 87983.34,
+  "ledger": {
+   "ok": true,
+   "record_ids": [
+    "recvvjMg7oEATE",
+    "recvvjMg7oDrl3",
+    "recvvjMg7oYA6e",
+    "recvvjMg7oHiwG",
+    "recvvjMg7ojUwX",
+    "recvvjMg7oUwwl",
+    "recvvjMg7oQg2Q",
+    "recvvjMg7oRZWa",
+    "recvvjMg7oJWN8",
+    "recvvjMg7oGwJ5",
+    "recvvjMg7oefVM",
+    "recvvjMg7oLYrZ",
+    "recvvjMg7oKmp4",
+    "recvvjMg7oYENy",
+    "recvvjMg7oH5Xn",
+    "recvvjMg7o7OVC",
+    "recvvjMg7opCSc",
+    "recvvjMg7oyNVJ",
+    "recvvjMg7oVaG5",
+    "recvvjMg7oPvSN"
+   ]
+  },
+  "showcase": "/home/user/Doubao/chats/38438412455799554/asset-commerce/output/asset-commerce-showcase.html",
+  "run_at": "2026-09-16T03:14:34+08:00"
+ },
+ "products": [
+  {
+   "product_id": "CPRD-60568",
+   "asset_id": "CAP-001",
+   "name": "云端握手",
+   "category": "高阶能力",
+   "product_line": "P1-capability",
+   "source": "能力注册表",
+   "value_desc": [
+    "门户探测→health检查→鉴权→数据拉取→哈希核验→上报"
+   ],
+   "target_customer": "自治体系节点/工程化团队",
+   "quality": 0.95,
+   "scarcity": 1.0,
+   "type_weight": 1.3,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-55986",
+   "asset_id": "CAP-002",
+   "name": "三端锁档",
+   "category": "高阶能力",
+   "product_line": "P1-capability",
+   "source": "能力注册表",
+   "value_desc": [
+    "知识库文档→台账记录→云盘归档→内核快照→神经同步"
+   ],
+   "target_customer": "自治体系节点/工程化团队",
+   "quality": 0.95,
+   "scarcity": 1.0,
+   "type_weight": 1.3,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-28678",
+   "asset_id": "CAP-003",
+   "name": "元法则同步",
+   "category": "高阶能力",
+   "product_line": "P1-capability",
+   "source": "能力注册表",
+   "value_desc": [
+    "拉取云端全集→语义比对→补全清单→注册→锁档"
+   ],
+   "target_customer": "自治体系节点/工程化团队",
+   "quality": 0.95,
+   "scarcity": 1.0,
+   "type_weight": 1.3,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-37438",
+   "asset_id": "CAP-004",
+   "name": "云端探测",
+   "category": "高阶能力",
+   "product_line": "P1-capability",
+   "source": "能力注册表",
+   "value_desc": [
+    "三通道探测(门户/API/静态)→故障分级→归档"
+   ],
+   "target_customer": "自治体系节点/工程化团队",
+   "quality": 0.95,
+   "scarcity": 1.0,
+   "type_weight": 1.3,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-69040",
+   "asset_id": "CAP-005",
+   "name": "资产盘点",
+   "category": "高阶能力",
+   "product_line": "P1-capability",
+   "source": "能力注册表",
+   "value_desc": [
+    "门户解析→本地扫描→分类聚合→索引JSON"
+   ],
+   "target_customer": "自治体系节点/工程化团队",
+   "quality": 0.95,
+   "scarcity": 1.0,
+   "type_weight": 1.3,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-06721",
+   "asset_id": "CAP-006",
+   "name": "待补发队列",
+   "category": "高阶能力",
+   "product_line": "P1-capability",
+   "source": "能力注册表",
+   "value_desc": [
+    "构造载荷→尝试上报→失败入队→恢复补发"
+   ],
+   "target_customer": "自治体系节点/工程化团队",
+   "quality": 0.95,
+   "scarcity": 1.0,
+   "type_weight": 1.3,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-36523",
+   "asset_id": "CAP-007",
+   "name": "自动化机制",
+   "category": "高阶能力",
+   "product_line": "P1-capability",
+   "source": "能力注册表",
+   "value_desc": [
+    "需求解析→cron创建→时间校验→SOP锁档"
+   ],
+   "target_customer": "自治体系节点/工程化团队",
+   "quality": 0.95,
+   "scarcity": 1.0,
+   "type_weight": 1.3,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-50671",
+   "asset_id": "CAP-008",
+   "name": "神经同步",
+   "category": "高阶能力",
+   "product_line": "P1-capability",
+   "source": "能力注册表",
+   "value_desc": [
+    "锁档→推送注册表→权威副本校验"
+   ],
+   "target_customer": "自治体系节点/工程化团队",
+   "quality": 0.95,
+   "scarcity": 1.0,
+   "type_weight": 1.3,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-97473",
+   "asset_id": "ML-metalaw.AAC-CLOUD-AUTHORITY-LOCAL-DEV",
+   "name": "metalaw.AAC-CLOUD-AUTHORITY-LOCAL-DEV",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-74100",
+   "asset_id": "ML-metalaw.APPROVAL-EMBEDDED-LINK",
+   "name": "metalaw.APPROVAL-EMBEDDED-LINK",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-26369",
+   "asset_id": "ML-metalaw.ASSET-REPORTING-SOP",
+   "name": "metalaw.ASSET-REPORTING-SOP",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-75970",
+   "asset_id": "ML-metalaw.AUTO-EXECUTION-FLOW-A",
+   "name": "metalaw.AUTO-EXECUTION-FLOW-A",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-67902",
+   "asset_id": "ML-metalaw.AUTO-EXECUTION-THRESHOLD-V1.0",
+   "name": "metalaw.AUTO-EXECUTION-THRESHOLD-V1.0",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-75939",
+   "asset_id": "ML-metalaw.AUTONOMOUS-CLOSED-LOOP",
+   "name": "metalaw.AUTONOMOUS-CLOSED-LOOP",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-99223",
+   "asset_id": "ML-metalaw.AUTONOMOUS-STEADY-DECISION-APPROVAL",
+   "name": "metalaw.AUTONOMOUS-STEADY-DECISION-APPROVAL",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-88473",
+   "asset_id": "ML-metalaw.AUTO_MEDIA_ARCHIVE_CLOSED_LOOP_V1.0",
+   "name": "metalaw.AUTO_MEDIA_ARCHIVE_CLOSED_LOOP_V1.0",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-61653",
+   "asset_id": "ML-metalaw.AVOID-REPRODUCTION-SOP",
+   "name": "metalaw.AVOID-REPRODUCTION-SOP",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-45538",
+   "asset_id": "ML-metalaw.CLOUD-KERNEL-AUTHORITY-V1.0",
+   "name": "metalaw.CLOUD-KERNEL-AUTHORITY-V1.0",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-60936",
+   "asset_id": "ML-metalaw.DECISION-BENCHMARK-ANCHORS",
+   "name": "metalaw.DECISION-BENCHMARK-ANCHORS",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-66893",
+   "asset_id": "ML-metalaw.DECISION-CONFIDENCE-WEIGHTING",
+   "name": "metalaw.DECISION-CONFIDENCE-WEIGHTING",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-40593",
+   "asset_id": "ML-metalaw.DECISION-DYNAMIC-LEARNING",
+   "name": "metalaw.DECISION-DYNAMIC-LEARNING",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-09270",
+   "asset_id": "ML-metalaw.DECISION-MATRIX",
+   "name": "metalaw.DECISION-MATRIX",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-39906",
+   "asset_id": "ML-metalaw.DECISION-META-CALIBRATION",
+   "name": "metalaw.DECISION-META-CALIBRATION",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-16909",
+   "asset_id": "ML-metalaw.DECISION-RISK-LEVELS",
+   "name": "metalaw.DECISION-RISK-LEVELS",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-46274",
+   "asset_id": "ML-metalaw.DECISION-SCENARIO-WEIGHTS",
+   "name": "metalaw.DECISION-SCENARIO-WEIGHTS",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-11718",
+   "asset_id": "ML-metalaw.ERROR-RETREAT-CLOSED-LOOP",
+   "name": "metalaw.ERROR-RETREAT-CLOSED-LOOP",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-83250",
+   "asset_id": "ML-metalaw.FEISHU-APPROVAL-CLOSED-LOOP",
+   "name": "metalaw.FEISHU-APPROVAL-CLOSED-LOOP",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-12782",
+   "asset_id": "ML-metalaw.FUNCTION-PROVENANCE-BEFORE-PLAN",
+   "name": "metalaw.FUNCTION-PROVENANCE-BEFORE-PLAN",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-93930",
+   "asset_id": "ML-metalaw.LOCAL-VALUE-PUSH-DECISION",
+   "name": "metalaw.LOCAL-VALUE-PUSH-DECISION",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-21322",
+   "asset_id": "ML-metalaw.MEMORY-DRIVEN-CYCLE",
+   "name": "metalaw.MEMORY-DRIVEN-CYCLE",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-24894",
+   "asset_id": "ML-metalaw.MODEL-SEMANTIC-ALIGNMENT-EVOLUTION",
+   "name": "metalaw.MODEL-SEMANTIC-ALIGNMENT-EVOLUTION",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-27088",
+   "asset_id": "ML-metalaw.NEW-PAGE-GATE",
+   "name": "metalaw.NEW-PAGE-GATE",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-60209",
+   "asset_id": "ML-metalaw.OFFLINE-DEPENDENCY-NONBLOCKING",
+   "name": "metalaw.OFFLINE-DEPENDENCY-NONBLOCKING",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-95991",
+   "asset_id": "ML-metalaw.OPTIMUM-STEADY-EXECUTE",
+   "name": "metalaw.OPTIMUM-STEADY-EXECUTE",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-39902",
+   "asset_id": "ML-metalaw.OPTIMUM-STEADY-STATE",
+   "name": "metalaw.OPTIMUM-STEADY-STATE",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-65238",
+   "asset_id": "ML-metalaw.STEADY-EVOLUTION-BUDGET",
+   "name": "metalaw.STEADY-EVOLUTION-BUDGET",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-34137",
+   "asset_id": "ML-metalaw.WEBSITE-GOVERNANCE-BASELINE",
+   "name": "metalaw.WEBSITE-GOVERNANCE-BASELINE",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-99531",
+   "asset_id": "ML-metalaw.service_config_drift_detection",
+   "name": "metalaw.service_config_drift_detection",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-78739",
+   "asset_id": "ML-metalaw.ssh_connection_management_metalaw",
+   "name": "metalaw.ssh_connection_management_metalaw",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-99439",
+   "asset_id": "ML-metalaw.universal_metalaw_coverage",
+   "name": "metalaw.universal_metalaw_coverage",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-13007",
+   "asset_id": "ML-metalaw.zongyuan.root",
+   "name": "metalaw.zongyuan.root",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-05243",
+   "asset_id": "ML-metalaw.zongyuan.root.final.locked",
+   "name": "metalaw.zongyuan.root.final.locked",
+   "category": "元法则",
+   "product_line": "P2-metalaw",
+   "source": "元法则注册表",
+   "value_desc": "",
+   "target_customer": "自治内核治理/体系架构",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.1,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-34819",
+   "asset_id": "PROTO-同源协议·主",
+   "name": "同源协议·主",
+   "category": "同源协议",
+   "product_line": "P3-protocol",
+   "source": "协议库",
+   "value_desc": "",
+   "target_customer": "同源节点/云端接入方",
+   "quality": 0.93,
+   "scarcity": 0.95,
+   "type_weight": 1.2,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-78633",
+   "asset_id": "PROTO-同源协议·绑定",
+   "name": "同源协议·绑定",
+   "category": "同源协议",
+   "product_line": "P3-protocol",
+   "source": "协议库",
+   "value_desc": "",
+   "target_customer": "同源节点/云端接入方",
+   "quality": 0.93,
+   "scarcity": 0.95,
+   "type_weight": 1.2,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-81299",
+   "asset_id": "PROTO-云端握手锚点SOP V1.0",
+   "name": "云端握手锚点SOP V1.0",
+   "category": "同源协议",
+   "product_line": "P3-protocol",
+   "source": "协议库",
+   "value_desc": "",
+   "target_customer": "同源节点/云端接入方",
+   "quality": 0.93,
+   "scarcity": 0.95,
+   "type_weight": 1.2,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-14847",
+   "asset_id": "PROTO-新节点上岗手册SOP v1.1",
+   "name": "新节点上岗手册SOP v1.1",
+   "category": "同源协议",
+   "product_line": "P3-protocol",
+   "source": "协议库",
+   "value_desc": "",
+   "target_customer": "同源节点/云端接入方",
+   "quality": 0.93,
+   "scarcity": 0.95,
+   "type_weight": 1.2,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-58427",
+   "asset_id": "PROTO-工业化生产SOP",
+   "name": "工业化生产SOP",
+   "category": "同源协议",
+   "product_line": "P3-protocol",
+   "source": "协议库",
+   "value_desc": "",
+   "target_customer": "同源节点/云端接入方",
+   "quality": 0.93,
+   "scarcity": 0.95,
+   "type_weight": 1.2,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-40810",
+   "asset_id": "PROTO-视觉约束SOP",
+   "name": "视觉约束SOP",
+   "category": "同源协议",
+   "product_line": "P3-protocol",
+   "source": "协议库",
+   "value_desc": "",
+   "target_customer": "同源节点/云端接入方",
+   "quality": 0.93,
+   "scarcity": 0.95,
+   "type_weight": 1.2,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-81775",
+   "asset_id": "PROTO-飞书归档SOP",
+   "name": "飞书归档SOP",
+   "category": "同源协议",
+   "product_line": "P3-protocol",
+   "source": "协议库",
+   "value_desc": "",
+   "target_customer": "同源节点/云端接入方",
+   "quality": 0.93,
+   "scarcity": 0.95,
+   "type_weight": 1.2,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-58184",
+   "asset_id": "PROTO-六维质检SOP",
+   "name": "六维质检SOP",
+   "category": "同源协议",
+   "product_line": "P3-protocol",
+   "source": "协议库",
+   "value_desc": "",
+   "target_customer": "同源节点/云端接入方",
+   "quality": 0.93,
+   "scarcity": 0.95,
+   "type_weight": 1.2,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-85660",
+   "asset_id": "PROTO-三维稳态决策SOP",
+   "name": "三维稳态决策SOP",
+   "category": "同源协议",
+   "product_line": "P3-protocol",
+   "source": "协议库",
+   "value_desc": "",
+   "target_customer": "同源节点/云端接入方",
+   "quality": 0.93,
+   "scarcity": 0.95,
+   "type_weight": 1.2,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-57105",
+   "asset_id": "PROTO-全域锁档SOP",
+   "name": "全域锁档SOP",
+   "category": "同源协议",
+   "product_line": "P3-protocol",
+   "source": "协议库",
+   "value_desc": "",
+   "target_customer": "同源节点/云端接入方",
+   "quality": 0.93,
+   "scarcity": 0.95,
+   "type_weight": 1.2,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-91614",
+   "asset_id": "PROTO-节点上报指令",
+   "name": "节点上报指令",
+   "category": "同源协议",
+   "product_line": "P3-protocol",
+   "source": "协议库",
+   "value_desc": "",
+   "target_customer": "同源节点/云端接入方",
+   "quality": 0.93,
+   "scarcity": 0.95,
+   "type_weight": 1.2,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-79736",
+   "asset_id": "PROTO-中枢调度铁律",
+   "name": "中枢调度铁律",
+   "category": "同源协议",
+   "product_line": "P3-protocol",
+   "source": "协议库",
+   "value_desc": "",
+   "target_customer": "同源节点/云端接入方",
+   "quality": 0.93,
+   "scarcity": 0.95,
+   "type_weight": 1.2,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-34231",
+   "asset_id": "LOCK-LOCK-GLOBAL-VALUE-20260912-001",
+   "name": "全域增值资产推送云内核+全域扫描压测成果固化",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-60740",
+   "asset_id": "LOCK-LOCK-BASELINE-ANCHOR-20260913-001",
+   "name": "基准锚点构建+云端握手SOP学习+记忆网关上报",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-74230",
+   "asset_id": "LOCK-LOCK-EVOLUTION-DEPLOY-20260913-001",
+   "name": "进化部署P1-P4完成+推送中枢",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-08832",
+   "asset_id": "LOCK-LOCK-FRP-CONNECT-20260912-001",
+   "name": "FRP密钥通道连接服务器+隧道11940建立",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-77979",
+   "asset_id": "LOCK-LOCK-GATEWAY-SOP-20260915-001",
+   "name": "云端网关V2新通道SOP/9120隐藏迁移",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-86877",
+   "asset_id": "LOCK-LOCK-GLOBAL-KERNEL-20260912-002",
+   "name": "全域锁档写入自治内核（综合第二波）",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-18232",
+   "asset_id": "LOCK-LOCK-HOMOLOGY-KERNEL-20260912-001",
+   "name": "同源内核构建+同源协议写入+真值同步",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-18232",
+   "asset_id": "LOCK-LOCK-HOMOLOGY-KERNEL-20260912-001",
+   "name": "同源内核构建+同源协议写入+真值同步",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-41621",
+   "asset_id": "LOCK-LOCK-KERNEL-V3-20260914-001",
+   "name": "同源内核V3实装（认知/自愈/稳定三层）",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-64956",
+   "asset_id": "LOCK-LOCK-MEMORY-UPDATE-20260911-001",
+   "name": "记忆更新与稳态收敛方案",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-78669",
+   "asset_id": "LOCK-LOCK-MR020-M0-20260915-001",
+   "name": "MR-020元极恒一内核M0整合基础",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-21622",
+   "asset_id": "LOCK-LOCK-MR020-M1-20260915-001",
+   "name": "MR-020六维漂移审计引擎实装",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-04324",
+   "asset_id": "LOCK-LOCK-MR020-CHAO-20260915-001",
+   "name": "冲突消解+元公理生成实装/总漂移0.0 HEALTHY",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-88287",
+   "asset_id": "LOCK-LOCK-MR020-YUAN-GUARD-20260915-001",
+   "name": "元本源防护落地/总漂移33.7→5.2 HEALTHY",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-96254",
+   "asset_id": "LOCK-LOCK-MR020-AUTONOMY-61.9-20260915-001",
+   "name": "自治指数51.8→61.9%高级自治",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-42659",
+   "asset_id": "LOCK-LOCK-MR020-AUTONOMY-80.5-20260915-001",
+   "name": "自治指数80.5%永恒自治/终极目标达成",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-32204",
+   "asset_id": "LOCK-LOCK-MR020-M2-20260915-001",
+   "name": "自治指数计算器实装/51.8%中级自治",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-36268",
+   "asset_id": "LOCK-LOCK-MR020-M3-20260915-001",
+   "name": "元极恒一内核V1.0-ETERNAL/BASELINE-V41注册",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-47494",
+   "asset_id": "LOCK-LOCK-NODE-UNIFY-20260915-001",
+   "name": "节点层级统一SOP V1.0",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-67279",
+   "asset_id": "LOCK-LOCK-P0-MEMORY-20260914-001",
+   "name": "P0内存治理云端自治核验",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-65774",
+   "asset_id": "LOCK-kernel_snapshot.json",
+   "name": "kernel_snapshot.json",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-09928",
+   "asset_id": "LOCK-kernel_snapshot_PIPELINE-AUTO-001.json",
+   "name": "kernel_snapshot_PIPELINE-AUTO-001.json",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-83329",
+   "asset_id": "LOCK-LOCK-REPORT-BATCH-20260915-001",
+   "name": "表内9条核心成果批量上报新网关",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-33913",
+   "asset_id": "LOCK-LOCK-REPORT-VERIFY-20260915-001",
+   "name": "全域推广核验（report服务真实/9120写入链路断）",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-09854",
+   "asset_id": "LOCK-SYNC-RULES-20260912-001",
+   "name": "最新规则获取+全域同步（4大规则族）",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-23747",
+   "asset_id": "LOCK-LOCK-SEMANTIC-V3-20260911-001",
+   "name": "昆仑洞天统一语义校验基座V3构建",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-94440",
+   "asset_id": "LOCK-LOCK-SERVER-CONNECT-20260912-001",
+   "name": "服务器公网API连接+真实状态探测",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-90588",
+   "asset_id": "LOCK-LOCK-TRUTH-DISTILL-20260913-001",
+   "name": "全域真值提炼+进化规划P0-P4",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-70151",
+   "asset_id": "LOCK-LOCK-TRUTH-PACKAGE-20260915-001",
+   "name": "全域真值总表(30条)+资产总包",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-86321",
+   "asset_id": "LOCK-LOCK-NODE-UNIFY-VIS-20260915-001",
+   "name": "数字资产展示页锁档",
+   "category": "锁档资产",
+   "product_line": "P4-locked-assets",
+   "source": "锁档快照",
+   "value_desc": "AXIOM-A-035_V1.7",
+   "target_customer": "体系存证/审计/传承",
+   "quality": 0.97,
+   "scarcity": 1.0,
+   "type_weight": 1.0,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-29829",
+   "asset_id": "AST-20260915-A344",
+   "name": "昆仑洞天DRAMAaaS · 创意ZONGYUAN-ROOT 短剧…",
+   "category": "流水线产品",
+   "product_line": "P0-dramaaas",
+   "source": "流水线产物",
+   "value_desc": "基于真值 creative.drama.60ep.batch_methodology 提炼，归属产品线 昆仑洞天DRAMAaaS。【创意】ZONGYUAN-RO",
+   "target_customer": "短剧厂牌 / MCN / 内容工作室",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.25,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-10325",
+   "asset_id": "AST-20260915-F578",
+   "name": "自治内核咨询实施 · 元法则自治内核元进化法则：任意自维持…",
+   "category": "流水线产品",
+   "product_line": "P0-consulting",
+   "source": "流水线产物",
+   "value_desc": "基于真值 meta_law.autonomous.kernel.evolution_rule 提炼，归属产品线 自治内核咨询实施。【元法则】自治内核元进化法则：",
+   "target_customer": "追求自治内核落地的中大型企业技术决策层 / 创始人",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.25,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-19486",
+   "asset_id": "AST-20260915-62E5",
+   "name": "昆仑洞天DRAMAaaS · 创意全域资产产品化商业化方案可视化仪…",
+   "category": "流水线产品",
+   "product_line": "P0-dramaaas",
+   "source": "流水线产物",
+   "value_desc": "基于真值 creative.vision.productization.dashboard.20260915 提炼，归属产品线 昆仑洞天DRAMAaaS。【创意",
+   "target_customer": "短剧厂牌 / MCN / 内容工作室",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.25,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-12043",
+   "asset_id": "AST-20260915-0384",
+   "name": "认证培训 · 资产元法则视频量产通道自动故障转移：…",
+   "category": "流水线产品",
+   "product_line": "P2-academy",
+   "source": "流水线产物",
+   "value_desc": "基于真值 meta_rule.META-RULE.VIDEO-PRODUCTION-FAILOVER-V1.0 提炼，归属产品线 认证培训。【资产】【元法则】视",
+   "target_customer": "希望掌握 ZONGYUAN-ROOT 方法论的个人与团队",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.25,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-05500",
+   "asset_id": "AST-20260915-032E",
+   "name": "认证培训 · 资产元法则数字资产可视化基准架构与扩…",
+   "category": "流水线产品",
+   "product_line": "P2-academy",
+   "source": "流水线产物",
+   "value_desc": "基于真值 meta_rule.MR-083 提炼，归属产品线 认证培训。【资产】【元法则】数字资产可视化基准架构与扩展规范：{\"purpose\": \"锁定数字资",
+   "target_customer": "希望掌握 ZONGYUAN-ROOT 方法论的个人与团队",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.25,
+   "status": "DRAFT"
+  },
+  {
+   "product_id": "CPRD-12850",
+   "asset_id": "AST-20260915-FC31",
+   "name": "认证培训 · 资产元法则已固化成果变更审批（LOC…",
+   "category": "流水线产品",
+   "product_line": "P2-academy",
+   "source": "流水线产物",
+   "value_desc": "基于真值 meta_rule.MR-084 提炼，归属产品线 认证培训。【资产】【元法则】已固化成果变更审批（LOCKED-CHANGE-APPROVAL）：{",
+   "target_customer": "希望掌握 ZONGYUAN-ROOT 方法论的个人与团队",
+   "quality": 0.9,
+   "scarcity": 0.9,
+   "type_weight": 1.25,
+   "status": "DRAFT"
+  }
+ ],
+ "prices": [
+  {
+   "product_id": "CPRD-60568",
+   "asset_id": "CAP-001",
+   "name": "云端握手",
+   "suggested_price": 1233.76,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1948.05
+   },
+   "confidence": 0.9,
+   "factors": {
+    "type_weight": 1.3,
+    "quality": 0.95,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-55986",
+   "asset_id": "CAP-002",
+   "name": "三端锁档",
+   "suggested_price": 1233.76,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1948.05
+   },
+   "confidence": 0.9,
+   "factors": {
+    "type_weight": 1.3,
+    "quality": 0.95,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-28678",
+   "asset_id": "CAP-003",
+   "name": "元法则同步",
+   "suggested_price": 1233.76,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1948.05
+   },
+   "confidence": 0.9,
+   "factors": {
+    "type_weight": 1.3,
+    "quality": 0.95,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-37438",
+   "asset_id": "CAP-004",
+   "name": "云端探测",
+   "suggested_price": 1233.76,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1948.05
+   },
+   "confidence": 0.9,
+   "factors": {
+    "type_weight": 1.3,
+    "quality": 0.95,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-69040",
+   "asset_id": "CAP-005",
+   "name": "资产盘点",
+   "suggested_price": 1233.76,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1948.05
+   },
+   "confidence": 0.9,
+   "factors": {
+    "type_weight": 1.3,
+    "quality": 0.95,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-06721",
+   "asset_id": "CAP-006",
+   "name": "待补发队列",
+   "suggested_price": 1233.76,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1948.05
+   },
+   "confidence": 0.9,
+   "factors": {
+    "type_weight": 1.3,
+    "quality": 0.95,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-36523",
+   "asset_id": "CAP-007",
+   "name": "自动化机制",
+   "suggested_price": 1233.76,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1948.05
+   },
+   "confidence": 0.9,
+   "factors": {
+    "type_weight": 1.3,
+    "quality": 0.95,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-50671",
+   "asset_id": "CAP-008",
+   "name": "神经同步",
+   "suggested_price": 1233.76,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1948.05
+   },
+   "confidence": 0.9,
+   "factors": {
+    "type_weight": 1.3,
+    "quality": 0.95,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-97473",
+   "asset_id": "ML-metalaw.AAC-CLOUD-AUTHORITY-LOCAL-DEV",
+   "name": "metalaw.AAC-CLOUD-AUTHORITY-LOCAL-DEV",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-74100",
+   "asset_id": "ML-metalaw.APPROVAL-EMBEDDED-LINK",
+   "name": "metalaw.APPROVAL-EMBEDDED-LINK",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-26369",
+   "asset_id": "ML-metalaw.ASSET-REPORTING-SOP",
+   "name": "metalaw.ASSET-REPORTING-SOP",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-75970",
+   "asset_id": "ML-metalaw.AUTO-EXECUTION-FLOW-A",
+   "name": "metalaw.AUTO-EXECUTION-FLOW-A",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-67902",
+   "asset_id": "ML-metalaw.AUTO-EXECUTION-THRESHOLD-V1.0",
+   "name": "metalaw.AUTO-EXECUTION-THRESHOLD-V1.0",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-75939",
+   "asset_id": "ML-metalaw.AUTONOMOUS-CLOSED-LOOP",
+   "name": "metalaw.AUTONOMOUS-CLOSED-LOOP",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-99223",
+   "asset_id": "ML-metalaw.AUTONOMOUS-STEADY-DECISION-APPROVAL",
+   "name": "metalaw.AUTONOMOUS-STEADY-DECISION-APPROVAL",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-88473",
+   "asset_id": "ML-metalaw.AUTO_MEDIA_ARCHIVE_CLOSED_LOOP_V1.0",
+   "name": "metalaw.AUTO_MEDIA_ARCHIVE_CLOSED_LOOP_V1.0",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-61653",
+   "asset_id": "ML-metalaw.AVOID-REPRODUCTION-SOP",
+   "name": "metalaw.AVOID-REPRODUCTION-SOP",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-45538",
+   "asset_id": "ML-metalaw.CLOUD-KERNEL-AUTHORITY-V1.0",
+   "name": "metalaw.CLOUD-KERNEL-AUTHORITY-V1.0",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-60936",
+   "asset_id": "ML-metalaw.DECISION-BENCHMARK-ANCHORS",
+   "name": "metalaw.DECISION-BENCHMARK-ANCHORS",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-66893",
+   "asset_id": "ML-metalaw.DECISION-CONFIDENCE-WEIGHTING",
+   "name": "metalaw.DECISION-CONFIDENCE-WEIGHTING",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-40593",
+   "asset_id": "ML-metalaw.DECISION-DYNAMIC-LEARNING",
+   "name": "metalaw.DECISION-DYNAMIC-LEARNING",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-09270",
+   "asset_id": "ML-metalaw.DECISION-MATRIX",
+   "name": "metalaw.DECISION-MATRIX",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-39906",
+   "asset_id": "ML-metalaw.DECISION-META-CALIBRATION",
+   "name": "metalaw.DECISION-META-CALIBRATION",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-16909",
+   "asset_id": "ML-metalaw.DECISION-RISK-LEVELS",
+   "name": "metalaw.DECISION-RISK-LEVELS",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-46274",
+   "asset_id": "ML-metalaw.DECISION-SCENARIO-WEIGHTS",
+   "name": "metalaw.DECISION-SCENARIO-WEIGHTS",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-11718",
+   "asset_id": "ML-metalaw.ERROR-RETREAT-CLOSED-LOOP",
+   "name": "metalaw.ERROR-RETREAT-CLOSED-LOOP",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-83250",
+   "asset_id": "ML-metalaw.FEISHU-APPROVAL-CLOSED-LOOP",
+   "name": "metalaw.FEISHU-APPROVAL-CLOSED-LOOP",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-12782",
+   "asset_id": "ML-metalaw.FUNCTION-PROVENANCE-BEFORE-PLAN",
+   "name": "metalaw.FUNCTION-PROVENANCE-BEFORE-PLAN",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-93930",
+   "asset_id": "ML-metalaw.LOCAL-VALUE-PUSH-DECISION",
+   "name": "metalaw.LOCAL-VALUE-PUSH-DECISION",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-21322",
+   "asset_id": "ML-metalaw.MEMORY-DRIVEN-CYCLE",
+   "name": "metalaw.MEMORY-DRIVEN-CYCLE",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-24894",
+   "asset_id": "ML-metalaw.MODEL-SEMANTIC-ALIGNMENT-EVOLUTION",
+   "name": "metalaw.MODEL-SEMANTIC-ALIGNMENT-EVOLUTION",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-27088",
+   "asset_id": "ML-metalaw.NEW-PAGE-GATE",
+   "name": "metalaw.NEW-PAGE-GATE",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-60209",
+   "asset_id": "ML-metalaw.OFFLINE-DEPENDENCY-NONBLOCKING",
+   "name": "metalaw.OFFLINE-DEPENDENCY-NONBLOCKING",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-95991",
+   "asset_id": "ML-metalaw.OPTIMUM-STEADY-EXECUTE",
+   "name": "metalaw.OPTIMUM-STEADY-EXECUTE",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-39902",
+   "asset_id": "ML-metalaw.OPTIMUM-STEADY-STATE",
+   "name": "metalaw.OPTIMUM-STEADY-STATE",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-65238",
+   "asset_id": "ML-metalaw.STEADY-EVOLUTION-BUDGET",
+   "name": "metalaw.STEADY-EVOLUTION-BUDGET",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-34137",
+   "asset_id": "ML-metalaw.WEBSITE-GOVERNANCE-BASELINE",
+   "name": "metalaw.WEBSITE-GOVERNANCE-BASELINE",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-99531",
+   "asset_id": "ML-metalaw.service_config_drift_detection",
+   "name": "metalaw.service_config_drift_detection",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-78739",
+   "asset_id": "ML-metalaw.ssh_connection_management_metalaw",
+   "name": "metalaw.ssh_connection_management_metalaw",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-99439",
+   "asset_id": "ML-metalaw.universal_metalaw_coverage",
+   "name": "metalaw.universal_metalaw_coverage",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-13007",
+   "asset_id": "ML-metalaw.zongyuan.root",
+   "name": "metalaw.zongyuan.root",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-05243",
+   "asset_id": "ML-metalaw.zongyuan.root.final.locked",
+   "name": "metalaw.zongyuan.root.final.locked",
+   "suggested_price": 890.11,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1648.35
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.1,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-34819",
+   "asset_id": "PROTO-同源协议·主",
+   "name": "同源协议·主",
+   "suggested_price": 1059.14,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1798.2
+   },
+   "confidence": 0.88,
+   "factors": {
+    "type_weight": 1.2,
+    "quality": 0.93,
+    "scarcity": 0.95,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-78633",
+   "asset_id": "PROTO-同源协议·绑定",
+   "name": "同源协议·绑定",
+   "suggested_price": 1059.14,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1798.2
+   },
+   "confidence": 0.88,
+   "factors": {
+    "type_weight": 1.2,
+    "quality": 0.93,
+    "scarcity": 0.95,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-81299",
+   "asset_id": "PROTO-云端握手锚点SOP V1.0",
+   "name": "云端握手锚点SOP V1.0",
+   "suggested_price": 1059.14,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1798.2
+   },
+   "confidence": 0.88,
+   "factors": {
+    "type_weight": 1.2,
+    "quality": 0.93,
+    "scarcity": 0.95,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-14847",
+   "asset_id": "PROTO-新节点上岗手册SOP v1.1",
+   "name": "新节点上岗手册SOP v1.1",
+   "suggested_price": 1059.14,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1798.2
+   },
+   "confidence": 0.88,
+   "factors": {
+    "type_weight": 1.2,
+    "quality": 0.93,
+    "scarcity": 0.95,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-58427",
+   "asset_id": "PROTO-工业化生产SOP",
+   "name": "工业化生产SOP",
+   "suggested_price": 1059.14,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1798.2
+   },
+   "confidence": 0.88,
+   "factors": {
+    "type_weight": 1.2,
+    "quality": 0.93,
+    "scarcity": 0.95,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-40810",
+   "asset_id": "PROTO-视觉约束SOP",
+   "name": "视觉约束SOP",
+   "suggested_price": 1059.14,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1798.2
+   },
+   "confidence": 0.88,
+   "factors": {
+    "type_weight": 1.2,
+    "quality": 0.93,
+    "scarcity": 0.95,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-81775",
+   "asset_id": "PROTO-飞书归档SOP",
+   "name": "飞书归档SOP",
+   "suggested_price": 1059.14,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1798.2
+   },
+   "confidence": 0.88,
+   "factors": {
+    "type_weight": 1.2,
+    "quality": 0.93,
+    "scarcity": 0.95,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-58184",
+   "asset_id": "PROTO-六维质检SOP",
+   "name": "六维质检SOP",
+   "suggested_price": 1059.14,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1798.2
+   },
+   "confidence": 0.88,
+   "factors": {
+    "type_weight": 1.2,
+    "quality": 0.93,
+    "scarcity": 0.95,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-85660",
+   "asset_id": "PROTO-三维稳态决策SOP",
+   "name": "三维稳态决策SOP",
+   "suggested_price": 1059.14,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1798.2
+   },
+   "confidence": 0.88,
+   "factors": {
+    "type_weight": 1.2,
+    "quality": 0.93,
+    "scarcity": 0.95,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-57105",
+   "asset_id": "PROTO-全域锁档SOP",
+   "name": "全域锁档SOP",
+   "suggested_price": 1059.14,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1798.2
+   },
+   "confidence": 0.88,
+   "factors": {
+    "type_weight": 1.2,
+    "quality": 0.93,
+    "scarcity": 0.95,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-91614",
+   "asset_id": "PROTO-节点上报指令",
+   "name": "节点上报指令",
+   "suggested_price": 1059.14,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1798.2
+   },
+   "confidence": 0.88,
+   "factors": {
+    "type_weight": 1.2,
+    "quality": 0.93,
+    "scarcity": 0.95,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-79736",
+   "asset_id": "PROTO-中枢调度铁律",
+   "name": "中枢调度铁律",
+   "suggested_price": 1059.14,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1798.2
+   },
+   "confidence": 0.88,
+   "factors": {
+    "type_weight": 1.2,
+    "quality": 0.93,
+    "scarcity": 0.95,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-34231",
+   "asset_id": "LOCK-LOCK-GLOBAL-VALUE-20260912-001",
+   "name": "全域增值资产推送云内核+全域扫描压测成果固化",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-60740",
+   "asset_id": "LOCK-LOCK-BASELINE-ANCHOR-20260913-001",
+   "name": "基准锚点构建+云端握手SOP学习+记忆网关上报",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-74230",
+   "asset_id": "LOCK-LOCK-EVOLUTION-DEPLOY-20260913-001",
+   "name": "进化部署P1-P4完成+推送中枢",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-08832",
+   "asset_id": "LOCK-LOCK-FRP-CONNECT-20260912-001",
+   "name": "FRP密钥通道连接服务器+隧道11940建立",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-77979",
+   "asset_id": "LOCK-LOCK-GATEWAY-SOP-20260915-001",
+   "name": "云端网关V2新通道SOP/9120隐藏迁移",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-86877",
+   "asset_id": "LOCK-LOCK-GLOBAL-KERNEL-20260912-002",
+   "name": "全域锁档写入自治内核（综合第二波）",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-18232",
+   "asset_id": "LOCK-LOCK-HOMOLOGY-KERNEL-20260912-001",
+   "name": "同源内核构建+同源协议写入+真值同步",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-18232",
+   "asset_id": "LOCK-LOCK-HOMOLOGY-KERNEL-20260912-001",
+   "name": "同源内核构建+同源协议写入+真值同步",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-41621",
+   "asset_id": "LOCK-LOCK-KERNEL-V3-20260914-001",
+   "name": "同源内核V3实装（认知/自愈/稳定三层）",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-64956",
+   "asset_id": "LOCK-LOCK-MEMORY-UPDATE-20260911-001",
+   "name": "记忆更新与稳态收敛方案",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-78669",
+   "asset_id": "LOCK-LOCK-MR020-M0-20260915-001",
+   "name": "MR-020元极恒一内核M0整合基础",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-21622",
+   "asset_id": "LOCK-LOCK-MR020-M1-20260915-001",
+   "name": "MR-020六维漂移审计引擎实装",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-04324",
+   "asset_id": "LOCK-LOCK-MR020-CHAO-20260915-001",
+   "name": "冲突消解+元公理生成实装/总漂移0.0 HEALTHY",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-88287",
+   "asset_id": "LOCK-LOCK-MR020-YUAN-GUARD-20260915-001",
+   "name": "元本源防护落地/总漂移33.7→5.2 HEALTHY",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-96254",
+   "asset_id": "LOCK-LOCK-MR020-AUTONOMY-61.9-20260915-001",
+   "name": "自治指数51.8→61.9%高级自治",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-42659",
+   "asset_id": "LOCK-LOCK-MR020-AUTONOMY-80.5-20260915-001",
+   "name": "自治指数80.5%永恒自治/终极目标达成",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-32204",
+   "asset_id": "LOCK-LOCK-MR020-M2-20260915-001",
+   "name": "自治指数计算器实装/51.8%中级自治",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-36268",
+   "asset_id": "LOCK-LOCK-MR020-M3-20260915-001",
+   "name": "元极恒一内核V1.0-ETERNAL/BASELINE-V41注册",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-47494",
+   "asset_id": "LOCK-LOCK-NODE-UNIFY-20260915-001",
+   "name": "节点层级统一SOP V1.0",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-67279",
+   "asset_id": "LOCK-LOCK-P0-MEMORY-20260914-001",
+   "name": "P0内存治理云端自治核验",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-65774",
+   "asset_id": "LOCK-kernel_snapshot.json",
+   "name": "kernel_snapshot.json",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-09928",
+   "asset_id": "LOCK-kernel_snapshot_PIPELINE-AUTO-001.json",
+   "name": "kernel_snapshot_PIPELINE-AUTO-001.json",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-83329",
+   "asset_id": "LOCK-LOCK-REPORT-BATCH-20260915-001",
+   "name": "表内9条核心成果批量上报新网关",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-33913",
+   "asset_id": "LOCK-LOCK-REPORT-VERIFY-20260915-001",
+   "name": "全域推广核验（report服务真实/9120写入链路断）",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-09854",
+   "asset_id": "LOCK-SYNC-RULES-20260912-001",
+   "name": "最新规则获取+全域同步（4大规则族）",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-23747",
+   "asset_id": "LOCK-LOCK-SEMANTIC-V3-20260911-001",
+   "name": "昆仑洞天统一语义校验基座V3构建",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-94440",
+   "asset_id": "LOCK-LOCK-SERVER-CONNECT-20260912-001",
+   "name": "服务器公网API连接+真实状态探测",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-90588",
+   "asset_id": "LOCK-LOCK-TRUTH-DISTILL-20260913-001",
+   "name": "全域真值提炼+进化规划P0-P4",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-70151",
+   "asset_id": "LOCK-LOCK-TRUTH-PACKAGE-20260915-001",
+   "name": "全域真值总表(30条)+资产总包",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-86321",
+   "asset_id": "LOCK-LOCK-NODE-UNIFY-VIS-20260915-001",
+   "name": "数字资产展示页锁档",
+   "suggested_price": 969.03,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1498.5
+   },
+   "confidence": 0.92,
+   "factors": {
+    "type_weight": 1.0,
+    "quality": 0.97,
+    "scarcity": 1.0,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-29829",
+   "asset_id": "AST-20260915-A344",
+   "name": "昆仑洞天DRAMAaaS · 创意ZONGYUAN-ROOT 短剧…",
+   "suggested_price": 1011.49,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1873.12
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.25,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-10325",
+   "asset_id": "AST-20260915-F578",
+   "name": "自治内核咨询实施 · 元法则自治内核元进化法则：任意自维持…",
+   "suggested_price": 1011.49,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1873.12
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.25,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-19486",
+   "asset_id": "AST-20260915-62E5",
+   "name": "昆仑洞天DRAMAaaS · 创意全域资产产品化商业化方案可视化仪…",
+   "suggested_price": 1011.49,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1873.12
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.25,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-12043",
+   "asset_id": "AST-20260915-0384",
+   "name": "认证培训 · 资产元法则视频量产通道自动故障转移：…",
+   "suggested_price": 1011.49,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1873.12
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.25,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-05500",
+   "asset_id": "AST-20260915-032E",
+   "name": "认证培训 · 资产元法则数字资产可视化基准架构与扩…",
+   "suggested_price": 1011.49,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1873.12
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.25,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  },
+  {
+   "product_id": "CPRD-12850",
+   "asset_id": "AST-20260915-FC31",
+   "name": "认证培训 · 资产元法则已固化成果变更审批（LOC…",
+   "suggested_price": 1011.49,
+   "price_model": "monthly",
+   "price_unit": "元/月",
+   "price_range": {
+    "min": 99.9,
+    "max": 1873.12
+   },
+   "confidence": 0.85,
+   "factors": {
+    "type_weight": 1.25,
+    "quality": 0.9,
+    "scarcity": 0.9,
+    "base_price": 999.0
+   }
+  }
+ ]
+}

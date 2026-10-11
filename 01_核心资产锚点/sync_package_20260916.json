@@ -1,0 +1,242 @@
+{
+  "package_id": "SYNC-FULL-20260916",
+  "sync_type": "FULL_SYNC",
+  "did": "DID-BR-000002",
+  "node_id": "local-dev-001",
+  "trace_id": "Ω₀⊂⊙∞⊂Ω",
+  "generated_at": "2026-09-16",
+  "handshake_status": {
+    "portal_9120": "200 OK",
+    "portal_8021": "200 OK",
+    "api_443": "502 (backend down)",
+    "api_8021": "502 (backend down)",
+    "static_assets": "200 OK",
+    "handshake_result": "PARTIAL (API层未完成)"
+  },
+  "full_info": {
+    "identity": {
+      "DID": "DID-BR-000002",
+      "ROOT": "Ω-TAN-7-001",
+      "mark": "Ω₀⊂⊙∞⊂Ω",
+      "node": "local-dev-001"
+    },
+    "mechanisms": [
+      "元法则月度同步(每月1日10:30)",
+      "自动探索归档(每日03:00)",
+      "高阶能力提炼(8项)",
+      "全域同源协议学习(12条)"
+    ],
+    "cloud_channels": {
+      "portal_9120": "200",
+      "portal_8021": "200",
+      "api_443": "502",
+      "api_8021": "502",
+      "static": "200"
+    }
+  },
+  "full_memory": {
+    "capabilities": {
+      "count": 8,
+      "ids": [
+        "CAP-001",
+        "CAP-002",
+        "CAP-003",
+        "CAP-004",
+        "CAP-005",
+        "CAP-006",
+        "CAP-007",
+        "CAP-008"
+      ]
+    },
+    "protocols": {
+      "count": 12,
+      "ids": [
+        "P-001",
+        "P-002",
+        "P-003",
+        "P-004",
+        "P-005",
+        "P-006",
+        "P-007",
+        "P-008",
+        "P-009",
+        "P-010",
+        "P-011",
+        "P-012"
+      ]
+    },
+    "metalaw_registered": {
+      "count": 34,
+      "groups": {
+        "decision": {
+          "count": 9,
+          "priority": "P0",
+          "merge_target": "ZONGYUAN-DECISION-3D-005（三维稳态决策）",
+          "metalaw_ids": [
+            "metalaw.AUTONOMOUS-STEADY-DECISION-APPROVAL",
+            "metalaw.DECISION-BENCHMARK-ANCHORS",
+            "metalaw.DECISION-CONFIDENCE-WEIGHTING",
+            "metalaw.DECISION-DYNAMIC-LEARNING",
+            "metalaw.DECISION-MATRIX",
+            "metalaw.DECISION-META-CALIBRATION",
+            "metalaw.DECISION-RISK-LEVELS",
+            "metalaw.DECISION-SCENARIO-WEIGHTS",
+            "metalaw.LOCAL-VALUE-PUSH-DECISION"
+          ]
+        },
+        "steady": {
+          "count": 7,
+          "priority": "P1",
+          "merge_target": "OPTIMUM-STEADY/自治闭环系列",
+          "metalaw_ids": [
+            "metalaw.AUTO-EXECUTION-FLOW-A",
+            "metalaw.AUTO-EXECUTION-THRESHOLD-V1.0",
+            "metalaw.AUTONOMOUS-CLOSED-LOOP",
+            "metalaw.AUTO_MEDIA_ARCHIVE_CLOSED_LOOP_V1.0",
+            "metalaw.OPTIMUM-STEADY-EXECUTE",
+            "metalaw.OPTIMUM-STEADY-STATE",
+            "metalaw.STEADY-EVOLUTION-BUDGET"
+          ]
+        },
+        "loop": {
+          "count": 6,
+          "priority": "P1",
+          "merge_target": "六维质检/漂移熔断/闭环SOP",
+          "metalaw_ids": [
+            "metalaw.ASSET-REPORTING-SOP",
+            "metalaw.AVOID-REPRODUCTION-SOP",
+            "metalaw.ERROR-RETREAT-CLOSED-LOOP",
+            "metalaw.FEISHU-APPROVAL-CLOSED-LOOP",
+            "metalaw.FUNCTION-PROVENANCE-BEFORE-PLAN",
+            "metalaw.MEMORY-DRIVEN-CYCLE"
+          ]
+        },
+        "governance": {
+          "count": 12,
+          "priority": "P2",
+          "merge_target": "LOCK-004/005安全规范/治理基线",
+          "metalaw_ids": [
+            "metalaw.AAC-CLOUD-AUTHORITY-LOCAL-DEV",
+            "metalaw.APPROVAL-EMBEDDED-LINK",
+            "metalaw.CLOUD-KERNEL-AUTHORITY-V1.0",
+            "metalaw.MODEL-SEMANTIC-ALIGNMENT-EVOLUTION",
+            "metalaw.NEW-PAGE-GATE",
+            "metalaw.OFFLINE-DEPENDENCY-NONBLOCKING",
+            "metalaw.WEBSITE-GOVERNANCE-BASELINE",
+            "metalaw.service_config_drift_detection",
+            "metalaw.ssh_connection_management_metalaw",
+            "metalaw.universal_metalaw_coverage",
+            "metalaw.zongyuan.root",
+            "metalaw.zongyuan.root.final.locked"
+          ]
+        }
+      }
+    },
+    "preferences": "8条激活(锁档/云内核/资产目录/4机制/定时上限)"
+  },
+  "full_achievements": {
+    "success_trail": {
+      "count": 7,
+      "events": [
+        "CLOUD-HANDSHAKE-OK",
+        "METALAW漂移比对完成",
+        "34项元法则全量注册",
+        "元法则月度同步机制建立",
+        "同源协议写入记忆网关",
+        "门户资产盘点",
+        "神经同步"
+      ]
+    },
+    "locks": [
+      "LOCK-BASE-CLOUD-20260914",
+      "LOCK-ANALYSIS-DEEP-20260914",
+      "LOCK-METALAW-SYNC-20260914",
+      "LOCK-METALAW-REG-20260915",
+      "LOCK-METALAW-REG-EXEC-20260915",
+      "LOCK-METALAW-MONTHLY-20260915",
+      "LOCK-MEMGATE-HOMOLOGY-20260915",
+      "LOCK-ASSET-MANIFEST-20260915",
+      "LOCK-EXPLORE-ARCHIVE-20260916",
+      "LOCK-CAPABILITY-REFINERY-20260916",
+      "LOCK-HOMOLOGY-LEARNING-20260916",
+      "LOCK-EXT-GATEWAY-20260916",
+      "LOCK-EXT-GATEWAY-COMPLETE-20260916"
+    ]
+  },
+  "full_assets": {
+    "portal_stats": {
+      "total_assets": 2188,
+      "keyframes_images": 1918,
+      "videos": 75,
+      "drama_episodes": 195,
+      "today_new": 0,
+      "character_groups": 2
+    },
+    "local_media": {
+      "count": 41,
+      "detail": {
+        "total": 41,
+        "images": 41,
+        "videos": 0,
+        "assets": [
+          "chats/38436546492378882/media_assets/EP04_KF1.jpg",
+          "chats/38436546492378882/media_assets/EP04_KF2.jpg",
+          "chats/38436546492378882/media_assets/EP04_KF3.jpg",
+          "chats/38436546492378882/media_assets/EP05_KF1.jpg",
+          "chats/38436546492378882/media_assets/EP05_KF2.jpg",
+          "chats/38436546492378882/media_assets/EP05_KF3.jpg",
+          "chats/38436546492378882/media_assets/EP06_KF1.jpg",
+          "chats/38436546492378882/media_assets/EP06_KF2.jpg",
+          "chats/38436546492378882/media_assets/EP06_KF3.jpg",
+          "chats/38436546492378882/media_assets/S4EP01_KF1.jpg",
+          "chats/38436546492378882/media_assets/S4EP01_KF2.jpg",
+          "chats/38436546492378882/media_assets/S4EP01_KF3.jpg",
+          "chats/38436546492378882/media_assets/20260915_archive/KF-XUANNV_design_01.jpg",
+          "chats/38436546492378882/media_assets/20260915_archive/KF-XUANNV_design_02.jpg",
+          "chats/38436546492378882/media_assets/20260915_archive/KF-XUANNV_design_03.jpg",
+          "chats/38436546492378882/media_assets/20260915_archive/KF-XUANNV_design_04.jpg",
+          "chats/38436546492378882/media_assets/20260915_archive/KF-XUANNV_epic_01.jpg",
+          "chats/38436546492378882/media_assets/20260915_archive/KF-XUANNV_epic_02.jpg",
+          "chats/38436546492378882/media_assets/20260915_archive/KF-XUANNV_epic_03.jpg",
+          "chats/38436546492378882/media_assets/20260915_archive/KF-XUANNV_epic_04.jpg",
+          "chats/38436546492378882/media_assets/20260915_archive/TAIYIN_descend_01.jpg",
+          "chats/38436546492378882/media_assets/20260915_archive/TAIYIN_descend_02.jpg",
+          "chats/38436546492378882/media_assets/20260915_archive/TAIYIN_descend_03.jpg",
+          "chats/38436546492378882/media_assets/20260915_archive/TAIYIN_descend_04.jpg",
+          "chats/38436546492378882/media_assets/20260915_archive/TAIYIN_hands_01.jpg",
+          "chats/38436546492378882/media_assets/20260915_archive/TAIYIN_hands_02.jpg",
+          "chats/38436546492378882/media_assets/20260915_archive/TAIYIN_hands_03.jpg",
+          "chats/38436546492378882/media_assets/20260915_archive/TAIYIN_hands_04.jpg",
+          "chats/38436747020400130/drama-episode1-assets/characters/烬_角色母版.png",
+          "chats/38436747020400130/drama-episode1-assets/characters/玄一_角色母版.png",
+          "chats/38436747020400130/drama-episode1-assets/characters/苍玄_角色母版.png",
+          "chats/38436747020400130/drama-episode1-assets/keyframes_landscape/01_金色符文星尘.png",
+          "chats/38436747020400130/drama-episode1-assets/keyframes_landscape/02_黑色裂隙.png",
+          "chats/38436747020400130/drama-episode1-assets/keyframes_landscape/03_神女觉醒.png",
+          "chats/38436747020400130/drama-episode1-assets/keyframes_landscape/04_九尾现身.png",
+          "chats/38436747020400130/drama-episode1-assets/keyframes_landscape/05_苍玄降临.png",
+          "chats/38436747020400130/drama-episode1-assets/keyframes_portrait/01_金色符文星尘_竖屏.png",
+          "chats/38436747020400130/drama-episode1-assets/keyframes_portrait/02_黑色裂隙_竖屏.png",
+          "chats/38436747020400130/drama-episode1-assets/keyframes_portrait/03_神女觉醒_竖屏.png",
+          "chats/38436747020400130/drama-episode1-assets/keyframes_portrait/04_九尾现身_竖屏.png",
+          "chats/38436747020400130/drama-episode1-assets/keyframes_portrait/05_苍玄降临_竖屏.png"
+        ]
+      }
+    },
+    "local_data_files": [
+      "capability_registry.json",
+      "homology_protocol_library.json",
+      "success_trail.json",
+      "error_lessons.json",
+      "asset_manifest_20260915.json",
+      "metalaw_register_registry.json",
+      "metalaw_completion_list.json",
+      "metalaw_full_list.json",
+      "pending_upload_20260915.json",
+      "truths_internal.json",
+      "truths_public.json"
+    ]
+  },
+  "pending_before": 4,
+  "target": "POST https://drama.huodouai.com/api/gateway/report (恢复后)"
+}

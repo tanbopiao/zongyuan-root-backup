@@ -1,0 +1,68 @@
+{
+  "date": "20261011",
+  "description": "算子指标时序账本 - 每日采集算子巡检漂移值/成功率/异常标记",
+  "retention": "近30天明细 + 近90天日聚合（自动归档冷数据）",
+  "records": [
+    {
+      "ts": "2026-10-11T16:26:15+08:00",
+      "operator": "FOURWAY-RECON",
+      "event": "fourway_reconciliation",
+      "metrics": {
+        "cloud_write_channel": "ok",
+        "cloud_read_channel_old_route": "404",
+        "cloud_read_channel_new_route": "ok",
+        "cloud_version": "V3.1",
+        "cloud_truth_count": 5832,
+        "cloud_merkle_root": "0x4a0dba1a4599fcec95f82accfb8b7cd120890aabe744a764415d35373b8d0d58",
+        "claimed_merkle_root": "0x82ce39172f06b412d2067291d48103715ac92746",
+        "merkle_match": false,
+        "feishu_base_tables": 56,
+        "local_anchor_files": 311,
+        "local_anchor_dirs": 15,
+        "pending_verify_resolved": 0,
+        "pending_verify_expired": 2
+      },
+      "anomalies": [
+        "read_route_changed_from_path_to_query_param",
+        "merkle_root_mismatch_with_receipt",
+        "digital_assets_stale_18_days",
+        "pending_verify_keys_expired"
+      ],
+      "status": "completed_with_anomalies"
+    },
+    {
+      "ts": "2026-10-11T16:29:09+08:00",
+      "operator": "P0-COMPLETION",
+      "event": "all_legacy_items_resolved",
+      "metrics": {
+        "merkle_baseline_confirmed": true,
+        "merkle_is_dynamic": true,
+        "digital_assets_stale_days": 18,
+        "feishu_task_table_healthy": true,
+        "runtime_scripts_scanned": true,
+        "route_migration_doc_written": true
+      },
+      "anomalies": [
+        "digital_assets_generator_not_running_18days"
+      ],
+      "status": "completed"
+    },
+    {
+      "ts": "2026-10-11T16:36:32.020412",
+      "operator": "DAILY-SELF-CHECK",
+      "event": "scheduled_self_check",
+      "metrics": {
+        "cloud_truth_count": 5945,
+        "cloud_merkle_root": "385c3740a8d54ed8ed51d74941545c63bc545c0be4862ee8c05fc736a764b0bc",
+        "cloud_version": "V3.1",
+        "cloud_service": "zhongshu-meta-core",
+        "local_anchor_files": 639,
+        "local_anchor_latest_mtime": "2026-10-11 16:29",
+        "merkle_drift": "baseline",
+        "prev_comparison": "none"
+      },
+      "anomalies": [],
+      "status": "healthy"
+    }
+  ]
+}

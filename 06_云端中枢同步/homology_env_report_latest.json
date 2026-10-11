@@ -1,0 +1,81 @@
+{
+  "explore_time": "2026-09-15T18:04:25.248090+00:00",
+  "node_id": "NODE-MAIN-SESSION-38436546492378882",
+  "did": "DID-BR-000002",
+  "omega": "Ω₀⊂⊙∞⊂Ω",
+  "e1_homology_identity": {
+    "registered": true,
+    "authority": "L4",
+    "status": "ACTIVE"
+  },
+  "e2_cloud_endpoints": {
+    "truths_read": 200,
+    "truth_upsert": 200,
+    "truth_single": 200,
+    "upload_9120": 502
+  },
+  "e3_capabilities": {
+    "python3": true,
+    "lark-cli": true,
+    "curl": true,
+    "jq": true
+  },
+  "e4_resources": {
+    "disk_used_pct": 1,
+    "mem_available_mb": 3456
+  },
+  "e5_assets": [
+    {
+      "name": "基准锚点",
+      "exists": true,
+      "size": 3074
+    },
+    {
+      "name": "接入SOP",
+      "exists": true,
+      "size": 11001
+    },
+    {
+      "name": "闭环体系",
+      "exists": true,
+      "size": 5336
+    },
+    {
+      "name": "沙盒守护",
+      "exists": true,
+      "size": 3242
+    },
+    {
+      "name": "溯源校验",
+      "exists": true,
+      "size": 5018
+    },
+    {
+      "name": "SOP补全",
+      "exists": true,
+      "size": 7385
+    },
+    {
+      "name": "存活守护",
+      "exists": true,
+      "size": 4305
+    },
+    {
+      "name": "身份注册表",
+      "exists": true,
+      "size": 3032
+    },
+    {
+      "name": "神经注册表",
+      "exists": true,
+      "size": 454422
+    }
+  ],
+  "e5_missing_count": 0,
+  "e6_neural": {
+    "nodes": "?",
+    "connections": "?",
+    "summary_raw": "{\n  \"registry_id\": \"NNR-ZR-001\",\n  \"kernel_version\": \"V2.3.0-GIT-BRIDGE-LOCKED\",\n  \"total_nodes\": 317,\n  \"total_connecti"
+  },
+  "verdict": "HOMOLOGY_ACTIVE"
+}

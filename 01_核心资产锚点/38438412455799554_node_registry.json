@@ -1,0 +1,14 @@
+{
+  "registry": "ZONGYUAN-HOMOLOGY-NODE-REGISTRY",
+  "version": "V1.0",
+  "nodes": [
+    {"node_id": "NN-META-024", "type": "session", "domain": "meta", "status": "ACTIVE", "sync_ok": true},
+    {"node_id": "NN-OPS-018", "type": "proxy", "domain": "ops", "status": "SUSPENDED", "sync_ok": false},
+    {"node_id": "NODE-ZYR-CLO", "type": "cloud", "domain": "kernel", "status": "UNREACHABLE", "sync_ok": false},
+    {"node_id": "NODE-LARK-SYNC", "type": "sync", "domain": "lark", "status": "ACTIVE", "sync_ok": true}
+  ],
+  "total": 4,
+  "active": 2,
+  "suspended": 1,
+  "unreachable": 1
+}

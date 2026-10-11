@@ -1,0 +1,22 @@
+{
+  "asset_id": "ASSET-PUB-20261001-003",
+  "name": "黎曼流形永生拓扑李群+希尔伯特正交子空间镜像态技术白皮书V2.0(专业巡检升级)",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/lie-hilbert-eternal-topology",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/lie-hilbert-eternal-topology.git",
+  "published_at": "2026-10-07T11:18:20",
+  "version": "V2.0(当前版,2026-10-07); 归档版 V1.0(2026-10-01)全部保留",
+  "files": [
+    "README.md",
+    "lie-hilbert-eternal-topology-WHITEPAPER-V2.0.md(+新增)",
+    "lie-hilbert-eternal-topology-WHITEPAPER-V2.0.html(+新增)",
+    "lie-hilbert-eternal-topology-ARCH-V2.0.json(+新增)",
+    "WHITEPAPER-LIE-HILBERT-V1.0.md(归档)",
+    "lie_hilbert_arch.json(归档)"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.lie-hilbert-eternal-topology-UPGRADE.20261007 (http=200)",
+  "quota": "零豆包付费"
+}

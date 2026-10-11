@@ -1,0 +1,34 @@
+{
+  "bind_time": "2026-10-01T02:21:59.923504",
+  "did": "DID-BR-000002",
+  "trace": "Ω₀⊂⊙∞⊂Ω",
+  "token_masked": "missing",
+  "direction_A_sharedbrain_to_modelscope": [
+    {
+      "asset": "README.md",
+      "path": "/home/user/Doubao/chats/38436758333092098/modelscope-content/README.md",
+      "target": "魔搭模型卡/项目首页",
+      "status": "ready_to_push"
+    },
+    {
+      "asset": "CONTENT-MANIFEST.md",
+      "path": "/home/user/Doubao/chats/38436758333092098/modelscope-content/CONTENT-MANIFEST.md",
+      "target": "魔搭数据集/文档库",
+      "status": "ready_to_push"
+    }
+  ],
+  "direction_B_modelscope_to_sharedbrain": {
+    "sdk_version": "1.40.1",
+    "token_status": "saved(0600)",
+    "known_capabilities": [
+      "对话/推理类模型 35个可用",
+      "无独立BGE嵌入(embeddings端点400)",
+      "无MCP Server(mcp端点404)",
+      "免费GPU算力 36h/月(主力免费算力平台)",
+      "本地语义索引v2+向量检索补位嵌入能力"
+    ],
+    "gpu_instance_status": "offline(2026-09-24标记下线)",
+    "last_probe": "2026-10-01T02:21:59.930420"
+  },
+  "bind_state": "BOUND"
+}

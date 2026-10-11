@@ -1,0 +1,234 @@
+{
+  "pulled_at": "2026-10-11T16:46:09.133210",
+  "gateway": "https://drama.huodouai.com",
+  "total_found": 9,
+  "total_not_found": 3,
+  "truths": {
+    "BASELINE.MERKLE.20261011": {
+      "seq": 6531,
+      "key": "BASELINE.MERKLE.20261011",
+      "value": {
+        "confirmed_root": "0x4a0dba1a4599fcec95f82accfb8b7cd120890aabe744a764415d35373b8d0d58",
+        "note": "以云端/api/status返回为准，回执0x82ce为旧快照",
+        "confirmed_at": "2026-10-11T16:30:00+08:00"
+      },
+      "ts": "2026-10-11T16:28:28+0800",
+      "event_id": "truth-1791707308736-15e555aa"
+    },
+    "ARCH.GOV-AI-MIDPLATFORM-SUMMARY": {
+      "seq": 1630,
+      "key": "ARCH.GOV-AI-MIDPLATFORM-SUMMARY",
+      "value": {
+        "name": "政务AI中台架构体系",
+        "version": "V1.0",
+        "base": "火斗云智AIOS六层架构政务专项版",
+        "layers": [
+          "信创工程基座层",
+          "政务元内核层",
+          "国密安全网关层",
+          "政务稳态调度层",
+          "政务形式化验证层",
+          "政务应用服务层"
+        ],
+        "core_constraints": [
+          "等保三级/四级",
+          "数据不出域",
+          "全栈信创适配",
+          "多租户硬隔离",
+          "全行为审计追溯"
+        ],
+        "key_capabilities": [
+          "智能问答",
+          "公文写作",
+          "审批辅助",
+          "政策解读",
+          "舆情监测",
+          "一网通办",
+          "12345热线",
+          "数据治理"
+        ],
+        "differentiation": [
+          "政务级可信AI",
+          "数据不出域安全架构",
+          "全栈信创兼容",
+          "政务知识持续进化"
+        ],
+        "deploy_modes": [
+          "市级政务云私有化",
+          "委办局专属部署",
+          "混合云部署"
+        ]
+      },
+      "ts": "2026-10-07T21:47:23+0800",
+      "event_id": "truth-1791380843168-57e11a9b"
+    },
+    "ARCH.GOV-AI-MIDPLATFORM-LAYERS": {
+      "seq": 1631,
+      "key": "ARCH.GOV-AI-MIDPLATFORM-LAYERS",
+      "value": {
+        "L1_信创基座": {
+          "OS": [
+            "统信UOS",
+            "麒麟OS",
+            "欧拉OS"
+          ],
+          "CPU": [
+            "鲲鹏",
+            "飞腾",
+            "龙芯",
+            "海光"
+          ],
+          "DB": [
+            "达梦",
+            "人大金仓",
+            "高斯DB",
+            "OceanBase"
+          ],
+          "AI框架": [
+            "昇思MindSpore",
+            "PaddlePaddle"
+          ]
+        },
+        "L2_政务元内核": {
+          "元规则": "公文规范/审批流程/政务术语",
+          "知识库": "政策法规/办事指南/历史案例",
+          "推理引擎": "政策解读/审批逻辑/合规审查"
+        },
+        "L3_国密网关": {
+          "算法": "SM2/SM3/SM4",
+          "鉴权": "政务令牌+国密mTLS",
+          "隔离": "AAB委办局三级隔离",
+          "脱敏": "身份证/手机号/地址自动脱敏",
+          "水印": "输出内容不可见水印溯源"
+        },
+        "L4_政务调度": {
+          "弹性": "办件量峰值自动扩容",
+          "巡检": "六维全链路巡检",
+          "协同": "市-区-街道三级节点",
+          "自愈": "故障自动感知隔离恢复"
+        },
+        "L5_验证层": {
+          "逻辑验证": "审批流程一致性证明",
+          "合规校验": "政策法规冲突检测",
+          "资产确权": "Merkle哈希账本",
+          "质量门禁": "AI输出合规性校验"
+        },
+        "L6_应用层": {
+          "服务": [
+            "智能问答",
+            "公文写作",
+            "审批辅助",
+            "政策解读",
+            "舆情监测",
+            "一网通办",
+            "12345热线",
+            "数据治理"
+          ]
+        }
+      },
+      "ts": "2026-10-07T21:47:23+0800",
+      "event_id": "truth-1791380843474-7eabaf38"
+    },
+    "ARCH.GOV-AI-MIDPLATFORM-SECURITY": {
+      "seq": 1632,
+      "key": "ARCH.GOV-AI-MIDPLATFORM-SECURITY",
+      "value": {
+        "合规项": {
+          "等保三级四级": "全链路安全防护/入侵检测/安全审计",
+          "密评": "国密算法全链路/密钥管理合规",
+          "数据安全法": "数据分类分级/脱敏/不出域",
+          "个人信息保护法": "个人信息最小化/脱敏/授权管理",
+          "政务信息系统安全": "身份认证/访问控制/安全审计"
+        },
+        "安全架构": {
+          "国密算法": "SM2签名/SM3摘要/SM4加密全链路",
+          "双鉴权": "政务令牌白名单+国密mTLS双向证书",
+          "AAB隔离": "访问隔离/能力隔离/边界隔离",
+          "数据脱敏": "敏感字段自动脱敏引擎",
+          "水印溯源": "输出内容嵌入不可见水印",
+          "Merkle确权": "政务数据资产哈希确权/版本管理"
+        },
+        "数据安全": {
+          "不出域": "大模型推理私有化部署/数据不出内网",
+          "联邦学习": "跨部门数据协同不交换原始数据",
+          "结果脱敏": "模型推理结果脱敏后再输出",
+          "分类分级": "政务数据自动分类分级标签"
+        }
+      },
+      "ts": "2026-10-07T21:47:41+0800",
+      "event_id": "truth-1791380861080-ebed523d"
+    },
+    "REPORT.FOURWAY-RECON-P0-DONE.20261011": {
+      "seq": 6528,
+      "key": "REPORT.FOURWAY-RECON-P0-DONE.20261011",
+      "value": {
+        "p0_1_read_route_migration": "done - old /api/truth/{key} 404, new /api/truth?key=xxx verified",
+        "p0_2_timeseries_store": "done - operator_timeseries/ created, first record written",
+        "anomalies_found": 4,
+        "pending_verify_expired": 2,
+        "merkle_root_current": "0x4a0dba1a...",
+        "cloud_version": "V3.1",
+        "next": "P0-3 Merkle baseline confirmation"
+      },
+      "ts": "2026-10-11T16:26:30+0800",
+      "event_id": "truth-1791707190277-72d8b5c2"
+    },
+    "EVOLUTION.PROGRESS.20261011": {
+      "seq": 6541,
+      "key": "EVOLUTION.PROGRESS.20261011",
+      "value": {
+        "p0_done": [
+          "read_route_migration",
+          "operator_timeseries",
+          "merkle_drift_detection"
+        ],
+        "p1_in_progress": [
+          "daily_self_check_script",
+          "local_digital_assets_generator"
+        ],
+        "current_truth_count": 5945,
+        "anomalies": 0,
+        "next_step": "P1-1 disaster recovery backup"
+      },
+      "ts": "2026-10-11T16:36:46+0800",
+      "event_id": "truth-1791707806614-9e730742"
+    },
+    "DEPLOY.DIGITAL-ASSETS-GENERATOR.20261011": {
+      "seq": 6538,
+      "key": "DEPLOY.DIGITAL-ASSETS-GENERATOR.20261011",
+      "value": {
+        "path": "/home/user/Doubao/chats/38438412455799554/digital-assets-generator/generate.py",
+        "output": "digital_assets.json",
+        "truth_count_live": 5942,
+        "note": "本地生成器已部署，解决云端digital_assets停滞18天问题"
+      },
+      "ts": "2026-10-11T16:32:30+0800",
+      "event_id": "truth-1791707550469-1ed4a384"
+    },
+    "DEPLOY.SNAPSHOT-BACKUP.20261011": {
+      "seq": 6545,
+      "key": "DEPLOY.SNAPSHOT-BACKUP.20261011",
+      "value": {
+        "tier": "T0-local+T1-retention",
+        "files": 619,
+        "size_mb": 4.5,
+        "keep_last": 7,
+        "t2_cloud": "pending",
+        "path": "/home/user/Doubao/chats/38438412455799554/backups/"
+      },
+      "ts": "2026-10-11T16:39:56+0800",
+      "event_id": "truth-1791707996877-bddb70b1"
+    },
+    "AUDIT.FOURWAY-RECON.20261011": {
+      "seq": 6427,
+      "key": "AUDIT.FOURWAY-RECON.20261011",
+      "value": {
+        "action": "四端对账探测",
+        "old_endpoint_status": "all_404",
+        "timestamp": "2026-10-11"
+      },
+      "ts": "2026-10-11T13:39:50+0800",
+      "event_id": "truth-1791697190774-10a2ed7e"
+    }
+  }
+}

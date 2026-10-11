@@ -1,0 +1,20 @@
+{
+  "asset_id": "ASSET-PUB-20261006-021",
+  "name": "昆仑洞天视觉资产自治流水线技术白皮书V1.0",
+  "source": "kunlun_vision_pipeline配置(对接元极恒一五层约束栈)",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/kunlun-vision-asset-pipeline",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/kunlun-vision-asset-pipeline.git",
+  "published_at": "2026-10-06T21:47:14",
+  "files": [
+    "WHITEPAPER-KUNLUNVP-V1.0.md",
+    "WHITEPAPER-KUNLUNVP-V1.0.html",
+    "kunlunvp_arch.json",
+    "README.md"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.KUNLUNVP-WP.20261006 (truth_count=1160)",
+  "quota": "零豆包付费"
+}

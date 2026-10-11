@@ -1,0 +1,57 @@
+{
+  "kernel_root": "ZONGYUAN-ROOT",
+  "kernel_version": "V1.0-ETERNAL",
+  "axiom_anchor": "AXIOM-A-035_V1.7",
+  "did": "DID-BR-000002",
+  "provenance_mark": "Ω₀⊂⊙∞⊂Ω",
+  "lock_state": "READONLY_HARDWARE_LOCKED",
+  "lock_event_id": "LOCK-KUNLUN-RULES-FULL-20261001-001",
+  "write_timestamp": "2026-10-01T11:14:35",
+  "lock_name": "昆仑洞天60条规则全量启用全域锁档",
+  "content_scope": {
+    "registry": "KUNLUN-RULES-REGISTRY-001",
+    "total_rules": 60,
+    "groups": 11,
+    "status": "ALL_ENABLED",
+    "quota": "零豆包付费额度, 全链路魔搭免费"
+  },
+  "axiom_layer": {
+    "total_laws": 11,
+    "state": "ACTIVE",
+    "tianyuan_law": "KUNLUN-TIANYUAN-LAW-V1.2"
+  },
+  "architecture_layer": {
+    "layers": [
+      "L0天元法则",
+      "世界观角色",
+      "生产SOP",
+      "内核入口",
+      "视觉规范",
+      "生产治理",
+      "后期质检",
+      "分发运营",
+      "LoRA中台"
+    ],
+    "state": "STABLE_LOCKED"
+  },
+  "security_layer": {
+    "hash_chain": "ACTIVE",
+    "state": "FULLY_LOCKED",
+    "rules_registry_sha256": "db50eee256603bc9",
+    "production_config_sha256": "fc52144ea66473e6"
+  },
+  "integrity": {
+    "verification": "LOCAL_VERIFIED_CLOUD_UPLOADED",
+    "local_files": [
+      "/home/user/ZONGYUAN-ROOT/01_核心资产锚点/昆仑洞天规则/KUNLUN-RULES-REGISTRY.json",
+      "/home/user/ZONGYUAN-ROOT/04_系统配置/kunlun-production-config.json",
+      "/home/user/ZONGYUAN-ROOT/01_核心资产锚点/昆仑洞天规则/昆仑洞天规则全量启用清单-20261001.md"
+    ]
+  },
+  "feishu_triad": {
+    "status": "BLOCKED_ACCOUNT_PERMISSION",
+    "note": "当前账户对知识库空间/台账Base/云盘无写入权限(账户变更), 已切换本地+云端双通道锁档",
+    "space_id_cached": "7675751446528134419",
+    "base_token_cached": "QYn4bjgD6am3OPsxMCkcitcBnzc"
+  }
+}

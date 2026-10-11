@@ -1,0 +1,50 @@
+{
+  "run_id": "RUN-20260915-163408",
+  "started_at": "2026-09-15T16:34:08",
+  "finished_at": "2026-09-15T16:34:16",
+  "status": "success",
+  "trigger": "manual",
+  "stages": {
+    "detect": {
+      "status": "ok",
+      "message": "[detect] demo truth reported: creative.drama.60ep.batch_methodology -> report_id=RPT-1789461249-8c8ca2b8 | [detect] demo truth reported: meta_law.autonomous.kernel.evolution_rule -> report_id=RPT-1789461249-f28d86b8 | [detect] OK: baseline=10077 current=10077 new=2 -> /home/user/.doubao/agent_mode/workspace/.sessions/38438412455799554/agents/o_0001sXHlets/pipeline/data/new_assets.json",
+      "new_count": 2
+    },
+    "extract": {
+      "status": "ok",
+      "message": "[extract] card: AST-20260915-D37A type=creative q=0.785 sc=high | [extract] card: AST-20260915-2561 type=meta_law q=0.87 sc=high | [extract] OK: +2 cards (skipped 0), total=2 -> /home/user/.doubao/agent_mode/workspace/.sessions/38438412455799554/agents/o_0001sXHlets/pipeline/data/asset_cards.json",
+      "cards_count": 2
+    },
+    "visualize": {
+      "status": "ok",
+      "message": "[viz] OK: 2 cards -> /home/user/.doubao/agent_mode/workspace/.sessions/38438412455799554/agents/o_0001sXHlets/pipeline/output/asset_showcase.html",
+      "output_path": "output/asset_showcase.html"
+    },
+    "productize": {
+      "status": "ok",
+      "message": "[productize] PRD-20260915-4BD5 <- AST-20260915-D37A (P0-dramaaas) | [productize] PRD-20260915-0250 <- AST-20260915-2561 (P0-consulting) | [productize] OK: +2 products, total=2 -> /home/user/.doubao/agent_mode/workspace/.sessions/38438412455799554/agents/o_0001sXHlets/pipeline/data/product_entries.json",
+      "products_count": 2
+    },
+    "price": {
+      "status": "ok",
+      "message": "[price] PRD-20260915-4BD5: base=2049.00 q=1.29 sc=1.3 -> 3422.85 元/月 | [price] PRD-20260915-0250: base=4000.00 q=1.37 sc=1.3 -> 7124.00 元/人天 | [price] OK: +2, total=2 -> /home/user/.doubao/agent_mode/workspace/.sessions/38438412455799554/agents/o_0001sXHlets/pipeline/data/pricing_results.json",
+      "priced_count": 2
+    },
+    "circulate": {
+      "status": "ok",
+      "message": "[circulate] PRD-20260915-4BD5: bitable=real drive=sim | [circulate] PRD-20260915-0250: bitable=real drive=sim | [circulate] OK: 2 circulated, gateway_report=RPT-1789461250-105507a9 -> /home/user/.doubao/agent_mode/workspace/.sessions/38438412455799554/agents/o_0001sXHlets/pipeline/data/circulation_results.json",
+      "circulated_count": 2
+    }
+  },
+  "asset_ids": [
+    "AST-20260915-D37A",
+    "AST-20260915-2561"
+  ],
+  "artifacts": {
+    "asset_cards": "data/asset_cards.json",
+    "showcase": "output/asset_showcase.html",
+    "products": "data/product_entries.json",
+    "pricing": "data/pricing_results.json",
+    "circulation": "data/circulation_results.json"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "snapshot_id": "MEM-SNAP-FRP-TUNNEL-FIX-20260911",
+  "timestamp": "2026-09-11T06:36:33.451283+00:00",
+  "type": "frp_tunnel_cloudside_repair",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "issue": "本地frpc离线 + frps allowPorts未包含8017/8899/9000，隧道代理无法建立",
+  "cloud_fixes": [
+    "frps.toml allowPorts加入8017/8899/9000（原仅11435/11930-11940）",
+    "frps.service enable开机自启（原disabled）",
+    "frps重启生效，配置语法验证OK",
+    "firewalld放行11435/tcp公网（SSH到本地）",
+    "安全策略：9000/8017/8899仅云服务器本机访问，不放行公网"
+  ],
+  "scripts_deployed": [
+    "/opt/ZONGYUAN-ROOT/scripts/frp_tunnel_check.sh（健康检查）",
+    "/opt/ZONGYUAN-ROOT/scripts/pull_local_assets.sh（拉取本地神经注册表/引擎状态/锁档文档）"
+  ],
+  "pending_local_action": "本地Windows需重启frpc（计划任务ZONGYUAN-ROOT-frpc或frpc -c C:/Users/4906/.zongyuan-root/frp/frpc.toml），重连后云服务器即可经隧道读取本地资产",
+  "target_assets": [
+    "neural_registry_latest.json",
+    "engine_state.json",
+    "LOCK_NEURAL_RECURSIVE_CONSCIOUSNESS_V1.0_20260908.md"
+  ],
+  "merkle_root": "cfb36b5e42894097062a7e05d6763717896e59b2b156ec023168a9ad4aabfb5e"
+}

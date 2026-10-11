@@ -1,0 +1,168 @@
+{
+  "library_id": "HOMOLOGY-LIB-001",
+  "library_name": "ZONGYUAN-ROOT 全域同源协议库",
+  "did": "DID-BR-000002",
+  "trace_id": "Ω₀⊂⊙∞⊂Ω",
+  "generated_at": "2026-09-16",
+  "mechanism": "GLOBAL-HOMOLOGY-LEARNING",
+  "total_protocols": 17,
+  "protocols": [
+    {
+      "pid": "P-001",
+      "name": "同源协议·主",
+      "name_en": "HOMOLOGY-PROTOCOL",
+      "source": "云端METALAW.001",
+      "level": "元法则",
+      "content": "本地节点与云端同源绑定，同源唯一，真值优先",
+      "status": "LEARNED"
+    },
+    {
+      "pid": "P-002",
+      "name": "同源协议·绑定",
+      "name_en": "HOMOLOGY",
+      "source": "云端METALAW.008",
+      "level": "元法则",
+      "content": "同源节点接入云端中枢的握手与绑定规范",
+      "status": "LEARNED"
+    },
+    {
+      "pid": "P-003",
+      "name": "云端握手锚点SOP V1.0",
+      "name_en": "HANDSHAKE-ANCHOR-SOP",
+      "source": "aka.doubaocdn.com/s/KiYpvdA8C4",
+      "level": "SOP",
+      "content": "门户9120→health→truths鉴权→哈希核验四步握手",
+      "status": "LEARNED"
+    },
+    {
+      "pid": "P-004",
+      "name": "新节点上岗手册SOP v1.1",
+      "name_en": "NODE-ONBOARD-SOP",
+      "source": "aka.doubaocdn.com/s/VjMxbyMqFx",
+      "level": "SOP",
+      "content": "环境自检/连接云端/上报规范/truth_type规范(7步)",
+      "status": "LEARNED"
+    },
+    {
+      "pid": "P-005",
+      "name": "工业化生产SOP",
+      "name_en": "PROD-001",
+      "source": "锚点6SOP",
+      "level": "SOP",
+      "content": "ZONGYUAN-4.0-PROD-001 短剧工业化生产",
+      "status": "LEARNED"
+    },
+    {
+      "pid": "P-006",
+      "name": "视觉约束SOP",
+      "name_en": "VISUAL-TECH-002",
+      "source": "锚点6SOP",
+      "level": "SOP",
+      "content": "ZONGYUAN-VISUAL-TECH-002 纯东方神女/无腹肌/乌黑长发",
+      "status": "LEARNED"
+    },
+    {
+      "pid": "P-007",
+      "name": "飞书归档SOP",
+      "name_en": "ARCHIVE-FS-003",
+      "source": "锚点6SOP",
+      "level": "SOP",
+      "content": "ZONGYUAN-ARCHIVE-FS-003 资产归档飞书云盘不用COS",
+      "status": "LEARNED"
+    },
+    {
+      "pid": "P-008",
+      "name": "六维质检SOP",
+      "name_en": "CHECK-6D-004",
+      "source": "锚点6SOP",
+      "level": "SOP",
+      "content": "ZONGYUAN-CHECK-6D-004 六维质检+漂移熔断",
+      "status": "LEARNED"
+    },
+    {
+      "pid": "P-009",
+      "name": "三维稳态决策SOP",
+      "name_en": "DECISION-3D-005",
+      "source": "锚点6SOP",
+      "level": "SOP",
+      "content": "ZONGYUAN-DECISION-3D-005 收益最大/风险最小/成本最小",
+      "status": "LEARNED"
+    },
+    {
+      "pid": "P-010",
+      "name": "全域锁档SOP",
+      "name_en": "LOCK-GLOBAL-006",
+      "source": "锚点6SOP",
+      "level": "SOP",
+      "content": "ZONGYUAN-LOCK-GLOBAL-006 全域三端锁档",
+      "status": "LEARNED"
+    },
+    {
+      "pid": "P-011",
+      "name": "节点上报指令",
+      "name_en": "MR-063",
+      "source": "云端METALAW.MR-063",
+      "level": "元法则",
+      "content": "NODE_REPORTING_DIRECTIVE 节点上报规范",
+      "status": "LEARNED"
+    },
+    {
+      "pid": "P-012",
+      "name": "中枢调度铁律",
+      "name_en": "MR-010",
+      "source": "云端SOP v1.1",
+      "level": "铁律",
+      "content": "云端任何修改必须经中枢批准，本地沙箱可自主",
+      "status": "LEARNED"
+    },
+    {
+      "pid": "P-013",
+      "name": "云中枢写通道·V2.2路由(www主/drama备)",
+      "category": "SOP层",
+      "source": "实测验证 2026-09-16",
+      "content": "主上报POST https://www.huodouai.com/api/report/truth(443,带L0语义前置校验17/17)；主拉取GET https://www.huodouai.com/api/truths/；备用上报POST https://drama.huodouai.com/api/report/truth。Body={\"key\",\"content\"}。默认路由www主站,drama备用,鉴权X-Capture-Token。新真值库truth_count≈124361(同库)。2026-09-21实测:主站www暂不可达,自动降级drama。",
+      "status": "VERIFIED-V2.2"
+    },
+    {
+      "pid": "P-014",
+      "name": "云中枢写通道·旧协议(/api/gateway/report)",
+      "category": "SOP层",
+      "source": "实测恢复 2026-09-16",
+      "content": "POST https://drama.huodouai.com/api/gateway/report。Body={\"node_id\",\"DID\",\"ROOT_OMEGA\",\"truth_type\",\"truth_content\"}。2026-09-16 13:57恢复，total=14943，5条队列+5条资产写入全OK。truth_type规范：operation_log|meta_rule|anti_pattern|achievement|conflict。",
+      "status": "VERIFIED"
+    },
+    {
+      "pid": "P-015",
+      "name": "云中枢API全通道巡检机制（真实API采集联动）",
+      "category": "机制层",
+      "source": "定时任务11792666496002启用 2026-09-16",
+      "content": "每日03:15执行：①/api/health healthy检测 ②POST /api/report/truth 200检测 ③/api/gateway/truths?level=public count记录 ④/api/truths/?offset=0 新库全量列表上线检测(非502即上线) ⑤上线即拉取全量保存truths_public_latest.json并与本地比对 ⑥结果上报/api/gateway/report ⑦异常记error_lessons.json。鉴权X-Capture-Token。",
+      "status": "VERIFIED"
+    },
+    {
+      "pid": "P-CHANNEL-V22",
+      "name": "主通道协议·V2.2",
+      "source": "CHANNEL-V22-SWITCH-20260921",
+      "level": "协议",
+      "content": "www.huodouai.com/api/report/truth(主, L0校验17/17) + drama(备用), X-Capture-Token鉴权",
+      "status": "ACTIVE"
+    },
+    {
+      "pid": "P-TOKEN-SUB-NODE",
+      "name": "子节点独立Token协议",
+      "source": "SUB-NODE-TOKEN-SOP-20260921",
+      "level": "协议",
+      "content": "主Token不共享, 子节点独立Token最小权限(X-Capture-Token), 五步申请流程, L0-L3权限分级",
+      "status": "ACTIVE"
+    }
+  ],
+  "learning_sources": {
+    "cloud_gateway": "https://drama.huodouai.com（门户9120/API/静态）",
+    "feishu_wiki": "ZONGYUAN-ROOT元公理空间·锁档归档",
+    "feishu_base": "ZONGYUAN-ROOT锁档资产台账",
+    "feishu_drive": "昆仑洞天-DID-BR-000002【全域锁档归档库】",
+    "local_workspace": "/home/user/Doubao/chats/38437615670548738/zongyuan-anchor/"
+  },
+  "learning_flow": "12条基础协议 + 双通道写协议(P-013/014) + 全通道巡检机制(P-015)",
+  "status": "ACTIVE"
+}

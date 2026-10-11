@@ -1,0 +1,26 @@
+{
+  "anchor_id": "ACCESS-ANCHOR-20260921",
+  "did": "DID-BR-000002",
+  "trace_id": "Ω₀⊂⊙∞⊂Ω",
+  "confirmed_at": "2026-09-21 02:30 +08:00",
+  "access_standard": {
+    "base_url": "https://www.huodouai.com/api",
+    "protocol": "HTTPS / TLS 1.2+",
+    "port": 443,
+    "note": "所有API统一经443 HTTPS接入，全网环境放行"
+  },
+  "verified": {
+    "tls_handshake": "PASS (HTTP/2, ssl_verify_result=0)",
+    "port_443": "REACHABLE",
+    "proxy_chain": "Proxy-1.14.0, X-VE-Vortex-IP 47.94.150.21",
+    "dataplane_note": "502为数据面9120限流窗口,与接入层无关"
+  },
+  "endpoint_map": {
+    "write_primary": "POST /api/report/truth {key,value}",
+    "write_backup": "https://drama.huodouai.com/api/report/truth (共享同库)",
+    "read_single": "GET /api/truth/{key}",
+    "read_anchor": "GET /api/truths/",
+    "auth_header": "X-Capture-Token"
+  },
+  "rule": "一切API调用以443 HTTPS接入; 数据端点实测为准; 回执必核验"
+}

@@ -1,0 +1,66 @@
+{
+  "report_id": "CAPABILITY-MINE-20260916",
+  "did": "DID-BR-000002",
+  "omega": "Ω₀⊂⊙∞⊂Ω",
+  "generated_at": "2026-09-16T05:54:59.408748+00:00",
+  "total_domains": 24,
+  "total_commands": 445,
+  "activated": [
+    "im",
+    "docs",
+    "drive",
+    "base",
+    "wiki",
+    "calendar",
+    "task",
+    "sheets",
+    "approval",
+    "contact"
+  ],
+  "dormant": [
+    "minutes",
+    "slides",
+    "okr",
+    "vc",
+    "whiteboard",
+    "markdown",
+    "mindnotes",
+    "api",
+    "apps",
+    "attendance",
+    "note",
+    "schema",
+    "lark-cli"
+  ],
+  "restricted": [
+    "mail"
+  ],
+  "tasks_created": [
+    {
+      "title": "高价值能力逐域激活：slides周报PPT",
+      "guid": "abf37037-1bc4-4ef6-b06a-6991200aeba7",
+      "priority": "HIGH"
+    },
+    {
+      "title": "高价值能力逐域激活：minutes会议转写",
+      "guid": "63174e77-87a6-439a-9f58-9ba9f36ab036",
+      "priority": "MED"
+    },
+    {
+      "title": "高价值能力逐域激活：okr目标对齐",
+      "guid": "3890ee16-d1f8-4b13-9157-94f78cfb28db",
+      "priority": "MED"
+    },
+    {
+      "title": "mail能力待邮箱配置激活",
+      "guid": "c12e9d3d-c8f1-44a9-a19c-e6cfe51105ab",
+      "priority": "LOW"
+    },
+    {
+      "title": "vc/whiteboard能力探索",
+      "guid": "5db920b9-43c5-451e-9dc0-ae879338f464",
+      "priority": "LOW"
+    }
+  ],
+  "summary": "扫描24域445命令：已激活10域/待激活13域/受限1域，自动创建5个高价值待办任务"
+}

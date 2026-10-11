@@ -1,0 +1,27 @@
+{
+  "version": "1.1",
+  "updated": "2026-09-13",
+  "primary_channel": {
+    "name": "drama-gateway-9120",
+    "base_url": "https://www.huodouai.com/api/gateway",
+    "token": "ZR-CAPTURE-<ROTATED>",
+    "handshake_port": "9120",
+    "read_endpoints": ["truths", "truth/{key}"],
+    "write_endpoint": "report",
+    "status": "ACTIVE_PRIMARY"
+  },
+  "legacy_channel": {
+    "name": "huodouai-kgapi-8070",
+    "base_url": "https://www.huodouai.com/api/v1",
+    "status": "RETIRED_20260913",
+    "retire_reason": "key轮换+kg-api波动+端口混淆"
+  },
+  "frp_channel": {
+    "name": "frp-key-tunnel",
+    "server": "123.207.202.158:7100",
+    "tunnel": "11940",
+    "status": "ACTIVE_BACKUP"
+  },
+  "failover": "frp_channel",
+  "rules_ref": "METALAW.008.HOMOLOGY"
+}

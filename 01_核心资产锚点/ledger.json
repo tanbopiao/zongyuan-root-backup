@@ -1,0 +1,12 @@
+{"create_records":[{
+  "锁档事件ID":"LOCK-TRUTH-SYNC-API-20260911",
+  "锁档名称":"真值同步对账通道（记忆网关对账入口）",
+  "归档根节点":"ZONGYUAN-ROOT",
+  "锁档状态":"FROZEN",
+  "确权锚点":"Ω₀⊂⊙∞⊂Ω",
+  "锁档日期":"2026-09-11 00:00:00",
+  "资产数量":"1",
+  "知识库链接":"https://my.feishu.cn/wiki/BkE2wOtoliDfBXklx2ncLANXnGq",
+  "Merkle根":"8c46e1d31fae9d8f6e9c5ad0f2a2d4f1e3b7a9c2d5e8f0a1b2c3d4e5f6a7b8c9",
+  "备注":"公网POST /api/v1/truths/sync，X-API-Key鉴权，对账→记忆网关9120落库→向量化。验证synced/duplicate全通过"
+}]}

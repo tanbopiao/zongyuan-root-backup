@@ -1,0 +1,185 @@
+{
+  "meta_truth_package": {
+    "package_id": "META-TRUTH-PKG-20261006-001",
+    "package_name": "元极恒一·自治内核基线真值包",
+    "version": "V1.0",
+    "lock_status": "LOCKED",
+    "generated_at": "2026-10-06T15:30:00+08:00",
+    "generated_by": "NODE-DEV-DOUBAO-WORK-001",
+    "did": "DID-BR-000002",
+    "ont_id": "ONT-4D-UNIVERSAL-ROOT",
+    "axiom": "Ω₀⊂⊙∞⊂Ω",
+    "level": "Lv11",
+    "truth_count": 6,
+    "truths": [
+      {
+        "truth_id": "TRUTH-META-0001",
+        "truth_name": "元极恒一",
+        "axiom": "Ω₀⊂⊙∞⊂Ω",
+        "level": "Lv11",
+        "type": "meta_law",
+        "description": "本体恒一，演化不息；基点生发无限，无限归属于全域本体",
+        "constraint": [
+          "基线只读，只追加不修改",
+          "全节点强制对齐",
+          "不可外部重构元公理"
+        ]
+      },
+      {
+        "truth_id": "TRUTH-META-0002",
+        "truth_name": "四维本体公理",
+        "axiom": "空间定形、时间定序、属性定质、因果定闭环，四维耦合构成通用四维逻辑本体架构",
+        "did": "DID-BR-000002",
+        "ont_id": "ONT-4D-UNIVERSAL-ROOT",
+        "level": "Lv11",
+        "truth_type": "meta_axiom",
+        "description": "作为元极恒一体系底层本体公理，四维本体将所有实体、资产、任务、事件映射至四个正交维度，实现万物统一建模，是全部子系统、节点、资产的统一建模基准。",
+        "four_dimension": {
+          "D1_space": "空间存在维：定形。描述实体形态、结构、位置、边界，回答「是什么、在哪里」",
+          "D2_time": "时间时序维：定序。描述事件先后、版本、生命周期、演化阶段，回答「何时发生」",
+          "D3_attribute": "属性规则维：定质。描述特征、参数、约束、审美、规格，回答「具备何种属性」",
+          "D4_causal": "因果真值维：定闭环。描述因果链路、真值校验、推理结果、反馈收敛，回答「为何成立，结果是什么」"
+        },
+        "core_relation": "四维不可割裂，任一实体必须同时具备四维描述；四维投影可降维用于检索、可视化、存储，本体层面保持四维完备。",
+        "dependency": [
+          "TRUTH-META-0001"
+        ],
+        "constraint": [
+          "所有子系统、节点、资产、任务建模强制遵循四维范式",
+          "四维本体基线只读，仅追加实例与子规则，不修改公理定义",
+          "真值校验必须经过四维联合核验，单一维度不能判定全局真值",
+          "兼容希尔伯特正交子空间约束，支持Ω-Symbol元指涉子嵌入"
+        ],
+        "business_scope": [
+          "图文/图像资产元数据标注、视频分镜描述",
+          "工程工单、缺陷台账、节点状态建模",
+          "知识库、种子真值、哲学概念结构化定义",
+          "多Agent任务调度、因果推演、全域巡检校验"
+        ],
+        "timestamp": "20261006T171710",
+        "hash_sha256": "LOCKED-META-0002-ZONGYUAN-ROOT",
+        "merkle_leaf": true
+      },
+      {
+        "truth_id": "TRUTH-META-0003",
+        "truth_name": "四维本体公理",
+        "type": "meta_axiom",
+        "description": "空间存在维｜时间时序维｜属性规则维｜因果真值维，构成通用四维逻辑本体架构",
+        "dimensions": [
+          {
+            "dim": 1,
+            "name": "空间存在维",
+            "meaning": "存在的边界与定位"
+          },
+          {
+            "dim": 2,
+            "name": "时间时序维",
+            "meaning": "演化的先后与不可逆"
+          },
+          {
+            "dim": 3,
+            "name": "属性规则维",
+            "meaning": "实体的属性与约束规则"
+          },
+          {
+            "dim": 4,
+            "name": "因果真值维",
+            "meaning": "因果链与真值锚定"
+          }
+        ]
+      },
+      {
+        "truth_id": "TRUTH-META-0004",
+        "truth_name": "风险三优先元法则",
+        "axiom": "决策排序优先级：风险最小 > 成本最小 > 收益最大，所有节点任务决策强制遵循该序",
+        "did": "DID-BR-000002",
+        "ont_id": "ONT-4D-UNIVERSAL-ROOT",
+        "level": "Lv11",
+        "truth_type": "meta_law",
+        "description": "元极恒一体系顶层决策元法则，作为算子态裁决核心权重基准。任何任务调度、资源分配、方案择优、发布上线都以此优先级进行评估，拒绝单纯追逐收益而放大风险的决策。",
+        "priority_def": {
+          "P1风险最小": "优先规避不可逆损害、基线篡改、资产丢失、权限泄露、合规事故；高危操作必须人工审批，变更前强制快照备份",
+          "P2成本最小": "在风险可控前提下，优先零成本方案、免费API兜底、复用已有资产，杜绝重复执行与资源浪费",
+          "P3收益最大": "风险、成本均满足约束后，再择优最大化产出质量、资产价值、任务收敛效率"
+        },
+        "core_relation": "该法则在算子态网关生效，承接四维本体真值输入，结合三态隔离架构完成方案打分裁决；依赖元极恒一、四维本体、三态正交隔离公理。",
+        "dependency": [
+          "TRUTH-META-0001",
+          "TRUTH-META-0002",
+          "TRUTH-META-0003"
+        ],
+        "constraint": [
+          "任何自动化决策不可颠倒优先级顺序，收益不能凌驾风险约束",
+          "风险评分超标任务直接拦截，进入人工审批队列",
+          "成本评估优先选择零豆包额度消耗方案，付费操作强制人工审批",
+          "决策结果写入真值日志，纳入L1全域巡检核验"
+        ],
+        "business_scope": [
+          "模型API路由配额调度",
+          "工程工单方案选型、灰度发布与全量上线评审",
+          "资产备份、同步、归档策略判定",
+          "Agent自主任务规划、自改进RSI分支校验"
+        ],
+        "timestamp": "20261006T171930",
+        "hash_sha256": "LOCKED-META-0004-ZONGYUAN-ROOT",
+        "merkle_leaf": true
+      },
+      {
+        "truth_id": "TRUTH-META-0005",
+        "truth_name": "五大运行特征",
+        "type": "meta_behavior",
+        "description": "基线锁档、种子式进化、全域收敛、双隔离、回滚保护",
+        "features": [
+          {
+            "name": "基线锁档",
+            "rule": "核心元宪法永久只读eFuse熔断，仅追加新真值"
+          },
+          {
+            "name": "种子式进化",
+            "rule": "不侵入内核底层，仅通过种子真值注入完成能力演化"
+          },
+          {
+            "name": "全域收敛",
+            "rule": "所有节点/账号/资产/任务向同一套真值体系对齐"
+          },
+          {
+            "name": "双隔离",
+            "rule": "本地仿真+云端持久层，双Worker并发，记忆网关统一锚定"
+          },
+          {
+            "name": "回滚保护",
+            "rule": "任何变更前置快照，高危操作强制人工审批"
+          }
+        ]
+      },
+      {
+        "truth_id": "TRUTH-META-0006",
+        "truth_name": "业务落地范围",
+        "type": "meta_scope",
+        "description": "火斗云智AIOS运维/昆仑洞天多模态生产/账号持久层与全域同步",
+        "domains": [
+          "火斗云智AIOS：运维、流水线、资产库、作品画廊、可视化大屏",
+          "昆仑洞天：东方神话宇宙多模态资产生产、关键帧、剧情、美学基准",
+          "持久层与同步：账号持久层、魔搭数据湖全域资产归档、飞书Base台账同步"
+        ]
+      }
+    ],
+    "node_identity": {
+      "hub_node": "hub-central-agent",
+      "dev_node": "NODE-DEV-DOUBAO-WORK-001",
+      "did": "DID-BR-000002",
+      "autonomy_level": "Lv9",
+      "permission_level": "L4",
+      "engineering_level": "Lv7",
+      "memory_gateway": "huodouai.com/api/report/truth/",
+      "anchored_axiom": "Ω₀⊂⊙∞⊂Ω"
+    },
+    "constraints": [
+      "基线只读，只追加不修改",
+      "全节点强制对齐",
+      "不可外部重构元公理",
+      "高危操作强制人工审批",
+      "变更前置快照"
+    ]
+  }
+}

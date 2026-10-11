@@ -1,0 +1,68 @@
+{
+  "total_records": 2,
+  "by_method": {
+    "llm": 2
+  },
+  "by_status": {
+    "INIT": 2
+  },
+  "by_op_name": {
+    "op_sliding_window_mean": 1,
+    "op_entropy_calculate": 1
+  },
+  "score_stats": {
+    "min": 87.5,
+    "max": 89.17,
+    "avg": 88.34
+  },
+  "date_range": {
+    "first": "2026-09-14T02:03:18+08:00",
+    "last": "2026-09-14T02:04:14+08:00"
+  },
+  "recent_10": [
+    {
+      "timestamp": "2026-09-14T02:03:18+08:00",
+      "problem": "需要一个滑动窗口均值算子，计算数据序列中每个位置的滑动窗口平均值",
+      "op_id": "OP-LLM-20260914-020318-67944F",
+      "op_name": "op_sliding_window_mean",
+      "generation_method": "llm",
+      "match_method": "none",
+      "match_score": 0.0,
+      "llm_model": "doubao-reasoning2",
+      "llm_rounds": 1,
+      "eval_score": 87.5,
+      "eval_passed": true,
+      "guardian_verdict": "PROCEED",
+      "execution_success": true,
+      "exec_time_ms": 0.0237,
+      "peak_memory_kb": 0.12,
+      "iterations": 1,
+      "status": "INIT",
+      "provenance_anchor": "Ω₀⊂⊙∞⊂Ω",
+      "did": "DID-BR-000002",
+      "kernel_version": "V3.2-META-CLOSED-LOOP-FULL"
+    },
+    {
+      "timestamp": "2026-09-14T02:04:14+08:00",
+      "problem": "需要一个熵值计算算子，计算概率分布的信息熵",
+      "op_id": "OP-LLM-20260914-020414-403CF9",
+      "op_name": "op_entropy_calculate",
+      "generation_method": "llm",
+      "match_method": "none",
+      "match_score": 0.0,
+      "llm_model": "doubao-reasoning2",
+      "llm_rounds": 1,
+      "eval_score": 89.17,
+      "eval_passed": true,
+      "guardian_verdict": "PROCEED",
+      "execution_success": true,
+      "exec_time_ms": 0.0152,
+      "peak_memory_kb": 0.05,
+      "iterations": 1,
+      "status": "INIT",
+      "provenance_anchor": "Ω₀⊂⊙∞⊂Ω",
+      "did": "DID-BR-000002",
+      "kernel_version": "V3.2-META-CLOSED-LOOP-FULL"
+    }
+  ]
+}

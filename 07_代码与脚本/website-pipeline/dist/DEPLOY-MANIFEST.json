@@ -1,0 +1,29 @@
+{
+  "pipeline": "ZR-WEBSITE-PIPELINE",
+  "version": "20260929-223345",
+  "build_time": "2026-09-29T22:33:46+08:00",
+  "style": "STYLE-GOLD-BLACK-V1.0-FROZEN",
+  "artifacts": {
+    "html": {
+      "path": "dist/whitepaper.html",
+      "size_bytes": 35179,
+      "deploy_target": "/www/wwwroot/www.huodouai.com/whitepaper/index.html"
+    },
+    "markdown": {
+      "path": "dist/whitepaper.md",
+      "size_bytes": 18911,
+      "deploy_target": "/www/wwwroot/www.huodouai.com/whitepaper/whitepaper.md"
+    }
+  },
+  "simulation": {
+    "dir": "/home/user/ZONGYUAN-ROOT/07_代码与脚本/website-pipeline/simulate-wwwroot/whitepaper/",
+    "verified": "5/5",
+    "status": "PASS"
+  },
+  "deploy_channel": "TAT (Tencent Cloud Automation Tool)",
+  "server": "123.207.202.158 (腾讯云轻量·OpenCloudOS 9)",
+  "domain": "www.huodouai.com",
+  "approval_required": true,
+  "omega_anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002"
+}

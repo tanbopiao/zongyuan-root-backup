@@ -1,0 +1,33 @@
+{
+  "kernel_version": "V3.0-COGNITIVE-PREVIEW",
+  "base": "V1.0-SYNC",
+  "created": "2026-09-13",
+  "layers": {
+    "cognitive_layer": {
+      "status": "DRAFT",
+      "mechanism": "bias_audit",
+      "audit_types": ["halo_effect", "anchoring", "confirmation", "recency"],
+      "output": "audit_report -> truth"
+    },
+    "healing_layer": {
+      "status": "DRAFT",
+      "mechanism": "auto_heal_chain",
+      "chain": ["detect", "retry", "fallback", "alert", "report"],
+      "reference": "self-healing.engine.v1_0_deployed"
+    },
+    "stability_layer": {
+      "status": "DRAFT",
+      "mechanism": "4dim_measure",
+      "dims": {"resources": 30, "services": 30, "truths": 25, "evolution_health": 15},
+      "total": 100,
+      "reference": "STABILITY.MEASURE.*"
+    }
+  },
+  "meta_rules_draft": [
+    {"id": "MR-LOCAL-001", "content": "凡写入真值必过认知审计（bias检测），审计记录入真值库"},
+    {"id": "MR-LOCAL-002", "content": "凡检测到通道/服务异常，自动进入自愈链（重试→降级→告警→上报）"},
+    {"id": "MR-LOCAL-003", "content": "每次闭环必输出四维稳态度量（资源/服务/真值/演化），M2单调收敛"}
+  ],
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002"
+}

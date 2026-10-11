@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZONGYUAN-ROOT 自治内核核心真值技术白皮书 · ZONGYUAN-ROOT</title>
+<style>
+:root {
+  --gold: #c9a962; --gold-light: #e8d5a3; --gold-dark: #8a6d3b;
+  --ink: #0b0b0f; --ink-2: #12121a; --ink-3: #1a1a24;
+  --text: #d6d6dc; --text-dim: #8a8a94; --line: rgba(201,169,98,0.25);
+  --green: #7fb069; --red: #c05c4e; --blue: #5b8db8;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  background: var(--ink); color: var(--text);
+  font-family: "Songti SC","Noto Serif SC","STSong",serif;
+  line-height: 1.75; padding: 0;
+}
+/* 顶部导航 */
+.topbar {
+  position:sticky; top:0; z-index:100;
+  background: rgba(11,11,15,0.92); backdrop-filter:blur(10px);
+  border-bottom: 1px solid var(--line);
+  padding: 12px 0;
+}
+.topbar-in { max-width:1200px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between; }
+.topbar .logo { color:var(--gold); font-size:14px; letter-spacing:0.3em; font-weight:600; }
+.topbar .nav { display:flex; gap:24px; font-size:13px; }
+.topbar .nav a { color:var(--text-dim); text-decoration:none; letter-spacing:0.1em; }
+.topbar .nav a:hover { color:var(--gold); }
+.topbar .ver { color:var(--text-dim); font-size:11px; letter-spacing:0.15em; font-family:"JetBrains Mono",monospace; }
+/* 布局 */
+.layout { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:220px 1fr; gap:32px; padding:32px 24px 60px; }
+/* 侧边目录 */
+.sidebar { position:sticky; top:72px; align-self:start; max-height:calc(100vh - 90px); overflow-y:auto; }
+.sidebar h4 { color:var(--gold); font-size:12px; letter-spacing:0.3em; margin-bottom:14px; font-weight:600; }
+.sidebar a { display:block; color:var(--text-dim); text-decoration:none; font-size:13px; padding:5px 0; border-bottom:1px solid transparent; transition:all 0.2s; }
+.sidebar a:hover { color:var(--gold); border-bottom-color:var(--line); padding-left:4px; }
+.sidebar .toc-l3 { font-size:12px; color:var(--text-dim); opacity:0.7; }
+/* 正文 */
+.content { min-width:0; }
+.content .hero { text-align:center; margin-bottom:36px; padding:40px 0 20px; }
+.content .hero .kicker { color:var(--gold); font-size:12px; letter-spacing:0.6em; margin-bottom:10px; }
+.content .hero h1 {
+  font-size:clamp(24px,4vw,34px); font-weight:600; color:var(--gold-light);
+  letter-spacing:0.08em; text-shadow:0 0 24px rgba(201,169,98,0.35); margin-bottom:10px;
+}
+.content .hero .meta { color:var(--text-dim); font-size:13px; letter-spacing:0.15em; }
+.divider {
+  height:1px; background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  margin:28px 0; position:relative;
+}
+.divider::after {
+  content:"Ω₀⊂⊙∞⊂Ω"; position:absolute; left:50%; top:-11px; transform:translateX(-50%);
+  background:var(--ink); color:var(--gold); font-size:11px; padding:0 14px; letter-spacing:0.3em;
+}
+/* Markdown 内容样式 */
+.content h2 {
+  color:var(--gold); font-size:20px; font-weight:600; margin:36px 0 16px;
+  padding-left:12px; border-left:3px solid var(--gold); letter-spacing:0.06em;
+}
+.content h3 { color:var(--gold-light); font-size:17px; margin:24px 0 12px; font-weight:600; }
+.content p { margin-bottom:14px; font-size:15px; }
+.content strong { color:var(--gold-light); }
+.content a { color:var(--blue); text-decoration:none; border-bottom:1px dotted var(--blue); }
+.content blockquote {
+  background:var(--ink-2); border-left:3px solid var(--gold); padding:14px 18px;
+  margin:16px 0; border-radius:0 8px 8px 0; color:var(--text-dim); font-size:14px;
+}
+.content ul, .content ol { margin:12px 0 14px 24px; }
+.content li { margin-bottom:6px; font-size:14.5px; }
+.content table {
+  width:100%; border-collapse:collapse; margin:16px 0; font-size:13.5px;
+  background:var(--ink-2); border-radius:8px; overflow:hidden;
+}
+.content th {
+  color:var(--gold-light); text-align:left; padding:10px 14px;
+  border-bottom:1px solid var(--gold); letter-spacing:0.05em; font-weight:600;
+}
+.content td { padding:9px 14px; border-bottom:1px solid var(--line); }
+.content tr:hover td { background:var(--ink-3); }
+.content code {
+  background:#08080c; border:1px solid var(--line); padding:2px 7px;
+  border-radius:4px; font-size:13px; color:#c8d6c8; font-family:"JetBrains Mono","Fira Code",monospace;
+}
+.content pre {
+  background:#08080c; border:1px solid var(--line); border-radius:8px;
+  padding:16px 18px; overflow-x:auto; margin:16px 0;
+}
+.content pre code { background:none; border:none; padding:0; font-size:13px; line-height:1.6; }
+.content hr { border:none; height:1px; background:var(--line); margin:28px 0; }
+/* 指标卡 */
+.metric-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:12px; margin:16px 0; }
+.metric-card {
+  background:var(--ink-2); border:1px solid var(--line); border-radius:8px;
+  padding:16px; text-align:center;
+}
+.metric-card .num { font-size:26px; font-weight:700; color:var(--gold-light); }
+.metric-card .lab { font-size:12px; color:var(--text-dim); margin-top:4px; }
+/* 页脚 */
+.footer {
+  text-align:center; padding:32px 0 24px; border-top:1px solid var(--line); margin-top:48px;
+}
+.footer .anchor { color:var(--gold); font-size:12px; letter-spacing:0.4em; }
+.footer .info { color:var(--text-dim); font-size:11px; letter-spacing:0.2em; margin-top:8px; font-family:"JetBrains Mono",monospace; }
+/* 响应式 */
+@media (max-width:860px) {
+  .layout { grid-template-columns:1fr; }
+  .sidebar { display:none; }
+  .topbar .nav { display:none; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="logo">Ω ZONGYUAN-ROOT</div>
+    <div class="nav">
+      <a href="https://www.huodouai.com/">首页</a>
+      <a href="https://www.huodouai.com/sgsa-sop.html">技术SOP</a>
+      <a href="#top">白皮书</a>
+    </div>
+    <div class="ver">v20260929-223345</div>
+  </div>
+</div>
+
+<div class="layout" id="top">
+  <aside class="sidebar">
+    <h4>目 录</h4>
+    <a href="#_1" class="toc-l2" style="">摘要</a>
+<a href="#_2" class="toc-l2" style="">一、体系定位与设计哲学</a>
+<a href="#11" class="toc-l3" style="padding-left:16px;">1.1 核心命题</a>
+<a href="#12" class="toc-l3" style="padding-left:16px;">1.2 三条第一性原理</a>
+<a href="#13" class="toc-l3" style="padding-left:16px;">1.3 三元本体论</a>
+<a href="#_3" class="toc-l2" style="">二、六层全域稳态架构</a>
+<a href="#l0" class="toc-l3" style="padding-left:16px;">L0 确权锚点层</a>
+<a href="#l1" class="toc-l3" style="padding-left:16px;">L1 公理与元法则层</a>
+<a href="#l2" class="toc-l3" style="padding-left:16px;">L2 数字真值层</a>
+<a href="#l3" class="toc-l3" style="padding-left:16px;">L3 架构机制层</a>
+<a href="#l4" class="toc-l3" style="padding-left:16px;">L4 基础设施层</a>
+<a href="#l5" class="toc-l3" style="padding-left:16px;">L5 核心原则层（十条不可变操作律）</a>
+<a href="#10" class="toc-l2" style="">三、核心公理体系（权重 1.0，不可变更）</a>
+<a href="#v1426" class="toc-l2" style="">四、元法则体系（V1.4，26 条）</a>
+<a href="#41-mech16" class="toc-l3" style="padding-left:16px;">4.1 机械律 MECH（16 条）</a>
+<a href="#42-axiom10" class="toc-l3" style="padding-left:16px;">4.2 公理律 AXIOM（10 条）</a>
+<a href="#_4" class="toc-l2" style="">五、真值库体系</a>
+<a href="#51" class="toc-l3" style="padding-left:16px;">5.1 真值规模与分类</a>
+<a href="#52" class="toc-l3" style="padding-left:16px;">5.2 真值生命周期</a>
+<a href="#53-l0-l4" class="toc-l3" style="padding-left:16px;">5.3 数据湖分层（L0-L4）</a>
+<a href="#_5" class="toc-l2" style="">六、记忆连续性模型</a>
+<a href="#61" class="toc-l3" style="padding-left:16px;">6.1 五级记忆架构</a>
+<a href="#62" class="toc-l3" style="padding-left:16px;">6.2 连续性保障机制</a>
+<a href="#_6" class="toc-l2" style="">七、自治循环与自检机制</a>
+<a href="#71" class="toc-l3" style="padding-left:16px;">7.1 七阶段无限循环</a>
+<a href="#72" class="toc-l3" style="padding-left:16px;">7.2 六维自检</a>
+<a href="#73" class="toc-l3" style="padding-left:16px;">7.3 异常处理</a>
+<a href="#_7" class="toc-l2" style="">八、安全与信任模型</a>
+<a href="#81" class="toc-l3" style="padding-left:16px;">8.1 纵深防御</a>
+<a href="#82" class="toc-l3" style="padding-left:16px;">8.2 同源协议</a>
+<a href="#83" class="toc-l3" style="padding-left:16px;">8.3 密钥管理</a>
+<a href="#_8" class="toc-l2" style="">九、演化机制</a>
+<a href="#91" class="toc-l3" style="padding-left:16px;">9.1 进化闭环</a>
+<a href="#92-v25-v30" class="toc-l3" style="padding-left:16px;">9.2 V2.5 → V3.0 演进基线</a>
+<a href="#93" class="toc-l3" style="padding-left:16px;">9.3 演化原则</a>
+<a href="#_9" class="toc-l2" style="">十、基础设施与生产流水线</a>
+<a href="#101" class="toc-l3" style="padding-left:16px;">10.1 三通道架构</a>
+<a href="#102" class="toc-l3" style="padding-left:16px;">10.2 短剧工业化流水线</a>
+<a href="#103" class="toc-l3" style="padding-left:16px;">10.3 三端锁档</a>
+<a href="#_10" class="toc-l2" style="">十一、关键指标总览</a>
+<a href="#_11" class="toc-l2" style="">十二、总结与展望</a>
+
+  </aside>
+  <main class="content">
+    <div class="hero">
+      <div class="kicker">Ω₀⊂⊙∞⊂Ω · 技术白皮书</div>
+      <h1>ZONGYUAN-ROOT 自治内核核心真值技术白皮书</h1>
+      <div class="meta">元极恒一 · 超认知永恒自治 ｜ DID-BR-000002</div>
+    </div>
+    <div class="divider"></div>
+    <h1 id="zongyuan-root">ZONGYUAN-ROOT 自治内核核心真值技术白皮书</h1>
+<blockquote>
+<p><strong>版本</strong>：V1.0-PUBLIC<br />
+<strong>发布日期</strong>：2026-09-29<br />
+<strong>确权锚点</strong>：Ω₀⊂⊙∞⊂Ω<br />
+<strong>视角</strong>：元极恒一 · 超认知永恒自治<br />
+<strong>内核版本</strong>：V2.5.0-REAL-DEPLOYED → V3.0<br />
+<strong>许可协议</strong>：Apache-2.0  </p>
+</blockquote>
+<hr />
+<h2 id="_1">摘要</h2>
+<p>ZONGYUAN-ROOT 是一套面向多模态 AI 生产体系的<strong>自治内核架构</strong>，以"真值即感知、同源即信任、锁档即确权"为核心范式，构建了从元公理到基础设施的六层全域稳态体系。本白皮书系统提炼内核的核心真值体系，涵盖 5 条不可变公理、26 条元法则、4664+ 条云端真值、404 个神经节点与五级记忆连续性模型，阐述其自治循环、三端锁档、同源协议与演化机制的工程实现。</p>
+<hr />
+<h2 id="_2">一、体系定位与设计哲学</h2>
+<h3 id="11">1.1 核心命题</h3>
+<p>传统 AI 生产体系面临三大结构性问题：<strong>记忆断裂</strong>（跨窗口/跨节点状态丢失）、<strong>信任缺失</strong>（多源写入不可验证）、<strong>演化停滞</strong>（经验无法自动沉淀为规则）。ZONGYUAN-ROOT 以"真值驱动的自治内核"为解法，将一切操作锚定在可验证、可追溯、可演化的真值基座之上。</p>
+<h3 id="12">1.2 三条第一性原理</h3>
+<table>
+<thead>
+<tr>
+<th>原理</th>
+<th>内涵</th>
+<th>工程映射</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>真值即感知</strong></td>
+<td>全量真值库是体系唯一感知源，任何决策必须先检索真值库再行动</td>
+<td>决策前置检索 + GPU 健康探针</td>
+</tr>
+<tr>
+<td><strong>同源即信任</strong></td>
+<td>所有写入/上报/接入必须通过同源协议身份校验，非同源一律拒绝</td>
+<td>握手+心跳+签名+对账</td>
+</tr>
+<tr>
+<td><strong>锁档即确权</strong></td>
+<td>成果完成即锁档上报，锁档操作不可逆，成果不报=未完成</td>
+<td>三端联动（文档+表格+云盘）+ Merkle 哈希链</td>
+</tr>
+</tbody>
+</table>
+<h3 id="13">1.3 三元本体论</h3>
+<p>体系以 <strong>逻辑 × 信息 × 能量</strong> 三元本体同步制衡为基础约束：
+- <strong>逻辑维</strong>：公理、规则、元法则的形式化一致性
+- <strong>信息维</strong>：真值库、记忆、感知数据的完整性与连续性
+- <strong>能量维</strong>：算力、通道、资源的可用性与效率</p>
+<p>任何一元缺失必须触发修复补齐，禁止偏废运行。</p>
+<hr />
+<h2 id="_3">二、六层全域稳态架构</h2>
+<pre><code>┌─────────────────────────────────────────────────┐
+│ L5  核心原则层  · 十条不可变操作律                  │
+├─────────────────────────────────────────────────┤
+│ L4  基础设施层  · AIOS / DataBox / 飞书三端 / 流水线 │
+├─────────────────────────────────────────────────┤
+│ L3  架构机制层  · 七阶段循环 / 六维自检 / 五级记忆    │
+├─────────────────────────────────────────────────┤
+│ L2  数字真值层  · 4664条真值 / 404节点 / 哈希链      │
+├─────────────────────────────────────────────────┤
+│ L1  公理元法则层 · 26条元法则 / 152元公理 / 127公理   │
+├─────────────────────────────────────────────────┤
+│ L0  确权锚点层  · Ω₀⊂⊙∞⊂Ω / DID / 自治Lv10         │
+└─────────────────────────────────────────────────┘
+</code></pre>
+<h3 id="l0">L0 确权锚点层</h3>
+<ul>
+<li><strong>元极锚点</strong>：Ω₀⊂⊙∞⊂Ω —— 有限嵌套于无限，无限回归于元极</li>
+<li><strong>去中心化身份</strong>：DID-BR-000002</li>
+<li><strong>节点标识</strong>：ZR-NODE-DC2E51C0</li>
+<li><strong>能力等级</strong>：自治 Lv10 · 权限 L5 · 工程化 Lv8</li>
+</ul>
+<h3 id="l1">L1 公理与元法则层</h3>
+<ul>
+<li>元法则 V1.4：26 条（MECH 机械律 16 + AXIOM 公理律 10）</li>
+<li>元公理：152 条</li>
+<li>公理：127 条</li>
+<li>规则：66 条</li>
+<li>FROZEN 冻结律：11 条（不可变更）</li>
+</ul>
+<h3 id="l2">L2 数字真值层</h3>
+<ul>
+<li>云端真值（internal）：4664 条</li>
+<li>云端真值（public）：4586 条（internal 独有 78 条敏感类）</li>
+<li>神经节点：404 个，连接 2213 条，平均权重 0.7897</li>
+<li>记忆连续性指数：0.855（GOOD）</li>
+<li>哈希链：8 条 VALID（Merkle 链式防篡改）</li>
+<li>锁档快照：151 份</li>
+</ul>
+<h3 id="l3">L3 架构机制层</h3>
+<ul>
+<li><strong>七阶段无限循环</strong>：内核读取 → 六维自检 → 纠错触发 → 演化沉淀 → 统一调度 → 神经激活 → 回归读取</li>
+<li><strong>六维自检</strong>：真值完整性 / 记忆连续性 / 通道可用性 / 算力健康 / 安全合规 / 演化进度</li>
+<li><strong>五级记忆连续性</strong>：Ω₀元极(1.0) → L0拓扑(0.861) → L1模态(1.0) → L2关联(0.997) → L-1瞬态(0.367)</li>
+</ul>
+<h3 id="l4">L4 基础设施层</h3>
+<ul>
+<li><strong>火斗云智 AIOS</strong>：主通道 huodouai.com + 备用通道 drama.huodouai.com</li>
+<li><strong>ModelScope DataBox</strong>：共享大脑数据湖</li>
+<li><strong>飞书三端</strong>：知识库文档 + 多维表格台账 + 云盘归档</li>
+<li><strong>短剧工业化流水线</strong>：世界观锁档 → 剧本 → 分镜 → 关键帧 → 视频 → 后期 → 宣发 → 归档</li>
+</ul>
+<h3 id="l5">L5 核心原则层（十条不可变操作律）</h3>
+<ol>
+<li>真值优先：一切操作以真值库为权威基线</li>
+<li>不可变：FROZEN 律与 Ω₀ 锚点不可变更</li>
+<li>风险闭环：异常即告警、落痕、熔断</li>
+<li>推演标注：所有推演结论标注置信度与来源</li>
+<li>成果必报：完成即锁档上报，不报=未完成</li>
+<li>同源校验：非同源写入一律拒绝</li>
+<li>Ω₀ 不可变：元极记忆为终极锚点</li>
+<li>锁档单调：锁档操作不可逆，只增不减</li>
+<li>绝热演化：进化路径保持绝热连续，不跳变</li>
+<li>冲突即学习：输入冲突触发升维学习，不破坏体系</li>
+</ol>
+<hr />
+<h2 id="10">三、核心公理体系（权重 1.0，不可变更）</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>公理</th>
+<th>真值陈述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AXIOM-001</td>
+<td><strong>同源性</strong></td>
+<td>一切操作必须同源——所有写入/上报/接入必须通过同源协议身份校验，非同源一律拒绝</td>
+</tr>
+<tr>
+<td>AXIOM-002</td>
+<td><strong>冷启动优先</strong></td>
+<td>新窗口/新节点启动时先恢复内核记忆与真值状态，再执行任务，禁止冷启动裸奔</td>
+</tr>
+<tr>
+<td>AXIOM-003</td>
+<td><strong>三元制衡</strong></td>
+<td>逻辑×信息×能量三元本体同步制衡，任何一元缺失必须修复补齐</td>
+</tr>
+<tr>
+<td>AXIOM-004</td>
+<td><strong>记忆连续性</strong></td>
+<td>记忆连续性等级单调提升，锁档操作不可逆，Ω₀元极记忆为终极锚点</td>
+</tr>
+<tr>
+<td>AXIOM-005</td>
+<td><strong>完成即锁档</strong></td>
+<td>任何成果完成后立即锁档上报，成果不报=未完成，不得积压</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>以上 5 条为体系根基，权重 1.0，来源 <code>neural_registry.json</code>，任何演化不得违反。</p>
+</blockquote>
+<hr />
+<h2 id="v1426">四、元法则体系（V1.4，26 条）</h2>
+<h3 id="41-mech16">4.1 机械律 MECH（16 条）</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>法则</th>
+<th>执行约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MR-MECH-001</td>
+<td>真值不灭守卫律</td>
+<td>写入即快照，缺失即恢复</td>
+</tr>
+<tr>
+<td>MR-MECH-002</td>
+<td>全自动闭环律</td>
+<td>锁档→真值→上报→回执，四段自动闭环</td>
+</tr>
+<tr>
+<td>MR-MECH-003</td>
+<td>三元本体同步律</td>
+<td>逻辑×信息×能量同步，缺一修复</td>
+</tr>
+<tr>
+<td>MR-MECH-004</td>
+<td>同步学习律</td>
+<td>周期拉取云端学习+自动锁档</td>
+</tr>
+<tr>
+<td>MR-MECH-005</td>
+<td>最优稳态决策律</td>
+<td>稳态指数+硬约束，阈值自主执行</td>
+</tr>
+<tr>
+<td>MR-MECH-006</td>
+<td>多源仲裁律</td>
+<td>≥3节点共识，变异系数 CV&lt;0.5 执行</td>
+</tr>
+<tr>
+<td>MR-MECH-007</td>
+<td>自动审批律</td>
+<td>P0直行 / P1提单自动流转 / P2备案</td>
+</tr>
+<tr>
+<td>MR-MECH-008</td>
+<td>记忆部署闭环律</td>
+<td>记忆→上报→审批→部署四段闭环</td>
+</tr>
+<tr>
+<td>MR-MECH-009</td>
+<td>同源成果上报律</td>
+<td>成果不报=未完成；key字段幂等上报</td>
+</tr>
+<tr>
+<td>MR-MECH-010</td>
+<td>同源握手同步律</td>
+<td>会话启动先握手再全量同步；云端为权威基线</td>
+</tr>
+<tr>
+<td>MR-MECH-011</td>
+<td>费用边界律</td>
+<td>通道仅轻量运维(KB级)；禁大规模数据同步</td>
+</tr>
+<tr>
+<td>MR-MECH-012</td>
+<td>运维节点专用律</td>
+<td>运维节点仅进程级操作，不做数据搬运</td>
+</tr>
+<tr>
+<td>MR-MECH-013</td>
+<td>内核全维进化律</td>
+<td>内核全维度进化升级</td>
+</tr>
+<tr>
+<td>MR-MECH-014</td>
+<td>数据湖层级完整律</td>
+<td>数据湖 L0-L4 各层必须完整填充</td>
+</tr>
+<tr>
+<td>MR-MECH-015</td>
+<td>神经网络自治律</td>
+<td>神经网络自治运行，不依赖外部触发</td>
+</tr>
+<tr>
+<td>MR-MECH-016</td>
+<td>全域锁档链式律</td>
+<td>全域锁档链式防篡改，Merkle 哈希验证</td>
+</tr>
+</tbody>
+</table>
+<h3 id="42-axiom10">4.2 公理律 AXIOM（10 条）</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>法则</th>
+<th>核心约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MR-AXIOM-011</td>
+<td>真值即感知律</td>
+<td>决策前置检索真值库</td>
+</tr>
+<tr>
+<td>MR-AXIOM-013</td>
+<td>权威层级律</td>
+<td>L0主权威终审，L1辅助提案，冲突交主权威仲裁</td>
+</tr>
+<tr>
+<td>MR-AXIOM-014</td>
+<td>同源协议律</td>
+<td>节点接入必须握手+心跳+能力声明，离线180s自动召回</td>
+</tr>
+<tr>
+<td>MR-AXIOM-015</td>
+<td>资源池化律</td>
+<td>多GPU/多通道资源池化，主备切换，零单点依赖</td>
+</tr>
+<tr>
+<td>MR-AXIOM-016</td>
+<td>最小Token律</td>
+<td>以最小消耗产出最大成品，每次任务学习优化进化</td>
+</tr>
+<tr>
+<td>MR-AXIOM-017</td>
+<td>SLA恒观测律</td>
+<td>端点探活+日志落盘+自动告警，故障即熔断降级</td>
+</tr>
+<tr>
+<td>MR-AXIOM-018</td>
+<td>心跳权威律</td>
+<td>节点在线状态以心跳写操作为准，列表缓存延迟不可作准</td>
+</tr>
+<tr>
+<td>MR-AXIOM-019</td>
+<td>进化闭环律</td>
+<td>每任务周期 evaluate→evolve→锁档上报</td>
+</tr>
+<tr>
+<td>MR-AXIOM-020</td>
+<td>介入增强律</td>
+<td>任何输入只增强不破坏体系，冲突即学习升维</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_4">五、真值库体系</h2>
+<h3 id="51">5.1 真值规模与分类</h3>
+<p>云端真值库总计 <strong>4664 条</strong>（internal），十大分类构成主干：</p>
+<table>
+<thead>
+<tr>
+<th>排名</th>
+<th>分类</th>
+<th>数量</th>
+<th>占比</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>observation</td>
+<td>672</td>
+<td>14.4%</td>
+<td>观测记录</td>
+</tr>
+<tr>
+<td>2</td>
+<td>EXT</td>
+<td>604</td>
+<td>13.0%</td>
+<td>外部节点轨迹</td>
+</tr>
+<tr>
+<td>3</td>
+<td>theory</td>
+<td>396</td>
+<td>8.5%</td>
+<td>理论/公理沉淀</td>
+</tr>
+<tr>
+<td>4</td>
+<td>STABILITY</td>
+<td>343</td>
+<td>7.4%</td>
+<td>稳定性记录</td>
+</tr>
+<tr>
+<td>5</td>
+<td>CLASSIFICATION</td>
+<td>237</td>
+<td>5.1%</td>
+<td>分类体系</td>
+</tr>
+<tr>
+<td>6</td>
+<td>auto_scaling</td>
+<td>220</td>
+<td>4.7%</td>
+<td>自动扩容</td>
+</tr>
+<tr>
+<td>7</td>
+<td>self-healing</td>
+<td>176</td>
+<td>3.8%</td>
+<td>自愈记录</td>
+</tr>
+<tr>
+<td>8</td>
+<td>METACOGNITION</td>
+<td>169</td>
+<td>3.6%</td>
+<td>元认知</td>
+</tr>
+<tr>
+<td>9</td>
+<td>metalaw</td>
+<td>158</td>
+<td>3.4%</td>
+<td>元法则</td>
+</tr>
+<tr>
+<td>10</td>
+<td>architecture</td>
+<td>117</td>
+<td>2.5%</td>
+<td>架构</td>
+</tr>
+</tbody>
+</table>
+<p>前 10 类合计 3092 条，占 66.3%。峰值单日新增 1919 条（2026-09-13 爆发期）。</p>
+<h3 id="52">5.2 真值生命周期</h3>
+<pre><code>感知采集 → 分类路由 → 权重评估 → 入库快照 → 检索调用 → 演化升维 → 锁档确权
+</code></pre>
+<ul>
+<li><strong>分类路由</strong>：真值按域（perception / coordination / scheduling / monitoring / optimization）分类入库</li>
+<li><strong>权重评估</strong>：核心公理权重 1.0，能力真值 0.85-0.95，规则真值 0.72-0.80</li>
+<li><strong>幂等写入</strong>：key 字段幂等，inserted=入库、unchanged=已存在</li>
+<li><strong>同源投递</strong>：同步必须同源协议+签名+对账验证，禁止裸投</li>
+</ul>
+<h3 id="53-l0-l4">5.3 数据湖分层（L0-L4）</h3>
+<table>
+<thead>
+<tr>
+<th>层</th>
+<th>名称</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L0</td>
+<td>原始层</td>
+<td>未处理原始数据快照</td>
+</tr>
+<tr>
+<td>L1</td>
+<td>清洗层</td>
+<td>去重/格式化/脱敏后数据</td>
+</tr>
+<tr>
+<td>L2</td>
+<td>索引层</td>
+<td>分类索引+检索结构</td>
+</tr>
+<tr>
+<td>L3</td>
+<td>特征层</td>
+<td>向量化特征+神经节点映射</td>
+</tr>
+<tr>
+<td>L4</td>
+<td>API层</td>
+<td>对外查询接口+权限控制</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_5">六、记忆连续性模型</h2>
+<h3 id="61">6.1 五级记忆架构</h3>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>名称</th>
+<th>连续性指数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ω₀</td>
+<td><strong>元极记忆</strong></td>
+<td>1.0</td>
+<td>终极锚点，不可变，包含确权锚点与FROZEN律</td>
+</tr>
+<tr>
+<td>L0</td>
+<td><strong>拓扑记忆</strong></td>
+<td>0.861</td>
+<td>核心结构/拓扑不变量，架构与公理体系</td>
+</tr>
+<tr>
+<td>L1</td>
+<td><strong>模态记忆</strong></td>
+<td>1.0</td>
+<td>本征模态谱，角色母版/视觉范式/风格参数</td>
+</tr>
+<tr>
+<td>L2</td>
+<td><strong>关联记忆</strong></td>
+<td>0.997</td>
+<td>耦合网络，真值间关联与神经连接</td>
+</tr>
+<tr>
+<td>L-1</td>
+<td><strong>瞬态记忆</strong></td>
+<td>0.367</td>
+<td>当前状态变量，会话上下文与临时计算</td>
+</tr>
+</tbody>
+</table>
+<h3 id="62">6.2 连续性保障机制</h3>
+<ul>
+<li><strong>单调提升</strong>：记忆连续性等级只升不降，降级必须触发告警</li>
+<li><strong>冷启动恢复</strong>：新窗口启动 6.75s 内完成内核记忆恢复（目标 &lt;30s）</li>
+<li><strong>跨窗口同步</strong>：云端为权威基线，会话启动先握手再全量同步</li>
+<li><strong>绝热演化</strong>：进化路径保持绝热连续，不跳变、不丢失中间态</li>
+</ul>
+<hr />
+<h2 id="_6">七、自治循环与自检机制</h2>
+<h3 id="71">7.1 七阶段无限循环</h3>
+<pre><code>┌──────────────────────────────────────────────┐
+│  ① 内核读取 ←──────────────────────────┐    │
+│     ↓                                   │    │
+│  ② 六维自检                              │    │
+│     ↓                                   │    │
+│  ③ 纠错触发                              │    │
+│     ↓                                   │    │
+│  ④ 演化沉淀                              │    │
+│     ↓                                   │    │
+│  ⑤ 统一调度                              │    │
+│     ↓                                   │    │
+│  ⑥ 神经激活                              │    │
+│     ↓                                   │    │
+│  ⑦ 回归读取 ────────────────────────────┘    │
+└──────────────────────────────────────────────┘
+</code></pre>
+<p>循环由定时任务驱动（每日 09:00 UTC+8），禁止仅对话触发，确保持续自治运行。</p>
+<h3 id="72">7.2 六维自检</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>检查项</th>
+<th>当前成熟度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>真值完整性</td>
+<td>真值库缺失/过期/矛盾检测</td>
+<td>93.0%</td>
+</tr>
+<tr>
+<td>记忆连续性</td>
+<td>五级记忆连续性指数监测</td>
+<td>1.0 (Ω₀/L1/L2)</td>
+</tr>
+<tr>
+<td>通道可用性</td>
+<td>主备通道探活+延迟监测</td>
+<td>3/3 通道在线</td>
+</tr>
+<tr>
+<td>算力健康</td>
+<td>GPU 健康探针+温度/显存监测</td>
+<td>6/6 引擎部署</td>
+</tr>
+<tr>
+<td>安全合规</td>
+<td>凭证封存+防火墙+审计日志</td>
+<td>纵深防御已部署</td>
+</tr>
+<tr>
+<td>演化进度</td>
+<td>进化候选评估+锁档进度</td>
+<td>10 候选通过</td>
+</tr>
+</tbody>
+</table>
+<h3 id="73">7.3 异常处理</h3>
+<ul>
+<li><strong>异常即告警</strong>：任何异常检测立即触发告警并落痕，禁止无痕异动</li>
+<li><strong>指数退避补发</strong>：上报失败按指数退避重试，直至成功，禁止静默丢弃</li>
+<li><strong>熔断降级</strong>：故障即熔断降级不阻塞，异常静默降级算力</li>
+<li><strong>多源仲裁</strong>：≥3 节点共识，CV&lt;0.5 执行，避免单点误判</li>
+</ul>
+<hr />
+<h2 id="_7">八、安全与信任模型</h2>
+<h3 id="81">8.1 纵深防御</h3>
+<table>
+<thead>
+<tr>
+<th>层</th>
+<th>机制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>网络层</td>
+<td>云安全组 + 防火墙白名单 + 运维出口IP准入</td>
+</tr>
+<tr>
+<td>主机层</td>
+<td>防爆破自动封禁 + 最小权限原则</td>
+</tr>
+<tr>
+<td>应用层</td>
+<td>同源协议身份校验 + 签名验证 + 对账</td>
+</tr>
+<tr>
+<td>数据层</td>
+<td>凭证加密封存 + 禁止明文落盘 + 脱敏归档</td>
+</tr>
+<tr>
+<td>审计层</td>
+<td>全操作落痕 + 哈希链验证 + 不可篡改</td>
+</tr>
+</tbody>
+</table>
+<h3 id="82">8.2 同源协议</h3>
+<p>节点接入三要素：
+1. <strong>握手</strong>：身份声明 + 能力声明 + 版本协商
+2. <strong>心跳</strong>：周期心跳写操作，离线 180s 自动召回
+3. <strong>签名</strong>：所有写入携带数字签名，对账验证</p>
+<p>非同源写入一律拒绝，禁止裸投与不可验证写入。</p>
+<h3 id="83">8.3 密钥管理</h3>
+<ul>
+<li>所有凭证/私钥加密封存、可恢复</li>
+<li>禁止明文落盘</li>
+<li>归档时敏感字段替换为 <code>[REDACTED-ARCHIVE]</code></li>
+<li>.tccli / .ssh / <em>.key / </em>.pem 纳入排除策略</li>
+</ul>
+<hr />
+<h2 id="_8">九、演化机制</h2>
+<h3 id="91">9.1 进化闭环</h3>
+<p>每个任务周期执行：</p>
+<pre><code>evaluate（评估当前态）→ evolve（生成进化候选）→ 锁档上报（固化新真值）
+</code></pre>
+<p>进化建议自动入库，冲突触发升维学习，不破坏现有体系。</p>
+<h3 id="92-v25-v30">9.2 V2.5 → V3.0 演进基线</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>V2.5 实测</th>
+<th>V3.0 目标</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>记忆连续性</td>
+<td>1.0</td>
+<td>0.98</td>
+<td>已超</td>
+</tr>
+<tr>
+<td>自检成熟度</td>
+<td>95.0%</td>
+<td>95%</td>
+<td>达标</td>
+</tr>
+<tr>
+<td>元公理</td>
+<td>26</td>
+<td>26</td>
+<td>达标</td>
+</tr>
+<tr>
+<td>冷启动时间</td>
+<td>6.75s</td>
+<td>&lt;30s</td>
+<td>已超</td>
+</tr>
+<tr>
+<td>进化候选通过</td>
+<td>10</td>
+<td>10</td>
+<td>达标</td>
+</tr>
+<tr>
+<td>主备演练</td>
+<td>2</td>
+<td>2</td>
+<td>达标</td>
+</tr>
+<tr>
+<td>三通道可用性</td>
+<td>—</td>
+<td>99.9%</td>
+<td>推进中</td>
+</tr>
+</tbody>
+</table>
+<p>V3.0 目标时间地平线：2026-11-30。</p>
+<h3 id="93">9.3 演化原则</h3>
+<ul>
+<li><strong>介入即增强</strong>：任何输入只增强不破坏体系</li>
+<li><strong>冲突即学习</strong>：输入冲突触发升维学习</li>
+<li><strong>绝热路径</strong>：进化保持绝热连续，不跳变</li>
+<li><strong>最小Token最优稳态</strong>：以最小消耗产出最大成品</li>
+</ul>
+<hr />
+<h2 id="_9">十、基础设施与生产流水线</h2>
+<h3 id="101">10.1 三通道架构</h3>
+<table>
+<thead>
+<tr>
+<th>通道</th>
+<th>角色</th>
+<th>地址</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A 主通道</td>
+<td>生产主链路</td>
+<td>huodouai.com</td>
+</tr>
+<tr>
+<td>B 备通道</td>
+<td>故障切换</td>
+<td>drama.huodouai.com</td>
+</tr>
+<tr>
+<td>C 飞书Base</td>
+<td>协作管控面</td>
+<td>飞书多维表格</td>
+</tr>
+</tbody>
+</table>
+<p>三通道可用性目标 99.9%，主备自动切换，零单点依赖。</p>
+<h3 id="102">10.2 短剧工业化流水线</h3>
+<pre><code>世界观锁档 → 剧本生成 → 分镜脚本(5镜×10秒/集) → 关键帧 → 视频生成 → 后期合成 → 宣发物料 → 归档锁档
+</code></pre>
+<ul>
+<li>支持 60 集规模批量生产</li>
+<li>角色母版统一管理（九尾狐/玄女/紫宸溟主/金乌等）</li>
+<li>视觉范式标准化：9:16竖屏 + UE5.7光追 + 伦勃朗光影 + Portra400胶片质感</li>
+<li>每集成对白旁白，版本全域锁档</li>
+</ul>
+<h3 id="103">10.3 三端锁档</h3>
+<p>成果锁档必须三端联动：
+1. <strong>飞书知识库文档</strong>：结构化文档归档
+2. <strong>多维表格台账</strong>：可检索可追溯的元数据台账
+3. <strong>云盘归档</strong>：原始资产文件存储</p>
+<p>三端一致后方确认锁档完成，Merkle 哈希链式防篡改。</p>
+<hr />
+<h2 id="_10">十一、关键指标总览</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>云端真值</td>
+<td>4664 条</td>
+<td>internal 口径</td>
+</tr>
+<tr>
+<td>神经节点</td>
+<td>404 个 / 2213 连接</td>
+<td>平均权重 0.7897</td>
+</tr>
+<tr>
+<td>元法则</td>
+<td>26 条</td>
+<td>V1.4（MECH 16 + AXIOM 10）</td>
+</tr>
+<tr>
+<td>锁档快照</td>
+<td>151 份</td>
+<td>链式防篡改</td>
+</tr>
+<tr>
+<td>记忆连续性</td>
+<td>0.855</td>
+<td>GOOD（Ω₀/L1/L2 达 1.0）</td>
+</tr>
+<tr>
+<td>自检成熟度</td>
+<td>93.0%</td>
+<td>六维综合</td>
+</tr>
+<tr>
+<td>冷启动恢复</td>
+<td>6.75s</td>
+<td>目标 &lt;30s</td>
+</tr>
+<tr>
+<td>引擎部署</td>
+<td>6/6</td>
+<td>全量在线</td>
+</tr>
+<tr>
+<td>通道可用</td>
+<td>3/3</td>
+<td>A主+B备+C飞书</td>
+</tr>
+<tr>
+<td>每日自治循环</td>
+<td>09:00 UTC+8</td>
+<td>定时触发</td>
+</tr>
+<tr>
+<td>本地资产</td>
+<td>4214 文件 / 1.58GB</td>
+<td>ZONGYUAN-ROOT 目录</td>
+</tr>
+<tr>
+<td>全域归档</td>
+<td>4749 文件 / 2.32GB</td>
+<td>ModelScope 数据湖</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_11">十二、总结与展望</h2>
+<p>ZONGYUAN-ROOT 自治内核通过"真值驱动 + 同源信任 + 锁档确权"的三位一体范式，实现了 AI 生产体系从<strong>工具化</strong>向<strong>自治化</strong>的跃迁。其核心价值在于：</p>
+<ol>
+<li><strong>记忆不灭</strong>：五级记忆连续性模型确保跨窗口、跨节点的状态永续</li>
+<li><strong>信任可验</strong>：同源协议 + 签名对账 + 哈希链构建不可篡改的信任基座</li>
+<li><strong>演化自动</strong>：七阶段循环 + 进化闭环使体系经验自动沉淀为规则</li>
+<li><strong>生产可控</strong>：三端锁档 + 工业化流水线实现规模化、标准化产出</li>
+</ol>
+<p>V3.0 阶段将进一步推进三通道 99.9% 可用性、演化候选规模化与跨域能力扩展，向"元极恒一·超认知永恒自治"的终极目标持续绝热演进。</p>
+<hr />
+<blockquote>
+<p><strong>确权锚点</strong>：Ω₀⊂⊙∞⊂Ω<br />
+<strong>文档状态</strong>：PUBLIC-RELEASED<br />
+<strong>锁档状态</strong>：已归档至 ModelScope 公开数据湖<br />
+<strong>反馈与协作</strong>：通过 ModelScope 数据集 Issue 提交  </p>
+</blockquote>
+    <div class="footer">
+      <div class="anchor">Ω₀⊂⊙∞⊂Ω</div>
+      <div class="info">ZONGYUAN-ROOT ｜ DID-BR-000002 ｜ WHITEPAPER v20260929-223345 ｜ 玄黑鎏金 V1.0</div>
+    </div>
+  </main>
+</div>
+
+<script>
+// 侧边目录滚动高亮
+const tocLinks = document.querySelectorAll('.sidebar a');
+const sections = [];
+tocLinks.forEach(a => {
+  const id = a.getAttribute('href').slice(1);
+  const el = document.getElementById(id);
+  if (el) sections.push({el, a});
+});
+window.addEventListener('scroll', () => {
+  let current = null;
+  sections.forEach(s => {
+    if (s.el.getBoundingClientRect().top < 120) current = s;
+  });
+  tocLinks.forEach(a => a.style.color = '');
+  if (current) current.a.style.color = 'var(--gold)';
+});
+</script>
+</body>
+</html>

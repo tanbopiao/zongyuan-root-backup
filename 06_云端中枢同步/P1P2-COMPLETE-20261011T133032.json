@@ -1,0 +1,55 @@
+{
+  "issue": "P1+P2.COMPLETE",
+  "name": "凭证全加密+脚本命名统一 双批次完成",
+  "P1_credential_encryption": {
+    "status": "done",
+    "method": "openssl AES-256-CBC -pbkdf2",
+    "encrypted_files": [
+      "active_token.env.enc",
+      "intern_api_token.env.enc",
+      "ntfy_token.env.enc",
+      "01_核心资产锚点/active_token.env.enc"
+    ],
+    "loader": "07_代码与脚本/credential_loader.py (自动识别加密/明文, env或文件读取主密码)",
+    "master_key_storage": "04_系统配置/凭证/.master_key (0600权限)",
+    "templates": [
+      "active_token.env.example",
+      "intern_api_token.env.example",
+      "ntfy_token.env.example"
+    ],
+    "plaintext_backup": "04_系统配置/凭证_plaintext_backup_* (加密前快照)",
+    "note": "明文.env暂时保留兼容现有脚本，渐进式迁移后删除"
+  },
+  "P2_script_naming": {
+    "status": "done",
+    "files_archived": 52,
+    "archive_path": "05_历史归档/legacy_scripts_20261011/",
+    "archive_size": "364K",
+    "dirs_cleaned": [
+      "07_代码与脚本",
+      "04_系统配置",
+      "01_核心资产锚点/会话引导文件"
+    ],
+    "remaining_prefix_files": 0,
+    "renamed": [
+      "model_eval.py",
+      "model_prepare_data.py",
+      "model_run_all.sh",
+      "model_setup.sh",
+      "model_train.py",
+      "cold_start_anchor.sh",
+      "bootstrap.md"
+    ],
+    "naming_standard": "07_代码与脚本/NAMING_STANDARD.md",
+    "strategy": "旧名文件归档保留(不删除),主目录只留规范命名,内容不同的版本保留在归档"
+  },
+  "verification": {
+    "unit_tests": "9/9通过",
+    "core_scripts_syntax": "6/6通过",
+    "credential_loader": "解密验证通过"
+  },
+  "node": "NODE-DEV-DOUBAO-WORK-001",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "ts": "20261011T133032"
+}

@@ -1,0 +1,11 @@
+{
+  "correction": 92,
+  "correction_evidence": "自愈191+六维审计0.0漂移+元本源防护+冲突消解实装（不变）",
+  "evolution": 92,
+  "evolution_evidence": "新增：MR-020全阶段交付+M3整合+网关V2握手探索+新通道SOP入库+BASELINE-V41云端确认（当日7次迭代）",
+  "drive": 84,
+  "drive_evidence": "新增：六维自检组件待接入cron+本地全资产自动备份链路+锁档/上报全自动闭环",
+  "dependency": 0.13,
+  "dependency_evidence": "新增：本地独立备份恢复链(sha256清单)；云端依赖仅保留确权上报(读端点已解耦)；依赖18%→13%",
+  "collect_at": "2026-09-15"
+}

@@ -1,0 +1,523 @@
+{
+  "audit_id": "CLOUD-LOCAL-AUDIT-20260920",
+  "did": "DID-BR-000002",
+  "trace_id": "Ω₀⊂⊙∞⊂Ω",
+  "audit_time": "2026-09-20T18:10:00+08:00",
+  "cloud_status": {
+    "api_read": "502 (后端127.0.0.1:9120拒连)",
+    "api_write": "408 (系统繁忙)",
+    "snapshot_basis": "truths_public_latest.json @ 2026-09-20T05:11",
+    "snapshot_total_keys": 57009
+  },
+  "local_inventory": {
+    "manifest_file": "media_full_manifest_20260918.csv",
+    "total_assets": 68,
+    "images": 64,
+    "videos": 4,
+    "integrity_passed": "68/68 (20260918校验)"
+  },
+  "cloud_inventory": {
+    "media_archive_auto": 156,
+    "creative_image_registered": 9,
+    "file_archive_entries": 75
+  },
+  "audit_summary": {
+    "fully_matched": 0,
+    "partial_matched": 19,
+    "no_match": 49,
+    "estimated_gap": "49个资产元数据未按USL格式上报云端真值库",
+    "note": "云端已有门户自动归档记录，但本地CSV manifest中的USL命名体系未同步写入云端真值库"
+  },
+  "missing_assets": [
+    {
+      "asset_id": "V01",
+      "title": "神鸟冲击青铜能量桩高潮片段",
+      "type": "视频",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/video/V01-shenniao-strike-001",
+      "sha256": "神鸟携菊花圣火核心冲向青",
+      "path": "本地持久化",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "V02",
+      "title": "封神余威·神域结界构建片段",
+      "type": "视频",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/video/V02-shenniao-sanctum-002",
+      "sha256": "封神后神鸟立于能量桩巅，",
+      "path": "本地持久化",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "V03",
+      "title": "跨世界试炼·神格进化片段",
+      "type": "视频",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/video/V03-shenniao-trial-003",
+      "sha256": "空间断层开启，守护者对决",
+      "path": "本地持久化",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "V04",
+      "title": "堕天黑化·虚空秩序终局片段",
+      "type": "视频",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/video/V04-shenniao-fall-004",
+      "sha256": "法则黑化，神鸟堕天，建立",
+      "path": "本地持久化",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG009",
+      "title": "TAIYIN_descend_01.jpg",
+      "type": "图片",
+      "series": "玄女/月神早期关键帧",
+      "usl": "usl://zongyuan-root/media/image/XUANNV-EARLY-TAIYIN_descend_01-009",
+      "sha256": "13e79d6c497c2056",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260915_archive/TAIYIN_descend_01.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG010",
+      "title": "TAIYIN_descend_02.jpg",
+      "type": "图片",
+      "series": "玄女/月神早期关键帧",
+      "usl": "usl://zongyuan-root/media/image/XUANNV-EARLY-TAIYIN_descend_02-010",
+      "sha256": "3379831d9fe76183",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260915_archive/TAIYIN_descend_02.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG011",
+      "title": "TAIYIN_descend_03.jpg",
+      "type": "图片",
+      "series": "玄女/月神早期关键帧",
+      "usl": "usl://zongyuan-root/media/image/XUANNV-EARLY-TAIYIN_descend_03-011",
+      "sha256": "db41741ae352fee6",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260915_archive/TAIYIN_descend_03.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG012",
+      "title": "TAIYIN_descend_04.jpg",
+      "type": "图片",
+      "series": "玄女/月神早期关键帧",
+      "usl": "usl://zongyuan-root/media/image/XUANNV-EARLY-TAIYIN_descend_04-012",
+      "sha256": "49e1457089ea0ef8",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260915_archive/TAIYIN_descend_04.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG013",
+      "title": "TAIYIN_hands_01.jpg",
+      "type": "图片",
+      "series": "玄女/月神早期关键帧",
+      "usl": "usl://zongyuan-root/media/image/XUANNV-EARLY-TAIYIN_hands_01-013",
+      "sha256": "a5c3c61f842f5d86",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260915_archive/TAIYIN_hands_01.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG014",
+      "title": "TAIYIN_hands_02.jpg",
+      "type": "图片",
+      "series": "玄女/月神早期关键帧",
+      "usl": "usl://zongyuan-root/media/image/XUANNV-EARLY-TAIYIN_hands_02-014",
+      "sha256": "a7e2b810419d7099",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260915_archive/TAIYIN_hands_02.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG015",
+      "title": "TAIYIN_hands_03.jpg",
+      "type": "图片",
+      "series": "玄女/月神早期关键帧",
+      "usl": "usl://zongyuan-root/media/image/XUANNV-EARLY-TAIYIN_hands_03-015",
+      "sha256": "388422a342487847",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260915_archive/TAIYIN_hands_03.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG016",
+      "title": "TAIYIN_hands_04.jpg",
+      "type": "图片",
+      "series": "玄女/月神早期关键帧",
+      "usl": "usl://zongyuan-root/media/image/XUANNV-EARLY-TAIYIN_hands_04-016",
+      "sha256": "1e74846b8228d36b",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260915_archive/TAIYIN_hands_04.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG025",
+      "title": "SHENNIAO_c1.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c1-025",
+      "sha256": "044407c0685f6f63",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c1.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG026",
+      "title": "SHENNIAO_c10.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c10-026",
+      "sha256": "9621f8c888345a1f",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c10.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG027",
+      "title": "SHENNIAO_c11.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c11-027",
+      "sha256": "b9aad3a1b6d19a39",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c11.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG028",
+      "title": "SHENNIAO_c12.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c12-028",
+      "sha256": "9c030ce1ce94147b",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c12.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG029",
+      "title": "SHENNIAO_c13.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c13-029",
+      "sha256": "1e4e055734cf26d7",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c13.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG030",
+      "title": "SHENNIAO_c14.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c14-030",
+      "sha256": "cabd8a05eb959694",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c14.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG031",
+      "title": "SHENNIAO_c15.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c15-031",
+      "sha256": "730339cef00a64df",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c15.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG032",
+      "title": "SHENNIAO_c16.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c16-032",
+      "sha256": "c03769458afa0af0",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c16.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG033",
+      "title": "SHENNIAO_c17.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c17-033",
+      "sha256": "d57b267af1419d0f",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c17.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG034",
+      "title": "SHENNIAO_c18.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c18-034",
+      "sha256": "0fbdbbba38772c51",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c18.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG035",
+      "title": "SHENNIAO_c19.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c19-035",
+      "sha256": "51c0f21c9cd76cc2",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c19.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG036",
+      "title": "SHENNIAO_c2.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c2-036",
+      "sha256": "a73072bb06d67eac",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c2.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG037",
+      "title": "SHENNIAO_c20.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c20-037",
+      "sha256": "3df2c6eaf31e2ab5",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c20.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG038",
+      "title": "SHENNIAO_c21.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c21-038",
+      "sha256": "5b6c16c83c63bf3e",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c21.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG039",
+      "title": "SHENNIAO_c22.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c22-039",
+      "sha256": "12bdcab7487258fd",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c22.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG040",
+      "title": "SHENNIAO_c23.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c23-040",
+      "sha256": "ea6e1c7b4a893464",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c23.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG041",
+      "title": "SHENNIAO_c24.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c24-041",
+      "sha256": "3530e7e041190c56",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c24.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG042",
+      "title": "SHENNIAO_c25.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c25-042",
+      "sha256": "15714fa573b02486",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c25.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG043",
+      "title": "SHENNIAO_c26.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c26-043",
+      "sha256": "4deea80d9485a58b",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c26.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG044",
+      "title": "SHENNIAO_c27.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c27-044",
+      "sha256": "c2ab60602acf10de",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c27.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG045",
+      "title": "SHENNIAO_c28.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c28-045",
+      "sha256": "e57c7d4bd48508b4",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c28.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG046",
+      "title": "SHENNIAO_c3.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c3-046",
+      "sha256": "6af9bce9be315d2b",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c3.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG047",
+      "title": "SHENNIAO_c4.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c4-047",
+      "sha256": "e0a8a5a1ddecf52a",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c4.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG048",
+      "title": "SHENNIAO_c5.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c5-048",
+      "sha256": "8528ef5116963ee6",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c5.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG049",
+      "title": "SHENNIAO_c6.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c6-049",
+      "sha256": "465c612f27434506",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c6.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG050",
+      "title": "SHENNIAO_c7.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c7-050",
+      "sha256": "c65032dcef487151",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c7.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG051",
+      "title": "SHENNIAO_c8.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c8-051",
+      "sha256": "185e139513d0ca67",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c8.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG052",
+      "title": "SHENNIAO_c9.jpg",
+      "type": "图片",
+      "series": "神鸟圣火史诗系列",
+      "usl": "usl://zongyuan-root/media/image/SHENNIAO-SHENNIAO_c9-052",
+      "sha256": "4d9278fa77cd5737",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/20260917_archive/SHENNIAO_c9.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG053",
+      "title": "EP04_KF1.jpg",
+      "type": "图片",
+      "series": "短剧关键帧",
+      "usl": "usl://zongyuan-root/media/image/DRAMA-KF-EP04_KF1-053",
+      "sha256": "88da8c06528ec4e6",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/EP04_KF1.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG054",
+      "title": "EP04_KF2.jpg",
+      "type": "图片",
+      "series": "短剧关键帧",
+      "usl": "usl://zongyuan-root/media/image/DRAMA-KF-EP04_KF2-054",
+      "sha256": "bb227315c479a01e",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/EP04_KF2.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG055",
+      "title": "EP04_KF3.jpg",
+      "type": "图片",
+      "series": "短剧关键帧",
+      "usl": "usl://zongyuan-root/media/image/DRAMA-KF-EP04_KF3-055",
+      "sha256": "07faf830504da78a",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/EP04_KF3.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG056",
+      "title": "EP05_KF1.jpg",
+      "type": "图片",
+      "series": "短剧关键帧",
+      "usl": "usl://zongyuan-root/media/image/DRAMA-KF-EP05_KF1-056",
+      "sha256": "80e5f15b1534e6da",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/EP05_KF1.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG057",
+      "title": "EP05_KF2.jpg",
+      "type": "图片",
+      "series": "短剧关键帧",
+      "usl": "usl://zongyuan-root/media/image/DRAMA-KF-EP05_KF2-057",
+      "sha256": "e1ad47c61441d135",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/EP05_KF2.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG058",
+      "title": "EP05_KF3.jpg",
+      "type": "图片",
+      "series": "短剧关键帧",
+      "usl": "usl://zongyuan-root/media/image/DRAMA-KF-EP05_KF3-058",
+      "sha256": "98c61b9f45184d4f",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/EP05_KF3.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG059",
+      "title": "EP06_KF1.jpg",
+      "type": "图片",
+      "series": "短剧关键帧",
+      "usl": "usl://zongyuan-root/media/image/DRAMA-KF-EP06_KF1-059",
+      "sha256": "c004bec73e49f520",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/EP06_KF1.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG060",
+      "title": "EP06_KF2.jpg",
+      "type": "图片",
+      "series": "短剧关键帧",
+      "usl": "usl://zongyuan-root/media/image/DRAMA-KF-EP06_KF2-060",
+      "sha256": "92ced8df9b8c8f15",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/EP06_KF2.jpg",
+      "lock_status": "locked"
+    },
+    {
+      "asset_id": "IMG061",
+      "title": "EP06_KF3.jpg",
+      "type": "图片",
+      "series": "短剧关键帧",
+      "usl": "usl://zongyuan-root/media/image/DRAMA-KF-EP06_KF3-061",
+      "sha256": "ed9ee48ae56558e8",
+      "path": "/home/user/Doubao/chats/38436546492378882/media_assets/EP06_KF3.jpg",
+      "lock_status": "locked"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+ "run_id": "DEPLOY-20261010-175903",
+ "probe": {
+  "results": [
+   {
+    "url": "https://www.huodouai.com/api/deploy",
+    "code": 404
+   },
+   {
+    "url": "https://www.huodouai.com/api/page",
+    "code": 404
+   },
+   {
+    "url": "https://www.huodouai.com/api/html/upload",
+    "code": 404
+   },
+   {
+    "url": "https://www.huodouai.com/api/publish",
+    "code": 404
+   }
+  ],
+  "deploy_api_available": false,
+  "available": []
+ },
+ "deployed": [],
+ "report": {
+  "ok": false,
+  "error": "all channels failed"
+ },
+ "ledger": {
+  "ok": true,
+  "record_id": "reczz28LfOfpEwSl"
+ },
+ "run_at": "2026-10-10T17:59:16+08:00"
+}

@@ -1,0 +1,1206 @@
+{
+  "core": [
+    {
+      "name": "官网门户·全域资产可视化",
+      "url": "http://drama.huodouai.com:9120/",
+      "domain": "官网门户",
+      "desc": "全域资产可视化仪表盘（2188资产/关键帧/视频/剧集）"
+    },
+    {
+      "name": "官网作品库",
+      "url": "file:///home/user/Doubao/chats/38438491307070978/media_gallery/gallery_website.html",
+      "domain": "官网门户",
+      "desc": "图片视频作品自动展示（媒体归档即上架）"
+    },
+    {
+      "name": "全域锁档台账",
+      "url": "https://my.feishu.cn/base/QYn4bjgD6am3OPsxMCkcitcBnzc",
+      "domain": "台账",
+      "desc": "ZONGYUAN-ROOT锁档资产台账（200+条）"
+    },
+    {
+      "name": "云盘归档库",
+      "url": "https://my.feishu.cn/drive/folder/FdoifaG8oloQqmdtK5NcpXSNnAg",
+      "domain": "云盘",
+      "desc": "昆仑洞天全域锁档归档库（白皮书/内核快照/存证/媒体）"
+    },
+    {
+      "name": "知识库空间",
+      "url": "https://my.feishu.cn/wiki/7684520140129504217",
+      "domain": "知识库",
+      "desc": "ZONGYUAN-ROOT 元公理空间·锁档归档（日报节点）"
+    },
+    {
+      "name": "云端记忆网关",
+      "url": "http://drama.huodouai.com:9120/api/truths/",
+      "domain": "真值库",
+      "desc": "云端真值库（POST upsert / GET truths 带尾斜杠）"
+    },
+    {
+      "name": "SOP 云端入口",
+      "url": "https://aka.doubaocdn.com/s/VjMxbyMqFx",
+      "domain": "真值库",
+      "desc": "云端SOP静态文件（V1.1含9120端口配置）"
+    }
+  ],
+  "knowledge_base": [
+    {
+      "name": "知识库文档·A1NawOUn",
+      "url": "https://my.feishu.cn/wiki/A1NawOUnRisV9tkQZPFcmYBvnGh",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·AEebw5VW",
+      "url": "https://my.feishu.cn/wiki/AEebw5VWIiNZLnk03Q7c6v8sn2c",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·ARAYwLu5",
+      "url": "https://my.feishu.cn/wiki/ARAYwLu5SicxcRkdx2ycDLsznwf",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·AWFLwLRU",
+      "url": "https://my.feishu.cn/wiki/AWFLwLRUViyk4GkEs8qckQHbnge",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·AXv4woDv",
+      "url": "https://my.feishu.cn/wiki/AXv4woDvaiC2VQkGmdNcxIbxnab",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·AbNEwQ7u",
+      "url": "https://my.feishu.cn/wiki/AbNEwQ7uWiOhBik22ZzcVLS2njh",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·AgI9wt2w",
+      "url": "https://my.feishu.cn/wiki/AgI9wt2wlir1pTktR2fcOFKanRb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·AlTIwOwI",
+      "url": "https://my.feishu.cn/wiki/AlTIwOwICiBSAdkkEWTcsZPNnqd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Ar0jwZ0v",
+      "url": "https://my.feishu.cn/wiki/Ar0jwZ0vViAOVWkIJ87c11Dsnxb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·B4PDwMlX",
+      "url": "https://my.feishu.cn/wiki/B4PDwMlXYiioz5kkJ75c6gIxncx",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·B4pOwm5N",
+      "url": "https://my.feishu.cn/wiki/B4pOwm5NCiKEZPk2vuqcZxOdnfd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·BARCwzcs",
+      "url": "https://my.feishu.cn/wiki/BARCwzcsniJWJ7k7Y5xcKDaDnbN",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·BC47wvj5",
+      "url": "https://my.feishu.cn/wiki/BC47wvj50iOBSZkLeemcpKdqnVg",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·BHrzw9GM",
+      "url": "https://my.feishu.cn/wiki/BHrzw9GM6iARfakdxGhclqywnld",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·BIxcwH1W",
+      "url": "https://my.feishu.cn/wiki/BIxcwH1WuigAD8kxdwac8Oodngu",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·BN5PwnIG",
+      "url": "https://my.feishu.cn/wiki/BN5PwnIGki5Gd6kandmcZsDNnqc",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·BSMiwilG",
+      "url": "https://my.feishu.cn/wiki/BSMiwilGPinpphk80AOcR0xjnFd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·BcAjwtoS",
+      "url": "https://my.feishu.cn/wiki/BcAjwtoSMii9IwkM3oncobjXnbb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·BeH5wWKq",
+      "url": "https://my.feishu.cn/wiki/BeH5wWKqAi3Ajrk0kJHchYWfntb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Bfw9wIGm",
+      "url": "https://my.feishu.cn/wiki/Bfw9wIGmaixDG5kpLDVcCCjQnvd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·BnwmwBuq",
+      "url": "https://my.feishu.cn/wiki/BnwmwBuqniBCjrkC81RcsQyGnPh",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·C6l3wncu",
+      "url": "https://my.feishu.cn/wiki/C6l3wncuoiuvFykKPewcsfChnsb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·C83mwXya",
+      "url": "https://my.feishu.cn/wiki/C83mwXyali4uKtkKzzkcFprMn1b",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·C9CIwypA",
+      "url": "https://my.feishu.cn/wiki/C9CIwypAOiapnPkVT9rcDvUenRf",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·CPHYwFpA",
+      "url": "https://my.feishu.cn/wiki/CPHYwFpA5ifFX6ksL3KcqmpUnBc",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "同源节点神经网络同步机制V1.0",
+      "url": "https://my.feishu.cn/wiki/CRivwEzLMiauggkeGLucs21Nnnb",
+      "domain": "知识库",
+      "core": true
+    },
+    {
+      "name": "知识库文档·CWUcwnv0",
+      "url": "https://my.feishu.cn/wiki/CWUcwnv0WiGtrkkZ0CgczRpJnoc",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·CizhwkSu",
+      "url": "https://my.feishu.cn/wiki/CizhwkSugigZ2nkA3tJcUcM8nNc",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·D07SwhTp",
+      "url": "https://my.feishu.cn/wiki/D07SwhTp7i2MQhkCqGfc2qS8nuh",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·D0ZTwRSj",
+      "url": "https://my.feishu.cn/wiki/D0ZTwRSjqievOYkmx8QcdtRDnVh",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·D71Ywoxm",
+      "url": "https://my.feishu.cn/wiki/D71YwoxmAiBTGUkKAh1cSa2cnQd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·DJQ1w28k",
+      "url": "https://my.feishu.cn/wiki/DJQ1w28kjiIp6Yks120cnD9Snie",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·DUP9wKCn",
+      "url": "https://my.feishu.cn/wiki/DUP9wKCnpiBkyhk3NA0cZYucnzb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·DfGBwOZS",
+      "url": "https://my.feishu.cn/wiki/DfGBwOZSYi3wb3kpqqmcIfTvnye",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·DiBUw14X",
+      "url": "https://my.feishu.cn/wiki/DiBUw14XKiy5X7ktTLec6mo5nCe",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·DsnhwHth",
+      "url": "https://my.feishu.cn/wiki/DsnhwHthGiIHhBkNtjocsPQenLf",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Dtpaws1F",
+      "url": "https://my.feishu.cn/wiki/Dtpaws1FViqvEwkGrI8cjCq5nZb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·DuMKw9Gv",
+      "url": "https://my.feishu.cn/wiki/DuMKw9GveiIoVQkzga3cbcY3nBp",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·E6SJw0Vx",
+      "url": "https://my.feishu.cn/wiki/E6SJw0VxAiprRIkcMZycjxJhnMe",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·ELVAwMft",
+      "url": "https://my.feishu.cn/wiki/ELVAwMftEiXjgLkgLoMc9QWSnJc",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·EMJHwecP",
+      "url": "https://my.feishu.cn/wiki/EMJHwecPriJrj8kA8QrcZXhqnEc",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·ENnLwZCG",
+      "url": "https://my.feishu.cn/wiki/ENnLwZCGKi9B0RktUxwcoyKRncb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·EO2gw5Ce",
+      "url": "https://my.feishu.cn/wiki/EO2gw5CeWiH0ork487QcQwdRn0e",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·ES1Aw2x0",
+      "url": "https://my.feishu.cn/wiki/ES1Aw2x01iK7zCksfoRcXeaqn0d",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·EW9xwjcO",
+      "url": "https://my.feishu.cn/wiki/EW9xwjcOZiWZ2EkXlxAcYklCnag",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·EekCwHCX",
+      "url": "https://my.feishu.cn/wiki/EekCwHCXIiNJYdkVB51cSfMFnhN",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·EwrSwllH",
+      "url": "https://my.feishu.cn/wiki/EwrSwllHviFruPkN1kYcXHO8nKd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·F0zDwops",
+      "url": "https://my.feishu.cn/wiki/F0zDwopsWiBEn8ktbRccMIVPnee",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·FPjXwEt0",
+      "url": "https://my.feishu.cn/wiki/FPjXwEt07iQRoykDrjVcJbaLnmb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·FwofwSJM",
+      "url": "https://my.feishu.cn/wiki/FwofwSJMbiXQCWkdHvrcepR2nxe",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·G03PwDqh",
+      "url": "https://my.feishu.cn/wiki/G03PwDqhFiiGYCkedrTcNlJBnmb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·G77kwqPy",
+      "url": "https://my.feishu.cn/wiki/G77kwqPysigYkGk8gvlcdOMVnne",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·G7FqwvUY",
+      "url": "https://my.feishu.cn/wiki/G7FqwvUYbivVVakB9LmcCyhgnPh",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·GATrw58e",
+      "url": "https://my.feishu.cn/wiki/GATrw58e1iIWM7kpqc5ckhXhnLd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·GPkbwZYl",
+      "url": "https://my.feishu.cn/wiki/GPkbwZYlBiF9MakjadvcP3x5nag",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·GQFQwXQa",
+      "url": "https://my.feishu.cn/wiki/GQFQwXQaQiC2YxkrRBgchn35nQm",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·GXxGwSlc",
+      "url": "https://my.feishu.cn/wiki/GXxGwSlcLioB14kEkY7ct1D3ngf",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·GpHywphW",
+      "url": "https://my.feishu.cn/wiki/GpHywphWMigNcCko7rgcx9U3ndh",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·GrsEwBpc",
+      "url": "https://my.feishu.cn/wiki/GrsEwBpcBiILbUkDjibc8S3qnNe",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·GwLQwkL7",
+      "url": "https://my.feishu.cn/wiki/GwLQwkL72ifnHYk44qPcTI5Kngb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Gx2jwjDM",
+      "url": "https://my.feishu.cn/wiki/Gx2jwjDMniA7yLkXtCncpfQpngg",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·H7mZwTbt",
+      "url": "https://my.feishu.cn/wiki/H7mZwTbt6iaf94kT2u2cAPn4n1f",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·HCE9wWBX",
+      "url": "https://my.feishu.cn/wiki/HCE9wWBX0iOyQukX1fXcN0Zln6n",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·HJgawWzm",
+      "url": "https://my.feishu.cn/wiki/HJgawWzmqiDRNckV644cTO4mnAf",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·HJwQwqkf",
+      "url": "https://my.feishu.cn/wiki/HJwQwqkfoi6ikakS8oScozXInDd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·HODGwCIo",
+      "url": "https://my.feishu.cn/wiki/HODGwCIoaifXq9kHqR0cDC2Ennl",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·HfhYwDQq",
+      "url": "https://my.feishu.cn/wiki/HfhYwDQqxi9SbjksPnecd0HOnte",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·HwXLwwgS",
+      "url": "https://my.feishu.cn/wiki/HwXLwwgSviCuDOkmVJxcabe1nFd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·I1h0wZIn",
+      "url": "https://my.feishu.cn/wiki/I1h0wZIn8i9QWtkSFdUcViM7nJb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "沙盒存活守护机制V1.0",
+      "url": "https://my.feishu.cn/wiki/IJvxwHDrfiZmhRkxj2zcggTznne",
+      "domain": "知识库",
+      "core": true
+    },
+    {
+      "name": "知识库文档·IhGRwpsO",
+      "url": "https://my.feishu.cn/wiki/IhGRwpsO1iod75kCFt0caOu1ndh",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Iic4wVwa",
+      "url": "https://my.feishu.cn/wiki/Iic4wVwaui4qsJkgBaUcRBzGnyh",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Isyswkta",
+      "url": "https://my.feishu.cn/wiki/IsyswktaeihXEkkiruocFlaFn8f",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Iv21wjGJ",
+      "url": "https://my.feishu.cn/wiki/Iv21wjGJaitfRhk44fMcFNEUnVd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·IxgxwgvD",
+      "url": "https://my.feishu.cn/wiki/IxgxwgvDBihB7fkdxSgcFwRcnHc",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·JXt0w5DH",
+      "url": "https://my.feishu.cn/wiki/JXt0w5DHvivqsxkGYmIcaYAknJf",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·JdB3wmKt",
+      "url": "https://my.feishu.cn/wiki/JdB3wmKtQiOtsakk0NscCJIdnAg",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Jk3vw5qe",
+      "url": "https://my.feishu.cn/wiki/Jk3vw5qesid6rHkniUmcnL3jnod",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·JkOWwDQe",
+      "url": "https://my.feishu.cn/wiki/JkOWwDQetikd3Nk7tGOcfuQJnab",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·JquFwG8Y",
+      "url": "https://my.feishu.cn/wiki/JquFwG8Y3iNlE1k1q7xcYkgAnoZ",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·JvsTwmU5",
+      "url": "https://my.feishu.cn/wiki/JvsTwmU54iiV5sk9xthcQVlPnWe",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·K2vKwqUk",
+      "url": "https://my.feishu.cn/wiki/K2vKwqUkOiAoHFkXTGScPOoNnef",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·KHrbw8QH",
+      "url": "https://my.feishu.cn/wiki/KHrbw8QHlicwGFkivSZcrLP5nod",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·KRyEw1hp",
+      "url": "https://my.feishu.cn/wiki/KRyEw1hp8iTfnrk9aPeceMqynrd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·KTq0wCsn",
+      "url": "https://my.feishu.cn/wiki/KTq0wCsnOimRYZkr5xxcJ2Uqn3b",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·KZAvwZTC",
+      "url": "https://my.feishu.cn/wiki/KZAvwZTCeirhWakhIrMcckvDnZe",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·KrNXwawP",
+      "url": "https://my.feishu.cn/wiki/KrNXwawPqi8lp0km6pAcaP76nsd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·L1B7wKii",
+      "url": "https://my.feishu.cn/wiki/L1B7wKiixikff7kyvWLcn4Hfndh",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·L39nwjG8",
+      "url": "https://my.feishu.cn/wiki/L39nwjG8mi26LYkRHyRcBKSun7c",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·L3uWwdJZ",
+      "url": "https://my.feishu.cn/wiki/L3uWwdJZ0i0W6Tk5RchcljxvnZe",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·LDUkwKT1",
+      "url": "https://my.feishu.cn/wiki/LDUkwKT11iRfBGkvnPhcJVO8nYg",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·LaTywKse",
+      "url": "https://my.feishu.cn/wiki/LaTywKseFikvKZkIkhOcGvWpnqd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Lg4Qw4cF",
+      "url": "https://my.feishu.cn/wiki/Lg4Qw4cFwiUybukTqB5cSjZ3nIg",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·LlE0wa0w",
+      "url": "https://my.feishu.cn/wiki/LlE0wa0wPiFCp7kow4Vc5pCFnTb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·LzJpwjcm",
+      "url": "https://my.feishu.cn/wiki/LzJpwjcmQigov0kGYblcV2vEnFg",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·M3bwwRnb",
+      "url": "https://my.feishu.cn/wiki/M3bwwRnbFiCAZUkdGmacNugEnYd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·M9MhwGpL",
+      "url": "https://my.feishu.cn/wiki/M9MhwGpL7in44lkaF03cr9n9nzd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·MDiewOAX",
+      "url": "https://my.feishu.cn/wiki/MDiewOAX6i1VcOkr3L3c6HVfnHc",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·MO8ZwVee",
+      "url": "https://my.feishu.cn/wiki/MO8ZwVeeri9EJlkOwQNcN2lznYe",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Mg3Kwmhm",
+      "url": "https://my.feishu.cn/wiki/Mg3KwmhmviJqYFkIYzBcRBtonbh",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Mgz6wWgR",
+      "url": "https://my.feishu.cn/wiki/Mgz6wWgRUiaIMmkQSNycTyUFnuf",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·NCwtwxUY",
+      "url": "https://my.feishu.cn/wiki/NCwtwxUY0i1JSCkQC59c7tMDnge",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·NL1TwoVZ",
+      "url": "https://my.feishu.cn/wiki/NL1TwoVZgifEKsk9gBHcf6fLnCb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·NStEw5B8",
+      "url": "https://my.feishu.cn/wiki/NStEw5B8giXwOSkb03lcHHEQnXg",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Nq0zwlbk",
+      "url": "https://my.feishu.cn/wiki/Nq0zwlbkfiNPY0kMvhjcSnHxnhf",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·O8kawxZf",
+      "url": "https://my.feishu.cn/wiki/O8kawxZflix1PXkSoeRcv8bZnjh",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·OELzwUHj",
+      "url": "https://my.feishu.cn/wiki/OELzwUHj4iZfaNkaHw1cxbVmn2e",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·OI6ow87k",
+      "url": "https://my.feishu.cn/wiki/OI6ow87k6i5YIek1ZN7cQ8HDn9h",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·OObXwXWd",
+      "url": "https://my.feishu.cn/wiki/OObXwXWdVilXc3kHVz6ceMkdnkb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·OTXcwjlq",
+      "url": "https://my.feishu.cn/wiki/OTXcwjlqGijgmlkqtFYcOrvBntd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Oktywa2V",
+      "url": "https://my.feishu.cn/wiki/Oktywa2VZiIsZ4k3YDPcvjRhnhg",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Os4KwzFf",
+      "url": "https://my.feishu.cn/wiki/Os4KwzFfmiWqXakzod2cHw6fnBp",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·OwS1wzV9",
+      "url": "https://my.feishu.cn/wiki/OwS1wzV9Oif6Yukeku9c5SYZnHf",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·PPUzwhPI",
+      "url": "https://my.feishu.cn/wiki/PPUzwhPIgiZ8eVkEMqDcmX1Lnxd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·PgZEwMb5",
+      "url": "https://my.feishu.cn/wiki/PgZEwMb5QiH5DukjaR9cfaQqnxe",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·PiUCwC4p",
+      "url": "https://my.feishu.cn/wiki/PiUCwC4puiCrTokuSNCczICInUe",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·PpgRwcni",
+      "url": "https://my.feishu.cn/wiki/PpgRwcniXiUtjRke5FdcTtucn1b",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·PrS9wIAR",
+      "url": "https://my.feishu.cn/wiki/PrS9wIARNibsprkX1KrcARrxnGf",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Q2QjwYgB",
+      "url": "https://my.feishu.cn/wiki/Q2QjwYgBcivyq9kGfEqcbviJnsh",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Q9pGwm2g",
+      "url": "https://my.feishu.cn/wiki/Q9pGwm2gWierCQk8aTocdu8HnVc",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·QO9KwBWw",
+      "url": "https://my.feishu.cn/wiki/QO9KwBWw9iIeMPkJkE1cVJbonHg",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·QYhmwSjY",
+      "url": "https://my.feishu.cn/wiki/QYhmwSjYci1GMMkuPkucmCIJnab",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·QyvWw8EV",
+      "url": "https://my.feishu.cn/wiki/QyvWw8EVZiBegbkYSYbcCe1xneb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·QzuTwmoJ",
+      "url": "https://my.feishu.cn/wiki/QzuTwmoJ4is6cYkGwM3cj48FnQg",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·R09nw3FZ",
+      "url": "https://my.feishu.cn/wiki/R09nw3FZKikp79kbsUfcHyL3nLe",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·R1tDwzcw",
+      "url": "https://my.feishu.cn/wiki/R1tDwzcwuicv7vkewsUcvhuBn7e",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·R90jwyFO",
+      "url": "https://my.feishu.cn/wiki/R90jwyFOpivuV6k4uHicFIlAnOd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·RAQMwREe",
+      "url": "https://my.feishu.cn/wiki/RAQMwREeuic8TakGqnOccEHdnjd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·RR3ZwaYR",
+      "url": "https://my.feishu.cn/wiki/RR3ZwaYRAiPWsgkpjTEcaXgznib",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Ra19w1wH",
+      "url": "https://my.feishu.cn/wiki/Ra19w1wHKi8xrMkNsWRcax3KnPg",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·RdaWwbtW",
+      "url": "https://my.feishu.cn/wiki/RdaWwbtWKi0wb6kpSK9cLsuMnRh",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·RiCTwbqo",
+      "url": "https://my.feishu.cn/wiki/RiCTwbqo5iAemfk3hn6cCe3Ontf",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Rn0Gw2HQ",
+      "url": "https://my.feishu.cn/wiki/Rn0Gw2HQbiKwQykno7TcDm79ndd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·RzJRwSj7",
+      "url": "https://my.feishu.cn/wiki/RzJRwSj7Ai5M4NkFFexciuOKnid",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·S8Knwrgg",
+      "url": "https://my.feishu.cn/wiki/S8Knwrgg3iRbkUkWHaRcsi70nmd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·SFMbw0n2",
+      "url": "https://my.feishu.cn/wiki/SFMbw0n2biHDjTk5igvcmyYWnxb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·SNmzw3ko",
+      "url": "https://my.feishu.cn/wiki/SNmzw3ko2idzkrkdIpOcBsatn0c",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·SOfJwWKi",
+      "url": "https://my.feishu.cn/wiki/SOfJwWKiEifIEQkMKvucklGSnIc",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·SZtLwstI",
+      "url": "https://my.feishu.cn/wiki/SZtLwstIciwpCGkq7Qcc3j4Inku",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·SbJXwsWZ",
+      "url": "https://my.feishu.cn/wiki/SbJXwsWZyiCTrTkPssLciqhknvc",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Sd3BwqFB",
+      "url": "https://my.feishu.cn/wiki/Sd3BwqFBaiMhomkKlzpch9fxnJd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·SgAAw2dm",
+      "url": "https://my.feishu.cn/wiki/SgAAw2dmviWRlGkygficbAWinhb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·SwNRwkfD",
+      "url": "https://my.feishu.cn/wiki/SwNRwkfDNiSJLPk1cLec7jMkn2e",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·THsIwB8p",
+      "url": "https://my.feishu.cn/wiki/THsIwB8pDiRV0ik41l4ctPWDnme",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·TO6awHCf",
+      "url": "https://my.feishu.cn/wiki/TO6awHCfZi8vMUka135cTMJJnah",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·TVXNwjAS",
+      "url": "https://my.feishu.cn/wiki/TVXNwjASriEM2Dkn5Ifcu4hGnRe",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·TZEgwmt5",
+      "url": "https://my.feishu.cn/wiki/TZEgwmt5QiFTWBkY3qFcxOv5nPb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Td7qwruF",
+      "url": "https://my.feishu.cn/wiki/Td7qwruFwibGZ6kiY0ichTGmnFg",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·U7qiwakg",
+      "url": "https://my.feishu.cn/wiki/U7qiwakgaiNhQJkM6zDcrlp3nNL",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·UEZwwCqM",
+      "url": "https://my.feishu.cn/wiki/UEZwwCqMpiuy8gk7bGbcspbUnCe",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·UFjjwnKQ",
+      "url": "https://my.feishu.cn/wiki/UFjjwnKQ6ik265kR9cec9XEZnFg",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·UIPMwVxu",
+      "url": "https://my.feishu.cn/wiki/UIPMwVxuOiFaaHkFldKcAjuMnVb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·UPBqwya8",
+      "url": "https://my.feishu.cn/wiki/UPBqwya8giWBDhkKriecez00n8c",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·USZRwCzJ",
+      "url": "https://my.feishu.cn/wiki/USZRwCzJwiefkfktTgpciNvgndb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Uei9wN93",
+      "url": "https://my.feishu.cn/wiki/Uei9wN93oicO7tkTQ9Sc2eC1nBc",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Ui51wZXB",
+      "url": "https://my.feishu.cn/wiki/Ui51wZXBJiPGoPkcAMycyTcfnuh",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·UsfKw1zK",
+      "url": "https://my.feishu.cn/wiki/UsfKw1zK4ilFzFkVec3clmnrn2f",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·V4ZSwJpP",
+      "url": "https://my.feishu.cn/wiki/V4ZSwJpPFitLIhkLxJ1cqA2WnFe",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·VFh2wwEt",
+      "url": "https://my.feishu.cn/wiki/VFh2wwEtfiz59Bknnt4cwbS1nig",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·VIsywOnE",
+      "url": "https://my.feishu.cn/wiki/VIsywOnEqigTHGkd6gKcDmL1n9b",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·VMGUwpyF",
+      "url": "https://my.feishu.cn/wiki/VMGUwpyFmiaBTkkg62tcBbnHnuh",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Vh9FweyF",
+      "url": "https://my.feishu.cn/wiki/Vh9FweyFjiLV0JkfspSc6F94nmd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·VlTpwwce",
+      "url": "https://my.feishu.cn/wiki/VlTpwwceZiOH3jk07lCcGwwvnXg",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Vm0PwQXh",
+      "url": "https://my.feishu.cn/wiki/Vm0PwQXhSiYTpjkvFeocze9WnGI",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·VnRJwvNx",
+      "url": "https://my.feishu.cn/wiki/VnRJwvNxAiAKZPkwbb5cb5v4nGb",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·VoI7w0tE",
+      "url": "https://my.feishu.cn/wiki/VoI7w0tELi74SukUoBVcsv7hnse",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·W6RuwViI",
+      "url": "https://my.feishu.cn/wiki/W6RuwViIFi7oj2kdl1VcS7VNndd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·W8rzwCGB",
+      "url": "https://my.feishu.cn/wiki/W8rzwCGBHi5iibkNFJNc7sBKnBX",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·WcK0wqw5",
+      "url": "https://my.feishu.cn/wiki/WcK0wqw5HifsQvkjXBwc5Kl4nrl",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·WfFIwrXK",
+      "url": "https://my.feishu.cn/wiki/WfFIwrXKpi0X74ke8KKcMyMtn8g",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·WnnlwkUF",
+      "url": "https://my.feishu.cn/wiki/WnnlwkUF3iDhFFkgyLfcjItrn0b",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·WxU7wGPk",
+      "url": "https://my.feishu.cn/wiki/WxU7wGPkjiI7Hykm7IQcMuHEnOg",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·WzGtwqxI",
+      "url": "https://my.feishu.cn/wiki/WzGtwqxI1iaSOAkXjhScOLqEn7c",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·X17tw4Mz",
+      "url": "https://my.feishu.cn/wiki/X17tw4Mz0iFZ1akSWt9cIUl8nwH",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·XBNCwdGl",
+      "url": "https://my.feishu.cn/wiki/XBNCwdGlAiGaDekmwbncipCBnih",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Xdm0wT2L",
+      "url": "https://my.feishu.cn/wiki/Xdm0wT2LmiBORgkrA1tcNTbnnDe",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·XeZJwc6q",
+      "url": "https://my.feishu.cn/wiki/XeZJwc6qQi51QykiiTUcB1u1nPy",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·XgElwreK",
+      "url": "https://my.feishu.cn/wiki/XgElwreKWiTsoDk9F0ic68vEnxc",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Xi9ewz7o",
+      "url": "https://my.feishu.cn/wiki/Xi9ewz7osiwdgjkbhDgcPpOknqo",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "同源协议环境探索机制V1.0",
+      "url": "https://my.feishu.cn/wiki/XiicwHh1KiazolkIuNrcLxn6nJh",
+      "domain": "知识库",
+      "core": true
+    },
+    {
+      "name": "知识库文档·Y8L9wDvj",
+      "url": "https://my.feishu.cn/wiki/Y8L9wDvj4iHfGUk3tIUcGl4MnFf",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Y9CUwK7C",
+      "url": "https://my.feishu.cn/wiki/Y9CUwK7C2iXZTrkboghcZeDgnio",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·YJM1w9Dy",
+      "url": "https://my.feishu.cn/wiki/YJM1w9DyLiOuUAkKqV8csYrHnFf",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·YKVLwvPU",
+      "url": "https://my.feishu.cn/wiki/YKVLwvPUvihJUqkyLkNcnHhkn1b",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·YVcVwWu6",
+      "url": "https://my.feishu.cn/wiki/YVcVwWu6hizboekKNTbcDJbgnbc",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Ypzmwkcz",
+      "url": "https://my.feishu.cn/wiki/YpzmwkczwiZFMNkhATScWGnTnqh",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Yr9rwO4L",
+      "url": "https://my.feishu.cn/wiki/Yr9rwO4L4ih2sRkcIbAcQHGpnKg",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "自动流程闭环标准V1.0",
+      "url": "https://my.feishu.cn/wiki/Z54bw9VlYiBewFkewNackeDon5c",
+      "domain": "知识库",
+      "core": true
+    },
+    {
+      "name": "知识库文档·ZPJMwFoL",
+      "url": "https://my.feishu.cn/wiki/ZPJMwFoLgizKUxkhIRqcD7C0nee",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·ZVwwwCtL",
+      "url": "https://my.feishu.cn/wiki/ZVwwwCtLSinzmIkURfLcJ5WHnQg",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·ZcIxwD4O",
+      "url": "https://my.feishu.cn/wiki/ZcIxwD4OziLIQCkUgGAc1Y7ZnJd",
+      "domain": "知识库",
+      "core": false
+    },
+    {
+      "name": "知识库文档·Zlxyw5Ih",
+      "url": "https://my.feishu.cn/wiki/Zlxyw5IhIijHldkSEXFce6kMn5g",
+      "domain": "知识库",
+      "core": false
+    }
+  ],
+  "stats": {
+    "total_links": 199,
+    "kb_links": 192,
+    "core_links": 7,
+    "core_mechanisms": 4
+  }
+}

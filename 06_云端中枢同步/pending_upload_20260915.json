@@ -1,0 +1,212 @@
+{
+  "queue_id": "QUEUE-UPLOAD-20260915",
+  "provenance_anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "node_id": "local-dev-001",
+  "target_gateway": "http://drama.huodouai.com:9120/api/truth",
+  "fallback_gateway": "https://drama.huodouai.com/api/gateway/report",
+  "created_at": "2026-09-15T21:10:00+08:00",
+  "channel_status": "API_ONLINE_via_report_truth",
+  "last_attempt": {
+    "at": "2026-09-15T21:12:00+08:00",
+    "endpoint": "http://drama.huodouai.com:9120/api/truth",
+    "result": "HTTP 301 redirect to /api/truth/ -> Not Found; POST channel unavailable",
+    "outcome": "FAILED",
+    "next_retry": "channel recovery后自动投递"
+  },
+  "items": [
+    {
+      "seq": 1,
+      "truth_key": "MR-MODEL-ROUTE-001",
+      "truth_type": "meta_rule",
+      "category": "model_routing",
+      "title": "混合模型智能调度元规则",
+      "content": "六条调度公理：任务分级路由/极限任务补充/成本计量/故障熔断/资产安全/日志审计，写入自治内核 meta_rules",
+      "links": {
+        "wiki": "https://my.feishu.cn/wiki/M4mDwKd3SiLOwvkVh1wc4dHEnbc",
+        "neural_node": "NN-OPS-047",
+        "lock_id": "LOCK-MR-MODEL-ROUTE-001"
+      },
+      "status": "DELIVERED",
+      "retry_count": 1,
+      "last_error": "HTTP 301 redirect unavailable",
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 2,
+      "truth_key": "MODELROUTE-001-WEB",
+      "truth_type": "achievement",
+      "category": "product",
+      "title": "ModelRoute 001 产品化方案页",
+      "content": "混合模型智能调度引擎官网产品页：六公理能力卡/路由架构图/三形态/三商业模式/四档定价/路线图",
+      "links": {
+        "online": "https://mcnvk6ct0byk.aiforce.cloud/app/app_17e5fmprafy",
+        "app_id": "app_17e5fmprafy"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 3,
+      "truth_key": "CAPABILITY-RADAR-20260915",
+      "truth_type": "achievement",
+      "category": "kernel",
+      "title": "全域能力雷达盘点",
+      "content": "43算子/9子系统盘点：已启用8/沉睡35，三梯队沉睡能力识别，六协议成熟度评估",
+      "links": {
+        "wiki": "https://my.feishu.cn/wiki/N4k7wRbdciyTI7kFN1kc5AKLnpd",
+        "online": "https://mcnvk6ct0byk.aiforce.cloud/app/app_17e5k3vbm9j",
+        "lock_id": "LOCK-CAPABILITY-RADAR-20260915"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 4,
+      "truth_key": "TIER1-EXECUTION-ACTIVATION",
+      "truth_type": "achievement",
+      "category": "execution",
+      "title": "第一梯队执行层接通验证",
+      "content": "火斗路由zhipu可用/额度计量81→80/公理预检BLOCKED与PROCEED双向验证/经验沉淀NN-BIZ-312",
+      "links": {
+        "neural_node": "NN-BIZ-312",
+        "registry": "312节点/1342连接"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 5,
+      "truth_key": "MEDIA-ARCHIVE-20260915",
+      "truth_type": "achievement",
+      "category": "media",
+      "title": "16张图片资产归档",
+      "content": "九天玄女角色设计4+战神史诗4+太阴月神双手4+降世4，全部1600x2848竖屏，归档03_数字媒体资产库",
+      "links": {
+        "drive_folder": "https://my.feishu.cn/drive/folder/GAn0fR22ClhlvadfzFkcd18GnTe",
+        "file_count": "28"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 6,
+      "truth_key": "MR-VIDEO-ARCHIVE-001",
+      "truth_type": "meta_rule",
+      "category": "media_ops",
+      "title": "视频资产归档标准流程元规则",
+      "content": "五阶段SOP：产物真实性校验/命名规范/上传归档/台账登记/索引更新+异常熔断",
+      "links": {
+        "wiki": "https://my.feishu.cn/wiki/SPAhwmhOeieJAMk61u2c2ajfn3g",
+        "neural_node": "NN-OPS-048",
+        "lock_id": "LOCK-VIDEO-ARCHIVE-SOP-20260915"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 7,
+      "truth_key": "ANTI-PATTERN-VIDEO-NO-REAL-PRODUCT",
+      "truth_type": "anti_pattern",
+      "category": "lesson",
+      "title": "视频生成流程性回复无真实产物缺口",
+      "content": "历史视频生成存在仅参数确认+流程性回复而无实际工具产物的问题，已由MR-VIDEO-ARCHIVE-001第①条修复：产物真实性校验",
+      "links": {
+        "fix_rule": "MR-VIDEO-ARCHIVE-001"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 8,
+      "truth_key": "NEURAL-REGISTRY-20260915",
+      "truth_type": "operation_log",
+      "category": "kernel_state",
+      "title": "神经注册表状态",
+      "content": "318节点/1858连接，V2.3.0-GIT-BRIDGE-LOCKED，新增NN-OPS-047/048，NN-BIZ-312",
+      "links": {
+        "registry": "NNR-ZR-001"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 9,
+      "truth_key": "MR-HOMOMORPHIC-001",
+      "truth_type": "meta_rule",
+      "category": "protocol",
+      "title": "同源协议×同态协议·双协议固化",
+      "content": "同态协议五条细则：结构保持/保构映射/双协议交叉验证/结构校验/熔断；元公理MA-META-125统摄同源与同态",
+      "links": {
+        "wiki": "https://my.feishu.cn/wiki/UIUOwKedeiqz5FkvkcUcsiIwnKp",
+        "neural_node": "MA-META-125",
+        "lock_id": "LOCK-HOMOMORPHIC-20260915",
+        "snapshot": "https://my.feishu.cn/drive/folder/WHATfvA10lMrhHd1ALRc6R3jnlb"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 10,
+      "truth_key": "MR-AI-SECURITY-001",
+      "truth_type": "meta_rule",
+      "category": "security",
+      "title": "以模治模·AI全生命周期安全元法则",
+      "content": "三层安全架构（意图接入/逻辑推理WCM/行为执行沙箱）+12条安全公理+昆仑洞天安全裁判子模块SEC-JUDGE-AI-001（测试通过）",
+      "links": {
+        "wiki": "https://my.feishu.cn/wiki/XN0ZwLRXLiHci1kpsi7ccXTOnCd",
+        "neural_node": "NN-SECURITY-050",
+        "lock_id": "LOCK-MR-AI-SECURITY-001",
+        "snapshot": "https://my.feishu.cn/drive/folder/WHATfvA10lMrhHd1ALRc6R3jnlb"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 11,
+      "truth_key": "EXEC-20260916-GATEWAY-FIX-HARDENING",
+      "truth_type": "operation_log",
+      "category": "execution",
+      "title": "2026-09-16 高价值工作执行",
+      "content": "模型网关巡检脚本双bug修复（SDK传参+健康判定），健康度0%→100% 4/4在线；云服P0加固方案生成（8766/8020/8006/7100全网暴露）；中枢IM握手消息已送达 om_x100b65951b049ca8c45bb479e53ec42",
+      "links": {
+        "hardening": "cloud_audit/security_hardening_plan.md",
+        "fix": "kernel_external_gateway_check.py+huodou_v11_fixes.py"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16"
+    },
+    {
+      "seq": 12,
+      "truth_key": "MR-AI-SAFETY-DECADE-001",
+      "truth_type": "meta_rule",
+      "category": "ai_safety",
+      "title": "远期AI智能体存在性风险管控元规则",
+      "content": "五条公理：最小权限分层/沙箱逃逸熔断/安全基线优先/全链路审计/禁止自主采购付费资源；风险项RISK-AI-AGENT-LONGTERM-001",
+      "links": {
+        "local": "zongyuan-meta-rules/MR-AI-SAFETY-DECADE-001.json"
+      },
+      "status": "DELIVERED",
+      "retry_count": 0,
+      "delivered_at": "2026-09-16",
+      "channel": "https://huodouai.com/api/report/truth"
+    }
+  ],
+  "delivered": {
+    "at": "2026-09-16",
+    "endpoint": "http://drama.huodouai.com:9120/api/truth/upsert",
+    "success": "10/10",
+    "cloud_truth_count": 14508
+  },
+  "cloud_truth_count": 15304
+}

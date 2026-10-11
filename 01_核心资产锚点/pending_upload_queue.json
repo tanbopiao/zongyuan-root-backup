@@ -1,0 +1,17 @@
+{
+  "queue_id": "PEND-Q-20260921",
+  "items": [
+    {
+      "key": "SYNC-ROUTES-CONFIRM-20260921",
+      "content": "【通道路由确认·V2.2】默认上报主站www.huodouai.com(443,带L0语义前置校验17/17全通过0 violation)，备用通道drama.huodouai.com(443)，主拉取www.huodouai.com/api/truths/。鉴权头X-Capture-Token。字段协议Body=key+content，响应action=inserted/updated/unchanged。2026-09-21实测主站www暂不可达自动降级drama链路验证成功，新真值库同库共享truth_count约124376。",
+      "status": "PENDING",
+      "retries": 0
+    },
+    {
+      "key": "SYNC-MEMORY-EXPANDED-20260921",
+      "content": "【记忆扩充·2026-09-21】新增能力4项：CAP-009高价值真值提取、CAP-010高阶能力挖掘、CAP-011周报演示文稿、CAP-012上报通道自检。新增协议P-CHANNEL-V22主通道协议V2.2(ACTIVE)。4大机制运行中：元法则月度同步/自动探索归档/高阶能力提炼/全域同源协议学习。真实API采集联动每日03:15全通道巡检运行中。",
+      "status": "PENDING",
+      "retries": 0
+    }
+  ]
+}

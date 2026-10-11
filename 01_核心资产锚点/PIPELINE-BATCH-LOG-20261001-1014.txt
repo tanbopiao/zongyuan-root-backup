@@ -1,0 +1,7 @@
+[20261001-1014] 批量生产流水线启动：5集
+[20261001-1014] 第1集: PASS
+[20261001-1014] 第2集: PASS
+[20261001-1014] 第3集: FAIL issues=["[ERR] HTTPSConnectionPool(host='api-inference.modelscope.cn', port=443): Max retries exceeded with url: /v1/chat/complet"]
+[20261001-1014] 第4集: FAIL issues=["[ERR] HTTPSConnectionPool(host='api-inference.modelscope.cn', port=443): Max retries exceeded with url: /v1/chat/complet"]
+[20261001-1014] 第5集: PASS
+[20261001-1014] 汇总: PASS 3/5, 2集未达标

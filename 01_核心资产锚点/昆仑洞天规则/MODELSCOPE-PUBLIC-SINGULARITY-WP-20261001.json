@@ -1,0 +1,22 @@
+{
+  "asset_id": "ASSET-PUB-20261001-002",
+  "name": "奇点暗架构技术白皮书V2.0(专业巡检升级)",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/singularity-dark-arch-whitepaper",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/singularity-dark-arch-whitepaper.git",
+  "published_at": "2026-10-07T11:13:30",
+  "version": "V2.0(当前版,2026-10-07); 归档版 V1.0(2026-10-01)全部保留",
+  "files": [
+    "README.md",
+    "singularity-dark-arch-whitepaper-WHITEPAPER-V2.0.md(+新增)",
+    "singularity-dark-arch-whitepaper-WHITEPAPER-V2.0.html(+新增)",
+    "singularity-dark-arch-whitepaper-ARCH-V2.0.json(+新增)",
+    "WHITEPAPER-SINGULARITY-DARK-ARCH-V1.0.md(归档)",
+    "singularity_dark_arch.json(归档)"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.singularity-dark-arch-whitepaper-UPGRADE.20261007 (http=200)",
+  "quota": "零豆包付费"
+}

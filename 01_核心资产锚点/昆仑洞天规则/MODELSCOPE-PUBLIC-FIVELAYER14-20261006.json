@@ -1,0 +1,27 @@
+{
+  "asset_id": "ASSET-PUB-20261006-020",
+  "name": "天地人鬼神五层约束栈真值包技术白皮书V2.0(专业巡检升级)",
+  "source": "TRUTH-META-001 V1.4(基线V1.3, 慢漂移算子/缺陷清零/L1巡检PASS)",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/five-layer-constraint-stack-truth-pack",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/five-layer-constraint-stack-truth-pack.git",
+  "published_at": "2026-10-07T11:30:00",
+  "version": "V2.0(2026-10-07当前版); V1.4(基线V1.3)/V1.2(归档保留)",
+  "files": [
+    "WHITEPAPER-FIVELAYER-V2.0.md(+新增)",
+    "WHITEPAPER-FIVELAYER-V2.0.html(+新增)",
+    "fivelayer_arch_v20.json(+新增)",
+    "README.md(更新)",
+    "WHITEPAPER-FIVELAYER-V1.4.md(归档)",
+    "WHITEPAPER-FIVELAYER-V1.4.html(归档)",
+    "fivelayer_arch_v14.json(归档)",
+    "WHITEPAPER-FIVELAYER-V1.2.md(归档)",
+    "WHITEPAPER-FIVELAYER-V1.2.html(归档)",
+    "fivelayer_arch.json(归档)"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.five-layer-constraint-stack-truth-pack-UPGRADE.20261007 (http=200)",
+  "quota": "零豆包付费"
+}

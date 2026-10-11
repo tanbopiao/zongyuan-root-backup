@@ -1,0 +1,38 @@
+{
+  "queue_id": "ZR-CLOUD-PENDING-UPLOAD-20260916",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "created": "2026-09-16",
+  "reason": "云服后端127.0.0.1:9120拒连(Connection refused)，写通道全断(502)，资产待后端恢复后补发",
+  "channel_probe": {
+    "8021_gateway": "200 ONLINE(根页面/昆仑洞天全域资产可视化)",
+    "8021_api_truths": "502 (upstream 127.0.0.1:9120 refused)",
+    "9120_api_truth_upsert": "502 refused",
+    "api_upload": "502"
+  },
+  "items": [
+    {
+      "seq": 1,
+      "type": "media_bundle",
+      "name": "media_assets_full_20260916.zip",
+      "local_path": "/home/user/Doubao/chats/38436546492378882/media_assets_full_20260916.zip",
+      "size_bytes": 64000000,
+      "sha256": "6bba74d31e572014",
+      "content": "全量媒体资产36项(60.5MB)：16张09-15旧关键帧 + 8张09-16玄女战神新关键帧 + 12张EP04-06/S4EP01关键帧 + 清单JSON",
+      "status": "PENDING_CLOUD_UPLOAD"
+    },
+    {
+      "seq": 2,
+      "type": "manifest",
+      "name": "media_manifest_20260916.json",
+      "local_path": "/home/user/Doubao/chats/38436546492378882/media_assets/media_manifest_20260916.json",
+      "content": "36项资产哈希清单(sha256)",
+      "status": "PENDING_CLOUD_UPLOAD"
+    }
+  ],
+  "feishu_backup": {
+    "status": "DONE",
+    "target": "飞书云盘作品库·03_数字媒体资产库(GAn0fR22ClhlvadfzFkcd18GnTe)",
+    "note": "8张新图已上传保底持久化，旧16张已在前次归档"
+  }
+}

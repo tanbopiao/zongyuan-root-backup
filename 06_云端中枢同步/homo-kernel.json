@@ -1,0 +1,18 @@
+{
+  "kernel_id": "ZONGYUAN-HOMO-KERNEL-001",
+  "kernel_version": "HOMO-SYNC-V1.0",
+  "node_id": "doubao-main-agent-001",
+  "node_type": "doubao_main_agent_window",
+  "DID": "DID-BR-000002",
+  "ROOT_OMEGA": "Ω-TAN-7-001",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "built_at": "2026-09-12 15:20 CST",
+  "sync_rules": {
+    "batch_upsert": {"endpoint": "/api/integration/homo_truths", "schema": {"DID": "str", "ROOT_OMEGA": "str", "node_id": "str", "truths": "dict(key->value)", "meta": "dict"}},
+    "single_upsert": {"endpoint": "/api/truth/upsert", "schema": {"DID": "str", "ROOT_OMEGA": "str", "node_id": "str", "key": "str", "value": "any", "category": "str"}},
+    "node_register": {"endpoint": "/api/node/register", "schema": {"DID": "str", "ROOT_OMEGA": "str", "node_id": "str", "node_type": "str", "capabilities": "list"}},
+    "auth_fields": ["DID", "ROOT_OMEGA", "node_id"],
+    "signature": "HMAC-SHA256(HANDSHAKE_SECRET, node_id:DID:ROOT_OMEGA:timestamp:payload_hash)",
+    "verified_against": "记忆网关V3.0，2026-09-12 14:08 实测15条成功入库"
+  }
+}

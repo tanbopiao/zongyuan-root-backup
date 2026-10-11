@@ -1,0 +1,14 @@
+{
+  "action": "HOMOLOGY_NODE_APPLICATION",
+  "node_id": "NODE-DEV-DOUBAO-WORK-001",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "result": {
+    "通道探测": {"www_report":"HTTP200","drama_report":"HTTP200","www_pull":"HTTP200","drama_pull":"HTTP200"},
+    "云端上报": {"www":"HTTP200","drama":"HTTP200"},
+    "云端确认": "拉取确认 seq=1608, key=HOMOLOGY.NODE.REQUEST...",
+    "飞书节点留痕": "reczz28KXHUO7Ex0 (节点名称/负责人/状态/类型 枚举对齐)"
+  },
+  "status": "HOMOLOGY_APPLIED",
+  "run_at": "2026-10-07T21:24:08+08:00"
+}

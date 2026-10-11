@@ -1,0 +1,50 @@
+{
+  "run_id": "RUN-20260915-170145",
+  "started_at": "2026-09-15T17:01:45",
+  "finished_at": "2026-09-15T17:01:53",
+  "status": "success",
+  "trigger": "submit",
+  "stages": {
+    "detect": {
+      "status": "ok",
+      "message": "[detect] demo truth reported: creative.drama.60ep.batch_methodology -> report_id=RPT-1789462906-8c8ca2b8 | [detect] demo truth reported: meta_law.autonomous.kernel.evolution_rule -> report_id=RPT-1789462906-f28d86b8 | [detect] OK: baseline=10141 current=10141 new=2 -> /home/user/Doubao/chats/38438412455799554/pipeline-auto/pipeline/data/new_assets.json",
+      "new_count": 2
+    },
+    "extract": {
+      "status": "ok",
+      "message": "[extract] dedup skip: creative.drama.60ep.batch_methodology hash=4ae9f63232… | [extract] dedup skip: meta_law.autonomous.kernel.evolution_rule hash=a5aad75370… | [extract] OK: +0 cards (skipped 2), total=2 -> /home/user/Doubao/chats/38438412455799554/pipeline-auto/pipeline/data/asset_cards.json",
+      "cards_count": 0
+    },
+    "visualize": {
+      "status": "ok",
+      "message": "[viz] OK: 2 cards -> /home/user/Doubao/chats/38438412455799554/pipeline-auto/pipeline/output/asset_showcase.html",
+      "output_path": "output/asset_showcase.html"
+    },
+    "productize": {
+      "status": "ok",
+      "message": "[productize] OK: +0 products, total=2 -> /home/user/Doubao/chats/38438412455799554/pipeline-auto/pipeline/data/product_entries.json",
+      "products_count": 0
+    },
+    "price": {
+      "status": "ok",
+      "message": "[price] OK: +0, total=2 -> /home/user/Doubao/chats/38438412455799554/pipeline-auto/pipeline/data/pricing_results.json",
+      "priced_count": 0
+    },
+    "circulate": {
+      "status": "ok",
+      "message": "[circulate] PRD-20260915-840A: bitable=real drive=sim | [circulate] PRD-20260915-09F8: bitable=real drive=sim | [circulate] OK: 2 circulated, gateway_report=RPT-1789462907-1aee4652 -> /home/user/Doubao/chats/38438412455799554/pipeline-auto/pipeline/data/circulation_results.json",
+      "circulated_count": 2
+    }
+  },
+  "asset_ids": [
+    "AST-20260915-A344",
+    "AST-20260915-F578"
+  ],
+  "artifacts": {
+    "asset_cards": "data/asset_cards.json",
+    "showcase": "output/asset_showcase.html",
+    "products": "data/product_entries.json",
+    "pricing": "data/pricing_results.json",
+    "circulation": "data/circulation_results.json"
+  }
+}

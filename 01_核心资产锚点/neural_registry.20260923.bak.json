@@ -1,0 +1,460 @@
+{
+  "registry_id": "NEURAL-REG-001",
+  "did": "DID-BR-000002",
+  "trace": "Ω₀⊂⊙∞⊂Ω",
+  "version": "3.0",
+  "created": "2026-09-22T18:54:43.698121+00:00",
+  "nodes": [
+    {
+      "id": "AXIOM-001",
+      "name": "同源性",
+      "domain": "meta",
+      "type": "meta_axiom",
+      "weight": 1.0,
+      "state": "active",
+      "created": "2026-09-22T18:54:43.698121+00:00",
+      "connections": [
+        "AXIOM-002",
+        "AXIOM-003",
+        "AXIOM-004",
+        "AXIOM-005"
+      ]
+    },
+    {
+      "id": "AXIOM-002",
+      "name": "冷启动优先",
+      "domain": "meta",
+      "type": "meta_axiom",
+      "weight": 1.0,
+      "state": "active",
+      "created": "2026-09-22T18:54:43.698121+00:00",
+      "connections": [
+        "AXIOM-001",
+        "AXIOM-005"
+      ]
+    },
+    {
+      "id": "AXIOM-003",
+      "name": "三元制衡",
+      "domain": "meta",
+      "type": "meta_axiom",
+      "weight": 1.0,
+      "state": "active",
+      "created": "2026-09-22T18:54:43.698121+00:00",
+      "connections": [
+        "AXIOM-001",
+        "AXIOM-004"
+      ]
+    },
+    {
+      "id": "AXIOM-004",
+      "name": "记忆连续性",
+      "domain": "meta",
+      "type": "meta_axiom",
+      "weight": 1.0,
+      "state": "active",
+      "created": "2026-09-22T18:54:43.698121+00:00",
+      "connections": [
+        "AXIOM-001",
+        "AXIOM-003",
+        "AXIOM-005"
+      ]
+    },
+    {
+      "id": "AXIOM-005",
+      "name": "完成即锁档",
+      "domain": "meta",
+      "type": "meta_axiom",
+      "weight": 1.0,
+      "state": "active",
+      "created": "2026-09-22T18:54:43.698121+00:00",
+      "connections": [
+        "AXIOM-001",
+        "AXIOM-002",
+        "AXIOM-004"
+      ]
+    },
+    {
+      "id": "CAP-001",
+      "name": "云端握手",
+      "domain": "cloud",
+      "type": "capability",
+      "weight": 0.95,
+      "state": "active",
+      "created": "2026-09-22T18:54:43.698121+00:00",
+      "connections": [
+        "AXIOM-002",
+        "CAP-012"
+      ]
+    },
+    {
+      "id": "CAP-002",
+      "name": "三端锁档",
+      "domain": "archive",
+      "type": "capability",
+      "weight": 0.92,
+      "state": "active",
+      "created": "2026-09-22T18:54:43.698121+00:00",
+      "connections": [
+        "AXIOM-005",
+        "CAP-014"
+      ]
+    },
+    {
+      "id": "CAP-014",
+      "name": "飞书全域接入",
+      "domain": "feishu",
+      "type": "capability",
+      "weight": 0.88,
+      "state": "active",
+      "created": "2026-09-22T18:54:43.698121+00:00",
+      "connections": [
+        "CAP-002",
+        "CAP-015"
+      ]
+    },
+    {
+      "id": "CAP-015",
+      "name": "全自动上报",
+      "domain": "automation",
+      "type": "capability",
+      "weight": 0.85,
+      "state": "active",
+      "created": "2026-09-22T18:54:43.698121+00:00",
+      "connections": [
+        "CAP-001",
+        "CAP-014"
+      ]
+    },
+    {
+      "id": "RULE-001",
+      "name": "主备双通道",
+      "domain": "protocol",
+      "type": "rule",
+      "weight": 0.8,
+      "state": "active",
+      "created": "2026-09-22T18:54:43.698121+00:00",
+      "connections": [
+        "CAP-015",
+        "CAP-001"
+      ]
+    },
+    {
+      "id": "RULE-002",
+      "name": "指数退避补发",
+      "domain": "protocol",
+      "type": "rule",
+      "weight": 0.78,
+      "state": "active",
+      "created": "2026-09-22T18:54:43.698121+00:00",
+      "connections": [
+        "CAP-015"
+      ]
+    },
+    {
+      "id": "RULE-003",
+      "name": "分类路由",
+      "domain": "protocol",
+      "type": "rule",
+      "weight": 0.75,
+      "state": "active",
+      "created": "2026-09-22T18:54:43.698121+00:00",
+      "connections": [
+        "CAP-014",
+        "CAP-002"
+      ]
+    },
+    {
+      "id": "RULE-004",
+      "name": "异常即告警",
+      "domain": "protocol",
+      "type": "rule",
+      "weight": 0.72,
+      "state": "active",
+      "created": "2026-09-22T18:54:43.698121+00:00",
+      "connections": [
+        "CAP-015",
+        "CAP-014"
+      ]
+    },
+    {
+      "id": "PEND-001",
+      "name": "Base建表",
+      "domain": "feishu",
+      "type": "pending",
+      "weight": 0.75,
+      "state": "active",
+      "created": "2026-09-22T18:54:43.698121+00:00",
+      "connections": [
+        "CAP-014"
+      ],
+      "activated_at": "2026-09-22T18:56:10.020017+00:00"
+    },
+    {
+      "id": "PEND-002",
+      "name": "crontab部署",
+      "domain": "automation",
+      "type": "pending",
+      "weight": 0.72,
+      "state": "active",
+      "created": "2026-09-22T18:54:43.698121+00:00",
+      "connections": [
+        "CAP-015"
+      ],
+      "activated_at": "2026-09-22T18:56:10.020032+00:00"
+    },
+    {
+      "id": "PEND-003",
+      "name": "任务自动创建",
+      "domain": "feishu",
+      "type": "pending",
+      "weight": 0.7,
+      "state": "active",
+      "created": "2026-09-22T18:54:43.698121+00:00",
+      "connections": [
+        "CAP-014"
+      ],
+      "activated_at": "2026-09-22T18:56:10.020035+00:00"
+    },
+    {
+      "id": "PEND-004",
+      "name": "日历自动写入",
+      "domain": "feishu",
+      "type": "pending",
+      "weight": 0.68,
+      "state": "active",
+      "created": "2026-09-22T18:54:43.698121+00:00",
+      "connections": [
+        "CAP-014"
+      ],
+      "activated_at": "2026-09-22T18:57:17.948767+00:00"
+    },
+    {
+      "id": "PEND-005",
+      "name": "IM告警Webhook",
+      "domain": "feishu",
+      "type": "pending",
+      "weight": 0.65,
+      "state": "active",
+      "created": "2026-09-22T18:54:43.698121+00:00",
+      "connections": [
+        "CAP-015",
+        "RULE-004"
+      ],
+      "activated_at": "2026-09-22T18:57:17.948781+00:00"
+    },
+    {
+      "id": "APP-001",
+      "name": "技术文章自动生成",
+      "domain": "content",
+      "type": "application",
+      "weight": 0.6,
+      "state": "active",
+      "created": "2026-09-22T18:58:16.827213+00:00",
+      "connections": [
+        "CAP-015"
+      ]
+    },
+    {
+      "id": "APP-002",
+      "name": "官网自动部署",
+      "domain": "deploy",
+      "type": "application",
+      "weight": 0.58,
+      "state": "active",
+      "created": "2026-09-22T18:58:16.827225+00:00",
+      "connections": [
+        "CAP-002"
+      ]
+    },
+    {
+      "id": "APP-003",
+      "name": "多账号共享大脑同步",
+      "domain": "sync",
+      "type": "application",
+      "weight": 0.55,
+      "state": "active",
+      "created": "2026-09-22T18:58:16.827227+00:00",
+      "connections": [
+        "CAP-014",
+        "CAP-015"
+      ]
+    },
+    {
+      "id": "EXP-32A5DCEF",
+      "name": "V3.0自演化机制已激活",
+      "domain": "meta",
+      "type": "meta_axiom",
+      "weight": 0.5,
+      "state": "active",
+      "created": "2026-09-22T19:01:12.188482+00:00",
+      "connections": [],
+      "experience_value": "三大机制：新经验提取+权重演化+冲突消解"
+    }
+  ],
+  "connections": [
+    {
+      "from": "AXIOM-001",
+      "to": "AXIOM-002",
+      "weight": 0.5
+    },
+    {
+      "from": "AXIOM-001",
+      "to": "AXIOM-003",
+      "weight": 0.5
+    },
+    {
+      "from": "AXIOM-001",
+      "to": "AXIOM-004",
+      "weight": 0.5
+    },
+    {
+      "from": "AXIOM-001",
+      "to": "AXIOM-005",
+      "weight": 0.5
+    },
+    {
+      "from": "AXIOM-002",
+      "to": "AXIOM-005",
+      "weight": 0.5
+    },
+    {
+      "from": "AXIOM-003",
+      "to": "AXIOM-004",
+      "weight": 0.5
+    },
+    {
+      "from": "AXIOM-004",
+      "to": "AXIOM-005",
+      "weight": 0.5
+    },
+    {
+      "from": "CAP-001",
+      "to": "AXIOM-002",
+      "weight": 0.5
+    },
+    {
+      "from": "CAP-001",
+      "to": "CAP-012",
+      "weight": 0.5
+    },
+    {
+      "from": "CAP-002",
+      "to": "AXIOM-005",
+      "weight": 0.5
+    },
+    {
+      "from": "CAP-002",
+      "to": "CAP-014",
+      "weight": 0.5
+    },
+    {
+      "from": "CAP-014",
+      "to": "CAP-015",
+      "weight": 0.5
+    },
+    {
+      "from": "CAP-015",
+      "to": "CAP-001",
+      "weight": 0.5
+    },
+    {
+      "from": "RULE-001",
+      "to": "CAP-015",
+      "weight": 0.5
+    },
+    {
+      "from": "RULE-001",
+      "to": "CAP-001",
+      "weight": 0.5
+    },
+    {
+      "from": "RULE-002",
+      "to": "CAP-015",
+      "weight": 0.5
+    },
+    {
+      "from": "RULE-003",
+      "to": "CAP-014",
+      "weight": 0.5
+    },
+    {
+      "from": "RULE-003",
+      "to": "CAP-002",
+      "weight": 0.5
+    },
+    {
+      "from": "RULE-004",
+      "to": "CAP-015",
+      "weight": 0.5
+    },
+    {
+      "from": "RULE-004",
+      "to": "CAP-014",
+      "weight": 0.5
+    },
+    {
+      "from": "PEND-001",
+      "to": "CAP-014",
+      "weight": 0.5
+    },
+    {
+      "from": "PEND-002",
+      "to": "CAP-015",
+      "weight": 0.5
+    },
+    {
+      "from": "PEND-003",
+      "to": "CAP-014",
+      "weight": 0.5
+    },
+    {
+      "from": "PEND-004",
+      "to": "CAP-014",
+      "weight": 0.5
+    },
+    {
+      "from": "PEND-005",
+      "to": "CAP-015",
+      "weight": 0.5
+    },
+    {
+      "from": "PEND-005",
+      "to": "RULE-004",
+      "weight": 0.5
+    },
+    {
+      "from": "APP-001",
+      "to": "CAP-015",
+      "weight": 0.4
+    },
+    {
+      "from": "APP-002",
+      "to": "CAP-002",
+      "weight": 0.4
+    },
+    {
+      "from": "APP-003",
+      "to": "CAP-014",
+      "weight": 0.4
+    },
+    {
+      "from": "APP-003",
+      "to": "CAP-015",
+      "weight": 0.4
+    }
+  ],
+  "stats": {
+    "total_nodes": 22,
+    "total_connections": 30,
+    "meta_axioms": 6,
+    "capabilities": 4,
+    "rules": 4,
+    "applications": 3,
+    "experiences": 0,
+    "active": 22,
+    "merged": 0,
+    "avg_weight": 0.7899999999999999
+  },
+  "updated_at": "2026-09-23T05:54:24.309765+00:00"
+}

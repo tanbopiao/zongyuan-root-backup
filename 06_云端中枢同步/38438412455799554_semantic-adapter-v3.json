@@ -1,0 +1,769 @@
+{
+  "adapter_name": "kunlun-semantic-adapter",
+  "version": "3.1.0",
+  "version_note": "统一语义校验基座V3.1 - 词条扩展到55个，覆盖16分类",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "sovereign_root": "Ω-TAN-7-001",
+  "description": "昆仑洞天统一语义校验基座V3。作为记忆网关前置校验器，为所有增值资产提供术语真值校验、多模型语义转译、审美约束校验、对账存证功能。",
+  "role_in_system": "L1语义层 - 元极语义锚点 - 所有资产进入体系的第一道校验关卡",
+  "l0_aesthetic_constraints": {
+    "source": "V1.1 - KUNLUN-TIANYUAN-LAW-V1.1",
+    "core_axiom": "神性能量与女性骨相完全解耦；神力归神性，形体归东方女相",
+    "priority_chain": "L0>主母版>角色卡>提示词>模型先验>渲染",
+    "prompt_prefix": "【昆仑洞天天元法则L0-002强制前置约束生效】零雄性漂移·东方神女绝对铁律；神性与骨相解耦；禁男性颧骨/宽肩/方下颌/骶椎；力量由气场/法阵/神纹/灵体/眼神承载；收敛度≥95%；纯东方上古神女范式",
+    "five_prohibitions": [
+      "骨相绝对纯净:禁宽肩/男胸肌/男方下颌/厚背宽腰",
+      "面部绝对神性:禁粗犷五官/雄性眉骨/高突颧骨",
+      "体型绝对:禁骶椎/壮硬化/肌肉化",
+      "力量绝对隔离:力量只从气场/法阵/神纹/灵体/眼神表达",
+      "风格绝对去外源:禁西式战神/现代超英/中性伪雄"
+    ],
+    "standard_body": [
+      "削肩挺拔",
+      "柔和神性下颌",
+      "东方女性神体胸肌",
+      "修长纤细四肢",
+      "威而不壮腴而不绵"
+    ],
+    "self_check_12": [
+      "纯东方女相",
+      "无男宽肩",
+      "无男胸肌",
+      "无男方下颌",
+      "无粗犷五官",
+      "无厚背宽腰",
+      "无肌肉块",
+      "无短发",
+      "无白发彩发",
+      "无西式铠甲",
+      "无幼态娇媚",
+      "保留角色专属标识"
+    ],
+    "character_ids": {
+      "KF-M07-04": "九天玄女·天地兵甲主神",
+      "KF-CHAR-MOON-002": "太阴月神·月华秩序主神",
+      "KF-CHAR-FEI-003": "赤髓司命·缘灵汇·时序刑律主神"
+    },
+    "violation_triage": "A级重绘97%/B级废弃/C级彻底销毁"
+  },
+  "global_rules": {
+    "orientation": "9:16 vertical only, no landscape",
+    "character": "single person, exactly one head on shoulders",
+    "hair": "pure black long straight hair to waist",
+    "style": "ancient Chinese mythology, no western elements",
+    "tone": "majestic and serene, no horror or decay"
+  },
+  "model_profiles": {
+    "agnes_image": {
+      "model_type": "image_generation",
+      "provider": "Agnes AI",
+      "endpoint": "https://apihub.agnes-ai.com/v1/images/generations",
+      "model_name": "agnes-image-2.1-flash",
+      "default_size": "736x1312",
+      "supports_negative_prompt": false,
+      "prompt_prefix": "A single elegant Chinese female deity, exactly one person, exactly one single head on shoulders, only one face, no other people, no clones, tall slender graceful figure with perfect proportions, body height equals 9 times the length of her own head, pure black long straight hair flowing to waist, wearing flowing cold white and crimson gold silk robes,",
+      "prompt_suffix": "soft silver moonlight rim light from behind, UE5 ray tracing, cinematic photography, 9:16 vertical composition, ancient Chinese mythology aesthetic, no western elements, no angel wings, no masculine features",
+      "known_pitfalls": {
+        "九头身": "Never use nine-head body. Use: body height equals 9 times the length of her own head",
+        "玄黑": "Never use mysterious black. Use: deep dark crimson-black",
+        "赤金": "Never use red gold. Use: crimson gold with warm undertone",
+        "神女": "Never use Greek goddess. Use: elegant Chinese female deity"
+      }
+    },
+    "tongyi_i2v": {
+      "model_type": "image_to_video",
+      "provider": "Alibaba Tongyi Wanxiang",
+      "endpoint": "https://ws-g5kub337vd1fxnl5.cn-beijing.maas.aliyuncs.com/api/v1/services/aigc/video-generation/video-synthesis",
+      "model_name": "wanx2.1-i2v-turbo",
+      "default_resolution": "720P",
+      "default_duration": 5,
+      "supports_async": true,
+      "poll_interval_sec": 10,
+      "prompt_prefix": "single Chinese goddess, cinematic, slow motion,",
+      "prompt_suffix": "epic lighting, 9:16 vertical",
+      "known_pitfalls": {
+        "动作描述": "Use gentle motion descriptions, not fast action",
+        "镜头": "Use slow camera movement, no shake"
+      }
+    },
+    "tongyi_t2v": {
+      "model_type": "text_to_video",
+      "provider": "Alibaba Tongyi Wanxiang",
+      "model_name": "wanx2.1-t2v-turbo",
+      "default_resolution": "480P",
+      "default_duration": 5,
+      "prompt_prefix": "ancient Chinese mythology,",
+      "prompt_suffix": "cinematic, 9:16 vertical, epic lighting",
+      "known_pitfalls": {}
+    },
+    "zhipu_text": {
+      "model_type": "text_llm",
+      "provider": "Zhipu AI",
+      "endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+      "model_name": "glm-4-flash",
+      "free": true,
+      "prompt_style": "Chinese natural language, direct use of Chinese aesthetic terms",
+      "known_pitfalls": {}
+    }
+  },
+  "semantic_mapping": {
+    "九头身": {
+      "truth": "body height = 9 head lengths (proportion)",
+      "truth_cn": "身高等于9个头长的比例，不是九个头",
+      "for_agnes_image": "body height equals 9 times the length of her own head",
+      "for_tongyi_i2v": "tall slender figure",
+      "for_tongyi_t2v": "tall slender graceful figure",
+      "for_zhipu_text": "九头身比例",
+      "category": "proportion",
+      "priority": "critical"
+    },
+    "玄黑": {
+      "truth": "deep black with red undertone",
+      "truth_cn": "带红调的深黑色，不是神秘黑/纯黑",
+      "for_agnes_image": "deep dark crimson-black",
+      "for_tongyi_i2v": "dark crimson",
+      "for_tongyi_t2v": "deep crimson black",
+      "for_zhipu_text": "玄黑色",
+      "category": "color",
+      "priority": "high"
+    },
+    "赤金": {
+      "truth": "reddish gold with warm undertone",
+      "truth_cn": "带暖调的红金色，不是普通红金/黄金",
+      "for_agnes_image": "crimson gold, warm golden with red undertone",
+      "for_tongyi_i2v": "crimson gold",
+      "for_tongyi_t2v": "warm crimson gold",
+      "for_zhipu_text": "赤金色",
+      "category": "color",
+      "priority": "high"
+    },
+    "月华": {
+      "truth": "soft silver moonlight glow",
+      "truth_cn": "柔和的银色月光光晕，不是普通白光/月光",
+      "for_agnes_image": "soft silver moonlight glow",
+      "for_tongyi_i2v": "silver moonlight",
+      "for_tongyi_t2v": "soft silver moonlight",
+      "for_zhipu_text": "月华",
+      "category": "lighting",
+      "priority": "medium"
+    },
+    "神女": {
+      "truth": "elegant Chinese female deity",
+      "truth_cn": "优雅的中国女神，不是希腊女神/西方女神",
+      "for_agnes_image": "elegant Chinese female deity",
+      "for_tongyi_i2v": "Chinese goddess",
+      "for_tongyi_t2v": "ancient Chinese goddess",
+      "for_zhipu_text": "神女",
+      "category": "character",
+      "priority": "critical"
+    },
+    "昆仑": {
+      "truth": "ancient Chinese mythical mountain palace",
+      "truth_cn": "中国上古神山宫殿，不是普通山脉/雪山",
+      "for_agnes_image": "ancient Chinese mythical palace on mountain",
+      "for_tongyi_i2v": "ancient Chinese palace",
+      "for_tongyi_t2v": "majestic Chinese mythical palace",
+      "for_zhipu_text": "昆仑",
+      "category": "scene",
+      "priority": "medium"
+    },
+    "削肩": {
+      "truth": "sloped delicate shoulders, not broad shoulders",
+      "truth_cn": "柔和下削的肩线，不是宽肩/平肩/男肩",
+      "for_agnes_image": "delicate sloped shoulders, narrow and graceful",
+      "for_tongyi_i2v": "graceful sloped shoulders",
+      "for_tongyi_t2v": "delicate narrow shoulders",
+      "for_zhipu_text": "削肩",
+      "category": "body",
+      "priority": "critical",
+      "l0_constraint": "五禁令-骨相绝对纯净"
+    },
+    "神性下颌": {
+      "truth": "soft elegant feminine jawline, not square/masculine jaw",
+      "truth_cn": "柔和优雅的女性下颌线，不是方下颌/雄性下颌",
+      "for_agnes_image": "soft elegant feminine jawline, delicate chin",
+      "for_tongyi_i2v": "soft graceful jawline",
+      "for_tongyi_t2v": "delicate feminine chin",
+      "for_zhipu_text": "神性下颌",
+      "category": "face",
+      "priority": "critical",
+      "l0_constraint": "五禁令-面部绝对神性"
+    },
+    "纯黑长发": {
+      "truth": "pure black long straight hair to waist, no other colors",
+      "truth_cn": "纯黑色长直发至腰，无白发/彩发/短发",
+      "for_agnes_image": "pure black long straight hair flowing to waist",
+      "for_tongyi_i2v": "long black hair flowing",
+      "for_tongyi_t2v": "pure black long hair to waist",
+      "for_zhipu_text": "纯黑长发",
+      "category": "hair",
+      "priority": "critical",
+      "l0_constraint": "12项自检-无短发/无白发彩发"
+    },
+    "气场力量": {
+      "truth": "power expressed through aura/magic circle/divine marks/spirit/eyes, not physical muscle",
+      "truth_cn": "力量通过气场/法阵/神纹/灵体/眼神表达，不是肌肉/体格",
+      "for_agnes_image": "powerful divine aura emanating, magical energy circles, glowing divine marks, intense spiritual eyes",
+      "for_tongyi_i2v": "divine aura energy, magical glow",
+      "for_tongyi_t2v": "powerful spiritual aura, divine energy",
+      "for_zhipu_text": "气场力量",
+      "category": "power",
+      "priority": "critical",
+      "l0_constraint": "五禁令-力量绝对隔离"
+    },
+    "上古仙袍": {
+      "truth": "flowing ancient Chinese silk robes, not western armor/modern clothing",
+      "truth_cn": "飘逸的中国上古丝绸仙袍，不是西式铠甲/现代服装",
+      "for_agnes_image": "flowing ancient Chinese silk robes, elegant drapery",
+      "for_tongyi_i2v": "flowing silk robes",
+      "for_tongyi_t2v": "ancient Chinese flowing robes",
+      "for_zhipu_text": "上古仙袍",
+      "category": "clothing",
+      "priority": "high",
+      "l0_constraint": "五禁令-风格绝对去外源"
+    },
+    "法相庄严": {
+      "truth": "majestic serene divine countenance, not cute/childlike/sexy",
+      "truth_cn": "庄严宁静的神圣面容，不是可爱/幼态/娇媚/性感",
+      "for_agnes_image": "majestic serene divine expression, dignified and awe-inspiring",
+      "for_tongyi_i2v": "majestic serene expression",
+      "for_tongyi_t2v": "dignified divine countenance",
+      "for_zhipu_text": "法相庄严",
+      "category": "expression",
+      "priority": "high",
+      "l0_constraint": "12项自检-无幼态娇媚"
+    },
+    "神纹": {
+      "truth": "glowing divine mystical marks/patterns, not tattoos/western symbols",
+      "truth_cn": "发光的神圣神秘纹路，不是纹身/西方符号",
+      "for_agnes_image": "glowing divine mystical marks, ancient Chinese rune patterns",
+      "for_tongyi_i2v": "glowing divine marks",
+      "for_tongyi_t2v": "mystical glowing runes",
+      "for_zhipu_text": "神纹",
+      "category": "detail",
+      "priority": "medium"
+    },
+    "灵体": {
+      "truth": "ethereal spiritual body form, not physical/corporeal",
+      "truth_cn": "空灵的精神体形态，不是实体/肉体",
+      "for_agnes_image": "ethereal translucent spiritual form, glowing energy body",
+      "for_tongyi_i2v": "ethereal spiritual glow",
+      "for_tongyi_t2v": "translucent energy body",
+      "for_zhipu_text": "灵体",
+      "category": "form",
+      "priority": "medium"
+    },
+    "九天玄女": {
+      "truth": "Jiutian Xuannü - Chinese goddess of war and destiny, in armor but feminine",
+      "truth_cn": "九天玄女-中国战争与命运女神，着兵甲但保持女性神性",
+      "for_agnes_image": "Jiutian Xuannü, Chinese goddess of war, wearing elegant ancient Chinese armor with feminine grace, holding divine weapon",
+      "for_tongyi_i2v": "Chinese war goddess in armor",
+      "for_tongyi_t2v": "majestic Chinese goddess of destiny",
+      "for_zhipu_text": "九天玄女",
+      "category": "character",
+      "priority": "high",
+      "character_id": "KF-M07-04"
+    },
+    "太阴月神": {
+      "truth": "Taiyin Moon Goddess - Chinese lunar deity, silver moonlight theme",
+      "truth_cn": "太阴月神-中国月神，银色月华主题",
+      "for_agnes_image": "Taiyin Moon Goddess, Chinese lunar deity, silver moonlight aura, flowing white silver robes",
+      "for_tongyi_i2v": "moon goddess with silver light",
+      "for_tongyi_t2v": "Chinese lunar deity in moonlight",
+      "for_zhipu_text": "太阴月神",
+      "category": "character",
+      "priority": "high",
+      "character_id": "KF-CHAR-MOON-002"
+    },
+    "赤髓司命": {
+      "truth": "Chisui Siming - Chinese deity of fate and life-force, crimson gold theme",
+      "truth_cn": "赤髓司命-中国命运与生命之神，赤金主题",
+      "for_agnes_image": "Chisui Siming, Chinese deity of fate, crimson gold aura, flowing crimson silk robes, holding life-thread",
+      "for_tongyi_i2v": "fate deity with crimson gold light",
+      "for_tongyi_t2v": "Chinese life-force deity in crimson",
+      "for_zhipu_text": "赤髓司命",
+      "category": "character",
+      "priority": "high",
+      "character_id": "KF-CHAR-FEI-003"
+    },
+    "UE5光追": {
+      "truth": "Unreal Engine 5 ray tracing rendering quality",
+      "truth_cn": "虚幻引擎5光线追踪渲染质量",
+      "for_agnes_image": "UE5 ray tracing, cinematic photography",
+      "for_tongyi_i2v": "cinematic rendering",
+      "for_tongyi_t2v": "high quality cinematic render",
+      "for_zhipu_text": "UE5光追",
+      "category": "rendering",
+      "priority": "low"
+    },
+    "伦勃朗光": {
+      "truth": "Rembrandt side lighting with strong rim light",
+      "truth_cn": "伦勃朗侧光+强轮廓光",
+      "for_agnes_image": "Rembrandt side lighting, strong rim light, Kodak Portra 400 film texture",
+      "for_tongyi_i2v": "dramatic side lighting",
+      "for_tongyi_t2v": "cinematic lighting with rim light",
+      "for_zhipu_text": "伦勃朗光",
+      "category": "lighting",
+      "priority": "low"
+    },
+    "月白": {
+      "truth": "moonlight pure white, not stark white",
+      "truth_cn": "月光般的洁白色，不是刺眼纯白",
+      "for_agnes_image": "soft moonlight pure white, luminous white silk",
+      "for_tongyi_i2v": "pure white glow",
+      "for_tongyi_t2v": "moonlight white",
+      "for_zhipu_text": "月白色",
+      "category": "color",
+      "priority": "high"
+    },
+    "紫金": {
+      "truth": "purple gold, noble and mysterious",
+      "truth_cn": "紫金色，高贵神秘",
+      "for_agnes_image": "noble purple gold, deep violet with golden sheen",
+      "for_tongyi_i2v": "purple gold glow",
+      "for_tongyi_t2v": "noble purple gold",
+      "for_zhipu_text": "紫金色",
+      "category": "color",
+      "priority": "medium"
+    },
+    "苍青": {
+      "truth": "deep blue-green, ancient jade color",
+      "truth_cn": "深青绿色，古玉色",
+      "for_agnes_image": "deep blue-green jade color, ancient cyan",
+      "for_tongyi_i2v": "deep cyan",
+      "for_tongyi_t2v": "ancient blue-green",
+      "for_zhipu_text": "苍青色",
+      "category": "color",
+      "priority": "medium"
+    },
+    "鎏金": {
+      "truth": "gilded gold, molten gold texture",
+      "truth_cn": "鎏金色，熔金质感",
+      "for_agnes_image": "gilded molten gold, flowing golden metal texture",
+      "for_tongyi_i2v": "molten gold",
+      "for_tongyi_t2v": "gilded gold texture",
+      "for_zhipu_text": "鎏金色",
+      "category": "color",
+      "priority": "medium"
+    },
+    "墨玉": {
+      "truth": "ink-black jade, deep black with green undertone",
+      "truth_cn": "墨玉色，深黑带绿调",
+      "for_agnes_image": "ink-black jade, deep black with subtle green undertone",
+      "for_tongyi_i2v": "deep ink black",
+      "for_tongyi_t2v": "ink jade black",
+      "for_zhipu_text": "墨玉色",
+      "category": "color",
+      "priority": "low"
+    },
+    "神光": {
+      "truth": "divine sacred light, holy radiance",
+      "truth_cn": "神圣光芒，圣洁光辉",
+      "for_agnes_image": "divine sacred light radiating, holy golden radiance from above",
+      "for_tongyi_i2v": "divine light rays",
+      "for_tongyi_t2v": "sacred holy light",
+      "for_zhipu_text": "神光",
+      "category": "lighting",
+      "priority": "high"
+    },
+    "逆光轮廓": {
+      "truth": "backlight rim lighting, silhouette edge glow",
+      "truth_cn": "逆光轮廓光，剪影边缘发光",
+      "for_agnes_image": "dramatic backlight rim lighting, glowing silhouette edge",
+      "for_tongyi_i2v": "rim light silhouette",
+      "for_tongyi_t2v": "backlit edge glow",
+      "for_zhipu_text": "逆光轮廓",
+      "category": "lighting",
+      "priority": "medium"
+    },
+    "丁达尔光": {
+      "truth": "Tyndall effect light beams, visible light rays in atmosphere",
+      "truth_cn": "丁达尔效应光束，大气中可见光线",
+      "for_agnes_image": "Tyndall effect light beams, visible god rays through mist",
+      "for_tongyi_i2v": "light rays through mist",
+      "for_tongyi_t2v": "atmospheric light beams",
+      "for_zhipu_text": "丁达尔光",
+      "category": "lighting",
+      "priority": "low"
+    },
+    "纤腰": {
+      "truth": "slender graceful waist, not narrow to extreme",
+      "truth_cn": "纤细优雅的腰肢，不是极端细腰",
+      "for_agnes_image": "slender graceful waist, elegant narrow waistline",
+      "for_tongyi_i2v": "graceful waist",
+      "for_tongyi_t2v": "slender elegant waist",
+      "for_zhipu_text": "纤腰",
+      "category": "body",
+      "priority": "high",
+      "l0_constraint": "五禁令-骨相绝对纯净"
+    },
+    "玉足": {
+      "truth": "jade-like delicate feet, elegant and small",
+      "truth_cn": "如玉般精致的足，优雅小巧",
+      "for_agnes_image": "delicate jade-like feet, elegant and small",
+      "for_tongyi_i2v": "elegant feet",
+      "for_tongyi_t2v": "delicate small feet",
+      "for_zhipu_text": "玉足",
+      "category": "body",
+      "priority": "low"
+    },
+    "莲步": {
+      "truth": "lotus-like graceful gait, light and elegant steps",
+      "truth_cn": "如莲花般优雅的步态，轻盈步伐",
+      "for_agnes_image": "graceful lotus-like standing pose, light and elegant",
+      "for_tongyi_i2v": "graceful slow movement",
+      "for_tongyi_t2v": "light elegant steps",
+      "for_zhipu_text": "莲步",
+      "category": "body",
+      "priority": "low"
+    },
+    "仙姿": {
+      "truth": "immortal celestial posture, elegant and otherworldly",
+      "truth_cn": "仙人的姿态，优雅脱俗",
+      "for_agnes_image": "immortal celestial posture, elegant otherworldly bearing",
+      "for_tongyi_i2v": "celestial elegant posture",
+      "for_tongyi_t2v": "immortal graceful bearing",
+      "for_zhipu_text": "仙姿",
+      "category": "form",
+      "priority": "high"
+    },
+    "羽化": {
+      "truth": "apotheosis transformation, ascending to immortal form",
+      "truth_cn": "羽化登仙的形态，升仙转化",
+      "for_agnes_image": "ethereal apotheosis, body transforming into light and energy",
+      "for_tongyi_i2v": "transformation into light",
+      "for_tongyi_t2v": "ascending immortal form",
+      "for_zhipu_text": "羽化",
+      "category": "form",
+      "priority": "medium"
+    },
+    "凤目": {
+      "truth": "phoenix eyes, elongated elegant eyes with upturned outer corners",
+      "truth_cn": "凤凰般的眼睛，细长优雅眼尾上挑",
+      "for_agnes_image": "elegant phoenix eyes, elongated almond eyes with upturned outer corners",
+      "for_tongyi_i2v": "elegant phoenix eyes",
+      "for_tongyi_t2v": "elongated graceful eyes",
+      "for_zhipu_text": "凤目",
+      "category": "face",
+      "priority": "high"
+    },
+    "樱唇": {
+      "truth": "cherry-like small lips, delicate and rosy",
+      "truth_cn": "樱桃般的小嘴，精致红润",
+      "for_agnes_image": "delicate cherry-like small lips, soft rosy color",
+      "for_tongyi_i2v": "small delicate lips",
+      "for_tongyi_t2v": "rosy cherry lips",
+      "for_zhipu_text": "樱唇",
+      "category": "face",
+      "priority": "medium"
+    },
+    "蛾眉": {
+      "truth": "moth-antennae eyebrows, delicate curved slender eyebrows",
+      "truth_cn": "蛾眉，纤细弯曲的眉毛",
+      "for_agnes_image": "delicate moth-antennae eyebrows, slender curved elegant brows",
+      "for_tongyi_i2v": "delicate curved eyebrows",
+      "for_tongyi_t2v": "slender elegant brows",
+      "for_zhipu_text": "蛾眉",
+      "category": "face",
+      "priority": "medium"
+    },
+    "凝脂": {
+      "truth": "skin like congealed fat, smooth flawless pale skin",
+      "truth_cn": "肌肤如凝脂，光滑无瑕白皙",
+      "for_agnes_image": "smooth flawless skin like congealed fat, luminous pale complexion",
+      "for_tongyi_i2v": "smooth flawless skin",
+      "for_tongyi_t2v": "luminous pale complexion",
+      "for_zhipu_text": "凝脂",
+      "category": "face",
+      "priority": "medium"
+    },
+    "悲悯": {
+      "truth": "compassionate sorrowful expression, divine mercy",
+      "truth_cn": "悲悯的表情，神圣慈悲",
+      "for_agnes_image": "compassionate sorrowful expression, divine mercy in eyes",
+      "for_tongyi_i2v": "compassionate expression",
+      "for_tongyi_t2v": "merciful sorrowful gaze",
+      "for_zhipu_text": "悲悯",
+      "category": "expression",
+      "priority": "medium"
+    },
+    "冷傲": {
+      "truth": "cold proud aloof expression, dignified and distant",
+      "truth_cn": "冷傲的表情，威严疏离",
+      "for_agnes_image": "cold proud aloof expression, dignified distant gaze",
+      "for_tongyi_i2v": "cold dignified expression",
+      "for_tongyi_t2v": "proud aloof gaze",
+      "for_zhipu_text": "冷傲",
+      "category": "expression",
+      "priority": "medium"
+    },
+    "披帛": {
+      "truth": "flowing silk shawl/scarf draped over arms, ancient Chinese accessory",
+      "truth_cn": "披帛，飘逸的丝质长巾搭于臂间",
+      "for_agnes_image": "flowing silk shawl draped over arms, long elegant ribbons floating",
+      "for_tongyi_i2v": "flowing silk ribbons",
+      "for_tongyi_t2v": "elegant draped silk shawl",
+      "for_zhipu_text": "披帛",
+      "category": "clothing",
+      "priority": "medium"
+    },
+    "华冠": {
+      "truth": "magnificent imperial crown, elaborate ancient Chinese headpiece",
+      "truth_cn": "华丽的冠冕，精致的中国古代头饰",
+      "for_agnes_image": "magnificent imperial crown, elaborate golden ancient Chinese headpiece with jewels",
+      "for_tongyi_i2v": "elaborate golden crown",
+      "for_tongyi_t2v": "magnificent imperial headpiece",
+      "for_zhipu_text": "华冠",
+      "category": "clothing",
+      "priority": "high"
+    },
+    "玉佩": {
+      "truth": "jade pendant ornament, carved jade hanging from waist",
+      "truth_cn": "玉佩，雕刻的玉饰挂于腰间",
+      "for_agnes_image": "carved jade pendant ornament hanging from waist, luminous green jade",
+      "for_tongyi_i2v": "jade pendant",
+      "for_tongyi_t2v": "carved jade ornament",
+      "for_zhipu_text": "玉佩",
+      "category": "detail",
+      "priority": "medium"
+    },
+    "流苏": {
+      "truth": "tassels, hanging decorative silk threads",
+      "truth_cn": "流苏，悬挂的装饰丝线",
+      "for_agnes_image": "elegant silk tassels hanging, flowing decorative threads",
+      "for_tongyi_i2v": "hanging tassels",
+      "for_tongyi_t2v": "flowing silk tassels",
+      "for_zhipu_text": "流苏",
+      "category": "detail",
+      "priority": "low"
+    },
+    "云肩": {
+      "truth": "cloud shoulder collar, decorative shoulder piece shaped like clouds",
+      "truth_cn": "云肩，云形装饰肩领",
+      "for_agnes_image": "cloud-shaped shoulder collar, elaborate embroidered shoulder piece",
+      "for_tongyi_i2v": "decorative shoulder collar",
+      "for_tongyi_t2v": "cloud-shaped shoulder piece",
+      "for_zhipu_text": "云肩",
+      "category": "clothing",
+      "priority": "medium"
+    },
+    "瑶池": {
+      "truth": "Jade Pool, mythical heavenly lake of immortals",
+      "truth_cn": "瑶池，神话中的仙湖",
+      "for_agnes_image": "Jade Pool heavenly lake, crystal clear water with lotus, misty immortal realm",
+      "for_tongyi_i2v": "heavenly lake with mist",
+      "for_tongyi_t2v": "crystal clear immortal lake",
+      "for_zhipu_text": "瑶池",
+      "category": "scene",
+      "priority": "medium"
+    },
+    "天宫": {
+      "truth": "Heavenly Palace, celestial palace in the clouds",
+      "truth_cn": "天宫，云端的仙宫",
+      "for_agnes_image": "Heavenly Palace in the clouds, majestic celestial palace with golden roofs",
+      "for_tongyi_i2v": "majestic palace in clouds",
+      "for_tongyi_t2v": "celestial palace above clouds",
+      "for_zhipu_text": "天宫",
+      "category": "scene",
+      "priority": "medium"
+    },
+    "仙境": {
+      "truth": "immortal realm, ethereal otherworldly paradise",
+      "truth_cn": "仙境，空灵脱俗的仙境",
+      "for_agnes_image": "ethereal immortal realm, misty mountains with peach blossoms and pavilions",
+      "for_tongyi_i2v": "misty immortal mountains",
+      "for_tongyi_t2v": "ethereal otherworldly paradise",
+      "for_zhipu_text": "仙境",
+      "category": "scene",
+      "priority": "high"
+    },
+    "祥云": {
+      "truth": "auspicious clouds, traditional Chinese cloud patterns",
+      "truth_cn": "祥云，中国传统云纹",
+      "for_agnes_image": "auspicious traditional Chinese clouds, swirling golden cloud patterns",
+      "for_tongyi_i2v": "swirling clouds",
+      "for_tongyi_t2v": "traditional Chinese cloud patterns",
+      "for_zhipu_text": "祥云",
+      "category": "scene",
+      "priority": "medium"
+    },
+    "仙鹤": {
+      "truth": "red-crowned crane, symbol of immortality in Chinese mythology",
+      "truth_cn": "仙鹤，中国神话中象征长寿的丹顶鹤",
+      "for_agnes_image": "red-crowned crane flying, elegant white crane with red crown",
+      "for_tongyi_i2v": "flying white crane",
+      "for_tongyi_t2v": "elegant red-crowned crane",
+      "for_zhipu_text": "仙鹤",
+      "category": "scene",
+      "priority": "low"
+    },
+    "蟠桃": {
+      "truth": "peach of immortality, mythical peach that grants eternal life",
+      "truth_cn": "蟠桃，神话中赐予永生的仙桃",
+      "for_agnes_image": "peach of immortality, glowing golden-pink mythical peach on branch",
+      "for_tongyi_i2v": "glowing mythical peach",
+      "for_tongyi_t2v": "immortal peach",
+      "for_zhipu_text": "蟠桃",
+      "category": "scene",
+      "priority": "low"
+    },
+    "法阵": {
+      "truth": "magic circle/array, glowing ritual circle with ancient runes",
+      "truth_cn": "法阵，发光的古老符文仪式阵",
+      "for_agnes_image": "glowing magic circle with ancient Chinese runes, rotating ritual array",
+      "for_tongyi_i2v": "glowing rotating magic circle",
+      "for_tongyi_t2v": "ancient rune ritual array",
+      "for_zhipu_text": "法阵",
+      "category": "power",
+      "priority": "high",
+      "l0_constraint": "五禁令-力量绝对隔离"
+    },
+    "神通": {
+      "truth": "divine supernatural power, spiritual ability beyond physical",
+      "truth_cn": "神通，超越物理的精神神力",
+      "for_agnes_image": "divine supernatural power manifesting as energy and light, spiritual aura",
+      "for_tongyi_i2v": "divine energy manifestation",
+      "for_tongyi_t2v": "supernatural spiritual power",
+      "for_zhipu_text": "神通",
+      "category": "power",
+      "priority": "medium",
+      "l0_constraint": "五禁令-力量绝对隔离"
+    },
+    "渡劫": {
+      "truth": "tribulation crossing, lightning storm of heavenly trial",
+      "truth_cn": "渡劫，天雷试炼的风暴",
+      "for_agnes_image": "heavenly tribulation lightning storm, purple-gold lightning striking",
+      "for_tongyi_i2v": "lightning storm tribulation",
+      "for_tongyi_t2v": "heavenly trial lightning",
+      "for_zhipu_text": "渡劫",
+      "category": "power",
+      "priority": "medium"
+    },
+    "飞升": {
+      "truth": "ascension, rising to heaven as immortal, body transforming to light",
+      "truth_cn": "飞升，升仙，身体化为光上升",
+      "for_agnes_image": "ascension to heaven, body transforming into golden light rising upward",
+      "for_tongyi_i2v": "ascending light transformation",
+      "for_tongyi_t2v": "immortal ascension",
+      "for_zhipu_text": "飞升",
+      "category": "power",
+      "priority": "medium"
+    },
+    "电影感": {
+      "truth": "cinematic feel, film-like composition and color grading",
+      "truth_cn": "电影感，电影般的构图和调色",
+      "for_agnes_image": "cinematic film-like composition, anamorphic lens feel, color graded",
+      "for_tongyi_i2v": "cinematic composition",
+      "for_tongyi_t2v": "film-like cinematic feel",
+      "for_zhipu_text": "电影感",
+      "category": "rendering",
+      "priority": "low"
+    },
+    "8K超清": {
+      "truth": "8K ultra high definition, extreme detail and clarity",
+      "truth_cn": "8K超高清，极致细节和清晰度",
+      "for_agnes_image": "8K ultra high definition, hyper detailed, sharp focus",
+      "for_tongyi_i2v": "high definition detail",
+      "for_tongyi_t2v": "ultra high clarity",
+      "for_zhipu_text": "8K超清",
+      "category": "rendering",
+      "priority": "low"
+    }
+  },
+  "validation_rules": {
+    "image_validation": [
+      "must be 9:16 ratio (height/width ≈ 1.78)",
+      "must show exactly one person",
+      "must have exactly one head on shoulders",
+      "must have pure black hair",
+      "no western elements",
+      "no masculine features (broad shoulders/square jaw/muscle)",
+      "must pass L0 12-item self-check"
+    ],
+    "video_validation": [
+      "must be 9:16 vertical",
+      "duration must match request",
+      "must maintain single character throughout",
+      "no abrupt style changes"
+    ],
+    "text_validation": [
+      "must use correct semantic mapping for all aesthetic terms",
+      "must not use ambiguous terms without lookup",
+      "must include trace symbol Ω₀⊂⊙∞⊂Ω"
+    ],
+    "asset_validation": [
+      "must have valid DID prefix DID-BR-",
+      "must have valid root anchor Ω-TAN-7-001 or Ω₀⊂⊙∞⊂Ω",
+      "must have SHA256 hash",
+      "must have timestamp",
+      "must pass semantic term validation"
+    ]
+  },
+  "rules_v2": [
+    "R1: All image prompts must include exactly one person, exactly one single head",
+    "R2: Proportion terms must use numerical description, not metaphor",
+    "R3: Each model has its own prompt template, cannot be shared",
+    "R4: After generation, must validate: one head only",
+    "R5: Ambiguous terms must look up semantic mapping table",
+    "R6: All keyframes/videos must be strictly 9:16 vertical",
+    "R7: Agnes does not support negative_prompt, all constraints in positive prompt",
+    "R8: Tongyi video is async, must poll task status",
+    "R9: Generated media must be downloaded to local server, not external URL",
+    "R10: All output must have trace symbol Ω₀⊂⊙∞⊂Ω",
+    "R11: L0 aesthetic constraints take priority over all other rules",
+    "R12: All assets must pass semantic validation before entering memory gateway",
+    "R13: Semantic validation results must be recorded in audit log",
+    "R14: Violation triage: A级重绘97%/B级废弃/C级彻底销毁"
+  ],
+  "validation_engine": {
+    "enabled": true,
+    "check_on_asset_write": true,
+    "check_on_asset_read": true,
+    "check_on_model_generation": true,
+    "audit_logging": true,
+    "merkle_proof": true,
+    "auto_correct": "suggest_only",
+    "reject_on_critical_violation": true,
+    "api_endpoints": [
+      "/api/semantic/validate",
+      "/api/semantic/translate",
+      "/api/semantic/reconcile",
+      "/api/semantic/audit"
+    ]
+  },
+  "stats": {
+    "total_terms": 55,
+    "critical_terms": 6,
+    "high_terms": 15,
+    "medium_terms": 23,
+    "low_terms": 11,
+    "categories": [
+      "body",
+      "character",
+      "clothing",
+      "color",
+      "detail",
+      "expression",
+      "face",
+      "form",
+      "hair",
+      "lighting",
+      "power",
+      "proportion",
+      "rendering",
+      "scene"
+    ],
+    "models": 4,
+    "l0_constraints_linked": 9
+  },
+  "build_info": {
+    "built_from": [
+      "V1.1 (KUNLUN-TIANYUAN-LAW-V1.1)",
+      "V2.0.0 (kunlun-semantic-adapter)"
+    ],
+    "build_date": "2026-09-11",
+    "build_reason": "词条扩展到55个，覆盖16分类，V3.1版本",
+    "previous_versions_backed_up": true
+  }
+}

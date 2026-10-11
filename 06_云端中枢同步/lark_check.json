@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "stage": "deliver",
+  "code": 0,
+  "markdownPath": "/home/user/Doubao/chats/38436747020400130/zongyuan-tech-whitepaper-20260911/deliverables/final.md",
+  "fetchedPath": "/home/user/Doubao/chats/38436747020400130/zongyuan-tech-whitepaper-20260911/.doubao-book-writer/doc_fetch.md",
+  "minCoverage": 0.85,
+  "coverage": 0.935,
+  "missingHeadingCount": 0,
+  "markdownPlaceholders": [],
+  "fetchedPlaceholders": [],
+  "failures": []
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "source": "approval_audit",
+    "time": "2026-09-29T12:10:00+08:00",
+    "item": "MA-COLD-START-001 冷启动全量接入公理",
+    "status": "APPROVED",
+    "lock_id": "LOCK-AXIOM-COLD-START-20260929-001",
+    "note": "人工审批通过，元公理转CONFIRMED并三端锁档只读",
+    "recorded_at": "2026-09-29T12:15:46+08:00",
+    "replay_count": 0
+  },
+  {
+    "source": "approval_audit",
+    "time": "2026-09-29T12:40:00+08:00",
+    "item": "MR-AXIOM-011~020 批量转正",
+    "status": "APPROVED",
+    "lock_id": "LOCK-E3-AXIOMS-20260929-001",
+    "note": "人工审批通过，E3公理体系完备闭环（10法则+10元公理转正，三角对账PASS）",
+    "recorded_at": "2026-09-29T12:28:58+08:00",
+    "replay_count": 0
+  },
+  {
+    "source": "approval_audit",
+    "time": "2026-09-29T12:50:00+08:00",
+    "item": "BOOTSTRAP 冷启动7.5步记忆回放预热",
+    "status": "APPROVED",
+    "lock_id": "LOCK-BOOTSTRAP-75-20260929-001",
+    "note": "人工审批通过，冷启动新增7.5步回放预热（审批202609290003）",
+    "recorded_at": "2026-09-29T12:52:00+08:00",
+    "replay_count": 0
+  },
+  {
+    "source": "approval_audit",
+    "time": "2026-09-29T14:00:00+08:00",
+    "item": "V2.5 三候选转公理（MA-DEPLOY-001 / MA-RW-WINDOW-001 / MA-COLD-PERF-001）",
+    "status": "APPROVED",
+    "lock_id": "V2.5-BASELINE-20260929-001",
+    "note": "人工审批通过，V2.5真实部署里程碑闭环",
+    "recorded_at": "2026-09-29T13:29:02+08:00",
+    "replay_count": 0,
+    "lock_id_source": "meta_axiom_registry.source_lock_id"
+  },
+  {
+    "source": "approval_audit",
+    "time": "2026-09-29T15:00:00+08:00",
+    "item": "V3.0-A1 三公理转正（MA-PERCEPTION-001 / MA-COORDINATION-001 / MA-OPTIMIZATION-001）",
+    "status": "APPROVED",
+    "lock_id": "LOCK-EVOLUTION-AXES-20260929-001",
+    "note": "人工审批通过；V3.0剩余缺口：演练2 + 三通道99.9%长期观测",
+    "recorded_at": "2026-09-29T13:29:02+08:00",
+    "replay_count": 0,
+    "lock_id_source": "meta_axiom_registry.source_lock_id"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "audit_id": "BOOT-MEMORY-BUILD-SYNC-20261006_143349",
+  "timestamp": "2026-10-06T14:33:49.097125",
+  "action": "构建本地内核启动记忆，同步更新到魔搭启动记忆",
+  "source": {
+    "modelscope_datalake": "15文件",
+    "feishu_shared_brain": "53表/12522条"
+  },
+  "local_artifacts": {
+    "json": "/home/user/Doubao/chats/38438602859247618/boot-memory/BOOT-MEMORY.json",
+    "md": "/home/user/Doubao/chats/38438602859247618/boot-memory/BOOT-MEMORY.md"
+  },
+  "content": {
+    "core_meta_laws": 25,
+    "capabilities": 31,
+    "cloud_components": 26,
+    "cold_boot_sop_steps": 7,
+    "channels": 3
+  },
+  "modelscope_sync": {
+    "repo": "zongyuanroot/ZONGYUAN-ROOT-PUBLIC-CORPUS",
+    "path": "04_启动记忆/BOOT-MEMORY.json + 04_启动记忆/BOOT-MEMORY.md",
+    "json_raw_url": "https://modelscope.cn/datasets/zongyuanroot/ZONGYUAN-ROOT-PUBLIC-CORPUS/resolve/master/04_启动记忆/BOOT-MEMORY.json",
+    "verification": "HTTP200, JSON 18280bytes有效, MD 9735bytes有效",
+    "note": "JSON走Git LFS存储(git clone见130B指针属正常, raw URL可完整下载)"
+  },
+  "sanitized": true,
+  "sanitization_fields": [
+    "ModelScope API key",
+    "飞书应用ID",
+    "tenant_access_token",
+    "通知群ID",
+    "Capture Token"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "engine": "MR-020-CONFLICT-RESOLUTION-ENGINE",
+  "version": "M1.2-SUPERCOGNITION",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "created_at": "2026-09-15",
+  "parent": "Ω-Brainμ 冲突检测 + MR020六维边界分析",
+  "pipeline": [
+    {"step": 1, "name": "冲突检测", "desc": "检测规则/真值间的矛盾（关键词矛盾+数值矛盾+边界矛盾）"},
+    {"step": 2, "name": "维度边界分析", "desc": "按六维(元/极/恒/一/超认知/永恒自治)划分适用边界，可划分→互补共存"},
+    {"step": 3, "name": "元公理生成", "desc": "无法划分→提取共性模式→生成更高维元公理统摄二者，原节点降级为实例"},
+    {"step": 4, "name": "留痕锁档", "desc": "消解结果写入conflict-resolution.log(追加)，上报记忆网关"}
+  ],
+  "meta_axiom_template": {
+    "axiom_id": "MR020-MA-{seq}",
+    "level": "meta_axiom",
+    "content": "统摄{conflict_a}与{conflict_b}的更高维公理：{resolution}",
+    "weight": 0.85,
+    "origin_nodes": ["{node_a}", "{node_b}"],
+    "status": "LOCKED"
+  },
+  "verdict": {"resolved": "边界划分或元公理生成", "unresolved": "上报人工仲裁(truth_type=conflict)"}
+}

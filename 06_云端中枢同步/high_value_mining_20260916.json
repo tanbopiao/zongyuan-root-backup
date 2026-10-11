@@ -1,0 +1,46 @@
+{
+  "report_id": "HIGH-VALUE-MINING-20260916",
+  "did": "DID-BR-000002",
+  "omega": "Ω₀⊂⊙∞⊂Ω",
+  "generated_at": "2026-09-16T06:22:59.107392+00:00",
+  "total_api_methods": 244,
+  "service_methods": {
+    "approval": 14,
+    "attendance": 1,
+    "calendar": 18,
+    "contact": 1,
+    "drive": 25,
+    "im": 41,
+    "mail": 57,
+    "mindnotes": 2,
+    "minutes": 1,
+    "okr": 23,
+    "sheets": 8,
+    "slides": 11,
+    "task": 31,
+    "vc": 1,
+    "wiki": 10
+  },
+  "gateway_status": {
+    "9120_truths_list": "502",
+    "8021_truths_list": "502",
+    "8021_gateway_truths": "401",
+    "8021_health": "200"
+  },
+  "deep_libs_ready": [
+    "openai",
+    "fastapi",
+    "sklearn",
+    "cv2",
+    "pandas",
+    "numpy",
+    "bs4",
+    "aiohttp",
+    "httpx"
+  ],
+  "changes": {
+    "services": [],
+    "gateways": [],
+    "libs": []
+  }
+}

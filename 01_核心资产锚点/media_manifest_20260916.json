@@ -1,0 +1,226 @@
+{
+  "manifest_id": "ZR-MEDIA-MANIFEST-20260916",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "created": "2026-09-16",
+  "total": 36,
+  "total_size_mb": 60.5,
+  "assets": [
+    {
+      "file": "media_assets/EP04_KF1.jpg",
+      "name": "EP04_KF1.jpg",
+      "sha256": "88da8c06528ec4e6",
+      "size": 1556439
+    },
+    {
+      "file": "media_assets/EP04_KF2.jpg",
+      "name": "EP04_KF2.jpg",
+      "sha256": "bb227315c479a01e",
+      "size": 1694314
+    },
+    {
+      "file": "media_assets/EP04_KF3.jpg",
+      "name": "EP04_KF3.jpg",
+      "sha256": "07faf830504da78a",
+      "size": 1925226
+    },
+    {
+      "file": "media_assets/EP05_KF1.jpg",
+      "name": "EP05_KF1.jpg",
+      "sha256": "80e5f15b1534e6da",
+      "size": 1921007
+    },
+    {
+      "file": "media_assets/EP05_KF2.jpg",
+      "name": "EP05_KF2.jpg",
+      "sha256": "e1ad47c61441d135",
+      "size": 1664244
+    },
+    {
+      "file": "media_assets/EP05_KF3.jpg",
+      "name": "EP05_KF3.jpg",
+      "sha256": "98c61b9f45184d4f",
+      "size": 1884775
+    },
+    {
+      "file": "media_assets/EP06_KF1.jpg",
+      "name": "EP06_KF1.jpg",
+      "sha256": "c004bec73e49f520",
+      "size": 1790867
+    },
+    {
+      "file": "media_assets/EP06_KF2.jpg",
+      "name": "EP06_KF2.jpg",
+      "sha256": "92ced8df9b8c8f15",
+      "size": 2055425
+    },
+    {
+      "file": "media_assets/EP06_KF3.jpg",
+      "name": "EP06_KF3.jpg",
+      "sha256": "ed9ee48ae56558e8",
+      "size": 1777611
+    },
+    {
+      "file": "media_assets/S4EP01_KF1.jpg",
+      "name": "S4EP01_KF1.jpg",
+      "sha256": "d02449d3f4b8b980",
+      "size": 1454587
+    },
+    {
+      "file": "media_assets/S4EP01_KF2.jpg",
+      "name": "S4EP01_KF2.jpg",
+      "sha256": "881c199293c6c7a8",
+      "size": 1781903
+    },
+    {
+      "file": "media_assets/S4EP01_KF3.jpg",
+      "name": "S4EP01_KF3.jpg",
+      "sha256": "7907e6a8eb1fdeee",
+      "size": 2012328
+    },
+    {
+      "file": "media_assets/20260915_archive/KF-XUANNV_design_01.jpg",
+      "name": "KF-XUANNV_design_01.jpg",
+      "sha256": "8ccc34c077180daf",
+      "size": 1137102
+    },
+    {
+      "file": "media_assets/20260915_archive/KF-XUANNV_design_02.jpg",
+      "name": "KF-XUANNV_design_02.jpg",
+      "sha256": "0996a01a11e833fc",
+      "size": 1544005
+    },
+    {
+      "file": "media_assets/20260915_archive/KF-XUANNV_design_03.jpg",
+      "name": "KF-XUANNV_design_03.jpg",
+      "sha256": "c20fb75c384bf20b",
+      "size": 1717293
+    },
+    {
+      "file": "media_assets/20260915_archive/KF-XUANNV_design_04.jpg",
+      "name": "KF-XUANNV_design_04.jpg",
+      "sha256": "fc816898d13ab69b",
+      "size": 1503988
+    },
+    {
+      "file": "media_assets/20260915_archive/KF-XUANNV_epic_01.jpg",
+      "name": "KF-XUANNV_epic_01.jpg",
+      "sha256": "ca07fc2f4cbe1ec4",
+      "size": 1904309
+    },
+    {
+      "file": "media_assets/20260915_archive/KF-XUANNV_epic_02.jpg",
+      "name": "KF-XUANNV_epic_02.jpg",
+      "sha256": "c45d4648b56975e7",
+      "size": 1839871
+    },
+    {
+      "file": "media_assets/20260915_archive/KF-XUANNV_epic_03.jpg",
+      "name": "KF-XUANNV_epic_03.jpg",
+      "sha256": "64cacc2478ab6966",
+      "size": 1920337
+    },
+    {
+      "file": "media_assets/20260915_archive/KF-XUANNV_epic_04.jpg",
+      "name": "KF-XUANNV_epic_04.jpg",
+      "sha256": "b268cbf1bd8dc450",
+      "size": 1921214
+    },
+    {
+      "file": "media_assets/20260915_archive/TAIYIN_descend_01.jpg",
+      "name": "TAIYIN_descend_01.jpg",
+      "sha256": "13e79d6c497c2056",
+      "size": 1545638
+    },
+    {
+      "file": "media_assets/20260915_archive/TAIYIN_descend_02.jpg",
+      "name": "TAIYIN_descend_02.jpg",
+      "sha256": "3379831d9fe76183",
+      "size": 1588085
+    },
+    {
+      "file": "media_assets/20260915_archive/TAIYIN_descend_03.jpg",
+      "name": "TAIYIN_descend_03.jpg",
+      "sha256": "db41741ae352fee6",
+      "size": 1539294
+    },
+    {
+      "file": "media_assets/20260915_archive/TAIYIN_descend_04.jpg",
+      "name": "TAIYIN_descend_04.jpg",
+      "sha256": "49e1457089ea0ef8",
+      "size": 1510164
+    },
+    {
+      "file": "media_assets/20260915_archive/TAIYIN_hands_01.jpg",
+      "name": "TAIYIN_hands_01.jpg",
+      "sha256": "a5c3c61f842f5d86",
+      "size": 1610603
+    },
+    {
+      "file": "media_assets/20260915_archive/TAIYIN_hands_02.jpg",
+      "name": "TAIYIN_hands_02.jpg",
+      "sha256": "a7e2b810419d7099",
+      "size": 1815291
+    },
+    {
+      "file": "media_assets/20260915_archive/TAIYIN_hands_03.jpg",
+      "name": "TAIYIN_hands_03.jpg",
+      "sha256": "388422a342487847",
+      "size": 1596683
+    },
+    {
+      "file": "media_assets/20260915_archive/TAIYIN_hands_04.jpg",
+      "name": "TAIYIN_hands_04.jpg",
+      "sha256": "1e74846b8228d36b",
+      "size": 1883683
+    },
+    {
+      "file": "media_assets/20260916_archive/XUANNV_kf_cand01.jpg",
+      "name": "XUANNV_kf_cand01.jpg",
+      "sha256": "dd7baa416fd45615",
+      "size": 1866644
+    },
+    {
+      "file": "media_assets/20260916_archive/XUANNV_kf_cand02.jpg",
+      "name": "XUANNV_kf_cand02.jpg",
+      "sha256": "8bbc291f6d2a07cd",
+      "size": 1991900
+    },
+    {
+      "file": "media_assets/20260916_archive/XUANNV_kf_cand02_fixed.jpg",
+      "name": "XUANNV_kf_cand02_fixed.jpg",
+      "sha256": "69437c2b397f7a6c",
+      "size": 1924108
+    },
+    {
+      "file": "media_assets/20260916_archive/XUANNV_kf_cand02_regen.jpg",
+      "name": "XUANNV_kf_cand02_regen.jpg",
+      "sha256": "a56a1b98f0e0ddc0",
+      "size": 1880061
+    },
+    {
+      "file": "media_assets/20260916_archive/XUANNV_kf_cand03.jpg",
+      "name": "XUANNV_kf_cand03.jpg",
+      "sha256": "dd1961343fa9685f",
+      "size": 1822157
+    },
+    {
+      "file": "media_assets/20260916_archive/XUANNV_kf_cand04.jpg",
+      "name": "XUANNV_kf_cand04.jpg",
+      "sha256": "513a69bb022815a7",
+      "size": 1967476
+    },
+    {
+      "file": "media_assets/20260916_archive/XUANNV_kf_next01.jpg",
+      "name": "XUANNV_kf_next01.jpg",
+      "sha256": "bbe136da2933dad9",
+      "size": 2037606
+    },
+    {
+      "file": "media_assets/20260916_archive/XUANNV_kf_next01_regen.jpg",
+      "name": "XUANNV_kf_next01_regen.jpg",
+      "sha256": "efb50499bde748c3",
+      "size": 1895073
+    }
+  ]
+}

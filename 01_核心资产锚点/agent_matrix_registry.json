@@ -1,0 +1,78 @@
+{
+  "matrix_id": "AGENT-MATRIX-001",
+  "did": "DID-BR-000002",
+  "trace": "Ω₀⊂⊙∞⊂Ω",
+  "version": "5.1",
+  "created": "2026-09-22T19:08:28.877408+00:00",
+  "agents": [
+    {
+      "id": "AGENT-CORE-001",
+      "name": "核心仲裁者",
+      "domain": "meta",
+      "role": "arbiter",
+      "weight": 1.0,
+      "status": "active"
+    },
+    {
+      "id": "AGENT-MEM-001",
+      "name": "记忆守护者",
+      "domain": "memory",
+      "role": "memory",
+      "weight": 0.9,
+      "status": "active"
+    },
+    {
+      "id": "AGENT-AUTO-001",
+      "name": "自动化执行者",
+      "domain": "automation",
+      "role": "executor",
+      "weight": 0.85,
+      "status": "active"
+    },
+    {
+      "id": "AGENT-EVO-001",
+      "name": "演化推动者",
+      "domain": "evolution",
+      "role": "evolver",
+      "weight": 0.8,
+      "status": "active"
+    },
+    {
+      "id": "AGENT-MON-001",
+      "name": "监控告警者",
+      "domain": "monitoring",
+      "role": "monitor",
+      "weight": 0.75,
+      "status": "active",
+      "activated_at": "2026-09-22T19:14:08.985263+00:00"
+    }
+  ],
+  "protocols": [
+    {
+      "id": "PROTO-COOP-001",
+      "name": "共识协议",
+      "type": "consensus",
+      "status": "active"
+    },
+    {
+      "id": "PROTO-COOP-002",
+      "name": "分工协议",
+      "type": "division",
+      "status": "active"
+    },
+    {
+      "id": "PROTO-COOP-003",
+      "name": "备份协议",
+      "type": "backup",
+      "status": "active"
+    }
+  ],
+  "stats": {
+    "total_agents": 5,
+    "active_agents": 5,
+    "dormant_agents": 0,
+    "total_protocols": 3,
+    "avg_weight": 0.86
+  },
+  "updated_at": "2026-09-22T19:14:08.985296+00:00"
+}

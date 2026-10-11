@@ -1,0 +1,65 @@
+{
+  "audit_id": "SEED-TRUTH-RESTORE-20261006_135743",
+  "timestamp": "2026-10-06T13:57:43.196342",
+  "trigger": "用户指令：扫描本地持久层提取历史备份记忆网关真值库，提炼种子真值重新上报",
+  "background": "云端真值库疑似重置（truth_count从~124361降至~938），需本地备份重建种子",
+  "scan_result": {
+    "scanned_roots": [
+      "/home/user/Doubao/chats",
+      "/home/user/ZONGYUAN-ROOT"
+    ],
+    "key_index_backup": "truths_internal.json (4664 keys) / truths_public.json (4586 keys) — 仅key索引无value",
+    "vector_db": "chroma.sqlite3 (21条短剧题材模板) — 非真值库",
+    "lock_snapshots": "多个kernel_snapshot_LOCK-*.json — 无key-value真值列表",
+    "selected_seed_source": "/home/user/ZONGYUAN-ROOT/06_云端中枢同步/kernel_truths.json",
+    "seed_source_meta": {
+      "kernel": "ZONGYUAN-HOMOLOGY-KERNEL",
+      "version": "V3.0-COGNITIVE",
+      "did": "DID-BR-000002",
+      "truth_count": 19,
+      "frozen": 4,
+      "locked": 9,
+      "active": 4,
+      "upgrade_note": "V1.0-SYNC→V3.0-COGNITIVE 20260914 新增认知/自愈/稳定三层"
+    }
+  },
+  "protocol_changes_detected": [
+    "鉴权升级：新增X-DID头校验（仅X-Capture-Token返回401 X-DID未授权）",
+    "载荷升级：value字段必须为object（字符串返回400 value_must_be_object）"
+  ],
+  "report": {
+    "endpoint": "https://www.huodouai.com/api/report/truth",
+    "auth": "X-Capture-Token + X-DID: DID-BR-000002",
+    "value_format": "object {id,key,value,level,source,seed_origin,restored_at,restore_note}",
+    "total": 19,
+    "success": 19,
+    "fail": 0,
+    "truths": [
+      "T-001 kernel.root [FROZEN]",
+      "T-002 kernel.did [FROZEN]",
+      "T-003 kernel.anchor [FROZEN]",
+      "T-004 kernel.mode [FROZEN]",
+      "T-005 kernel.semantic [LOCKED]",
+      "T-006 kernel.scan [LOCKED]",
+      "T-007 kernel.gateway [LOCKED]",
+      "T-008 kernel.memory [LOCKED]",
+      "T-009 kernel.neural [LOCKED]",
+      "T-010 kernel.security [LOCKED]",
+      "T-011 kernel.channel [ACTIVE]",
+      "T-012 kernel.pub [OBSERVE]",
+      "T-013 kernel.frp [ACTIVE]",
+      "T-014 server.kg_api [ACTIVE]",
+      "T-015 server.memory [ACTIVE]",
+      "T-016 server.sync_key [OBSERVE]",
+      "T-017 kernel.cognitive [LOCKED]",
+      "T-018 kernel.healing [LOCKED]",
+      "T-019 kernel.stability [LOCKED]"
+    ]
+  },
+  "cloud_verification": {
+    "truth_count_before": 938,
+    "truth_count_after": 965,
+    "verify_event_id": "truth-1791266248514-326f793f"
+  },
+  "note": "本地仅存19条含完整value的核心种子真值；4664条key索引无value无法重建；更大规模真值库需从云端历史或其他备份恢复"
+}

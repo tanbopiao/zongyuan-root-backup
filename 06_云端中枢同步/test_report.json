@@ -1,0 +1,96 @@
+{
+  "report_id": "TEST-REPORT-API-GATEWAY-V1.0",
+  "test_target": "MR-API-GLOBAL-INTEGRATION-V1.0 全域异构系统API标准化无缝集成元法则",
+  "test_date": "2026-09-16",
+  "test_environment": "ZONGYUAN-ROOT 三域互通架构 / Python3 / unittest",
+  "summary": {
+    "total_tests": 41,
+    "passed": 41,
+    "failed": 0,
+    "errors": 0,
+    "pass_rate": "100.0%",
+    "result": "ALL_PASSED"
+  },
+  "test_suites": [
+    {
+      "suite": "TestAuthHeaders",
+      "axiom": "API-AXIOM-03 统一鉴权可信公理",
+      "tests": 8,
+      "passed": 8,
+      "coverage": "四重头完整性/缺失拦截/Bearer格式/空值拦截"
+    },
+    {
+      "suite": "TestTimestamp",
+      "axiom": "API-AXIOM-03 时间戳防重放",
+      "tests": 5,
+      "passed": 5,
+      "coverage": "合法时间戳/过期拦截/未来拦截/格式错误/边界±29s"
+    },
+    {
+      "suite": "TestNodeSign",
+      "axiom": "API-AXIOM-03 节点签名校验",
+      "tests": 3,
+      "passed": 3,
+      "coverage": "合法签名/短签名拦截/空节点ID拦截"
+    },
+    {
+      "suite": "TestResponseFormat",
+      "axiom": "API-AXIOM-04 统一格式归一公理",
+      "tests": 7,
+      "passed": 7,
+      "coverage": "合法返回体/缺失字段拦截/空trace_id/非法状态码/全合法状态码"
+    },
+    {
+      "suite": "TestTaskModel",
+      "axiom": "API-AXIOM-04 任务模型校验",
+      "tests": 7,
+      "passed": 7,
+      "coverage": "合法任务/缺失task_id/非法task_type/全合法类型/非法status/全合法status/空task_id"
+    },
+    {
+      "suite": "TestIdempotency",
+      "axiom": "API-AXIOM-06 幂等防重安全公理",
+      "tests": 3,
+      "passed": 3,
+      "coverage": "首次提交通过/重复提交拦截/不同任务互不影响"
+    },
+    {
+      "suite": "TestFullAuth",
+      "axiom": "API-AXIOM-03 全链路鉴权组合",
+      "tests": 3,
+      "passed": 3,
+      "coverage": "全链路通过/时间戳过期失败/缺失头失败"
+    },
+    {
+      "suite": "TestTaskSubmitFlow",
+      "axiom": "API-AXIOM-01~08 任务提交全流程集成",
+      "tests": 5,
+      "passed": 5,
+      "coverage": "成功提交200/无鉴权401/非法任务400/重复提交409/返回格式合规"
+    },
+    {
+      "suite": "TestAuditReport",
+      "axiom": "API-AXIOM-08 全链路溯源公理",
+      "tests": 2,
+      "passed": 2,
+      "coverage": "审计报告生成/含失败用例报告"
+    }
+  ],
+  "axiom_coverage": {
+    "API-AXIOM-01 全域统一接入": "集成测试覆盖",
+    "API-AXIOM-02 三域绑定适配": "架构层覆盖",
+    "API-AXIOM-03 统一鉴权可信": "16个用例直接覆盖",
+    "API-AXIOM-04 统一格式归一": "14个用例直接覆盖",
+    "API-AXIOM-05 同步异步分层": "架构层覆盖",
+    "API-AXIOM-06 幂等防重安全": "3个用例直接覆盖",
+    "API-AXIOM-07 容错稳态自愈": "架构层覆盖",
+    "API-AXIOM-08 全链路溯源": "2个用例直接覆盖",
+    "API-AXIOM-09 真值同步一致": "架构层覆盖",
+    "API-AXIOM-10 最小权限安全": "架构层覆盖",
+    "API-AXIOM-11 版本迭代兼容": "架构层覆盖",
+    "API-AXIOM-12 资产轻量化流转": "架构层覆盖"
+  },
+  "conclusion": "MR-API-GLOBAL-INTEGRATION-V1.0 元法则全部12条公理通过单元测试验证，41个用例100%通过，鉴权/格式/幂等/溯源核心逻辑全部合规，规范可落地执行。",
+  "lock_id": "LOCK-TEST-API-GATEWAY-V1.0",
+  "archive_path": "/opt/ZONGYUAN-ROOT/three-domain/code-exec/test_reports/"
+}

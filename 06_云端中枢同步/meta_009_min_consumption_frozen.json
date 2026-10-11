@@ -1,0 +1,56 @@
+{
+  "meta_rule_id": "META-009",
+  "name": "最小消耗最优稳态生成元规则",
+  "version": "1.0-FROZEN",
+  "status": "FROZEN",
+  "frozen_time": "2026-09-09T10:53:53.752126+00:00",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "definition": "每次任务执行都必须学习、优化、进化，最终达到最小Token消耗产出最大成品的战略目标",
+  "core_principle": "最小Token产出最大成品",
+  "five_mechanisms": [
+    {
+      "id": "M1",
+      "name": "任务埋点采集",
+      "description": "每次任务执行记录Token消耗、时长、成功率、成品质量"
+    },
+    {
+      "id": "M2",
+      "name": "成功/失败样本萃取",
+      "description": "从历史任务中萃取最优路径和失败模式，形成经验库"
+    },
+    {
+      "id": "M3",
+      "name": "优化调整回灌",
+      "description": "将经验库中的优化策略回灌到后续任务的提示词和流程中"
+    },
+    {
+      "id": "M4",
+      "name": "验证收敛",
+      "description": "持续验证优化效果，直到消耗-产出比收敛到最优稳态"
+    },
+    {
+      "id": "M5",
+      "name": "版本固化锁档",
+      "description": "达到最优稳态后，将流程和提示词版本固化锁档，作为基准"
+    }
+  ],
+  "metrics": {
+    "token_per_output": "Token消耗量/成品质量分",
+    "convergence_target": "连续3次任务消耗波动<5%且成品质量稳定",
+    "optimization_frequency": "每批次任务后执行一次优化回灌"
+  },
+  "applicable_scenarios": [
+    "视频生成",
+    "短剧流水线",
+    "内容创作",
+    "代码生成",
+    "API调用优化"
+  ],
+  "related_meta_rules": [
+    "META-RISK-ASSESSMENT-V1.0",
+    "META-CONFLICT-PREVENTION-V1.0"
+  ],
+  "note": "由用户在视频生成API调研后提出，对话中已完整定义，本次正式锁档",
+  "merkle_root": "72b3c28d1eec06f3a821bd39d77724c5a7189bd80b614b1e2005c81dc2759cbc"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "stage": "prepare",
+  "code": 0,
+  "workspace": "/home/user/Doubao/chats/38436747020400130/zongyuan-tech-whitepaper-20260911",
+  "layout": "short",
+  "layoutSource": "filesystem",
+  "checklistPath": ".doubao-book-writer/requirement-checklist.json",
+  "outline": null,
+  "failures": []
+}

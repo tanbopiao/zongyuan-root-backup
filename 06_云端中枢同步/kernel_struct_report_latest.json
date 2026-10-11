@@ -1,0 +1,36 @@
+{
+  "report_time": "2026-09-15T22:10:13.898624+00:00",
+  "audit": {
+    "low_weight": 0,
+    "domain_redundant": 0,
+    "type_redundant": 0,
+    "missing_fields": 0
+  },
+  "optimizations": {
+    "weight_boosted": 0,
+    "domain_normalized": 0,
+    "type_normalized": 0,
+    "weight_propagated": 0,
+    "meta_completed": 0
+  },
+  "detail": {
+    "low_weight_nodes": [],
+    "domain_map": {
+      "operations": "ops",
+      "infrastructure": "infra"
+    },
+    "type_map": {
+      "operation_rule": "rule",
+      "lock_axiom": "axiom",
+      "infrastructure": "rule"
+    }
+  },
+  "sync": {
+    "rc": 0,
+    "out": "{\n  \"status\": \"success\",\n  \"action\": \"push\",\n  \"version\": 91,\n  \"window\": \"NODE-MAIN-SESSION-38436546492378882\",\n  \"timestamp\": \"2026-09-16T06:10:14.065250\",\n  \"nodes\": 335,\n  \"connections\": 2004,\n  \""
+  },
+  "kernel_version": "V2.3.0-GIT-BRIDGE-LOCKED",
+  "total_nodes": 335,
+  "total_connections": 2004,
+  "verdict": "STRUCT_OPTIMIZED"
+}

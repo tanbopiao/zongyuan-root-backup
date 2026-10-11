@@ -1,0 +1,26 @@
+{
+  "case_id": "MR020-CASE-001",
+  "source": "云端EFUSE-0017真值(2026-09-12留痕)",
+  "conflict_pair": [
+    {"node": "EFUSE-0017.steady_operator_declared", "claim": "利益40%/风险35%/成本25%"},
+    {"node": "UNI-STEADY-CORE-V1.0", "claim": "0.3U+0.4R+0.3C（利益30%/风险40%/成本30%）"}
+  ],
+  "detection": {
+    "method": "数值矛盾检测",
+    "finding": "利益权重40%≠30%，风险35%≠40%，成本25%≠30%——三权重均冲突，原状态=异源声明留痕不确权，待人工仲裁"
+  },
+  "dimension_boundary_analysis": {
+    "dimension": "恒·稳态（稳态算子权重分配）",
+    "finding": "两声明同域（稳态裁决算子），无法按维度边界互补共存 → 触发元公理生成",
+    "basis": "MR-007资源熔断 + 稳态裁决公式适用域"
+  },
+  "meta_axiom_generated": {
+    "axiom_id": "MR020-MA-001",
+    "content": "稳态算子权重统摄公理：稳态裁决公式权重分配须经云端基线校验确立唯一版本；异源声明一律留痕不确权，以云端基线为准；后续权重修订须MR-010审批并分支化迭代",
+    "weight": 0.85,
+    "unified": "利益/风险/成本三权重不再两套并存，统一由云端基线仲裁，异源声明降级为历史实例",
+    "status": "LOCKED"
+  },
+  "resolution_result": "RESOLVED（元公理生成）",
+  "log_appended": "conflict-resolution.log +1条"
+}

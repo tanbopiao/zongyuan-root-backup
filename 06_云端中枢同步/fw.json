@@ -1,0 +1,187 @@
+{
+    "TotalCount": 41,
+    "FirewallRuleSet": [
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8766",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "视频"
+        },
+        {
+            "AppType": "Linux 登录 (22)",
+            "Protocol": "TCP",
+            "Port": "22",
+            "CidrBlock": "101.201.214.131/32",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "ZONGYUAN-ROOT SSH"
+        },
+        {
+            "AppType": "HTTPS (443)",
+            "Protocol": "TCP",
+            "Port": "443",
+            "CidrBlock": "101.201.214.131/32",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "ZONGYUAN-ROOT HTTPS"
+        },
+        {
+            "AppType": "HTTP (80)",
+            "Protocol": "TCP",
+            "Port": "80",
+            "CidrBlock": "101.201.214.131/32",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "ZONGYUAN-ROOT HTTP"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8020",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "政务"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8020",
+            "CidrBlock": "",
+            "Ipv6CidrBlock": "::/0",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "政务"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8006",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": ""
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8006",
+            "CidrBlock": "",
+            "Ipv6CidrBlock": "::/0",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": ""
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "7100",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "frps"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "7100",
+            "CidrBlock": "",
+            "Ipv6CidrBlock": "::/0",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "frps"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8017",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "本地aios"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8017",
+            "CidrBlock": "",
+            "Ipv6CidrBlock": "::/0",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "本地aios"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "31024",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "LightClaw ACE WebUI"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "37663",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "OpenClaw WebUI"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "15006",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "Hermes WebUI"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "27260",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "LightClaw ACE WebUI"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8082",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "官网"
+        },
+        {
+            "AppType": "Windows登录 (3389)",
+            "Protocol": "TCP",
+            "Port": "3389",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "Windows远程桌面登录"
+        },
+        {
+            "AppType": "Windows登录优化 (3389)",
+            "Protocol": "UDP",
+            "Port": "3389",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "Windows远程桌面登录优化"
+        },
+        {
+            "AppType": "自定义",
+            "Protocol": "TCP",
+            "Port": "8081",
+            "CidrBlock": "0.0.0.0/0",
+            "Ipv6CidrBlock": "",
+            "Action": "ACCEPT",
+            "FirewallRuleDescription": "本源AI"
+        }
+    ],
+    "FirewallVersion": 37,
+    "RequestId": "d1b459a4-e4e3-4362-bd02-feeb2de16e60"
+}

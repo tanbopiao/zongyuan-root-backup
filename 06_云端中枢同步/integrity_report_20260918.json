@@ -1,0 +1,11 @@
+{
+  "report_id": "integrity_report_20260918",
+  "created": "2026-09-18T00:30:00+08:00",
+  "checked_images": 64,
+  "checked_videos": 4,
+  "total": 68,
+  "passed": 68,
+  "mismatch": 0,
+  "missing": 0,
+  "corrupt": 0
+}

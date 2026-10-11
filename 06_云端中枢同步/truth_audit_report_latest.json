@@ -1,0 +1,61 @@
+{
+  "audit_time": "2026-09-20T22:09:31.455233+00:00",
+  "gateway": "http://drama.huodouai.com:9120",
+  "total_checked": 4,
+  "pass_count": 4,
+  "warn_count": 0,
+  "results": [
+    {
+      "key": "CLOUD-ACCESS-SOP-V1.1-LOCAL",
+      "cloud_id": 9433,
+      "cloud_version": 1,
+      "cloud_updated_at": 1789533865,
+      "node_id": "local-dev-001",
+      "local_content_hash": "c870336fc1e080be49cd5d3f68ff63ebe0d1315f3885d999e2e8a0188e356f8f",
+      "d1_exists": true,
+      "d2_version_ok": true,
+      "d3_timestamp_ok": true,
+      "d4_hash_recorded": true,
+      "status": "PASS"
+    },
+    {
+      "key": "ANCHOR-PORT-UPDATE-20260915",
+      "cloud_id": 9418,
+      "cloud_version": 1,
+      "cloud_updated_at": 1789441563.4466863,
+      "node_id": "local-dev-001",
+      "local_content_hash": "2eca6a11cd78e197a1e75c9b2ef16fdf5b95a13a3eb37ca37b9d4b8bfdf7b188",
+      "d1_exists": true,
+      "d2_version_ok": true,
+      "d3_timestamp_ok": true,
+      "d4_hash_recorded": true,
+      "status": "PASS"
+    },
+    {
+      "key": "DEPLOY-REQUEST-SOP-V1.1-PORT-UPDATE-20260915",
+      "cloud_id": 9438,
+      "cloud_version": 1,
+      "cloud_updated_at": 1789533865,
+      "node_id": "local-dev-001",
+      "local_content_hash": "0b7335f364ab87b25c2d108669e529b3b928fff22acccf98b08e1c2deaf76767",
+      "d1_exists": true,
+      "d2_version_ok": true,
+      "d3_timestamp_ok": true,
+      "d4_hash_recorded": true,
+      "status": "PASS"
+    },
+    {
+      "key": "DEPLOY-APPROVED-SOP-V1.1-20260915",
+      "cloud_id": 9784,
+      "cloud_version": 1,
+      "cloud_updated_at": 1789533865,
+      "node_id": "local-dev-001",
+      "local_content_hash": "dfa2994ed14a7017a8e6aa12caa8be7abac3c85da79723bebe8b6f11a816dcd3",
+      "d1_exists": true,
+      "d2_version_ok": true,
+      "d3_timestamp_ok": true,
+      "d4_hash_recorded": true,
+      "status": "PASS"
+    }
+  ]
+}

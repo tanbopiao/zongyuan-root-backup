@@ -1,0 +1,195 @@
+{
+ "run_id": "DISPATCH-20260916-030845",
+ "central": {
+  "capabilities": [
+   {
+    "cap_id": "CAP-001",
+    "name": "云端握手",
+    "name_en": "CLOUD-HANDSHAKE",
+    "category": "云端接入",
+    "source": "S-001(握手成功)/E-001,E-002(通道与Token教训)",
+    "trigger": "需要接入/验证云端时",
+    "steps": [
+     "门户探测→health检查→鉴权→数据拉取→哈希核验→上报"
+    ],
+    "outputs": "握手结论+鉴权状态+数据快照",
+    "verify": "四步全通+SHA-256匹配",
+    "negative_constraints": [
+     "禁用IP直连(走域名)",
+     "Token用最新轮换版"
+    ]
+   },
+   {
+    "cap_id": "CAP-002",
+    "name": "三端锁档",
+    "name_en": "TRIPLE-LOCK",
+    "category": "归档",
+    "source": "S-002~S-007(多轮锁档成功)",
+    "trigger": "任何资产需要固化时",
+    "steps": [
+     "知识库文档→台账记录→云盘归档→内核快照→神经同步"
+    ],
+    "outputs": "FROZEN锁档回执(含全部链接)",
+    "verify": "台账回读+神经同步校验",
+    "negative_constraints": [
+     "锁档后只读",
+     "增量用increment不覆盖"
+    ]
+   },
+   {
+    "cap_id": "CAP-003",
+    "name": "元法则同步",
+    "name_en": "METALAW-SYNC",
+    "category": "元法则",
+    "source": "S-002/S-003(漂移比对+注册)",
+    "trigger": "检测元法则漂移/补全时",
+    "steps": [
+     "拉取云端全集→语义比对→补全清单→注册→锁档"
+    ],
+    "outputs": "漂移报告+注册表+真值表",
+    "verify": "对齐/漂移数量核验+REGISTERED状态",
+    "negative_constraints": [
+     "比对需标注口径",
+     "正文级对齐需内网"
+    ]
+   },
+   {
+    "cap_id": "CAP-004",
+    "name": "云端探测",
+    "name_en": "CLOUD-PROBE",
+    "category": "监控",
+    "source": "E-003/E-006(502与抽样限制)",
+    "trigger": "每次任务前/定时机制运行时",
+    "steps": [
+     "三通道探测(门户/API/静态)→故障分级→归档"
+    ],
+    "outputs": "通道状态码+可用性结论",
+    "verify": "状态码实测(200/502/404/401)",
+    "negative_constraints": [
+     "502≠000(网络通但后端挂)",
+     "结论标注覆盖范围"
+    ]
+   },
+   {
+    "cap_id": "CAP-005",
+    "name": "资产盘点",
+    "name_en": "ASSET-INVENTORY",
+    "category": "资产",
+    "source": "S-006(门户资产盘点)",
+    "trigger": "需要资产清单/索引时",
+    "steps": [
+     "门户解析→本地扫描→分类聚合→索引JSON"
+    ],
+    "outputs": "资产索引(统计+清单)",
+    "verify": "数量核对+URL可访问抽样",
+    "negative_constraints": [
+     "API宕机时标注非全量",
+     "禁止伪造回执(四重核验)"
+    ]
+   },
+   {
+    "cap_id": "CAP-006",
+    "name": "待补发队列",
+    "name_en": "PENDING-UPLOAD",
+    "category": "容错",
+    "source": "E-003(上报失败处理)",
+    "trigger": "云端上报失败时",
+    "steps": [
+     "构造载荷→尝试上报→失败入队→恢复补发"
+    ],
+    "outputs": "pending队列JSON+补发回执",
+    "verify": "队列计数+补发后total增长",
+    "negative_constraints": [
+     "失败不丢数据",
+     "Token不存明文"
+    ]
+   },
+   {
+    "cap_id": "CAP-007",
+    "name": "自动化机制",
+    "name_en": "CRON-AUTOMATION",
+    "category": "自动化",
+    "source": "S-004(月度同步机制)",
+    "trigger": "需要周期执行/持续监控时",
+    "steps": [
+     "需求解析→cron创建→时间校验→SOP锁档"
+    ],
+    "outputs": "定时任务+机制文档",
+    "verify": "get_current_time校验+任务ACTIVE",
+    "negative_constraints": [
+     "避高峰时段",
+     "query不存凭证明文"
+    ]
+   },
+   {
+    "cap_id": "CAP-008",
+    "name": "神经同步",
+    "name_en": "NEURAL-SYNC",
+    "category": "内核",
+    "source": "S-007(锁档后自动同步)",
+    "trigger": "每次锁档完成后",
+    "steps": [
+     "锁档→推送注册表→权威副本校验"
+    ],
+    "outputs": "节点/连接数+校验结论",
+    "verify": "本地=权威 校验通过",
+    "negative_constraints": [
+     "同步失败需重推",
+     "不覆盖FROZEN资产"
+    ]
+   }
+  ],
+  "cap_total": 8,
+  "metalaw_total": 34,
+  "pending_total": 4,
+  "pending_file": "/home/user/Doubao/chats/38437615670548738/zongyuan-anchor/pending_upload_20260915.json",
+  "success_count": 0
+ },
+ "decisions": [
+  {
+   "priority": "P0",
+   "action": "dispatch_pending",
+   "targets": [
+    "PEND-20260915-001",
+    "PEND-20260915-002",
+    "PEND-20260915-003",
+    "PEND-20260915-004"
+   ]
+  }
+ ],
+ "outputs": {
+  "deploy": null,
+  "pending": [
+   {
+    "id": "PEND-20260915-001",
+    "ok": true,
+    "report_id": "RPT-1789499339-66ab19ed"
+   },
+   {
+    "id": "PEND-20260915-002",
+    "ok": true,
+    "report_id": "RPT-1789499340-a3c9bd9a"
+   },
+   {
+    "id": "PEND-20260915-003",
+    "ok": true,
+    "report_id": "RPT-1789499342-b52189e2"
+   },
+   {
+    "id": "PEND-20260915-004",
+    "ok": true,
+    "report_id": "RPT-1789499343-1c29fb9a"
+   }
+  ]
+ },
+ "ledger": {
+  "ok": true,
+  "record_id": "recvvjKSuaFeKu"
+ },
+ "report": {
+  "ok": true,
+  "report_id": "RPT-1789499345-f39dc375",
+  "channel": "http://drama.huodouai.com:9120"
+ },
+ "run_at": "2026-09-16T03:09:05+08:00"
+}

@@ -1,0 +1,66 @@
+{
+  "report_time": "2026-09-15T19:10:05.929294+00:00",
+  "inventory": {
+    "total": 11,
+    "by_freq": {
+      "monthly": 1,
+      "30m": 1,
+      "daily": 4,
+      "6h": 5
+    },
+    "by_domain": {
+      "neural": 1,
+      "dashboard": 1,
+      "sop": 1,
+      "sandbox": 1,
+      "meta": 1,
+      "kernel": 1,
+      "explore": 1,
+      "website": 1,
+      "cloud": 1,
+      "asset": 1,
+      "archive": 1
+    },
+    "disabled": [
+      "同源节点同步学习进化"
+    ]
+  },
+  "integration_plan": {
+    "integrable_groups": [],
+    "six_h_batch": {
+      "name": "六小时综合自检批次",
+      "domains": [
+        "asset",
+        "cloud",
+        "sop",
+        "dashboard"
+      ],
+      "tasks": [
+        "数字资产流水线自动巡检",
+        "云端记忆网关健康巡检",
+        "SOP自动更新补全",
+        "生命周期看板自动重建"
+      ],
+      "benefit": "将4个6小时任务整合为1次批次调度，减少调度开销，统一巡检节奏"
+    }
+  },
+  "executor": "/home/user/Doubao/chats/38438491307070978/task_integrate/integrated_executor.sh",
+  "syntax_valid": true,
+  "executor_rc": 0,
+  "cloud": {
+    "success": true,
+    "action": "inserted",
+    "key": "TASK-INTEGRATE-20260915-1910",
+    "validation": {
+      "skipped": true,
+      "semantic_check": null,
+      "l0_check": null,
+      "issues": [
+        "文本内容过短或无中文，跳过语义校验"
+      ]
+    },
+    "truth_count": 12214,
+    "message": "真值写入成功（已通过语义前置校验）"
+  },
+  "verdict": "INTEGRATE_ACTIVE"
+}

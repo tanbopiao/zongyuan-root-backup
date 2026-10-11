@@ -1,0 +1,43 @@
+{
+ "run_id": "DEPLOY-20261010-175926",
+ "probe": {
+  "results": [
+   {
+    "url": "https://www.huodouai.com/api/deploy",
+    "code": 404
+   },
+   {
+    "url": "https://www.huodouai.com/api/page",
+    "code": 404
+   },
+   {
+    "url": "https://www.huodouai.com/api/html/upload",
+    "code": 404
+   },
+   {
+    "url": "https://www.huodouai.com/api/publish",
+    "code": 404
+   }
+  ],
+  "deploy_api_available": false,
+  "available": []
+ },
+ "deployed": [
+  {
+   "name": "元意识七层架构-通俗版",
+   "path": "/home/user/ZONGYUAN-ROOT/03_文档资产/白皮书与报告/元意识七层架构白皮书-通俗版-v1.1.html",
+   "ok": false,
+   "error": "aka tool not available (use FileBatchUpload)",
+   "channel": "aka"
+  }
+ ],
+ "report": {
+  "ok": false,
+  "error": "all channels failed"
+ },
+ "ledger": {
+  "ok": true,
+  "record_id": "reczz28LfP4PKR7g"
+ },
+ "run_at": "2026-10-10T17:59:37+08:00"
+}

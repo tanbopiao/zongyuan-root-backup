@@ -1,0 +1,93 @@
+{
+  "updated_at": "2026-09-16T12:39:26",
+  "total": 6,
+  "new_this_run": 0,
+  "products": [
+    {
+      "product_id": "PRD-20260915-840A",
+      "asset_id": "AST-20260915-A344",
+      "name": "昆仑洞天DRAMAaaS · 创意ZONGYUAN-ROOT 短剧…",
+      "product_line": "P0-dramaaas",
+      "selling_points": [
+        "60集批量工业化短剧生产流水线，母版锁档即插即用",
+        "高稀缺性：元级/母版级资产，竞品稀缺",
+        "来源真值 creative · 置信度 0.92"
+      ],
+      "target_customer": "短剧厂牌 / MCN / 内容工作室",
+      "status": "DRAFT",
+      "description": "基于真值 creative.drama.60ep.batch_methodology 提炼，归属产品线 昆仑洞天DRAMAaaS。【创意】ZONGYUAN-ROOT 短剧工业化60集批量生产方法论：母版锁档→5镜×10s分镜→关键帧→图生视频→后期合成→宣发，全链路SOP闭环"
+    },
+    {
+      "product_id": "PRD-20260915-09F8",
+      "asset_id": "AST-20260915-F578",
+      "name": "自治内核咨询实施 · 元法则自治内核元进化法则：任意自维持…",
+      "product_line": "P0-consulting",
+      "selling_points": [
+        "以元公理空间为底座，提供自治内核诊断、规则沉淀与闭环实施咨询",
+        "高质量分 0.87，已通过网关校验",
+        "高稀缺性：元级/母版级资产，竞品稀缺",
+        "来源真值 meta_law · 置信度 0.95"
+      ],
+      "target_customer": "追求自治内核落地的中大型企业技术决策层 / 创始人",
+      "status": "DRAFT",
+      "description": "基于真值 meta_law.autonomous.kernel.evolution_rule 提炼，归属产品线 自治内核咨询实施。【元法则】自治内核元进化法则：任意自维持系统需经模态提取→边界识别→耦合网络→记忆连续性→七阶段进化循环→绝热路径规划→锁档归档，方为活态内核"
+    },
+    {
+      "product_id": "PRD-20260915-23CE",
+      "asset_id": "AST-20260915-62E5",
+      "name": "昆仑洞天DRAMAaaS · 创意全域资产产品化商业化方案可视化仪…",
+      "product_line": "P0-dramaaas",
+      "selling_points": [
+        "60集批量工业化短剧生产流水线，母版锁档即插即用",
+        "高质量分 0.89，已通过网关校验",
+        "高稀缺性：元级/母版级资产，竞品稀缺",
+        "来源真值 creative · 置信度 0.95"
+      ],
+      "target_customer": "短剧厂牌 / MCN / 内容工作室",
+      "status": "DRAFT",
+      "description": "基于真值 creative.vision.productization.dashboard.20260915 提炼，归属产品线 昆仑洞天DRAMAaaS。【创意】全域资产产品化商业化方案可视化仪表盘：六大产品矩阵(P0咨询3000-5000元人天/DRAMAaaS 99-3999元月/P1基座980元月起/展示5万起/API网关/P2培…"
+    },
+    {
+      "product_id": "PRD-20260915-9E7A",
+      "asset_id": "AST-20260915-0384",
+      "name": "认证培训 · 资产元法则视频量产通道自动故障转移：…",
+      "product_line": "P2-academy",
+      "selling_points": [
+        "认证培训：从元公理到工业化量产的体系化课程",
+        "高稀缺性：元级/母版级资产，竞品稀缺",
+        "来源真值 meta_rule · 置信度 0.90"
+      ],
+      "target_customer": "希望掌握 ZONGYUAN-ROOT 方法论的个人与团队",
+      "status": "DRAFT",
+      "description": "基于真值 meta_rule.META-RULE.VIDEO-PRODUCTION-FAILOVER-V1.0 提炼，归属产品线 认证培训。【资产】【元法则】视频量产通道自动故障转移：视频通道优先级: ①豆包seedance(免费开通后最高质量优先) ②Agnes免费(限流窗口内) ③硅基流动(有余额)。额度/限流/未开通…"
+    },
+    {
+      "product_id": "PRD-20260915-C472",
+      "asset_id": "AST-20260915-032E",
+      "name": "认证培训 · 资产元法则数字资产可视化基准架构与扩…",
+      "product_line": "P2-academy",
+      "selling_points": [
+        "认证培训：从元公理到工业化量产的体系化课程",
+        "高稀缺性：元级/母版级资产，竞品稀缺",
+        "来源真值 meta_rule · 置信度 0.90"
+      ],
+      "target_customer": "希望掌握 ZONGYUAN-ROOT 方法论的个人与团队",
+      "status": "DRAFT",
+      "description": "基于真值 meta_rule.MR-083 提炼，归属产品线 认证培训。【资产】【元法则】数字资产可视化基准架构与扩展规范：{\"purpose\": \"锁定数字资产可视化全流程为基准架构，定义标准化扩展规范，所有新增模块在基准上叠加，禁止推翻重构\", \"ba…"
+    },
+    {
+      "product_id": "PRD-20260915-A8B7",
+      "asset_id": "AST-20260915-FC31",
+      "name": "认证培训 · 资产元法则已固化成果变更审批（LOC…",
+      "product_line": "P2-academy",
+      "selling_points": [
+        "认证培训：从元公理到工业化量产的体系化课程",
+        "高稀缺性：元级/母版级资产，竞品稀缺",
+        "来源真值 meta_rule · 置信度 0.90"
+      ],
+      "target_customer": "希望掌握 ZONGYUAN-ROOT 方法论的个人与团队",
+      "status": "DRAFT",
+      "description": "基于真值 meta_rule.MR-084 提炼，归属产品线 认证培训。【资产】【元法则】已固化成果变更审批（LOCKED-CHANGE-APPROVAL）：{\"purpose\": \"视频量产通道等已固化成果默认eFuse锁定，不允许未经审批的修改\", \"…"
+    }
+  ]
+}

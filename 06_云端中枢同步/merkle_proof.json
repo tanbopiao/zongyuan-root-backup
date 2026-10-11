@@ -1,0 +1,28 @@
+{
+  "merkle_root": "fdeb2eda8a6e4542c63c6ecb482f84263142d186752755734dd5a8b7fe3d7b5f",
+  "leaf_count": 4,
+  "algorithm": "SHA256",
+  "leaves": [
+    {
+      "name": "file_hashes.txt",
+      "size": 439,
+      "sha256": "550f44f31e366f843d5f5ede774e79797cda622d82e1e71e5eba2511416d17cc"
+    },
+    {
+      "name": "kernel_snapshot_LOCK-MEMORY-UPDATE-20260911-001.json",
+      "size": 1031,
+      "sha256": "525ee5e4ca9bf690a092c3239065a31f6e6b3ce349ae8dab737206c515023e17"
+    },
+    {
+      "name": "lock_doc.md",
+      "size": 7225,
+      "sha256": "847de34221f6168f48d93969f4959ad34c669d9fea0a14addb97ee9790be8e59"
+    },
+    {
+      "name": "neural_registry_246nodes.json",
+      "size": 311946,
+      "sha256": "d3147a786344df563760e3d73816a7c0e86e9cf61e2fc34ba249aa2843a4d460"
+    }
+  ],
+  "generated_at": "2026-09-11T17:28:57.692794"
+}

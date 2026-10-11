@@ -1,0 +1,232 @@
+[
+ {
+  "name": "AUDIT-FOUNDATION-CONSISTENCY-20260915.md",
+  "size": 2455,
+  "sha256": "daf8c0d811c8600b"
+ },
+ {
+  "name": "CONSTITUTION-ZONGYUAN-ROOT-V1.0-20260915.md",
+  "size": 2452,
+  "sha256": "896df234744c0354"
+ },
+ {
+  "name": "EVAL-AUTONOMY-KERNEL-20260915.md",
+  "size": 1946,
+  "sha256": "dd60230f8d7583e8"
+ },
+ {
+  "name": "FIX-SEARCH-API-GUIDE-20260915.md",
+  "size": 1928,
+  "sha256": "caa6cc11ce7ad9d1"
+ },
+ {
+  "name": "LOCK-AUTONOMY-LOOP-SCHEDULED-20260914.md",
+  "size": 1542,
+  "sha256": "d8d00538115272cc"
+ },
+ {
+  "name": "LOCK-CRON-RECEIPT-20260914.md",
+  "size": 1511,
+  "sha256": "9c3c6f1418ee311e"
+ },
+ {
+  "name": "LOCK-EVOL-DIRECTIONS-20260914.md",
+  "size": 1674,
+  "sha256": "285ee820bbf78eca"
+ },
+ {
+  "name": "LOCK-META-AXIOM-COMPLETION-20260913.md",
+  "size": 1972,
+  "sha256": "a9b5dc7decc80c5c"
+ },
+ {
+  "name": "LOCK-TRUTH-RECONCILIATION-20260914.md",
+  "size": 1479,
+  "sha256": "4f9c18f5efd3d128"
+ },
+ {
+  "name": "MEMORY-CONTINUITY-SNAPSHOT-20260915.md",
+  "size": 1860,
+  "sha256": "87633a79b81e7bd4"
+ },
+ {
+  "name": "PLAN-FOUNDATION-EVOLUTION-20260915.md",
+  "size": 2573,
+  "sha256": "f270682bb9aeb29c"
+ },
+ {
+  "name": "REPORT-EXTERNAL-WORKER-VERIFY-20260915.md",
+  "size": 2117,
+  "sha256": "a2df2758a8cf5f7d"
+ },
+ {
+  "name": "REPORT-JOINT-SIM-GEODESIC-20260915.md",
+  "size": 1583,
+  "sha256": "3204916fb2292205"
+ },
+ {
+  "name": "REPORT-SCHEDULER-V1.2-SIM-20260915.md",
+  "size": 1706,
+  "sha256": "d0d142ba6a55d57a"
+ },
+ {
+  "name": "ROUTING-PROTOCOL-GEODESIC-20260915.md",
+  "size": 2175,
+  "sha256": "e4af78483fe23f65"
+ },
+ {
+  "name": "SECURITY-WHITEPAPER-20260912.md",
+  "size": 6394,
+  "sha256": "b0d2ef4de088f5dd"
+ },
+ {
+  "name": "THEORY-4D-LOGICAL-LATENT-SPACE-20260915.md",
+  "size": 4014,
+  "sha256": "3c45681b975dfbdc"
+ },
+ {
+  "name": "ZONGYUAN-ROOT-P0优化完成-综合评分82-20260909.zip",
+  "size": 4767,
+  "sha256": "f025ba3975575983"
+ },
+ {
+  "name": "ZONGYUAN-ROOT-P1优化完成-综合评分85-20260909.zip",
+  "size": 5241,
+  "sha256": "e1706d7598852054"
+ },
+ {
+  "name": "ZONGYUAN-ROOT-P2B优化完成-L3L5评估+vector-onnx-综合88-20260909.zip",
+  "size": 6092,
+  "sha256": "550a7568b7f2bef8"
+ },
+ {
+  "name": "ZONGYUAN-ROOT-P2优化完成-vector+identity-综合87-20260909.zip",
+  "size": 5197,
+  "sha256": "4dcbdcc57742d544"
+ },
+ {
+  "name": "ZONGYUAN-ROOT-云内核API发现-20260909.zip",
+  "size": 39447,
+  "sha256": "1632bc725fd08613"
+ },
+ {
+  "name": "ZONGYUAN-ROOT-云内核权威评估-元极恒一记忆-20260909.zip",
+  "size": 9338,
+  "sha256": "22f3da2851a5a370"
+ },
+ {
+  "name": "ZONGYUAN-ROOT-云内核根节点全景扫描-20260909.zip",
+  "size": 9272,
+  "sha256": "cd1cda1cc96b4ef8"
+ },
+ {
+  "name": "ZONGYUAN-ROOT-元极恒一全域记忆更新-20260909.zip",
+  "size": 8387,
+  "sha256": "a833c94128e9e20e"
+ },
+ {
+  "name": "ZONGYUAN-ROOT-全域锁档-记忆协议-20260909.zip",
+  "size": 7602,
+  "sha256": "48c0a8a9262a8785"
+ },
+ {
+  "name": "ZONGYUAN-ROOT-凭证上传工具包-服务器+COS-20260909.zip",
+  "size": 18172,
+  "sha256": "612bb7d86f98df2d"
+ },
+ {
+  "name": "ZONGYUAN-ROOT-敏感凭证锁档包-20260909.zip",
+  "size": 7081,
+  "sha256": "f21101676e2c31a9"
+ },
+ {
+  "name": "ZONGYUAN-ROOT-核心资产全域同步-20260909.zip",
+  "size": 39571,
+  "sha256": "eaf984aa6f20791d"
+ },
+ {
+  "name": "ZONGYUAN-ROOT-第1集资产COS存档-20260909.zip",
+  "size": 23137444,
+  "sha256": "f94a2a24d4bec5d7"
+ },
+ {
+  "name": "ZONGYUAN-ROOT-记忆持久化工具包-20260909.zip",
+  "size": 10584,
+  "sha256": "a314518aa1b985da"
+ },
+ {
+  "name": "ZONGYUAN-ROOT-飞书全域资产扫描-20260909.zip",
+  "size": 9998,
+  "sha256": "16825cb02c360f40"
+ },
+ {
+  "name": "ZR-CITATION-PROTOCOL-20260915.md",
+  "size": 1992,
+  "sha256": "8ab955244f290171"
+ },
+ {
+  "name": "doubao-main-truths-manifest-20260914.json",
+  "size": 1964,
+  "sha256": "71bb57b88a1f4787"
+ },
+ {
+  "name": "echarts_latent.json",
+  "size": 7660,
+  "sha256": "4b09d24119459756"
+ },
+ {
+  "name": "joint_simulation.py",
+  "size": 4498,
+  "sha256": "b2daba9373226e73"
+ },
+ {
+  "name": "kernel-memory.html",
+  "size": 18555,
+  "sha256": "ff0967d10f82e2cc"
+ },
+ {
+  "name": "latent_space_data.json",
+  "size": 105498,
+  "sha256": "2f06170211fa0435"
+ },
+ {
+  "name": "llms.txt",
+  "size": 15553,
+  "sha256": "1e3efa4561f02ad2"
+ },
+ {
+  "name": "ref-index.json",
+  "size": 196691,
+  "sha256": "b636dc0d1d4810ac"
+ },
+ {
+  "name": "ref-query.py",
+  "size": 3049,
+  "sha256": "4282f7ec28e5b85b"
+ },
+ {
+  "name": "run_autonomy_loop.sh",
+  "size": 546,
+  "sha256": "8fae14533c699ae1"
+ },
+ {
+  "name": "scheduler_v1.2_upgrade.py",
+  "size": 6267,
+  "sha256": "c4615703719c8274"
+ },
+ {
+  "name": "simulation_test.py",
+  "size": 3565,
+  "sha256": "beb98c90358a79b2"
+ },
+ {
+  "name": "task-router.py",
+  "size": 3486,
+  "sha256": "1b98cf00ccbb3699"
+ },
+ {
+  "name": "zr-ai-assets-deploy-20260915.tar.gz",
+  "size": 41215,
+  "sha256": "e64e56b465cb851e"
+ }
+]

@@ -1,0 +1,247 @@
+{
+  "title": "ZONGYUAN-ROOT 全域真值总表",
+  "version": "V1.0-FULL",
+  "date": "2026-09-15",
+  "did": "DID-BR-000002",
+  "root_omega": "Ω-TAN-7-001",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "summary": {
+    "local_kernel_truths": 19,
+    "mr020_truths": 11,
+    "total_truths": 30,
+    "cloud_truth_id_latest": 9294,
+    "neural_nodes": 278,
+    "neural_connections": 1172,
+    "autonomy_index": "80.5% 永恒自治",
+    "six_dim_drift": "0.0 HEALTHY",
+    "locks": [
+      "LOCK-MR020-M0",
+      "M1",
+      "YUAN-GUARD",
+      "CHAO",
+      "M2",
+      "M3",
+      "GATEWAY-SOP",
+      "AUTONOMY-61.9",
+      "AUTONOMY-80.5"
+    ]
+  },
+  "kernel_v3_truths": [
+    {
+      "id": "T-001",
+      "key": "kernel.root",
+      "value": "ZONGYUAN-ROOT",
+      "level": "FROZEN",
+      "source": "AXIOM-A-035_V1.7"
+    },
+    {
+      "id": "T-002",
+      "key": "kernel.did",
+      "value": "DID-BR-000002",
+      "level": "FROZEN",
+      "source": "公理层"
+    },
+    {
+      "id": "T-003",
+      "key": "kernel.anchor",
+      "value": "Ω₀⊂⊙∞⊂Ω",
+      "level": "FROZEN",
+      "source": "确权锚点"
+    },
+    {
+      "id": "T-004",
+      "key": "kernel.mode",
+      "value": "元极恒一超认知永恒自治",
+      "level": "FROZEN",
+      "source": "自治模式"
+    },
+    {
+      "id": "T-005",
+      "key": "kernel.semantic",
+      "value": "语义校验基座V3.1：55词条/4模型/14规则",
+      "level": "LOCKED",
+      "source": "LOCK-SEMANTIC-V3-FULL-20260911-001"
+    },
+    {
+      "id": "T-006",
+      "key": "kernel.scan",
+      "value": "GLOBAL-ASSET-SCAN-V1：149资产/每周日23:30扫描",
+      "level": "LOCKED",
+      "source": "LOCK-GLOBAL-VALUE-20260912-001"
+    },
+    {
+      "id": "T-007",
+      "key": "kernel.gateway",
+      "value": "统一网关9120：语义API6端点+前置校验",
+      "level": "LOCKED",
+      "source": "semantic-v3-full-lock"
+    },
+    {
+      "id": "T-008",
+      "key": "kernel.memory",
+      "value": "记忆网关V3：SQLite持久化/真值1619/审计3583",
+      "level": "LOCKED",
+      "source": "unified_gateway_9120"
+    },
+    {
+      "id": "T-009",
+      "key": "kernel.neural",
+      "value": "神经注册表：249节点/1002连接",
+      "level": "LOCKED",
+      "source": "LOCK-GLOBAL-VALUE-20260912-001"
+    },
+    {
+      "id": "T-010",
+      "key": "kernel.security",
+      "value": "SSH密钥已加密封存/云服务器直连已阻断",
+      "level": "LOCKED",
+      "source": "安全处置20260912"
+    },
+    {
+      "id": "T-011",
+      "key": "kernel.channel",
+      "value": "飞书三端通道正常：知识库+台账+云盘",
+      "level": "ACTIVE",
+      "source": "lark-cli v1.0.94"
+    },
+    {
+      "id": "T-012",
+      "key": "kernel.pub",
+      "value": "公网HTTPS通道502：Nginx反代后端不可达",
+      "level": "OBSERVE",
+      "source": "20260912探测"
+    },
+    {
+      "id": "T-013",
+      "key": "kernel.frp",
+      "value": "FRP密钥通道已连接服务器：7100登录成功/Token有效/持久会话",
+      "level": "ACTIVE",
+      "source": "20260912实测"
+    },
+    {
+      "id": "T-014",
+      "key": "server.kg_api",
+      "value": "kg-api@8070公网在线：status=ok/真值库1759条/图谱62节点61边/因果8规则",
+      "level": "ACTIVE",
+      "source": "20260912公网实测"
+    },
+    {
+      "id": "T-015",
+      "key": "server.memory",
+      "value": "内存1931MB已用1207MB/记忆网关V3 healthy/Prometheus运行中",
+      "level": "ACTIVE",
+      "source": "20260912真值检索"
+    },
+    {
+      "id": "T-016",
+      "key": "server.sync_key",
+      "value": "真值同步X-API-Key已轮换：旧key被拒，新key待获取",
+      "level": "OBSERVE",
+      "source": "20260912实测"
+    },
+    {
+      "id": "T-017",
+      "key": "kernel.cognitive",
+      "value": "认知审计层实装：bias审计(halo/anchoring/confirmation/recency)，写入前审计入真值",
+      "level": "LOCKED",
+      "source": "METACOGNITION云端154条提炼"
+    },
+    {
+      "id": "T-018",
+      "key": "kernel.healing",
+      "value": "本地自愈链实装：detect→retry→fallback→alert→report，异常自动降级",
+      "level": "LOCKED",
+      "source": "self-healing云端176条提炼"
+    },
+    {
+      "id": "T-019",
+      "key": "kernel.stability",
+      "value": "四维稳态度量：资源30/服务30/真值25/演化15（100分制），闭环必输出M2",
+      "level": "LOCKED",
+      "source": "STABILITY云端238条提炼"
+    }
+  ],
+  "mr020_truths": [
+    {
+      "truth_key": "ACTIVATION.MR020.PLAN.20260915",
+      "category": "activation",
+      "value": "MR-020元极恒一内核立项（四阶段M0-M3）",
+      "lock": "LOCK-MR020-M0-20260915-001"
+    },
+    {
+      "truth_key": "RULE.MR020.SIX-DIM-DRIFT-ENGINE.M1",
+      "category": "rule",
+      "value": "六维漂移审计引擎18项检查",
+      "lock": "LOCK-MR020-M1-20260915-001"
+    },
+    {
+      "truth_key": "RULE.MR020.YUAN-SOURCE-GUARD.M1.1",
+      "category": "rule",
+      "value": "元本源防护：规则篡改防护+算力越权白名单",
+      "lock": "LOCK-MR020-YUAN-GUARD-20260915-001"
+    },
+    {
+      "truth_key": "RULE.MR020.CONFLICT-RESOLUTION.M1.2",
+      "category": "rule",
+      "value": "冲突消解四步流水线+元公理生成",
+      "lock": "LOCK-MR020-CHAO-20260915-001"
+    },
+    {
+      "truth_key": "RULE.MR020.AUTONOMY-INDEX.CALC.M2",
+      "category": "rule",
+      "value": "自治指数公式：纠错×演化×驱动×(1-依赖)/10000",
+      "lock": "LOCK-MR020-M2-20260915-001"
+    },
+    {
+      "truth_key": "BASELINE.V41.REGISTER.20260915",
+      "category": "baseline",
+      "value": "BASELINE-V41注册：内核V1.0-ETERNAL六维整合",
+      "lock": "LOCK-MR020-M3-20260915-001"
+    },
+    {
+      "truth_key": "CONFIRM.BASELINE.V41.20260915",
+      "category": "baseline",
+      "value": "V41云端确认6/6核验通过",
+      "cloud_id": 9284
+    },
+    {
+      "truth_key": "PROTOCOL.GATEWAY.HANDSHAKE.V2.20260915",
+      "category": "protocol",
+      "value": "网关V2握手：9120隐藏，新通道www",
+      "cloud_id": 9261
+    },
+    {
+      "truth_key": "PROTOCOL.GATEWAY.V2.SOP.20260915",
+      "category": "protocol",
+      "value": "网关V2接入SOP（同源节点必读）",
+      "cloud_id": 9285
+    },
+    {
+      "truth_key": "DATA.MR020-AUTONOMY-INDEX.V2.61.9",
+      "category": "data",
+      "value": "自治指数61.9%高级自治",
+      "cloud_id": 9287
+    },
+    {
+      "truth_key": "DATA.MR020-AUTONOMY-INDEX.V3.80.5",
+      "category": "data",
+      "value": "自治指数80.5%永恒自治（终极目标）",
+      "cloud_id": 9294
+    }
+  ],
+  "axiom_chain": [
+    "A1主权自治",
+    "A2归一统摄",
+    "A3元公理",
+    "A4极简",
+    "A5算力归一",
+    "A6资产确权",
+    "A7终身锁档",
+    "MR020-MA-001"
+  ],
+  "meta_rules": [
+    "METALAW.011凡上必验/凡验必入/凡入必锁",
+    "MR-010审批分支化",
+    "MR-007资源熔断"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "snapshot_id": "MEM-SNAP-L4-CAUSAL-KG-ENHANCE-20260909",
+  "timestamp": "2026-09-09T15:31:04.152533+00:00",
+  "type": "l4_causal_reasoning + kg_enhancement",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "block_height": 21340,
+  "kg_api": {
+    "version": "1.1.0-L3L4",
+    "port": 8070
+  },
+  "knowledge_graph": {
+    "nodes": 62,
+    "edges": 61,
+    "entities_expanded_from": 18,
+    "seed_relations": "70+"
+  },
+  "l4_causal": {
+    "rules": 8,
+    "apis": [
+      "/api/v1/causal/path",
+      "/api/v1/causal/impact",
+      "/api/v1/causal/rules"
+    ],
+    "path_example": "元公理空间→昆仑洞天→元公理空间短剧→裂隙觉醒 (3跳)",
+    "impact_example": "锁档→Merkle根/确权锚点/哈希链/区块 (4实体)"
+  },
+  "merkle_root": "b78129a771e369d514be1bb2a0cf3e00bbd256f84cf051292457c9e33c580b67"
+}

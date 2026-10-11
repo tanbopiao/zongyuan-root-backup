@@ -1,0 +1,18 @@
+{
+  "issue": "WHITEPAPER-NEUTRAL-PUBLISH",
+  "name": "中性技术白皮书对外公开推送",
+  "whitepaper": "AI持久化记忆索引机制技术白皮书V1.0(通用中性, 已剥离内部私密标识)",
+  "artifacts": {
+    "md": "03_文档资产/白皮书与报告/中性-AI持久化记忆索引机制白皮书-V1.0.md",
+    "html": "03_文档资产/白皮书与报告/中性-AI持久化记忆索引机制白皮书-V1.0.html"
+  },
+  "publish": {
+    "modelscope": "git push成功 master 8451b78..48eebf7 → zongyuanroot/zongyuan-root-achievements docs/白皮书",
+    "official_web": "官网部署API未开放(404) → aka公网交付 html=https://aka.doubaocdn.com/s/Li6t2bUIrR md=https://aka.doubaocdn.com/s/7VCnIU1VRj"
+  },
+  "neutrality": "不涉及DID/内部API/内部路径/token, 聚焦通用记忆索引技术",
+  "node": "NODE-DEV-DOUBAO-WORK-001",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "ts": "20261010T181341"
+}

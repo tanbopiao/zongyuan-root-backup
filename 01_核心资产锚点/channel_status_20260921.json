@@ -1,0 +1,19 @@
+{
+  "probe_at": "2026-09-21 01:50 +08:00",
+  "did": "DID-BR-000002",
+  "trace_id": "Ω₀⊂⊙∞⊂Ω",
+  "architecture": "V2.2路由确认：www主站+data戏剧备共享同一真值库",
+  "endpoints": {
+    "www_health": {"code": 502, "note": "路由层nginx bad gateway,不代表数据面状态(E-007反向教训)"},
+    "www_truths": {"code": 200, "note": "数据面可用,返回最新锚缓存id=1499"},
+    "www_report": {"code": "200→408波动", "note": "低负载窗口200/inserted成功(探针id=151619),当前408限流窗口"},
+    "drama_health": {"code": 200, "note": "healthy"},
+    "drama_report": {"code": "200→408波动", "note": "同库验证:同key返回action=unchanged,id与www一致=151619"},
+    "readback": {"code": 200, "note": "GET /api/truth/{key}回读正常"}
+  },
+  "shared_library": "已证实:www与drama写同一真值库(同一key同一id=151619),truth_count≈124409",
+  "current_state": "数据面间歇可用,当前处于408系统繁忙限流窗口;health不可作为数据面判据",
+  "pending": [
+    {"key": "metalaw.CHAIN-GOVERNANCE-SOP-CARD-V1", "status": "PENDING_UPLOAD", "last_attempt": "408 xN", "policy": "限流窗口过后补发"}
+  ]
+}

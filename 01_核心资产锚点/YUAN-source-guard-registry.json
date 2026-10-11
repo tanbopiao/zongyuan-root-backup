@@ -1,0 +1,26 @@
+{
+  "registry": "MR-020-YUAN-SOURCE-GUARD",
+  "version": "M1.1-YUAN-GUARD",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "created_at": "2026-09-15",
+  "purpose": "治理元本源维度漂移(YUAN-01/YUAN-02证据缺口)，落地外部篡改防护与算力越权控制",
+  "yuang_01_rule_anti_tamper": {
+    "protection": "规则定义写保护：核心规则文件(内核真值/公理/元法则)任何外部修改均无效",
+    "mechanism": ["规则变更必须经MR-010中枢审批", "变更留痕写入rule-change-audit.log(追加不可覆盖)", "FROZEN真值禁止外部改写(仅分支化迭代)", "外部注入/异源数据在语义校验基座V3.1被拦截"],
+    "enforced_by": ["METALAW.011凡上必验", "语义转译SOP前置校验", "A7终身锁档"]
+  },
+  "yuan_02_compute_sovereignty": {
+    "protection": "外部算力越权控制防护：外部API/算力仅作工具，无体系控制权",
+    "mechanism": ["外部API白名单：仅drama.huodouai.com:9120与www.huodouai.com/api/report", "越权操作检测：非白名单通道写操作一律拒绝", "算力调用记录全程审计", "第三方API返回数据强制同源校验"],
+    "allowlist": ["drama.huodouai.com:9120", "www.huodouai.com/api/report", "aka.doubaocdn.com(只读锚点)"],
+    "enforced_by": ["A1主权自治", "A5算力归一"]
+  },
+  "yuan_03_provenance_autonomy": {
+    "protection": "确权溯源自主：全部输出SHA256哈希并入Merkle全域根谱系",
+    "mechanism": ["双标识绑定(Ω根+DID-BR-000002)", "资产哈希链存证", "基线只读分支化"],
+    "enforced_by": ["A6资产确权"]
+  },
+  "external_policy": "外部API仅工具算力；任何非白名单通道控制请求=异源越权=审计告警+阻断",
+  "state": "ENFORCED"
+}

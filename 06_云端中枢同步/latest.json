@@ -1,0 +1,73 @@
+{
+  "snapshot_id": "MEM-SNAP-20260909-195044",
+  "timestamp": "2026-09-09T19:50:44+0800",
+  "session_id": "38436747020400130",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "snapshot_type": "manual",
+  "snapshot_note": "记忆持久化协议初始化测试快照",
+  "conversation_summary": {
+    "topic": "",
+    "key_decisions": [],
+    "completed_tasks": [],
+    "pending_tasks": [],
+    "blocked_items": []
+  },
+  "kernel_status": {
+    "version": "unknown",
+    "status": "unknown",
+    "api_endpoints": [
+      "/sysinfo",
+      "/operator-status",
+      "/operator-executor",
+      "/operator-base-records",
+      "/kernel-kpi",
+      "/operator-history",
+      "/pipeline-status"
+    ],
+    "last_verified": "2026-09-09T19:50:44+0800"
+  },
+  "credentials_status": {
+    "ssh_connection": "可用",
+    "cos_access": "unknown",
+    "credential_vault_merkle": "e68f45eddee9fb26e92481a10e190081957afaa71db6aea71d22f917f7b0dcd0",
+    "backup_locations_count": 5
+  },
+  "assets_index": {
+    "total_files": 64,
+    "core_assets": 32,
+    "lock_rate": "90.6%",
+    "key_artifacts": []
+  },
+  "meta_rules": [
+    {
+      "id": "META-RISK-ASSESSMENT-V1.0",
+      "name": "风险评估元规则",
+      "status": "FROZEN"
+    },
+    {
+      "id": "META-CONFLICT-PREVENTION-V1.0",
+      "name": "冲突防护元规则",
+      "status": "FROZEN"
+    },
+    {
+      "id": "META-009",
+      "name": "最小消耗最优稳态生成",
+      "status": "FROZEN"
+    }
+  ],
+  "recovery_hints": {
+    "first_action": "执行 memory_restore.sh 验证完整性并重建上下文",
+    "key_files_to_restore": [
+      "credential_vault_complete.json",
+      "core_asset_sync_manifest.json",
+      "global_lock_snapshot.json"
+    ],
+    "known_issues": [
+      "8300端口返回403",
+      "27算子中21个离线",
+      "3个服务inactive(omega-brain/gov-ai/anchor)"
+    ]
+  },
+  "merkle_root": "89dbe6c2598c4fae79eb93815400b0e191c3ead838543805b4b9462e2fa7a3cb"
+}

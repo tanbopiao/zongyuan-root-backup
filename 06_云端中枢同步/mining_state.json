@@ -1,0 +1,38 @@
+{
+  "first_run": false,
+  "services": {
+    "approval": 14,
+    "attendance": 1,
+    "calendar": 18,
+    "contact": 1,
+    "drive": 25,
+    "im": 41,
+    "mail": 57,
+    "mindnotes": 2,
+    "minutes": 1,
+    "okr": 23,
+    "sheets": 8,
+    "slides": 11,
+    "task": 31,
+    "vc": 1,
+    "wiki": 10
+  },
+  "gateways": {
+    "9120_truths_list": "502",
+    "8021_truths_list": "502",
+    "8021_gateway_truths": "401",
+    "8021_health": "200"
+  },
+  "libs": {
+    "openai": true,
+    "fastapi": true,
+    "ffmpeg": false,
+    "sklearn": true,
+    "cv2": true,
+    "pandas": true,
+    "numpy": true,
+    "bs4": true,
+    "aiohttp": true,
+    "httpx": true
+  }
+}

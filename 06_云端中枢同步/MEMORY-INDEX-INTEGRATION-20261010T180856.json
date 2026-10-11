@@ -1,0 +1,27 @@
+{
+  "issue": "MEMORY-INDEX-ENGINE-INTEGRATION",
+  "name": "记忆索引引擎接入真实语义向量",
+  "module": "07_代码与脚本/memory_index_engine.py",
+  "embedding": "TF-IDF语义向量(本地无监督零额度, 特征3394; intern无embedding端点已验证404)",
+  "ingested": {
+    "truth_records": 200,
+    "store": "06_云端中枢同步/memory_index_store.json",
+    "size_bytes": 224738
+  },
+  "verified": [
+    "元意识架构→TRUTH-META-CONSCIOUSNESS命中",
+    "云端上报通道→ZR.6H.REPORT命中",
+    "算力降级→天地人鬼神命中"
+  ],
+  "capabilities": [
+    "TF-IDF语义检索",
+    "四类标签分层",
+    "时效衰减+热度刷新",
+    "生命周期归档",
+    "真值库批量接入"
+  ],
+  "node": "NODE-DEV-DOUBAO-WORK-001",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "ts": "20261010T180856"
+}

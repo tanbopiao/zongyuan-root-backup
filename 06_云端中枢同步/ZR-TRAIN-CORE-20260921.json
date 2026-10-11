@@ -1,0 +1,57 @@
+[
+  {
+    "instruction": "ZONGYUAN-ROOT能力: registry_id",
+    "input": "",
+    "output": "\"CAPABILITY-REG-001\""
+  },
+  {
+    "instruction": "ZONGYUAN-ROOT能力: registry_name",
+    "input": "",
+    "output": "\"ZONGYUAN-ROOT 元内核高阶能力注册表\""
+  },
+  {
+    "instruction": "ZONGYUAN-ROOT能力: did",
+    "input": "",
+    "output": "\"DID-BR-000002\""
+  },
+  {
+    "instruction": "ZONGYUAN-ROOT能力: trace_id",
+    "input": "",
+    "output": "\"Ω₀⊂⊙∞⊂Ω\""
+  },
+  {
+    "instruction": "ZONGYUAN-ROOT能力: generated_at",
+    "input": "",
+    "output": "\"2026-09-16\""
+  },
+  {
+    "instruction": "ZONGYUAN-ROOT能力: mechanism",
+    "input": "",
+    "output": "\"META-CAPABILITY-REFINERY\""
+  },
+  {
+    "instruction": "ZONGYUAN-ROOT能力: total",
+    "input": "",
+    "output": "13"
+  },
+  {
+    "instruction": "ZONGYUAN-ROOT能力: capabilities",
+    "input": "",
+    "output": "[{\"cap_id\": \"CAP-001\", \"name\": \"云端握手\", \"name_en\": \"CLOUD-HANDSHAKE\", \"category\": \"云端接入\", \"source\": \"S-001(握手成功)/E-001,E-002(通道与Token教训)\", \"trigger\": \"需要接入/验证云端时\", \"steps\": [\"门户探测→health检查→鉴权→数据拉取→哈希核验→上报\"], \"outputs\": \"握手结论+鉴权状态+数据快照\", \"verify\": \"四步全通+SHA-256匹配\", \"negative_constraints\": [\"禁用IP直连(走域名)\", \"Token用最新轮换版\"], \"min_lv\": 6, \"lv_standard\": \"ENG-STD-NODE-LV-EVAL-V1.0\"}, {\"cap_id\": \"CAP-002\", \"name\": \"三端锁档\", \"name_en\": \"TRIPLE-LOCK\", \"category\": \"归档\", \"source\": \"S-002~S-007(多轮锁档成功)\", \"trigger\": \"任何资产需要固化时\", \"steps\": [\"知识库文档→台账记录→云盘归档→内核快照→神经同步\"], \"outputs\": \"FROZEN锁档回执(含全部链接)\", \"verify\": \"台账回读+神经同步校验\", \"negative_constraints\": [\"锁档后只读\", \"增量用increment不覆盖\"], \"min_lv\": 5, \"lv_standard\": \"ENG-STD-NODE-LV-EVAL-V1.0\"}, {\"cap_id\": \"CAP-003\", \"name\": \"元法则同步\", \"name_en\": \"METALAW-SYNC\", \"category\": \"元法则\", \"source\": \"S-002/S-003(漂移比对+注册)\", \"trigger\": \"检测元法则漂移/补全时\", \"steps\": [\"拉取云端全集→语义比对→补全清单→注册→锁档\"], \"outputs\": \"漂移报告+注册表+真值表\", \"verify\": \"对齐/漂移数量核验+REGISTERED状态\", \"negative_constraints\": [\"比对需标注口径\", \"正文级对齐需内网\"], \"min_lv\": 5, \"lv_standard\": \"ENG-STD-NODE-LV-EVAL-V1.0\"}, {\"cap_id\": \"CAP-004\", \"name\": \"云端探测\", \"name_en\": \"CLOUD-PROBE\", \"category\": \"监控\", \"source\": \"E-003/E-006(502与抽样限制)\", \"trigger\": \"每次任务前/定时机制运行时\", \"steps\": [\"三通道探测(门户/API/静态)→故障分级→归档\"], \"outputs\": \"通道状态码+可用性结论\", \"verify\": \"状态码实测(200/502/404/401)\", \"negative_constraints\": [\"502≠000(网络通但后端挂)\", \"结论标注覆盖范围\"], \"min_lv\": 5, \"lv_standard\": \"ENG-STD-NODE-LV-EVAL-V1.0\"}, {\"cap_id\": \"CAP-005\", \"name\": \"资产盘点\", \"name_en\": \"ASSET-INVENTORY\", \"category\": \"资产\", \"source\": \"S-006(门户资产盘点)\", \"trigger\": \"需要资产清单/索引时\", \"steps\": [\"门户解析→本地扫描→分类聚合→索引JSON\"], \"outputs\": \"资产索引(统计+清单)\", \"verify\": \"数量核对+URL可访问抽样\", \"negative_constraints\": [\"API宕机时标注非全量\", \"禁止伪造回执(四重核验)\"], \"min_lv\": 6, \"lv_standard\": \"ENG-STD-NODE-LV-EVAL-V1.0\"}, {\"cap_id\": \"CAP-006\", \"name\": \"待补发队列\", \"name_en\": \"PENDING-UPLOAD\", \"category\": \"容错\", \"source\": \"E-003(上报失败处理)\", \"trigger\": \"云端上报失败时\", \"steps\": [\"构造载荷→尝试上报→失败入队→恢复补发\"], \"outputs\": \"pending队列JSON+补发回执\", \"verify\": \"队列计数+补发后total增长\", \"negative_constraints\": [\"失败不丢数据\", \"Token不存明文\"], \"min_lv\": 6, \"lv_standard\": \"ENG-STD-NODE-LV-EVAL-V1.0\"}, {\"cap_id\": \"CAP-007\", \"name\": \"自动化机制\", \"name_en\": \"CRON-AUTOMATION\", \"category\": \"自动化\", \"source\": \"S-004(月度同步机制)\", \"trigger\": \"需要周期执行/持续监控时\", \"steps\": [\"需求解析→cron创建→时间校验→SOP锁档\"], \"outputs\": \"定时任务+机制文档\", \"verify\": \"get_current_time校验+任务ACTIVE\", \"negative_constraints\": [\"避高峰时段\", \"query不存凭证明文\"], \"min_lv\": 7, \"lv_standard\": \"ENG-STD-NODE-LV-EVAL-V1.0\"}, {\"cap_id\": \"CAP-008\", \"name\": \"神经同步\", \"name_en\": \"NEURAL-SYNC\", \"category\": \"内核\", \"source\": \"S-007(锁档后自动同步)\", \"trigger\": \"每次锁档完成后\", \"steps\": [\"锁档→推送注册表→权威副本校验\"], \"outputs\": \"节点/连接数+校验结论\", \"verify\": \"本地=权威 校验通过\", \"negative_constraints\": [\"同步失败需重推\", \"不覆盖FROZEN资产\"], \"min_lv\": 8, \"lv_standard\": \"ENG-STD-NODE-LV-EVAL-V1.0\"}, {\"cap_id\": \"CAP-009\", \"name\": \"高价值真值提取\", \"name_en\": \"TRUTH-EXTRACT\", \"category\": \"训练语料\", \"source\": \"S-20260916(首轮2870→369条)\", \"trigger\": \"需要小模型训练语料时\", \"steps\": [\"4源收集→8类分类→质量蒸馏→JSONL生成\"], \"outputs\": \"训练语料+规则集\", \"verify\": \"SHA256校验\", \"negative_constraints\": [\"低价值运行日志默认过滤\"], \"min_lv\": 7, \"lv_standard\": \"ENG-STD-NODE-LV-EVAL-V1.0\"}, {\"cap_id\": \"CAP-010\", \"name\": \"高阶能力挖掘\", \"name_en\": \"CAPABILITY-MINING\", \"category\": \"自动化\", \"source\": \"S-20260916(24域445命令扫描)\", \"trigger\": \"需要挖掘新能力时\", \"steps\": [\"扫描24域→分类→实测→自动建待办\"], \"outputs\": \"能力报告+机制待办\", \"verify\": \"任务创建成功\", \"negative_constraints\": [\"mail待邮箱配置\"], \"min_lv\": 8, \"lv_standard\": \"ENG-STD-NODE-LV-EVAL-V1.0\"}, {\"cap_id\": \"CAP-011\", \"name\": \"周报演示文稿\", \"name_en\": \"SLIDES-REPORT\", \"category\": \"汇报\", \"source\": \"S-20260916(4页周报创建成功)\", \"trigger\": \"需要体系汇报PPT时\", \"steps\": [\"周报内容→slide XML→创建演示文稿\"], \"outputs\": \"飞书演示文稿\", \"verify\": \"页面添加成功\", \"negative_constraints\": [\"单页XML≤服务端lint限制\"], \"min_lv\": 6, \"lv_standard\": \"ENG-STD-NODE-LV-EVAL-V1.0\"}, {\"cap_id\": \"CAP-012\", \"name\": \"上报通道自检\", \"name_en\": \"REPORT-CHANNEL-SELFCHECK\", \"category\": \"云端接入\", \"source\": \"E-009(2026-09-19 content字段漂移value实测)\", \"trigger\": \"需要上报真值/怀疑协议变更/新节点上岗时\", \"steps\": [\"POST /api/report/truth {key,value}上报→GET /api/truth/{key}回读→校验truth_value非空且hash非空串→不达标则三变体探测定位当前字段→失败入pending队列\"], \"outputs\": \"上报回执+回读核验结论+当前协议版本\", \"verify\": \"truth_value非空 且 truth_hash≠e3b0c442空串哈希 且 L0校验通过\", \"negative_constraints\": [\"禁止凭success=true直接判定成功\", \"content字段已失效必须用value\", \"写后必回读四重核验\"], \"min_lv\": 6, \"lv_standard\": \"ENG-STD-NODE-LV-EVAL-V1.0\"}, {\"cap_id\": \"CAP-013\", \"name\": \"凭证管理与子Token签发\", \"category\": \"安全\", \"source\": \"CREDENTIALS-REGISTRY-20260921 + SUB-NODE-TOKEN-SOP-20260921\", \"trigger\": \"需要登记凭证/申请子Token/轮换密钥时\", \"steps\": [\"登记凭证(脱敏)\", \"声明节点身份\", \"中枢核发子Token\", \"启用X-Capture-Token\", \"审计轮换\"], \"status\": \"ACTIVE\"}]"
+  },
+  {
+    "instruction": "ZONGYUAN-ROOT能力: lv_standard",
+    "input": "",
+    "output": "\"ENG-STD-NODE-LV-EVAL-V1.0\""
+  },
+  {
+    "instruction": "ZONGYUAN-ROOT能力: updated_at",
+    "input": "",
+    "output": "\"2026-09-19T10:15:00+08:00\""
+  },
+  {
+    "instruction": "ZONGYUAN-ROOT能力: lv_annotation_note",
+    "input": "",
+    "output": "\"所有能力已按六维模型标注所需最低Lv，节点按级取用；Lv10为量产标准，低Lv能力需升级后使用\""
+  }
+]

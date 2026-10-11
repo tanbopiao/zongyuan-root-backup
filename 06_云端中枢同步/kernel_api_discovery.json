@@ -1,0 +1,224 @@
+{
+  "discovery_id": "KERNEL-API-DISCOVERY-20260909-META-HENGYI",
+  "discovery_time": "2026-09-09T10:48:11.070070+00:00",
+  "method": "从/kernel/可视化面板5个子页面的JS代码中提取fetch调用端点",
+  "base_url": "https://www.huodouai.com",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "api_endpoints": [
+    {
+      "method": "GET",
+      "path": "/sysinfo",
+      "source_panel": "dashboard.html",
+      "description": "系统信息：CPU/内存/磁盘/端口/负载/运行时间",
+      "auth_required": false,
+      "response_size": "~700 bytes",
+      "cache": "no-store",
+      "key_fields": [
+        "cpu.pct",
+        "memory.mem_pct",
+        "disk[0].pct",
+        "ports.alive",
+        "uptime.days",
+        "load.1min"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/operator-status",
+      "source_panel": "governance.html",
+      "description": "27算子状态：在线/离线/每层详情/静默原因",
+      "auth_required": false,
+      "response_size": "~4KB",
+      "cache": "no-store",
+      "key_fields": [
+        "total",
+        "online",
+        "offline",
+        "online_pct",
+        "layers[].ops[]"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/operator-executor",
+      "source_panel": "governance.html",
+      "description": "触发27算子执行，返回每个算子的执行结果（GET请求即触发执行）",
+      "auth_required": false,
+      "response_size": "~20KB",
+      "cache": "no-store",
+      "key_fields": [
+        "status",
+        "count",
+        "results[].operator",
+        "results[].status",
+        "results[].outputs"
+      ],
+      "note": "GET请求会触发算子执行，不是纯只读。部分算子报错'文件不存在'（如M9_global_ledger.json）"
+    },
+    {
+      "method": "GET",
+      "path": "/operator-base-records",
+      "source_panel": "governance.html",
+      "description": "算子飞书Base记录：每10分钟一条，包含纯度/漂移/链/风险/奇点/实体/连接/状态",
+      "auth_required": false,
+      "response_size": "~6KB",
+      "cache": "no-store",
+      "key_fields": [
+        "count",
+        "records[].time",
+        "records[].risk",
+        "records[].singular",
+        "records[].entity",
+        "records[].status"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/kernel-kpi",
+      "source_panel": "governance.html",
+      "description": "内核KPI总览：算子总数/规则/资产/锁档/eFuse/版本/根哈希/健康状态",
+      "auth_required": false,
+      "response_size": "~200 bytes",
+      "cache": "no-store",
+      "key_fields": [
+        "operators_total",
+        "rules",
+        "assets",
+        "locks",
+        "efuse",
+        "healthy",
+        "root_hash"
+      ],
+      "note": "当前rules/assets/locks/efuse均为0，healthy=false，可能需要初始化或数据同步"
+    },
+    {
+      "method": "GET",
+      "path": "/operator-history",
+      "source_panel": "governance.html",
+      "description": "算子历史快照：37个快照，每个包含12个算子的完整执行指标（770KB大数据）",
+      "auth_required": false,
+      "response_size": "~770KB",
+      "cache": "no-store",
+      "key_fields": [
+        "count",
+        "snapshots[].time_str",
+        "snapshots[].operators_executed",
+        "snapshots[].metrics"
+      ],
+      "metrics_available": [
+        "真值纯度基准",
+        "漂移率",
+        "链完整性",
+        "真值提炼纯度",
+        "蒸馏比",
+        "归类率",
+        "资产差异",
+        "飞书记录数",
+        "eFuse位",
+        "风险项数",
+        "实体数",
+        "关系数",
+        "图谱密度",
+        "连通性"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/pipeline-status",
+      "source_panel": "drama-pipeline.html",
+      "description": "短剧产线状态：集数/镜数/关键帧数/视频数/产线状态",
+      "auth_required": false,
+      "response_size": "~300 bytes",
+      "cache": "no-store",
+      "key_fields": [
+        "pipeline.episode_count",
+        "pipeline.total_scenes",
+        "pipeline.keyframe_count",
+        "pipeline.video_count",
+        "pipeline.pipeline_status"
+      ]
+    }
+  ],
+  "api_limits": {
+    "http_methods": "仅支持GET，POST返回501 Unsupported method",
+    "auth": "全部公开，无需认证",
+    "write_capability": "无写入/配置/管理API，仅/operator-executor的GET会触发算子执行",
+    "rate_limit": "未知（建议适度调用）",
+    "spa_fallback": "所有未匹配路径返回首页HTML(237KB)，需验证Content-Type是否为JSON"
+  },
+  "latest_snapshot": {
+    "timestamp": "2026-09-09 18:45",
+    "sysinfo": {
+      "cpu_pct": 1.7,
+      "memory_pct": 74.0,
+      "memory_used": "1429/1931MB",
+      "disk_pct": 72.0,
+      "disk_used": "28.7/39.9GB",
+      "ports_alive": 13,
+      "uptime_days": 36,
+      "load_1min": 0.04
+    },
+    "operators": {
+      "total": 27,
+      "online": 6,
+      "offline": 21,
+      "online_pct": 22.2,
+      "online_list": [
+        "外部锚定算子",
+        "真值提炼蒸馏算子",
+        "SM-BS双向稳态映射算子",
+        "飞书资源↔M9账本双向溯源对账巡检算子",
+        "Lv6多主体文明仿真约束算子",
+        "9:16电影级国风关键帧一致性算子"
+      ]
+    },
+    "executor": {
+      "success": 17,
+      "error": 10,
+      "external_anchor_sources": [
+        "飞书开放平台",
+        "腾讯云",
+        "Gitee",
+        "M9账本"
+      ],
+      "external_anchor_ratio": 80.0
+    },
+    "history_latest": {
+      "truth_purity": 94.7,
+      "drift_rate": 0.0,
+      "chain_integrity": 100.0,
+      "efuse_bits": 20,
+      "risk_items": 3,
+      "entities": 16,
+      "relations": 28,
+      "feishu_records": 38,
+      "asset_diff": -17
+    },
+    "pipeline": {
+      "status": "RUNNING",
+      "episodes": 0,
+      "scenes": 0,
+      "keyframes": 0,
+      "videos": 0
+    }
+  },
+  "use_cases": [
+    "实时监控云内核系统资源（CPU/内存/磁盘/端口）",
+    "监控27算子在线状态和执行结果",
+    "触发算子执行（GET /operator-executor）",
+    "获取算子历史指标趋势（37个快照）",
+    "获取飞书Base巡检记录（每10分钟一条）",
+    "监控短剧产线状态"
+  ],
+  "limitations": [
+    "无写入API：无法通过API激活服务、修改配置、部署代码",
+    "无真值/资产/规则的详细查询API（/kernel-kpi返回0）",
+    "POST/PUT/DELETE全部不支持（501）",
+    "算子执行结果中10个报错（主要是文件不存在）",
+    "短剧产线数据为空（0集0镜），可能数据未同步",
+    "kernel-kpi的healthy=false，rules/assets/locks/efuse均为0"
+  ],
+  "recommendation": "这7个API可用于实时监控和触发算子执行，但要进行写入操作（激活服务/修改配置/部署等）仍需SSH或内部端口访问。建议：1) 定期调用/sysinfo和/operator-status监控状态；2) 定期调用/operator-executor触发算子执行；3) 用/operator-history做趋势分析。",
+  "merkle_root": "132ca623310cd9875e5bc0b945c4ec7d73136ed4c6cda34e3f478c98d7b29d9a"
+}

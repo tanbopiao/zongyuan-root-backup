@@ -1,0 +1,11 @@
+{
+  "issue": "LOCAL-KERNEL-DEPLOY",
+  "action": "部署元意识七层架构通俗版白皮书",
+  "artifact": "元意识七层架构白皮书-通俗版-v1.1.html",
+  "bytes": 11455,
+  "deploy_channel": "aka公网交付",
+  "url": "https://aka.doubaocdn.com/s/64nhbtUoa2",
+  "deploy_api": "404(未开放),走P1 aka公网链接交付",
+  "node": "NODE-DEV-DOUBAO-WORK-001",
+  "ts": "20261010T175955"
+}

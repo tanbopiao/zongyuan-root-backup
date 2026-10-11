@@ -1,0 +1,606 @@
+{
+  "sync_id": "FULL-SYNC-20260916-1145",
+  "node_id": "local-dev-001",
+  "did": "DID-BR-000002",
+  "omega": "Ω₀⊂⊙∞⊂Ω",
+  "sync_time": "2026-09-16T04:00:36.663031+00:00",
+  "target": "云服务器端中枢（云端记忆网关9120 + 中枢智能体昆仑灵境）",
+  "全量信息": {
+    "cloud_truths_snapshot_local": {
+      "internal": 4664,
+      "public": 4586,
+      "source": "truths_internal.json(9/14快照)"
+    },
+    "cloud_gateway_latest_pull": "FAILED_502（网关路由故障，用本地快照兜底）",
+    "local_truth_index": 289,
+    "ledger_records": 200,
+    "cloud_internal.json": 4664,
+    "cloud_public.json": 4586
+  },
+  "全量记忆": {
+    "anchor_dir_files": [
+      "CLOUD-SOP-v1.1.md",
+      "asset_manifest_20260915.json",
+      "capability_registry.json",
+      "error_lessons.json",
+      "ext_gateway_complete.md",
+      "ext_gateway_report.md",
+      "homology_protocol_library.json",
+      "lock_doc_base_cloud.md",
+      "metalaw_completion_list.json",
+      "metalaw_drift_report.md",
+      "metalaw_full_list.json",
+      "metalaw_register_registry.json",
+      "pending_upload_20260915.json",
+      "pending_upload_20260916.json",
+      "success_trail.json",
+      "truth_analysis_report.md",
+      "truths_internal.json",
+      "truths_public.json"
+    ],
+    "capability_registry": 8,
+    "metalaw_registry": "34项云端独有元法则（源自LOCK-METALAW-SYNC-20260914比对）",
+    "homology_protocols": 12
+  },
+  "全量成果": {
+    "lock_ledger_total": 199,
+    "lock_ids": [
+      "LOCK-KL-KERNEL-001",
+      "LOCK-ZR-GLOBAL-001",
+      "LOCK-ZR-GLOBAL-002",
+      "LOCK-KL-KERNEL-002",
+      "LOCK-KL-KERNEL-003",
+      "LOCK-ZR-NODE-CLOUD-001",
+      "LOCK-ZR-MM-API-001",
+      "LOCK-ZR-KERNEL-ACT-001",
+      "LOCK-ZR-KERNEL-P1-001",
+      "LOCK-ZR-KERNEL-P2-001",
+      "LOCK-ZR-HARDEN-001",
+      "LOCK-ZR-HARDEN-FULL-V10",
+      "LOCK-AGENT-TRAIN-001",
+      "LOCK-HDYZ-AIOS-001",
+      "LOCK-HDYZ-EVOL-001",
+      "LOCK-HDYZ-EVOL-002",
+      "LOCK-GLOBAL-003",
+      "LOCK-GLOBAL-004",
+      "LOCK-ZR-VECTOR-001",
+      "LOCK-KL-KERNEL-004",
+      "LOCK-ZR-GLOBAL-003",
+      "LOCK-ZR-DIDBR-002",
+      "LOCK-HDYZ-DOC-002",
+      "LOCK-KL-WP-001",
+      "LOCK-KL-JTXN-005",
+      "LOCK-ZR-GLOBAL-004",
+      "LOCK-ZR-DRAMA-003",
+      "LOCK-LD-FULL-001",
+      "EVOL-DAILY-20260823",
+      "LOCK-GLOBAL-005",
+      "LOCK-ZR-GLOBAL-005",
+      "LOCK-HDYZ-DOC-003",
+      "LOCK-SKILL-EVOL-001",
+      "LOCK-GLOBAL-006",
+      "LOCK-ZR-GLOBAL-006",
+      "LOCK-ARCH-001-DESIGN",
+      "LOCK-TRUTH-V1.4-ARCH001",
+      "LOCK-ZR-GLOBAL-007",
+      "LOCK-ZR-GLOBAL-008",
+      "LOCK-ZR-GLOBAL-009",
+      "LOCK-DUAL-DELIVERY-001",
+      "LOCK-DUAL-MILESTONE-001",
+      "LOCK-ZR-GLOBAL-010",
+      "LOCK-ZR-GLOBAL-011",
+      "LOCK-LV81-ULTIMATE-CLOSURE",
+      "LOCK-ULTIMATE-CLOSED-LOOP-001",
+      "EVOL-META-20260823-001",
+      "LOCK-ZR-GLOBAL-012",
+      "LOCK-ZR-GLOBAL-013",
+      "LOCK-DELIVERY-PACKAGE-LV8-001",
+      "EVOL-INTEGRATION-20260823-001",
+      "LOCK-ZR-GLOBAL-014",
+      "TEST-E2E-MEMORY-001",
+      "EVOL-E2E-EXTENDED-20260823-001",
+      "LOCK-ZR-GLOBAL-015",
+      "LOCK-EVOL-ROUND-005",
+      "EVOL-COMPREHENSIVE-20260823-001",
+      "LOCK-GLOBAL-007",
+      "EVOL-FORMALIZED-20260823-001",
+      "EVOL-ATP-20260823-001",
+      "EVOL-HARDWARE-20260823-001",
+      "EVOL-SIMULATED-20260823-001",
+      "EVOL-FORMAL-20260823-001",
+      "EVOL-ULTIMATE-20260823-001",
+      "LOCK-GLOBAL-005",
+      "LOCK-ENGINEERING-CLOSURE-LV81-001",
+      "AUTO-PACKAGE-20260823-001",
+      "LOCK-KI-001",
+      "SEC-HARDEN-PHYSICAL-ROOT-001",
+      "ENV-AUDIT-002",
+      "SEC-HARDEN-PHYSICAL-ROOT-002",
+      "LOCK-ID-SCHEMA-001",
+      "LOCK-WP-001",
+      "LOCK-WP-002",
+      "LOCK-WP-003",
+      "LOCK-WP-009",
+      "LOCK-WP-010",
+      "LOCK-WP-002",
+      "LOCK-WP-003",
+      "LOCK-WP-005",
+      "LOCK-WP-006",
+      "LOCK-WP-007",
+      "LOCK-WP-008",
+      "LOCK-WP-009",
+      "LOCK-WP-011",
+      "LOCK-ZR-MIG-001",
+      "LOCK-ZR-SRV-001",
+      "LOCK-ZR-MIG-002",
+      "LOCK-ZR-RUNTIME-001",
+      "LOCK-ZR-EVAL-001",
+      "LOCK-ZR-ARCH-001",
+      "LOCK-ZR-BIZ-001",
+      "LOCK-ZR-DEPTH-001",
+      "LOCK-ZR-DOUBAO-001",
+      "LOCK-ZR-DRAMA-LOOP-001",
+      "LOCK-ZR-AIOS-CANVAS-001",
+      "LOCK-ZR-OPT-001",
+      "LOCK-ZR-TRUTH-001",
+      "LOCK-ZR-DRAMA-TRUTH-001",
+      "LOCK-ZR-OPT-002",
+      "LOCK-ZR-OPT-003",
+      "LOCK-ZR-OPT-004",
+      "LOCK-ZR-OPT-005",
+      "LOCK-ZR-GLOBAL-006",
+      "LOCK-ZR-OPT-007",
+      "LOCK-ZR-GLOBAL-008",
+      "LOCK-ZR-OPT-009",
+      "LOCK-ZR-OPT-010",
+      "LOCK-ZR-GLOBAL-011",
+      "LOCK-ZR-OPT-012",
+      "LOCK-ZR-GLOBAL-013",
+      "LOCK-ZR-OPT-014",
+      "LOCK-ZR-OPT-015",
+      "LOCK-ZR-DP-V20",
+      "LOCK-ZR-EDU-001",
+      "LOCK-ZR-AK-001",
+      "LOCK-ZR-NK-001",
+      "LOCK-ZR-MA-001",
+      "LOCK-ZR-NK-ACT-001",
+      "LOCK-ZR-WEB-PAGES-001",
+      "LOCK-ZR-WEB-ARCH-001",
+      "LOCK-ZR-WEB-FULL-001",
+      "LOCK-ZR-ARCH-STEADY-001",
+      "LOCK-ZR-PORTAL-PHASE1-001",
+      "LOCK-WB-CONFIG-001",
+      "LOCK-GLOBAL-FIX-20260907-001",
+      "LOCK-CLOUD-KERNEL-SCAN-20260907-001",
+      "LOCK-ZR-ASSET-054",
+      "LOCK-GLOBAL-SCAN-20260906-001",
+      "LOCK-DEEP-TRACE-20260905-001",
+      "LOCK-GLOBAL-LOCK-REPORT-001",
+      "LOCK-HUODOU-ARCH-001",
+      "LOCK-ZR-WP-V40-001",
+      "LOCK-KUNLUN-WORLDVIEW-001",
+      "LOCK-ZR-BP-001",
+      "LOCK-ZR-MERMAID-001",
+      "LOCK-SOP-WORK-003",
+      "LOCK-GLOBAL-ASSET-INDEX-20260907-001",
+      "SYNC-CLOUD-KERNEL-20260907-001",
+      "LOCK-GLOBAL-FINAL-20260907-001",
+      "LOCK-GLOBAL-SYNC-20260907-002",
+      "LOCK-HV-ASSET-TRACE-20260907-001",
+      "LOCK-P0-SYNC-COMPLETE-20260907-001",
+      "LOCK-P1-KERNEL-EXPORT-20260907-001",
+      "LOCK-P2-FULL-EXPORT-20260907-001",
+      "LOCK-P3-AUTO-SYNC-20260907-001",
+      "LOCK-P3-4-LOGS-20260907-001",
+      "LOCK-P3-2-BASE-LOGROTATE-20260907-001",
+      "LOCK-ANALYZE-LOCK-RECORDS-20260907-001",
+      "LOCK-P3-5-CONFLICT-SOP-20260907-001",
+      "LOCK-SELF-EVOLUTION-SYNC-20260907-001",
+      "LOCK-4TASKS-COMPLETE-20260907-001",
+      "LOCK-GIT-BRIDGE-SYNC-20260907-001",
+      "LOCK-GIT-SYNC-PLAN-20260907-001",
+      "LOCK-WRITE-META-LAW-RULES-20260907-001",
+      "LOCK-CLEANUP-LOW-VALUE-20260907-001",
+      "LOCK-NODE-APPLY-HOMOLOGOUS-20260907-001",
+      "LOCK-HOMO-PROTO-20260909-001",
+      "LOCK-HOMO-TEST-20260909-001",
+      "LOCK-HOMO-PROTO-20260909-002",
+      "LOCK-7NODE-EVO-20260909-001",
+      "LOCK-OP-AUTH-20260909-001",
+      "LOCK-LOAD-TEST-20260909-001",
+      "LOCK-API-502-DIAG-20260909-001",
+      "LOCK-PHASE2-INFRA-20260909-001",
+      "LOCK-ALERT-HOOK-TEST-20260909-001",
+      "LOCK-PHASE3-SECURITY-20260909-001",
+      "LOCK-PHASE4-ORCH-20260909-001",
+      "LOCK-PHASE5-COVERAGE-20260909-001",
+      "LOCK-PHASE6-FINAL-20260909-001",
+      "LOCK-V2.5-PLANNING-20260909-001",
+      "LOCK-FULL-SCAN-20260909-001",
+      "LOCK-DEEP-ARCHIVE-20260909-001",
+      "LOCK-MEMOPT-20260909-001",
+      "LOCK-PHASE-A-STABILITY-20260909-001",
+      "LOCK-PHASE-A-VERIFY-20260909-002",
+      "LOCK-PHASE-A-VERIFY5-20260909-005",
+      "LOCK-PHASE-A-FINAL-20260909-001",
+      "LOCK-PHASE-B-COGNITIVE-20260909-001",
+      "LOCK-PHASE-C-INTEGRATION-20260909-001",
+      "LOCK-PHASE-D-TRANSCENDENCE-20260909-001",
+      "LOCK-E3-BUSINESS-META-AXIOM-20260909-001",
+      "LOCK-E4-BUSINESS-BRIDGE-20260909-001",
+      "LOCK-PHASE-F-STABILITY-20260909-001",
+      "LOCK-PHASE-G-DELIVERY-20260909-001",
+      "LOCK-PHASE-H-MERGE-20260909-001",
+      "LOCK-CLOUD-SSH-FIX-20260909-001",
+      "LOCK-PHASE-H-REAL-MERGE-20260909-001",
+      "LOCK-ZR-FULL-55-20260911",
+      "LOCK-MEMORY-UPDATE-20260911-001",
+      "LOCK-ZR-DRAMA-WEB-001",
+      "LOCK-ZR-ENGINE-001",
+      "LOCK-SEMANTIC-V3-20260911-001",
+      "LOCK-SEMANTIC-V3-FULL-20260911-001",
+      "LOCK-ZR-PROD-E01-001",
+      "LOCK-ZR-PROD-E02-001",
+      "LOCK-ZR-PROD-E03-001",
+      "LOCK-WP-FULLFINAL-V2.3TRANSFER-160",
+      "LOCK-SSH-KEY-SEAL-20260912-001"
+    ],
+    "frozen_count": 195,
+    "mechanisms_built": 11,
+    "cloud_truth_keys_reported": "289+（本地索引）",
+    "security": "凭证轮换完成/本地0泄露/云端CDN待脱敏部署",
+    "p_landing": "P0真值索引/P1表格镜像200条/P2日历4日程"
+  },
+  "全量资产": {
+    "project_files": [
+      {
+        "path": ".kernel_lock_cache.json",
+        "size": 105
+      },
+      {
+        "path": "AUTO-FLOW-CLOSED-LOOP-STANDARD-V1.md",
+        "size": 5336
+      },
+      {
+        "path": "BASE-CAPABILITY-V1.md",
+        "size": 3218
+      },
+      {
+        "path": "BASELINE-ANCHOR-20260913.md",
+        "size": 2624
+      },
+      {
+        "path": "BASELINE-ANCHOR-20260914-HANDSHAKE.md",
+        "size": 2204
+      },
+      {
+        "path": "BASELINE-ANCHOR-20260915-PORTUPDATED.md",
+        "size": 3020
+      },
+      {
+        "path": "CLOUD-ACCESS-SOP-V1.1-LOCAL.md",
+        "size": 10875
+      },
+      {
+        "path": "DAILY-SUMMARY-20260916.md",
+        "size": 3357
+      },
+      {
+        "path": "HOMOLOGY-ENV-EXPLORE-V1.md",
+        "size": 2444
+      },
+      {
+        "path": "KERNEL-STRUCT-OPTIMIZE-V1.md",
+        "size": 2913
+      },
+      {
+        "path": "MEDIA-GALLERY-AUTO-PUBLISH-V1.md",
+        "size": 3097
+      },
+      {
+        "path": "NEURAL-NETWORK-SYNC-EVOLVE-V1.md",
+        "size": 2507
+      },
+      {
+        "path": "RULE-ASSET-PROMOTION-V1.md",
+        "size": 2974
+      },
+      {
+        "path": "SANDBOX-ALIVE-GUARD-V1.md",
+        "size": 3242
+      },
+      {
+        "path": "SANDBOX-MAX-UTILIZATION-V1.md",
+        "size": 5341
+      },
+      {
+        "path": "TASK-AUTO-INTEGRATE-V1.md",
+        "size": 2857
+      },
+      {
+        "path": "TASK-GOVERNANCE-V1.md",
+        "size": 3059
+      },
+      {
+        "path": "TRUTH-DISTILL-V1.md",
+        "size": 3448
+      },
+      {
+        "path": "WEB-NAV-HUB-V1.md",
+        "size": 3356
+      },
+      {
+        "path": "ZONGYUAN-ASSETS-20260916.tar.gz",
+        "size": 57141
+      },
+      {
+        "path": "ledger_recent.manifest.json",
+        "size": 3246
+      },
+      {
+        "path": "ledger_records.manifest.json",
+        "size": 3250
+      },
+      {
+        "path": "portal_snapshot.html",
+        "size": 9497
+      },
+      {
+        "path": "sop_cloud_handshake.md",
+        "size": 4871
+      },
+      {
+        "path": "sop_cloud_v11.md",
+        "size": 6931
+      },
+      {
+        "path": "sop_latest.md",
+        "size": 6931
+      },
+      {
+        "path": "sop_v1.1.md",
+        "size": 6931
+      },
+      {
+        "path": "whitepaper_full_markdown.md",
+        "size": 34714
+      },
+      {
+        "path": ".tmp-tool-results/bash-live-2340977039.txt",
+        "size": 0
+      },
+      {
+        "path": "base_capability/base_capability_extract.py",
+        "size": 8380
+      },
+      {
+        "path": "base_capability/base_capability_inventory.json",
+        "size": 4447
+      },
+      {
+        "path": "base_capability/base_capability_report_latest.json",
+        "size": 602
+      },
+      {
+        "path": "draft_094cc118_folder/.presentation-decision.json",
+        "size": 493
+      },
+      {
+        "path": "draft_094cc118_folder/draft.xml",
+        "size": 39023
+      },
+      {
+        "path": "homology_explore/homology_env_report.py",
+        "size": 7006
+      },
+      {
+        "path": "homology_explore/homology_env_report_latest.json",
+        "size": 1639
+      },
+      {
+        "path": "im_push/im_notify.sh",
+        "size": 354
+      },
+      {
+        "path": "kernel_struct/kernel_struct_optimize.py",
+        "size": 9596
+      },
+      {
+        "path": "kernel_struct/kernel_struct_report_latest.json",
+        "size": 983
+      },
+      {
+        "path": "media_gallery/gallery_manifest.json",
+        "size": 71
+      },
+      {
+        "path": "media_gallery/gallery_website.html",
+        "size": 2674
+      },
+      {
+        "path": "media_gallery/media_gallery_auto_publish.py",
+        "size": 10437
+      },
+      {
+        "path": "media_gallery/media_gallery_report_latest.json",
+        "size": 673
+      },
+      {
+        "path": "neural_network/neural_network_report_latest.json",
+        "size": 1535
+      },
+      {
+        "path": "neural_network/node_neural_sync_evolve.py",
+        "size": 6156
+      },
+      {
+        "path": "promotion_engine/promotion_report_latest.json",
+        "size": 2421
+      },
+      {
+        "path": "promotion_engine/rule_asset_promotion.py",
+        "size": 7542
+      },
+      {
+        "path": "sandbox_guard/guard_status.json",
+        "size": 236
+      },
+      {
+        "path": "sandbox_guard/heartbeat",
+        "size": 2
+      },
+      {
+        "path": "sandbox_guard/sandbox_alive_guard.sh",
+        "size": 4338
+      },
+      {
+        "path": "sandbox_guard/self_heal_log",
+        "size": 90
+      },
+      {
+        "path": "sealed_keys/seal_passphrase.txt",
+        "size": 45
+      },
+      {
+        "path": "sealed_keys/ssh_keys_sealed_20260912.enc",
+        "size": 496
+      },
+      {
+        "path": "security_audit/SANDBOX-BASE-HIGH-VALUE-PLAN-V1.md",
+        "size": 2351
+      },
+      {
+        "path": "security_audit/TOKEN-ROTATION-PLAN-V1.md",
+        "size": 2065
+      },
+      {
+        "path": "security_audit/credential_ledger.json",
+        "size": 857
+      },
+      {
+        "path": "security_audit/security_report_latest.json",
+        "size": 1188
+      },
+      {
+        "path": "sop_audit/sop_audit_report_latest.json",
+        "size": 571
+      },
+      {
+        "path": "sop_audit/sop_auto_update.py",
+        "size": 7418
+      },
+      {
+        "path": "sop_audit/sop_cloud_handshake_DESENSITIZED.md",
+        "size": 4871
+      },
+      {
+        "path": "sop_audit/sop_cloud_v11_DESENSITIZED.md",
+        "size": 6931
+      },
+      {
+        "path": "sop_audit/sop_patch_cloud_deploy.md",
+        "size": 11334
+      },
+      {
+        "path": "task_governance/task_value_governance.py",
+        "size": 8109
+      },
+      {
+        "path": "task_governance/task_value_report_latest.json",
+        "size": 2629
+      },
+      {
+        "path": "task_integrate/integrated_executor.sh",
+        "size": 1058
+      },
+      {
+        "path": "task_integrate/task_auto_integrate.py",
+        "size": 8214
+      },
+      {
+        "path": "task_integrate/task_integrate_report_latest.json",
+        "size": 1573
+      },
+      {
+        "path": "truth_audit/truth_audit_report_latest.json",
+        "size": 1895
+      },
+      {
+        "path": "truth_audit/truth_provenance_audit.py",
+        "size": 5051
+      },
+      {
+        "path": "truth_audit/truth_provenance_chain.csv",
+        "size": 795
+      },
+      {
+        "path": "truth_audit/truth_provenance_ledger.json",
+        "size": 1520
+      },
+      {
+        "path": "truth_distill/truth_distill_engine.py",
+        "size": 8204
+      },
+      {
+        "path": "truth_distill/truth_distill_ledger.json",
+        "size": 729
+      },
+      {
+        "path": "truth_distill/truth_distill_report_latest.json",
+        "size": 4103
+      },
+      {
+        "path": "truth_mirror/truth_index_latest.json",
+        "size": 7980
+      },
+      {
+        "path": "truth_mirror/truth_ledger_mirror.xlsx",
+        "size": 57215
+      },
+      {
+        "path": "truth_mirror/truths_raw_latest.json",
+        "size": 331
+      },
+      {
+        "path": "web_nav/web_nav_builder.py",
+        "size": 12303
+      },
+      {
+        "path": "web_nav/web_nav_graph.json",
+        "size": 35337
+      },
+      {
+        "path": "web_nav/web_nav_report_latest.json",
+        "size": 1075
+      },
+      {
+        "path": "web_nav/zongyuan_nav_hub.html",
+        "size": 29902
+      }
+    ],
+    "anchor_files": [
+      "CLOUD-SOP-v1.1.md",
+      "asset_manifest_20260915.json",
+      "capability_registry.json",
+      "error_lessons.json",
+      "ext_gateway_complete.md",
+      "ext_gateway_report.md",
+      "homology_protocol_library.json",
+      "lock_doc_base_cloud.md",
+      "metalaw_completion_list.json",
+      "metalaw_drift_report.md",
+      "metalaw_full_list.json",
+      "metalaw_register_registry.json",
+      "pending_upload_20260915.json",
+      "pending_upload_20260916.json",
+      "success_trail.json",
+      "truth_analysis_report.md",
+      "truths_internal.json",
+      "truths_public.json"
+    ],
+    "total_size": "",
+    "project_total": 81,
+    "total_size_kb": 521
+  },
+  "summary": "信息:云端快照4664+4586/本地索引289 记忆:能力注册8项+元法则34项云端独有元法则（源自LOCK-METALAW-SYNC-20260914比对）+同源协议12项 成果:台账199条(锁档FROZEN) 资产:本地81文件+核心资产18文件"
+}

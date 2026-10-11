@@ -1,0 +1,36 @@
+{
+  "audit_id": "SEC-AUDIT-20260916-0108",
+  "audit_time": "2026-09-16T01:08:24.174264+00:00",
+  "did": "DID-BR-000002",
+  "omega": "Ω₀⊂⊙∞⊂Ω",
+  "severity": "CRITICAL",
+  "findings": [
+    {
+      "id": "SEC-001",
+      "title": "云端公开CDN泄露记忆网关访问凭证",
+      "detail": "aka.doubaocdn.com/s/VjMxbyMqFx（V1.1）含token 4次、/s/KiYpvdA8C4（握手）含token 3次，公开链接可读取完整凭证",
+      "risk": "任何获取链接者可伪装节点写入/篡改云端真值",
+      "action": "云端SOP需脱敏 + 凭证轮换"
+    },
+    {
+      "id": "SEC-002",
+      "title": "本地凭证散落46处",
+      "detail": "token出现在11个Python脚本+8份MD文档+2个manifest，无统一台账",
+      "risk": "单点泄露即全域失守",
+      "action": "建立凭证台账 + 脚本凭证外部化"
+    },
+    {
+      "id": "SEC-003",
+      "title": "SSH清理残留空文件",
+      "detail": "authorized_keys.tmp（0字节）残留于~/.ssh/",
+      "risk": "低",
+      "action": "清理残留"
+    }
+  ],
+  "token_locations": {
+    "scripts": 11,
+    "docs": 8,
+    "manifests": 2,
+    "cloud_exposed": "V1.1 x4 / handshake x3"
+  }
+}

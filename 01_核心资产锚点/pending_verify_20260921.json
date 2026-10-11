@@ -1,0 +1,35 @@
+{
+  "verify_id": "VERIFY-20260921",
+  "created_at": "2026-09-21 02:22 +08:00",
+  "did": "DID-BR-000002",
+  "note": "写入端响应为空无法判定; 等价内容已固化于通道探索锁档文档与本地队列文件, 信息不丢",
+  "confirmed": [
+    "ARCH.THREE-TIER-EXEC.20260916",
+    "FROZEN.META-LAW-ARCH-001",
+    "QUEUE.PENDING-20260916.DIGESTED",
+    "KERNEL.HEALTH.20260916",
+    "PEND-20260915-001",
+    "PEND-20260915-002",
+    "PEND-20260915-003",
+    "PEND-20260915-004",
+    "PEND-20260916-005"
+  ],
+  "confirmed_by_unchanged": [
+    "KERNEL-SNAPSHOT.LOCK-FULL-DOMAIN-20260916"
+  ],
+  "pending_verify": [
+    {
+      "key": "SYNC-ROUTES-CONFIRM-20260921",
+      "last_write": "RAW_empty_x2",
+      "last_read": "502_timeout"
+    },
+    {
+      "key": "SYNC-MEMORY-EXPANDED-20260921",
+      "last_write": "408_then_unknown",
+      "last_read": "502_timeout"
+    }
+  ],
+  "retry_policy": "通道恢复窗口(读端点200)后复核; 等价内容已固化于通道探索锁档文档, 信息不丢",
+  "last_recheck": "2026-10-11T13:42:00+08:00",
+  "recheck_result": "new_route_success: 0/2"
+}

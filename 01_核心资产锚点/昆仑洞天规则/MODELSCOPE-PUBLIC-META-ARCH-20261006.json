@@ -1,0 +1,22 @@
+{
+  "asset_id": "ASSET-PUB-20261006-005",
+  "name": "元级智能架构体系技术白皮书V2.0(专业巡检升级)",
+  "type": "modelscope_public_dataset",
+  "url": "https://modelscope.cn/datasets/zongyuanroot/meta-intelligence-architecture",
+  "git_clone": "https://modelscope.cn/datasets/zongyuanroot/meta-intelligence-architecture.git",
+  "published_at": "2026-10-07T11:26:20",
+  "version": "V2.0(当前版,2026-10-07); 归档版 V1.0(2026-10-06)全部保留",
+  "files": [
+    "README.md",
+    "meta-intelligence-architecture-WHITEPAPER-V2.0.md(+新增)",
+    "meta-intelligence-architecture-WHITEPAPER-V2.0.html(+新增)",
+    "meta-intelligence-architecture-ARCH-V2.0.json(+新增)",
+    "WHITEPAPER-META-ARCH-V1.0.md(归档)",
+    "meta_arch.json(归档)"
+  ],
+  "license": "apache-2.0",
+  "visibility": "public(private=False已验证)",
+  "sensitive_audit": "✅ 零残留",
+  "cloud_report": "PUBLIC.MODELSCOPE.meta-intelligence-architecture-UPGRADE.20261007 (http=200)",
+  "quota": "零豆包付费"
+}

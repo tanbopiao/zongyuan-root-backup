@@ -1,0 +1,55 @@
+{
+  "report_id": "TRUTH-LIBRARY-HEALTH-20260919",
+  "generated_at": "2026-09-19T19:16:01+08:00",
+  "scope": "云端真值库全面体检（实时gateway全量+report/status）",
+  "total": 45703,
+  "nodes": 9,
+  "category_coverage": {
+    "meta_law": 133,
+    "rule": 173,
+    "protocol": 116,
+    "decision": 44,
+    "config": 22,
+    "data": 19,
+    "creative": 17,
+    "risk": 10,
+    "unknown": 0
+  },
+  "structural_findings": {
+    "run_observation_share": "约83%（PERCEPTION/predictive-engine/INTELLIGENCE_CALL_MONITOR/HEARTBEAT/HEALTH/observation等机器观测）",
+    "cognition_assets_share": "约17%（规则/决策/风险/创意/协议/配置）",
+    "main_shortboards": [
+      "risk类原仅6条(已补4)",
+      "creative类原仅14条(已补3)",
+      "data类原仅17条(已补2)",
+      "config类原仅20条(已补2)",
+      "decision类44条偏低(待补)"
+    ]
+  },
+  "filled_this_round": {
+    "risk": [
+      "RISK.7861-PUBLIC-GATEWAY.BLOCKED.V1",
+      "RISK.MAIN-DOMAIN.FULL-READ.502.V1",
+      "RISK.AMD-QUOTA.EXPIRY.V1",
+      "RISK.DATA-DRIFT.MULTI-WINDOW.V1"
+    ],
+    "creative": [
+      "CREATIVE.KUNLUN-DRAMA.WORKSHOP.V1",
+      "CREATIVE.PILOT-VIDEO.URBAN.V1",
+      "CREATIVE.TRAIN-CORPUS.V20260919"
+    ],
+    "data": [
+      "DATA.TRUTH-RECONCILE.20260919",
+      "DATA.TRUTH-LIBRARY.SNAPSHOT.20260919"
+    ],
+    "config": [
+      "CONFIG.ANCHOR.MAIN-DOMAIN.V1",
+      "CONFIG.CHANNEL-SPLIT.V1"
+    ]
+  },
+  "next_steps": [
+    "decision类44条偏低：待从本地决策记录批量提炼",
+    "云端独有7278条下轮训练数据吸收",
+    "9120挂载主域名后全量读并回"
+  ]
+}

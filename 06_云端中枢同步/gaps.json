@@ -1,0 +1,63 @@
+{
+  "stage": "evaluate",
+  "evaluated_at": "2026-09-16T00:00:20",
+  "system_metrics": {
+    "fetch_ok": true,
+    "truths_total": 11450,
+    "memory_pct": null,
+    "services": {
+      "记忆网关": "offline",
+      "通信网关": "offline",
+      "希尔伯特镜像态": "offline",
+      "GEO晶格": "online",
+      "量子纠缠层": "offline",
+      "飞书网关": "online",
+      "本地LLM": "online",
+      "自愈引擎": "online",
+      "向量数据库": "online",
+      "RAG服务": "online"
+    },
+    "meta_rules_count": 3
+  },
+  "pipeline_history": {
+    "runs_found": 8,
+    "last_status": "success",
+    "success_rate": 0.875,
+    "last_run_id": "RUN-20260915-183953"
+  },
+  "gaps": [
+    {
+      "gap_id": "GAP-SVC-记忆网关",
+      "domain": "service",
+      "severity": "medium",
+      "title": "服务疑似离线: 记忆网关",
+      "detail": "status=offline",
+      "suggested_action": "业务端点复核；需服务器凭据治理"
+    },
+    {
+      "gap_id": "GAP-SVC-通信网关",
+      "domain": "service",
+      "severity": "medium",
+      "title": "服务疑似离线: 通信网关",
+      "detail": "status=offline",
+      "suggested_action": "业务端点复核；需服务器凭据治理"
+    },
+    {
+      "gap_id": "GAP-SVC-希尔伯特镜像态",
+      "domain": "service",
+      "severity": "medium",
+      "title": "服务疑似离线: 希尔伯特镜像态",
+      "detail": "status=offline",
+      "suggested_action": "业务端点复核；需服务器凭据治理"
+    },
+    {
+      "gap_id": "GAP-SVC-量子纠缠层",
+      "domain": "service",
+      "severity": "medium",
+      "title": "服务疑似离线: 量子纠缠层",
+      "detail": "status=offline",
+      "suggested_action": "业务端点复核；需服务器凭据治理"
+    }
+  ],
+  "gap_count": 4
+}

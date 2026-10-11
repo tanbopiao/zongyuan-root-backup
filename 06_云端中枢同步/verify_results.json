@@ -1,0 +1,42 @@
+{
+  "stage": "verify",
+  "verified_at": "2026-09-16T00:00:21",
+  "checks": [
+    {
+      "proposal_id": "IMP-20260916-001",
+      "gap_id": "GAP-SVC-记忆网关",
+      "title": "服务疑似离线: 记忆网关",
+      "status": "PENDING",
+      "verified_at": null
+    },
+    {
+      "proposal_id": "IMP-20260916-002",
+      "gap_id": "GAP-SVC-通信网关",
+      "title": "服务疑似离线: 通信网关",
+      "status": "PENDING",
+      "verified_at": null
+    },
+    {
+      "proposal_id": "IMP-20260916-003",
+      "gap_id": "GAP-SVC-希尔伯特镜像态",
+      "title": "服务疑似离线: 希尔伯特镜像态",
+      "status": "PENDING",
+      "verified_at": null
+    },
+    {
+      "proposal_id": "IMP-20260916-004",
+      "gap_id": "GAP-SVC-量子纠缠层",
+      "title": "服务疑似离线: 量子纠缠层",
+      "status": "PENDING",
+      "verified_at": null
+    }
+  ],
+  "summary": {
+    "total": 4,
+    "verified": 0,
+    "rollback": 0,
+    "pending": 4,
+    "reported": 0
+  },
+  "reported_truths": []
+}

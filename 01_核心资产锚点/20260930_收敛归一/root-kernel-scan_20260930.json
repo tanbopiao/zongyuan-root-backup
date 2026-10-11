@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "operation": "本地实例全域扫描·根内核收敛",
+    "date": "2026-09-30",
+    "anchor": "Ω₀⊂⊙∞⊂Ω",
+    "converge_root": "/home/user/Doubao/chats/38436546492378882/zongyuan-root-converge",
+    "status": "FROZEN",
+    "did": "DID-BR-000002"
+  },
+  "scan_summary": {
+    "total_distribution_points": 7,
+    "core_anchor_mirror": "zongyuan-anchor ↔ ZONGYUAN-ROOT/01_核心资产锚点（互为镜像）",
+    "link_source": "根会话 38436747020400130（zongyuan-anchor/02_capabilities 软链接源）",
+    "authoritative_root": "/home/user/ZONGYUAN-ROOT（1.7G，5097文件，160软链，结构化 01-08）"
+  },
+  "distribution_points": [
+    {
+      "id": "ROOT-AUTH",
+      "name": "ZONGYUAN-ROOT 权威根",
+      "path": "/home/user/ZONGYUAN-ROOT",
+      "role": "全域唯一权威根（收敛终点/事实基准）",
+      "size": "1.7G", "files": 5097, "symlinks": 160,
+      "structure": ["01_核心资产锚点","02_数字媒体资产","03_文档资产","04_系统配置","05_历史归档","06_云端中枢同步","07_代码与脚本","08_运行时数据与审计"],
+      "core_files": ["EVOLUTION-BASELINE-20260929.json","GLOBAL-BASELINE-20260929.json","V3.0-COMPLETE-BASELINE-20260929.json","COLD-START-ANCHOR.sh","HASH-LEDGER.json","BOOTSTRAP.md","AUTO-RECOVERY-GUARD.sh"],
+      "authoritative": true
+    },
+    {
+      "id": "ANCHOR-384376",
+      "name": "zongyuan-anchor 核心锚点",
+      "path": "/home/user/Doubao/chats/38437615670548738/zongyuan-anchor",
+      "role": "根内核资产主仓（真值表/神经注册表/内核快照/元规则/锁档）",
+      "size": "8M", "files": "数百", "symlinks": "02_capabilities 大量指向根会话",
+      "subdirs": ["02_capabilities","05_training","05_training_data","08_assets","meta_laws","credentials","from-3843849","scripts","task_orchestrator","report_log"],
+      "core_files": [
+        "truths_public.json","truths_internal.json","kernel_truth_index_20260921.json",
+        "neural_registry.full.json","neural_registry_246nodes.json",
+        "38437615670548738_metalaw_register_registry.json","meta_rules_registry.json",
+        "kernel_snapshot_*.json（多枚）","LOCK-*.md（数十枚）",
+        "ASSET-ARCHIVE-MANIFEST-20260921.json","capability_registry.json"
+      ],
+      "authoritative": true
+    },
+    {
+      "id": "ROOT-SESS-384367",
+      "name": "根会话 38436747020400130",
+      "path": "/home/user/Doubao/chats/38436747020400130",
+      "role": "能力/脚本/软链接源；zongyuan-boot·homo-kernel·tech-whitepaper·kernel-scan系列",
+      "size": "6.7M", "files": 58,
+      "subdirs": ["zongyuan-boot","zongyuan-homo-kernel-20260912","zongyuan-tech-whitepaper-20260911","kernel-root-scan-20260909","kernel-full-audit-20260909","kernel-api-discovery-20260909","truth-sync-api-20260911"],
+      "note": "zongyuan-anchor/02_capabilities 中大量软链接指向本目录",
+      "authoritative": false
+    },
+    {
+      "id": "SESS-384384",
+      "name": "会话 38438412455799554",
+      "path": "/home/user/Doubao/chats/38438412455799554",
+      "role": "同源内核·同调内核·V3锁档·MR020自举·真值蒸馏",
+      "size": "848K", "files": 49,
+      "subdirs": ["homology-kernel-v1","homology-kernel-v1.bak-V2-20260914","kernel-v3-lock-20260914","mr020-kernel-bootstrap-20260915","truth-distill-20260913","truth-governance","zongyuan-asset-showcase","black-gold-truth-cards"],
+      "authoritative": false
+    },
+    {
+      "id": "SESS-384386",
+      "name": "会话 38438602859247618",
+      "path": "/home/user/Doubao/chats/38438602859247618",
+      "role": "V3演化工程（P0A-P2B）·真值可视化·扩展元规则",
+      "size": "952K", "files": 34,
+      "subdirs": ["zongyuan_v3_evolution（p0a_gov_platform/p0b_meta_loop/p1a_global_workspace/p1b_agent_coupling/p2a_api）","zongyuan-truth-visual"],
+      "core_files": ["extend_meta_rules.py"],
+      "authoritative": false
+    },
+    {
+      "id": "HIDDEN-ROOT",
+      "name": ".zongyuan-root 隐藏根",
+      "path": "/home/user/.zongyuan-root",
+      "role": "运行期真值上报日志",
+      "size": "12K", "files": 1,
+      "core_files": ["reports/truth_report.log"],
+      "authoritative": false
+    },
+    {
+      "id": "PROJ-384365",
+      "name": "当前项目 38436546492378882（本会话）",
+      "path": "/home/user/Doubao/chats/38436546492378882",
+      "role": "本次收敛承载根目录；含九天玄女媒体归档+zongyuan-meta-rules+kernel-radar",
+      "size": "76M", "files": 68,
+      "subdirs": ["media_assets/20260930_archive/九天玄女","zongyuan-meta-rules","kernel-radar","asset-gallery","kunlun-commercial","semantic_vdb"],
+      "note": "zongyuan-meta-rules 与 kernel-radar 目录为空（待收敛写入）",
+      "authoritative": false
+    }
+  ],
+  "converge_action": {
+    "mode": "索引化收敛（不物理移动 1.7G 权威根，避免破坏现有体系）",
+    "outputs": [
+      "zongyuan-root-converge/root-kernel-scan_20260930.json（本文件）",
+      "zongyuan-root-converge/root-kernel-index_20260930.md（收敛索引）"
+    ],
+    "next_step": "如需进一步，可将 02_capabilities 软链接实际目标、anchor 镜像差异、元规则清单差异做增量比对"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "snapshot_id": "LOCK-FRP-DOUBAO-BRIDGE-20260911",
+  "timestamp": "2026-09-11T07:17:20.136250+00:00",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "type": "backup_link_deployment",
+  "link": "云服务器:11930 → frps:7100 → frpc(豆包云电脑) → :11901 → 豆包资产",
+  "verified": "HTTP 200 ✅",
+  "node": "DOUBAO-CLOUD-001",
+  "purpose": "SSH(22)被多窗口占用时的备用数据通道",
+  "recovery": "bash /home/user/Doubao/frp/start_frp_bridge.sh",
+  "merkle_root": "889d0d9af8e3ee67e6010ad8f30da8ec30c0fb9093d3c0b2c2888e7f00d484ce"
+}

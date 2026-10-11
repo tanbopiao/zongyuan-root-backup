@@ -1,0 +1,34 @@
+{
+  "snapshot_id": "MEM-SNAP-COS-SYNC-DAEMON-20260909",
+  "timestamp": "2026-09-09T14:16:53.178199+00:00",
+  "type": "cos_incremental_sync_daemon",
+  "did": "DID-BR-000002",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "service": {
+    "name": "cos-sync-daemon",
+    "script": "/opt/ZONGYUAN-ROOT/scripts/cos_sync_daemon.py",
+    "systemd_unit": "/etc/systemd/system/cos-sync-daemon.service",
+    "status": "active",
+    "autostart": "enabled",
+    "interval": "60s",
+    "watch_root": "/opt/ZONGYUAN-ROOT",
+    "cos_prefix": "zongyuan-root"
+  },
+  "state": {
+    "assets_synced": 814,
+    "total_bytes": 232993587.2,
+    "excluded": [
+      ".git",
+      "logs",
+      "__pycache__",
+      "*.log",
+      "*.bak"
+    ]
+  },
+  "cos": {
+    "bucket": "zongyuan-1341127773",
+    "region": "ap-guangzhou",
+    "path": "cos://zongyuan-1341127773/zongyuan-root/"
+  },
+  "merkle_root": "c94e3903c740d35a05c9795989c845805df23a039d604416fc4c56c09925a56b"
+}

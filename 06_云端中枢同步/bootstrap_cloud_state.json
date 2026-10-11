@@ -1,0 +1,33 @@
+{
+  "last_run": "2026-10-11T13:38:12.898171",
+  "runs": 6,
+  "actions": {
+    "arbiter_scan": {
+      "last_time": "2026-10-11T13:14:15.213261",
+      "success": true,
+      "online": 0,
+      "total": 0
+    },
+    "report_heartbeat": {
+      "last_time": "2026-10-11T13:38:13.828281",
+      "internal": true,
+      "public": true
+    },
+    "metalaw_vote": {
+      "last_time": "2026-10-11T13:38:13.198863",
+      "pending": 0,
+      "voted": 0
+    },
+    "failover_check": {
+      "last_time": "2026-10-11T13:38:13.396292",
+      "online_nodes": 0,
+      "gateway_online": true,
+      "modules": {
+        "memory": "up",
+        "provenance": "up",
+        "scheduler": "up",
+        "gateway": "up"
+      }
+    }
+  }
+}

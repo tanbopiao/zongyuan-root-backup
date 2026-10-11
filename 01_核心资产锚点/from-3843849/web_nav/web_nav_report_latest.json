@@ -1,0 +1,29 @@
+{
+  "report_time": "2026-09-20T19:04:44.475321+00:00",
+  "nav_graph": {
+    "total_links": 199,
+    "kb_links": 192,
+    "core_links": 7,
+    "core_mechanisms": 4
+  },
+  "nav_html": "/home/user/Doubao/chats/38438491307070978/web_nav/zongyuan_nav_hub.html",
+  "core_links": [
+    "官网门户·全域资产可视化",
+    "官网作品库",
+    "全域锁档台账",
+    "云盘归档库",
+    "知识库空间",
+    "云端记忆网关",
+    "SOP 云端入口"
+  ],
+  "core_mechanisms": [
+    "同源节点神经网络同步机制V1.0",
+    "沙盒存活守护机制V1.0",
+    "同源协议环境探索机制V1.0",
+    "自动流程闭环标准V1.0"
+  ],
+  "cloud": {
+    "error": "HTTP Error 502: Bad Gateway"
+  },
+  "verdict": "NAV_ACTIVE"
+}

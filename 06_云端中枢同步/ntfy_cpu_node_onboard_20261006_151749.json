@@ -1,0 +1,46 @@
+{
+  "audit_id": "NTFY-CPU-NODE-ONBOARD-20261006_151749",
+  "timestamp": "2026-10-06T15:17:49.874360",
+  "action": "CPU常驻实例接入ntfy事件总线, 联通云端中枢+飞书共享大脑",
+  "node": {
+    "did": "DID-BR-000002",
+    "node_id": "ZR-NODE-CPU-001",
+    "hardware": "8核32GB CPU",
+    "role": "常驻自治节点"
+  },
+  "ntfy_channel": {
+    "server": "ntfy.sh",
+    "topic": "zongyuan-kunlun-2026",
+    "auth": "主题令牌(待配置) / 消息zr身份字段校验",
+    "connectivity_test": "发布HTTP200 + 订阅SSE正常",
+    "closed_loop_test": "发布COMMAND(echo t-004)→订阅→执行→RESULT回传 全部成功",
+    "protocol": "NTFY-CPU-NODE-接入协议-SOP-V1.0"
+  },
+  "agent_script": "/home/user/ZONGYUAN-ROOT/07_代码与脚本/cpu_agent.py",
+  "protocol_doc": "/home/user/ZONGYUAN-ROOT/03_文档资产/SOP/NTFY-CPU-NODE-接入协议-SOP-V1.0.md",
+  "shared_brain_registration": {
+    "worker_registry": "tblI63jJ0UpPHPch +1条(CPU常驻 ntfy Agent, 运行中)",
+    "node_overview": "tblOmIRJtTn2EsvM +1条(ZR-NODE-CPU-001, 在线, Worker)",
+    "handshake": "tblbluoLJQNrftFD +1条(握手成功)"
+  },
+  "cloud_truth_report": {
+    "primary": "www HTTP200",
+    "backup": "drama HTTP200",
+    "result": "主备均成功"
+  },
+  "three_layer_fixation": {
+    "local": "cpu_agent.py + SOP 已落本地持久层 /home/user/ZONGYUAN-ROOT/",
+    "cloud": "共享大脑3表注册 + 云端真值主备上报",
+    "git": "待对接(Gitee/GitHub仓库, 当前ZONGYUAN-ROOT非git仓库)"
+  },
+  "bugs_fixed": [
+    "publish中文title触发latin-1 header错误→改JSON body发布",
+    "subscribe长连超时→加poll=1",
+    "JSON body双层包装解析→二级解析"
+  ],
+  "pending": [
+    "ntfy主题访问令牌配置(ntfy_token.env)",
+    "Git异地备份对接",
+    "task_pull/heal命令接入飞书Worker"
+  ]
+}

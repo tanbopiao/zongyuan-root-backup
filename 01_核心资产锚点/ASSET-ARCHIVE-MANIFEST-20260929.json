@@ -1,0 +1,89 @@
+{
+  "node": "ZR-NODE-DC2E51C0",
+  "did": "DID-BR-000002",
+  "omega_anchor": "Ω₀⊂⊙∞⊂Ω",
+  "manifest_id": "ASSET-ARCHIVE-MANIFEST-20260929",
+  "generated_at": "2026-09-29",
+  "root": "/home/user/ZONGYUAN-ROOT",
+  "total_files": 4214,
+  "total_bytes": 1696055837,
+  "total_size_human": "1.58 GB",
+  "partitions": {
+    "01_核心资产锚点": {
+      "files": 430,
+      "bytes": 15755342
+    },
+    "02_数字媒体资产": {
+      "files": 449,
+      "bytes": 1058100791
+    },
+    "03_文档资产": {
+      "files": 318,
+      "bytes": 4195174
+    },
+    "04_系统配置": {
+      "files": 77,
+      "bytes": 20608382
+    },
+    "05_历史归档": {
+      "files": 1565,
+      "bytes": 74967716
+    },
+    "06_云端中枢同步": {
+      "files": 228,
+      "bytes": 7126191
+    },
+    "07_代码与脚本": {
+      "files": 314,
+      "bytes": 30712447
+    },
+    "08_运行时数据与审计": {
+      "files": 142,
+      "bytes": 10047856
+    },
+    "DATA_LAKE": {
+      "files": 641,
+      "bytes": 474303333
+    },
+    "L2": {
+      "files": 33,
+      "bytes": 166164
+    },
+    "meta-rules": {
+      "files": 5,
+      "bytes": 19395
+    },
+    ".storage_index": {
+      "files": 1,
+      "bytes": 4161
+    },
+    "test": {
+      "files": 1,
+      "bytes": 4132
+    },
+    "产品化": {
+      "files": 2,
+      "bytes": 18849
+    }
+  },
+  "new_assets_this_lock": [
+    "meta-rules/META-RULE-013.md",
+    "meta-rules/META-RULE-014.md",
+    "meta-rules/META-RULE-015.md",
+    "meta-rules/META-RULE-016.md",
+    "01_核心资产锚点/LOCK-FULL-EVOLUTION-20260929-001.md",
+    "01_核心资产锚点/LOCK-META-RULES-V1.4-20260929-001.md",
+    "01_核心资产锚点/LOCK-NEURAL-404-20260929-001.md",
+    "01_核心资产锚点/LOCK-DATA-LAKE-L1L4-20260929-001.md",
+    "01_核心资产锚点/LOCK-TRUTH-TRACE-20260929-001.md",
+    "01_核心资产锚点/ASSET-HASH-REGISTRY-20260929.json",
+    "01_核心资产锚点/ASSET-ARCHIVE-MANIFEST-20260929.json",
+    "GLOBAL-BASELINE-20260929.json"
+  ],
+  "evidence_dirs": [
+    "08_运行时数据与审计/truth_trace_20260929/",
+    "08_运行时数据与审计/evolution_20260929/"
+  ],
+  "hash_ledger_entries": 8,
+  "note": "20260929全维进化升级后重建的全量资产台账（find/du实测）；旧版 ASSET-*-20260921.json 保持不动"
+}

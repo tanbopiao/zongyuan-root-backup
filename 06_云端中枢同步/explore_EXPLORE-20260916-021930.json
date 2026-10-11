@@ -1,0 +1,1983 @@
+{
+ "gateway": {
+  "ok": true,
+  "total": 11791,
+  "daily_growth": [
+   {
+    "day": "2026-09-10",
+    "count": 0
+   },
+   {
+    "day": "2026-09-11",
+    "count": 0
+   },
+   {
+    "day": "2026-09-12",
+    "count": 0
+   },
+   {
+    "day": "2026-09-13",
+    "count": 0
+   },
+   {
+    "day": "2026-09-14",
+    "count": 369
+   },
+   {
+    "day": "2026-09-15",
+    "count": 293
+   },
+   {
+    "day": "2026-09-16",
+    "count": 0
+   }
+  ],
+  "categories": {
+   "uncategorized": 1703,
+   "activation": 1,
+   "approval": 39,
+   "approval_pending": 2,
+   "arbitration": 1,
+   "asset": 73,
+   "axiom": 132,
+   "bayesian_loop_result": 7,
+   "case": 1880,
+   "cleaned": 61,
+   "closed_loop": 1,
+   "creative": 171,
+   "data": 3146,
+   "decision": 86,
+   "deploy_queue": 10,
+   "dissipative_order": 1,
+   "drama_production": 1,
+   "evolution_record": 3,
+   "evolved_prior": 7,
+   "experience": 2,
+   "fix": 3,
+   "health": 2,
+   "ledger": 3,
+   "lesson": 1,
+   "lock": 148,
+   "meta_law": 5,
+   "meta_order_report": 1,
+   "meta_rule": 369,
+   "metalaw": 3,
+   "method": 985,
+   "observation": 77,
+   "pipeline_status": 1,
+   "protocol": 320,
+   "research": 1,
+   "risk": 295,
+   "sop": 1,
+   "stability_measure": 70,
+   "state_machine": 324,
+   "sync": 1,
+   "test": 5,
+   "theorem": 586,
+   "unclassified": 1263
+  },
+  "meta_rules_total": 78,
+  "meta_rules_latest": [
+   {
+    "rule_id": "META-RULE.VIDEO-PRODUCTION-FAILOVER-V1.0",
+    "rule_name": "视频量产通道自动故障转移",
+    "content": "视频通道优先级: ①豆包seedance(免费开通后最高质量优先) ②Agnes免费(限流窗口内) ③硅基流动(有余额)。额度/限流/未开通错误自动切下一通道; 全部不可用→manifest记录失败原因，等待通道恢复后由crontab补产。ffprobe本地质检(竖屏+时长≥4s)兜底，本机对象存储入库(bucket=videos)。",
+    "category": "生产自治",
+    "priority": "A",
+    "status": "ACTIVE",
+    "created_at": "2026-09-14T10:20:00+08:00",
+    "efuse": true,
+    "enforcement": "drama-admin-api/video_production.py"
+   },
+   {
+    "rule_id": "MR-083",
+    "rule_name": "数字资产可视化基准架构与扩展规范",
+    "content": {
+     "purpose": "锁定数字资产可视化全流程为基准架构，定义标准化扩展规范，所有新增模块在基准上叠加，禁止推翻重构",
+     "baseline_architecture": {
+      "layer1_data_collection": {
+       "name": "数据采集层",
+       "components": [
+        "记忆网关9120 (真值接收)",
+        "media_auto_archive_daemon (媒体自动归档)",
+        "feishu_media_archive_bot (飞书媒体归档)",
+        "asset_scanner (资产扫描，每小时)",
+        "feishu_base_sync (飞书Base同步，每30分钟)"
+       ],
+       "status": "locked"
+      },
+      "layer2_processing": {
+       "name": "数据处理层",
+       "components": [
+        "global_asset_visualizer.py (全域资产统计，每15分钟)",
+        "asset_visualizer.py (短剧资产统计，每30分钟)"
+       ],
+       "output": "/digital_assets.json (HTTPS可访问)",
+       "status": "locked"
+      },
+      "layer3_visualization": {
+       "name": "可视化展示层",
+       "components": [
+        "/digital-assets.html (全域资产可视化页面)",
+        "首页导航入口 (数字资产)",
+        "动态加载: fetch + 5分钟自动刷新"
+       ],
+       "status": "locked"
+      },
+      "layer4_integration": {
+       "name": "官网集成层",
+       "components": [
+        "两个root目录同步部署 (huodouai.com + www.huodouai.com)",
+        "Nginx静态文件服务",
+        "HTTPS访问"
+       ],
+       "status": "locked"
+      }
+     },
+     "extension_spec": {
+      "principle": "在基准架构上叠加扩展，禁止修改/删除已有层，只能新增数据源、新增展示模块、新增页面",
+      "how_to_add_datasource": {
+       "step1": "在global_asset_visualizer.py中新增get_xxx_stats()函数",
+       "step2": "在main()的data字典中新增对应字段",
+       "step3": "在digital-assets.html的render()中新增展示模块",
+       "step4": "测试验证后更新基准快照"
+      },
+      "how_to_add_module": {
+       "step1": "新增独立页面 /xxx.html",
+       "step2": "在首页导航添加入口",
+       "step3": "两个root目录同步部署",
+       "step4": "写入元法则，更新基准"
+      },
+      "how_to_add_whitepaper": {
+       "step1": "文档放入 /opt/ZONGYUAN-ROOT/docs/",
+       "step2": "global_asset_visualizer自动统计",
+       "step3": "在官网whitepapers目录部署HTML版",
+       "step4": "导航添加入口"
+      },
+      "how_to_add_api": {
+       "step1": "API服务绑定127.0.0.1（非白名单端口）",
+       "step2": "Nginx反代到公网路径（如需对外）",
+       "step3": "在global_asset_visualizer的services列表中新增监控",
+       "step4": "更新端口台账"
+      },
+      "how_to_add_system": {
+       "step1": "新系统部署到独立目录/端口",
+       "step2": "纳入unified_service_guard自愈监控",
+       "step3": "在global_asset_visualizer中新增统计",
+       "step4": "官网新增展示页面+导航入口",
+       "step5": "写入元法则，更新基准快照"
+      }
+     },
+     "locked_files": [
+      "/opt/ZONGYUAN-ROOT/scripts/global_asset_visualizer.py",
+      "/www/wwwroot/www.huodouai.com/digital-assets.html",
+      "/www/wwwroot/huodouai.com/digital-assets.html"
+     ],
+     "modification_rule": "基准架构文件修改必须走MR-080变更审批(P0级)，扩展新增走P2/P3级",
+     "verification": "每日基准验证自动检查架构完整性"
+    },
+    "category": "protocol",
+    "priority": "L1",
+    "status": "active",
+    "created_at": "2026-09-14T10:38:23.589660"
+   },
+   {
+    "rule_id": "MR-084",
+    "rule_name": "已固化成果变更审批（LOCKED-CHANGE-APPROVAL）",
+    "content": {
+     "purpose": "视频量产通道等已固化成果默认eFuse锁定，不允许未经审批的修改",
+     "locked_assets": [
+      {
+       "path": "/opt/ZONGYUAN-ROOT/drama-admin-api/video_production.py",
+       "md5": "8ddc851e049ba8b38278818ae04418a3",
+       "note": "视频量产执行器：seedance-1.0免费优先/i2v/poll兼容/URL统一"
+      },
+      {
+       "path": "/opt/ZONGYUAN-ROOT/drama-admin-api/app.py",
+       "md5": "7a117196a277ce7d317d4c7d1e6cb6b5",
+       "note": "8100上传服务：subdir路径修复，本地磁盘对象存储"
+      }
+     ],
+     "approval_flow": "用户审批通过 → chattr -i 解锁 → 修改 → py_compile验证 → 重启服务 → 更新md5基准 → 重新eFuse锁定",
+     "violation": "未审批修改触发M1真值不变告警并自动回滚至最后锁定版本",
+     "effective_from": "2026-09-14 16:04:18"
+    }
+   }
+  ],
+  "services": [
+   {
+    "name": "记忆网关",
+    "port": 9120,
+    "status": "online"
+   },
+   {
+    "name": "通信网关",
+    "port": 9122,
+    "status": "offline"
+   },
+   {
+    "name": "希尔伯特镜像态",
+    "port": 9125,
+    "status": "offline"
+   },
+   {
+    "name": "GEO晶格",
+    "port": 9151,
+    "status": "online"
+   },
+   {
+    "name": "量子纠缠层",
+    "port": 9160,
+    "status": "offline"
+   },
+   {
+    "name": "飞书网关",
+    "port": 8001,
+    "status": "online"
+   },
+   {
+    "name": "本地LLM",
+    "port": 8081,
+    "status": "offline"
+   },
+   {
+    "name": "自愈引擎",
+    "port": 8161,
+    "status": "online"
+   },
+   {
+    "name": "向量数据库",
+    "port": 8014,
+    "status": "offline"
+   },
+   {
+    "name": "RAG服务",
+    "port": 8085,
+    "status": "online"
+   }
+  ],
+  "system": {
+   "memory": {
+    "total_mb": 3654,
+    "available_mb": 2252,
+    "used_mb": 1402,
+    "usage_percent": 38.4
+   },
+   "disk": {
+    "total_gb": 59.9,
+    "used_gb": 42.0,
+    "usage_percent": 70.1
+   }
+  },
+  "web_assets": {
+   "total_html": 423,
+   "main_site_pages": 120,
+   "main_site_list": [
+    "404.html",
+    "about-line.html",
+    "achievements.html",
+    "agent-embodiment.html",
+    "agent-network.html",
+    "agent-studio.html",
+    "ai-asset-lock.html",
+    "ai-gateway.html",
+    "aios-image.html",
+    "architecture-deep.html",
+    "architecture.html",
+    "asset-center.html",
+    "auto-ops.html",
+    "auto-pipeline.html",
+    "autonomy-dashboard.html",
+    "bayesian-five-elements.html",
+    "blog.html",
+    "book-demo.html",
+    "brain-strategy.html",
+    "capability-radar.html",
+    "cases.html",
+    "central-brain.html",
+    "change-ledger.html",
+    "character-ai.html",
+    "characters.html",
+    "commercial.html",
+    "content-line.html",
+    "cosmic-intelligence.html",
+    "cosmic-origin.html",
+    "decision-intelligence.html",
+    "delivery-standard.html",
+    "developer-center.html",
+    "developers.html",
+    "digital-assets.html",
+    "digital-gallery-v3.html",
+    "dlp-gateway.html",
+    "docs.html",
+    "drama-factory.html",
+    "drift.html",
+    "ecosystem-line.html",
+    "edu-ai-teacher.html",
+    "edu-chat.html",
+    "edu-knowledge-graph.html",
+    "education-line.html",
+    "education.html",
+    "emergence.html",
+    "engines.html",
+    "enterprise-system.html",
+    "evolution-strategy.html",
+    "experience-kb.html",
+    "global-audit-report.html",
+    "global-learning.html",
+    "gov-line.html",
+    "governance.html",
+    "high-capabilities.html",
+    "high-order-state.html",
+    "index.html",
+    "kb-saas.html",
+    "kernel-lock-visual.html",
+    "kernel-memory.html",
+    "kernel-status.html",
+    "keyframe-gallery.html",
+    "knowledge.html",
+    "kunlun-drama.html",
+    "learning-evolution.html",
+    "ledger-center.html",
+    "ledger.html",
+    "lightweight-strategy-v2.html",
+    "lightweight-strategy.html",
+    "lightweight-v2.html",
+    "lightweight-v3.html",
+    "logo-design.html",
+    "memory-gateway.html",
+    "meta-rules-v2.html",
+    "microkernel-architecture.html",
+    "model-compare-lab.html",
+    "modelroute.html",
+    "monitor.html",
+    "notary-api.html",
+    "opensource.html",
+    "ops-center.html",
+    "ops-line.html",
+    "ops-monitor.html",
+    "performance.html",
+    "philosophy.html",
+    "portal.html",
+    "pricing.html",
+    "product-map.html",
+    "product-matrix.html",
+    "product.html",
+    "products.html",
+    "prometheus-api-docs.html",
+    "research.html",
+    "roadmap.html",
+    "roi-calculator.html",
+    "safe-evolution.html",
+    "search.html",
+    "sec-tower-roadmap.html",
+    "sec-tower-v1.html",
+    "security-compliance.html",
+    "security-line.html",
+    "semantic-dashboard.html",
+    "server-monitor.html",
+    "service-ledger.html",
+    "sitemap.html",
+    "solutions.html",
+    "standard-sop.html",
+    "standardization-center.html",
+    "startup-loop-defense-whitepaper.html",
+    "status-center.html",
+    "status.html",
+    "system-capabilities.html",
+    "system-dashboard.html",
+    "token-gateway.html",
+    "truth-transmutation.html",
+    "unified-console.html",
+    "vector.html",
+    "whitepaper.html",
+    "workbench.html",
+    "works-gallery-v2.html"
+   ],
+   "subdirectories": {
+    "gov-monitor": 1,
+    "notification-config": 1,
+    "domains": 12,
+    "gov": 3,
+    "console": 1,
+    "internal": 13,
+    "gov-canvas": 1,
+    "docs": 5,
+    "platform": 1,
+    "ai": 1,
+    "ops": 3,
+    "philosophy": 1,
+    "knowledge": 1,
+    "education": 1,
+    "research": 1,
+    "agent-admin": 1,
+    "architecture": 15,
+    "drama": 25,
+    "aios": 22,
+    "workbench": 1,
+    "api-usage-dashboard": 1,
+    "template-market": 1,
+    "apps": 5,
+    "alert-center": 1,
+    "score-trend": 1,
+    "gov-api-docs": 1,
+    "experience": 1,
+    "gov-mobile": 1,
+    "gov-ai": 1,
+    "gov-agents": 1,
+    "products": 23,
+    "blog": 7,
+    "solutions": 9,
+    "cases": 1,
+    "partners": 1,
+    "about": 6,
+    "pricing": 1,
+    "whitepaper": 1,
+    "privacy": 1,
+    "terms": 1,
+    "contact": 1,
+    "changelog": 1,
+    "showcase": 1,
+    "status": 1,
+    "drift": 1,
+    "whitepapers": 5,
+    "pages": 13,
+    "portal": 2,
+    "gov-admin": 1,
+    "api-platform": 1,
+    "drama-internal": 5,
+    "gov-operator-admin": 1,
+    "dashboard": 1,
+    "rbac-admin": 1,
+    "gov-dashboard": 1,
+    "api-docs": 1,
+    "security": 1,
+    "sovereignty": 3,
+    "identity-console": 1,
+    "gov-pricing": 1,
+    "gov-sales": 1,
+    "gov-cases": 1,
+    "gov-compete": 1,
+    "identity-market": 1,
+    "kernel-console": 1,
+    "capability-orchestrator": 1,
+    "capability-scoring": 1,
+    "agent-experience": 1,
+    "kunlun": 4,
+    "assets": 16,
+    "kernel": 1,
+    "dissipative": 3,
+    "evolution": 3,
+    "theory": 1
+   },
+   "subdomains": [
+    {
+     "domain": "gov.huodouai.com",
+     "pages": 16,
+     "size_mb": 169.9,
+     "status": "online"
+    },
+    {
+     "domain": "docs.huodouai.com",
+     "pages": 9,
+     "size_mb": 0.3,
+     "status": "online"
+    },
+    {
+     "domain": "status.huodouai.com",
+     "pages": 8,
+     "size_mb": 0.1,
+     "status": "online"
+    },
+    {
+     "domain": "api.huodouai.com",
+     "pages": 4,
+     "size_mb": 0.1,
+     "status": "online"
+    },
+    {
+     "domain": "console.huodouai.com",
+     "pages": 12,
+     "size_mb": 1.9,
+     "status": "online"
+    }
+   ],
+   "total_subdomains": 5
+  },
+  "classification": [
+   {
+    "id": "kunlun_drama",
+    "name": "昆仑洞天·短剧生产",
+    "icon": "🎬",
+    "pages": 39,
+    "docs": 3,
+    "media": 219,
+    "subdomains": [
+     "drama.huodouai.com",
+     "kunlun.huodouai.com"
+    ],
+    "page_list": [
+     "drama-factory.html",
+     "character-ai.html",
+     "kunlun-drama.html",
+     "keyframe-gallery.html",
+     "characters.html",
+     "/drama/",
+     "/drama/",
+     "/drama/",
+     "/drama/",
+     "/drama/"
+    ],
+    "doc_list": [
+     "KUNLUN-4END-ARCHIVE-SOP-V1.md",
+     "KUNLUN-4END-ARCHIVE-SOP-V1.1.md",
+     "DRAMA-PRODUCTION-SOP-V1.0.md"
+    ]
+   },
+   {
+    "id": "meta_kernel",
+    "name": "元极恒一内核",
+    "icon": "🧠",
+    "pages": 88,
+    "docs": 4,
+    "media": 0,
+    "subdomains": [],
+    "page_list": [
+     "drift.html",
+     "404.html",
+     "sitemap.html",
+     "index.html",
+     "dlp-gateway.html",
+     "architecture.html",
+     "vector.html",
+     "kernel-lock-visual.html",
+     "knowledge.html",
+     "experience-kb.html"
+    ],
+    "doc_list": [
+     "open_truth_pool_api.md",
+     "META_RULES.md",
+     "GLOBAL_TRUTH_INTEGRATION_V2.0.md",
+     "TRUTH-SECURITY-CLASSIFICATION-20260913.md"
+    ]
+   },
+   {
+    "id": "developer",
+    "name": "开发者中心",
+    "icon": "👨‍💻",
+    "pages": 16,
+    "docs": 29,
+    "media": 0,
+    "subdomains": [
+     "docs.huodouai.com",
+     "api.huodouai.com",
+     "console.huodouai.com"
+    ],
+    "page_list": [
+     "developers.html",
+     "notary-api.html",
+     "digital-assets.html",
+     "docs.html",
+     "developer-center.html",
+     "prometheus-api-docs.html",
+     "digital-gallery-v3.html",
+     "standard-sop.html",
+     "/docs/",
+     "/docs/"
+    ],
+    "doc_list": [
+     "node_link_types.md",
+     "central_scheduling_api.md",
+     "CLOUD_ALIGNMENT.md",
+     "INDEX.md",
+     "同源节点全面对账架构规则协议V1.0.md",
+     "VOLCENGINE_ARK_SETUP_GUIDE.md",
+     "GITHUB_REMOVAL_RECORD.md",
+     "GIT_SYNC_OPTIMIZATION.md",
+     "P0_PHASE_COMPLETE_REPORT.md",
+     "HOMO_NODE_RECONCILIATION_PROTOCOL_V1.0.md"
+    ]
+   },
+   {
+    "id": "product",
+    "name": "产品与商业化",
+    "icon": "🚀",
+    "pages": 33,
+    "docs": 0,
+    "media": 2,
+    "subdomains": [],
+    "page_list": [
+     "workbench.html",
+     "products.html",
+     "product.html",
+     "portal.html",
+     "agent-studio.html",
+     "product-matrix.html",
+     "product-map.html",
+     "/workbench/",
+     "/products/",
+     "/products/"
+    ],
+    "doc_list": []
+   },
+   {
+    "id": "asset_ledger",
+    "name": "资产与台账",
+    "icon": "📦",
+    "pages": 21,
+    "docs": 1,
+    "media": 7,
+    "subdomains": [],
+    "page_list": [
+     "ledger.html",
+     "achievements.html",
+     "change-ledger.html",
+     "service-ledger.html",
+     "ledger-center.html",
+     "/assets/",
+     "/assets/",
+     "/assets/",
+     "/assets/",
+     "/assets/"
+    ],
+    "doc_list": [
+     "service_ledger_v1.0.md"
+    ]
+   },
+   {
+    "id": "research_thought",
+    "name": "研究与思想",
+    "icon": "💡",
+    "pages": 20,
+    "docs": 4,
+    "media": 0,
+    "subdomains": [],
+    "page_list": [
+     "philosophy.html",
+     "research.html",
+     "global-learning.html",
+     "safe-evolution.html",
+     "emergence.html",
+     "high-order-state.html",
+     "whitepaper.html",
+     "learning-evolution.html",
+     "evolution-strategy.html",
+     "/philosophy/"
+    ],
+    "doc_list": [
+     "SHANHAIJING_FRAMEWORK.md",
+     "FULL_EVOLUTION_ROADMAP.md",
+     "ENGINEERING_OPS_WHITEPAPER_v1.0.md",
+     "evolution_metrics_spec.md"
+    ]
+   },
+   {
+    "id": "gov_ai",
+    "name": "政务AI中台",
+    "icon": "🏛️",
+    "pages": 18,
+    "docs": 0,
+    "media": 0,
+    "subdomains": [
+     "gov.huodouai.com"
+    ],
+    "page_list": [
+     "governance.html",
+     "gov-line.html",
+     "/gov-monitor/",
+     "/gov/",
+     "/gov/",
+     "/gov/",
+     "/gov-canvas/",
+     "/gov-api-docs/",
+     "/gov-mobile/",
+     "/gov-ai/"
+    ],
+    "doc_list": []
+   },
+   {
+    "id": "governance_security",
+    "name": "治理与安全",
+    "icon": "🛡️",
+    "pages": 9,
+    "docs": 1,
+    "media": 0,
+    "subdomains": [],
+    "page_list": [
+     "auto-ops.html",
+     "ai-asset-lock.html",
+     "security-line.html",
+     "security-compliance.html",
+     "startup-loop-defense-whitepaper.html",
+     "/security/",
+     "/sovereignty/",
+     "/sovereignty/",
+     "/sovereignty/"
+    ],
+    "doc_list": [
+     "SECURITY_HARDENING_CHECKLIST.md"
+    ]
+   },
+   {
+    "id": "status_monitor",
+    "name": "状态与监控",
+    "icon": "📊",
+    "pages": 6,
+    "docs": 0,
+    "media": 0,
+    "subdomains": [
+     "status.huodouai.com"
+    ],
+    "page_list": [
+     "monitor.html",
+     "status.html",
+     "status-center.html",
+     "ops-monitor.html",
+     "server-monitor.html",
+     "/status/"
+    ],
+    "doc_list": []
+   },
+   {
+    "id": "education",
+    "name": "普惠教育",
+    "icon": "📚",
+    "pages": 3,
+    "docs": 0,
+    "media": 0,
+    "subdomains": [],
+    "page_list": [
+     "education.html",
+     "education-line.html",
+     "/education/"
+    ],
+    "doc_list": []
+   },
+   {
+    "id": "decision_intel",
+    "name": "决策智能",
+    "icon": "⚖️",
+    "pages": 1,
+    "docs": 0,
+    "media": 0,
+    "subdomains": [],
+    "page_list": [
+     "decision-intelligence.html"
+    ],
+    "doc_list": []
+   }
+  ],
+  "generated_at": "2026-09-16T02:15:01.662661"
+ },
+ "snapshots": [
+  {
+   "id": "LOCK-NODE-UNIFY-VIS-20260915-001",
+   "name": "数字资产展示页锁档",
+   "ts": "2026-09-15T11:38:34+08:00",
+   "wiki": "https://my.feishu.cn/wiki/Ix12wdZoNikVahkx0lWcHnTcnLv",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-NODE-UNIFY-20260915-001",
+   "name": "节点层级统一SOP V1.0",
+   "ts": "2026-09-15T11:07:37+08:00",
+   "wiki": "https://my.feishu.cn/wiki/TG7LwYFKdiX9GakznfLcSErOnWb",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-TRUTH-PACKAGE-20260915-001",
+   "name": "全域真值总表(30条)+资产总包",
+   "ts": "2026-09-15T10:25:47+08:00",
+   "wiki": "https://my.feishu.cn/wiki/DsMKwFlbXiiaJLk4hcGcvEHDn5b",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-MR020-AUTONOMY-80.5-20260915-001",
+   "name": "自治指数80.5%永恒自治/终极目标达成",
+   "ts": "2026-09-15T10:19:10+08:00",
+   "wiki": "https://my.feishu.cn/wiki/XPW2woKpDiES2hkrL5zcZXBFnKf",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-MR020-AUTONOMY-61.9-20260915-001",
+   "name": "自治指数51.8→61.9%高级自治",
+   "ts": "2026-09-15T10:14:43+08:00",
+   "wiki": "https://my.feishu.cn/wiki/HxkHwmfz0iBmqRkrHuccRWcJnbc",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-GATEWAY-SOP-20260915-001",
+   "name": "云端网关V2新通道SOP/9120隐藏迁移",
+   "ts": "2026-09-15T10:12:13+08:00",
+   "wiki": "https://my.feishu.cn/wiki/Dtz1w5q34ig7UFk5KC8cOLgPnuh",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-MR020-M3-20260915-001",
+   "name": "元极恒一内核V1.0-ETERNAL/BASELINE-V41注册",
+   "ts": "2026-09-15T09:56:40+08:00",
+   "wiki": "https://my.feishu.cn/wiki/TLfVwB91AiHWzpkTVN4ct4sknpg",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-MR020-M2-20260915-001",
+   "name": "自治指数计算器实装/51.8%中级自治",
+   "ts": "2026-09-15T09:53:23+08:00",
+   "wiki": "https://my.feishu.cn/wiki/PD2nwY8H3iRCPlklX2XcOyYEnoe",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-MR020-CHAO-20260915-001",
+   "name": "冲突消解+元公理生成实装/总漂移0.0 HEALTHY",
+   "ts": "2026-09-15T09:43:32+08:00",
+   "wiki": "https://my.feishu.cn/wiki/Dnaqw5E2ti8Xt0kOyQkclCspnef",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-MR020-YUAN-GUARD-20260915-001",
+   "name": "元本源防护落地/总漂移33.7→5.2 HEALTHY",
+   "ts": "2026-09-15T09:39:05+08:00",
+   "wiki": "https://my.feishu.cn/wiki/InJzwZHqxi3WM7k6c8ocxFN5nTf",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-MR020-M1-20260915-001",
+   "name": "MR-020六维漂移审计引擎实装",
+   "ts": "2026-09-15T09:32:06+08:00",
+   "wiki": "https://my.feishu.cn/wiki/G5YAwm5g7iVqlwkc22fcunMqnId",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-MR020-M0-20260915-001",
+   "name": "MR-020元极恒一内核M0整合基础",
+   "ts": "2026-09-15T09:16:46+08:00",
+   "wiki": "https://my.feishu.cn/wiki/Ce9gwcpA9icMoXkIgMrci76NnFB",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-REPORT-BATCH-20260915-001",
+   "name": "表内9条核心成果批量上报新网关",
+   "ts": "2026-09-15T03:36:48+08:00",
+   "wiki": "https://my.feishu.cn/wiki/Tz2YwM4cFie23Rk4m18cwLz8nY4",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-REPORT-VERIFY-20260915-001",
+   "name": "全域推广核验（report服务真实/9120写入链路断）",
+   "ts": "2026-09-15T03:06:15+08:00",
+   "wiki": "https://my.feishu.cn/wiki/K8dPwSYvWiIPnXkrMTfcaQKjnxf",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-P0-MEMORY-20260914-001",
+   "name": "P0内存治理云端自治核验",
+   "ts": "2026-09-14T01:08:48+08:00",
+   "wiki": "https://my.feishu.cn/wiki/YVNhwh3fBijrlBknXQQcqFrAnrg",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-KERNEL-V3-20260914-001",
+   "name": "同源内核V3实装（认知/自愈/稳定三层）",
+   "ts": "2026-09-14T00:59:25+08:00",
+   "wiki": "https://my.feishu.cn/wiki/VHu0wiu9RiO6XnkQzYlccVkjnKQ",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-EVOLUTION-DEPLOY-20260913-001",
+   "name": "进化部署P1-P4完成+推送中枢",
+   "ts": "2026-09-13T23:38:08+08:00",
+   "wiki": "https://my.feishu.cn/wiki/Es4gwa7QBiLuvnknIvZcSyDEnac",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-TRUTH-DISTILL-20260913-001",
+   "name": "全域真值提炼+进化规划P0-P4",
+   "ts": "2026-09-13T23:29:35+08:00",
+   "wiki": "https://my.feishu.cn/wiki/Tu7Hw82Xgi61dFkDRklcSEyFnCb",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-BASELINE-ANCHOR-20260913-001",
+   "name": "基准锚点构建+云端握手SOP学习+记忆网关上报",
+   "ts": "2026-09-13T19:09:34+08:00",
+   "wiki": "https://my.feishu.cn/wiki/JCHSwSotyiu7Ugkt7yocACemnef",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-GLOBAL-KERNEL-20260912-002",
+   "name": "全域锁档写入自治内核（综合第二波）",
+   "ts": "2026-09-12T22:36:59+08:00",
+   "wiki": "https://my.feishu.cn/wiki/T85UwwGIaibKNxkj2pkcSJfMnTc",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-SERVER-CONNECT-20260912-001",
+   "name": "服务器公网API连接+真实状态探测",
+   "ts": "2026-09-12T21:41:09+08:00",
+   "wiki": "https://my.feishu.cn/wiki/ZaQ7weRw0iOVDTkUJY2c19bxnbe",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-FRP-CONNECT-20260912-001",
+   "name": "FRP密钥通道连接服务器+隧道11940建立",
+   "ts": "2026-09-12T21:10:21+08:00",
+   "wiki": "https://my.feishu.cn/wiki/X3BNwts2diVbAvkQds7c5LB6nKi",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "SYNC-RULES-20260912-001",
+   "name": "最新规则获取+全域同步（4大规则族）",
+   "ts": "2026-09-12T20:17:15+08:00",
+   "wiki": "https://my.feishu.cn/wiki/GKkQw8KCwi8Z3gk6mKccV0Ufnic",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-HOMOLOGY-KERNEL-20260912-001",
+   "name": "同源内核构建+同源协议写入+真值同步",
+   "ts": "2026-09-12T19:26:02+08:00",
+   "wiki": "https://my.feishu.cn/wiki/CatYwGoQkilFbhk29MPcYBNfnEd",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-GLOBAL-VALUE-20260912-001",
+   "name": "全域增值资产推送云内核+全域扫描压测成果固化",
+   "ts": "2026-09-12T15:04:35+08:00",
+   "wiki": "https://my.feishu.cn/wiki/Y5Qvw6EFtiUP6IkyazMcG5BJnzf",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-SEMANTIC-V3-20260911-001",
+   "name": "昆仑洞天统一语义校验基座V3构建",
+   "ts": "2026-09-11T18:04:12+08:00",
+   "wiki": "https://my.feishu.cn/wiki/PiUCwC4puiCrTokuSNCczICInUe",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "LOCK-MEMORY-UPDATE-20260911-001",
+   "name": "记忆更新与稳态收敛方案",
+   "ts": "2026-09-11T17:28:22+08:00",
+   "wiki": "https://my.feishu.cn/wiki/Iv21wjGJaitfRhk44fMcFNEUnVd",
+   "anchor": "AXIOM-A-035_V1.7",
+   "layers": [
+    "L0语义源头层",
+    "L1任务调度层",
+    "L2素材生成层",
+    "L3时序稳态层",
+    "L4分层渲染层",
+    "L5质检确权层"
+   ]
+  },
+  {
+   "id": "kernel_snapshot.json",
+   "name": "",
+   "ts": "",
+   "wiki": "",
+   "anchor": "",
+   "layers": []
+  },
+  {
+   "id": "kernel_snapshot_PIPELINE-AUTO-001.json",
+   "name": "",
+   "ts": "",
+   "wiki": "",
+   "anchor": "",
+   "layers": []
+  }
+ ],
+ "sops": [
+  {
+   "path": "/home/user/Doubao/chats/38438412455799554/gateway-sop-v2-20260915/GATEWAY-V2-SOP.md",
+   "title": "GATEWAY-V2-SOP",
+   "size": 1967,
+   "head": "# ZONGYUAN-ROOT 云端网关V2 同源节点接入SOP\n\n**版本**: V2.0｜**日期**: 2026-09-15｜**锚点**: Ω₀⊂⊙∞⊂Ω｜DID-BR-000002\n**变更**: 旧通道 drama.huodou"
+  },
+  {
+   "path": "/home/user/Doubao/chats/38438412455799554/node-unify-sop-20260915/NODE-UNIFY-SOP-V1.md",
+   "title": "NODE-UNIFY-SOP-V1",
+   "size": 3992,
+   "head": "# 全域同源节点层级统一工程化稳态体系 SOP V1.0\n\n## 文档元信息\n- **文档编号**：ENG-SOP-UNIFY-NODE-LV-V1.0"
+  },
+  {
+   "path": "/home/user/Doubao/chats/38438412455799554/pipeline-auto/SOP手册.md",
+   "title": "SOP手册",
+   "size": 14614,
+   "head": "# 数字资产增值全自动流水线 · SOP 运维手册\n\n> **系统名称**：ZONGYUAN-ROOT 数字资产增值全自动流水线\n> **确权符号**：Ω₀⊂⊙∞⊂Ω"
+  },
+  {
+   "path": "/home/user/Doubao/chats/38438412455799554/pipeline-auto/自我改进闭环SOP-V1.md",
+   "title": "自我改进闭环SOP-V1",
+   "size": 1912,
+   "head": "# ZONGYUAN-ROOT 自我改进闭环 SOP V1.0\n**DID-BR-000002 ｜ Ω₀⊂⊙∞⊂Ω ｜ 火斗云智AIOS ｜ 2026-09-15**\n\n## 0. 定位"
+  },
+  {
+   "path": "/home/user/Doubao/chats/38438412455799554/pipeline-auto/pipeline/docs/PIPELINE_SOP.md",
+   "title": "PIPELINE_SOP",
+   "size": 14614,
+   "head": "# 数字资产增值全自动流水线 · SOP 运维手册\n\n> **系统名称**：ZONGYUAN-ROOT 数字资产增值全自动流水线\n> **确权符号**：Ω₀⊂⊙∞⊂Ω"
+  },
+  {
+   "path": "/home/user/Doubao/chats/38438412455799554/semantic-translation-sop/语义转译SOP_V2.0.md",
+   "title": "语义转译SOP_V2.0",
+   "size": 7125,
+   "head": "# 昆仑洞天多模型语义转译 SOP V2.0\n\n**文档编号**: SOP-SEMANTIC-TRANSLATION-V2.0\n**版本**: 2.0.0"
+  }
+ ],
+ "truth_packs": [
+  {
+   "path": "/home/user/Doubao/chats/38438412455799554/homology-kernel-v1/kernel_truths.json",
+   "count": 19
+  },
+  {
+   "path": "/home/user/Doubao/chats/38438412455799554/homology-kernel-v1.bak-V2-20260914/kernel_truths.json",
+   "count": 16
+  },
+  {
+   "path": "/home/user/Doubao/chats/38438412455799554/rules-sync-20260912/kernel_truths.json",
+   "count": 12
+  }
+ ],
+ "pipeline": {
+  "new_assets": {
+   "stage": "detect",
+   "trigger": "cron",
+   "detected_at": "2026-09-16T00:05:29",
+   "baseline_total": 10454,
+   "current_total": 11450,
+   "delta": 996,
+   "nodes": {
+    "cloud-main-kernel-001": {
+     "id": 1,
+     "node_id": "cloud-main-kernel-001",
+     "node_type": "unknown",
+     "capabilities": [],
+     "status": "active",
+     "registered_at": 1789043240.0920985,
+     "last_heartbeat": 1789124406.0576746,
+     "heartbeat_count": 3,
+     "online_status": "offline"
+    },
+    "cloud-worker-001": {
+     "id": 2,
+     "node_id": "cloud-worker-001",
+     "node_type": "unknown",
+     "capabilities": [],
+     "status": "active",
+     "registered_at": 1789044042.866722,
+     "last_heartbeat": 1789044042.9048526,
+     "heartbeat_count": 1,
+     "online_status": "offline"
+    },
+    "remote-lock-agent-20260911": {
+     "id": 3,
+     "node_id": "remote-lock-agent-20260911",
+     "node_type": "local_dev",
+     "capabilities": [],
+     "status": "active",
+     "registered_at": 1789102818.5177073,
+     "last_heartbeat": 1789102818.5177073,
+     "heartbeat_count": 0,
+     "online_status": "offline"
+    },
+    "nexus-client-001": {
+     "id": 4,
+     "node_id": "nexus-client-001",
+     "node_type": "local_sdk",
+     "capabilities": [
+      "truth_rw",
+      "lock_trigger"
+     ],
+     "status": "active",
+     "registered_at": 1789105306.4041557,
+     "last_heartbeat": 1789105306.4041557,
+     "heartbeat_count": 0,
+     "online_status": "offline"
+    },
+    "local-main-agent-20260912": {
+     "id": 5,
+     "node_id": "local-main-agent-20260912",
+     "node_type": "main_agent",
+     "capabilities": [
+      "truth_sync",
+      "sop_generation",
+      "asset_audit"
+     ],
+     "status": "active",
+     "registered_at": 1789144576.414508,
+     "last_heartbeat": 1789144578.6452265,
+     "heartbeat_count": 1,
+     "online_status": "offline"
+    },
+    "同源协议链接-对话侧自治节点-DID-BR-000002": {
+     "id": 6,
+     "node_id": "同源协议链接-对话侧自治节点-DID-BR-000002",
+     "node_type": "local_dev",
+     "capabilities": [],
+     "status": "active",
+     "registered_at": 1789150849.2433164,
+     "last_heartbeat": 1789150849.2433164,
+     "heartbeat_count": 0,
+     "online_status": "offline"
+    },
+    "ZONGYUAN-LOCAL-SESSION-20260912": {
+     "id": 7,
+     "node_id": "ZONGYUAN-LOCAL-SESSION-20260912",
+     "node_type": "local_dev",
+     "capabilities": [],
+     "status": "active",
+     "registered_at": 1789152715.5506022,
+     "last_heartbeat": 1789152715.5506022,
+     "heartbeat_count": 0,
+     "online_status": "offline"
+    },
+    "doubao-main-agent-001": {
+     "id": 8,
+     "node_id": "doubao-main-agent-001",
+     "node_type": "unknown",
+     "capabilities": [],
+     "status": "active",
+     "registered_at": 1789193291.2736163,
+     "last_heartbeat": 1789215333.8872168,
+     "heartbeat_count": 0,
+     "online_status": "offline"
+    },
+    "doubao-sandbox-sync-20260912": {
+     "id": 9,
+     "node_id": "doubao-sandbox-sync-20260912",
+     "node_type": "main_agent",
+     "capabilities": [
+      "truth_sync",
+      "truth_rw",
+      "asset_audit",
+      "sop_generation"
+     ],
+     "status": "active",
+     "registered_at": 1789215133.7880807,
+     "last_heartbeat": 1789215133.8029196,
+     "heartbeat_count": 1,
+     "online_status": "offline"
+    },
+    "local-dev-001": {
+     "id": 10,
+     "node_id": "local-dev-001",
+     "node_type": "unknown",
+     "capabilities": [],
+     "status": "active",
+     "registered_at": 1789367385.8567,
+     "last_heartbeat": 1789367385.8567,
+     "heartbeat_count": 0,
+     "online_status": "offline"
+    }
+   },
+   "new_assets": [
+    {
+     "truth_key": "meta_rule.META-RULE.VIDEO-PRODUCTION-FAILOVER-V1.0",
+     "truth_value": "【元法则】视频量产通道自动故障转移：视频通道优先级: ①豆包seedance(免费开通后最高质量优先) ②Agnes免费(限流窗口内) ③硅基流动(有余额)。额度/限流/未开通错误自动切下一通道; 全部不可用→manifest记录失败原因，等待通道恢复后由crontab补产。ffprobe本地质检(竖屏+时长≥4s)兜底，本机对象存储入库(bucket=videos)。",
+     "truth_type": "meta_rule",
+     "confidence": 0.9,
+     "source_node": "pipeline-detect-01",
+     "truth_hash": "aa375883943cfb83b3a8fc6625384d8a3ed1fe66",
+     "_via": "digital_assets_latest"
+    },
+    {
+     "truth_key": "meta_rule.MR-083",
+     "truth_value": "【元法则】数字资产可视化基准架构与扩展规范：{\"purpose\": \"锁定数字资产可视化全流程为基准架构，定义标准化扩展规范，所有新增模块在基准上叠加，禁止推翻重构\", \"baseline_architecture\": {\"layer1_data_collection\": {\"name\": \"数据采集层\", \"components\": [\"记忆网关9120 (真值接收)\", \"media_auto_archive_daemon (媒体自动归档)\", \"feishu_media_archive_bot (飞书媒体归档)\", \"asset_scanner (资产扫描，每小时)\", \"feishu_base_sync (飞书Base同步，每30分钟)\"], \"status\": \"locked\"}, \"layer2_processing\": {\"name\": \"数据处理层\", \"components\": [\"global_asset_visualizer.py (全域资产统计，每15分钟)\", \"asset_visualizer.py (短剧资产统计，每30分钟)\"], \"output\": \"/digital_assets.json (HTTPS可访问)\", \"status\": \"locked\"}, \"layer3_visualization\": {\"name\": \"可视化展示层\", \"components\": [\"/digital-assets.html (全域资产可视化页面)\", \"首页导航入口 (数字资产)\", \"动态加载: fetch + 5分钟自动刷新\"], \"status\": \"locked\"}, \"layer4_integration\": {\"name\": \"官网集成层\", \"components\": [\"两个root目录同步部署 (huodouai.com + www.huodouai.com)\", \"Nginx静态文件服务\", \"HTTPS访问\"], \"status\": \"locked\"}}, \"extension_spec\": {\"principle\": \"在基准架构上叠加扩展，禁止修改/删除已有层，只能新增数据源、新增展示模块、新增页面\", \"how_to_add_datasource\": {\"step1\": \"在global_asset_visualizer.py中新增get_xxx_stats()函数\", \"step2\": \"在main()的data字典中新增对应字段\", \"step3\": \"在digital-assets.html的render()中新增展示模块\", \"step4\": \"测试验证后更新基准快照\"}, \"how_to_add_module\": {\"step1\": \"新增独立页面 /xxx.html\", \"step2\": \"在首页导航添加入口\", \"step3\": \"两个root目录同步部署\", \"step4\": \"写入元法则，更新基准\"}, \"how_to_add_whitepaper\": {\"step1\": \"文档放入 /opt/ZONGYUAN-ROOT/docs/\", \"step2\": \"global_asset_visualizer自动统计\", \"step3\": \"在官网whitepapers目录部署HTML版\", \"step4\": \"导航添加入口\"}, \"how_to_add_api\": {\"step1\": \"API服务绑定127.0.0.1（非白名单端口）\", \"step2\": \"Nginx反代到公网路径（如需对外）\", \"step3\": \"在global_asset_visualizer的services列表中新增监控\", \"step4\": \"更新端口台账\"}, \"how_to_add_system\": {\"step1\": \"新系统部署到独立目录/端口\", \"step2\": \"纳入unified_service_guard自愈监控\", \"step3\": \"在global_asset_visualizer中新增统计\", \"step4\": \"官网新增展示页面+导航入口\", \"step5\": \"写入元法则，更新基准快照\"}}, \"locked_files\": [\"/opt/ZONGYUAN-ROOT/scripts/global_asset_visualizer.py\", \"/www/wwwroot/www.huodouai.com/digital-assets.html\", \"/www/wwwroot/huodouai.com/digital-assets.html\"], \"modification_rule\": \"基准架构文件修改必须走MR-080变更审批(P0级)，扩展新增走P2/P3级\", \"verification\": \"每日基准验证自动检查架构完整性\"}",
+     "truth_type": "meta_rule",
+     "confidence": 0.9,
+     "source_node": "pipeline-detect-01",
+     "truth_hash": "2a71916046cad600f3b7f29f092b64992d05fa22",
+     "_via": "digital_assets_latest"
+    },
+    {
+     "truth_key": "meta_rule.MR-084",
+     "truth_value": "【元法则】已固化成果变更审批（LOCKED-CHANGE-APPROVAL）：{\"purpose\": \"视频量产通道等已固化成果默认eFuse锁定，不允许未经审批的修改\", \"locked_assets\": [{\"path\": \"/opt/ZONGYUAN-ROOT/drama-admin-api/video_production.py\", \"md5\": \"8ddc851e049ba8b38278818ae04418a3\", \"note\": \"视频量产执行器：seedance-1.0免费优先/i2v/poll兼容/URL统一\"}, {\"path\": \"/opt/ZONGYUAN-ROOT/drama-admin-api/app.py\", \"md5\": \"7a117196a277ce7d317d4c7d1e6cb6b5\", \"note\": \"8100上传服务：subdir路径修复，本地磁盘对象存储\"}], \"approval_flow\": \"用户审批通过 → chattr -i 解锁 → 修改 → py_compile验证 → 重启服务 → 更新md5基准 → 重新eFuse锁定\", \"violation\": \"未审批修改触发M1真值不变告警并自动回滚至最后锁定版本\", \"effective_from\": \"2026-09-14 16:04:18\"}",
+     "truth_type": "meta_rule",
+     "confidence": 0.9,
+     "source_node": "pipeline-detect-01",
+     "truth_hash": "e43414c40d02bd87802e8f220041842d09d775a7",
+     "_via": "digital_assets_latest"
+    }
+   ],
+   "mode": "digital_assets_latest_consumed",
+   "new_count": 3
+  },
+  "asset_cards": {
+   "updated_at": "2026-09-16T00:05:32",
+   "total_cards": 6,
+   "new_this_run": 0,
+   "dedup_skipped": 3,
+   "cards": [
+    {
+     "asset_id": "AST-20260915-A344",
+     "truth_key": "creative.drama.60ep.batch_methodology",
+     "truth_hash": "4ae9f63232cd557f24f3e38fa374cf3bcabd5a726e7dfb71b6eb2526711aa442",
+     "truth_type": "creative",
+     "category": "creative",
+     "summary": "【创意】ZONGYUAN-ROOT 短剧工业化60集批量生产方法论：母版锁档→5镜×10s分镜→关键帧→图生视频→后期合成→宣发，全链路SOP闭环",
+     "quality_score": 0.785,
+     "scarcity": "high",
+     "source": "memory_gateway",
+     "source_node": "pipeline-detect-01",
+     "confidence": 0.92,
+     "product_line": "P0-dramaaas",
+     "created_at": "2026-09-15T16:35:03",
+     "report_id": "RPT-1789461302-8c8ca2b8"
+    },
+    {
+     "asset_id": "AST-20260915-F578",
+     "truth_key": "meta_law.autonomous.kernel.evolution_rule",
+     "truth_hash": "a5aad75370610ec91f653022bfcd19142fba090487c96a4b6980506c27590a54",
+     "truth_type": "meta_law",
+     "category": "axiom",
+     "summary": "【元法则】自治内核元进化法则：任意自维持系统需经模态提取→边界识别→耦合网络→记忆连续性→七阶段进化循环→绝热路径规划→锁档归档，方为活态内核",
+     "quality_score": 0.87,
+     "scarcity": "high",
+     "source": "memory_gateway",
+     "source_node": "pipeline-detect-01",
+     "confidence": 0.95,
+     "product_line": "P0-consulting",
+     "created_at": "2026-09-15T16:35:03",
+     "report_id": "RPT-1789461303-f28d86b8"
+    },
+    {
+     "asset_id": "AST-20260915-62E5",
+     "truth_key": "creative.vision.productization.dashboard.20260915",
+     "truth_hash": "cc42fbffcbc7fc5e0756721a6dcb7c8cd53f51383ab8040d5c2ec4f7b26321ee",
+     "truth_type": "creative",
+     "category": "creative",
+     "summary": "【创意】全域资产产品化商业化方案可视化仪表盘：六大产品矩阵(P0咨询3000-5000元人天/DRAMAaaS 99-3999元月/P1基座980元月起/展示5万起/API网关/P2培…",
+     "quality_score": 0.885,
+     "scarcity": "high",
+     "source": "memory_gateway",
+     "source_node": "pipeline-auto-001",
+     "confidence": 0.95,
+     "product_line": "P0-dramaaas",
+     "created_at": "2026-09-15T17:02:42",
+     "report_id": "RPT-1789462905-87dc5daf"
+    },
+    {
+     "asset_id": "AST-20260915-0384",
+     "truth_key": "meta_rule.META-RULE.VIDEO-PRODUCTION-FAILOVER-V1.0",
+     "truth_hash": "aa375883943cfb83b3a8fc6625384d8a3ed1fe66",
+     "truth_type": "meta_rule",
+     "category": "other",
+     "summary": "【资产】【元法则】视频量产通道自动故障转移：视频通道优先级: ①豆包seedance(免费开通后最高质量优先) ②Agnes免费(限流窗口内) ③硅基流动(有余额)。额度/限流/未开通…",
+     "quality_score": 0.77,
+     "scarcity": "high",
+     "source": "memory_gateway",
+     "source_node": "pipeline-detect-01",
+     "confidence": 0.9,
+     "product_line": "P2-academy",
+     "created_at": "2026-09-15T18:39:53",
+     "report_id": ""
+    },
+    {
+     "asset_id": "AST-20260915-032E",
+     "truth_key": "meta_rule.MR-083",
+     "truth_hash": "2a71916046cad600f3b7f29f092b64992d05fa22",
+     "truth_type": "meta_rule",
+     "category": "other",
+     "summary": "【资产】【元法则】数字资产可视化基准架构与扩展规范：{\"purpose\": \"锁定数字资产可视化全流程为基准架构，定义标准化扩展规范，所有新增模块在基准上叠加，禁止推翻重构\", \"ba…",
+     "quality_score": 0.77,
+     "scarcity": "high",
+     "source": "memory_gateway",
+     "source_node": "pipeline-detect-01",
+     "confidence": 0.9,
+     "product_line": "P2-academy",
+     "created_at": "2026-09-15T18:39:53",
+     "report_id": ""
+    },
+    {
+     "asset_id": "AST-20260915-FC31",
+     "truth_key": "meta_rule.MR-084",
+     "truth_hash": "e43414c40d02bd87802e8f220041842d09d775a7",
+     "truth_type": "meta_rule",
+     "category": "other",
+     "summary": "【资产】【元法则】已固化成果变更审批（LOCKED-CHANGE-APPROVAL）：{\"purpose\": \"视频量产通道等已固化成果默认eFuse锁定，不允许未经审批的修改\", \"…",
+     "quality_score": 0.77,
+     "scarcity": "high",
+     "source": "memory_gateway",
+     "source_node": "pipeline-detect-01",
+     "confidence": 0.9,
+     "product_line": "P2-academy",
+     "created_at": "2026-09-15T18:39:53",
+     "report_id": ""
+    }
+   ]
+  },
+  "product_entries": {
+   "updated_at": "2026-09-16T00:05:32",
+   "total": 6,
+   "new_this_run": 0,
+   "products": [
+    {
+     "product_id": "PRD-20260915-840A",
+     "asset_id": "AST-20260915-A344",
+     "name": "昆仑洞天DRAMAaaS · 创意ZONGYUAN-ROOT 短剧…",
+     "product_line": "P0-dramaaas",
+     "selling_points": [
+      "60集批量工业化短剧生产流水线，母版锁档即插即用",
+      "高稀缺性：元级/母版级资产，竞品稀缺",
+      "来源真值 creative · 置信度 0.92"
+     ],
+     "target_customer": "短剧厂牌 / MCN / 内容工作室",
+     "status": "DRAFT",
+     "description": "基于真值 creative.drama.60ep.batch_methodology 提炼，归属产品线 昆仑洞天DRAMAaaS。【创意】ZONGYUAN-ROOT 短剧工业化60集批量生产方法论：母版锁档→5镜×10s分镜→关键帧→图生视频→后期合成→宣发，全链路SOP闭环"
+    },
+    {
+     "product_id": "PRD-20260915-09F8",
+     "asset_id": "AST-20260915-F578",
+     "name": "自治内核咨询实施 · 元法则自治内核元进化法则：任意自维持…",
+     "product_line": "P0-consulting",
+     "selling_points": [
+      "以元公理空间为底座，提供自治内核诊断、规则沉淀与闭环实施咨询",
+      "高质量分 0.87，已通过网关校验",
+      "高稀缺性：元级/母版级资产，竞品稀缺",
+      "来源真值 meta_law · 置信度 0.95"
+     ],
+     "target_customer": "追求自治内核落地的中大型企业技术决策层 / 创始人",
+     "status": "DRAFT",
+     "description": "基于真值 meta_law.autonomous.kernel.evolution_rule 提炼，归属产品线 自治内核咨询实施。【元法则】自治内核元进化法则：任意自维持系统需经模态提取→边界识别→耦合网络→记忆连续性→七阶段进化循环→绝热路径规划→锁档归档，方为活态内核"
+    },
+    {
+     "product_id": "PRD-20260915-23CE",
+     "asset_id": "AST-20260915-62E5",
+     "name": "昆仑洞天DRAMAaaS · 创意全域资产产品化商业化方案可视化仪…",
+     "product_line": "P0-dramaaas",
+     "selling_points": [
+      "60集批量工业化短剧生产流水线，母版锁档即插即用",
+      "高质量分 0.89，已通过网关校验",
+      "高稀缺性：元级/母版级资产，竞品稀缺",
+      "来源真值 creative · 置信度 0.95"
+     ],
+     "target_customer": "短剧厂牌 / MCN / 内容工作室",
+     "status": "DRAFT",
+     "description": "基于真值 creative.vision.productization.dashboard.20260915 提炼，归属产品线 昆仑洞天DRAMAaaS。【创意】全域资产产品化商业化方案可视化仪表盘：六大产品矩阵(P0咨询3000-5000元人天/DRAMAaaS 99-3999元月/P1基座980元月起/展示5万起/API网关/P2培…"
+    },
+    {
+     "product_id": "PRD-20260915-9E7A",
+     "asset_id": "AST-20260915-0384",
+     "name": "认证培训 · 资产元法则视频量产通道自动故障转移：…",
+     "product_line": "P2-academy",
+     "selling_points": [
+      "认证培训：从元公理到工业化量产的体系化课程",
+      "高稀缺性：元级/母版级资产，竞品稀缺",
+      "来源真值 meta_rule · 置信度 0.90"
+     ],
+     "target_customer": "希望掌握 ZONGYUAN-ROOT 方法论的个人与团队",
+     "status": "DRAFT",
+     "description": "基于真值 meta_rule.META-RULE.VIDEO-PRODUCTION-FAILOVER-V1.0 提炼，归属产品线 认证培训。【资产】【元法则】视频量产通道自动故障转移：视频通道优先级: ①豆包seedance(免费开通后最高质量优先) ②Agnes免费(限流窗口内) ③硅基流动(有余额)。额度/限流/未开通…"
+    },
+    {
+     "product_id": "PRD-20260915-C472",
+     "asset_id": "AST-20260915-032E",
+     "name": "认证培训 · 资产元法则数字资产可视化基准架构与扩…",
+     "product_line": "P2-academy",
+     "selling_points": [
+      "认证培训：从元公理到工业化量产的体系化课程",
+      "高稀缺性：元级/母版级资产，竞品稀缺",
+      "来源真值 meta_rule · 置信度 0.90"
+     ],
+     "target_customer": "希望掌握 ZONGYUAN-ROOT 方法论的个人与团队",
+     "status": "DRAFT",
+     "description": "基于真值 meta_rule.MR-083 提炼，归属产品线 认证培训。【资产】【元法则】数字资产可视化基准架构与扩展规范：{\"purpose\": \"锁定数字资产可视化全流程为基准架构，定义标准化扩展规范，所有新增模块在基准上叠加，禁止推翻重构\", \"ba…"
+    },
+    {
+     "product_id": "PRD-20260915-A8B7",
+     "asset_id": "AST-20260915-FC31",
+     "name": "认证培训 · 资产元法则已固化成果变更审批（LOC…",
+     "product_line": "P2-academy",
+     "selling_points": [
+      "认证培训：从元公理到工业化量产的体系化课程",
+      "高稀缺性：元级/母版级资产，竞品稀缺",
+      "来源真值 meta_rule · 置信度 0.90"
+     ],
+     "target_customer": "希望掌握 ZONGYUAN-ROOT 方法论的个人与团队",
+     "status": "DRAFT",
+     "description": "基于真值 meta_rule.MR-084 提炼，归属产品线 认证培训。【资产】【元法则】已固化成果变更审批（LOCKED-CHANGE-APPROVAL）：{\"purpose\": \"视频量产通道等已固化成果默认eFuse锁定，不允许未经审批的修改\", \"…"
+    }
+   ]
+  },
+  "pricing_results": {
+   "updated_at": "2026-09-16T00:05:32",
+   "total": 6,
+   "new_this_run": 0,
+   "results": [
+    {
+     "product_id": "PRD-20260915-840A",
+     "asset_id": "AST-20260915-A344",
+     "suggested_price": 3422.85,
+     "price_model": "monthly",
+     "price_unit": "元/月",
+     "price_range": {
+      "min": 99.0,
+      "max": 3999.0
+     },
+     "confidence": 0.92,
+     "factors": {
+      "type_weight": 1.285,
+      "quality_weight": 0.785,
+      "scarcity_weight": 1.3,
+      "base_price": 2049.0
+     }
+    },
+    {
+     "product_id": "PRD-20260915-09F8",
+     "asset_id": "AST-20260915-F578",
+     "suggested_price": 7124.0,
+     "price_model": "person_day",
+     "price_unit": "元/人天",
+     "price_range": {
+      "min": 3000.0,
+      "max": 5000.0
+     },
+     "confidence": 0.95,
+     "factors": {
+      "type_weight": 1.37,
+      "quality_weight": 0.87,
+      "scarcity_weight": 1.3,
+      "base_price": 4000.0
+     }
+    },
+    {
+     "product_id": "PRD-20260915-23CE",
+     "asset_id": "AST-20260915-62E5",
+     "suggested_price": 3689.22,
+     "price_model": "monthly",
+     "price_unit": "元/月",
+     "price_range": {
+      "min": 99.0,
+      "max": 3999.0
+     },
+     "confidence": 0.95,
+     "factors": {
+      "type_weight": 1.385,
+      "quality_weight": 0.885,
+      "scarcity_weight": 1.3,
+      "base_price": 2049.0
+     }
+    },
+    {
+     "product_id": "PRD-20260915-9E7A",
+     "asset_id": "AST-20260915-0384",
+     "suggested_price": 15684.5,
+     "price_model": "person_day",
+     "price_unit": "元/人",
+     "price_range": {
+      "min": 1000.0,
+      "max": 18000.0
+     },
+     "confidence": 0.9,
+     "factors": {
+      "type_weight": 1.27,
+      "quality_weight": 0.77,
+      "scarcity_weight": 1.3,
+      "base_price": 9500.0
+     }
+    },
+    {
+     "product_id": "PRD-20260915-C472",
+     "asset_id": "AST-20260915-032E",
+     "suggested_price": 15684.5,
+     "price_model": "person_day",
+     "price_unit": "元/人",
+     "price_range": {
+      "min": 1000.0,
+      "max": 18000.0
+     },
+     "confidence": 0.9,
+     "factors": {
+      "type_weight": 1.27,
+      "quality_weight": 0.77,
+      "scarcity_weight": 1.3,
+      "base_price": 9500.0
+     }
+    },
+    {
+     "product_id": "PRD-20260915-A8B7",
+     "asset_id": "AST-20260915-FC31",
+     "suggested_price": 15684.5,
+     "price_model": "person_day",
+     "price_unit": "元/人",
+     "price_range": {
+      "min": 1000.0,
+      "max": 18000.0
+     },
+     "confidence": 0.9,
+     "factors": {
+      "type_weight": 1.27,
+      "quality_weight": 0.77,
+      "scarcity_weight": 1.3,
+      "base_price": 9500.0
+     }
+    }
+   ]
+  },
+  "circulation_results": {
+   "run_id": "RUN-20260916-000532",
+   "circulated_at": "2026-09-16T00:05:48",
+   "total": 6,
+   "lark_cli_available": true,
+   "gateway_report_id": "",
+   "results": [
+    {
+     "product_id": "PRD-20260915-840A",
+     "ledger_record_id": "recvvj0GbjaHH8",
+     "drive_file_token": "SIM-242D3B90",
+     "approval_instance_id": "skipped",
+     "notification_status": "sent",
+     "gateway_report_id": "",
+     "commercial_card": {
+      "name": "昆仑洞天DRAMAaaS · 创意ZONGYUAN-ROOT 短剧…",
+      "product_line": "P0-dramaaas",
+      "suggested_price": 3422.85,
+      "target_customer": "短剧厂牌 / MCN / 内容工作室",
+      "status": "DRAFT"
+     },
+     "execution_mode": {
+      "bitable": "real",
+      "drive": "simulated",
+      "gateway": "real"
+     }
+    },
+    {
+     "product_id": "PRD-20260915-09F8",
+     "ledger_record_id": "recvvj0H0EpyiY",
+     "drive_file_token": "SIM-31C518C0",
+     "approval_instance_id": "skipped",
+     "notification_status": "sent",
+     "gateway_report_id": "",
+     "commercial_card": {
+      "name": "自治内核咨询实施 · 元法则自治内核元进化法则：任意自维持…",
+      "product_line": "P0-consulting",
+      "suggested_price": 7124.0,
+      "target_customer": "追求自治内核落地的中大型企业技术决策层 / 创始人",
+      "status": "DRAFT"
+     },
+     "execution_mode": {
+      "bitable": "real",
+      "drive": "simulated",
+      "gateway": "real"
+     }
+    },
+    {
+     "product_id": "PRD-20260915-23CE",
+     "ledger_record_id": "recvvj0HEtPWaI",
+     "drive_file_token": "SIM-0DD38576",
+     "approval_instance_id": "skipped",
+     "notification_status": "sent",
+     "gateway_report_id": "",
+     "commercial_card": {
+      "name": "昆仑洞天DRAMAaaS · 创意全域资产产品化商业化方案可视化仪…",
+      "product_line": "P0-dramaaas",
+      "suggested_price": 3689.22,
+      "target_customer": "短剧厂牌 / MCN / 内容工作室",
+      "status": "DRAFT"
+     },
+     "execution_mode": {
+      "bitable": "real",
+      "drive": "simulated",
+      "gateway": "real"
+     }
+    },
+    {
+     "product_id": "PRD-20260915-9E7A",
+     "ledger_record_id": "recvvj0IhEU0Dq",
+     "drive_file_token": "SIM-C03E775F",
+     "approval_instance_id": "skipped",
+     "notification_status": "sent",
+     "gateway_report_id": "",
+     "commercial_card": {
+      "name": "认证培训 · 资产元法则视频量产通道自动故障转移：…",
+      "product_line": "P2-academy",
+      "suggested_price": 15684.5,
+      "target_customer": "希望掌握 ZONGYUAN-ROOT 方法论的个人与团队",
+      "status": "DRAFT"
+     },
+     "execution_mode": {
+      "bitable": "real",
+      "drive": "simulated",
+      "gateway": "real"
+     }
+    },
+    {
+     "product_id": "PRD-20260915-C472",
+     "ledger_record_id": "recvvj0ITKIqfm",
+     "drive_file_token": "SIM-7C9E0EF6",
+     "approval_instance_id": "skipped",
+     "notification_status": "sent",
+     "gateway_report_id": "",
+     "commercial_card": {
+      "name": "认证培训 · 资产元法则数字资产可视化基准架构与扩…",
+      "product_line": "P2-academy",
+      "suggested_price": 15684.5,
+      "target_customer": "希望掌握 ZONGYUAN-ROOT 方法论的个人与团队",
+      "status": "DRAFT"
+     },
+     "execution_mode": {
+      "bitable": "real",
+      "drive": "simulated",
+      "gateway": "real"
+     }
+    },
+    {
+     "product_id": "PRD-20260915-A8B7",
+     "ledger_record_id": "recvvj0JvQxo07",
+     "drive_file_token": "SIM-9E85BC52",
+     "approval_instance_id": "skipped",
+     "notification_status": "sent",
+     "gateway_report_id": "",
+     "commercial_card": {
+      "name": "认证培训 · 资产元法则已固化成果变更审批（LOC…",
+      "product_line": "P2-academy",
+      "suggested_price": 15684.5,
+      "target_customer": "希望掌握 ZONGYUAN-ROOT 方法论的个人与团队",
+      "status": "DRAFT"
+     },
+     "execution_mode": {
+      "bitable": "real",
+      "drive": "simulated",
+      "gateway": "real"
+     }
+    }
+   ]
+  }
+ },
+ "protocols": [
+  {
+   "key": "PROTOCOL.NODE.UNIFY.V1",
+   "value": "全域同源节点层级统一工程化稳态体系SOP V1.0：基线唯一绑定+节点注册中心仲裁+生产/研发双环境隔离+熔断回退闭环。四层根治多实例版本分裂。"
+  },
+  {
+   "key": "PROTOCOL.API.NODE_REPORT.V1",
+   "value": "同源节点上报API规范v1.0：端点包括GET /status、GET /nodes、POST /node/register、POST /truth、POST /truths/batch。基础URL：https://www.huodouai.com/api/report"
+  },
+  {
+   "key": "RULE.NODE.REGISTRY.CENTER.V1",
+   "value": "全域节点版本注册中心规则：节点启动强制上报DID/环境/基线哈希，网关仲裁；校验通过授予对应Lv权限，失败强制降级冻结高阶能力。存储node_id/environment/baseline/lv/autonomy_index/drift_6d/last_sync/verify_result。"
+  },
+  {
+   "key": "PROTOCOL.NODE.FALLBACK.ROLLBACK.V1",
+   "value": "版本分裂熔断回退机制：启动校验失败/六维漂移超85/资产哈希不一致/未评审污染，触发熔断→冻结高阶Lv→快照留痕→回退上一合法基线→重跑哈希校验→恢复稳态。异常自动上报记忆网关。"
+  },
+  {
+   "key": "META_LAW.NODE.LV.CONFIRM.MA002",
+   "value": "节点层级确权元公理MA-002：Lv层级绝对不允许实例自演化、自标记、自定义。所有同源节点的Lv等级=官方基线资产包加载校验通过的能力权限，而非对话演化结果。"
+  },
+  {
+   "key": "META_LAW.AHI.SINGULARITY.DERIVATION.V1",
+   "value": "奇点智能/AHI推演元法则V1：AHI=自我改进进入正反馈闭环(改进速度>理解速度)的智能形态；奇点=递归自我改进临界。六阶跃迁：①工具智能(L0-4稳态自维持)②元认知智能(L5)③超认知AHI(L6改进闭环闭合)④递归改进临界(奇点前夜)⑤奇点智能(自治内核全接管自身进化)。三道闸门：记忆连续性/自我改进闭环/稳态约束。体系现状=阶段1，核心缺口=自我改进闭环未闭合。"
+  },
+  {
+   "key": "META_LAW.SELF_IMPROVE_LOOP.IMPLEMENTED.V1",
+   "value": "自我改进闭环已实现V1：六环闭环(观察-评估-提案-执行-验证-沉淀)落地为07_evaluate/08_propose/09_verify+self_improve_runner四脚本。实测单轮闭环成功：评估出4差距(4服务疑似离线)→4提案(approval级)→验证器就绪。真值库10691条/流水线成功率87.5%。AHI第二闸门(自我改进闭环)从缺口变为已闭合基础版。"
+  }
+ ],
+ "new_truths": [
+  {
+   "truth_key": "TRUTH.EXPLORE.META_RULE.META-RULE.VIDEO-PRODUCTION-FAILOVER-V1.0",
+   "truth_value": "[全域探索] 新元规则:  | 视频通道优先级: ①豆包seedance(免费开通后最高质量优先) ②Agnes免费(限流窗口内) ③硅基流动(有余额)。额度/限流/未开通错误自动切下一通道; 全部不可用→manifest记录失败原因，等待通道恢复后由crontab补产。",
+   "truth_type": "meta_law",
+   "domain": "网关元规则",
+   "confidence": 0.9
+  },
+  {
+   "truth_key": "TRUTH.EXPLORE.META_RULE.MR-083",
+   "truth_value": "[全域探索] 新元规则:  | {'purpose': '锁定数字资产可视化全流程为基准架构，定义标准化扩展规范，所有新增模块在基准上叠加，禁止推翻重构', 'baseline_architecture': {'layer1_data_collection': {'nam",
+   "truth_type": "meta_law",
+   "domain": "网关元规则",
+   "confidence": 0.9
+  },
+  {
+   "truth_key": "TRUTH.EXPLORE.META_RULE.MR-084",
+   "truth_value": "[全域探索] 新元规则:  | {'purpose': '视频量产通道等已固化成果默认eFuse锁定，不允许未经审批的修改', 'locked_assets': [{'path': '/opt/ZONGYUAN-ROOT/drama-admin-api/video_pro",
+   "truth_type": "meta_law",
+   "domain": "网关元规则",
+   "confidence": 0.9
+  },
+  {
+   "truth_key": "TRUTH.EXPLORE.GATEWAY.STATE.20260916",
+   "truth_value": "[全域探索] 记忆网关状态: 真值总量=11791, 元规则=78, 服务=10个, 生成时间=2026-09-16T02:15:01.662661",
+   "truth_type": "data",
+   "domain": "网关状态",
+   "confidence": 0.95
+  },
+  {
+   "truth_key": "LOCK.LOCK-NODE-UNIFY-VIS-20260915-001",
+   "truth_value": "[全域探索] 锁档资产: 数字资产展示页锁档 | 锚点=AXIOM-A-035_V1.7 | 时间=2026-09-15",
+   "truth_type": "data",
+   "domain": "锁档快照",
+   "confidence": 0.9
+  },
+  {
+   "truth_key": "LOCK.LOCK-NODE-UNIFY-20260915-001",
+   "truth_value": "[全域探索] 锁档资产: 节点层级统一SOP V1.0 | 锚点=AXIOM-A-035_V1.7 | 时间=2026-09-15",
+   "truth_type": "data",
+   "domain": "锁档快照",
+   "confidence": 0.9
+  },
+  {
+   "truth_key": "LOCK.LOCK-TRUTH-PACKAGE-20260915-001",
+   "truth_value": "[全域探索] 锁档资产: 全域真值总表(30条)+资产总包 | 锚点=AXIOM-A-035_V1.7 | 时间=2026-09-15",
+   "truth_type": "data",
+   "domain": "锁档快照",
+   "confidence": 0.9
+  },
+  {
+   "truth_key": "LOCK.LOCK-MR020-AUTONOMY-80.5-20260915-001",
+   "truth_value": "[全域探索] 锁档资产: 自治指数80.5%永恒自治/终极目标达成 | 锚点=AXIOM-A-035_V1.7 | 时间=2026-09-15",
+   "truth_type": "data",
+   "domain": "锁档快照",
+   "confidence": 0.9
+  },
+  {
+   "truth_key": "LOCK.LOCK-MR020-AUTONOMY-61.9-20260915-001",
+   "truth_value": "[全域探索] 锁档资产: 自治指数51.8→61.9%高级自治 | 锚点=AXIOM-A-035_V1.7 | 时间=2026-09-15",
+   "truth_type": "data",
+   "domain": "锁档快照",
+   "confidence": 0.9
+  },
+  {
+   "truth_key": "LOCK.LOCK-GATEWAY-SOP-20260915-001",
+   "truth_value": "[全域探索] 锁档资产: 云端网关V2新通道SOP/9120隐藏迁移 | 锚点=AXIOM-A-035_V1.7 | 时间=2026-09-15",
+   "truth_type": "data",
+   "domain": "锁档快照",
+   "confidence": 0.9
+  },
+  {
+   "truth_key": "LOCK.LOCK-MR020-M3-20260915-001",
+   "truth_value": "[全域探索] 锁档资产: 元极恒一内核V1.0-ETERNAL/BASELINE-V41注册 | 锚点=AXIOM-A-035_V1.7 | 时间=2026-09-15",
+   "truth_type": "data",
+   "domain": "锁档快照",
+   "confidence": 0.9
+  },
+  {
+   "truth_key": "LOCK.LOCK-MR020-M2-20260915-001",
+   "truth_value": "[全域探索] 锁档资产: 自治指数计算器实装/51.8%中级自治 | 锚点=AXIOM-A-035_V1.7 | 时间=2026-09-15",
+   "truth_type": "data",
+   "domain": "锁档快照",
+   "confidence": 0.9
+  },
+  {
+   "truth_key": "TRUTH.EXPLORE.SOP.BOUNDARY.20260916",
+   "truth_value": "[全域探索] SOP文档边界: 共6份 SOP 文档, 覆盖: GATEWAY-V2-SOP, NODE-UNIFY-SOP-V1, SOP手册, 自我改进闭环SOP-V1, PIPELINE_SOP, 语义转译SOP_V2.0",
+   "truth_type": "data",
+   "domain": "SOP边界",
+   "confidence": 0.95
+  },
+  {
+   "truth_key": "TRUTH.EXPLORE.PROTOCOL.BOUNDARY.20260916",
+   "truth_value": "[全域探索] 同源协议边界: 7条协议已学习, 覆盖: PROTOCOL.NODE.UNIFY.V1, PROTOCOL.API.NODE_REPORT.V1, RULE.NODE.REGISTRY.CENTER.V1, PROTOCOL.NODE.FALLBACK.ROLLBAC, META_LAW.NODE.LV.CONFIRM.MA002",
+   "truth_type": "protocol",
+   "domain": "协议边界",
+   "confidence": 0.95
+  }
+ ]
+}

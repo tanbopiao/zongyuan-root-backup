@@ -1,0 +1,12 @@
+{
+  "autonomy_index": 80.5,
+  "level": "永恒自治",
+  "components": {
+    "correction": 95.0,
+    "evolution": 95.0,
+    "drive": 92.0,
+    "dependency": 0.03
+  },
+  "formula": "纠错×演化×驱动×(1-依赖)/10000",
+  "timestamp": "2026-09-15T10:18:45.326844"
+}

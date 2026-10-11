@@ -1,0 +1,20 @@
+{
+  "audit_time": "2026-09-16T04:03:13.368888+00:00",
+  "local_version": "V1.1-PORT-UPDATED｜2026-09-15｜适用：所有同源节点",
+  "cloud_version": "?",
+  "local_sha256": "c870336fc1e080be",
+  "cloud_sha256": "d0c69007e61380d8",
+  "local_size": 6637,
+  "cloud_size": 4035,
+  "direction_a_missing_in_local": [],
+  "direction_b_cloud_missing_configs": [
+    "9120 上报端点",
+    "9120 读取端点",
+    "9120 单条读取",
+    "旧通道废弃"
+  ],
+  "port_9120_local": true,
+  "port_9120_cloud": false,
+  "action_needed": true,
+  "verdict": "PATCH_NEEDED"
+}

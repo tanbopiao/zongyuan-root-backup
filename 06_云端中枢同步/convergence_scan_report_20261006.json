@@ -1,0 +1,6 @@
+{
+  "action": "convergence_scan_cloud_report",
+  "state": "STEADY",
+  "drift_count": 5,
+  "reported_at": "2026-10-06T17:25:15.520214"
+}

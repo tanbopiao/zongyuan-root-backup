@@ -1,0 +1,374 @@
+{
+  "registry_id": "KUNLUN-RULES-REGISTRY-001",
+  "registry_name": "昆仑洞天规则全量注册表",
+  "did": "DID-BR-000002",
+  "trace": "Ω₀⊂⊙∞⊂Ω",
+  "established_at": "2026-10-01T10:47:24",
+  "source": "深度扫描: 云端真值库46条目+历史内核+知识库+技能资产",
+  "groups": {
+    "L0_天元法则": {
+      "count": 2,
+      "rules": [
+        {
+          "id": "KUNLUN-TIANYUAN-LAW-V1.2",
+          "status": "ACTIVE",
+          "core": "结构完整性优先;长兵器六约束;三线分级(重绘/调整/通过)"
+        },
+        {
+          "id": "KUNLUN-TIANYUAN-LAW-V1.1",
+          "status": "ACTIVE-COMPAT",
+          "core": "神性骨相解耦;五禁;自检12项;强制前置提示词"
+        }
+      ]
+    },
+    "世界观_角色": {
+      "count": 3,
+      "rules": [
+        {
+          "id": "WORLDVIEW.KUNLUN-V1.0",
+          "status": "ACTIVE",
+          "core": "三境(九天玄穹/墟境/玄鸟祭坛);3天道规则;6主题;10秒叙事"
+        },
+        {
+          "id": "ROLES.KUNLUN-V1.0",
+          "status": "ACTIVE",
+          "core": "4角色卡(月神/玄女/凰绾/绯灵汐);角色关系链"
+        },
+        {
+          "id": "BASE-KUNLUN-HONGQUN-001",
+          "status": "ACTIVE",
+          "core": "红裙女仙基底;10镜镜头池;9:16竖屏"
+        }
+      ]
+    },
+    "生产SOP": {
+      "count": 1,
+      "rules": [
+        {
+          "id": "SOP.DRAMA-PRODUCTION-V1.0",
+          "status": "ACTIVE",
+          "core": "触发调度;10秒五段式分镜;关键帧范式;质检关卡;额度池管理"
+        }
+      ]
+    },
+    "内核入口规则": {
+      "count": 13,
+      "rules": [
+        {
+          "id": "KERNEL-ENTRY-0200",
+          "title": "快速对话视频归档方法论V1.0",
+          "status": "ACTIVE"
+        },
+        {
+          "id": "KERNEL-ENTRY-0201",
+          "title": "图片生成后自动四端归档元规则",
+          "status": "ACTIVE"
+        },
+        {
+          "id": "KERNEL-ENTRY-0203",
+          "title": "短剧分镜连贯性工业化标准(五步/五标准)",
+          "status": "ACTIVE"
+        },
+        {
+          "id": "KERNEL-ENTRY-0204",
+          "title": "电影艺术与影视技术工业化体系",
+          "status": "ACTIVE"
+        },
+        {
+          "id": "KERNEL-ENTRY-0205",
+          "title": "导演级AI协作体系V2.0",
+          "status": "ACTIVE"
+        },
+        {
+          "id": "KERNEL-ENTRY-0206",
+          "title": "视频生成质量标准",
+          "status": "ACTIVE"
+        },
+        {
+          "id": "KERNEL-ENTRY-0207",
+          "title": "声音设计规范",
+          "status": "ACTIVE"
+        },
+        {
+          "id": "KERNEL-ENTRY-0208",
+          "title": "剧本开发流程",
+          "status": "ACTIVE"
+        },
+        {
+          "id": "KERNEL-ENTRY-0209",
+          "title": "角色设定规范",
+          "status": "ACTIVE"
+        },
+        {
+          "id": "KERNEL-ENTRY-0210",
+          "title": "影视工业化综合标准",
+          "status": "ACTIVE"
+        },
+        {
+          "id": "KERNEL-ENTRY-0211",
+          "title": "自主导演决策引擎V3.0",
+          "status": "ACTIVE"
+        },
+        {
+          "id": "KERNEL-ENTRY-0212",
+          "title": "智能制片与资源调度V3.0",
+          "status": "ACTIVE"
+        },
+        {
+          "id": "KERNEL-ENTRY-0213",
+          "title": "实时反馈与持续优化V3.0",
+          "status": "ACTIVE"
+        }
+      ]
+    },
+    "合规与负面": {
+      "count": 2,
+      "rules": [
+        {
+          "id": "COMPLIANCE.KUNLUN.V1.0",
+          "status": "ACTIVE",
+          "core": "AI虚拟人脸短剧合规自查7项"
+        },
+        {
+          "id": "MR-BAD-001~006",
+          "status": "ACTIVE",
+          "core": "负面元素全域封禁(西式/雄性化/畸形/现代元素等)"
+        }
+      ]
+    },
+    "工业化中台": {
+      "count": 2,
+      "rules": [
+        {
+          "id": "CHARACTER-LORA-FACTORY",
+          "status": "ACTIVE",
+          "core": "L0-L5六层中台;数据集指标(12-18张/角度配比);LoRA训练;三模型推理;漂移熔断"
+        },
+        {
+          "id": "DRAMA-PIPELINE-V2.0",
+          "status": "ACTIVE",
+          "core": "七阶段SOP(世界观锁档→剧本→分镜→关键帧→视频→后期→归档)"
+        }
+      ]
+    },
+    "商业规则": {
+      "count": 1,
+      "rules": [
+        {
+          "id": "KUNLUN-COMMERCIAL-SOP-20260921",
+          "status": "ACTIVE",
+          "core": "7项服务体系;MR-ARCHIVE-001~005自动归档;授权规范"
+        }
+      ]
+    },
+    "视觉规范元规则": {
+      "count": 7,
+      "rules": [
+        {
+          "id": "VISUAL.RATIO-9-16",
+          "status": "ACTIVE",
+          "core": "强制9:16竖屏(1536x2560), 全局竖版"
+        },
+        {
+          "id": "VISUAL.UE5-RAYTRACING",
+          "status": "ACTIVE",
+          "core": "UE5.7全局光追, 伦勃朗侧光(Rembrandt side light), 强轮廓光(rim light)"
+        },
+        {
+          "id": "VISUAL.PORTRA400",
+          "status": "ACTIVE",
+          "core": "Kodak Portra400胶片质感(胶粒/影调), 电影级画面"
+        },
+        {
+          "id": "VISUAL.COLOR-SCHEME",
+          "status": "ACTIVE",
+          "core": "黑金/国风配色限定: 冷白/赤金/玄黑/正红/青金五色系"
+        },
+        {
+          "id": "VISUAL.AUTH-SYMBOL",
+          "status": "ACTIVE",
+          "core": "强制画面包含确权符号Ω₀⊂⊙∞⊂Ω(合规区域注入)"
+        },
+        {
+          "id": "VISUAL.NEGATIVE-LIST",
+          "status": "ACTIVE",
+          "core": "反向提示词清单: 穿模/畸形肢体/多余手指/现代元素/西方建筑/十字架/天使翅膀/水印/白发彩发/幼态娇媚/雄性化"
+        },
+        {
+          "id": "VISUAL.CONVERGENCE-95",
+          "status": "ACTIVE",
+          "core": "收敛度≥95%: 天元法则自检通过率门槛"
+        }
+      ]
+    },
+    "生产治理元法则": {
+      "count": 6,
+      "rules": [
+        {
+          "id": "metalaw.DRAMA-STORAGE-BACKEND-RULE-001",
+          "status": "ACTIVE",
+          "core": "短剧资产存储后端判定V2.0: 生产存储=local_cos(/opt/storage), 腾讯COS停用仅审计, SHA256/Merkle确权与存储解耦"
+        },
+        {
+          "id": "metalaw.PRODUCTION-CHANNEL-ISOLATION-V1.0",
+          "status": "ACTIVE",
+          "core": "生产通道隔离V16.0(71条): 豆包窗口仅指令下发/编排/确权/锁档/上报, 量产一律走云服务器外部免费API, 禁止调用生成工具消耗付费额度"
+        },
+        {
+          "id": "metalaw.PRODUCTION_CIRCUIT_BREAKER_V1.0",
+          "status": "ACTIVE",
+          "core": "产线闭环熔断校验: 文本PASS+媒体100%落盘PASS+哈希PASS=CLOSED; 任一失败=熔断; S1告警/冻结/人工确认解除"
+        },
+        {
+          "id": "metalaw.MEDIA_ASSET_GLOBAL_ARCHIVE_V1.0",
+          "status": "ACTIVE",
+          "core": "媒体资产全域确权公理: 每图/每视频SHA256叶子+项目Merkle根+永久本地落盘+溯源烙印(DID/Ω₀/时间戳/版本)"
+        },
+        {
+          "id": "metalaw.QUICKCHAT-VIDEO-ARCHIVE-V1.0",
+          "status": "ACTIVE",
+          "core": "快速对话视频全域自动归档V15.0: 分享链接/直链自动捕获→浏览器渲染解析→四端归档"
+        },
+        {
+          "id": "metalaw.MEDIA_ARCHIVE_FULL_PATCH_V1.0",
+          "status": "ACTIVE",
+          "core": "媒体归档全补丁V1.0: 归档链路完整补丁(引用收敛归一注册表)"
+        }
+      ]
+    },
+    "后期与质检规则": {
+      "count": 9,
+      "rules": [
+        {
+          "id": "P0-1-POST-PRODUCTION-ENGINE",
+          "status": "ACTIVE",
+          "core": "自动化后期合成引擎: 画面/运镜/转场自动合成"
+        },
+        {
+          "id": "P0-2-AI-VOICE-SYNTHESIS",
+          "status": "ACTIVE",
+          "core": "AI语音合成与角色声线库: 角色专属声线"
+        },
+        {
+          "id": "P0-3-AUDIO-POST-PROCESSING",
+          "status": "ACTIVE",
+          "core": "音频后期处理引擎: 混音/音效/降噪"
+        },
+        {
+          "id": "P0-4-SUBTITLE-AUTO-GEN",
+          "status": "ACTIVE",
+          "core": "字幕自动生成与时间轴对齐"
+        },
+        {
+          "id": "P1-5-MULTIMODAL-QC",
+          "status": "ACTIVE",
+          "core": "AI多模态自动质检引擎: 画面/音频/字幕全模态质检"
+        },
+        {
+          "id": "P1-6-CHARACTER-CONSISTENCY",
+          "status": "ACTIVE",
+          "core": "角色一致性自动检测: 漂移识别与熔断"
+        },
+        {
+          "id": "P1-7-SCENE-ASSET-LIBRARY",
+          "status": "ACTIVE",
+          "core": "场景/背景资产复用库"
+        },
+        {
+          "id": "P1-8-BATCH-ORCHESTRATOR",
+          "status": "ACTIVE",
+          "core": "批量任务编排与并行调度(60集规模)"
+        },
+        {
+          "id": "P1-9-PROMPT-AB-TEST",
+          "status": "ACTIVE",
+          "core": "提示词版本管理与A/B测试"
+        }
+      ]
+    },
+    "分发运营与资产管理": {
+      "count": 6,
+      "rules": [
+        {
+          "id": "P2-10-DAM-ASSET-MANAGEMENT",
+          "status": "ACTIVE",
+          "core": "全资产数字资产管理(DAM): 资产登记/检索/版本"
+        },
+        {
+          "id": "P2-11-PRODUCTION-DASHBOARD",
+          "status": "ACTIVE",
+          "core": "生产进度看板与仪表盘"
+        },
+        {
+          "id": "P2-12-MULTIPLATFORM-DISTRIBUTION",
+          "status": "ACTIVE",
+          "core": "多平台自动分发适配"
+        },
+        {
+          "id": "P2-13-DATA-FEEDBACK-LOOP",
+          "status": "ACTIVE",
+          "core": "数据回流与剧本优化闭环"
+        },
+        {
+          "id": "P2-14-DIGITAL-AVATAR-DRIVING",
+          "status": "ACTIVE",
+          "core": "数字分身与动作驱动"
+        },
+        {
+          "id": "P2-15-COST-TRACKING-OPTIMIZATION",
+          "status": "ACTIVE",
+          "core": "成本/额度消耗追踪与优化(免费通道优先)"
+        }
+      ]
+    },
+    "LoRA工业化中台规则": {
+      "count": 8,
+      "rules": [
+        {
+          "id": "LORA-DATASET-SPEC",
+          "status": "ACTIVE",
+          "core": "数据集构建规范: 有效样本12-18张, 正面40%/侧脸35%/背影25%, 单图重复10次"
+        },
+        {
+          "id": "LORA-TRAINING-CONFIG",
+          "status": "ACTIVE",
+          "core": "Kohya-SS训练参数配置规范"
+        },
+        {
+          "id": "LORA-INFERENCE-WORKFLOW",
+          "status": "ACTIVE",
+          "core": "LoRA+IP-Adapter+ControlNet三模型组合推理"
+        },
+        {
+          "id": "LORA-DRIFT-TROUBLESHOOTING",
+          "status": "ACTIVE",
+          "core": "漂移排查SOP: 多角度均衡是解决漂移的根源"
+        },
+        {
+          "id": "LORA-PRODUCTION-SOP",
+          "status": "ACTIVE",
+          "core": "角色工业化生产流水线SOP(15帧基础+60集扩展)"
+        },
+        {
+          "id": "LORA-KEYFRAME-BATCH-SPEC",
+          "status": "ACTIVE",
+          "core": "关键帧批量生成规范: 三阶段叙事"
+        },
+        {
+          "id": "LORA-MULTI-CHARACTER-INFERENCE",
+          "status": "ACTIVE",
+          "core": "多角色同框推理规范"
+        },
+        {
+          "id": "LORA-ARCHIVE-LOCK-STANDARD",
+          "status": "ACTIVE",
+          "core": "三端归档锁档标准+质检清单"
+        }
+      ]
+    }
+  },
+  "total_rules": 60,
+  "enabled": true,
+  "enabled_note": "全域深度扫描补齐: 新增生产治理元法则6+后期质检9+分发运营6+LoRA中台8=29条, 总规则31+29=60条",
+  "updated_at": "2026-10-01T11:05:00"
+}

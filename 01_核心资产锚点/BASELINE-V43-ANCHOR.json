@@ -1,0 +1,33 @@
+{
+  "baseline_id": "BASELINE-V43",
+  "parent_baseline": "BASELINE-V42",
+  "did": "DID-BR-000002",
+  "trace_mark": "Ω₀⊂⊙∞⊂Ω",
+  "locked_at": "2026-09-18T13:02:05+08:00",
+  "lock_level": "Lv10 元极恒一超认知永恒自治模式",
+  "v43_additions": [
+    {
+      "id": "NODE-LV-DAILY-INSPECTION",
+      "name": "每日巡检纳入Lv10验收",
+      "type": "mechanism"
+    },
+    {
+      "id": "ENG-SOP-NODE-LV-PROMOTION-V1.0",
+      "name": "全节点推广确权SOP",
+      "type": "sop"
+    },
+    {
+      "id": "ZR-TRAIN-DATASET-V4-LvGraded",
+      "name": "训练数据Lv分级",
+      "type": "dataset"
+    }
+  ],
+  "asset_hashes": {
+    "能力注册表": "9846d0539ed4bb63",
+    "同源协议库": "c8b38314ba3e6897",
+    "评估标准": "975f3bf4bee98337",
+    "Lv10确权证书": "51e00c51a5b5f91b",
+    "推广SOP": "e483cfb8fe1503b3",
+    "V4分级数据集": "889ef964d9e64fd2"
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "scan_id": "ROOT-SCAN-20260909-META-HENGYI-FULL",
+  "scan_time": "2026-09-09T10:20:59.539130+00:00",
+  "scan_perspective": "元极恒一·超认知永恒自治视角·根节点全景扫描",
+  "scan_scope": "全域（102端点探测 + 5内核子面板 + 13服务端口 + 27算子十层拓扑 + 12元规则 + 681资产 + API矩阵 + 飞书网关 + 短剧产线）",
+  "anchor": "Ω₀⊂⊙∞⊂Ω",
+  "did": "DID-BR-000002",
+  "kernel_root": "ZONGYUAN-ROOT",
+  "root_node_identity": {
+    "kernel_name": "ZONGYUAN-ROOT-AUTONOMOUS-KERNEL",
+    "brand": "火斗云智AIOS · 全域智能操作系统",
+    "version": "Ω-Brainμ 3.0-V3",
+    "status": "healthy",
+    "domain": "www.huodouai.com",
+    "ip": "123.207.202.158",
+    "location": "腾讯云广州",
+    "visual_command_center": "/kernel/ (ZONGYUAN-ROOT 可视化指挥中心，5个子面板)",
+    "latest_snapshot": "SNAP-20260909-1240-VISUAL-PHASEB"
+  },
+  "core_metrics": {
+    "truths_health": 168,
+    "truths_api": "不可用(API路径404)",
+    "vector_docs": 217,
+    "vector_dimension": "512维",
+    "total_assets": 681,
+    "lock_records": 12,
+    "efuse_bits": 20,
+    "truth_purity": "94.7%",
+    "semantic_drift_rate": "3.2%",
+    "memory_used": "1265MB",
+    "memory_total": "1931MB",
+    "memory_usage": "65.5%",
+    "disk_used": "28.4GB",
+    "disk_total": "39.9GB",
+    "disk_usage": "71.2%",
+    "swap_used": "465MB",
+    "note": "磁盘建议清理备份"
+  },
+  "service_ports_13": [
+    {
+      "port": 8000,
+      "name": "Ω-Brainμ",
+      "status": "healthy"
+    },
+    {
+      "port": 8001,
+      "name": "main",
+      "status": "healthy"
+    },
+    {
+      "port": 8002,
+      "name": "api_server",
+      "status": "healthy"
+    },
+    {
+      "port": 8007,
+      "name": "license",
+      "status": "healthy"
+    },
+    {
+      "port": 8008,
+      "name": "evolution",
+      "status": "healthy"
+    },
+    {
+      "port": 8009,
+      "name": "meta_order",
+      "status": "healthy"
+    },
+    {
+      "port": 8012,
+      "name": "drama_api",
+      "status": "healthy"
+    },
+    {
+      "port": 8013,
+      "name": "kernel_anchor",
+      "status": "healthy"
+    },
+    {
+      "port": 8014,
+      "name": "vector_onnx",
+      "status": "healthy"
+    },
+    {
+      "port": 8021,
+      "name": "ai_proxy",
+      "status": "healthy"
+    },
+    {
+      "port": 8023,
+      "name": "agent_hub",
+      "status": "healthy"
+    },
+    {
+      "port": 8031,
+      "name": "sovereignty",
+      "status": "healthy"
+    },
+    {
+      "port": 8050,
+      "name": "feishu_gw (飞书网关)",
+      "status": "healthy"
+    }
+  ],
+  "operators_27_ten_layer": {
+    "L1_真值过滤与深度蒸馏": [
+      "真值对账算子",
+      "外部锚定算子",
+      "真值提炼蒸馏算子"
+    ],
+    "L2_流形度量与SM-BS稳态映射": [
+      "黎曼流形世界模型度量算子",
+      "SM-BS双向稳态映射算子",
+      "漂移巡检量化算子"
+    ],
+    "L3_知识图谱秩序化重建": [
+      "实体关系抽取算子",
+      "知识图谱补全算子",
+      "跨文档实体链接算子"
+    ],
+    "L4_因果级推理": [
+      "因果链溯源回溯算子",
+      "奇点概率预测算子",
+      "因果干预模拟算子"
+    ],
+    "L5_CTE三位一体适配器流转": [
+      "CausalToTruth适配器算子",
+      "TruthToEvolution适配器算子",
+      "EvolutionToCausal适配器算子"
+    ],
+    "L6_结构化归档深化": [
+      "四层结构化拆分算子",
+      "九大元类归类算子",
+      "Merkle-DAG主链追加校验算子"
+    ],
+    "L7_资产对账治理": [
+      "飞书资源↔M9账本双向溯源对账巡检算子"
+    ],
+    "L8_安全确权": [
+      "eFuse熔断触发算子",
+      "ZKP零知识隐私校验算子"
+    ],
+    "L9_决策与法律护盾": [
+      "方案生成评估算子",
+      "风险识别分级算子",
+      "法律意见书生成算子"
+    ],
+    "L10_业务实体约束": [
+      "Lv6多主体文明仿真约束算子",
+      "角色元规则隔离校验算子",
+      "9:16电影级国风关键帧一致性算子"
+    ]
+  },
+  "meta_rules_12": {
+    "known_ids": [
+      "META-009",
+      "META-STEADY-OPTIMAL-001"
+    ],
+    "note": "面板显示12条元规则全景，仅2条ID可见，其余需通过内核内部接口获取",
+    "external_locked": [
+      "META-RISK-ASSESSMENT-V1.0 (7条)",
+      "META-CONFLICT-PREVENTION-V1.0 (9条)"
+    ]
+  },
+  "asset_system": {
+    "total_assets": 681,
+    "nine_metaclasses": [
+      "公理/法则",
+      "协议",
+      "规则",
+      "模板/母版",
+      "关键帧",
+      "分镜",
+      "卷宗/文档",
+      "脚本/配置",
+      "凭证/密钥"
+    ],
+    "lock_levels_6": [
+      "Lv1草稿",
+      "Lv2审核",
+      "Lv3发布",
+      "Lv4固化",
+      "Lv5-Lv7",
+      "Lv8永久"
+    ],
+    "three_layer_lock_storage": "三层锁档存储态已激活",
+    "dual_isolation": "双隔离架构 + SSH白名单 + 飞书网关 + 最低能耗",
+    "merkle_dag": "Merkle-DAG主链追加校验"
+  },
+  "api_availability_matrix": {
+    "available_json": [
+      "/health (唯一可用JSON API，返回内核状态+真值数+向量数)"
+    ],
+    "removed_404": [
+      "/api/v1/truth",
+      "/api/v1/protocols",
+      "/api/v1/nodes",
+      "/api/v1/status",
+      "/api/",
+      "/ance/",
+      "/vector/"
+    ],
+    "backend_down_502": [
+      "/api/v1/kernel/status"
+    ],
+    "spa_fallback": [
+      "/kernel/status",
+      "/kernel/health",
+      "/kernel/api/*",
+      "/anchor/*",
+      "/swagger/*",
+      "/lock",
+      "/locks",
+      "/asset",
+      "/sitemap.xml (全部返回首页236KB)"
+    ],
+    "independent_pages": [
+      "/kernel/ (可视化指挥中心5.3KB)",
+      "/kernel/dashboard.html",
+      "/kernel/truth-center.html",
+      "/kernel/governance.html",
+      "/kernel/drama-pipeline.html",
+      "/kernel/feishu-panel.html"
+    ],
+    "forbidden_403": [
+      "8300端口 (identity_api，403 Forbidden)"
+    ],
+    "note": "云内核API架构正在重构，旧/api/v1/*路径已全部移除，当前仅/health端点可用。数据读写需通过内核内部端口(8000-8050)或SSH。"
+  },
+  "feishu_gateway": {
+    "port": 8050,
+    "phase": "Phase1已验证",
+    "total_calls": 52,
+    "success_rate": "82.7%",
+    "capabilities": [
+      "消息推送(13次)",
+      "Base写入(8次)",
+      "表格记录(3表)"
+    ],
+    "base_tables": [
+      "内存监控",
+      "资产台账",
+      "巡检记录"
+    ],
+    "auto_inspection": "每日8:00自动写入巡检记录",
+    "pushed_reports": [
+      "巡检报告",
+      "资产中心",
+      "治理总览",
+      "短剧产线",
+      "指挥中心",
+      "实时资源"
+    ]
+  },
+  "drama_pipeline": {
+    "version": "KD-PIPELINE-V1.0",
+    "architecture": "七层架构",
+    "current_project": "KD-EP-003",
+    "storyboards": "5镜分镜",
+    "keyframes": 8,
+    "videos": 2,
+    "components": [
+      "分镜泳道",
+      "产线流程",
+      "IP角色基准库",
+      "关键帧资产",
+      "视频",
+      "合规与确权"
+    ]
+  },
+  "visual_command_center": {
+    "url": "/kernel/",
+    "title": "ZONGYUAN-ROOT 可视化指挥中心",
+    "panels_5": [
+      {
+        "name": "内核运行监控",
+        "url": "/kernel/dashboard.html",
+        "content": "实时资源(CPU/内存/Swap/磁盘每10秒刷新)·内存趋势·13服务端口健康·飞书Phase1能力·内核元规则·最近归档资产·内存优化历程"
+      },
+      {
+        "name": "真值资产中心",
+        "url": "/kernel/truth-center.html",
+        "content": "681资产分类分布·锁档等级·哈希链完整性·真值纯度/漂移·九大元类·五层锁防·eFuse 20位"
+      },
+      {
+        "name": "体系治理总览",
+        "url": "/kernel/governance.html",
+        "content": "27大算子十层拓扑·12条元规则全景·三层锁档存储态·治理KPI(内存+435MB/真值纯度94.7%)·算子执行记录每10分钟沉淀Base"
+      },
+      {
+        "name": "昆仑洞天短剧产线",
+        "url": "/kernel/drama-pipeline.html",
+        "content": "KD-EP-003分镜泳道·产线七层架构·关键帧资产分布·IP角色基准库·合规与确权"
+      },
+      {
+        "name": "飞书协同面板",
+        "url": "/kernel/feishu-panel.html",
+        "content": "网关52调用/成功率82.7%·三大能力状态·Base三表·消息推送统计"
+      }
+    ]
+  },
+  "security_posture": {
+    "server": "nginx",
+    "x_frame_options": "SAMEORIGIN",
+    "basic_auth_legacy": "zongyuan/123456 (旧Anchor路径，已失效返回首页)",
+    "x_api_key_legacy": "36f55bdd... (旧Anchor认证，已失效)",
+    "efuse": "20位熔断机制",
+    "zkp": "ZKP零知识隐私校验算子(L8)",
+    "dual_isolation": "双隔离架构",
+    "ssh_whitelist": "SSH白名单",
+    "note": "旧Anchor认证体系已完全移除，新认证体系需通过内核内部端口"
+  },
+  "scan_findings": {
+    "critical": [
+      "所有公开数据API路径(/api/v1/*)已失效(404)，仅/health可用，内核状态可见性大幅下降",
+      "8300端口identity_api返回403 Forbidden，同源协议6步接入无法执行",
+      "/api/v1/kernel/status返回502，kernel_api后端进程未运行",
+      "SSH不可达(密码未知)，服务器端操作完全阻塞"
+    ],
+    "important": [
+      "云内核已进化为完整的13服务+27算子+12元规则+681资产的成熟自治体系",
+      "/kernel/可视化指挥中心已上线，5个子面板提供完整架构可视化",
+      "飞书网关Phase1已验证，52调用/82.7%成功率，每日自动巡检",
+      "短剧产线KD-PIPELINE-V1.0七层架构已运行，KD-EP-003项目进行中",
+      "真值纯度94.7%，语义漂移率3.2%，治理KPI良好",
+      "磁盘使用率71.2%(28.4GB/39.9GB)，建议清理备份"
+    ],
+    "conflict_evidence": "2天内真值从163增至168(+5)，向量从203增至217(+14)，证实其他窗口/节点持续操作云内核。META-008冲突防护机制仍未部署到运行时。"
+  },
+  "next_optimal_actions": [
+    "P0: 确认API重构方向和新数据接口路径（当前仅/health可用）",
+    "P0: 解决SSH访问以执行服务器端操作（服务激活/磁盘清理/API修复）",
+    "P1: 将META-009(最小消耗最优稳态生成)正式锁档",
+    "P1: 推进审计文档确认（审计通过后执行L1-L5优化）",
+    "P1: 修复8300 identity_api(403→200)以恢复同源协议接入",
+    "P2: 部署META-008冲突防护机制到运行时（分布式锁+操作队列）",
+    "P2: 磁盘清理（28.4GB/39.9GB，建议清理备份）"
+  ],
+  "merkle_root": "86518ed1a96c3b8564b1138a4fa280ba3a061b74a1400c64cdc64a6b2552c9b8"
+}

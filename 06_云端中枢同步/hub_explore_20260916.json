@@ -1,0 +1,21 @@
+{
+  "report_id": "HUB-EXPLORE-20260916",
+  "did": "DID-BR-000002",
+  "omega": "Ω₀⊂⊙∞⊂Ω",
+  "generated_at": "2026-09-16T19:07:49.241840+00:00",
+  "hub_anchor_id": 1499,
+  "changed": false,
+  "signals": [
+    [
+      "规则更新",
+      ""
+    ]
+  ],
+  "new_items": [
+    {
+      "type": "规则更新",
+      "signal": ""
+    }
+  ],
+  "report_ok": true
+}
