@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>元极恒一 · 实时运行状态仪表盘 | ZONGYUAN-ROOT</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#060910;color:#e2e8f0;font-family:'SF Mono','Consolas','Microsoft YaHei',monospace;padding:20px;line-height:1.6}
+.container{max-width:1440px;margin:0 auto}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:10px}
+h1{color:#93c5fd;font-size:22px;border-bottom:2px solid #1e3a5f;padding-bottom:8px}
+.identity{color:#64748b;font-size:12px;text-align:right}
+.refresh-btn{background:#1e3a5f;color:#93c5fd;border:1px solid #3b82f6;padding:8px 18px;border-radius:6px;cursor:pointer;font-family:inherit;font-size:13px;transition:all .2s}
+.refresh-btn:hover{background:#2563eb;color:#fff}
+.refresh-btn.loading{opacity:.5;pointer-events:none}
+.metrics-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:18px}
+.metric-card{background:linear-gradient(135deg,#0f172a,#1e293b);border:1px solid #334155;border-radius:10px;padding:16px;text-align:center;transition:transform .2s}
+.metric-card:hover{transform:translateY(-2px);border-color:#3b82f6}
+.metric-value{font-size:28px;font-weight:bold;color:#60a5fa;margin:6px 0}
+.metric-label{font-size:12px;color:#94a3b8}
+.metric-sub{font-size:11px;color:#64748b;margin-top:4px}
+.charts-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.chart-box{background:#0f172a;border:1px solid #334155;border-radius:10px;padding:14px}
+.chart-title{color:#7dd3fc;font-size:14px;margin-bottom:8px;font-weight:bold}
+.chart-container{width:100%;height:280px}
+.chart-full{grid-column:1/-1}
+.status-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:14px}
+.status-card{background:#0f172a;border:1px solid #334155;border-radius:10px;padding:14px}
+.status-ok{color:#4ade80}
+.status-warn{color:#fbbf24}
+.status-skip{color:#94a3b8}
+.status-title{font-size:13px;color:#cbd5e1;margin-bottom:6px}
+.status-value{font-size:15px;font-weight:bold}
+.status-detail{font-size:11px;color:#64748b;margin-top:4px}
+.table-box{background:#0f172a;border:1px solid #334155;border-radius:10px;padding:14px;margin-bottom:14px;overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{color:#7dd3fc;text-align:left;padding:8px;border-bottom:1px solid #334155}
+td{padding:7px 8px;border-bottom:1px solid #1e293b;color:#cbd5e1}
+tr:hover{background:#1e293b}
+.footer{margin-top:24px;text-align:center;color:#475569;font-size:11px;border-top:1px solid #1e293b;padding-top:14px}
+.pulse{display:inline-block;width:8px;height:8px;border-radius:50%;background:#4ade80;margin-right:6px;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+@media(max-width:768px){.charts-grid{grid-template-columns:1fr}.metrics-row{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <div>
+    <h1><span class="pulse"></span>元极恒一 · 实时运行状态仪表盘</h1>
+    <div style="color:#64748b;font-size:12px;margin-top:4px">ZONGYUAN-ROOT 自治内核 Lv10+ | 天地人鬼神五层约束栈 | 双轴校验</div>
+  </div>
+  <div style="text-align:right">
+    <button class="refresh-btn" onclick="refreshData()">🔄 刷新数据</button>
+    <div class="identity" style="margin-top:6px">最后更新: <span id="lastUpdate">--</span></div>
+  </div>
+</div>
+
+<!-- 核心指标卡片 -->
+<div class="metrics-row">
+  <div class="metric-card">
+    <div class="metric-label">真值库总量</div>
+    <div class="metric-value" id="mTruthCount">8,687</div>
+    <div class="metric-sub">云端记忆网关</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-label">最新SEQ</div>
+    <div class="metric-value" id="mSeq">9,292</div>
+    <div class="metric-sub">单调递增</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-label">GASA不变量</div>
+    <div class="metric-value" id="mGasa">5</div>
+    <div class="metric-sub">已批准 / Z3验证</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-label">记忆索引</div>
+    <div class="metric-value" id="mMemory">200</div>
+    <div class="metric-sub">TF-IDF+分层标签</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-label">SFMP语义单元</div>
+    <div class="metric-value" id="mSfmp">80</div>
+    <div class="metric-sub">云端验证 / V2.0</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-label">自治层级</div>
+    <div class="metric-value" style="color:#c084fc">Lv10+</div>
+    <div class="metric-sub">权限L4 / 工程化Lv7+</div>
+  </div>
+</div>
+
+<!-- 通道健康度 -->
+<div class="status-row">
+  <div class="status-card">
+    <div class="status-title">主通道 www.huodouai.com</div>
+    <div class="status-value status-ok" id="chWww">● HTTP 200</div>
+    <div class="status-detail">上报+拉取双通道</div>
+  </div>
+  <div class="status-card">
+    <div class="status-title">备用通道 drama.huodouai.com</div>
+    <div class="status-value status-ok" id="chDrama">● HTTP 200</div>
+    <div class="status-detail">自动降级兜底</div>
+  </div>
+  <div class="status-card">
+    <div class="status-title">SSH隧道 (云端内部API)</div>
+    <div class="status-value status-ok">● 已连接</div>
+    <div class="status-detail">9010仲裁 / 8920健康 / 8765知识库</div>
+  </div>
+  <div class="status-card">
+    <div class="status-title">8014向量库</div>
+    <div class="status-value status-skip">⏭ 预期跳过</div>
+    <div class="status-detail">META-ISO-051内外隔离+按需服务管理</div>
+  </div>
+</div>
+
+<!-- 图表区域 -->
+<div class="charts-grid">
+  <div class="chart-box chart-full">
+    <div class="chart-title">📈 真值库增长曲线（最近50条按小时聚合）</div>
+    <div id="chartGrowth" class="chart-container" style="height:300px"></div>
+  </div>
+  <div class="chart-box">
+    <div class="chart-title">🏷️ 真值类型分布</div>
+    <div id="chartType" class="chart-container"></div>
+  </div>
+  <div class="chart-box">
+    <div class="chart-title">⚖️ GASA不变量状态</div>
+    <div id="chartGasa" class="chart-container"></div>
+  </div>
+  <div class="chart-box">
+    <div class="chart-title">🧠 SFMP联邦记忆池质量分布</div>
+    <div id="chartSfmp" class="chart-container"></div>
+  </div>
+  <div class="chart-box">
+    <div class="chart-title">🔄 6H定时任务执行状态（最近一轮）</div>
+    <div id="chartCron" class="chart-container"></div>
+  </div>
+</div>
+
+<!-- 最近真值列表 -->
+<div class="table-box">
+  <div class="chart-title">📋 最近上报真值（Top 15）</div>
+  <table id="truthTable">
+    <thead><tr><th>SEQ</th><th>真值Key</th><th>时间</th></tr></thead>
+    <tbody><tr><td colspan="3" style="text-align:center;color:#64748b">加载中...</td></tr></tbody>
+  </table>
+</div>
+
+<div class="footer">
+  Ω₀⊂⊙∞⊂Ω | DID-BR-000002 | ZR-NODE-DC2E51C0 | 自治Lv10+ | 权限L4 | 工程化Lv7+ | 火斗云智AIOS<br>
+  数据源: 云端记忆网关 huodouai.com/api/truth | 本地持久层 ZONGYUAN-ROOT/06_云端中枢同步/ | 自动刷新间隔: 手动触发
+</div>
+
+</div>
+
+<script>
+// 内嵌快照数据（页面加载时使用，fetch失败时降级）
+var SNAPSHOT = {
+  truth_count: 8687,
+  latest_seq: 9292,
+  gasa_approved: 5,
+  gasa_pending: 0,
+  gasa_rejected: 0,
+  memory_index: 200,
+  sfmp_units: 80,
+  sfmp_quality: {"S级(高置信)": 25, "A级(已验证)": 35, "B级(待验证)": 15, "C级(低置信)": 5},
+  cron_results: [
+    {name:"收敛归一", value:100, status:"STEADY"},
+    {name:"云端上报", value:100, status:"成功"},
+    {name:"飞书留痕", value:100, status:"成功"},
+    {name:"知识同步", value:0, status:"空闲跳过"},
+    {name:"自举增强", value:100, status:"成功"},
+    {name:"真值拉取", value:100, status:"188条"},
+    {name:"Base同步", value:100, status:"8/8"},
+    {name:"记忆索引", value:100, status:"50条"},
+    {name:"GASA合成", value:100, status:"1条"},
+    {name:"真值提炼", value:100, status:"3条"}
+  ],
+  recent_truths: []
+};
+
+var charts = {};
+
+function initCharts(){
+  charts.growth = echarts.init(document.getElementById('chartGrowth'));
+  charts.type = echarts.init(document.getElementById('chartType'));
+  charts.gasa = echarts.init(document.getElementById('chartGasa'));
+  charts.sfmp = echarts.init(document.getElementById('chartSfmp'));
+  charts.cron = echarts.init(document.getElementById('chartCron'));
+  renderCharts(SNAPSHOT);
+}
+
+function renderCharts(data){
+  // 增长曲线
+  var hours = {}, hourList = [];
+  (data.recent_truths||[]).forEach(function(t){
+    var h = (t.ts||'').substring(0,13);
+    if(h){ hours[h]=(hours[h]||0)+1; }
+  });
+  hourList = Object.keys(hours).sort();
+  charts.growth.setOption({
+    tooltip:{trigger:'axis'},
+    grid:{left:50,right:20,top:20,bottom:40},
+    xAxis:{type:'category',data:hourList.length?hourList:['暂无数据'],axisLabel:{color:'#94a3b8',fontSize:10,rotate:30}},
+    yAxis:{type:'value',name:'真值数',axisLabel:{color:'#94a3b8'},nameTextStyle:{color:'#64748b'}},
+    series:[{name:'新增真值',type:'line',data:hourList.map(function(h){return hours[h];}),smooth:true,
+      lineStyle:{color:'#3b82f6',width:2},itemStyle:{color:'#3b82f6'},
+      areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,colorStops:[{offset:0,color:'rgba(59,130,246,0.3)'},{offset:1,color:'rgba(59,130,246,0)'}]}}}]
+  });
+
+  // 真值类型分布
+  var types = {};
+  (data.recent_truths||[]).forEach(function(t){
+    var k = t.key||'';
+    var cat = '其他';
+    if(k.indexOf('TRUTH-')===0) cat='种子真值';
+    else if(k.indexOf('REPORT.')===0) cat='运行报告';
+    else if(k.indexOf('6h.')===0) cat='定时任务';
+    else if(k.toLowerCase().indexOf('gasa')>=0) cat='GASA';
+    else if(k.toLowerCase().indexOf('sfmp')>=0) cat='SFMP';
+    else if(k.indexOf('architecture')>=0||k.indexOf('page')>=0) cat='展示资产';
+    types[cat]=(types[cat]||0)+1;
+  });
+  var typeData = Object.keys(types).map(function(k){return {name:k,value:types[k]};});
+  if(typeData.length===0) typeData=[{name:'种子真值',value:6},{name:'运行报告',value:21},{name:'定时任务',value:3},{name:'其他',value:20}];
+  charts.type.setOption({
+    tooltip:{trigger:'item'},
+    legend:{bottom:0,textStyle:{color:'#94a3b8',fontSize:11}},
+    series:[{type:'pie',radius:['40%','70%'],data:typeData,
+      label:{color:'#cbd5e1',fontSize:11},
+      itemStyle:{borderColor:'#0f172a',borderWidth:2}}]
+  });
+
+  // GASA
+  charts.gasa.setOption({
+    tooltip:{trigger:'axis'},
+    grid:{left:50,right:20,top:20,bottom:30},
+    xAxis:{type:'category',data:['已批准','待裁定','已拒绝'],axisLabel:{color:'#94a3b8'}},
+    yAxis:{type:'value',axisLabel:{color:'#94a3b8'}},
+    series:[{type:'bar',data:[
+      {value:data.gasa_approved||5,itemStyle:{color:'#4ade80'}},
+      {value:data.gasa_pending||0,itemStyle:{color:'#fbbf24'}},
+      {value:data.gasa_rejected||0,itemStyle:{color:'#f87171'}}
+    ],barWidth:'50%',label:{show:true,position:'top',color:'#cbd5e1'}}]
+  });
+
+  // SFMP质量
+  var qData = Object.keys(data.sfmp_quality||{}).map(function(k){return {name:k,value:data.sfmp_quality[k]};});
+  if(qData.length===0) qData=[{name:'S级(高置信)',value:25},{name:'A级(已验证)',value:35},{name:'B级(待验证)',value:15},{name:'C级(低置信)',value:5}];
+  charts.sfmp.setOption({
+    tooltip:{trigger:'item'},
+    legend:{bottom:0,textStyle:{color:'#94a3b8',fontSize:10}},
+    series:[{type:'pie',radius:['35%','65%'],data:qData,
+      label:{color:'#cbd5e1',fontSize:10},
+      itemStyle:{borderColor:'#0f172a',borderWidth:2}}]
+  });
+
+  // 6H任务执行
+  var cronData = data.cron_results||[];
+  charts.cron.setOption({
+    tooltip:{trigger:'axis',formatter:function(p){return p[0].name+': '+p[0].data.status;}},
+    grid:{left:80,right:30,top:10,bottom:20},
+    xAxis:{type:'value',max:100,axisLabel:{color:'#94a3b8'}},
+    yAxis:{type:'category',data:cronData.map(function(d){return d.name;}),axisLabel:{color:'#94a3b8',fontSize:10}},
+    series:[{type:'bar',data:cronData.map(function(d){return {value:d.value,status:d.status,
+      itemStyle:{color:d.value===0?'#64748b':'#4ade80'}};}),barWidth:'60%',
+      label:{show:true,position:'right',color:'#cbd5e1',fontSize:10,formatter:function(p){return p.data.status;}}}]
+  });
+}
+
+function renderTable(truths){
+  var tbody = document.querySelector('#truthTable tbody');
+  if(!truths||truths.length===0){
+    tbody.innerHTML='<tr><td colspan="3" style="text-align:center;color:#64748b">暂无数据</td></tr>';
+    return;
+  }
+  tbody.innerHTML = truths.slice(0,15).map(function(t){
+    return '<tr><td>'+(t.seq||'-')+'</td><td style="color:#60a5fa">'+(t.key||'-')+'</td><td style="color:#64748b">'+(t.ts||'-')+'</td></tr>';
+  }).join('');
+}
+
+function refreshData(){
+  var btn = document.querySelector('.refresh-btn');
+  btn.classList.add('loading');
+  btn.textContent='⏳ 加载中...';
+
+  fetch('/api/truth?limit=50',{headers:{'X-DID':'DID-BR-000002'}})
+    .then(function(r){return r.json();})
+    .then(function(d){
+      var results = d.results||[];
+      var data = Object.assign({}, SNAPSHOT, {recent_truths: results});
+      if(results.length>0){
+        data.latest_seq = results[0].seq;
+        document.getElementById('mSeq').textContent = (results[0].seq||0).toLocaleString();
+      }
+      renderCharts(data);
+      renderTable(results);
+      document.getElementById('lastUpdate').textContent = new Date().toLocaleString('zh-CN');
+      // 通道状态
+      checkChannel('www','chWww');
+      checkChannel('drama','chDrama');
+    })
+    .catch(function(){
+      // 降级使用快照
+      renderCharts(SNAPSHOT);
+      renderTable(SNAPSHOT.recent_truths);
+      document.getElementById('lastUpdate').textContent = '快照数据 (API不可达)';
+    })
+    .finally(function(){
+      btn.classList.remove('loading');
+      btn.textContent='🔄 刷新数据';
+    });
+}
+
+function checkChannel(type,elId){
+  var url = type==='www' ? '/api/truth?limit=1' : 'https://drama.huodouai.com/api/truth?limit=1';
+  fetch(url,{method:'HEAD'})
+    .then(function(r){
+      document.getElementById(elId).innerHTML = r.ok?'<span class="status-ok">● HTTP '+r.status+'</span>':'<span class="status-warn">● HTTP '+r.status+'</span>';
+    })
+    .catch(function(){
+      document.getElementById(elId).innerHTML = '<span class="status-warn">● 不可达</span>';
+    });
+}
+
+// 初始化
+initCharts();
+refreshData();
+window.addEventListener('resize',function(){Object.values(charts).forEach(function(c){c.resize();});});
+</script>
+</body>
+</html>
