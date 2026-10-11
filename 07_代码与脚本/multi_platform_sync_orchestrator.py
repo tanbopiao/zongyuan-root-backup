@@ -47,6 +47,20 @@ PLATFORMS = {
         "repo_dir": "/home/user/ZONGYUAN-ROOT-backup",
         "remote": "git@atomgit.com:zongyuangen/zongyuan-root-backup.git",
     },
+    "gitee": {
+        "name": "Gitee代码仓库",
+        "priority": 4,
+        "repo_dir": "/home/user/ZONGYUAN-ROOT-backup",
+        "remote": "git@gitee.com:zongyuangen/zongyuan-root-backup.git",
+        "note": "SSH公钥认证，与AtomGit/GitHub共用密钥zr_multigit_ed25519",
+    },
+    "github": {
+        "name": "GitHub代码仓库",
+        "priority": 4,
+        "repo_dir": "/home/user/ZONGYUAN-ROOT-backup",
+        "remote": "git@github.com:zongyuangen/zongyuan-root-backup.git",
+        "note": "SSH公钥认证，与AtomGit/Gitee共用密钥zr_multigit_ed25519",
+    },
     "modelscope": {
         "name": "魔搭数据湖",
         "priority": 5,
@@ -180,7 +194,44 @@ def sync_local_to_feishu(state):
 
     return results
 
+def sync_local_to_git_platforms(state):
+    """本地持久层 → Git三平台（AtomGit+GitHub+Gitee）"""
+    log("  → 本地→Git三平台: AtomGit+GitHub+Gitee 多平台推送")
+    try:
+        script = "/home/user/ZONGYUAN-ROOT/07_代码与脚本/multi_git_sync.sh"
+        if not os.path.exists(script):
+            log("    ⏭ 脚本不存在，跳过")
+            return {"status": "skip", "reason": "script_not_found"}
+        r = subprocess.run(["bash", script], capture_output=True, text=True, timeout=120)
+        output = r.stdout + r.stderr
+        # 解析结果
+        success = 0
+        skipped = 0
+        failed = 0
+        for line in output.split('\n'):
+            if '推送成功' in line:
+                success += 1
+            elif '认证未就绪' in line or '空闲跳过' in line:
+                skipped += 1
+            elif '推送失败' in line:
+                failed += 1
+        log(f"    ✅ Git多平台推送: 成功={success}, 跳过={skipped}, 失败={failed}")
+        return {"status": "success" if success > 0 else "skip",
+                "atomgit": success >= 1, "github": "github" in output and "✅" in output,
+                "gitee": "gitee" in output and "✅" in output,
+                "success": success, "skipped": skipped, "failed": failed}
+    except subprocess.TimeoutExpired:
+        log("    ⏭ 超时，快速跳过")
+        return {"status": "skip", "reason": "timeout"}
+    except Exception as e:
+        log(f"    ❌ 失败: {e}")
+        return {"status": "failed", "error": str(e)}
+
+# 保留旧函数名作为别名
 def sync_local_to_atomgit(state):
+    return sync_local_to_git_platforms(state)
+
+# def sync_local_to_atomgit(state):
     """本地持久层 → AtomGit（git push）"""
     log("  → 本地→AtomGit: 增量推送")
     try:
@@ -267,7 +318,7 @@ def run_sync():
 
     # 同步通道3: 本地 → AtomGit
     log("[通道3] 本地持久层 ↔ AtomGit代码仓库")
-    results["local_to_atomgit"] = sync_local_to_atomgit(state)
+    results["local_to_git_platforms"] = sync_local_to_git_platforms(state)
 
     # 同步通道4: 本地 → 魔搭数据湖（归档层，单向）
     log("[通道4] 本地持久层 → 魔搭数据湖（归档层）")

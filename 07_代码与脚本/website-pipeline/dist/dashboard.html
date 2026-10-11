@@ -159,6 +159,8 @@ tr:hover{background:#1e293b}
       <tr><td>云端记忆网关 ↔ 本地持久层</td><td>双向</td><td class="status-ok">● 已同步</td><td>真值拉取+心跳上报</td></tr>
       <tr><td>本地持久层 ↔ 飞书共享大脑</td><td>双向</td><td class="status-ok">● 已同步</td><td>Base台账+资产归档+决策日志</td></tr>
       <tr><td>本地持久层 ↔ AtomGit代码仓库</td><td>双向</td><td class="status-ok">● 已同步</td><td>git push增量推送</td></tr>
+      <tr><td>本地持久层 ↔ GitHub代码仓库</td><td>双向</td><td class="status-skip">⏭ 待认证</td><td>SSH公钥待添加(共用zr_multigit_ed25519)</td></tr>
+      <tr><td>本地持久层 ↔ Gitee代码仓库</td><td>双向</td><td class="status-skip">⏭ 待认证</td><td>SSH公钥待添加(共用zr_multigit_ed25519)</td></tr>
       <tr><td>本地持久层 → 魔搭数据湖</td><td>单向(归档)</td><td class="status-skip">⏭ 按需触发</td><td>归档层，6H周期内空闲跳过</td></tr>
       <tr><td>飞书共享大脑 → 本地持久层</td><td>反向</td><td class="status-warn">◐ 部分</td><td>任务台账拉取(解析优化中)</td></tr>
     </tbody>
