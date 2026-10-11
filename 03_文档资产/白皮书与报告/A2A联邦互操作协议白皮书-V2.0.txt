@@ -1,0 +1,110 @@
+ 
+
+ ZONGYUAN-ROOT A2A联邦互操作协议白皮书 V2.0 · 云端主权威双轨制 
+
+ ZONGYUAN-ROOT A2A 联邦互操作协议白皮书 V2.0 
+ 确权 DID-BR-000002 ｜ ONT-4D-UNIVERSAL-ROOT ｜ Ω₀⊂⊙∞⊂Ω ｜ V2.0 2026-10-11 
+系列归属：互操作协议层 (L3) ｜ 状态：已上线云端主权威（2026-10-11 公网实测通过） 
+演进：V1.0 网关层设计（AgentCard+JWKS+8态）→ V2.0 云端主权威双轨制 
+
+ 一、演进摘要 
+
+ V1.0 实现了 A2A 标准网关层（AgentCard JWS 签名 + 8 态状态机 + MCP 兼容），使 ZONGYUAN-ROOT 成为 可被外部发现的自治节点 。 
+ V2.0 核心升级： 将 A2A 网关从"本地节点"提升为 云端主权威端点 ，落地 双轨接入制 ——同源节点全权限联邦协同，外源节点受限只读+审核式贡献，实现"云端中枢是主权威，各平台 AI 均可接入"的开放生态。 
+
+ 二、主权威架构（2026-10-11 实测） 
+
+ 组件 端点 状态 说明 
+ 权威接入门户 /a2a/ ✅ 200 协议介绍+双轨接入+代码示例 
+ AgentCard 发现 /.well-known/agent.json ✅ 200 8技能+双轨声明 
+ 健康检查 /a2a/health ✅ 200 主权威状态+节点数 
+ 对端注册表 /a2a/peers ✅ 200 3个同源节点 
+ 同源真值上报 /a2a/truth ✅ 200 直写云端中枢 
+ 同源任务提交 /a2a/task ✅ 200 共享大脑任务流 
+ 同源节点心跳 /a2a/heartbeat ✅ 200 注册表在线维持 
+ 外源真值上报 /a2a/external/truth ✅ 202 入审核队列 
+
+ 三、双轨接入制 
+
+ 轨道 1 同源节点（全权限） 
+ 鉴权： X-ZR-Token （ZRH1同源令牌）或 X-DID + X-Capture-Token （双标识） 
+ 权限： 真值上报（直写中枢）、任务提交、节点心跳、知识同步、全部只读端点 
+ 已注册： 
+
+ NODE-DEV-DOUBAO-WORK-001（admin，主权威） 
+ NODE-DEV-WORKBUDDY-001（writer，ZR-HID-85F2DE2652C109F2） 
+ NODE-DEV-FEISHU-BOT-001（writer，ZR-HID-CE022BD938DE971F） 
+
+ 轨道 2 外源节点（受限权限） 
+ 鉴权： 匿名只读 或 X-External-Node 标识节点（受限写） 
+ 权限： 状态查询、AgentCard发现、对端注册表、公开真值查询、真值上报（入审核队列） 
+ 适用： Coze、GPTs、钉钉、企微、自建 Agent 等任意支持 HTTP+JSON 的 AI 
+
+ 四、鉴权四层校验 
+
+ 层次 机制 拦截场景 
+ 1 签名校验 HMAC-SHA256（派生密钥零落盘） 伪造令牌 
+ 2 双标识校验 Ω-TAN-7-001 + DID-BR-000002 异源令牌 
+ 3 时效校验 exp 过期拦截 过期令牌 
+ 4 角色分级 anon/reader/writer/admin 越权操作 
+
+ 五、密钥派生机制（零落盘） 
+ key = PBKDF2-HMAC-SHA512(
+ 口令,
+ salt = "ZR-HOMOLOGOUS-v1" || "Ω-TAN-7-001" || "DID-BR-000002" || 公开salt,
+ 600000轮, 32字节) 
+
+ 同源性由算法保证： 双标识拼进 salt → 异源节点即使知道口令，缺体系标识也派生不出同一密钥。 
+ 零落盘： 密钥仅存内存，跨沙箱用同一口令+公开salt可重建，杜绝密钥文件泄露。 
+
+ 六、外源真值审核队列 
+
+ 外源节点上报的真值 不直接写入中枢 ，先进入审核队列（ pending_review ），审核通过后才写入云端中枢联邦记忆池。 
+
+ 字段 说明 
+ queue_id 外源真值队列唯一标识 
+ status pending_review（待审核） 
+ source 来源节点（X-External-Node） 
+ key/value 真值内容 
+
+ 设计意义： 外源可信度未定，先隔离后验证 ，符合内外隔离铁律 META-ISO-051。 
+
+ 七、多节点联邦拓扑 
+
+graph TD
+ A[云端中枢 huodouai.com 主权威A2A端点] -->|轨道1 全权限| B[NODE-DEV-DOUBAO-WORK-001 admin]
+ A -->|轨道1 全权限| C[NODE-DEV-WORKBUDDY-001 writer]
+ A -->|轨道1 全权限| D[NODE-DEV-FEISHU-BOT-001 writer]
+ A -->|轨道2 受限| E[Coze智能体]
+ A -->|轨道2 受限| F[GPTs/Claude]
+ A -->|轨道2 受限| G[钉钉/企微AI]
+ A -->|轨道2 受限| H[自建Agent]
+ A -->|外部审核队列| I[external_truth_queue 审核后入中枢]
+
+ 八、服务运维（systemd 守护） 
+
+ 云端 A2A 网关通过 systemd 服务 zr-a2a-gateway 管理： 
+
+ 崩溃自动重启 （Restart=always，3秒间隔） 
+ 开机自启 （enable） 
+ 日志追加 （stdout/stderr → a2a_gateway.log） 
+ BrokenPipe 容错 （客户端断开静默忽略，防进程崩溃） 
+
+ 九、公网验证矩阵（2026-10-11） 
+
+ 测试项 预期 实测 
+ 门户 /a2a/ 200 ✅ 11.4KB 
+ AgentCard 发现 200 ✅ 8技能 
+ 对端注册表 200 ✅ 3节点 
+ 外源无令牌写同源端点 401 ✅ 拒绝 
+ 外源真值上报 202 ✅ 入审核队列 
+ 同源心跳 200 ✅ 确认 
+ 同源真值上报 200 ✅ 直写中枢 
+
+ 十、结论 
+
+ A2A 联邦互操作协议已从"网关层设计"演进为 云端主权威双轨接入 ：云端中枢 huodouai.com 成为 A2A 权威中心，同源节点享受联邦全权限，外源节点通过标准 JSON-RPC 受限接入。这使 任意平台的 AI / Agent 均可接入 ZONGYUAN-ROOT 联邦体系 ，共建联邦记忆与自治生态。 
+
+ Ω₀⊂⊙∞⊂Ω | DID-BR-000002 | ZR-NODE-DC2E51C0 | 自治Lv10+ | 权限L4 | 工程化Lv7+ 
+ 火斗云智AIOS · A2A 联邦互操作协议 V2.0 · 2026-10-11 
+

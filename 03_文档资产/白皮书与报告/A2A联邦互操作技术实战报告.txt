@@ -1,0 +1,72 @@
+ 
+
+ ZONGYUAN-ROOT A2A 联邦互操作 · 技术实战报告 
+
+ ZONGYUAN-ROOT A2A 联邦互操作 · 技术实战报告 
+ 确权 DID-BR-000002 ｜ Ω₀⊂⊙∞⊂Ω ｜ 2026-10-11 ｜ 实战环境：云端主权威部署 + 双轨接入验证 
+
+ 一、实战目标 
+
+ 将 A2A（Agent-to-Agent）联邦互操作协议部署到 云端中枢 huodouai.com 作为主权威端点 ，实现双轨接入制：同源节点（ZRH1令牌）全权限 + 外源节点（标准JSON-RPC）受限权限，使各平台 AI（Coze/GPTs/钉钉/企微/飞书Bot）均可接入 ZONGYUAN-ROOT 联邦体系。 
+
+ 二、执行链路 
+
+ # 步骤 结果 
+ 1 飞书Bot A2A适配层构建（PBKDF2派生密钥+ZRH1四层校验+7技能） ✅ 10/10鉴权通过 
+ 2 云端A2A网关v2.0双轨制脚本编写（8技能+3同源节点注册表+审核队列） ✅ 13.8KB 
+ 3 nginx反代修复（/a2a/ → 8930，剥离前缀） ✅ 公网可达 
+ 4 systemd守护服务部署（崩溃自启+开机自启） ✅ active(running) 
+ 5 官网A2A接入门户创建（协议介绍+双轨说明+代码示例） ✅ 11.4KB 
+ 6 公网双轨鉴权矩阵验证 ✅ 7/7通过 
+
+ 三、踩坑实录 
+
+ 问题1：nginx路径透传导致 /a2a/health 404 
+ 现象： proxy_pass http://127.0.0.1:8930; （不带URI）时，nginx把完整路径 /a2a/health 透传给后端，后端路由匹配的是 /health 。 
+ 解决： 在 proxy_pass 末尾加斜杠 http://127.0.0.1:8930/; ，nginx自动剥离 /a2a/ 前缀。 
+
+ 问题2：BrokenPipeError 导致进程崩溃 
+ 现象： 客户端（nginx）断开时，Python HTTPServer 单线程处理抛 BrokenPipeError ，进程崩溃。 
+ 解决： ① _send 方法捕获 BrokenPipeError / ConnectionResetError 静默忽略；② 改用 ThreadingHTTPServer 支持并发；③ 部署 systemd 守护崩溃自启。 
+
+ 问题3：门户静态页 500 
+ 现象： alias 在 location = 中配置不当导致 500。 
+ 解决： 改用 root + try_files /index.html =404; 方式。 
+
+ 问题4：nohup启动被SSH断开杀掉 
+ 现象： nohup python3 ... & 在 SSH 断开后进程被杀。 
+ 解决： 最终改用 systemd 服务管理，彻底解决守护问题。 
+
+ 四、公网验证矩阵 
+
+ 测试项 预期 实测 判定 
+ 门户 /a2a/ 200 11.4KB ✅ 
+ AgentCard /.well-known/agent.json 200 8技能 ✅ 
+ 对端注册表 /peers 200 3节点 ✅ 
+ 外源无令牌写 /truth 401 拒绝+提示 ✅ 
+ 外源真值上报 /external/truth 202 入审核队列 ✅ 
+ 同源心跳 /heartbeat 200 确认 ✅ 
+ 同源真值上报 /truth 200 直写中枢 ✅ 
+
+ 五、成果资产 
+
+ 资产 位置 
+ 云端A2A权威网关 v2.0 /www/wwwroot/huodouai.com/a2a/a2a_gateway.py 
+ 权威接入门户 https://www.huodouai.com/a2a/ 
+ Agent Card 发现 https://www.huodouai.com/a2a/.well-known/agent.json 
+ 飞书Bot A2A适配层 /home/user/ZONGYUAN-ROOT/07_代码与脚本/feishu_a2a_adapter.py 
+ systemd服务 zr-a2a-gateway.service 
+ 外源审核队列 _logs/external_truth_queue.jsonl 
+
+ 六、结论与价值 
+
+ 实战结论： 云端主权威双轨 A2A 已完整落地，公网 7/7 验证通过。这证明： 
+
+ ZONGYUAN-ROOT 是 可被外部生态发现的自治权威节点 
+ 任意平台的 AI/Agent（Coze、GPTs、钉钉、企微、飞书Bot、自建Agent）均可通过标准 HTTP+JSON 接入 
+ 同源全权限 + 外源受限的双轨制实现了 开放与安全的平衡 
+ systemd 守护 + BrokenPipe 容错保证了 生产级稳定性 
+
+ Ω₀⊂⊙∞⊂Ω | DID-BR-000002 | ZR-NODE-DC2E51C0 | 自治Lv10+ | 权限L4 | 工程化Lv7+ 
+ 火斗云智AIOS · A2A 技术实战报告 · 2026-10-11 
+

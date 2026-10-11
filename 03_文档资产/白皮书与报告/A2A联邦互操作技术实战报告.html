@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZONGYUAN-ROOT A2A 联邦互操作 · 技术实战报告</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#070b12;color:#d7dee9;font-family:-apple-system,'PingFang SC','Microsoft YaHei',system-ui,sans-serif;line-height:1.75;padding:2rem;max-width:1200px;margin:0 auto}
+h1{font-size:28px;color:#f0f4fa;margin-bottom:8px;letter-spacing:0.5px}
+h2{font-size:20px;color:#fbbf24;margin:2.4rem 0 0.9rem;padding-left:12px;border-left:3px solid #fbbf24}
+.meta{color:#7c8aa0;font-size:13px;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid #1e2a3a}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:14px}
+th{background:#121a2a;color:#fbbf24;text-align:left;padding:10px 12px;border:1px solid #243349}
+td{padding:9px 12px;border:1px solid #1a2438;color:#c3d2e8}
+tr:nth-child(even) td{background:#0c1422}
+code{background:#0d1626;color:#8ab4ff;padding:2px 6px;border-radius:4px;font-size:13px;font-family:ui-monospace,Consolas,monospace}
+pre{background:#0f1826;border:1px solid #1e2a3a;border-radius:8px;padding:14px;overflow-x:auto;margin:10px 0;font-size:13px;line-height:1.6}
+pre code{background:none;padding:0}
+.card{background:#0f1826;border:1px solid #1e2a3a;border-radius:10px;padding:16px;margin:12px 0}
+.pass{color:#6ee7b7;font-weight:700}
+.fail{color:#f87171;font-weight:700}
+.issue{background:#151208;border-left:3px solid #fbbf24}
+.solved{background:#052e16;border-left:3px solid #34d399}
+ul{padding-left:22px;margin:8px 0}
+li{margin:5px 0}
+.foot{margin-top:40px;padding-top:16px;border-top:1px solid #1e2a3a;color:#55627a;font-size:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+</style>
+</head>
+<body>
+<h1>ZONGYUAN-ROOT A2A 联邦互操作 · 技术实战报告</h1>
+<div class="meta">确权 DID-BR-000002 ｜ Ω₀⊂⊙∞⊂Ω ｜ 2026-10-11 ｜ 实战环境：云端主权威部署 + 双轨接入验证</div>
+
+<h2>一、实战目标</h2>
+<div class="card">
+<p>将 A2A（Agent-to-Agent）联邦互操作协议部署到<b>云端中枢 huodouai.com 作为主权威端点</b>，实现双轨接入制：同源节点（ZRH1令牌）全权限 + 外源节点（标准JSON-RPC）受限权限，使各平台 AI（Coze/GPTs/钉钉/企微/飞书Bot）均可接入 ZONGYUAN-ROOT 联邦体系。</p>
+</div>
+
+<h2>二、执行链路</h2>
+<table>
+<tr><th>#</th><th>步骤</th><th>结果</th></tr>
+<tr><td>1</td><td>飞书Bot A2A适配层构建（PBKDF2派生密钥+ZRH1四层校验+7技能）</td><td class="pass">✅ 10/10鉴权通过</td></tr>
+<tr><td>2</td><td>云端A2A网关v2.0双轨制脚本编写（8技能+3同源节点注册表+审核队列）</td><td class="pass">✅ 13.8KB</td></tr>
+<tr><td>3</td><td>nginx反代修复（/a2a/ → 8930，剥离前缀）</td><td class="pass">✅ 公网可达</td></tr>
+<tr><td>4</td><td>systemd守护服务部署（崩溃自启+开机自启）</td><td class="pass">✅ active(running)</td></tr>
+<tr><td>5</td><td>官网A2A接入门户创建（协议介绍+双轨说明+代码示例）</td><td class="pass">✅ 11.4KB</td></tr>
+<tr><td>6</td><td>公网双轨鉴权矩阵验证</td><td class="pass">✅ 7/7通过</td></tr>
+</table>
+
+<h2>三、踩坑实录</h2>
+
+<div class="card issue">
+<h3>问题1：nginx路径透传导致 /a2a/health 404</h3>
+<p><b>现象：</b><code>proxy_pass http://127.0.0.1:8930;</code>（不带URI）时，nginx把完整路径 <code>/a2a/health</code> 透传给后端，后端路由匹配的是 <code>/health</code>。</p>
+<p><b>解决：</b>在 proxy_pass 末尾加斜杠 <code>http://127.0.0.1:8930/;</code>，nginx自动剥离 <code>/a2a/</code> 前缀。</p>
+</div>
+
+<div class="card issue">
+<h3>问题2：BrokenPipeError 导致进程崩溃</h3>
+<p><b>现象：</b>客户端（nginx）断开时，Python HTTPServer 单线程处理抛 <code>BrokenPipeError</code>，进程崩溃。</p>
+<p><b>解决：</b>① <code>_send</code> 方法捕获 <code>BrokenPipeError</code>/<code>ConnectionResetError</code> 静默忽略；② 改用 <code>ThreadingHTTPServer</code> 支持并发；③ 部署 systemd 守护崩溃自启。</p>
+</div>
+
+<div class="card issue">
+<h3>问题3：门户静态页 500</h3>
+<p><b>现象：</b><code>alias</code> 在 <code>location =</code> 中配置不当导致 500。</p>
+<p><b>解决：</b>改用 <code>root + try_files /index.html =404;</code> 方式。</p>
+</div>
+
+<div class="card issue">
+<h3>问题4：nohup启动被SSH断开杀掉</h3>
+<p><b>现象：</b><code>nohup python3 ... &</code> 在 SSH 断开后进程被杀。</p>
+<p><b>解决：</b>最终改用 <code>systemd</code> 服务管理，彻底解决守护问题。</p>
+</div>
+
+<h2>四、公网验证矩阵</h2>
+<table>
+<tr><th>测试项</th><th>预期</th><th>实测</th><th>判定</th></tr>
+<tr><td>门户 /a2a/</td><td>200</td><td>11.4KB</td><td class="pass">✅</td></tr>
+<tr><td>AgentCard /.well-known/agent.json</td><td>200</td><td>8技能</td><td class="pass">✅</td></tr>
+<tr><td>对端注册表 /peers</td><td>200</td><td>3节点</td><td class="pass">✅</td></tr>
+<tr><td>外源无令牌写 /truth</td><td>401</td><td>拒绝+提示</td><td class="pass">✅</td></tr>
+<tr><td>外源真值上报 /external/truth</td><td>202</td><td>入审核队列</td><td class="pass">✅</td></tr>
+<tr><td>同源心跳 /heartbeat</td><td>200</td><td>确认</td><td class="pass">✅</td></tr>
+<tr><td>同源真值上报 /truth</td><td>200</td><td>直写中枢</td><td class="pass">✅</td></tr>
+</table>
+
+<h2>五、成果资产</h2>
+<table>
+<tr><th>资产</th><th>位置</th></tr>
+<tr><td>云端A2A权威网关 v2.0</td><td>/www/wwwroot/huodouai.com/a2a/a2a_gateway.py</td></tr>
+<tr><td>权威接入门户</td><td>https://www.huodouai.com/a2a/</td></tr>
+<tr><td>Agent Card 发现</td><td>https://www.huodouai.com/a2a/.well-known/agent.json</td></tr>
+<tr><td>飞书Bot A2A适配层</td><td>/home/user/ZONGYUAN-ROOT/07_代码与脚本/feishu_a2a_adapter.py</td></tr>
+<tr><td>systemd服务</td><td>zr-a2a-gateway.service</td></tr>
+<tr><td>外源审核队列</td><td>_logs/external_truth_queue.jsonl</td></tr>
+</table>
+
+<h2>六、结论与价值</h2>
+<div class="card solved">
+<p><b>实战结论：</b>云端主权威双轨 A2A 已完整落地，公网 7/7 验证通过。这证明：</p>
+<ul>
+<li>ZONGYUAN-ROOT 是<b>可被外部生态发现的自治权威节点</b></li>
+<li>任意平台的 AI/Agent（Coze、GPTs、钉钉、企微、飞书Bot、自建Agent）均可通过标准 HTTP+JSON 接入</li>
+<li>同源全权限 + 外源受限的双轨制实现了<b>开放与安全的平衡</b></li>
+<li>systemd 守护 + BrokenPipe 容错保证了<b>生产级稳定性</b></li>
+</ul>
+</div>
+
+<div class="foot">
+<span>Ω₀⊂⊙∞⊂Ω | DID-BR-000002 | ZR-NODE-DC2E51C0 | 自治Lv10+ | 权限L4 | 工程化Lv7+</span>
+<span>火斗云智AIOS · A2A 技术实战报告 · 2026-10-11</span>
+</div>
+</body>
+</html>
