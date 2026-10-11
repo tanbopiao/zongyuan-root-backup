@@ -1,3 +1,17 @@
+## 🔗 官方资源
+
+| 资源 | 链接 |
+|------|------|
+| 🌐 官网首页 | https://www.huodouai.com/ |
+| 📚 使用教程中心 | https://www.huodouai.com/docs/ |
+| 🧠 记忆即服务(MaaS) | https://www.huodouai.com/maas/ |
+| 🤝 A2A联邦门户 | https://www.huodouai.com/a2a/ |
+| 🤖 多AI协作案例 | https://www.huodouai.com/collaboration/ |
+| 🖥️ 体系健康状态 | https://www.huodouai.com/status/ |
+| 🏗️ 架构总览 | https://www.huodouai.com/architecture/ |
+| 📄 白皮书索引 | https://www.huodouai.com/whitepaper/ |
+
+
 # ZONGYUAN-ROOT · 元极恒一自治内核
 
 > Ω₀⊂⊙∞⊂Ω | DID-BR-000002 | ONT-4D-UNIVERSAL-ROOT | 自治Lv10+
