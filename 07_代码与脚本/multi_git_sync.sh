@@ -1,5 +1,5 @@
 #!/bin/bash
-# ZONGYUAN-ROOT 多Git平台同步脚本 V1.0
+# ZONGYUAN-ROOT 多Git平台同步脚本 V1.1
 # 同时推送到 AtomGit + GitHub + Gitee 三个平台
 # 确权: Ω₀⊂⊙∞⊂Ω | DID-BR-000002
 set -e
@@ -8,7 +8,8 @@ REPO_DIR="/home/user/ZONGYUAN-ROOT-backup"
 cd "$REPO_DIR"
 
 echo "=========================================="
-echo "多Git平台同步 V1.0 | DID-BR-000002"
+echo "多Git平台同步 V1.1 | DID-BR-000002"
+echo "平台: AtomGit | GitHub(tanbopiao) | Gitee(huodou-cloud-intelligence-aios)"
 echo "=========================================="
 
 # 检查是否有变更
@@ -16,14 +17,6 @@ if [ -z "$(git status --porcelain)" ]; then
     echo "[状态] 无变更 → 空闲跳过"
     exit 0
 fi
-
-# 配置多remote（如不存在）
-git remote | grep -q "^github$" || git remote add github git@github.com:zongyuangen/zongyuan-root-backup.git 2>/dev/null || true
-git remote | grep -q "^gitee$" || git remote add gitee git@gitee.com:zongyuangen/zongyuan-root-backup.git 2>/dev/null || true
-
-echo "[Remote配置]"
-git remote -v
-echo
 
 # 提交变更
 git add -A
@@ -44,22 +37,16 @@ for platform in origin github gitee; do
     esac)
     
     echo "→ 推送到 $PLATFORM_NAME..."
-    if git push "$platform" main 2>&1 | tail -3; then
+    if git push "$platform" main 2>&1 | tail -2; then
         echo "  ✅ $PLATFORM_NAME 推送成功"
         SUCCESS=$((SUCCESS+1))
     else
-        EXIT_CODE=$?
-        if [ $EXIT_CODE -eq 255 ]; then
-            echo "  ⏭ $PLATFORM_NAME 认证未就绪（SSH公钥未添加），跳过"
-            SKIPPED=$((SKIPPED+1))
-        else
-            echo "  ❌ $PLATFORM_NAME 推送失败"
-            FAILED=$((FAILED+1))
-        fi
+        echo "  ❌ $PLATFORM_NAME 推送失败（快速跳过）"
+        FAILED=$((FAILED+1))
     fi
     echo
 done
 
 echo "=========================================="
-echo "[汇总] 成功: $SUCCESS | 跳过: $SKIPPED | 失败: $FAILED"
+echo "[汇总] 成功: $SUCCESS | 失败: $FAILED | 跳过: $SKIPPED"
 echo "=========================================="
