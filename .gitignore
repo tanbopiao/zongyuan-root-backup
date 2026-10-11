@@ -18,3 +18,10 @@ __pycache__/
 # 大JSON
 semantic_units.json
 memory_index_store.json
+
+# 大文件(>10MB)迁移到冷数据层，Git不跟踪
+07_代码与脚本/frp/frpc
+07_代码与脚本/frp/frpc-official
+07_代码与脚本/frp/frps
+*.bin
+*.exe

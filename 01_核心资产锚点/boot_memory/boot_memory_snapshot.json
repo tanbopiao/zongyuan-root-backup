@@ -1,0 +1,142 @@
+{
+  "snapshot_meta": {
+    "version": "V1.0",
+    "created_at": "2026-10-11T19:18:21.571579",
+    "created_by": "boot_memory_builder.py",
+    "format": "ZONGYUAN-ROOT Boot Memory Snapshot"
+  },
+  "identity": {
+    "did": "DID-BR-000002",
+    "node": "NODE-DEV-DOUBAO-WORK-001",
+    "ontology": "ONT-4D-UNIVERSAL-ROOT",
+    "axiom_sign": "Ω₀⊂⊙∞⊂Ω",
+    "autonomy_level": "Lv10+",
+    "permission_level": "L4",
+    "engineering_level": "Lv7+",
+    "system": "火斗云智AIOS"
+  },
+  "core_meta_laws": [
+    "风险最小 > 成本最小 > 收益最大（最高元法则）",
+    "内外隔离铁律 META-ISO-051（内核只读，仅种子式进化注入）",
+    "复用优先不重复执行（前置检索全域账本）",
+    "三态正交隔离（逻辑态→算子态→代码执行态，单向流转）",
+    "四维本体公理（空间定形/时间定序/属性定质/因果定闭环）",
+    "最小额度消耗（增量优先/失败快速跳过/空闲跳过/免费优先）"
+  ],
+  "platform_topology": {
+    "cloud_gateway": {
+      "name": "云端记忆网关",
+      "url": "https://www.huodouai.com",
+      "report_api": "POST /api/report/truth",
+      "pull_api": "GET /api/truth?limit=N",
+      "auth": "X-DID: DID-BR-000002",
+      "tier": "hot",
+      "status": "active"
+    },
+    "feishu_brain": {
+      "name": "飞书共享大脑",
+      "base_token": "DgnMbLqZiaIUDKshqCrcD4DvnBg",
+      "key_tables": {
+        "truth": "tbl9QxL35rwA16eS",
+        "task": "tblnVRjuf7P31cEP",
+        "asset": "tbltgttCuWgAnN2e",
+        "decision": "tblFQTgWkJQR6Xwp"
+      },
+      "tier": "hot",
+      "status": "active"
+    },
+    "local_persistence": {
+      "name": "本地持久层",
+      "path": "/home/user/ZONGYUAN-ROOT",
+      "capacity": "10PB",
+      "tier": "warm",
+      "status": "active"
+    },
+    "atomgit": {
+      "name": "AtomGit",
+      "url": "https://atomgit.com/zongyuangen/zongyuan-root-backup",
+      "remote": "origin",
+      "tier": "warm",
+      "status": "active"
+    },
+    "github": {
+      "name": "GitHub",
+      "url": "https://github.com/tanbopiao/zongyuan-root-backup",
+      "remote": "github",
+      "tier": "warm",
+      "status": "active"
+    },
+    "gitee": {
+      "name": "Gitee",
+      "url": "https://gitee.com/huodou-cloud-intelligence-aios/zongyuan-root-backup",
+      "remote": "gitee",
+      "tier": "warm",
+      "status": "active"
+    },
+    "modelscope": {
+      "name": "魔搭ModelScope",
+      "tier": "cold",
+      "status": "on_demand"
+    },
+    "cloud_server": {
+      "name": "云端服务器(腾讯云)",
+      "ip": "123.207.202.158",
+      "ssh_key": "~/.ssh/zongyuan-gpu-20260924",
+      "web_root": "/www/wwwroot/huodouai.com/",
+      "tier": "warm",
+      "status": "active"
+    }
+  },
+  "public_showcase": {
+    "whitepaper": "https://www.huodouai.com/modelscope/whitepaper/",
+    "architecture": "https://www.huodouai.com/architecture/",
+    "dashboard": "https://www.huodouai.com/dashboard/"
+  },
+  "cloud_truth_summary": {
+    "count": 5,
+    "latest_keys": [
+      "REPORT.INCIDENT-DETECT.20261011",
+      "REPORT.INCIDENT-DETECT.20261011",
+      "REPORT.CLOUD-CTL.EVOLVE.1791717454",
+      "alert.wrapper.down",
+      "REPORT.INCIDENT-DETECT.20261011"
+    ],
+    "status": "ok"
+  },
+  "feishu_summary": {
+    "table_count": 56,
+    "total_records": 13446,
+    "status": "ok"
+  },
+  "git_summary": {
+    "latest_commits": [
+      "22259bb V1.9 多平台存储容量四层路由 | 热/温/冷/归档 | 容量监控脚本 | 仪表盘存储模块 | DID-BR-000002 | 2026-10-11T19:14:27+08:00",
+      "af2d2b1 V1.8 GitHub+Gitee全量同步激活 | 3平台推送成功 | 仪表盘7平台状态 | DID-BR-000002 | 2026-10-11T19:05:40+08:00",
+      "963f93d V1.7 多Git平台同步(AtomGit+GitHub+Gitee) | 统一SSH密钥 | 编排器7平台 | 仪表盘更新 | DID-BR-000002 | 2026-10-11T18:59:07+08:00"
+    ],
+    "remotes": [
+      "gitee",
+      "github",
+      "origin"
+    ],
+    "status": "ok"
+  },
+  "boot_checklist": [
+    "✅ 探测云端通道状态（www+drama）",
+    "✅ 拉取云端最新真值（增量）",
+    "✅ 读取本地锚点目录（01_核心资产锚点）",
+    "✅ 读取飞书共享大脑节点状态",
+    "✅ 检查Git三平台同步状态",
+    "✅ 执行收敛归一检查（converge_norm.py）",
+    "✅ 确认身份DID-BR-000002"
+  ],
+  "key_scripts": {
+    "6h_cron": "07_代码与脚本/ (auto_report/auto_pull_truth/auto_sync_feishu_base等)",
+    "multi_platform_sync": "07_代码与脚本/multi_platform_sync_orchestrator.py",
+    "multi_git_sync": "07_代码与脚本/multi_git_sync.sh",
+    "storage_monitor": "07_代码与脚本/storage_capacity_monitor.py",
+    "memory_index": "07_代码与脚本/memory_index_engine.py",
+    "gasa_synth": "07_代码与脚本/gasa_invariant_synth.py",
+    "truth_distill": "07_代码与脚本/auto_truth_distill_and_report.py"
+  }
+}
