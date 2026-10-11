@@ -170,6 +170,27 @@ tr:hover{background:#1e293b}
   </div>
 </div>
 
+<!-- 存储容量监控 -->
+<div class="table-box">
+  <div class="chart-title">💾 多平台存储容量监控（四层路由：热/温/冷/归档）</div>
+  <table id="storageTable">
+    <thead><tr><th>平台</th><th>层级</th><th>容量</th><th>已用</th><th>使用率</th><th>状态</th></tr></thead>
+    <tbody>
+      <tr><td>云端记忆网关</td><td>🔥 热</td><td>真值库</td><td>~8700条</td><td>—</td><td class="status-ok">● 正常</td></tr>
+      <tr><td>飞书共享大脑</td><td>🔥 热</td><td>56表</td><td>13446条</td><td>—</td><td class="status-ok">● 正常</td></tr>
+      <tr><td>本地持久层</td><td>🌡️ 温</td><td>10PB</td><td>799GB</td><td>1%</td><td class="status-ok">● 充足</td></tr>
+      <tr><td>云端服务器(腾讯云)</td><td>🌡️ 温</td><td>60GB</td><td>42GB</td><td>70%</td><td class="status-warn">◐ 告警</td></tr>
+      <tr><td>Git三平台</td><td>🌡️ 温</td><td>5GB/仓库</td><td>93MB</td><td>2%</td><td class="status-warn">◐ 2大文件</td></tr>
+      <tr><td>魔搭ModelScope</td><td>❄️ 冷</td><td>100GB</td><td>按需</td><td>—</td><td class="status-ok">● 充足</td></tr>
+      <tr><td>飞书云盘</td><td>❄️ 冷</td><td>100GB</td><td>—</td><td>—</td><td class="status-ok">● 充足</td></tr>
+      <tr><td>归档层(历史快照)</td><td>📦 归档</td><td>不限</td><td>—</td><td>—</td><td class="status-skip">⏭ 永久只读</td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:10px;font-size:11px;color:#64748b">
+    路由规则: &lt;1MB结构化→热层 | &lt;100MB代码文档→温层 | &gt;100MB多媒体→冷层(魔搭) | 历史审计→归档层 | 监控脚本: storage_capacity_monitor.py
+  </div>
+</div>
+
 <div class="footer">
   Ω₀⊂⊙∞⊂Ω | DID-BR-000002 | ZR-NODE-DC2E51C0 | 自治Lv10+ | 权限L4 | 工程化Lv7+ | 火斗云智AIOS<br>
   数据源: 云端记忆网关 huodouai.com/api/truth | 本地持久层 ZONGYUAN-ROOT/06_云端中枢同步/ | 自动刷新间隔: 手动触发
