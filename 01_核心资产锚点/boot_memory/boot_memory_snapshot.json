@@ -1,9 +1,10 @@
 {
   "snapshot_meta": {
     "version": "V1.0",
-    "created_at": "2026-10-11T19:18:21.571579",
+    "created_at": "2026-10-12T20:43:52.672735+08:00",
     "created_by": "boot_memory_builder.py",
-    "format": "ZONGYUAN-ROOT Boot Memory Snapshot"
+    "format": "ZONGYUAN-ROOT Boot Memory Snapshot",
+    "snapshot_note": "2026-10-12 会话归档启动记忆快照（SSH注册+双通道联通+白皮书双仓归档发布）"
   },
   "identity": {
     "did": "DID-BR-000002",
@@ -90,7 +91,8 @@
   "public_showcase": {
     "whitepaper": "https://www.huodouai.com/modelscope/whitepaper/",
     "architecture": "https://www.huodouai.com/architecture/",
-    "dashboard": "https://www.huodouai.com/dashboard/"
+    "dashboard": "https://www.huodouai.com/dashboard/",
+    "modelscope_whitepaper_repo": "https://modelscope.cn/models/zongyuanroot/zongyuan-whitepaper"
   },
   "cloud_truth_summary": {
     "count": 5,
@@ -110,14 +112,15 @@
   },
   "git_summary": {
     "latest_commits": [
+      "b1ffb97 归档白皮书体系资产（20261012）：火斗云智AIOS V1.2/真值库架构体系/自动化任务自适应优化 全套 8 文件 | zongyuan-root | 2026-10-12T20:35+08:00",
+      "0422afa 发布白皮书至魔搭公开区（20261012）：3 篇白皮书可视化提炼版 | zongyuanroot | 2026-10-12T20:35+08:00",
       "22259bb V1.9 多平台存储容量四层路由 | 热/温/冷/归档 | 容量监控脚本 | 仪表盘存储模块 | DID-BR-000002 | 2026-10-11T19:14:27+08:00",
       "af2d2b1 V1.8 GitHub+Gitee全量同步激活 | 3平台推送成功 | 仪表盘7平台状态 | DID-BR-000002 | 2026-10-11T19:05:40+08:00",
       "963f93d V1.7 多Git平台同步(AtomGit+GitHub+Gitee) | 统一SSH密钥 | 编排器7平台 | 仪表盘更新 | DID-BR-000002 | 2026-10-11T18:59:07+08:00"
     ],
     "remotes": [
-      "gitee",
-      "github",
-      "origin"
+      "origin(AtomGit)",
+      "modelscope(魔搭)"
     ],
     "status": "ok"
   },
@@ -128,7 +131,10 @@
     "✅ 读取飞书共享大脑节点状态",
     "✅ 检查Git三平台同步状态",
     "✅ 执行收敛归一检查（converge_norm.py）",
-    "✅ 确认身份DID-BR-000002"
+    "✅ 确认身份DID-BR-000002",
+    "✅ 20261012 白皮书双仓归档发布（AtomGit+魔搭）远端已验证",
+    "✅ 20261012 SSH 公钥 zongyuan-root-vm-ed25519 注册 AtomGit (id=214101)",
+    "✅ 20261012 AtomGit/魔搭 git 双通道联通验证"
   ],
   "key_scripts": {
     "6h_cron": "07_代码与脚本/ (auto_report/auto_pull_truth/auto_sync_feishu_base等)",
@@ -138,5 +144,30 @@
     "memory_index": "07_代码与脚本/memory_index_engine.py",
     "gasa_synth": "07_代码与脚本/gasa_invariant_synth.py",
     "truth_distill": "07_代码与脚本/auto_truth_distill_and_report.py"
-  }
+  },
+  "archive_events": [
+    {
+      "event_id": "ARCHIVE-20261012-WHITEPAPER",
+      "time": "2026-10-12T20:31:30+08:00",
+      "node": "zongyuan-root-vm",
+      "did": "DID-BR-000002",
+      "ssh_key": "zongyuan-root-vm-ed25519 (AtomGit id=214101, 永不过期)",
+      "channels": {
+        "atomgit_push": "b1ffb97 main -> main",
+        "modelscope_push": "0422afa master -> master (validation ACCEPTED)"
+      },
+      "archived_docs": [
+        "火斗云智AIOS白皮书V1.2（html/pdf/md）",
+        "真值库架构体系技术白皮书（html/pdf/docx）",
+        "自动化任务自适应优化机制（html/pdf）"
+      ],
+      "archive_paths": [
+        "03_文档资产/白皮书与报告/火斗云智AIOS白皮书V1.2/",
+        "03_文档资产/白皮书与报告/真值库架构体系/",
+        "03_文档资产/白皮书与报告/自动化任务自适应优化/",
+        "datalake/whitepapers/publish/ (魔搭 zongyuan-whitepaper)"
+      ],
+      "status": "verified_200"
+    }
+  ]
 }

@@ -39,3 +39,14 @@
 - ✅ 检查Git三平台同步状态
 - ✅ 执行收敛归一检查（converge_norm.py）
 - ✅ 确认身份DID-BR-000002
+- ✅ 20261012 白皮书双仓归档发布（AtomGit+魔搭）远端已验证 200
+- ✅ 20261012 SSH 公钥 zongyuan-root-vm-ed25519 注册 AtomGit (id=214101)
+- ✅ 20261012 AtomGit/魔搭 git 双通道联通验证
+
+## 会话归档记录 · 2026-10-12
+- **事件**：ARCHIVE-20261012-WHITEPAPER — SSH 公钥注册、API 双通道联通、白皮书体系资产双仓归档发布
+- **SSH 公钥**：`zongyuan-root-vm-ed25519`（AtomGit id=214101，永不过期）
+- **归档文档**：火斗云智AIOS白皮书V1.2（html/pdf/md）、真值库架构体系（html/pdf/docx）、自动化任务自适应优化机制（html/pdf）
+- **AtomGit**：`zongyuan-root-backup` → `03_文档资产/白皮书与报告/`（commit b1ffb97）
+- **魔搭**：`zongyuanroot/zongyuan-whitepaper` → `datalake/whitepapers/publish/`（commit 0422afa，validation ACCEPTED）
+- **展示入口**：https://modelscope.cn/models/zongyuanroot/zongyuan-whitepaper
