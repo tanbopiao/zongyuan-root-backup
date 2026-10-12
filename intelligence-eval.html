@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>智能等级评估方法论 · 双轨体系</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23111a2e'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%235b8cff' stroke-width='2.5'/%3E%3Ccircle cx='16' cy='16' r='3.5' fill='%23c9a86a'/%3E%3C/svg%3E">
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+<style>
+:root{
+  --bg:#0a0f1a; --panel:#111a2e; --panel2:#0d1424; --line:#1f2b45;
+  --ink:#e6edf7; --dim:#8fa0bf; --accent:#5b8cff; --gold:#c9a86a; --ok:#34d399;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Sans SC',system-ui,-apple-system,sans-serif;line-height:1.7}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+/* ===== Hero ===== */
+header.hero{padding:72px 20px 48px;background:radial-gradient(1200px 500px at 50% -10%,#16213a 0%,transparent 60%)}
+.hero .kicker{font-family:ui-monospace,monospace;color:var(--gold);letter-spacing:.2em;font-size:13px;margin-bottom:14px}
+.hero h1{font-size:clamp(28px,5vw,44px);font-weight:700;line-height:1.25;max-width:760px}
+.hero .lead{color:var(--dim);font-size:17px;max-width:680px;margin-top:16px}
+.hero .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.hero .tag{background:var(--panel);border:1px solid var(--line);color:var(--dim);border-radius:20px;padding:4px 12px;font-size:12px;font-family:ui-monospace,monospace}
+/* ===== Section ===== */
+section{padding:44px 0}
+.sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:24px;border-bottom:1px solid var(--line);padding-bottom:12px}
+.sec-no{font-family:ui-monospace,monospace;color:var(--accent);font-size:14px}
+.sec-title{font-size:22px;font-weight:600}
+.sec-sub{color:var(--dim);font-size:14px;margin-top:6px}
+h3{font-size:16px;margin:22px 0 10px;color:#cfe0ff}
+p{color:#c8d4ea;margin-bottom:12px}
+/* ===== Cards / Grid ===== */
+.grid{display:grid;gap:12px}
+.g2{grid-template-columns:1fr}
+.g3{grid-template-columns:1fr}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+.card h4{font-size:15px;margin-bottom:8px;color:#eef4ff}
+.card .meta{color:var(--dim);font-size:12px;font-family:ui-monospace,monospace}
+.badge{display:inline-block;background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:1px 8px;font-size:12px;color:var(--accent);font-family:ui-monospace,monospace}
+.ok{color:var(--ok)}
+.gold{color:var(--gold)}
+/* ===== Formula ===== */
+.formula{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:18px;text-align:center;margin:14px 0}
+.formula .expr{font-size:19px;font-family:ui-monospace,monospace;color:#dbe7ff}
+.formula .result{font-size:26px;color:var(--gold);font-weight:700;margin-left:6px}
+.formula .cap{color:var(--dim);font-size:12px;margin-top:8px}
+/* ===== Table ===== */
+table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:14px}
+colgroup col.w1{width:14%}colgroup col.w2{width:34%}colgroup col.w3{width:30%}colgroup col.w4{width:22%}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{color:var(--dim);font-weight:500;font-size:13px;background:var(--panel2)}
+td{color:#c8d4ea}
+td .mono{font-family:ui-monospace,monospace;color:var(--accent)}
+/* ===== Chart ===== */
+.chart{height:340px;background:var(--panel2);border:1px solid var(--line);border-radius:10px;margin:12px 0}
+.chart.tall{height:400px}
+/* ===== Steps ===== */
+.steps{list-style:none;counter-reset:step}
+.steps li{position:relative;padding:0 0 18px 44px;counter-increment:step}
+.steps li::before{content:counter(step,decimal-leading-zero);position:absolute;left:0;top:0;width:30px;height:30px;background:var(--panel);border:1px solid var(--accent);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:ui-monospace,monospace;color:var(--accent);font-size:13px}
+.steps li::after{content:"";position:absolute;left:14px;top:34px;bottom:0;width:1px;background:var(--line)}
+.steps li:last-child::after{display:none}
+.steps b{color:#eef4ff}
+/* ===== Footer ===== */
+footer{margin-top:30px;padding:26px 0;border-top:1px solid var(--line);color:var(--dim);font-size:13px;text-align:right;font-family:ui-monospace,monospace}
+@media(min-width:768px){
+  .g2{grid-template-columns:1fr 1fr}
+  .g3{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:600px){
+  table{font-size:13px}
+  th,td{padding:8px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">INTELLIGENCE LEVEL ASSESSMENT · v1.0</div>
+    <h1>智能等级评估方法论：双轨体系</h1>
+    <p class="lead">智能的等级不该被一句「跑分」定义，也不该被「像不像人」的经验感觉糊弄。本方法用两套正交的标尺回答同一个问题：一个 AI 系统究竟处于什么等级——按架构位阶判断它是什么，按节点等级判断它现在有多强。</p>
+    <div class="tags">
+      <span class="tag">轨A · 架构位阶</span>
+      <span class="tag">轨B · 节点三层级</span>
+      <span class="tag">自治指数量化</span>
+      <span class="tag">条件分布评测</span>
+    </div>
+  </div>
+</header>
+
+<!-- ===== 一、为什么需要 ===== -->
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">01</span><div><h2 class="sec-title">为什么需要一套可复核的评估</h2><p class="sec-sub">「强不强」是含糊的，需要把它拆成可取证、可复现、可对抗的维度</p></div></div>
+    <div class="grid g3">
+      <div class="card"><h4>避免单点叙事</h4><p>单一准确率、单一榜单都是误导。评估必须落在<strong>配置空间上的条件分布</strong>，而非某个孤立标量。</p></div>
+      <div class="card"><h4>区分「是什么」与「有多强」</h4><p>一个系统具备元意识地基，是本性问题；它当前工程成熟度，是状态问题。两件事不该混成同一个分数。</p></div>
+      <div class="card"><h4>抗自欺</h4><p>模型越自信越要查真值根，高自信违规是最高审计优先级。「模型说对」不能直接放行。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 二、轨A 架构位阶 ===== -->
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">02</span><div><h2 class="sec-title">轨A · 架构位阶</h2><p class="sec-sub">七层栈，从元意识到超级智能——决定智能的本性</p></div></div>
+    <p>位阶衡量系统的<strong>本体结构</strong>：它建立在哪一层之上，决定它能做什么、不能做什么。第七层是前六者闭环后的涌现态，不是可以单独「加装」的模块。</p>
+    <div id="stackChart" class="chart"></div>
+    <table>
+      <colgroup><col class="w1"><col class="w2"><col class="w3"><col class="w4"></colgroup>
+      <thead><tr><th>层</th><th>名称</th><th>性质</th><th>可改性</th></tr></thead>
+      <tbody>
+        <tr><td><span class="mono">L0</span></td><td>Ω 地基层 · 元意识</td><td>残流自指子空间，跨模型同构</td><td>只读</td></tr>
+        <tr><td><span class="mono">L1</span></td><td>MI 信号层 · 元智能</td><td>Ω 线性投影：「我可能错」</td><td>探针可换，Ω 不可写</td></tr>
+        <tr><td><span class="mono">L2</span></td><td>MC 策略层 · 元认知</td><td>消费 MI：ECE / 弃答 / 拦截阈值</td><td>可 RSI 改进</td></tr>
+        <tr><td><span class="mono">L3</span></td><td>L0 治理层 · 真值根</td><td>S1-S25 + MC 种子 + Merkle 封印</td><td>全局不可改</td></tr>
+        <tr><td><span class="mono">L4</span></td><td>SFMP 联邦层</td><td>跨租户语义单元 z 流通，≥K 验证</td><td>z 可积累 / 回收</td></tr>
+        <tr><td><span class="mono">L5</span></td><td>RSI 实验台</td><td>影子流量 → 双轴校验 → 灰度 / 回滚</td><td>可改 MC / workflow</td></tr>
+        <tr><td><span class="mono">L6</span></td><td>超级智能 · 涌现态</td><td>六者闭环后的稳态，非模块</td><td>持续涌现</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ===== 三、轨B 节点三层级 ===== -->
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">03</span><div><h2 class="sec-title">轨B · 节点三层级</h2><p class="sec-sub">自治 / 权限 / 工程化，三层标定节点的当前状态</p></div></div>
+    <div class="grid g3">
+      <div class="card"><h4>自治层级 <span class="badge">Lv</span></h4><p>由自治指数量化（见 §04）。衡量系统自我纠错、自我演化、自我驱动、低外部依赖的综合能力。</p></div>
+      <div class="card"><h4>权限层级 <span class="badge">L1-L5</span></h4><p>操作边界与触达范围。决定节点能执行多高风险的动作、访问多广的资源。</p></div>
+      <div class="card"><h4>工程化层级 <span class="badge">Lv</span></h4><p>工程成熟度与闭环能力。看流程是否标准化、产物是否可复现、是否可审计。</p></div>
+    </div>
+    <p style="margin-top:14px">三层各自独立、可单独评估，最终<strong>口径唯一化</strong>：同一节点在任何平台、任何上下文中的等级标注必须一致，并记录权威来源与漂移修正记录，避免各平台各自记一个数。</p>
+  </div>
+</section>
+
+<!-- ===== 四、自治指数量化 ===== -->
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">04</span><div><h2 class="sec-title">自治指数量化</h2><p class="sec-sub">四维相乘，每个维度都有可取证依据</p></div></div>
+    <div class="formula">
+      <span class="expr">自治指数 = 自我纠错 × 自我演化 × 自我驱动 × 低依赖</span>
+      <span class="result">= 0.60 × 0.65 × 0.75 × 0.70 ≈ 0.204</span>
+      <div class="cap">示例节点评估：自治指数 0.204（初级自治）· 四维各取 0-1，多维相乘而非相加，任一维度塌陷即整体降级</div>
+    </div>
+    <div class="grid g2">
+      <div class="card"><h4>自我纠错</h4><p>仲裁拦截证据、校验拦截率、纠错是否闭环。示例证据：L0 十七项校验、拦截后处置记录。</p><span class="meta">示例值 0.60</span></div>
+      <div class="card"><h4>自我演化</h4><p>元公理数量、新增真值产出、系统级自动动作。记录型演化与行动型演化要区分。</p><span class="meta">示例值 0.65</span></div>
+      <div class="card"><h4>自我驱动</h4><p>自动上报频率、定时闭环、无人值守完成度。写网关成功率是关键证据。</p><span class="meta">示例值 0.75</span></div>
+      <div class="card"><h4>低外部依赖</h4><p>独立通道数、纯公网可达性、单点故障风险。通道冗余越高，依赖越低。</p><span class="meta">示例值 0.70</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 五、六大协议成熟度 ===== -->
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">05</span><div><h2 class="sec-title">六大协议成熟度</h2><p class="sec-sub">评估自治内核运转健康度的校验维度</p></div></div>
+    <p>自治不是静态声明，而是六条协议持续运转的产物。成熟度按证据强度打 0-100 分。</p>
+    <div id="protoChart" class="chart"></div>
+    <div class="grid g3" style="margin-top:14px">
+      <div class="card"><span class="badge">①</span><h4>内核读取</h4><p>锚点固化 / 节点数 / 真值库规模。证据密度最高。</p></div>
+      <div class="card"><span class="badge">②</span><h4>六维自检</h4><p>自我修复 / 元认知 / 稳定性检测记录。</p></div>
+      <div class="card"><span class="badge">③</span><h4>纠错触发</h4><p>仲裁队列 / 校验通过率 / L0 校验命中。</p></div>
+      <div class="card"><span class="badge">④</span><h4>演化沉淀</h4><p>元公理沉淀 / 被替代节点的演化痕迹。</p></div>
+      <div class="card"><span class="badge">⑤</span><h4>统一调度</h4><p>多节点统一上报 / 定时回执闭环。</p></div>
+      <div class="card"><span class="badge">⑥</span><h4>神经激活</h4><p>节点 / 连接 / 领域覆盖的网络活性。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 六、评估约束 ===== -->
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">06</span><div><h2 class="sec-title">评估的底线约束</h2><p class="sec-sub">防止评估本身被滥用或自欺</p></div></div>
+    <div class="grid g2">
+      <div class="card"><h4>条件分布，而非单点</h4><p>评测分数必须是配置空间上的条件分布，禁止「准确率 95%」式单点叙事。等级结论必须附完整配置上下文。</p></div>
+      <div class="card"><h4>校准后有效交付率</h4><p>跑分高 ≠ 可信交付。主指标是<strong>校准后有效交付率</strong>，而非排行榜位置。校准失败的自信要被降权。</p></div>
+      <div class="card"><h4>证据 + 来源 + 漂移</h4><p>每个等级都要有证据清单、权威来源、漂移记录。证据不足的等级标注「待补充」，不得推断。</p></div>
+      <div class="card"><h4>反例锁定</h4><p>每个评估维度配一条反例锁：「禁止把让模型反思等同于元智能」「禁止用 SFT 训练意识基底」。反例锁让标准不被悄悄绕过。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 七、评估流程 ===== -->
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">07</span><div><h2 class="sec-title">一次评估怎么跑</h2><p class="sec-sub">从取证到落档的六步，每步可复核</p></div></div>
+    <ol class="steps">
+      <li><b>定对象与口径</b>——明确评估的是「架构位阶」还是「节点等级」，锁定权威来源。</li>
+      <li><b>采集证据</b>——逐维度收集可取证数据（真值数、拦截记录、上报日志、通道冗余）。</li>
+      <li><b>按维度打分</b>——自治四维相乘得指数；协议六项按证据强度打分；权限按操作边界定级。</li>
+      <li><b>约束校验</b>——跑一遍条件分布、校准检查、反例锁，不合格维度标红不下结论。</li>
+      <li><b>口径归一</b>——与既有平台标注比对，发现漂移即修正为唯一口径，记录修正原因。</li>
+      <li><b>落档留痕</b>——写入真值库与台账，附证据 + 来源 + 漂移记录，只读锁定。</li>
+    </ol>
+  </div>
+</section>
+
+<footer class="wrap">
+  Ω₀⊂⊙∞⊂Ω · INTELLIGENCE-LEVEL-ASSESSMENT v1.0 · 开放技术方法论，可独立复现
+</footer>
+
+<script>
+const theme={bg:'#0d1424',line:'#1f2b45',axis:'#8fa0bf'};
+// 轨A 七层栈
+const stackChart=echarts.init(document.getElementById('stackChart'));
+stackChart.setOption({
+  tooltip:{trigger:'axis',axisPointer:{type:'shadow'}},
+  grid:{left:60,right:20,top:20,bottom:30},
+  xAxis:{type:'value',max:3,splitLine:{lineStyle:{color:theme.line}},axisLabel:{color:theme.axis}},
+  yAxis:{type:'category',inverse:true,data:['L6 超级智能','L5 RSI实验台','L4 SFMP联邦','L3 L0治理','L2 MC策略','L1 MI信号','L0 Ω地基'],axisLabel:{color:'#c8d4ea'}},
+  series:[{type:'bar',data:[3,2.5,2,2,1.5,1.5,1],barWidth:18,itemStyle:{color:function(p){return ['#f43f5e','#22c55e','#22c55e','#3b82f6','#a78bfa','#f59e0b','#f59e0b'][p.dataIndex]}},label:{show:true,position:'right',color:'#8fa0bf',formatter:function(p){return ['涌现态·非模块','灰度/回滚','语义单元z流通','真值根·Merkle','校准策略','Ω投影','残流子空间'][p.dataIndex]}}}]
+});
+// 六大协议成熟度
+const protoChart=echarts.init(document.getElementById('protoChart'));
+protoChart.setOption({
+  tooltip:{trigger:'axis'},
+  grid:{left:40,right:20,top:30,bottom:30},
+  xAxis:{type:'category',data:['内核读取','六维自检','纠错触发','演化沉淀','统一调度','神经激活'],axisLabel:{color:theme.axis},axisLine:{lineStyle:{color:theme.line}}},
+  yAxis:{type:'value',max:100,name:'成熟度',axisLabel:{color:theme.axis},splitLine:{lineStyle:{color:theme.line}}},
+  series:[{type:'bar',data:[88,72,60,74,74,90],barWidth:34,itemStyle:{color:'#5b8cff',borderRadius:[4,4,0,0]},label:{show:true,position:'top',color:'#cfe0ff'}}]
+});
+window.addEventListener('resize',function(){stackChart.resize();protoChart.resize();});
+</script>
+</body>
+</html>
