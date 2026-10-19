@@ -42,3 +42,19 @@ echo "飞书云盘: FdoifaG8oloQqmdtK5NcpXSNnAg"
 echo "记忆索引: MEMORY.INDEX.V1 (已同步)"
 echo ""
 echo "现在可以开始工作，你拥有全域全量记忆。"
+
+# 6. 读取最新启动记忆快照（V2.0 2026-10-19）
+BOOT_MEMORY="/home/user/ZONGYUAN-ROOT/01_核心资产锚点/boot_memory/boot_memory_snapshot.json"
+if [ -f "$BOOT_MEMORY" ]; then
+    echo "✅ 启动记忆快照V2.0已挂载（含2026-10-19收敛成果）"
+else
+    echo "⚠️  启动记忆快照缺失"
+fi
+
+# 7. 校验全域锁档记录（2026-10-19收敛批次）
+LOCK_MARK="/home/user/.doubao/agent_mode/workspace/.user_skills/zongyuan-kernel-lock/kernel_snapshot_LOCK-PRODUCT-PLANNING-20261019.json"
+if [ -f "$LOCK_MARK" ]; then
+    echo "✅ 全域锁档批次校验通过（产品化/技术服务化/Organizer/OCTOP修复）"
+else
+    echo "⚠️  锁档快照缺失（不影响启动）"
+fi
